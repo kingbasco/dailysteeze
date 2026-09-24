@@ -82,7 +82,8 @@
         }
 
         mainSwiper = new Swiper(mainElement, {
-            spaceBetween: 5,
+            spaceBetween: 0,
+            slidesPerView: 1,
             observer: true,
             observeParents: true,
             observeSlideChildren: true,
@@ -365,36 +366,36 @@
 
         var alt = data.name || $('.product-infor-name').text() || '';
 
-        var videoMainHtml = $main.children('.swiper-slide').filter(function () {
-            return isVideoMainSlide($(this));
-        }).map(function () { return this.outerHTML; }).get().join('');
-
-        var videoThumbHtml = '';
-        if ($thumbs.length) {
-            videoThumbHtml = $thumbs.children('.swiper-slide').filter(function () {
-                return isVideoThumbSlide($(this));
-            }).map(function () { return this.outerHTML; }).get().join('');
+        // A selected variation owns its gallery. Do not carry the parent
+        // product's video or previous variation slides into the new gallery.
+        var uniqueOrigin = [];
+        for (var i = 0; i < origin.length; i++) {
+            if (origin[i] && uniqueOrigin.indexOf(origin[i]) === -1) {
+                uniqueOrigin.push(origin[i]);
+            }
         }
 
         var imageMainHtml = '';
-        for (var i = 0; i < origin.length; i++) {
-            imageMainHtml += buildMainSlide(origin[i], alt, i);
+        for (var j = 0; j < uniqueOrigin.length; j++) {
+            imageMainHtml += buildMainSlide(uniqueOrigin[j], alt, j);
         }
 
-        var thumbSource = thumb.length ? thumb : origin;
+        var thumbSource = thumb.length ? thumb : uniqueOrigin;
         var imageThumbHtml = '';
-        for (var j = 0; j < thumbSource.length; j++) {
-            imageThumbHtml += buildThumbSlide(thumbSource[j], alt);
+        for (var k = 0; k < thumbSource.length; k++) {
+            if (thumbSource[k]) {
+                imageThumbHtml += buildThumbSlide(thumbSource[k], alt);
+            }
         }
 
         // Destroy the old instances before touching their DOM. Otherwise Swiper
         // retains stale slide references and touch events after a variant swap.
         destroyGallerySliders();
 
-        $main.html(videoMainHtml + imageMainHtml);
+        $main.html(imageMainHtml);
 
         if ($thumbs.length) {
-            $thumbs.html(videoThumbHtml + imageThumbHtml);
+            $thumbs.html(imageThumbHtml);
         }
 
         initGallerySliders();
@@ -431,7 +432,11 @@
         var style = document.createElement('style');
         style.id = 'amerce-product-gallery-navigation-styles';
         style.textContent =
-            '.tf-product-media-main{position:relative;}' +
+            '.tf-product-media-main{position:relative;overflow:hidden;}' +
+            '.tf-product-media-main .swiper-wrapper{width:100%;}' +
+            '.tf-product-media-main .swiper-slide{width:100%;flex-shrink:0;}' +
+            '.tf-product-media-main .swiper-slide img{display:block;width:100%;height:auto;}' +
+            '.tf-product-media-thumbs{display:none!important;}' +
             '.tf-product-media-main>.tf-product-media-prev,.tf-product-media-main>.tf-product-media-next{' +
                 'position:absolute;z-index:20;top:50%;transform:translateY(-50%);' +
                 'width:42px;height:42px;border:0;border-radius:50%;' +
