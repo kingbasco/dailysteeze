@@ -453,6 +453,10 @@
         document.head.appendChild(style);
     }
 
+    // Expose the renderer directly so the swatch AJAX module can call it reliably.
+    // This avoids relying only on the global callback, which another script can replace.
+    window.__amerceProductGalleryVariationUpdate = rebuildGalleryFromVariation;
+
     // Additive hook honoured by ecommerce plugin's change-product-swatches.js
     // (runs AFTER EcommerceApp.defaultOnChangeSwatchesSuccess, which targets
     // `.bb-product-gallery-*` and is a no-op against this Swiper-based gallery).
