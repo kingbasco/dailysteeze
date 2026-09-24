@@ -1,0 +1,54 @@
+{
+    "How long does standard shipping take?": {
+        "question": "Standart gönderim ne kadar sürer?",
+        "answer": "Standart kargo, yurt içi siparişlerde 3-5 iş günü, yurt dışı siparişlerde ise 7-12 iş günü içerisinde ulaşır. Ödeme sırasında hızlandırılmış gönderim seçenekleri mevcuttur."
+    },
+    "Do you offer free shipping?": {
+        "question": "Ücretsiz kargo sunuyor musunuz?",
+        "answer": "Evet — 99$'ın üzerindeki siparişler ABD kıtasında ücretsiz olarak gönderilir. Ücretsiz uluslararası gönderim eşiği varış noktasına göre değişir ve ödeme sırasında görüntülenir."
+    },
+    "How can I track my order?": {
+        "question": "Siparişimi nasıl takip edebilirim?",
+        "answer": "Siparişiniz gönderilir gönderilmez e-posta yoluyla bir takip bağlantısı alacaksınız. Paketinizi ayrıca siparişlerim altındaki hesap yönetimi sayfanızdan da takip edebilirsiniz."
+    },
+    "Can I change the shipping address after I place my order?": {
+        "question": "Siparişimi verdikten sonra teslimat adresini değiştirebilir miyim?",
+        "answer": "Siparişin işleme koyulmaması durumunda adres değiştirilebilir. Başarılı bir güncelleme şansı için siparişinizi verdikten sonraki iki saat içinde bizimle iletişime geçin."
+    },
+    "What is your return policy?": {
+        "question": "İade politikanız nedir?",
+        "answer": "Kullanılmamış ürünü orijinal haliyle iade etmek için teslimat tarihinden itibaren 30 gün süre veriyoruz. İndirimli ürünler ve iç çamaşırları sondur; iade yoktur."
+    },
+    "How do I start a return?": {
+        "question": "İade işlemini nasıl başlatabilirim?",
+        "answer": "Hesap yönetimi sayfanızdan bir iade işlemi başlatın veya sipariş numaranızla birlikte return@amerce.test adresine bir e-posta gönderin. Yurtiçi siparişlerde ön ödemeli iade nakliye etiketi göndereceğiz."
+    },
+    "When will I receive my refund?": {
+        "question": "Geri ödememi ne zaman alacağım?",
+        "answer": "Geri ödemeler, iade edilen ürünün tarafımıza ulaşmasından itibaren 3-5 iş günü içerisinde gerçekleştirilir. Fonlar genellikle bankaya bağlı olarak ek 5-7 gün sonra ekstrenizde görünür."
+    },
+    "How do I find the right size?": {
+        "question": "Doğru boyutu nasıl bulurum?",
+        "answer": "Her ürün sayfasında gerçek ürün ölçülerine dayalı bir beden tablosu bulunur. Eğer iki beden arasında kaldıysanız triko ve kabanlarda genellikle büyük bedeni tercih etmenizi öneririz."
+    },
+    "When will sold-out items be restocked?": {
+        "question": "Tükenen ürünler ne zaman stoklara eklenecek?",
+        "answer": "Çoğu stil 2-4 hafta içinde yeniden stoklanır. Ürün iade edildiğinde e-postayla bilgilendirilmek için stokta olmayan herhangi bir varyasyonda Bana Bildir düğmesini tıklayın."
+    },
+    "Are your products ethically sourced?": {
+        "question": "Ürünleriniz etik kurallara uygun mu?",
+        "answer": "Sahip olmak. Yalnızca adil ücretler, güvenli koşullar ve doğrulanmış malzeme menşeleri de dahil olmak üzere tedarikçi davranış kurallarımızı karşılayan üretim ortaklarıyla çalışıyoruz."
+    },
+    "Which payment methods do you accept?": {
+        "question": "Hangi ödeme yöntemlerini kabul ediyorsunuz?",
+        "answer": "Desteklenen pazarlar için Visa, Mastercard, American Express, Apple Pay, Google Pay, PayPal ve Klarna'yı kabul ediyoruz."
+    },
+    "Is it safe to enter my card details?": {
+        "question": "Kart bilgilerimi girmem güvenli mi?",
+        "answer": "Tüm ödemeler, TLS 1.3 şifrelemesine sahip PCI-DSS Seviye 1 sertifikalı bir sağlayıcı tarafından işlenir. Kart numaralarının tamamını hiçbir zaman sunucularımızda saklamayız."
+    },
+    "How do I reset my password?": {
+        "question": "Şifremi nasıl sıfırlarım?",
+        "answer": "Giriş sayfasındaki Şifremi Unuttum bağlantısını kullanın. Kayıtlı e-posta adresinize bir sıfırlama bağlantısı gönderilecek ve 30 dakika süreyle geçerlidir."
+    }
+}

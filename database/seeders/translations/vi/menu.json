@@ -1,0 +1,39 @@
+{
+    "main-menu": {
+        "name": "Menu chính",
+        "home": "Trang chủ",
+        "shop": "Mua sắm",
+        "new_arrivals": "Hàng mới về",
+        "best_sellers": "Bán chạy nhất",
+        "sale": "Giảm giá",
+        "all_products": "Tất cả sản phẩm",
+        "categories": "Danh mục",
+        "outerwear": "Áo khoác",
+        "tops_shirts": "Áo & Sơ mi",
+        "bottoms": "Quần & Váy",
+        "dresses": "Đầm",
+        "footwear": "Giày dép",
+        "accessories": "Phụ kiện",
+        "brands": "Thương hiệu",
+        "journal": "Tạp chí",
+        "about": "Giới thiệu",
+        "contact": "Liên hệ"
+    },
+    "footer-help": {
+        "name": "Hỗ trợ",
+        "contact_us": "Liên hệ với chúng tôi",
+        "faq": "Câu hỏi thường gặp",
+        "shipping": "Vận chuyển",
+        "returns_refunds": "Đổi trả & Hoàn tiền",
+        "order_tracking": "Theo dõi đơn hàng"
+    },
+    "footer-company": {
+        "name": "Công ty",
+        "about": "Giới thiệu",
+        "our_stores": "Cửa hàng",
+        "sustainability": "Phát triển bền vững",
+        "careers": "Tuyển dụng",
+        "privacy_policy": "Chính sách bảo mật",
+        "terms_conditions": "Điều khoản & Điều kiện"
+    }
+}

@@ -1,0 +1,93 @@
+// Dark Mode Stylesheet
+// Overrides CSS variables and colors for dark theme (data-bs-theme="dark")
+
+[data-bs-theme="dark"] {
+    // ---- Color Tokens - Dark Variant ----
+    --at-body-color: #c4c7c8;
+    --at-heading-color: #ffffff;
+    --at-border-color: #2a2a2a;
+    --at-card-bg: #161616;
+    --at-input-bg: #1f1f1f;
+    --at-tf-bg: #0a0a0a;
+
+    // Body and text colors
+    body {
+        color: var(--at-body-color);
+        background-color: #0f0f0f;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        color: var(--at-heading-color);
+    }
+
+    // Cards and containers
+    .card,
+    .at-card {
+        background-color: var(--at-card-bg);
+        border-color: var(--at-border-color);
+        color: var(--at-body-color);
+    }
+
+    // Input fields
+    input,
+    textarea,
+    select {
+        background-color: var(--at-input-bg);
+        border-color: var(--at-border-color);
+        color: var(--at-body-color);
+
+        &::placeholder {
+            color: rgba(196, 199, 200, 0.6);
+        }
+
+        &:focus {
+            background-color: var(--at-input-bg);
+            border-color: var(--at-tf-bg);
+            color: var(--at-body-color);
+        }
+    }
+
+    // Dropdown menu
+    .dropdown-menu {
+        background-color: var(--at-card-bg);
+        border-color: var(--at-border-color);
+    }
+
+    .dropdown-item {
+        color: var(--at-body-color);
+
+        &:hover,
+        &:focus {
+            background-color: var(--at-tf-bg);
+            color: var(--at-heading-color);
+        }
+    }
+
+    // Links
+    a {
+        color: var(--at-link-color, #F0460E);
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+
+    // Borders
+    hr,
+    .border {
+        border-color: var(--at-border-color) !important;
+    }
+
+    // Currency / language dropdowns rendered via bootstrap-select. The
+    // baseline `.tf-dropdown-select.style-default` rule pins the toggle
+    // text + chevron to var(--black); on dark surfaces (footer-bottom,
+    // mobile-menu canvas-footer) that becomes black-on-black. Lift them
+    // to the dark-mode body color.
+    .tf-dropdown-select.style-default {
+        > .dropdown-toggle,
+        > .dropdown-toggle::after,
+        .filter-option-inner-inner {
+            color: var(--at-heading-color);
+        }
+    }
+}

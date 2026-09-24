@@ -1,0 +1,70 @@
+@php
+    /**
+     * Style-3 grid card — image zoom + text overlay.
+     * Title + price are positioned absolutely on top of the (zooming) image
+     * via the `card-product-style-3__overlay` wrapper. CSS handles zoom transform.
+     */
+    use Botble\Media\Facades\RvMedia;
+
+    $showQuickView = $showQuickView ?? true;
+    $showQuickShop = $showQuickShop ?? true;
+
+    $primaryImage = RvMedia::getImageUrl($product->image, 'product-grid', false, RvMedia::getDefaultImage());
+    $hoverImage = null;
+    if (! empty($product->images) && is_iterable($product->images)) {
+        foreach ($product->images as $img) {
+            if (! is_string($img) || trim($img) === '' || $img === $product->image) {
+                continue;
+            }
+            $hoverImage = RvMedia::getImageUrl($img, 'product-grid', false, null);
+            if ($hoverImage) {
+                break;
+            }
+        }
+    }
+@endphp
+
+<div class="card-product_wrapper card-product-style-3__wrapper">
+    <a href="{{ $product->url }}" class="product-img zoom-target" aria-label="{{ $product->name }}">
+        <img
+            class="img-product"
+            loading="lazy"
+            width="330"
+            height="440"
+            src="{{ $primaryImage }}"
+            alt="{{ $product->name }}"
+        >
+        @if ($hoverImage)
+            <img
+                class="img-hover"
+                loading="lazy"
+                width="330"
+                height="440"
+                src="{{ $hoverImage }}"
+                alt="{{ $product->name }}"
+            >
+        @endif
+    </a>
+
+    @include(EcommerceHelper::viewPath('includes.product.badges'), ['product' => $product])
+    @include(EcommerceHelper::viewPath('includes.product.countdown'), ['product' => $product])
+
+    <div class="card-product-style-3__overlay">
+        @include(Theme::getThemeNamespace('views.ecommerce.includes.product.store-name'), ['product' => $product])
+        <a href="{{ $product->url }}" class="name-product lh-24 fw-medium link-underline-text text-line-clamp-2">
+            {{ $product->name }}
+        </a>
+
+        @include(EcommerceHelper::viewPath('includes.product.style-3.price'), ['product' => $product])
+
+        @include(EcommerceHelper::viewPath('includes.product.style-3.actions'), [
+            'product' => $product,
+            'showQuickView' => $showQuickView,
+            'showQuickShop' => $showQuickShop,
+        ])
+    </div>
+</div>
+
+<div class="card-product_info card-product-style-3__info-fallback">
+    @include(EcommerceHelper::viewPath('includes.product.style-3.rating'), ['product' => $product])
+</div>

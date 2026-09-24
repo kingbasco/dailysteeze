@@ -1,0 +1,44 @@
+{
+    "Black": {
+        "title": "Hitam"
+    },
+    "White": {
+        "title": "Putih"
+    },
+    "Beige": {
+        "title": "Krem"
+    },
+    "Olive": {
+        "title": "Zaitun"
+    },
+    "Navy": {
+        "title": "Angkatan laut"
+    },
+    "Burgundy": {
+        "title": "merah anggur"
+    },
+    "Charcoal": {
+        "title": "Arang"
+    },
+    "Cream": {
+        "title": "Krim"
+    },
+    "Cotton": {
+        "title": "Kapas"
+    },
+    "Linen": {
+        "title": "Linen"
+    },
+    "Wool": {
+        "title": "Wol"
+    },
+    "Tencel": {
+        "title": "Tencel"
+    },
+    "Recycled Polyester": {
+        "title": "Poliester Daur Ulang"
+    },
+    "Full-Grain Leather": {
+        "title": "Kulit Gandum Penuh"
+    }
+}

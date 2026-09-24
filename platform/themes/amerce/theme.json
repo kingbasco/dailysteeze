@@ -1,0 +1,144 @@
+{
+    "id": "botble/amerce",
+    "name": "Amerce",
+    "namespace": "Theme\\Amerce\\",
+    "author": "Botble Technologies",
+    "url": "https://botble.com",
+    "version": "1.0.2",
+    "description": "Amerce - Multi-Purpose eCommerce & Multivendor Marketplace Theme (20 niche presets)",
+    "support_url": "https://botble.com/contact",
+    "demo_url": "https://amerce.botble.com",
+    "supported_browsers": [
+        "chrome",
+        "firefox",
+        "safari",
+        "edge",
+        "mobile-safari",
+        "chrome-android"
+    ],
+    "required_plugins": [
+        "ecommerce"
+    ],
+    "presets": [
+        {
+            "id": "home-fashion",
+            "name": "Fashion Store",
+            "screenshot": "screenshot-home-fashion.jpg",
+            "database": "database/sample/database-home-fashion.sql"
+        },
+        {
+            "id": "home-electronics",
+            "name": "Electronics Hub",
+            "screenshot": "screenshot-home-electronics.jpg",
+            "database": "database/sample/database-home-electronics.sql"
+        },
+        {
+            "id": "home-furniture",
+            "name": "Furniture Store",
+            "screenshot": "screenshot-home-furniture.jpg",
+            "database": "database/sample/database-home-furniture.sql"
+        },
+        {
+            "id": "home-cosmetic",
+            "name": "Beauty & Cosmetics",
+            "screenshot": "screenshot-home-cosmetic.jpg",
+            "database": "database/sample/database-home-cosmetic.sql"
+        },
+        {
+            "id": "home-organic",
+            "name": "Organic & Grocery",
+            "screenshot": "screenshot-home-organic.jpg",
+            "database": "database/sample/database-home-organic.sql"
+        },
+        {
+            "id": "home-jewelry",
+            "name": "Jewelry & Watches",
+            "screenshot": "screenshot-home-jewelry.jpg",
+            "database": "database/sample/database-home-jewelry.sql"
+        },
+        {
+            "id": "home-sport",
+            "name": "Sports & Fitness",
+            "screenshot": "screenshot-home-sport.jpg",
+            "database": "database/sample/database-home-sport.sql"
+        },
+        {
+            "id": "home-sneaker",
+            "name": "Sneaker Shop",
+            "screenshot": "screenshot-home-sneaker.jpg",
+            "database": "database/sample/database-home-sneaker.sql"
+        },
+        {
+            "id": "home-headphone",
+            "name": "Audio Gear",
+            "screenshot": "screenshot-home-headphone.jpg",
+            "database": "database/sample/database-home-headphone.sql"
+        },
+        {
+            "id": "home-pod",
+            "name": "Podcast / Pods",
+            "screenshot": "screenshot-home-pod.jpg",
+            "database": "database/sample/database-home-pod.sql"
+        },
+        {
+            "id": "home-baby",
+            "name": "Baby Products",
+            "screenshot": "screenshot-home-baby.jpg",
+            "database": "database/sample/database-home-baby.sql"
+        },
+        {
+            "id": "home-pet-care",
+            "name": "Pet Care",
+            "screenshot": "screenshot-home-pet-care.jpg",
+            "database": "database/sample/database-home-pet-care.sql"
+        },
+        {
+            "id": "home-auto",
+            "name": "Automotive Parts",
+            "screenshot": "screenshot-home-auto.jpg",
+            "database": "database/sample/database-home-auto.sql"
+        },
+        {
+            "id": "home-construction",
+            "name": "Tools & Construction",
+            "screenshot": "screenshot-home-construction.jpg",
+            "database": "database/sample/database-home-construction.sql"
+        },
+        {
+            "id": "home-bag-accessories",
+            "name": "Bags & Accessories",
+            "screenshot": "screenshot-home-bag-accessories.jpg",
+            "database": "database/sample/database-home-bag-accessories.sql"
+        },
+        {
+            "id": "home-decor",
+            "name": "Home Decor",
+            "screenshot": "screenshot-home-decor.jpg",
+            "database": "database/sample/database-home-decor.sql"
+        },
+        {
+            "id": "home-garden",
+            "name": "Garden & Outdoor",
+            "screenshot": "screenshot-home-garden.jpg",
+            "database": "database/sample/database-home-garden.sql"
+        },
+        {
+            "id": "home-mental",
+            "name": "Wellness",
+            "screenshot": "screenshot-home-mental.jpg",
+            "database": "database/sample/database-home-mental.sql"
+        },
+        {
+            "id": "home-office-equipment",
+            "name": "Office Equipment",
+            "screenshot": "screenshot-home-office-equipment.jpg",
+            "database": "database/sample/database-home-office-equipment.sql"
+        },
+        {
+            "id": "home-fashion-2",
+            "name": "Fashion Modern",
+            "screenshot": "screenshot-home-fashion-2.jpg",
+            "database": "database/sample/database-home-fashion-2.sql"
+        }
+    ]
+}

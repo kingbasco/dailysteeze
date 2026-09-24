@@ -1,0 +1,47 @@
+{
+    "Cotton": {
+        "name": "Kapas"
+    },
+    "Linen": {
+        "name": "Linen"
+    },
+    "Wool": {
+        "name": "Wol"
+    },
+    "Leather": {
+        "name": "Kulit"
+    },
+    "Tencel": {
+        "name": "Tencel"
+    },
+    "Recycled": {
+        "name": "Daur ulang"
+    },
+    "Made in Portugal": {
+        "name": "Dibuat di Portugal"
+    },
+    "Made in Italy": {
+        "name": "Dibuat di Italia"
+    },
+    "Hand-Crafted": {
+        "name": "Kerajinan Tangan"
+    },
+    "Vegan": {
+        "name": "vegan"
+    },
+    "Limited Run": {
+        "name": "Jangka Terbatas"
+    },
+    "Best Seller": {
+        "name": "Penjual Terbaik"
+    },
+    "New Arrival": {
+        "name": "Kedatangan Baru"
+    },
+    "Editor Pick": {
+        "name": "Pilihan Editor"
+    },
+    "Eco-Friendly": {
+        "name": "Ramah Lingkungan"
+    }
+}

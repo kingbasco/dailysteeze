@@ -1,0 +1,20 @@
+{
+    "Hot": {
+        "name": "Panas"
+    },
+    "New": {
+        "name": "Baru"
+    },
+    "Sale": {
+        "name": "Penjualan"
+    },
+    "Best Seller": {
+        "name": "Penjual Terbaik"
+    },
+    "Limited": {
+        "name": "Terbatas"
+    },
+    "Eco": {
+        "name": "ramah lingkungan"
+    }
+}

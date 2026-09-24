@@ -1,0 +1,154 @@
+// /stores listing — toolbar + vendor card grid.
+// Aligned with amerce light tokens (--surface, --line, --text, --text-3, --primary).
+
+.marketplace-stores {
+
+    // ── Toolbar (search + sort + CTA) ─────────────────────────
+    &__toolbar {
+        background: var(--surface, #f6f6f6);
+        border: 1px solid var(--line, #e9e9e9);
+        border-radius: 12px;
+    }
+
+    &__count {
+        color: var(--text, #101010);
+        font-family: var(--accent-font, 'Outfit'), sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+    }
+
+    &__filters {
+        .form-control,
+        .form-select {
+            border-color: var(--line, #e9e9e9);
+            background-color: #fff;
+            min-height: 44px;
+            font-size: 14px;
+
+            &:focus {
+                border-color: var(--text, #101010);
+                box-shadow: none;
+            }
+        }
+
+        // Restore Bootstrap caret SVG (theme.css resets .form-select background)
+        .form-select {
+            min-width: 180px;
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23101010' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+            background-repeat: no-repeat;
+            background-position: right 14px center;
+            background-size: 14px 10px;
+            padding-right: 38px;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+        }
+
+        .btn-dark {
+            min-height: 44px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    &__list { position: relative; }
+
+    &__empty {
+        background: var(--surface, #f6f6f6);
+        border: 1px solid var(--line, #e9e9e9);
+        border-radius: 12px;
+    }
+
+    &__pagination {
+        display: flex;
+        justify-content: center;
+
+        .pagination { margin-bottom: 0; }
+    }
+}
+
+// ── Vendor card ────────────────────────────────────────────
+.marketplace-vendor-card {
+    background: #fff;
+    border: 1px solid var(--line, #e9e9e9);
+    border-radius: 12px;
+    transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+
+    &:hover {
+        transform: translateY(-4px);
+        border-color: var(--text, #101010);
+        box-shadow: 0 12px 28px rgba(0, 0, 0, .08);
+    }
+
+    &__avatar {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 96px;
+        height: 96px;
+        border-radius: 50%;
+        overflow: hidden;
+        background: var(--surface, #f6f6f6);
+        border: 1px solid var(--line, #e9e9e9);
+    }
+
+    &__avatar-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+        display: block;
+    }
+
+    &:hover &__avatar { border-color: var(--text, #101010); }
+
+    &__name {
+        color: var(--text, #101010);
+        font-family: var(--accent-font, 'Outfit'), sans-serif;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 1.3;
+
+        a { color: inherit; }
+        a:hover { color: var(--primary, #dc4646); }
+    }
+
+    &__rating {
+        color: var(--text-3, #74757b);
+        font-size: 13px;
+    }
+
+    &__count,
+    &__address {
+        color: var(--text-3, #74757b);
+        font-size: 13px;
+        margin-bottom: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+
+        i.icon {
+            color: inherit;
+            font-size: 14px;
+            flex-shrink: 0;
+        }
+
+        span { min-width: 0; }
+    }
+
+    &__address span {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        max-width: 100%;
+    }
+
+    &__cta {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 500;
+    }
+}

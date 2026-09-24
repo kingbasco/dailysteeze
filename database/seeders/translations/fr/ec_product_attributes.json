@@ -1,0 +1,44 @@
+{
+    "Black": {
+        "title": "Noir"
+    },
+    "White": {
+        "title": "Blanc"
+    },
+    "Beige": {
+        "title": "Beige"
+    },
+    "Olive": {
+        "title": "Olive"
+    },
+    "Navy": {
+        "title": "Marine"
+    },
+    "Burgundy": {
+        "title": "Bourgogne"
+    },
+    "Charcoal": {
+        "title": "Charbon de bois"
+    },
+    "Cream": {
+        "title": "Crème"
+    },
+    "Cotton": {
+        "title": "Coton"
+    },
+    "Linen": {
+        "title": "Lin"
+    },
+    "Wool": {
+        "title": "Laine"
+    },
+    "Tencel": {
+        "title": "Tencel"
+    },
+    "Recycled Polyester": {
+        "title": "Polyester recyclé"
+    },
+    "Full-Grain Leather": {
+        "title": "Cuir pleine fleur"
+    }
+}

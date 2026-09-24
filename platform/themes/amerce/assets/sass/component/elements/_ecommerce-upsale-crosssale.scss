@@ -1,0 +1,390 @@
+// Theme overrides for ecommerce plugin's up-sale and cross-sale blocks.
+//
+// The plugin ships front-upsale-crosssale.css with hard-coded #ff6b35 (orange)
+// and blue accents that clash with this theme's red/neutral palette. Plugin
+// CSS loads AFTER theme.css (registered inside HandleFrontPages during request
+// handling), so we need !important on every property the plugin sets to win
+// specificity ties.
+//
+// All colors source from the theme's CSS custom properties (--primary, --text,
+// --text-2, --text-3, --line, --bg, --white). No hardcoded hex.
+//
+// Markup is plugin-owned (ec-upsell-bundle / ec-cross-sale-*); only visuals
+// are rebranded.
+
+%bb-soft-card-base {
+    background: var(--white) !important;
+    border: 1px solid var(--line) !important;
+    border-radius: 12px !important;
+    background-image: none !important;
+}
+
+// Plugin reads `var(--primary-color, #0d6efd)` (Bootstrap blue) in many rules.
+// Rebinding the variable on its wrapper turns every fallthrough into the
+// theme's red primary without having to enumerate each plugin selector.
+.ec-upsell-bundle,
+.ec-cross-sale-section {
+    --primary-color: var(--primary);
+}
+
+// =====================================================================
+// Up-sale (Buy Together & Save)
+// =====================================================================
+
+.ec-upsell-bundle {
+    .ec-upsell-bundle-wrapper {
+        @extend %bb-soft-card-base;
+        padding: 24px;
+    }
+
+    .ec-upsell-bundle-header {
+        gap: 16px;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        border-bottom: 1px dashed var(--line) !important;
+    }
+
+    .ec-upsell-bundle-icon {
+        width: 48px;
+        height: 48px;
+        border-radius: 10px !important;
+        background: var(--primary) !important;
+        background-image: none !important;
+        color: var(--white) !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        svg {
+            stroke: var(--white) !important;
+            color: var(--white) !important;
+        }
+    }
+
+    .ec-upsell-bundle-title {
+        h4 {
+            color: var(--text) !important;
+            font-weight: 600 !important;
+            margin-bottom: 4px;
+        }
+        p {
+            color: var(--text-2) !important;
+            margin-bottom: 0;
+        }
+    }
+
+    .ec-upsell-bundle-item {
+        background: var(--white) !important;
+        background-image: none !important;
+        border: 1px solid var(--line) !important;
+        border-radius: 10px !important;
+        transition: border-color 0.2s ease;
+
+        &:hover {
+            border-color: var(--text) !important;
+        }
+    }
+
+    .ec-upsell-bundle-name {
+        color: var(--text) !important;
+    }
+
+    .ec-upsell-price-sale {
+        color: var(--primary) !important;
+        font-weight: 600 !important;
+    }
+
+    .ec-upsell-price-original {
+        color: var(--text-3) !important;
+        text-decoration: line-through;
+    }
+
+    .ec-upsell-discount-badge {
+        background: var(--primary) !important;
+        background-image: none !important;
+        color: var(--white) !important;
+        border-radius: 6px !important;
+        font-weight: 600 !important;
+    }
+
+    .ec-upsell-attribute-option {
+        background: var(--bg) !important;
+        background-image: none !important;
+        border: 1px solid var(--line) !important;
+        color: var(--text) !important;
+        border-radius: 6px !important;
+        transition: all 0.2s ease;
+
+        &:hover:not(.disabled) {
+            border-color: var(--text) !important;
+        }
+
+        input:checked + label,
+        &.active,
+        &.checked {
+            background: var(--primary) !important;
+            border-color: var(--primary) !important;
+            color: var(--white) !important;
+        }
+    }
+
+    .ec-upsell-bundle-add-btn,
+    [data-upsale-add-btn] {
+        background: var(--bg) !important;
+        background-image: none !important;
+        border: 1px solid var(--line) !important;
+        color: var(--text-2) !important;
+        border-radius: 50% !important;
+        transition: all 0.2s ease;
+
+        &:hover:not(:disabled) {
+            background: var(--text) !important;
+            border-color: var(--text) !important;
+            color: var(--white) !important;
+        }
+
+        &:disabled {
+            opacity: 0.5;
+        }
+    }
+
+    // Footer is just a wrapper around either the notice or the add-all
+    // button. Reset its bg so it doesn't paint a black bar behind children.
+    .ec-upsell-bundle-footer {
+        background: transparent !important;
+        background-image: none !important;
+        border: 0 !important;
+        padding: 0 !important;
+        margin-top: 16px;
+    }
+
+    // Notice strip ("Add X to cart to unlock bundle discount") — soft bg,
+    // primary text. NOT the dark pill.
+    .ec-upsell-bundle-notice,
+    .ec-upsell-bundle-message {
+        background: var(--bg) !important;
+        background-image: none !important;
+        border: 1px solid var(--line) !important;
+        color: var(--primary) !important;
+        border-radius: 8px !important;
+
+        svg {
+            color: var(--primary) !important;
+            stroke: var(--primary) !important;
+        }
+
+        // Plugin hardcodes `.ec-upsell-bundle-notice span { color: #e65100 }`.
+        // Force span (notice text) onto the theme primary too.
+        span {
+            color: var(--primary) !important;
+        }
+    }
+
+    // Add-all CTA button — dark pill, scoped narrowly so it doesn't catch
+    // the footer wrapper.
+    .ec-upsell-bundle-add-all,
+    [data-upsale-add-all] {
+        background: var(--text) !important;
+        background-image: none !important;
+        border: 1px solid var(--text) !important;
+        color: var(--white) !important;
+        border-radius: 999px !important;
+
+        &:hover:not(:disabled) {
+            background: var(--primary) !important;
+            border-color: var(--primary) !important;
+        }
+
+        &:disabled {
+            opacity: 0.5;
+        }
+    }
+
+    .ec-upsell-bundle-total,
+    [data-upsale-total-price] {
+        color: var(--primary) !important;
+    }
+}
+
+// =====================================================================
+// Cross-sale (Frequently Bought Together)
+// =====================================================================
+
+.ec-cross-sale-section {
+    .ec-cross-sale-wrapper {
+        @extend %bb-soft-card-base;
+        padding: 24px;
+    }
+
+    .ec-cross-sale-header {
+        gap: 16px;
+        padding-bottom: 20px;
+        margin-bottom: 24px;
+        border-bottom: 1px dashed var(--line) !important;
+    }
+
+    .ec-cross-sale-icon {
+        width: 48px;
+        height: 48px;
+        border-radius: 10px !important;
+        background: var(--text) !important;
+        background-image: none !important;
+        color: var(--white) !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        svg {
+            stroke: var(--white) !important;
+            color: var(--white) !important;
+        }
+    }
+
+    .ec-cross-sale-title h4 {
+        color: var(--text) !important;
+        font-weight: 600 !important;
+    }
+
+    .ec-cross-sale-card,
+    .ec-cross-sale-card-inner {
+        background: var(--white) !important;
+        background-image: none !important;
+        border: 1px solid var(--line) !important;
+        border-radius: 12px !important;
+        transition: border-color 0.2s ease, box-shadow 0.2s ease;
+
+        &:hover,
+        &:focus,
+        &:focus-within,
+        &:focus-visible {
+            border-color: var(--text) !important;
+            outline: none !important;
+        }
+    }
+
+    // Slide / slick wrapper sometimes pulls the focus ring — neutralize.
+    .ec-cross-sale-slide,
+    .slick-slide:focus,
+    .slick-slide:focus-visible {
+        outline: none !important;
+    }
+
+    .ec-cross-sale-thumb {
+        background: var(--bg) !important;
+        background-image: none !important;
+        border-radius: 10px !important;
+    }
+
+    .ec-cross-sale-plus {
+        background: var(--white) !important;
+        background-image: none !important;
+        border: 2px solid var(--line) !important;
+        color: var(--text-2) !important;
+        border-radius: 50% !important;
+
+        svg {
+            color: var(--text-2) !important;
+            stroke: var(--text-2) !important;
+        }
+    }
+
+    .ec-cross-sale-name {
+        color: var(--text) !important;
+    }
+
+    // Actual plugin classes are -current and -old (not -sale/-original).
+    .ec-cross-sale-price-current,
+    .ec-cross-sale-price-sale,
+    .ec-cross-sale-price .price-sale,
+    .ec-cross-sale-price .price {
+        color: var(--primary) !important;
+        font-weight: 600 !important;
+    }
+
+    .ec-cross-sale-price-old,
+    .ec-cross-sale-price-original,
+    .ec-cross-sale-price .price-original {
+        color: var(--text-3) !important;
+        text-decoration: line-through;
+    }
+
+    .ec-cross-sale-add-btn,
+    .ec-cross-sale-select-options-btn {
+        background: var(--text) !important;
+        background-image: none !important;
+        border: 1px solid var(--text) !important;
+        color: var(--white) !important;
+        border-radius: 999px !important;
+        font-weight: 500 !important;
+        transition: all 0.2s ease;
+
+        &:hover:not(:disabled) {
+            background: var(--primary) !important;
+            border-color: var(--primary) !important;
+            color: var(--white) !important;
+        }
+    }
+
+    .ec-cross-sale-arrows .slick-arrow {
+        background: var(--white) !important;
+        background-image: none !important;
+        border: 1px solid var(--line) !important;
+        color: var(--text) !important;
+        border-radius: 50% !important;
+
+        &:hover {
+            background: var(--text) !important;
+            border-color: var(--text) !important;
+            color: var(--white) !important;
+        }
+    }
+
+    // Theme replaces Slick with Swiper (theme bundles Swiper, not Slick).
+    // The plugin's _ecommerce-upsale-crosssale.scss applies
+    // `.ec-cross-sale-carousel:not(.slick-initialized) { display:flex;
+    // overflow:hidden; gap:16px }` which would fight Swiper's wrapper-based
+    // layout. The override view uses `.ec-cross-sale-swiper` instead of
+    // `.ec-cross-sale-carousel` to dodge that rule, so this block only
+    // re-styles the wrapper, arrows, and disabled state of Swiper nav.
+    .ec-cross-sale-swiper {
+        // Swiper needs its own overflow so off-screen slides hide.
+        overflow: hidden;
+    }
+
+    .ec-cross-sale-arrows {
+        // Match Slick-arrow theme styling for the Swiper nav buttons.
+        .nav-prev-swiper,
+        .nav-next-swiper {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            padding: 0;
+            background: var(--white);
+            border: 1px solid var(--line);
+            color: var(--text);
+            border-radius: 50%;
+            cursor: pointer;
+            transition: all 0.2s ease;
+
+            &:hover {
+                background: var(--text);
+                border-color: var(--text);
+                color: var(--white);
+            }
+
+            // Swiper adds `.swiper-button-disabled` at edges.
+            &.swiper-button-disabled {
+                opacity: 0.4;
+                cursor: not-allowed;
+                pointer-events: none;
+            }
+
+            i {
+                font-size: 16px;
+                line-height: 1;
+            }
+        }
+    }
+}

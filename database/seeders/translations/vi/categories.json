@@ -1,0 +1,318 @@
+{
+    "Style Guides": {
+        "name": "Hướng dẫn phối đồ",
+        "description": "Ý tưởng outfit, capsule wardrobe và báo cáo xu hướng theo mùa được tuyển chọn bởi đội ngũ biên tập Amerce."
+    },
+    "Product Spotlights": {
+        "name": "Điểm nhấn sản phẩm",
+        "description": "Bài phân tích chuyên sâu về vật liệu, sự thủ công và câu chuyện đằng sau những bộ sưu tập mới nhất."
+    },
+    "How-To & Care": {
+        "name": "Hướng dẫn & Bảo quản",
+        "description": "Hướng dẫn thiết thực để chăm sóc món đồ bạn mua — bảo quản vải, dưỡng da và thiết lập thiết bị."
+    },
+    "Sustainability": {
+        "name": "Phát triển bền vững",
+        "description": "Bài viết về thời trang tuần hoàn, nguồn cung có đạo đức và những thương hiệu đang dẫn dắt ngành công nghiệp."
+    },
+    "Buying Guides": {
+        "name": "Hướng dẫn mua sắm",
+        "description": "Hướng dẫn so sánh độc lập giúp bạn chọn sản phẩm phù hợp với nhu cầu và ngân sách."
+    },
+    "Inside Amerce": {
+        "name": "Bên trong Amerce",
+        "description": "Tin tức hậu trường, các chuyến thăm nhà cung cấp và cập nhật từ đội ngũ Amerce."
+    },
+    "Maintenance": {
+        "name": "Bảo Dưỡng",
+        "description": "Lịch bảo dưỡng, dung dịch và chăm sóc định kỳ giúp xe của bạn luôn vận hành tốt."
+    },
+    "Performance": {
+        "name": "Hiệu Năng",
+        "description": "Nâng cấp sức mạnh, tinh chỉnh và các cải tiến cảm giác lái dựa trên dữ liệu."
+    },
+    "DIY Repair": {
+        "name": "Tự Sửa Chữa",
+        "description": "Hướng dẫn từng bước cho việc sửa chữa tại nhà và các dự án cuối tuần."
+    },
+    "Detailing": {
+        "name": "Chăm Sóc Chi Tiết",
+        "description": "Rửa, đánh bóng và bảo vệ — giữ chiếc xe của bạn luôn như mới xuất xưởng."
+    },
+    "New Parents": {
+        "name": "Cha Mẹ Mới",
+        "description": "Hướng dẫn và lời trấn an cho những tuần và tháng đầu tiên cùng trẻ sơ sinh."
+    },
+    "Baby Care": {
+        "name": "Chăm Sóc Bé",
+        "description": "Chăm sóc hằng ngày, sản phẩm dịu nhẹ và những thói quen hỗ trợ một em bé khỏe mạnh."
+    },
+    "Sleep & Routines": {
+        "name": "Giấc Ngủ & Nếp Sinh Hoạt",
+        "description": "Những nghi thức êm dịu, lịch ngủ trưa và công cụ cho những đêm bình yên hơn."
+    },
+    "Nutrition": {
+        "name": "Dinh Dưỡng",
+        "description": "Các cột mốc ăn uống, cai sữa và dinh dưỡng lành mạnh cho bé đang lớn."
+    },
+    "Safety": {
+        "name": "An Toàn",
+        "description": "Lời khuyên an toàn thiết thực, kiểm tra đồ dùng và những điều thiết yếu giúp yên tâm."
+    },
+    "Style Edit": {
+        "name": "Tuyển Chọn Phong Cách",
+        "description": "Tuyển chọn túi xách và phụ kiện cho mọi dịp — đi làm, du lịch và cuối tuần."
+    },
+    "Bag Care": {
+        "name": "Chăm Sóc Túi",
+        "description": "Những nghi thức làm sạch, bảo quản và dưỡng da để kéo dài tuổi thọ những món đồ giá trị của bạn."
+    },
+    "Material Guides": {
+        "name": "Cẩm Nang Chất Liệu",
+        "description": "Da lộn, da nguyên tấm và các chất liệu cao cấp — nên mua gì và bảo dưỡng ra sao."
+    },
+    "Trends": {
+        "name": "Xu Hướng",
+        "description": "Khóa kim loại, kiểu dáng và câu chuyện màu sắc định hình mỗi mùa phụ kiện."
+    },
+    "Behind the Brand": {
+        "name": "Hậu Trường Thương Hiệu",
+        "description": "Xưởng sản xuất, nghệ nhân và câu chuyện nguồn gốc từ các thương hiệu chúng tôi phân phối."
+    },
+    "Tools & Equipment": {
+        "name": "Dụng Cụ & Thiết Bị",
+        "description": "Đánh giá chuyên sâu và cẩm nang bảo dưỡng cho những dụng cụ bạn tin dùng mỗi ngày."
+    },
+    "Techniques": {
+        "name": "Kỹ Thuật",
+        "description": "Những phương pháp đã được kiểm chứng trong nghề về cắt, khoan, bắt vít và hoàn thiện."
+    },
+    "Project Guides": {
+        "name": "Cẩm Nang Dự Án",
+        "description": "Hướng dẫn từng bước cho các dự án xây dựng và cải tạo thường gặp."
+    },
+    "Trade News": {
+        "name": "Tin Tức Ngành",
+        "description": "Cập nhật ngành, thay đổi quy chuẩn và xu hướng vật liệu cho các ngành nghề."
+    },
+    "Skincare": {
+        "name": "Chăm Sóc Da",
+        "description": "Quy trình, thành phần và phân tích chuyên sâu về các nghi thức cho làn da khỏe mạnh, rạng rỡ hơn."
+    },
+    "Makeup": {
+        "name": "Trang Điểm",
+        "description": "Kỹ thuật ứng dụng, cách tuyển chọn bảng màu và những lựa chọn sản phẩm có sắc tố lành tính."
+    },
+    "Fragrance": {
+        "name": "Nước Hoa",
+        "description": "Phân tích các nốt hương, mẹo phối lớp và cách tìm ra mùi hương đặc trưng."
+    },
+    "Beauty Tips": {
+        "name": "Mẹo Làm Đẹp",
+        "description": "Những thói quen làm đẹp hằng ngày, dụng cụ và những nâng cấp nhỏ giúp nâng tầm quy trình."
+    },
+    "Ergonomics": {
+        "name": "Công Thái Học",
+        "description": "Tư thế, hỗ trợ khớp và khoa học về làm việc bàn giấy không đau mỏi."
+    },
+    "Workspace Design": {
+        "name": "Thiết Kế Không Gian Làm Việc",
+        "description": "Bố cục, chiếu sáng và hoàn thiện cho những văn phòng truyền cảm hứng và tiện dụng."
+    },
+    "Wellness at Work": {
+        "name": "Sức Khỏe Tại Nơi Làm Việc",
+        "description": "Nghỉ giải lao vận động, mỏi mắt và những thói quen bảo vệ sức khỏe lâu dài."
+    },
+    "Productivity": {
+        "name": "Năng Suất",
+        "description": "Quy trình và thói quen giúp bạn tập trung sâu và hoàn thành tốt công việc."
+    },
+    "New Releases": {
+        "name": "Sản Phẩm Mới Ra Mắt",
+        "description": "Trải nghiệm thực tế đầu tiên và đưa tin ra mắt về những gadget và thiết bị mới nhất."
+    },
+    "Tech Reviews": {
+        "name": "Đánh Giá Công Nghệ",
+        "description": "Đánh giá chuyên sâu, không thổi phồng về điện thoại, âm thanh, thiết bị đeo và đồ cho người sáng tạo."
+    },
+    "Smart Home": {
+        "name": "Nhà Thông Minh",
+        "description": "Hướng dẫn thực tế để xây dựng và tự động hóa một ngôi nhà thông minh, an yên hơn."
+    },
+    "Lifestyle": {
+        "name": "Phong Cách Sống",
+        "description": "Mẹo và thói quen để sử dụng công nghệ một cách có chủ đích mỗi ngày."
+    },
+    "Trend Watch": {
+        "name": "Theo Dõi Xu Hướng",
+        "description": "Điều gì đang nổi lên trên sàn diễn và len lỏi vào tủ đồ thường ngày mùa này."
+    },
+    "Wardrobe Building": {
+        "name": "Xây Dựng Tủ Đồ",
+        "description": "Chiến lược tủ đồ tối giản, những món đồ đáng đầu tư và cách để một tủ đồ nhỏ phát huy nhiều hơn."
+    },
+    "Care & Maintenance": {
+        "name": "Chăm Sóc & Bảo Quản",
+        "description": "Cách giặt, cất giữ và kéo dài tuổi thọ của đồ len, đồ da và đồ lụa."
+    },
+    "Editor Picks": {
+        "name": "Lựa Chọn Của Biên Tập Viên",
+        "description": "Những phát hiện được tuyển chọn, câu chuyện đằng sau từng món đồ và ghi chú về thủ công từ đội ngũ."
+    },
+    "Style Inspiration": {
+        "name": "Cảm Hứng Phong Cách",
+        "description": "Bảng cảm hứng, câu chuyện về bảng màu và những căn phòng cho thấy điều gì là khả thi."
+    },
+    "Behind the Craft": {
+        "name": "Đằng Sau Nghề Thủ Công",
+        "description": "Những chuyến thăm xưởng, chân dung nghệ nhân và những con người đằng sau món đồ yêu thích của bạn."
+    },
+    "Spaces": {
+        "name": "Không Gian",
+        "description": "Những ngôi nhà thật, những căn hộ thật — ý tưởng thiết kế bạn có thể áp dụng ngay."
+    },
+    "Plant Care": {
+        "name": "Chăm Sóc Cây",
+        "description": "Ghi chú về tưới nước, ánh sáng và chăm sóc theo mùa cho những cây trong nhà phát triển tốt."
+    },
+    "Indoor Gardening": {
+        "name": "Làm Vườn Trong Nhà",
+        "description": "Xây dựng vườn đô thị, rừng xanh trên ban công và những góc xanh an yên trong không gian nhỏ."
+    },
+    "Plant Health": {
+        "name": "Sức Khỏe Cây Trồng",
+        "description": "Chẩn đoán các vấn đề thường gặp, sâu bệnh và vấn đề về rễ trước khi chúng lan rộng."
+    },
+    "Decor with Plants": {
+        "name": "Trang Trí Với Cây Xanh",
+        "description": "Mẹo phối đồ, ghép chậu cây và biến cây xanh thành tuyên ngôn thiết kế."
+    },
+    "Audio Tech": {
+        "name": "Công nghệ âm thanh",
+        "description": "Màng loa, codec và kỹ thuật đằng sau cách tai nghe ngày nay thực sự tạo ra âm thanh."
+    },
+    "Listening Tips": {
+        "name": "Mẹo nghe nhạc",
+        "description": "Mẹo thiết thực để có những buổi nghe nhạc an toàn hơn, lâu hơn và thú vị hơn."
+    },
+    "Reviews": {
+        "name": "Đánh giá",
+        "description": "Đánh giá dài hạn và so sánh trên các phân khúc giá và phong cách nghe."
+    },
+    "Music Culture": {
+        "name": "Văn hóa âm nhạc",
+        "description": "Phỏng vấn và bài viết cho những người yêu âm nhạc nhiều như yêu thiết bị."
+    },
+    "Care & Cleaning": {
+        "name": "Chăm sóc & vệ sinh",
+        "description": "Đánh bóng, bảo quản và những thói quen tại nhà giúp vàng, bạc và kim cương luôn ở trạng thái tốt nhất."
+    },
+    "Investment Pieces": {
+        "name": "Món đồ đầu tư",
+        "description": "Họa tiết di sản, kim cương được chứng nhận và trang sức được tạo ra để vượt qua mọi chu kỳ xu hướng."
+    },
+    "Buyer Guides": {
+        "name": "Cẩm nang người mua",
+        "description": "Carat, giác cắt, màu sắc và độ tinh khiết — hướng dẫn thiết thực cho những lần mua trang sức quan trọng."
+    },
+    "Mindful Living": {
+        "name": "Sống chánh niệm",
+        "description": "Những thực hành, bài tập thở và thói quen hằng ngày giúp bạn tìm thấy sự bình yên trong từng khoảnh khắc."
+    },
+    "Sleep & Recovery": {
+        "name": "Giấc ngủ & phục hồi",
+        "description": "Những hướng dẫn dựa trên bằng chứng để ngủ ngon hơn, nghỉ ngơi sâu và phục hồi sau căng thẳng."
+    },
+    "Nutrition & Supplements": {
+        "name": "Dinh dưỡng & thực phẩm bổ sung",
+        "description": "Dinh dưỡng sạch, adaptogen và khoa học về cách thực phẩm ảnh hưởng đến tâm trạng."
+    },
+    "Movement & Breath": {
+        "name": "Vận động & hơi thở",
+        "description": "Yoga nhẹ nhàng, thiền khi đi bộ và các bài tập thở cho sự bình yên gắn với cơ thể."
+    },
+    "Stress Management": {
+        "name": "Quản lý căng thẳng",
+        "description": "Công cụ và khung tham chiếu để vượt qua căng thẳng hiện đại với sự chủ ý và bền bỉ."
+    },
+    "Whole Foods": {
+        "name": "Thực phẩm toàn phần",
+        "description": "Nấu nướng, tìm nguồn và bảo quản những thực phẩm ít qua chế biến giúp nuôi dưỡng cơ thể."
+    },
+    "Superfoods": {
+        "name": "Siêu thực phẩm",
+        "description": "Tảo spirulina, nấm chaga và những loại cây có mật độ dinh dưỡng vượt trội."
+    },
+    "Organic Living": {
+        "name": "Sống hữu cơ",
+        "description": "Giảm lượng thuốc trừ sâu, ủng hộ những nhà vườn tái sinh và những thay đổi nhỏ mỗi ngày."
+    },
+    "Recipes": {
+        "name": "Công thức nấu ăn",
+        "description": "Những công thức thiên về thực vật được xây dựng quanh các nguyên liệu hữu cơ được chứng nhận, theo mùa."
+    },
+    "Nutrition Science": {
+        "name": "Khoa học dinh dưỡng",
+        "description": "Dinh dưỡng dựa trên bằng chứng không thổi phồng — điều mà nghiên cứu hiện tại thực sự cho thấy."
+    },
+    "Pet Health": {
+        "name": "Sức Khỏe Thú Cưng",
+        "description": "Chăm sóc phòng ngừa, thực phẩm bổ sung và các dấu hiệu cần lưu ý ở mọi giai đoạn cuộc đời."
+    },
+    "Training": {
+        "name": "Huấn Luyện",
+        "description": "Mẹo huấn luyện bằng phương pháp củng cố tích cực cho chó con, mèo con và thú cưng đã trưởng thành."
+    },
+    "Pet Lifestyle": {
+        "name": "Phong Cách Sống Cùng Thú Cưng",
+        "description": "Du lịch, vui chơi, chăm sóc lông và những niềm vui nhỏ bé khi sống cùng người bạn bốn chân."
+    },
+    "Vet Tips": {
+        "name": "Lời Khuyên Từ Bác Sĩ Thú Y",
+        "description": "Lời khuyên thiết thực từ các chuyên gia thú y về những câu hỏi và mối quan tâm thường gặp."
+    },
+    "Gift Ideas": {
+        "name": "Ý Tưởng Quà Tặng",
+        "description": "Nguồn cảm hứng quà tặng được tuyển chọn cho sinh nhật, đám cưới, ngày kỷ niệm và mọi cột mốc."
+    },
+    "Customization Tips": {
+        "name": "Mẹo Tùy Chỉnh",
+        "description": "Cách thiết kế, chụp ảnh và duyệt mẫu một sản phẩm cá nhân hóa mà bạn thực sự yêu thích."
+    },
+    "Occasions": {
+        "name": "Dịp Lễ",
+        "description": "Hướng dẫn quà tặng tinh tế theo từng ngày lễ và từng cột mốc."
+    },
+    "Personalization Trends": {
+        "name": "Xu Hướng Cá Nhân Hóa",
+        "description": "Những điều mới trong in theo yêu cầu — xu hướng typography, minh họa và thiết kế."
+    },
+    "Behind the Print": {
+        "name": "Hậu Trường In Ấn",
+        "description": "Một góc nhìn bên trong quy trình in, vật liệu và tiêu chuẩn chất lượng của chúng tôi."
+    },
+    "Style": {
+        "name": "Phong Cách",
+        "description": "Những dáng giày phong cách sống, câu chuyện màu sắc và gợi ý phối đồ kết hợp sneaker với trang phục hàng ngày."
+    },
+    "Care Guide": {
+        "name": "Hướng Dẫn Chăm Sóc",
+        "description": "Mẹo vệ sinh, khử mùi và bảo quản giữ cho mọi đôi giày luôn như mới."
+    },
+    "Athletic Tech": {
+        "name": "Công Nghệ Thể Thao",
+        "description": "Hợp chất mút, độ cứng của tấm đế và kỹ thuật đằng sau những đôi giày hiệu năng hiện đại."
+    },
+    "Recovery": {
+        "name": "Phục Hồi",
+        "description": "Giấc ngủ, sự vận động linh hoạt và các phương pháp phục hồi chủ động giữ bạn luôn trong cuộc chơi."
+    },
+    "Gear Reviews": {
+        "name": "Đánh Giá Dụng Cụ",
+        "description": "Những nhận định chân thực về giày, trang phục và thiết bị tập luyện — được kiểm chứng dưới tải trọng."
+    },
+    "Sports News": {
+        "name": "Tin Tức Thể Thao",
+        "description": "Cập nhật từ thế giới chạy bộ, thể thao dùng vợt và những phong trào thể hình mới nổi."
+    }
+}

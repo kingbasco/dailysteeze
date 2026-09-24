@@ -1,0 +1,47 @@
+{
+    "Cotton": {
+        "name": "Pamuk"
+    },
+    "Linen": {
+        "name": "Keten"
+    },
+    "Wool": {
+        "name": "Yün"
+    },
+    "Leather": {
+        "name": "Deri"
+    },
+    "Tencel": {
+        "name": "Tencel"
+    },
+    "Recycled": {
+        "name": "Geri dönüştürülmüş"
+    },
+    "Made in Portugal": {
+        "name": "Portekiz'de yapıldı"
+    },
+    "Made in Italy": {
+        "name": "İtalya'da yapıldı"
+    },
+    "Hand-Crafted": {
+        "name": "El Yapımı"
+    },
+    "Vegan": {
+        "name": "vegan"
+    },
+    "Limited Run": {
+        "name": "Sınırlı Çalıştırma"
+    },
+    "Best Seller": {
+        "name": "En çok satan kitap"
+    },
+    "New Arrival": {
+        "name": "Yeni gelen"
+    },
+    "Editor Pick": {
+        "name": "Editörün Seçimi"
+    },
+    "Eco-Friendly": {
+        "name": "Çevre Dostu"
+    }
+}

@@ -1,0 +1,393 @@
+// Compare page — overrides the ecommerce plugin's default styles
+// (vendor/core/plugins/ecommerce/css/front-compare.css) so the shipped
+// markup picks up Amerce's color tokens, typography and button shapes.
+// We deliberately do NOT override the blade — that template carries the
+// share-link, highlight-differences toggle and picker modal we want.
+
+.compare-area {
+    // The plugin's section is `pt-50 pb-50`. Add extra breathing room
+    // before the footer so the compare grid (or empty state) doesn't sit
+    // flush against the next section. Mobile gets a tighter value.
+    padding-bottom: 100px;
+
+    @media (max-width: 767.98px) {
+        padding-bottom: 60px;
+    }
+
+    // Empty state — shared `.bb-empty-state` partial. Drop into a soft
+    // card so it stops looking like a wall of plain text.
+    .bb-empty-state {
+        max-width: 520px;
+        margin: 24px auto 0;
+        padding: 56px 32px;
+        background: var(--bg);
+        border: 1px solid var(--line);
+        border-radius: 16px;
+
+        h3 {
+            font-size: 22px;
+            font-weight: 600;
+            color: var(--text);
+            margin-bottom: 12px;
+        }
+
+        p {
+            color: var(--text-2);
+            font-size: 15px;
+            line-height: 24px;
+            margin-bottom: 24px;
+        }
+
+        // Inherit the amerce pill button style for the CTA.
+        .btn,
+        .btn.btn-outline-primary {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 8px;
+            background: var(--text);
+            color: var(--white);
+            border: 1px solid var(--text);
+            border-radius: 999px;
+            padding: 12px 28px;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 22px;
+            transition: all 0.25s ease;
+
+            &:hover,
+            &:focus {
+                background: var(--primary);
+                border-color: var(--primary);
+                color: var(--white);
+            }
+        }
+    }
+
+    .bb-empty-state-icon {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 72px;
+        height: 72px;
+        margin: 0 auto;
+        border-radius: 50%;
+        background: var(--white);
+        color: var(--primary);
+        border: 1px solid var(--line);
+
+        svg,
+        i {
+            width: 32px;
+            height: 32px;
+            font-size: 32px;
+        }
+    }
+
+    // The layout's centered page title already shows the dynamic SEO title
+    // ("Compare: A vs B vs C") composed by CompareController, so the plugin's
+    // own .compare-page-title <h1> would just print the same string a second
+    // time. Hide the entire <header> wrapper to remove the duplicate.
+    .compare-header {
+        display: none;
+    }
+
+    // Toolbar — slot counter on the left, diff toggle + share link on the right.
+    .compare-toolbar {
+        margin-bottom: 32px;
+    }
+
+    .compare-toolbar-info {
+        font-size: 14px;
+        color: var(--text-2);
+    }
+
+    .compare-diff-toggle {
+        font-size: 14px;
+        color: var(--text);
+        background: var(--bg);
+        border-radius: 999px;
+        padding: 8px 16px;
+        cursor: pointer;
+        user-select: none;
+
+        input[type="checkbox"] {
+            accent-color: var(--primary);
+        }
+    }
+
+    // Outline button → "Copy share link". Borrow the .tf-btn pill shape.
+    .btn.btn-outline-secondary {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: var(--white);
+        color: var(--text);
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        padding: 9px 18px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 22px;
+        transition: all 0.25s ease;
+
+        &:hover,
+        &:focus {
+            background: var(--text);
+            color: var(--white);
+            border-color: var(--text);
+        }
+    }
+
+    // Primary button → "Add to Cart" inside each product cell. Amerce uses
+    // a black pill at rest with a primary-red hover (matches .tf-btn).
+    .compare-product-actions {
+        margin-top: 16px;
+
+        .btn.btn-primary {
+            position: relative; // anchors the loading spinner overlay
+            width: 100%;
+            background: var(--text);
+            border: 1px solid var(--text);
+            color: var(--white);
+            border-radius: 999px;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 22px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            transition: all 0.25s ease;
+
+            &:hover,
+            &:focus {
+                background: var(--primary);
+                border-color: var(--primary);
+                color: var(--white);
+            }
+
+            i {
+                font-size: 18px;
+            }
+
+            // Loading state — front-ecommerce.js adds .btn-loading and sets
+            // disabled while the add-to-cart AJAX is in flight. Hide the
+            // glyph + label and overlay a spinner so the click target stays
+            // the same height (no layout shift).
+            &.btn-loading,
+            &:disabled {
+                pointer-events: none;
+                cursor: wait;
+                opacity: 0.85;
+            }
+
+            &.btn-loading {
+                color: transparent;
+
+                // Drop children from the flex flow entirely (display:none, not
+                // visibility:hidden) so the spinner doesn't have to compete with
+                // hidden-but-still-laid-out icon + text for centering.
+                > * {
+                    display: none;
+                }
+
+                // Spinner is a normal flex child — the button's existing
+                // align-items:center / justify-content:center centers it
+                // perfectly without absolute positioning math.
+                &::after {
+                    content: "";
+                    display: block;
+                    width: 18px;
+                    height: 18px;
+                    box-sizing: border-box;
+                    border: 2px solid rgba(255, 255, 255, 0.35);
+                    border-top-color: var(--white);
+                    border-radius: 50%;
+                    animation: spin 0.7s linear infinite;
+                }
+            }
+        }
+    }
+
+    // Product cell — title, price, stock pill.
+    .compare-product-cell {
+        position: relative;
+        padding: 16px;
+        vertical-align: top;
+    }
+
+    .compare-product-title {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+        color: var(--text);
+        margin: 12px 0 8px;
+
+        a {
+            color: inherit;
+
+            &:hover {
+                color: var(--primary);
+            }
+        }
+    }
+
+    .compare-product-price {
+        margin-bottom: 8px;
+
+        .compare-price,
+        .price-current {
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        .old-price,
+        .price-old {
+            color: var(--text-3);
+            text-decoration: line-through;
+            margin-left: 6px;
+        }
+    }
+
+    // Savings + stock pills — soft tinted backgrounds matching theme cards.
+    .compare-savings-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
+        background: var(--bg-4);
+        color: var(--primary);
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 20px;
+        padding: 4px 10px;
+        border-radius: 999px;
+        margin-bottom: 8px;
+    }
+
+    .compare-stock-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 13px;
+        line-height: 20px;
+        padding: 4px 10px;
+        border-radius: 999px;
+
+        .compare-stock-dot {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: currentColor;
+        }
+
+        &.compare-stock-in {
+            background: rgba(61, 171, 37, 0.1);
+            color: var(--success);
+        }
+
+        &.compare-stock-out {
+            background: rgba(240, 62, 62, 0.1);
+            color: var(--critical);
+        }
+    }
+
+    // Per-product remove (×) button in the top-right of each cell.
+    .compare-product-remove {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        background: transparent;
+        border: 0;
+        color: var(--text-3);
+        font-size: 18px;
+        line-height: 1;
+        padding: 4px;
+        cursor: pointer;
+        transition: color 0.2s ease;
+
+        &:hover,
+        &:focus {
+            color: var(--primary);
+        }
+    }
+
+    // Empty slot card — dashed placeholder with a "+" affordance.
+    .compare-empty-slot {
+        padding: 16px;
+        vertical-align: top;
+    }
+
+    .compare-add-slot,
+    .compare-empty-slot > * {
+        background: var(--bg);
+        border: 1px dashed var(--line);
+        border-radius: 12px;
+        padding: 32px 16px;
+        text-align: center;
+        color: var(--text-2);
+        min-height: 220px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+
+        &:hover {
+            border-color: var(--text);
+            color: var(--text);
+        }
+    }
+
+    // Spec / attribute rows.
+    .compare-group-row .compare-group-title {
+        background: var(--bg);
+        color: var(--text);
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        padding: 12px 16px;
+        border-left: 3px solid var(--primary);
+    }
+
+    .compare-spec-row {
+        .compare-row-label {
+            color: var(--text);
+            font-weight: 500;
+            font-size: 14px;
+            padding: 14px 16px;
+            background: transparent;
+            border-bottom: 1px solid var(--line);
+            vertical-align: middle;
+        }
+
+        .compare-spec-value,
+        .compare-empty-cell {
+            color: var(--text-2);
+            font-size: 14px;
+            padding: 14px 16px;
+            border-bottom: 1px solid var(--line);
+            vertical-align: middle;
+        }
+    }
+
+    // Diff highlight — amerce uses a soft primary tint.
+    [data-spec-row].compare-diff-highlight,
+    [data-spec-row][data-diff="true"] {
+        background: var(--bg-5);
+    }
+
+    // Tighten the table on small screens so the cells don't crush the
+    // product image / title.
+    @media (max-width: 767.98px) {
+        .compare-toolbar {
+            gap: 12px;
+        }
+
+        .compare-product-title {
+            font-size: 15px;
+        }
+    }
+}

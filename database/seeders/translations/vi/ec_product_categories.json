@@ -1,0 +1,686 @@
+{
+    "Accessories": {
+        "name": "Phụ kiện",
+        "description": "Túi xách, ví, thắt lưng và trang sức để hoàn thiện mọi outfit."
+    },
+    "Activity Gyms": {
+        "name": "Thảm Chơi Vận Động",
+        "description": ""
+    },
+    "Air Filters": {
+        "name": "Lọc Gió",
+        "description": "Lọc gió động cơ hiệu năng cao và đạt chuẩn OEM cho luồng khí nạp sạch hơn và tiết kiệm hơn."
+    },
+    "ANC Headphones": {
+        "name": "Tai nghe chống ồn",
+        "description": "Tai nghe chống ồn chủ động cho du lịch, tập trung và những quãng đường đi làm yên tĩnh hơn."
+    },
+    "Apparel": {
+        "name": "Trang Phục",
+        "description": "Áo len mềm mại, áo mưa và những lớp áo ấm áp cho thú cưng dễ bị lạnh."
+    },
+    "Aromatherapy Oils": {
+        "name": "Tinh dầu trị liệu",
+        "description": ""
+    },
+    "Baby Room": {
+        "name": "Phòng Của Bé",
+        "description": "Nôi, đồ treo, túi ngủ và những vật dụng thiết yếu cho phòng bé tạo nên không gian êm dịu."
+    },
+    "Baby Wear": {
+        "name": "Trang Phục Cho Bé",
+        "description": "Bodysuit, giày và trang phục hằng ngày bằng cotton mềm mại cho làn da non nớt của bé."
+    },
+    "Bags": {
+        "name": "Túi Xách",
+        "description": "Túi tote, túi hobo, túi đeo chéo và ví cầm tay bằng da lộn mềm mại và da nguyên tấm."
+    },
+    "Bath Care": {
+        "name": "Chăm Sóc Khi Tắm",
+        "description": "Khăn tắm có mũ, lotion và những vật dụng thiết yếu khi tắm giúp da bé mềm mại và dịu nhẹ."
+    },
+    "Bath Tubs & Seats": {
+        "name": "Chậu & Ghế Tắm",
+        "description": ""
+    },
+    "Beanie": {
+        "name": "Mũ Len",
+        "description": "Mũ len và cashmere với kiểu gân cổ điển và dáng rộng thoải mái."
+    },
+    "Beauty & Cosmetics": {
+        "name": "Làm đẹp & Mỹ phẩm",
+        "description": "Chăm sóc da, nước hoa và mỹ phẩm trang điểm từ các thương hiệu được yêu thích."
+    },
+    "Beds": {
+        "name": "Giường",
+        "description": "Giường bệ, đầu giường bọc vải và những món đồ trụ cột cho phòng ngủ."
+    },
+    "Belts": {
+        "name": "Thắt Lưng",
+        "description": "Thắt lưng bản mảnh và bản tạo điểm nhấn với khóa đồng chải và bạc cổ điển."
+    },
+    "Bibs & Burp Cloths": {
+        "name": "Yếm & Khăn Ợ Sữa",
+        "description": ""
+    },
+    "Body Care": {
+        "name": "Chăm Sóc Cơ Thể",
+        "description": "Sữa dưỡng thể, tẩy tế bào chết và những nghi thức tắm cho làn da mềm mại, rạng rỡ từ đầu đến chân."
+    },
+    "Bodysuits & Onesies": {
+        "name": "Bodysuit & Áo Liền Quần",
+        "description": ""
+    },
+    "Booties & Socks": {
+        "name": "Giày & Tất",
+        "description": ""
+    },
+    "Bottles & Teats": {
+        "name": "Bình Sữa & Núm Ti",
+        "description": ""
+    },
+    "Bottoms": {
+        "name": "Quần & Váy",
+        "description": "Quần tây, jean, chân váy và quần short với phom dáng hiện đại."
+    },
+    "Bracelets": {
+        "name": "Vòng tay",
+        "description": "Vòng tay tennis, vòng tay cứng và mắt xích để đeo xếp lớp hoặc đeo riêng."
+    },
+    "Brake Hydraulics": {
+        "name": "Hệ Thủy Lực Phanh",
+        "description": "Bơm trợ lực lái, xy-lanh chính và các bộ phận thủy lực được chế tạo để bền lâu."
+    },
+    "Brake Pads": {
+        "name": "Má Phanh",
+        "description": "Má phanh gốm và bán kim loại cao cấp cho lực phanh chắc chắn, tự tin."
+    },
+    "Brake Rotors": {
+        "name": "Đĩa Phanh",
+        "description": "Đĩa phanh thông gió và xẻ rãnh được thiết kế để tản nhiệt và bền bỉ."
+    },
+    "Break Scheduling": {
+        "name": "Lên lịch nghỉ giải lao",
+        "description": ""
+    },
+    "Cable": {
+        "name": "Cáp",
+        "description": "Cáp sạc USB-C, Lightning và cáp bọc dù được chế tạo để bền lâu."
+    },
+    "Calming Sounds": {
+        "name": "Âm thanh xoa dịu",
+        "description": ""
+    },
+    "Calming Supplements": {
+        "name": "Thực phẩm bổ sung xoa dịu",
+        "description": ""
+    },
+    "Chairs": {
+        "name": "Ghế",
+        "description": "Ghế thư giãn, ghế tạo điểm nhấn và ghế ăn được tuyển chọn từ các nghệ nhân chế tác."
+    },
+    "Clothing": {
+        "name": "Quần Áo",
+        "description": "Áo thun cotton, áo len, áo khoác và những món đồ cơ bản theo mùa cho tủ đồ hiện đại."
+    },
+    "Coping Methods": {
+        "name": "Phương pháp ứng phó",
+        "description": ""
+    },
+    "Cribs & Bassinets": {
+        "name": "Cũi & Nôi",
+        "description": ""
+    },
+    "Custom T-Shirts": {
+        "name": "Áo Thun Tùy Chỉnh",
+        "description": "Áo thun cotton cá nhân hóa với hình ảnh, tên và những kỷ niệm yêu thích được in màu sống động."
+    },
+    "Cutting Tools": {
+        "name": "Dụng Cụ Cắt",
+        "description": "Lưỡi cưa, kéo cắt và dụng cụ cắt được thiết kế cho những đường cắt gọn gàng."
+    },
+    "Daily Stress Log": {
+        "name": "Nhật ký căng thẳng hằng ngày",
+        "description": ""
+    },
+    "Deep Breathing": {
+        "name": "Thở sâu",
+        "description": ""
+    },
+    "Desks": {
+        "name": "Bàn làm việc",
+        "description": "Bàn đứng, bàn viết và bàn làm việc tại nhà nhỏ gọn được tạo ra để bền lâu."
+    },
+    "Diamonds": {
+        "name": "Kim cương",
+        "description": "Đá rời đạt chứng nhận GIA và các dáng cổ điển có sẵn dành cho nhà sưu tầm."
+    },
+    "Digital Detox": {
+        "name": "Thải độc kỹ thuật số",
+        "description": ""
+    },
+    "Dresses": {
+        "name": "Đầm",
+        "description": "Đầm mini, midi và maxi cho mọi dịp."
+    },
+    "Drilling Tools": {
+        "name": "Dụng Cụ Khoan",
+        "description": "Mũi khoan, máy khoan búa và máy vặn vít va đập cho mọi loại vật liệu."
+    },
+    "EarPhone": {
+        "name": "Tai Nghe Nhét Tai",
+        "description": "Tai nghe true wireless và tai nghe in-ear với âm thanh phong phú và thời lượng pin dài."
+    },
+    "Earrings": {
+        "name": "Hoa tai",
+        "description": "Hoa tai nụ, giọt nước và khuyên tròn chế tác với kim cương, ngọc trai và đá quý."
+    },
+    "Electrical Tools": {
+        "name": "Dụng Cụ Điện Lực",
+        "description": "Đồng hồ vạn năng, kìm tuốt dây và thiết bị kiểm tra cho công việc điện gọn gàng."
+    },
+    "Electronics": {
+        "name": "Điện tử",
+        "description": "Tai nghe, thiết bị nhà thông minh và công nghệ cá nhân đáng để sở hữu."
+    },
+    "Emotional Awareness": {
+        "name": "Nhận thức cảm xúc",
+        "description": ""
+    },
+    "Emotional Support Tips": {
+        "name": "Mẹo hỗ trợ cảm xúc",
+        "description": ""
+    },
+    "Ergonomic Chairs": {
+        "name": "Ghế Công Thái Học",
+        "description": "Ghế làm việc nâng đỡ tư thế, thiết kế cho nhiều giờ làm việc tập trung."
+    },
+    "Fastening Tools": {
+        "name": "Dụng Cụ Bắt Vít",
+        "description": "Súng bắn đinh, máy bấm ghim và máy vặn vít va đập cho việc lắp ráp nhanh và đồng đều."
+    },
+    "Feeding Gear": {
+        "name": "Dụng Cụ Cho Bé Ăn",
+        "description": "Bình sữa, yếm và những vật dụng thiết yếu khi cho bé ăn được thiết kế để bữa ăn an toàn và dễ dàng."
+    },
+    "Feeding Sets & Utensils": {
+        "name": "Bộ Đồ Ăn & Dụng Cụ",
+        "description": ""
+    },
+    "Footwear": {
+        "name": "Giày dép",
+        "description": "Sneaker, boot, giày cao gót và giày bệt từ các nhà sản xuất độc lập hàng đầu."
+    },
+    "Fragrance": {
+        "name": "Nước Hoa",
+        "description": "Nước hoa, xịt thơm cơ thể và hương thơm cho không gian được chế tác từ những nguyên liệu tinh tế."
+    },
+    "Fresh From Nature": {
+        "name": "Tươi từ thiên nhiên",
+        "description": "Trái cây, rau củ theo mùa và đồ lên men được thu hoạch từ những trang trại hữu cơ được chứng nhận."
+    },
+    "Gaming Ergonomics": {
+        "name": "Công Thái Học Cho Game Thủ",
+        "description": "Ghế chơi game công thái học và phụ kiện được thiết kế cho những phiên chơi dài."
+    },
+    "Gaming Headsets": {
+        "name": "Tai nghe gaming",
+        "description": "Tai nghe có dây và không dây độ trễ thấp được tinh chỉnh cho lối chơi cạnh tranh và đắm chìm."
+    },
+    "Gifts & Occasions": {
+        "name": "Quà Tặng & Dịp Lễ",
+        "description": "Bộ quà tặng được tuyển chọn cho sinh nhật, đám cưới, ngày kỷ niệm và mọi cột mốc khác."
+    },
+    "Grains & Superfoods": {
+        "name": "Ngũ cốc & siêu thực phẩm",
+        "description": "Ngũ cốc cổ, hạt nảy mầm và siêu thực phẩm được trồng không dùng chất tổng hợp."
+    },
+    "Grooming": {
+        "name": "Chăm Sóc Lông",
+        "description": "Sữa tắm, lược chải và dụng cụ giữ cho bộ lông sạch sẽ và làn da khỏe mạnh."
+    },
+    "Grounding Practices": {
+        "name": "Thực hành định tâm",
+        "description": ""
+    },
+    "Guided Meditation": {
+        "name": "Thiền có hướng dẫn",
+        "description": ""
+    },
+    "Gym": {
+        "name": "phòng tập thể dục",
+        "description": "Thiết bị rèn luyện sức mạnh được chế tạo cho phòng tập tạ và các bài tập có số lần tập cao."
+    },
+    "Gym Shoes": {
+        "name": "Giày Tập Gym",
+        "description": "Giày tập đa năng và giày nâng tạ với đế vững chắc và hỗ trợ ngang."
+    },
+    "Haircare": {
+        "name": "Chăm Sóc Tóc",
+        "description": "Dầu gội, mặt nạ và dụng cụ tạo kiểu giúp phục hồi độ bóng mượt và tôn trọng sức khỏe da đầu."
+    },
+    "Hand Tools": {
+        "name": "Dụng Cụ Cầm Tay",
+        "description": "Búa, cờ lê, tua vít và những vật dụng thiết yếu của mọi thắt lưng đồ nghề."
+    },
+    "Hand Weights": {
+        "name": "Tạ Tay",
+        "description": "Tạ đơn, tạ ấm và tạ dễ cầm nắm cho bài tập sức mạnh tại nhà."
+    },
+    "Hats & Mittens": {
+        "name": "Mũ & Bao Tay",
+        "description": ""
+    },
+    "Headphone": {
+        "name": "Tai Nghe Chụp Tai",
+        "description": "Tai nghe trùm tai, đặt trên tai và chống ồn chủ động cho việc nghe nhạc hằng ngày và trong phòng thu."
+    },
+    "Health & Wellness": {
+        "name": "Sức Khỏe & Thể Trạng",
+        "description": "Thực phẩm bổ sung, chăm sóc răng miệng và sản phẩm làm dịu được hỗ trợ bởi nghiên cứu thú y."
+    },
+    "Health Devices": {
+        "name": "Thiết bị sức khỏe",
+        "description": "Thiết bị theo dõi thông minh, đèn trị liệu ánh sáng và các thiết bị chăm sóc sức khỏe hòa hợp với thói quen của bạn."
+    },
+    "Herbal Teas": {
+        "name": "Trà thảo mộc",
+        "description": ""
+    },
+    "Herbs & Spices": {
+        "name": "Thảo mộc & gia vị",
+        "description": "Thảo mộc và gia vị nguồn gốc đơn lẻ được phơi khô nhẹ nhàng để giữ trọn tinh dầu thơm."
+    },
+    "Home & Furniture": {
+        "name": "Nhà & Nội thất",
+        "description": "Đồ phòng khách, phòng ngủ và phòng ăn với nguồn gốc bền vững."
+    },
+    "Home Decor": {
+        "name": "Trang Trí Nhà Cửa",
+        "description": "Đồ trang trí lấy cảm hứng từ thực vật — khung tranh, bình hoa và điểm nhấn mang thiên nhiên vào nhà."
+    },
+    "Home Office Setup": {
+        "name": "Thiết Lập Văn Phòng Tại Nhà",
+        "description": "Nội thất và đèn chiếu sáng được tuyển chọn cho không gian làm việc từ xa hiện đại."
+    },
+    "Hooded Towels": {
+        "name": "Khăn Tắm Có Mũ",
+        "description": ""
+    },
+    "In-Ear Monitors": {
+        "name": "Tai nghe in-ear monitor",
+        "description": "Tai nghe IEM với màng loa balanced armature và dynamic cho biểu diễn sân khấu và nghe audiophile."
+    },
+    "Jewelry": {
+        "name": "Trang Sức",
+        "description": "Bông tai tạo điểm nhấn, vòng cổ nhiều lớp và nhẫn xếp tầng cho mọi mùa."
+    },
+    "Jewelry & Watches": {
+        "name": "Trang sức & Đồng hồ",
+        "description": "Trang sức cao cấp, demi-fine và đồng hồ cơ."
+    },
+    "Keyboard": {
+        "name": "Bàn Phím",
+        "description": "Phụ kiện bàn phím và vật dụng thiết yếu cho bàn làm việc của người sáng tạo."
+    },
+    "Keyboards": {
+        "name": "Bàn phím",
+        "description": "Bàn phím cơ và bàn phím mỏng được thiết kế cho sự thoải mái khi gõ và năng suất."
+    },
+    "Learn More": {
+        "name": "Tìm Hiểu Thêm",
+        "description": "Tuyển chọn đồ điện tử nổi bật — khám phá thiết bị, phụ kiện và gadget mới nhất."
+    },
+    "Leggings": {
+        "name": "xà cạp",
+        "description": "Quần legging cạp cao co dãn 4 chiều, chống squat."
+    },
+    "Lifestyle Adjustments": {
+        "name": "Điều chỉnh lối sống",
+        "description": ""
+    },
+    "Lifestyle Shoes": {
+        "name": "Giày Phong Cách Sống",
+        "description": "Những dáng giày cổ điển và giày court hiện đại phối hợp với trang phục hàng ngày."
+    },
+    "Lifting Gear": {
+        "name": "Thiết Bị Nâng Hạ",
+        "description": "Pa lăng, dây cáp và phụ kiện chằng buộc cho việc xử lý tải trọng nặng an toàn."
+    },
+    "Lighting": {
+        "name": "Hệ Thống Đèn",
+        "description": "Bóng LED, đèn pha projector và đèn phụ kiện cho tầm nhìn và phong cách."
+    },
+    "Lotions & Oils": {
+        "name": "Lotion & Dầu",
+        "description": ""
+    },
+    "Makeup": {
+        "name": "Trang Điểm",
+        "description": "Những vật dụng thiết yếu cho môi, mắt và làn da với sắc tố lành tính và độ che phủ có thể tăng dần."
+    },
+    "Measuring Tools": {
+        "name": "Dụng Cụ Đo Đạc",
+        "description": "Thước cuộn, máy cân mực laser và thước ke vuông cho độ chính xác trên công trường."
+    },
+    "Mind Balance": {
+        "name": "Cân bằng tâm trí",
+        "description": "Nhật ký, dụng cụ tập thở và các thực hành chánh niệm cho sự cân bằng nội tâm."
+    },
+    "Mittens": {
+        "name": "Găng Tay Bao",
+        "description": "Găng tay bao và găng tay lót cashmere cho việc giữ ấm những ngày lạnh giá."
+    },
+    "Mobiles & Night Lights": {
+        "name": "Đồ Treo & Đèn Ngủ",
+        "description": ""
+    },
+    "Monitor Arms": {
+        "name": "Tay đỡ màn hình",
+        "description": "Tay đỡ một và hai màn hình giúp lấy lại không gian bàn và căn màn hình ngang tầm mắt."
+    },
+    "Mood Tracker": {
+        "name": "Bảng theo dõi tâm trạng",
+        "description": ""
+    },
+    "Mouse": {
+        "name": "Chuột",
+        "description": "Chuột máy tính và phụ kiện con trỏ cho không gian làm việc hằng ngày."
+    },
+    "Mousepad": {
+        "name": "Lót Chuột",
+        "description": "Thảm bàn, đế sạc và bề mặt làm việc."
+    },
+    "Mouses": {
+        "name": "Chuột",
+        "description": "Chuột công thái học switch êm với nút tùy chọn và cảm biến DPI cao cho điều khiển con trỏ mượt mà."
+    },
+    "Mugs & Drinkware": {
+        "name": "Cốc & Ly Uống Nước",
+        "description": "Cốc, ly giữ nhiệt và bình nước tùy chỉnh in hình ảnh và những thiết kế độc nhất vô nhị."
+    },
+    "Natural Remedies": {
+        "name": "Phương thuốc tự nhiên",
+        "description": ""
+    },
+    "Necklaces": {
+        "name": "Dây chuyền",
+        "description": "Mặt dây, dây chuyền mắt xích và dây chuyền tạo điểm nhấn bằng vàng 14k và 18k."
+    },
+    "Networking": {
+        "name": "Mạng",
+        "description": "Phụ kiện nhà thông minh và mạng kết nối."
+    },
+    "New Arrivals": {
+        "name": "Hàng Mới Về",
+        "description": "Những mẫu mới nhất từ đội ngũ nhà thiết kế của chúng tôi — hình khối và lớp hoàn thiện mới mẻ."
+    },
+    "Nursery Decor": {
+        "name": "Trang Trí Phòng Bé",
+        "description": ""
+    },
+    "Nutrition": {
+        "name": "Dinh Dưỡng",
+        "description": "Hạt cao cấp, thức ăn ướt và bánh thưởng được bào chế cho mọi giai đoạn cuộc đời."
+    },
+    "Oil Filters": {
+        "name": "Lọc Dầu",
+        "description": "Lọc dầu lưu lượng cao giúp kéo dài tuổi thọ động cơ và đạt hiệu năng tối ưu."
+    },
+    "Outdoor Shoes": {
+        "name": "Giày Ngoài Trời",
+        "description": "Giày chạy địa hình và đi bộ đường dài được thiết kế để bám tốt, ổn định và chinh phục địa hình gồ ghề."
+    },
+    "Outerwear": {
+        "name": "Áo khoác",
+        "description": "Áo khoác, jacket và áo overshirt cho mọi mùa."
+    },
+    "Pacifiers & Soothers": {
+        "name": "Ti Giả & Đồ Trấn An",
+        "description": ""
+    },
+    "Pantry Essentials": {
+        "name": "Thực phẩm thiết yếu",
+        "description": "Bột mì hữu cơ, chất tạo ngọt và thực phẩm thiết yếu cho việc nấu ăn sạch mỗi ngày."
+    },
+    "Personalized Decor": {
+        "name": "Đồ Trang Trí Cá Nhân Hóa",
+        "description": "Lót ly khắc tên, hộp lưu niệm và đồ trang trí khiến mọi căn phòng cảm thấy thân thuộc hơn."
+    },
+    "Phone Cases": {
+        "name": "Ốp Lưng Điện Thoại",
+        "description": "Ốp lưng điện thoại mỏng, đã kiểm định chống rơi với hình ảnh hoặc thiết kế tùy chỉnh — cho mọi dòng máy mới."
+    },
+    "Photo Books": {
+        "name": "Album Ảnh",
+        "description": "Album ảnh bìa cứng cao cấp cho đám cưới, những chuyến đi và những khoảnh khắc đáng lưu giữ trên giấy."
+    },
+    "Pickleball": {
+        "name": "Pickleball",
+        "description": "Vợt, bóng và dụng cụ pickleball cho môn thể thao phát triển nhanh nhất."
+    },
+    "Pillows": {
+        "name": "Gối Tựa",
+        "description": "Gối tựa in tùy chỉnh biến chiếc ghế sofa hoặc phòng ngủ thành phòng trưng bày cá nhân."
+    },
+    "Plant Care & Nutrients": {
+        "name": "Chăm Sóc Cây & Dinh Dưỡng",
+        "description": "Phân bón, chất cải tạo đất và thuốc bổ cây cho sự phát triển ổn định, khỏe mạnh."
+    },
+    "Plant Tools": {
+        "name": "Dụng Cụ Làm Vườn",
+        "description": "Kéo cắt tỉa, bình tưới và bay làm vườn được thiết kế cho việc chăm cây hằng ngày."
+    },
+    "Planters & Pots": {
+        "name": "Chậu Trồng Cây",
+        "description": "Chậu gốm, đất nung và chậu đan giúp tôn lên mọi không gian nội thất."
+    },
+    "Plants & Garden": {
+        "name": "Cây Cảnh & Sân Vườn",
+        "description": "Cây trong nhà và ngoài trời sẵn sàng về với ngôi nhà tiếp theo của chúng."
+    },
+    "Play Time": {
+        "name": "Giờ Vui Chơi",
+        "description": "Vòng ngậm nướu bằng gỗ, thú bông và những người bạn đồ chơi nhẹ nhàng cho sự phát triển sớm."
+    },
+    "Plush Toys": {
+        "name": "Thú Bông",
+        "description": ""
+    },
+    "Power Tools": {
+        "name": "Dụng Cụ Điện",
+        "description": "Máy khoan, máy mài và máy cưa dùng pin được chế tạo cho độ tin cậy trên công trường."
+    },
+    "Progressive Relaxation": {
+        "name": "Thư giãn tịnh tiến",
+        "description": ""
+    },
+    "Pure Organic Oils": {
+        "name": "Dầu hữu cơ nguyên chất",
+        "description": "Dầu ép lạnh, giấm và nước sốt được chiết xuất bằng phương pháp nhiệt thấp, kiên nhẫn."
+    },
+    "Relaxation": {
+        "name": "Thư giãn",
+        "description": "Liệu pháp hương thơm, dụng cụ thiền và các vật dụng giảm căng thẳng cho việc thả lỏng mỗi ngày."
+    },
+    "Reset Routines": {
+        "name": "Thói quen tái thiết lập",
+        "description": ""
+    },
+    "Rings": {
+        "name": "Nhẫn",
+        "description": "Nhẫn kim cương đơn, nhẫn vĩnh cửu và nhẫn signet cho cả khoảnh khắc thường nhật lẫn dấu mốc."
+    },
+    "Road Shoes": {
+        "name": "Giày Chạy Đường Phố",
+        "description": "Giày tập hàng ngày được tinh chỉnh cho mặt đường, với đế giữa êm ái và đế ngoài bền bỉ."
+    },
+    "Running": {
+        "name": "Đang chạy",
+        "description": "Trang phục chạy bộ nhẹ có viền phản quang và vải dệt kim thấm mồ hôi."
+    },
+    "Running Shoes": {
+        "name": "Giày Chạy Bộ",
+        "description": "Giày tập có đệm và giày đua nhẹ cho mọi cự ly."
+    },
+    "Safety Gear": {
+        "name": "Đồ Bảo Hộ",
+        "description": "Mũ bảo hộ, giày và trang phục phản quang đạt tiêu chuẩn OSHA."
+    },
+    "Shoes": {
+        "name": "Giày Dép",
+        "description": "Bốt da, giày lười và các dáng giày cổ thấp phù hợp qua mọi mùa."
+    },
+    "Site Equipment": {
+        "name": "Thiết Bị Công Trường",
+        "description": "Máy phát điện, máy trộn và thiết bị công trường giúp công trình luôn vận hành."
+    },
+    "Skincare": {
+        "name": "Chăm Sóc Da",
+        "description": "Sữa rửa mặt, serum và kem dưỡng được điều chế cho mọi vấn đề và tình trạng da."
+    },
+    "Sleep & Recovery": {
+        "name": "Giấc ngủ & phục hồi",
+        "description": ""
+    },
+    "Sleep Hygiene": {
+        "name": "Vệ sinh giấc ngủ",
+        "description": ""
+    },
+    "Sleep-Friendly Herbs": {
+        "name": "Thảo mộc thân thiện với giấc ngủ",
+        "description": ""
+    },
+    "Sleeping Bags": {
+        "name": "Túi Ngủ",
+        "description": ""
+    },
+    "Sleepwear": {
+        "name": "Đồ Ngủ",
+        "description": ""
+    },
+    "Smart Lamp": {
+        "name": "Đèn Thông Minh",
+        "description": "Đèn thông minh Wi-Fi với độ ấm, màu sắc điều chỉnh được và tích hợp trợ lý ảo."
+    },
+    "Smart Lights": {
+        "name": "Đèn thông minh",
+        "description": "Đèn bàn LED dịu mắt với tông màu theo nhịp sinh học và sạc không dây tích hợp."
+    },
+    "Smart Watches": {
+        "name": "Đồng Hồ Thông Minh",
+        "description": "Vòng đeo theo dõi sức khỏe, đồng hồ thông minh và thiết bị đeo gắn liền với thói quen hằng ngày của bạn."
+    },
+    "Sofas": {
+        "name": "Ghế Sofa",
+        "description": "Ghế sofa hai và ba chỗ, sofa góc module và ghế đôi tạo điểm nhấn."
+    },
+    "Speaker": {
+        "name": "Loa",
+        "description": "Loa Bluetooth di động và âm thanh gia đình cho âm thanh tràn ngập căn phòng ở bất cứ đâu."
+    },
+    "Speed Shoes": {
+        "name": "Giày Tốc Độ",
+        "description": "Giày đua có tấm carbon và giày chạy tempo được làm cho những kỷ lục cá nhân và ngày thi đấu."
+    },
+    "Sports & Fitness": {
+        "name": "Thể thao & Thể hình",
+        "description": "Đồ tập, dụng cụ yoga và phụ kiện hồi phục thiết yếu."
+    },
+    "Sports Apparel": {
+        "name": "Trang Phục Thể Thao",
+        "description": "Quần short, áo và đồ mặc lớp hiệu năng cao được thiết kế cho chuyển động."
+    },
+    "Standing Desks": {
+        "name": "Bàn Đứng",
+        "description": "Bàn nâng hạ điều chỉnh độ cao, được chế tạo để vận hành êm ái mỗi ngày."
+    },
+    "Storage": {
+        "name": "Lưu Trữ",
+        "description": "Kệ, tủ buffet và tủ thấp được chế tác để sắp xếp một cách đẹp mắt."
+    },
+    "Storages": {
+        "name": "Tủ lưu trữ",
+        "description": "Tủ hồ sơ, ngăn kéo và kệ mô-đun giúp không gian làm việc của bạn gọn gàng và ngăn nắp."
+    },
+    "Stress Management Tools": {
+        "name": "Công cụ quản lý căng thẳng",
+        "description": ""
+    },
+    "Stress-Level Quiz": {
+        "name": "Bài kiểm tra mức độ căng thẳng",
+        "description": ""
+    },
+    "Supplements": {
+        "name": "Thực phẩm bổ sung",
+        "description": "Rau xanh hằng ngày, adaptogen và thực phẩm bổ sung hỗ trợ tâm trạng được chế tác từ nguyên liệu sạch."
+    },
+    "Tables": {
+        "name": "Bàn",
+        "description": "Bàn ăn, bàn trà và bàn phụ bằng gỗ, đá và thép."
+    },
+    "Teethers": {
+        "name": "Vòng Ngậm Nướu",
+        "description": ""
+    },
+    "Tennis": {
+        "name": "quần vợt",
+        "description": "Trang phục quần vợt sẵn sàng trên sân - váy xếp li, váy polo, quần đùi biểu diễn."
+    },
+    "Tops & Shirts": {
+        "name": "Áo & Sơ mi",
+        "description": "Áo thun, áo cài nút, áo dệt kim và áo blouse được cắt may cho ngày thường."
+    },
+    "Tote Bags": {
+        "name": "Túi Tote",
+        "description": "Túi tote cotton siêu bền in hình ảnh, tên viết tắt hoặc tranh vẽ nguyên bản."
+    },
+    "Toys": {
+        "name": "Đồ Chơi",
+        "description": "Đồ gặm, bạn đồng hành nhồi bông và trò chơi giải đố giúp giờ chơi thêm ý nghĩa."
+    },
+    "Travel": {
+        "name": "Du Lịch",
+        "description": "Túi vận chuyển, đai yếm và đồ dùng du lịch cho những chuyến đi không lo căng thẳng."
+    },
+    "Wall Art": {
+        "name": "Tranh Treo Tường",
+        "description": "Tranh in ảnh, áp phích và tranh canvas biến những khoảnh khắc yêu thích thành tác phẩm ấn tượng."
+    },
+    "Wallets": {
+        "name": "Ví",
+        "description": "Ví dập nổi, ví đựng thẻ và ví đựng tiền xu cho việc mang theo hằng ngày tinh tế."
+    },
+    "Washcloths & Sponges": {
+        "name": "Khăn Lau & Bọt Biển",
+        "description": ""
+    },
+    "Wired Studio": {
+        "name": "Tai nghe phòng thu có dây",
+        "description": "Tai nghe phòng thu có dây đạt chuẩn tham chiếu cho phối khí, mastering và nghe phân tích."
+    },
+    "Wireless Over-Ear": {
+        "name": "Tai nghe trùm tai không dây",
+        "description": "Tai nghe trùm tai cao cấp với âm thanh phong phú, dải tần đầy đủ và sự thoải mái cả ngày."
+    },
+    "Wooden Toys": {
+        "name": "Đồ Chơi Gỗ",
+        "description": ""
+    },
+    "Work Essentials": {
+        "name": "Vật Dụng Làm Việc",
+        "description": "Giá đỡ màn hình, khay bàn phím và phụ kiện hoàn thiện một không gian làm việc lành mạnh."
+    },
+    "Workload Balancing": {
+        "name": "Cân bằng khối lượng công việc",
+        "description": ""
+    },
+    "Yoga": {
+        "name": "Yoga",
+        "description": "Trang phục và phụ kiện yoga được thiết kế để mang lại hơi thở, sự cân bằng và dòng chảy."
+    },
+    "Yoga Mats": {
+        "name": "Thảm Yoga",
+        "description": "Thảm yoga và pilates độ bám cao cho luyện tập tại studio và tại nhà."
+    }
+}

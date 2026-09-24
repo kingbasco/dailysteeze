@@ -1,0 +1,46 @@
+{
+    "Homepage": {
+        "name": "Trang chủ",
+        "description": "Amerce — trang chủ trải nghiệm thương mại điện tử đa năng."
+    },
+    "About": {
+        "name": "Giới thiệu",
+        "description": "Giới thiệu Amerce — câu chuyện thương hiệu, tiêu chuẩn nguồn cung và đội ngũ đứng sau từng sản phẩm."
+    },
+    "Contact": {
+        "name": "Liên hệ",
+        "description": "Liên hệ với đội ngũ chăm sóc khách hàng và hợp tác của Amerce."
+    },
+    "FAQ": {
+        "name": "Câu hỏi thường gặp",
+        "description": "Câu hỏi thường gặp về đơn hàng, vận chuyển, đổi trả và quản lý tài khoản."
+    },
+    "Privacy Policy": {
+        "name": "Chính sách bảo mật",
+        "description": "Cách Amerce thu thập, sử dụng và bảo vệ thông tin cá nhân của bạn."
+    },
+    "Terms & Conditions": {
+        "name": "Điều khoản & Điều kiện",
+        "description": "Các điều khoản pháp lý áp dụng khi bạn sử dụng cửa hàng Amerce."
+    },
+    "Returns & Refunds": {
+        "name": "Đổi trả & Hoàn tiền",
+        "description": "Chính sách đổi trả 30 ngày và quy trình đổi trả từng bước của chúng tôi."
+    },
+    "Shipping": {
+        "name": "Vận chuyển",
+        "description": "Các phương thức vận chuyển trong nước và quốc tế, thời gian và cước phí."
+    },
+    "Our Stores": {
+        "name": "Hệ thống cửa hàng",
+        "description": "Ghé thăm Amerce trực tiếp — các cửa hàng chính và đối tác trên toàn thế giới."
+    },
+    "Blog": {
+        "name": "Tạp chí",
+        "description": "Hướng dẫn phối đồ, câu chuyện thương hiệu và nội dung hậu trường từ đội ngũ biên tập Amerce."
+    },
+    "Careers": {
+        "name": "Tuyển dụng",
+        "description": "Tham gia Amerce — các vị trí đang mở, giá trị văn hóa và quyền lợi dành cho đội ngũ."
+    }
+}

@@ -1,0 +1,686 @@
+{
+    "Accessories": {
+        "name": "Accessoires",
+        "description": "Sacs à main, portefeuilles, ceintures et bijoux pour compléter n'importe quelle tenue."
+    },
+    "Activity Gyms": {
+        "name": "Salles d'activités",
+        "description": ""
+    },
+    "Air Filters": {
+        "name": "Filtres à air",
+        "description": "Filtre à air moteur haute performance et normes OEM pour un débit d'air d'admission plus propre et plus économique."
+    },
+    "ANC Headphones": {
+        "name": "Écouteurs ANC",
+        "description": "Casque à réduction de bruit active pour les voyages, la concentration et les déplacements plus silencieux."
+    },
+    "Apparel": {
+        "name": "Vêtements",
+        "description": "Pulls doux, imperméables et couches chaudes pour les animaux qui ont facilement froid."
+    },
+    "Aromatherapy Oils": {
+        "name": "Huiles d'aromathérapie",
+        "description": ""
+    },
+    "Baby Room": {
+        "name": "Chambre bébé",
+        "description": "Berceaux, cintres, gigoteuses et autres essentiels de la chambre de bébé créent un espace apaisant."
+    },
+    "Baby Wear": {
+        "name": "Vêtements pour bébé",
+        "description": "Body, chaussures et vêtements de tous les jours en coton doux pour la peau tendre de votre bébé."
+    },
+    "Bags": {
+        "name": "Sacs",
+        "description": "Sacs fourre-tout, sacs hobo, sacs à bandoulière et pochettes en daim souple et cuir pleine fleur."
+    },
+    "Bath Care": {
+        "name": "Soins du bain",
+        "description": "Les serviettes à capuche, la lotion et les articles de bain essentiels aident à garder la peau de bébé douce et douce."
+    },
+    "Bath Tubs & Seats": {
+        "name": "Baignoires et sièges",
+        "description": ""
+    },
+    "Beanie": {
+        "name": "Bonnet",
+        "description": "Bonnet en laine et cachemire avec motif côtelé classique et coupe ample confortable."
+    },
+    "Beauty & Cosmetics": {
+        "name": "Beauté et cosmétiques",
+        "description": "Soins de la peau, parfums et maquillage de marques préférées."
+    },
+    "Beds": {
+        "name": "Lits",
+        "description": "Lits plateforme, têtes de lit rembourrées et piliers de chambre."
+    },
+    "Belts": {
+        "name": "Ceintures",
+        "description": "Ceintures fines et ornées rehaussées de boucles classiques en argent et en bronze brossé."
+    },
+    "Bibs & Burp Cloths": {
+        "name": "Bavoirs et torchons",
+        "description": ""
+    },
+    "Body Care": {
+        "name": "Soins du corps",
+        "description": "Laits corporels, gommages et rituels de bain pour une peau douce et éclatante de la tête aux pieds."
+    },
+    "Bodysuits & Onesies": {
+        "name": "Bodys et combinaisons",
+        "description": ""
+    },
+    "Booties & Socks": {
+        "name": "Chaussons et chaussettes",
+        "description": ""
+    },
+    "Bottles & Teats": {
+        "name": "Biberons et tétines",
+        "description": ""
+    },
+    "Bottoms": {
+        "name": "Bas",
+        "description": "Pantalons, jeans, jupes et shorts aux formes modernes."
+    },
+    "Bracelets": {
+        "name": "Bracelets",
+        "description": "Bracelets tennis, bracelets unis et maillons à porter en superposition ou seuls."
+    },
+    "Brake Hydraulics": {
+        "name": "Circuit hydraulique de freinage",
+        "description": "La pompe de direction assistée, le maître-cylindre et les composants hydrauliques sont construits pour durer."
+    },
+    "Brake Pads": {
+        "name": "Plaquettes de frein",
+        "description": "Les plaquettes de frein en céramique et semi-métalliques de qualité supérieure offrent une puissance de freinage forte et sûre."
+    },
+    "Brake Rotors": {
+        "name": "Disques de frein",
+        "description": "Les disques de frein ventilés et fendus sont conçus pour dissiper la chaleur et être durables."
+    },
+    "Break Scheduling": {
+        "name": "Planification des pauses",
+        "description": ""
+    },
+    "Cable": {
+        "name": "Câble",
+        "description": "Les câbles de chargement USB-C, Lightning et blindés sont conçus pour durer."
+    },
+    "Calming Sounds": {
+        "name": "Des sons apaisants",
+        "description": ""
+    },
+    "Calming Supplements": {
+        "name": "Suppléments apaisants",
+        "description": ""
+    },
+    "Chairs": {
+        "name": "Chaises",
+        "description": "Les fauteuils de relaxation, les fauteuils d'appoint et les chaises de salle à manger sont sélectionnés auprès d'artisans."
+    },
+    "Clothing": {
+        "name": "Vêtements",
+        "description": "T-shirts, pulls, vestes et basiques de saison en coton pour la garde-robe moderne."
+    },
+    "Coping Methods": {
+        "name": "Méthodes d'adaptation",
+        "description": ""
+    },
+    "Cribs & Bassinets": {
+        "name": "Berceaux et berceaux",
+        "description": ""
+    },
+    "Custom T-Shirts": {
+        "name": "T-shirts personnalisés",
+        "description": "T-shirt en coton personnalisé avec photo, nom et souvenirs préférés imprimés en couleurs vives."
+    },
+    "Cutting Tools": {
+        "name": "Outils de coupe",
+        "description": "Les lames de scie, les cisailles et les outils de coupe sont conçus pour des coupes nettes."
+    },
+    "Daily Stress Log": {
+        "name": "Journal de stress quotidien",
+        "description": ""
+    },
+    "Deep Breathing": {
+        "name": "Respiration profonde",
+        "description": ""
+    },
+    "Desks": {
+        "name": "Bureaux",
+        "description": "Les bureaux debout compacts, les bureaux d'écriture et les bureaux à domicile sont conçus pour durer."
+    },
+    "Diamonds": {
+        "name": "Diamants",
+        "description": "Des pierres en vrac certifiées GIA et des formes classiques sont disponibles pour les collectionneurs."
+    },
+    "Digital Detox": {
+        "name": "Détox numérique",
+        "description": ""
+    },
+    "Dresses": {
+        "name": "Robes",
+        "description": "Des robes mini, midi et maxi pour toutes les occasions."
+    },
+    "Drilling Tools": {
+        "name": "Outils de forage",
+        "description": "Perceuses, perceuses à percussion et visseuses à percussion pour tous types de matériaux."
+    },
+    "EarPhone": {
+        "name": "Écouteur",
+        "description": "Véritables écouteurs sans fil et intra-auriculaires avec un son riche et une longue durée de vie de la batterie."
+    },
+    "Earrings": {
+        "name": "Boucles d'oreilles",
+        "description": "Boucles d'oreilles bourgeons, pendantes et créoles ornées de diamants, de perles et de pierres précieuses."
+    },
+    "Electrical Tools": {
+        "name": "Outils électriques",
+        "description": "Multimètre, pinces à dénuder et équipement de test pour des travaux électriques soignés."
+    },
+    "Electronics": {
+        "name": "Électronique",
+        "description": "Les écouteurs, les appareils domestiques intelligents et la technologie personnelle valent la peine d’être possédés."
+    },
+    "Emotional Awareness": {
+        "name": "Conscience émotionnelle",
+        "description": ""
+    },
+    "Emotional Support Tips": {
+        "name": "Conseils de soutien émotionnel",
+        "description": ""
+    },
+    "Ergonomic Chairs": {
+        "name": "Chaises ergonomiques",
+        "description": "La chaise ergonomique soutient la posture, conçue pour de longues heures de travail concentré."
+    },
+    "Fastening Tools": {
+        "name": "Outils de fixation",
+        "description": "Pistolet à clous, agrafeuse et tournevis à percussion pour un assemblage rapide et uniforme."
+    },
+    "Feeding Gear": {
+        "name": "Équipement d'alimentation",
+        "description": "Les biberons, bavoirs et autres articles essentiels pour l'alimentation sont conçus pour rendre les repas sûrs et faciles."
+    },
+    "Feeding Sets & Utensils": {
+        "name": "Ensembles d'alimentation et ustensiles",
+        "description": ""
+    },
+    "Footwear": {
+        "name": "Chaussure",
+        "description": "Baskets, bottes, talons et chaussures plates des principaux fabricants indépendants."
+    },
+    "Fragrance": {
+        "name": "Parfum",
+        "description": "Les parfums, sprays corporels et parfums spatiaux sont fabriqués à partir d'ingrédients délicats."
+    },
+    "Fresh From Nature": {
+        "name": "Frais de la nature",
+        "description": "Les fruits, légumes et produits fermentés de saison sont récoltés dans des fermes certifiées biologiques."
+    },
+    "Gaming Ergonomics": {
+        "name": "Ergonomie de jeu",
+        "description": "Chaise de jeu ergonomique et accessoires conçus pour les longues sessions de jeu."
+    },
+    "Gaming Headsets": {
+        "name": "Casques de jeu",
+        "description": "Casques filaires et sans fil à faible latence, optimisés pour un jeu compétitif et immersif."
+    },
+    "Gifts & Occasions": {
+        "name": "Cadeaux et occasions",
+        "description": "Coffrets cadeaux sélectionnés pour les anniversaires, les mariages, les anniversaires et tout autre événement marquant."
+    },
+    "Grains & Superfoods": {
+        "name": "Céréales et superaliments",
+        "description": "Céréales anciennes, graines germées et superaliments cultivés sans produits synthétiques."
+    },
+    "Grooming": {
+        "name": "Toilettage",
+        "description": "Les shampooings, brosses et outils gardent le pelage propre et la peau saine."
+    },
+    "Grounding Practices": {
+        "name": "Pratiques de mise à la terre",
+        "description": ""
+    },
+    "Guided Meditation": {
+        "name": "Méditation guidée",
+        "description": ""
+    },
+    "Gym": {
+        "name": "Salle de sport",
+        "description": "Équipement de musculation conçu pour les salles de musculation et les circuits à haute répétition."
+    },
+    "Gym Shoes": {
+        "name": "Chaussures de sport",
+        "description": "Baskets et chaussures d'haltérophilie polyvalentes avec semelles robustes et support latéral."
+    },
+    "Haircare": {
+        "name": "Soins capillaires",
+        "description": "Shampoings, masques et outils coiffants contribuent à redonner de l'éclat et à respecter la santé du cuir chevelu."
+    },
+    "Hand Tools": {
+        "name": "Outils à main",
+        "description": "Marteaux, clés, tournevis et les éléments essentiels de chaque ceinture à outils."
+    },
+    "Hand Weights": {
+        "name": "Poids à main",
+        "description": "Haltères, kettlebells et haltères faciles à saisir pour l'entraînement de force à la maison."
+    },
+    "Hats & Mittens": {
+        "name": "Chapeaux et mitaines",
+        "description": ""
+    },
+    "Headphone": {
+        "name": "Casque",
+        "description": "Écouteurs supra-auriculaires avec suppression active du bruit pour l'écoute musicale au quotidien et en studio."
+    },
+    "Health & Wellness": {
+        "name": "Santé et bien-être",
+        "description": "Les compléments alimentaires, les soins bucco-dentaires et les produits apaisants sont soutenus par la recherche vétérinaire."
+    },
+    "Health Devices": {
+        "name": "Appareils de santé",
+        "description": "Trackers intelligents, lampes de luminothérapie et appareils de bien-être qui se fondent dans votre routine."
+    },
+    "Herbal Teas": {
+        "name": "Tisanes",
+        "description": ""
+    },
+    "Herbs & Spices": {
+        "name": "Herbes et épices",
+        "description": "Les herbes et épices d'origine unique sont délicatement séchées pour préserver leurs huiles aromatiques."
+    },
+    "Home & Furniture": {
+        "name": "Maison et meubles",
+        "description": "Meubles de salon, de chambre et de salle à manger issus de sources durables."
+    },
+    "Home Decor": {
+        "name": "Décoration d'intérieur",
+        "description": "Décoration d'inspiration végétale : les cadres photo, les vases et les décorations font entrer la nature dans la maison."
+    },
+    "Home Office Setup": {
+        "name": "Configuration du bureau à domicile",
+        "description": "Le mobilier et l'éclairage sont conçus pour l'espace de travail à distance moderne."
+    },
+    "Hooded Towels": {
+        "name": "Serviettes à capuche",
+        "description": ""
+    },
+    "In-Ear Monitors": {
+        "name": "Moniteurs intra-auriculaires",
+        "description": "Casque IEM avec armature équilibrée et haut-parleurs dynamiques pour les performances scéniques et l'écoute audiophile."
+    },
+    "Jewelry": {
+        "name": "Bijoux",
+        "description": "Boucles d'oreilles accentuées, colliers superposés et bagues superposées pour chaque saison."
+    },
+    "Jewelry & Watches": {
+        "name": "Bijoux et montres",
+        "description": "Joaillerie haut de gamme, montres demi-fines et mécaniques."
+    },
+    "Keyboard": {
+        "name": "Clavier",
+        "description": "Accessoires de clavier et essentiels pour le bureau du créateur."
+    },
+    "Keyboards": {
+        "name": "Claviers",
+        "description": "Les claviers mécaniques et fins sont conçus pour le confort de frappe et la productivité."
+    },
+    "Learn More": {
+        "name": "Apprendre encore plus",
+        "description": "Sélection d'appareils électroniques en vedette : découvrez les derniers appareils, accessoires et gadgets."
+    },
+    "Leggings": {
+        "name": "Guêtres",
+        "description": "Legging de compression taille haute avec tissu extensible dans quatre directions et résistant aux squats."
+    },
+    "Lifestyle Adjustments": {
+        "name": "Ajustements du style de vie",
+        "description": ""
+    },
+    "Lifestyle Shoes": {
+        "name": "Chaussures de style de vie",
+        "description": "Les silhouettes de chaussures classiques et les escarpins modernes se coordonnent avec les tenues de tous les jours."
+    },
+    "Lifting Gear": {
+        "name": "Équipement de levage",
+        "description": "Palans, cordes et accessoires d'arrimage pour une manutention sécurisée de charges lourdes."
+    },
+    "Lighting": {
+        "name": "Éclairage",
+        "description": "Ampoules LED, phares de projecteur et éclairages accessoires pour la visibilité et le style."
+    },
+    "Lotions & Oils": {
+        "name": "Lotions & Oils",
+        "description": ""
+    },
+    "Makeup": {
+        "name": "Se maquiller",
+        "description": "Des essentiels pour les lèvres, les yeux et la peau avec une pigmentation bénigne et une couvrance modulable."
+    },
+    "Measuring Tools": {
+        "name": "Outils de mesure",
+        "description": "Ruban à mesurer, niveau laser et mètre carré pour plus de précision sur le chantier."
+    },
+    "Mind Balance": {
+        "name": "Équilibre mental",
+        "description": "Journaux, exercices de respiration et pratiques de pleine conscience pour l’équilibre intérieur."
+    },
+    "Mittens": {
+        "name": "Mitaines",
+        "description": "Gants et mitaines doublés de cachemire pour plus de chaleur lors des journées froides."
+    },
+    "Mobiles & Night Lights": {
+        "name": "Mobiles et veilleuses",
+        "description": ""
+    },
+    "Monitor Arms": {
+        "name": "Bras de moniteur",
+        "description": "Un ou deux bras pour écran aident à récupérer de l'espace sur le bureau et à aligner les écrans au niveau des yeux."
+    },
+    "Mood Tracker": {
+        "name": "Suivi de l'humeur",
+        "description": ""
+    },
+    "Mouse": {
+        "name": "Souris",
+        "description": "Souris d'ordinateur et accessoires de pointeur pour l'espace de travail quotidien."
+    },
+    "Mousepad": {
+        "name": "Tapis de souris",
+        "description": "Tapis de bureau, stations de chargement et surfaces de travail."
+    },
+    "Mouses": {
+        "name": "Souris",
+        "description": "Souris ergonomique à commutateur logiciel avec boutons en option et capteur DPI élevé pour un contrôle fluide du curseur."
+    },
+    "Mugs & Drinkware": {
+        "name": "Tasses et verres",
+        "description": "Mugs, thermos et bouteilles d'eau personnalisés imprimés avec des images et des designs uniques."
+    },
+    "Natural Remedies": {
+        "name": "Remèdes naturels",
+        "description": ""
+    },
+    "Necklaces": {
+        "name": "Colliers",
+        "description": "Pendentifs, colliers à maillons et colliers décoratifs en or 14 carats et 18 carats."
+    },
+    "Networking": {
+        "name": "Réseautage",
+        "description": "Accessoires pour la maison intelligente et réseaux connectés."
+    },
+    "New Arrivals": {
+        "name": "Nouveautés",
+        "description": "Les derniers modèles de notre équipe de designers — des formes et des finitions fraîches."
+    },
+    "Nursery Decor": {
+        "name": "Décor de chambre d'enfant",
+        "description": ""
+    },
+    "Nutrition": {
+        "name": "Nutrition",
+        "description": "Des granulés, des aliments humides et des friandises de qualité supérieure sont formulés pour chaque étape de la vie."
+    },
+    "Oil Filters": {
+        "name": "Filtres à huile",
+        "description": "Le filtre à huile à haut débit contribue à prolonger la durée de vie du moteur et à obtenir des performances optimales."
+    },
+    "Outdoor Shoes": {
+        "name": "Chaussures d'extérieur",
+        "description": "Les chaussures de trail running et de randonnée sont conçues pour l’adhérence, la stabilité et les terrains accidentés."
+    },
+    "Outerwear": {
+        "name": "Vêtements d'extérieur",
+        "description": "Des manteaux, vestes et surchemises pour toutes les saisons."
+    },
+    "Pacifiers & Soothers": {
+        "name": "Sucettes et sucettes",
+        "description": ""
+    },
+    "Pantry Essentials": {
+        "name": "Les essentiels du garde-manger",
+        "description": "Farine biologique, édulcorants et aliments essentiels pour une cuisine propre au quotidien."
+    },
+    "Personalized Decor": {
+        "name": "Décor personnalisé",
+        "description": "Des sous-verres gravés, des boîtes à souvenirs et des objets décoratifs rendent n'importe quelle pièce plus familière."
+    },
+    "Phone Cases": {
+        "name": "Coques de téléphone",
+        "description": "Coques de téléphone fines et testées contre les chutes, avec des graphismes ou des designs personnalisés — pour tous les nouveaux modèles."
+    },
+    "Photo Books": {
+        "name": "Livres photos",
+        "description": "Albums photo à couverture rigide haut de gamme pour les mariages, les voyages et les moments à capturer sur papier."
+    },
+    "Pickleball": {
+        "name": "Pickleball",
+        "description": "Raquettes, balles et équipements de pickleball pour le sport à la croissance la plus rapide."
+    },
+    "Pillows": {
+        "name": "Oreillers",
+        "description": "Les coussins imprimés personnalisés transforment votre canapé ou votre chambre en une salle d'exposition personnelle."
+    },
+    "Plant Care & Nutrients": {
+        "name": "Entretien des plantes et nutriments",
+        "description": "Engrais, amendements pour sols et compléments végétaux pour une croissance stable et saine."
+    },
+    "Plant Tools": {
+        "name": "Outils d'usine",
+        "description": "Les sécateurs, arrosoirs et truelles de jardin sont conçus pour l’entretien quotidien des plantes."
+    },
+    "Planters & Pots": {
+        "name": "Jardinières et Pots",
+        "description": "Les pots en céramique, en terre cuite et tressés contribuent à rehausser n’importe quel espace intérieur."
+    },
+    "Plants & Garden": {
+        "name": "Plantes et jardin",
+        "description": "Les plantes d'intérieur et d'extérieur sont prêtes à partir vers leurs prochaines maisons."
+    },
+    "Play Time": {
+        "name": "Temps de jeu",
+        "description": "Anneaux de dentition en bois, animaux en peluche et amis jouets doux pour le développement précoce."
+    },
+    "Plush Toys": {
+        "name": "Jouets en peluche",
+        "description": ""
+    },
+    "Power Tools": {
+        "name": "Outils électriques",
+        "description": "Les perceuses, meuleuses et scies sans fil sont conçues pour être fiables sur le chantier."
+    },
+    "Progressive Relaxation": {
+        "name": "Détente progressive",
+        "description": ""
+    },
+    "Pure Organic Oils": {
+        "name": "Huiles biologiques pures",
+        "description": "Les huiles, vinaigres et sauces pressés à froid sont extraits selon une méthode patiente et à basse température."
+    },
+    "Relaxation": {
+        "name": "Relaxation",
+        "description": "Aromathérapie, outils de méditation et articles anti-stress pour la relaxation quotidienne."
+    },
+    "Reset Routines": {
+        "name": "Réinitialiser les routines",
+        "description": ""
+    },
+    "Rings": {
+        "name": "Anneaux",
+        "description": "Des bagues à diamant unique, des bagues d'éternité et des chevalières pour les moments et les événements marquants du quotidien."
+    },
+    "Road Shoes": {
+        "name": "Chaussures de route",
+        "description": "Les baskets de tous les jours sont conçues pour la route, avec une semelle intermédiaire coussinée et une semelle extérieure durable."
+    },
+    "Running": {
+        "name": "En cours d'exécution",
+        "description": "Vêtements de course légers avec bordures réfléchissantes et tricots évacuant la transpiration."
+    },
+    "Running Shoes": {
+        "name": "Chaussures de course",
+        "description": "Baskets coussinées et chaussures de course légères pour toutes les distances."
+    },
+    "Safety Gear": {
+        "name": "Équipement de sécurité",
+        "description": "Les casques, chaussures et vêtements réfléchissants répondent aux normes OSHA."
+    },
+    "Shoes": {
+        "name": "Chaussures",
+        "description": "Les bottes en cuir, les mocassins et les chaussures basses conviennent à toutes les saisons."
+    },
+    "Site Equipment": {
+        "name": "Équipement de chantier",
+        "description": "Des générateurs, des mélangeurs et des équipements de chantier assurent le fonctionnement du chantier."
+    },
+    "Skincare": {
+        "name": "Soins de la peau",
+        "description": "Les nettoyants, sérums et crèmes sont formulés pour chaque problème et condition de peau."
+    },
+    "Sleep & Recovery": {
+        "name": "Sommeil et récupération",
+        "description": ""
+    },
+    "Sleep Hygiene": {
+        "name": "Hygiène du sommeil",
+        "description": ""
+    },
+    "Sleep-Friendly Herbs": {
+        "name": "Herbes propices au sommeil",
+        "description": ""
+    },
+    "Sleeping Bags": {
+        "name": "Sacs de couchage",
+        "description": ""
+    },
+    "Sleepwear": {
+        "name": "Vêtement de nuit",
+        "description": ""
+    },
+    "Smart Lamp": {
+        "name": "Lampe intelligente",
+        "description": "Lampe intelligente Wi-Fi avec chaleur, couleur réglables et assistant virtuel intégré."
+    },
+    "Smart Lights": {
+        "name": "Lumières intelligentes",
+        "description": "Lampe de bureau LED apaisante pour les yeux avec tons de rythme circadien et chargement sans fil intégré."
+    },
+    "Smart Watches": {
+        "name": "Montres intelligentes",
+        "description": "Les bracelets de fitness, les montres intelligentes et les appareils portables s'intègrent à votre routine quotidienne."
+    },
+    "Sofas": {
+        "name": "Canapés",
+        "description": "Canapés à deux et trois places, canapés d'angle modulables et fauteuils d'appoint doubles."
+    },
+    "Speaker": {
+        "name": "Conférencier",
+        "description": "Haut-parleur Bluetooth portable et système audio domestique pour un son qui remplit la pièce n'importe où."
+    },
+    "Speed Shoes": {
+        "name": "Chaussures de vitesse",
+        "description": "Les chaussures de course plaquées carbone et les chaussures de course Tempo sont conçues pour les records personnels et les journées sur piste."
+    },
+    "Sports & Fitness": {
+        "name": "Sports et remise en forme",
+        "description": "Équipement d'entraînement essentiel, équipement de yoga et accessoires de récupération."
+    },
+    "Sports Apparel": {
+        "name": "Vêtements de sport",
+        "description": "Shorts, hauts et vêtements superposés haute performance conçus pour le mouvement."
+    },
+    "Standing Desks": {
+        "name": "Bureaux debout",
+        "description": "La table élévatrice réglable en hauteur est conçue pour un fonctionnement fluide au quotidien."
+    },
+    "Storage": {
+        "name": "Stockage",
+        "description": "Les étagères, buffets et meubles bas sont conçus pour s'agencer à merveille."
+    },
+    "Storages": {
+        "name": "Stockages",
+        "description": "Les classeurs, tiroirs et étagères modulaires gardent votre espace de travail propre et bien rangé."
+    },
+    "Stress Management Tools": {
+        "name": "Outils de gestion du stress",
+        "description": ""
+    },
+    "Stress-Level Quiz": {
+        "name": "Quiz sur le niveau de stress",
+        "description": ""
+    },
+    "Supplements": {
+        "name": "Suppléments",
+        "description": "Légumes verts quotidiens, adaptogènes et suppléments favorisant l’humeur fabriqués à partir d’ingrédients propres."
+    },
+    "Tables": {
+        "name": "Tableaux",
+        "description": "Les tables à manger, les tables à thé et les tables d'appoint sont en bois, en pierre et en acier."
+    },
+    "Teethers": {
+        "name": "Anneaux de dentition",
+        "description": ""
+    },
+    "Tennis": {
+        "name": "Tennis",
+        "description": "Vêtements de tennis prêts pour le court : jupes plissées, robes polo, shorts de performance."
+    },
+    "Tops & Shirts": {
+        "name": "Hauts et chemises",
+        "description": "Les t-shirts, les chemises boutonnées, les pulls et les chemisiers sont adaptés aux journées décontractées."
+    },
+    "Tote Bags": {
+        "name": "Sacs fourre-tout",
+        "description": "Sacs fourre-tout en coton ultra résistant imprimés d'images, d'initiales ou de peintures originales."
+    },
+    "Toys": {
+        "name": "Jouets",
+        "description": "Les friandises, les compagnons en peluche et les puzzles rendent le temps de jeu plus significatif."
+    },
+    "Travel": {
+        "name": "Voyage",
+        "description": "Sacs de transport, harnais et matériel de voyage pour des voyages sans stress."
+    },
+    "Wall Art": {
+        "name": "Art mural",
+        "description": "Les tirages photo, les affiches et les peintures sur toile transforment vos moments préférés en œuvres époustouflantes."
+    },
+    "Wallets": {
+        "name": "Portefeuilles",
+        "description": "Portefeuilles, porte-cartes et porte-monnaie en relief pour un transport sophistiqué au quotidien."
+    },
+    "Washcloths & Sponges": {
+        "name": "Débarbouillettes et éponges",
+        "description": ""
+    },
+    "Wired Studio": {
+        "name": "Studio filaire",
+        "description": "Casque de studio filaire standard de référence pour le mixage, le mastering et l'écoute analytique."
+    },
+    "Wireless Over-Ear": {
+        "name": "Circulaire sans fil",
+        "description": "Écouteurs supra-auriculaires haut de gamme offrant un son riche, une gamme de fréquences complète et un confort qui dure toute la journée."
+    },
+    "Wooden Toys": {
+        "name": "Jouets en bois",
+        "description": ""
+    },
+    "Work Essentials": {
+        "name": "Les essentiels du travail",
+        "description": "Les supports d'écran, les plateaux de clavier et les accessoires complètent un espace de travail sain."
+    },
+    "Workload Balancing": {
+        "name": "Équilibrage de la charge de travail",
+        "description": ""
+    },
+    "Yoga": {
+        "name": "Yoga",
+        "description": "Vêtements et accessoires de yoga conçus pour la respiration, l'équilibre et la fluidité."
+    },
+    "Yoga Mats": {
+        "name": "Tapis de yoga",
+        "description": "Tapis de yoga et de Pilates à haute adhérence pour la pratique en studio et à domicile."
+    }
+}

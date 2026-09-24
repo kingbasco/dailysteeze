@@ -1,0 +1,614 @@
+// /stores/{slug} — banner, two-column body (sidebar filter + contact, main about + search + product grid).
+// Aligned with amerce's light theme tokens (--surface, --line, --text-3, --primary).
+// Cover image is optional — design degrades gracefully to a light card surface
+// when no cover is set (typical for freshly-seeded vendors).
+
+.marketplace-store {
+
+    // ── Header card ───────────────────────────────────────────
+    &__banner {
+        position: relative;
+        background-color: var(--surface, #f6f6f6);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        margin-bottom: 0;
+    }
+
+    // When a cover image IS set, darken with an overlay so light text reads.
+    // No-cover case relies on background-color above and uses dark text.
+    &__banner[style*='background-image'] {
+        color: #fff;
+
+        .marketplace-store__banner-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(0, 0, 0, .55), rgba(0, 0, 0, .35));
+            z-index: 1;
+        }
+
+        .marketplace-store__name,
+        .marketplace-store__rating-count,
+        .marketplace-store__contact,
+        .marketplace-store__description { color: #fff; }
+        .marketplace-store__contact i.icon { color: rgba(255, 255, 255, .85); }
+        .marketplace-store__contact a { color: #fff; }
+    }
+
+    // Hide the overlay div when no cover image (no need for the dark wash).
+    &__banner:not([style*='background-image']) &__banner-overlay { display: none; }
+
+    &__banner-inner {
+        position: relative;
+        z-index: 2;
+        padding: 48px 24px;
+    }
+
+    &__banner-row {
+        display: flex;
+        align-items: center;
+        gap: 28px;
+        flex-wrap: wrap;
+    }
+
+    &__avatar {
+        flex-shrink: 0;
+        width: 140px;
+        height: 140px;
+        background: #fff;
+        border: 1px solid var(--line, #e9e9e9);
+        border-radius: 50%;
+        padding: 6px;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, .06);
+        overflow: hidden;
+    }
+
+    &__avatar-img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+        display: block;
+    }
+
+    &__info {
+        flex: 1;
+        min-width: 280px;
+    }
+
+    &__name {
+        color: var(--text, #101010);
+        font-family: var(--accent-font, 'Outfit'), sans-serif;
+        font-weight: 600;
+        margin-bottom: 6px;
+    }
+
+    &__rating { margin-bottom: 8px; }
+    &__rating-count {
+        color: var(--text-3, #74757b);
+        font-size: 13px;
+    }
+
+    &__contact {
+        color: var(--text-3, #74757b);
+
+        i.icon { color: inherit; font-size: 16px; }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+            transition: color .2s ease;
+        }
+        a:hover { color: var(--primary, #dc4646); }
+    }
+
+    &__description {
+        color: var(--text-3, #74757b);
+        line-height: 1.6;
+        max-width: 760px;
+        margin-bottom: 0;
+    }
+
+    &__socials {
+        margin-top: 6px;
+
+        .icon {
+            font-size: 18px;
+            color: var(--text, #101010);
+            transition: color .2s ease;
+        }
+
+        a:hover .icon { color: var(--primary, #dc4646); }
+    }
+
+    // ── Body container ────────────────────────────────────────
+    // Explicit padding because the theme overrides Bootstrap's .py-* / .pb-*
+    // utilities. Tight top (sits right under the banner) + breathing room
+    // before the footer.
+    &__body {
+        padding-top: 24px;
+        padding-bottom: 64px;
+    }
+
+    // ── Sidebar stack (filter + contact card) ─────────────────
+    &__sidebar {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        position: sticky;
+        top: 24px;
+    }
+
+    // ── About block (main column top) ─────────────────────────
+    &__about {
+        background: var(--surface, #f6f6f6);
+        border: 1px solid var(--line, #e9e9e9);
+        border-radius: 12px;
+        padding: 20px 24px;
+        margin-bottom: 24px;
+        color: var(--text-3, #74757b);
+        line-height: 1.7;
+        font-size: 14px;
+
+        p:last-child { margin-bottom: 0; }
+    }
+
+    // Stacked sections in the main column — explicit gap because the theme
+    // overrides Bootstrap's .mb-* utilities to non-standard values.
+    &__search { margin-bottom: 24px; }
+    &__products-top { margin-bottom: 24px; }
+
+    &__about-toggle {
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
+        margin-top: 8px;
+        color: var(--text, #101010);
+        font-weight: 500;
+        font-size: 13px;
+        text-decoration: none;
+        text-decoration-color: var(--text-3, #74757b);
+        text-underline-offset: 3px;
+        transition: color .2s ease, text-decoration-color .2s ease;
+
+        &::after {
+            content: '';
+            width: 6px;
+            height: 6px;
+            border-right: 1.5px solid currentColor;
+            border-bottom: 1.5px solid currentColor;
+            transform: rotate(45deg);
+            margin-left: 2px;
+            transition: transform .2s ease;
+        }
+
+        &:hover {
+            color: var(--primary, #dc4646);
+            text-decoration: underline;
+            text-decoration-color: currentColor;
+        }
+    }
+
+    // ── Main-column search bar ────────────────────────────────
+    // Differentiate from the gray about block above with a white surface +
+    // hairline border so it reads as an interactive control, not a passive panel.
+    &__search-group {
+        position: relative;
+
+        .marketplace-store__search-input {
+            background: #fff;
+            border: 1px solid var(--line, #e9e9e9);
+            border-radius: 12px;
+            min-height: 52px;
+            padding: 12px 60px 12px 20px;
+            font-size: 14px;
+            color: var(--text, #101010);
+            box-shadow: 0 1px 2px rgba(16, 16, 16, .03);
+
+            &::placeholder { color: var(--text-3, #74757b); opacity: 1; }
+
+            &:focus {
+                border-color: var(--text, #101010);
+                box-shadow: 0 0 0 3px rgba(16, 16, 16, .06);
+                outline: none;
+            }
+        }
+    }
+
+    &__search-btn {
+        position: absolute;
+        top: 50%;
+        right: 6px;
+        transform: translateY(-50%);
+        width: 40px;
+        height: 40px;
+        background: var(--text, #101010);
+        border: 0;
+        color: #fff;
+        border-radius: 10px;
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        transition: background-color .2s ease, transform .15s ease;
+
+        i.icon { font-size: 16px; line-height: 1; }
+        &:hover { background-color: var(--primary, #dc4646); }
+        &:active { transform: translateY(-50%) scale(.96); }
+    }
+
+    // ── Scoped toolbar polish ────────────────────────────────
+    // Shared .tf-shop-control is reused on the main shop too — keep overrides
+    // narrow to .marketplace-store__products-top so we don't bleed elsewhere.
+    &__products-top {
+        .tf-shop-control {
+            justify-content: flex-start;
+            gap: 12px;
+            padding: 10px 14px;
+            margin: 0 0 16px;
+            background: var(--surface, #f6f6f6);
+            border-radius: 12px;
+        }
+
+        .tf-control-sorting {
+            margin-left: auto;
+            gap: 10px;
+        }
+
+        // Segmented layout switcher: shared frame, dividers between buttons.
+        .tf-control-layout {
+            gap: 0;
+            background: #fff;
+            border: 1px solid var(--line, #e9e9e9);
+            border-radius: 10px;
+            padding: 3px;
+
+            .tf-view-layout-switch {
+                width: 34px;
+                height: 30px;
+                border-radius: 7px;
+                background: transparent;
+                color: var(--text-3, #74757b);
+
+                &:hover {
+                    background: var(--surface, #f6f6f6);
+                    color: var(--text, #101010);
+                }
+
+                &.active {
+                    background: var(--text, #101010);
+                    color: #fff;
+                }
+            }
+        }
+
+        // Button-styled sort trigger so it doesn't float as plain text.
+        .tf-dropdown-sort {
+            display: inline-flex;
+            align-items: center;
+            background: #fff;
+            border: 1px solid var(--line, #e9e9e9);
+            border-radius: 10px;
+            padding: 7px 14px;
+            min-height: 38px;
+            cursor: pointer;
+            transition: border-color .2s ease;
+
+            &:hover { border-color: var(--text, #101010); }
+
+            .btn-select {
+                display: inline-flex;
+                align-items: center;
+                gap: 8px;
+                font-size: 13px;
+                color: var(--text, #101010);
+                font-weight: 500;
+            }
+
+            .text-sort-value { color: inherit; }
+            .icon-CaretDown { font-size: 11px; color: var(--text-3, #74757b); }
+        }
+
+        // Per-page native select matches the sort trigger.
+        .tf-control-per-page select.form-select {
+            min-height: 38px;
+            border: 1px solid var(--line, #e9e9e9);
+            border-radius: 10px;
+            padding: 6px 36px 6px 14px;
+            font-size: 13px;
+            font-weight: 500;
+            color: var(--text, #101010);
+            background-color: #fff;
+            cursor: pointer;
+
+            &:focus {
+                border-color: var(--text, #101010);
+                box-shadow: 0 0 0 3px rgba(16, 16, 16, .06);
+                outline: none;
+            }
+        }
+
+        @media (max-width: 575.98px) {
+            .tf-shop-control { padding: 8px 10px; gap: 8px; }
+            .tf-control-sorting { width: 100%; margin-left: 0; justify-content: space-between; }
+        }
+    }
+
+    // ── Filter sidebar (categories) ───────────────────────────
+    &__filter {
+        background: var(--surface, #f6f6f6);
+        border: 1px solid var(--line, #e9e9e9);
+        border-radius: 12px;
+        padding: 20px;
+    }
+
+    &__filter-search-wrap {
+        position: relative;
+
+        .form-control {
+            background: #fff;
+            border-color: var(--line, #e9e9e9);
+            border-radius: 8px;
+            min-height: 44px;
+            padding-right: 44px;
+
+            &:focus {
+                border-color: var(--text, #101010);
+                box-shadow: none;
+            }
+        }
+    }
+
+    &__filter-search-btn {
+        position: absolute;
+        top: 50%;
+        right: 4px;
+        transform: translateY(-50%);
+        width: 36px;
+        height: 36px;
+        background: transparent;
+        border: 0;
+        color: var(--text-3, #74757b);
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 6px;
+        transition: color .2s ease, background .2s ease;
+
+        &:hover {
+            color: var(--text, #101010);
+            background: var(--line, #e9e9e9);
+        }
+    }
+
+    &__filter-group {
+        padding-top: 20px;
+        margin-top: 20px;
+        border-top: 1px solid var(--line, #e9e9e9);
+
+        &:first-of-type {
+            border-top: 0;
+            margin-top: 0;
+            padding-top: 0;
+        }
+    }
+
+    &__filter-title {
+        font-family: var(--accent-font, 'Outfit'), sans-serif;
+        font-size: 16px;
+        margin-bottom: 14px;
+        font-weight: 600;
+        color: var(--text, #101010);
+    }
+
+    &__filter-categories {
+        max-height: 360px;
+        overflow-y: auto;
+    }
+
+    &__filter-category-item {
+        padding: 6px 0;
+
+        > label {
+            cursor: pointer;
+            color: var(--text-3, #74757b);
+            font-size: 14px;
+            margin-bottom: 0;
+            transition: color .2s ease;
+
+            &:hover { color: var(--text, #101010); }
+        }
+
+        // Active state when checkbox is checked — checkmark icon turns primary
+        input[type='checkbox']:checked ~ .marketplace-store__filter-category-name {
+            color: var(--text, #101010);
+            font-weight: 500;
+        }
+
+        input[type='checkbox']:checked + .marketplace-store__filter-category-icon i {
+            color: var(--primary, #dc4646);
+        }
+    }
+
+    &__filter-category-icon {
+        width: 20px;
+        height: 20px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+
+        i { font-size: 16px; color: var(--line, #e9e9e9); transition: color .2s ease; }
+    }
+
+    &__filter-category-toggle {
+        color: var(--text-3, #74757b);
+        font-size: 18px;
+        line-height: 1;
+        margin-left: auto;
+        flex-shrink: 0;
+    }
+
+    &__filter-category-children {
+        padding-left: 28px !important;
+        margin-top: 6px;
+
+        label {
+            font-size: 13px;
+            color: var(--text-3, #74757b);
+            cursor: pointer;
+            padding: 4px 0;
+        }
+    }
+
+    &__filter-clear {
+        display: inline-flex;
+        align-items: center;
+        margin-top: 16px;
+        color: var(--text-3, #74757b);
+        text-decoration: none;
+        font-size: 13px;
+
+        &:hover { color: var(--primary, #dc4646); }
+    }
+
+    // ── Sidebar contact-vendor card ───────────────────────────
+    &__contact-card {
+        background: var(--surface, #f6f6f6);
+        border: 1px solid var(--line, #e9e9e9);
+        border-radius: 12px;
+        padding: 20px;
+    }
+
+    &__contact-title {
+        font-family: var(--accent-font, 'Outfit'), sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        color: var(--text, #101010);
+        margin-bottom: 12px;
+        text-transform: uppercase;
+        letter-spacing: .04em;
+    }
+
+    &__contact-lead {
+        color: var(--text-3, #74757b);
+        font-size: 13px;
+        line-height: 1.55;
+        margin-bottom: 14px;
+    }
+
+    &__contact-body {
+        form { margin: 0; }
+
+        .form-control,
+        .form-select,
+        textarea {
+            border: 1px solid var(--line, #e9e9e9);
+            background: #fff;
+            min-height: 44px;
+            font-size: 13px;
+            color: var(--text, #101010);
+            border-radius: 8px;
+            padding: 10px 12px;
+            transition: border-color .2s ease, box-shadow .2s ease;
+            width: 100%;
+
+            &::placeholder { color: var(--text-3, #74757b); opacity: 1; }
+
+            &:focus {
+                border-color: var(--text, #101010);
+                box-shadow: 0 0 0 3px rgba(16, 16, 16, .05);
+                outline: none;
+            }
+        }
+
+        textarea {
+            min-height: 110px;
+            resize: vertical;
+            line-height: 1.55;
+        }
+
+        .form-group,
+        .mb-3,
+        .mb-4 { margin-bottom: 12px; }
+
+        label {
+            display: block;
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--text, #101010);
+            margin-bottom: 4px;
+            letter-spacing: .01em;
+
+            &.required:after,
+            .text-danger { color: var(--primary, #dc4646); }
+        }
+
+        .btn,
+        .btn-primary,
+        button[type='submit'] {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            background-color: var(--text, #101010);
+            border: 1px solid var(--text, #101010);
+            color: #fff;
+            padding: 12px 18px;
+            font-weight: 600;
+            font-size: 13px;
+            line-height: 1;
+            border-radius: 8px;
+            min-height: 44px;
+            margin-top: 6px;
+            transition: background-color .2s ease, border-color .2s ease, transform .15s ease;
+
+            &:hover,
+            &:focus {
+                background-color: var(--primary, #dc4646);
+                border-color: var(--primary, #dc4646);
+                color: #fff;
+                outline: none;
+            }
+
+            &:active { transform: translateY(1px); }
+
+            &:disabled,
+            &.btn-loading {
+                opacity: .6;
+                cursor: progress;
+            }
+        }
+
+        .g-recaptcha,
+        .checkbox { margin: 10px 0; }
+    }
+
+    // ── Misc ──────────────────────────────────────────────────
+    &__empty {
+        background: var(--surface, #f6f6f6);
+        border-radius: 12px;
+        color: var(--text-3, #74757b);
+    }
+
+    &__pagination {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .marketplace-store {
+        &__sidebar { position: static; }
+    }
+}
+
+@media (max-width: 767.98px) {
+    .marketplace-store {
+        &__banner-inner { padding: 28px 16px; }
+        &__avatar { width: 96px; height: 96px; padding: 4px; }
+        &__banner-row { gap: 16px; }
+    }
+}

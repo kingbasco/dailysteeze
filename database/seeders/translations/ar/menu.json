@@ -1,0 +1,39 @@
+{
+    "main-menu": {
+        "name": "القائمة الرئيسية",
+        "home": "الصفحة الرئيسية",
+        "shop": "التسوق",
+        "new_arrivals": "الوافدون الجدد",
+        "best_sellers": "الأكثر مبيعًا",
+        "sale": "تخفيض",
+        "all_products": "جميع المنتجات",
+        "categories": "فئة",
+        "outerwear": "سترة",
+        "tops_shirts": "قميص",
+        "bottoms": "السراويل والتنانير",
+        "dresses": "فستان",
+        "footwear": "أحذية",
+        "accessories": "ملحق",
+        "brands": "علامة تجارية",
+        "journal": "مجلة",
+        "about": "يقدم",
+        "contact": "اتصال"
+    },
+    "footer-help": {
+        "name": "مساعدة التذييل",
+        "contact_us": "اتصل بنا",
+        "faq": "الأسئلة المتداولة",
+        "shipping": "ينقل",
+        "returns_refunds": "العوائد والمبالغ المستردة",
+        "order_tracking": "تتبع الطلب"
+    },
+    "footer-company": {
+        "name": "شركة التذييل",
+        "about": "يقدم",
+        "our_stores": "محل",
+        "sustainability": "التنمية المستدامة",
+        "careers": "توظيف",
+        "privacy_policy": "سياسة الخصوصية",
+        "terms_conditions": "الشروط والأحكام"
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "Color": {
+        "title": "لون"
+    },
+    "Size": {
+        "title": "مقاس"
+    },
+    "Material": {
+        "title": "مادة"
+    },
+    "Storage": {
+        "title": "تخزين"
+    }
+}

@@ -1,0 +1,46 @@
+{
+    "Homepage": {
+        "name": "Ana sayfa",
+        "description": "Amerce — çok yönlü bir e-ticaret deneyimine ev sahipliği yapıyor."
+    },
+    "About": {
+        "name": "Hakkında",
+        "description": "Amerce ile tanışın - marka hikayesi, tedarik standartları ve her ürünün arkasındaki ekip."
+    },
+    "Contact": {
+        "name": "Temas etmek",
+        "description": "Amerce'in müşteri hizmetleri ve işbirliği ekibiyle iletişime geçin."
+    },
+    "FAQ": {
+        "name": "FAQ",
+        "description": "Siparişler, gönderim, iadeler ve hesap yönetimi hakkında sık sorulan sorular."
+    },
+    "Privacy Policy": {
+        "name": "Gizlilik Politikası",
+        "description": "Amerce kişisel bilgilerinizi nasıl toplar, kullanır ve korur."
+    },
+    "Terms & Conditions": {
+        "name": "Şartlar ve Koşullar",
+        "description": "Amerce mağazasını kullandığınızda yasal şartlar geçerlidir."
+    },
+    "Returns & Refunds": {
+        "name": "İade ve Para İadeleri",
+        "description": "30 günlük iade politikamız ve adım adım iade sürecimiz."
+    },
+    "Shipping": {
+        "name": "Nakliye",
+        "description": "Yurt içi ve yurt dışı gönderim yöntemleri, süreleri ve ücretleri."
+    },
+    "Our Stores": {
+        "name": "Mağazalarımız",
+        "description": "Amerce'i doğrudan ziyaret edin; dünya çapındaki amiral mağazaları ve ortakları."
+    },
+    "Blog": {
+        "name": "Blog",
+        "description": "Amerce editör ekibinden kıyafet talimatları, marka hikayeleri ve kamera arkası içerikleri."
+    },
+    "Careers": {
+        "name": "Kariyer",
+        "description": "Amerce'e katılın — açık pozisyonlar, kültürel değerler ve takım avantajları."
+    }
+}

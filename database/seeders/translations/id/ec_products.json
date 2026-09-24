@@ -1,0 +1,945 @@
+{
+    "20L Sports Bag - Gray": {
+        "name": "Tas Olahraga 20L - Abu-abu",
+        "description": "Tas olahraga abu-abu 20L ringkas dengan kompartemen sepatu bernapas dan tali pengikat yang diperkuat.",
+        "content": "<p>Dapat menampung satu set pakaian dan sepatu olahraga lengkap. Saku samping beritsleting, bagian bawah tahan air, dan tali bahu empuk.</p>"
+    },
+    "4mm Ultra Grip Yoga Mat - Blue Grip": {
+        "name": "Matras Yoga Ultra Grip 4mm - Pegangan Biru",
+        "description": "Matras yoga karet alam ramah lingkungan dengan permukaan anti selip berwarna biru yang menarik.",
+        "content": "Sambungan bantalan tebal <p>4mm tanpa menghilangkan kesan lantai. Bebas PVC, bebas lateks, dan dapat terurai secara hayati. Dilengkapi dengan tali jinjing.</p>"
+    },
+    "Action Camera 4K": {
+        "name": "Kamera Aksi 4K",
+        "description": "Kamera dasbor Pocket 4K60 dengan stabilisasi HyperSmooth dan bodi tahan air.",
+        "content": "<p>Rekam ke kartu microSD hingga 512GB. Streaming langsung, kontrol suara, dan layar depan 2 inci.</p>"
+    },
+    "Airy Pro Ergonomic Chair": {
+        "name": "Kursi Ergonomis Airy Pro",
+        "description": "Kursi ergonomis dengan sandaran jaring dengan sandaran adaptif, sandaran tangan 4D, dan garansi 12 tahun.",
+        "content": "<p>Jaring anyaman bernapas, mekanisme sandaran tersinkronisasi, dan kedalaman tempat duduk dapat disesuaikan. Cocok untuk pengguna dengan tinggi 1m52 hingga 1m93.</p>"
+    },
+    "Allergy Relief Drops": {
+        "name": "Obat Pereda Alergi",
+        "description": "Obat tetes yang diformulasikan oleh dokter hewan yang mengandung omega-3 dan quercetin untuk hewan peliharaan yang gatal dan sensitif.",
+        "content": "<p>Penetes dosis mudah. Tambahkan ke makanan atau minuman. Cocok untuk anjing dan kucing berusia di atas 6 bulan. Botol 60ml.</p>"
+    },
+    "Alloy Sport Wheel": {
+        "name": "Roda Olahraga Paduan",
+        "description": "Velg ringan 18 inci dengan finishing abu-abu arang dan konstruksi tempa.",
+        "content": "<p>Mengurangi massa yang tidak teredam sebesar 22 persen dibandingkan dengan pelek seng. Desain pemusatan hub, lengkap dengan tutup tengah dan katup.</p>"
+    },
+    "Angle Grinder Pro": {
+        "name": "Penggiling Sudut Pro",
+        "description": "Gerinda sudut 7 inci tugas berat dengan sakelar pemicu dan penyesuaian penutup pelindung tanpa alat.",
+        "content": "<p>15 amp motor untuk 8.500 rpm di bawah beban. Pegangan anti-getaran dan perlindungan beban berlebih membantu memperpanjang umur alat berat dalam pekerjaan berat.</p>"
+    },
+    "Anthurium Hybrid": {
+        "name": "Anthurium Hibrida",
+        "description": "Daun mengkilap berbentuk hati dan bunga merah cerah - tanaman meja berbunga panjang yang populer.",
+        "content": "<p>Dikirim dalam pot pembibitan berukuran 14cm. Cahaya tidak langsung yang kuat, kelembapan tinggi. Siram saat satu inci bagian atas tanah kering.</p>"
+    },
+    "Apple Watch S10": {
+        "name": "jam apel S10",
+        "description": "Layar retina yang selalu aktif dengan sensor tercanggih untuk kebugaran dan kesehatan.",
+        "content": "<p>Mengukur elektrokardiogram, kadar oksigen darah dan memantau tidur. Casing aluminium, opsi 41mm dan 45mm, baterai 18 jam.</p>"
+    },
+    "Aromatherapy Diffuser": {
+        "name": "Penyebar Aromaterapi",
+        "description": "Diffuser keramik ultrasonik dengan lampu latar tujuh warna dan waktu pengoperasian empat jam.",
+        "content": "<p>Beroperasi senyap seperti bisikan. Shutdown otomatis. Wadah 200ml dapat menampung ruangan hingga 30m². Dilengkapi dengan campuran minyak esensial yang menenangkan untuk dicoba.</p>"
+    },
+    "Astronaut Phone Case": {
+        "name": "Casing Ponsel Astronot",
+        "description": "Casing ponsel ramping dan tahan jatuh dengan cetakan astronot khusus dan nama Anda.",
+        "content": "<p>Kasing polikarbonat dengan pinggiran TPU. Kompatibel dengan pengisian daya nirkabel. Tersedia untuk model iPhone dan Pixel.</p>"
+    },
+    "Audiophile Open-Back": {
+        "name": "Audiophile Terbuka Kembali",
+        "description": "Headphone magnetik planar gaya terbuka untuk ruang suara yang luas dan pengalaman mendengarkan yang mendetail di rumah.",
+        "content": "<p>Kabel yang dapat dilepas dengan dua ujung. Bantalan telinga beludru. Adaptor 1/4\" dan 3,5 mm disertakan.</p>"
+    },
+    "Baby Glass Bottle Set 4oz with Latex Nipple – Blush Pink for Little Moments": {
+        "name": "Set Botol Kaca Bayi 4oz dengan Puting Lateks – Blush Pink untuk Momen Kecil",
+        "description": "Duo botol bayi berbahan kaca borosilikat dengan dot silikon anti kolik.",
+        "content": "<p>Kaca tahan guncangan termal dengan cangkang silikon lembut. Desain leher lebar agar mudah dibersihkan. Kapasitas 240ml.</p>"
+    },
+    "Blueberry Granola": {
+        "name": "Granola Blueberry",
+        "description": "Granola oatmeal panggang lambat dengan blueberry liar, almond, dan sirup maple murni.",
+        "content": "<p>Buat dalam jumlah kecil. Tanpa gula rafinasi, minyak sawit, atau bahan pengawet. 500g tas daur ulang.</p>"
+    },
+    "Bookshelf Tall": {
+        "name": "Rak Buku Tinggi",
+        "description": "Rak buku setinggi langit-langit dari kayu kenari dengan rak yang dapat disesuaikan.",
+        "content": "<p>Delapan tingkat rak yang dapat disesuaikan dan titik jangkar yang diperkuat. Setiap tingkat rak dapat menampung hingga 50 pon buku dan benda.</p>"
+    },
+    "Botanical Body Oil": {
+        "name": "Minyak Tubuh Botani",
+        "description": "Minyak jojoba dan squalane yang diperas dingin dengan kandungan lavender dan bergamot — menenangkan kulit dan indera.",
+        "content": "<p>botol kaca buram 100ml. Oleskan setelah mandi untuk kulit lembut dan lembap serta wangi yang menenangkan. Tidak diuji pada hewan.</p>"
+    },
+    "Brake Disc Vented": {
+        "name": "Rem Cakram Berventilasi",
+        "description": "Cakram rem berventilasi berlubang dan berlubang memberikan pengereman yang lebih dingin dan stabil.",
+        "content": "<p>Lapisan seng tahan korosi dan struktur seimbang. Pengiriman tunggal; Pesan berpasangan saat menyervis seluruh gardan.</p>"
+    },
+    "Brake Pad Set Premium": {
+        "name": "Kampas Rem Set Premium",
+        "description": "Bantalan rem keramik rendah debu dengan bantalan baja tahan karat menghasilkan pengereman yang mulus dan pasti.",
+        "content": "<p>Bantalan rem depan dirancang untuk berkendara sehari-hari dan performa bertenaga. Mengurangi debu rem hingga 80 persen dibandingkan dengan bantalan rem OE.</p>"
+    },
+    "Bukowski Lounge Chair": {
+        "name": "Kursi Santai Bukowski",
+        "description": "Kursi relaksasi kantilever berlapis kulit sadel pada rangka baja tahan karat.",
+        "content": "<p>Terinspirasi oleh ikon abad pertengahan, trim jahitan tangan dan kulit asli Italia mengubah kursi ini menjadi pusaka futuristik.</p>"
+    },
+    "Buttons cotton top": {
+        "name": "Atasan berbahan katun kancing",
+        "description": "Kemeja katun berkancing di bagian depan dengan potongan longgar dan kancing mutiara yang halus.",
+        "content": "<p>180 GSM kain katun poplin berat sedang mempertahankan bentuknya dengan baik sepanjang hari. Kancing mutiara. Kelim yang sedikit dipotong berpadu indah dengan jeans berpinggang tinggi.</p>"
+    },
+    "Cabin Air Filter": {
+        "name": "Filter Udara Kabin",
+        "description": "Filter udara kabin karbon aktif memerangkap serbuk sari, debu, dan bau knalpot.",
+        "content": "<p>Filtrasi tiga lapis menahan partikel sekecil 0,3 mikron. Penggantian yang disarankan setiap 15.000 mil.</p>"
+    },
+    "Calathea Orbifolia": {
+        "name": "Calathea Orbifolia",
+        "description": "Daun bulat bergaris perak menggulung di malam hari — favorit sejati.",
+        "content": "<p>Dikirim dalam pot pembibitan berukuran 14cm. Cahaya tidak langsung sedang, kelembapan tinggi. Gunakan air suling atau air hujan untuk hasil terbaik.</p>"
+    },
+    "Calm Mind Adaptogen Capsules": {
+        "name": "Kapsul Adaptogen Pikiran Tenang",
+        "description": "Campuran ashwagandha dan L-theanine diformulasikan untuk mengurangi stres dan mendukung fokus yang jelas.",
+        "content": "<p>Kapsul vegan menggabungkan 600mg ashwagandha KSM-66 dengan rhodiola dan theanine. Minum dua tablet per hari setelah makan.</p>"
+    },
+    "Calming Treats": {
+        "name": "Camilan yang Menenangkan",
+        "description": "Camilan kunyah lembut dengan kamomil dan L-theanine untuk situasi stres.",
+        "content": "<p>Formula tidak mengandung obat. 60 tablet per kantong. Gunakan saat bepergian, badai atau pergi ke klinik hewan. Cocok untuk anjing berusia di atas 12 minggu.</p>"
+    },
+    "Cashmere Cardigan": {
+        "name": "Kardigan Kasmir",
+        "description": "Kardigan kasmir bagian depan terbuka dengan bahu menurun dan model pas santai.",
+        "content": "<p>100% kasmir Mongolia. Dua kantong penutup. Kenakan di atas kaos atau di bawah jaket untuk cuaca musiman.</p>"
+    },
+    "Cashmere Mittens": {
+        "name": "Sarung Tangan Kasmir",
+        "description": "Sarung tangan berlapis kasmir dengan telapak kulit dan manset elastis untuk hari dingin.",
+        "content": "<p>100% lapisan kasmir Mongolia. Telapak tangan kulit domba untuk cengkeraman dan daya tahan. Ukuran uniseks.</p>"
+    },
+    "Cat Scratching Post": {
+        "name": "Pos Garukan Kucing",
+        "description": "Tiang garukan kawat sisal memiliki alas yang kokoh dan ukurannya pas agar kucing dapat menggaruk dengan nyaman.",
+        "content": "Tinggi <p>70cm dengan dasar MDF berbobot untuk stabilitas. Kolom sisal yang dapat diganti. Dilengkapi dengan mainan bulu gantung.</p>"
+    },
+    "Circular Saw Cordless": {
+        "name": "Gergaji Bundar Tanpa Kabel",
+        "description": "Gergaji bundar tanpa sikat 7-1/4 inci dengan dasar magnesium dan gantungan purlin.",
+        "content": "<p>Potong bahan 2x pada sudut kemiringan maksimum. Rem listrik menghentikan mata gergaji dalam waktu kurang dari dua detik. Baterai dijual terpisah.</p>"
+    },
+    "Coffee Mug Custom": {
+        "name": "Mug Kopi Kustom",
+        "description": "Personalisasikan cangkir kopi 15oz Anda dengan foto, kutipan, atau inisial favorit Anda.",
+        "content": "<p>Porselen berkualitas tinggi. Aman untuk mesin pencuci piring dan microwave. Pencetakan warna menutupi seluruh permukaan.</p>"
+    },
+    "Cold-Pressed Olive Oil": {
+        "name": "Minyak Zaitun yang Diperas Dingin",
+        "description": "Minyak zaitun extra virgin dari satu perkebunan dengan sentuhan akhir pedas dan aroma rumput segar.",
+        "content": "<p>Tentukan tanggal panen. Zaitun Picual Organik. Simpan dalam botol kaca gelap untuk mengawetkan polifenol. Botol 500ml.</p>"
+    },
+    "Cotton Tee": {
+        "name": "Kaos Katun",
+        "description": "T-shirt katun lembut dengan potongan santai dan garis leher yang diperkuat.",
+        "content": "<p>100% katun organik, sudah dicuci sebelumnya sehingga terasa lembut seperti dipakai dalam waktu lama. Tersedia dalam warna hitam, gading, dan abu-abu batu. Warnai produk jadi dengan pewarna berdampak rendah.</p>"
+    },
+    "Cozy Bunny Hooded Towel for Newborns and Toddlers": {
+        "name": "Handuk Berkerudung Kelinci yang Nyaman untuk Bayi Baru Lahir dan Balita",
+        "description": "Handuk mandinya dilengkapi tudung katun-bambu yang lembut untuk menjaga bayi Anda tetap hangat setiap habis mandi.",
+        "content": "<p>500gsm handuk bambu campuran katun. Luas ukuran 90x90cm. Topi lembut dengan detail bordir telinga. Hypoallergenic dan bebas klorin.</p>"
+    },
+    "Cozy Dog Bed": {
+        "name": "Tempat Tidur Anjing yang Nyaman",
+        "description": "Kasur ortopedi busa memori dengan penutup yang dapat dilepas dan dicuci dengan mesin.",
+        "content": "<p>Busa dengan kepadatan tinggi menopang persendian hewan peliharaan yang lebih tua. Penutup bulu sherpa. Tersedia dalam ukuran M-XL. Sol anti selip.</p>"
+    },
+    "Cropped wool-blend knit sweater": {
+        "name": "Sweater rajut berbahan campuran wol",
+        "description": "Sweter cropped crew-neck berbahan campuran wol hangat — longgar di badan dengan ujung bergaris dan manset."
+    },
+    "Custom Tee Premium": {
+        "name": "Kaos Premium Kustom",
+        "description": "Kaos katun 100% tebal yang dicetak dengan gambar, gambar, atau pesan Anda.",
+        "content": "<p>Benang katun pilin yang sudah menyusut. Tersedia dalam ukuran XS-3XL. Cetak langsung pada kain untuk mencegah luntur setelah berkali-kali dicuci.</p>"
+    },
+    "Cylinder Head Gasket": {
+        "name": "Paking Kepala Silinder",
+        "description": "Gasket muka mesin baja multilapis dirancang untuk mesin dengan rasio kompresi tinggi.",
+        "content": "Struktur MLS standar <p>OE tahan terhadap siklus panas dan tekanan ruang bakar. Terlampir adalah petunjuk prosedur pengetatan.</p>"
+    },
+    "Daily Greens Powder": {
+        "name": "Bubuk Hijau Harian",
+        "description": "Campuran sayuran super organik dengan spirulina, chlorella, dan adaptogen untuk vitalitas setiap hari.",
+        "content": "<p>Berbasis tanaman, bebas gula dan mengandung 24 makanan utuh yang kaya nutrisi. Campurkan satu sendok ke dalam air atau smoothie favorit Anda setiap pagi.</p>"
+    },
+    "Daily Sunscreen Light": {
+        "name": "Cahaya Tabir Surya Harian",
+        "description": "Tabir surya fisik SPF 50 untuk hasil akhir yang tidak terlihat saat riasan atau dipakai sendiri.",
+        "content": "<p>Tidak menyumbat pori-pori. Seng oksida aman bagi terumbu karang. tabung 50ml. Oleskan kembali setiap dua jam paparan sinar matahari.</p>"
+    },
+    "Daily Wireless Earbuds": {
+        "name": "Earbud Nirkabel Harian",
+        "description": "Headphone nirkabel sejati dengan peredam bising adaptif, tahan keringat IPX5, dan total masa pakai baterai 30 jam.",
+        "content": "<p>Enam mikrofon untuk panggilan jernih, pemasangan multi-titik, dan wadah pengisi daya nirkabel. Termasuk tiga ukuran penyumbat telinga.</p>"
+    },
+    "Dark Choc Almonds": {
+        "name": "Almond Coklat Gelap",
+        "description": "Kacang almond renyah dilapisi dengan coklat hitam single origin 70%.",
+        "content": "<p>Perdagangan adil yang organik dan bersertifikat. Secara alami bebas gluten. 200g tas yang dapat ditutup kembali.</p>"
+    },
+    "Dash Camera Pro": {
+        "name": "Kamera Dasbor Pro",
+        "description": "Kamera dasbor depan + belakang dengan resolusi 1440p, mode parkir, dan pencatatan GPS internal.",
+        "content": "<p>Rekam setiap perjalanan dalam kejernihan 1440p yang sangat tajam dengan sensor penglihatan malam depan dan belakang. Termasuk pemantauan parkir 24 jam dan konektivitas aplikasi Wi-Fi.</p>"
+    },
+    "Denim Jacket": {
+        "name": "Jaket Denim",
+        "description": "Jaket denim gaya pengemudi truk klasik dengan warna biru mentah vintage.",
+        "content": "<p>Denim Jepang 14oz. Jahitan di selvedge. Secara bertahap melunak seiring waktu dan memudar secara alami.</p>"
+    },
+    "Diamond Pendant": {
+        "name": "Liontin Berlian",
+        "description": "Liontin berlian bulat cemerlang 0,25 karat dipasang pada rantai emas tipis.",
+        "content": "<p>Batu tersebut bersertifikat GIA G/SI1. Bingkai cincin emas kuning 14 karat solid dan tali kotak 16 inci dengan cincin yang dapat disesuaikan hingga 18 inci.</p>"
+    },
+    "Dining Table Oak": {
+        "name": "Meja Makan Kayu Oak",
+        "description": "Meja makan memanjang terbuat dari kayu ek putih solid, dapat menampung enam hingga sepuluh orang dengan daun memanjang di tengahnya.",
+        "content": "<p>Kaki bergaya buaian memberikan banyak ruang kaki yang nyaman. Permukaan yang dibuat dengan tangan diolah dengan minyak alami — mudah diperbarui dari tahun ke tahun.</p>"
+    },
+    "Dinosaur Theme Mug": {
+        "name": "Mug Tema Dinosaurus",
+        "description": "Mug keramik mengkilap dengan motif gambar dinosaurus lucu dan nama custom.",
+        "content": "<p>Kapasitas 11oz. Aman untuk microwave dan mesin pencuci piring. Kualitas cetak foto yang tahan lama digunakan sehari-hari.</p>"
+    },
+    "Dog Chew Toy": {
+        "name": "Mainan Kunyah Anjing",
+        "description": "Kunyah karet super tahan lama dapat memantul, mengapung di atas air, dan tahan terhadap kunyahan kuat oleh anjing.",
+        "content": "<p>Karet alam tidak beracun. Aman untuk dicuci dengan mesin. Inti yang berongga bisa diisi dengan makanan ringan atau selai kacang. Tersedia dalam ukuran dari kecil hingga XL.</p>"
+    },
+    "Dog Harness": {
+        "name": "Tali Kekang Anjing",
+        "description": "Harness anti-mundur empuk dengan trim reflektif dan dua titik pengikat tali.",
+        "content": "<p>Bantal jaring bernapas. Penyesuaian lima titik agar pas. Tersedia dalam ukuran XS-XL. Cuci tangan dengan air dingin.</p>"
+    },
+    "Dragon Fruit": {
+        "name": "Buah naga",
+        "description": "Buah naga berwarna merah muda cerah dengan rasa manis yang ringan dan tekstur yang renyah.",
+        "content": "<p>Dipetik dengan kematangan sempurna dari petani organik bersertifikat. Kaya akan vitamin C dan antioksidan. Dijual per buah.</p>"
+    },
+    "DS02 Monitor Stand": {
+        "name": "Dudukan Monitor DS02",
+        "description": "Dudukan layar aluminium dengan hub USB-C terintegrasi dan bantalan pengisi daya nirkabel.",
+        "content": "<p>Naikkan layar 12cm dari meja. Tiga port USB-A, satu port USB-C PD, dan permukaan pengisian daya nirkabel Qi 15W.</p>"
+    },
+    "Egg-Crate Wall Art": {
+        "name": "Seni Dinding Peti Telur",
+        "description": "Seni dinding menakjubkan dengan motif baki telur yang lucu di atas kertas matte kualitas arsip.",
+        "content": "<p>Tinta kualitas arsip. Tersedia dalam ukuran 12x18 dan 18x24. Sertifikat FSC. Bingkai dijual terpisah.</p>"
+    },
+    "Element Nightstand": {
+        "name": "Elemen Meja Tempat Tidur",
+        "description": "Meja samping tempat tidur kenari dua laci dengan rel geser halus dan pegangan kuningan.",
+        "content": "<p>Kayu walnut solid penuh, finishing gosok dengan tangan, dan laci pas. Dirancang untuk memperdalam warna selama beberapa dekade.</p>"
+    },
+    "Elsa Drop Earrings": {
+        "name": "Anting Jatuh Elsa",
+        "description": "Anting-anting emas 14k yang dipahat dengan lekukan mengkilap yang tinggi.",
+        "content": "<p> Gespernya hipoalergenik. Tetesannya panjangnya 1 inci. Cukup ringan untuk dipakai setiap hari. Dirancang oleh bengkel internal di Florence.</p>"
+    },
+    "Embossed Wallet": {
+        "name": "Dompet Timbul",
+        "description": "Dompet kulit lipat dua dengan pola monogram timbul halus, enam kompartemen kartu, dan satu kompartemen koin.",
+        "content": "<p>Kulit sayur. Lapisan anti maling RFID. Tepi yang dilukis dengan tangan dan titik tekanan yang diperkuat.</p>"
+    },
+    "Engraved Coaster Set": {
+        "name": "Set Tatakan Terukir",
+        "description": "Set empat tatakan gelas bambu yang diukir dengan nama, tanggal, atau gambar khusus.",
+        "content": "<p>Bambu bersertifikat FSC. Sol gabus melindungi permukaan. Dikemas dalam kotak kado kertas kraft siap untuk diberikan.</p>"
+    },
+    "Epipremnum Aureum": {
+        "name": "Epipremnum Aureum",
+        "description": "Memanjat sirih kuning — mudah dirawat, tahan terhadap cahaya redup, dan tahan terhadap jadwal sibuk.",
+        "content": "<p>Dikirim dalam pot pembibitan berukuran 14cm. Lebih menyukai cahaya tidak langsung yang kuat. Siram saat lapisan atas tanah 2 cm sudah kering.</p>"
+    },
+    "Ergonomic Mouse Pro": {
+        "name": "Mouse Pro yang ergonomis",
+        "description": "Mouse vertikal ergonomis dengan DPI yang dapat disesuaikan dan klik senyap — nyaman untuk sesi kerja yang panjang.",
+        "content": "<p>USB-C 2.4GHz nirkabel dan Bluetooth. Baterai 70 hari. Dapat diisi ulang, nyaman sepanjang hari.</p>"
+    },
+    "Eternity Band": {
+        "name": "Pita Keabadian",
+        "description": "Cincin keabadian bergalur berlian dengan berat total 1 karat dalam emas kuning 14 karat.",
+        "content": "<p>Berlian bulat cemerlang dipasang terus menerus di sekeliling badan cincin. Warna F/G, kemurnian VS. Versi lebar 2,5 mm. Sesuaikan ukuran sesuai pesanan.</p>"
+    },
+    "Expose Side Table": {
+        "name": "Paparkan Meja Samping",
+        "description": "Meja samping pahatan dengan bagian atas travertine dan kaki baja berlapis bubuk.",
+        "content": "<p>Setiap lempengan travertine unik — butiran batu alam dan variasi warna yang halus adalah ciri khas produk ini.</p>"
+    },
+    "Family Tote Bag": {
+        "name": "Tas Jinjing Keluarga",
+        "description": "Tas jinjing katun 12oz yang tahan lama dicetak dengan inisial atau foto keluarga khusus.",
+        "content": "<p>Tali tas diperkuat dan bisa dicuci dengan mesin. Cocok untuk tas pantai, tas belanja, atau tas sehari-hari.</p>"
+    },
+    "Fiddle Leaf Fig": {
+        "name": "Gambar Daun Biola",
+        "description": "Patung pohon almond Singapura dengan daun lebar berbentuk biola — pohon aksen yang sesungguhnya.",
+        "content": "<p>Dikirim dalam pot pembibitan ukuran 24cm. Lebih menyukai cahaya tidak langsung yang kuat dan stabil. Hindari angin kencang dan penyiraman berlebihan.</p>"
+    },
+    "Foam Roller Pro": {
+        "name": "Busa Rol Pro",
+        "description": "Rol busa kepadatan tinggi sepanjang 24 inci dengan permukaan kasar untuk pekerjaan jaringan dalam.",
+        "content": "Konstruksi <p>EVA mempertahankan bentuknya melalui penggunaan berat yang berulang-ulang. Bekerja pada paha depan, bokong, pita IT, dan punggung atas.</p>"
+    },
+    "Footrest Adjustable": {
+        "name": "Pijakan kaki dapat disesuaikan",
+        "description": "Pijakan kaki ergonomis yang dapat dimiringkan dengan permukaan anti selip dan sepuluh penyesuaian ketinggian.",
+        "content": "<p>Kurangi tekanan pada punggung bawah di meja mana pun. Simpan dengan rapi bila tidak digunakan. Mendukung postur alami selama shift kerja yang panjang.</p>"
+    },
+    "Frigg Moon Natural Rubber Baby Pacifier Gentle Comfort": {
+        "name": "Dot Bayi Karet Alam Frigg Moon Kenyamanan Lembut",
+        "description": "Lotion bebas pewangi dengan ekstrak oat dan shea butter untuk kulit sensitif bayi.",
+        "content": "<p>Teruji secara dermatologis. Tidak mengandung paraben, sulfat, atau pewangi sintetis. Botol pompa 200ml.</p>"
+    },
+    "Funnel-neck wool jacket": {
+        "name": "Jaket wol leher corong",
+        "description": "Jaket wol pendek dengan kerah corong tegak, saku rok kancing jepret, dan penutup ritsleting penuh."
+    },
+    "Garment-washed linen overshirt": {
+        "name": "Kemeja linen yang sudah dicuci dengan pakaian",
+        "description": "Kemeja luar linen berpotongan santai dengan kerah lebar dan kancing cangkang yang rapi — seukuran untuk dikenakan di atas kaus."
+    },
+    "Gold Tennis Bracelet": {
+        "name": "Gelang Tenis Emas",
+        "description": "Gelang tenis klasik dengan berlian 1,5 karat dalam emas putih 14 karat.",
+        "content": "<p>Berlian bulat buatan tangan yang brilian, warna F/G, kejernihan VS. Kunci pengaman penguncian ganda. Ukuran 7 inci, tersedia layanan pengubahan ukuran.</p>"
+    },
+    "Hammer Drill 18V": {
+        "name": "Bor Palu 18V",
+        "description": "Bor palu tanpa sikat tanpa kabel dengan pemilih tiga mode dan penerangan LED.",
+        "content": "<p>Sekrup, bor dan bor palu beton hingga 1/2 inci. Dilengkapi dengan dua baterai 4Ah, pengisi daya cepat, dan tas jinjing khusus untuk kontraktor.</p>"
+    },
+    "Hammock Cat Tower Grey": {
+        "name": "Tempat Tidur Gantung Menara Kucing Abu-abu",
+        "description": "Pos panjat kucing tiga tingkat dengan tiang garukan tali sisal dan tempat istirahat yang mewah. Terbuat dari kayu pinus padat dengan tempat tidur gantung beludru lembut dan bantal yang dapat dilepas.",
+        "content": "<p>Inti papan partikel dilapisi kain beludru lembut. Tinggi 110cm dengan kolom sisal yang dapat diganti. Perakitan mudah dengan alat yang disertakan.</p>"
+    },
+    "Heart Photo Frame": {
+        "name": "Bingkai Foto Hati",
+        "description": "Bingkai foto kayu berbentuk hati dengan foto pasangan favorit Anda dicetak dengan finishing matte lembut.",
+        "content": "<p>Kayu ek bersertifikat FSC. Dapat ditempatkan berdiri atau dipasang di dinding. Area pencetakan foto 5x5.</p>"
+    },
+    "Herbal Recovery Tea": {
+        "name": "Teh Pemulihan Herbal",
+        "description": "Chamomile, valerian, dan lemon balm dalam bentuk daun lepas — secangkir teh setiap malam untuk bersantai sebelum tidur.",
+        "content": "<p>Ditanam secara organik dan dicampur dengan tangan. Kaleng 50g yang dapat ditutup kembali menghasilkan 25 porsi. Bebas kafein secara alami.</p>"
+    },
+    "High neck midi wool coat": {
+        "name": "Mantel wol midi leher tinggi",
+        "description": "Mantel wol kerah tinggi unta yang lembut — kerah corong dapat ditutup ritsleting untuk perjalanan yang dingin dan berangin.",
+        "content": "<p>Kain wol Melton yang disikat lembut dengan lapisan poliester daur ulang. Kunci dua arah yang tersembunyi. Kantong bilur penuh di pinggul.</p>"
+    },
+    "Hoya Carnosa": {
+        "name": "Hoya Carnosa",
+        "description": "Pohon cemara berdaun lilin memanjat dan menghadiahi perawat yang sabar dengan rangkaian bunga yang harum.",
+        "content": "<p>Dikirim dalam pot pembibitan berukuran 12cm. Cahaya terang, pot rapat, sedikit penyiraman. Biarkan mengering di sela-sela penyiraman.</p>"
+    },
+    "Hydrating Serum": {
+        "name": "Serum Hidrasi",
+        "description": "Serum asam hialuronat membantu mengencangkan, menghidrasi, dan menghaluskan kerutan halus saat bersentuhan.",
+        "content": "<p>Lima asam hialuronat dengan berat molekul. Tanpa penyedap rasa. Botol 30ml dengan pompa vakum.</p>"
+    },
+    "HyperOne Gen 3 Keyboard": {
+        "name": "Papan Ketik HyperOne Gen 3",
+        "description": "75% keyboard mekanis dapat memiliki sakelar yang dapat ditukar dengan tombol PBT dan sakelar taktil linier.",
+        "content": "<p>USB-C dan Bluetooth multititik. RGB per tombol. Pelat dasar aluminium. Tata letak untuk Mac dan Windows.</p>"
+    },
+    "Imola Armchair": {
+        "name": "Kursi Berlengan Imola",
+        "description": "Kursi relaksasi pahatan berlapis kain bouclé dengan kaki kayu ek padat.",
+        "content": "<p>Rangka kayu ek bersertifikat FSC dengan busa elastis tinggi dan bantalan karet alam. Desain ruang tamu yang membuat orang melihat dua kali.</p>"
+    },
+    "Impact Driver Set": {
+        "name": "Kumpulan Penggerak Dampak",
+        "description": "Obeng dampak 18V ringkas dengan kontrol tiga kecepatan dan set 30-bit.",
+        "content": "Torsi <p>1.800 in-lb menangkap baut dan sekrup besar tanpa memerlukan pra-pengeboran. Termasuk klip hex 1/4 inci dan pengait sabuk.</p>"
+    },
+    "iPhone 17 Pro Max": {
+        "name": "iPhone 17 Pro Maks",
+        "description": "Ponsel pintar premium dengan bingkai titanium, layar ProMotion, dan cluster tiga kamera profesional.",
+        "content": "<p>Layar Super Retina XDR 6,9\", chip A19 Pro, dan zoom optik 5x. Dirancang untuk memotret, mengedit, dan streaming dari mana saja.</p>"
+    },
+    "King Platform Bed": {
+        "name": "Tempat Tidur Platform Raja",
+        "description": "Tempat tidur platform rendah dengan sandaran kepala linen dan bingkai kayu ek.",
+        "content": "<p>Platform tempat tidur bertatahkan mendukung semua jenis kasur tanpa memerlukan rangka pegas. Sarung linen yang dapat dilepas untuk dibersihkan.</p>"
+    },
+    "Laser Level": {
+        "name": "Tingkat Laser",
+        "description": "Perata laser lintas tingkat dengan jangkauan 100 kaki dan dudukan magnet.",
+        "content": "<p>Laser Kelas II dengan dioda hijau agar mudah dilihat di siang hari. Memenuhi standar IP54, beroperasi selama sepuluh jam dengan baterai AA.</p>"
+    },
+    "Leather Boots": {
+        "name": "Sepatu Bot Kulit",
+        "description": "Sepatu bot rendah ujung lancip sedang dengan tumit blok berjenjang dengan ritsleting samping.",
+        "content": "<p>Bodi kulit anak sapi halus, sol dalam kulit, dan sol karet Vibram anti selip. Selesai dengan tangan di Portugal.</p>"
+    },
+    "Leather Crossbody Bag": {
+        "name": "Tas Selempang Kulit",
+        "description": "Tas selempang kulit halus dengan tali pengikat yang dapat disesuaikan, gesper logam warna emas, dan tiga slot kartu.",
+        "content": "<p>Kulit gandum penuh Italia. Tepi tas yang dilukis dengan tangan. Cocok untuk gaya sehari-hari maupun formal.</p>"
+    },
+    "Leather shopper bag with stitching": {
+        "name": "Tas pembelanja kulit dengan jahitan",
+        "description": "Tas pembelanja kulit yang lapang dengan jahitan pelana kontras dan sudut yang diperkuat.",
+        "content": "<p>Kulit gandum utuh yang disamak nabati mengembangkan patina hangat seiring berjalannya waktu. Mulut terbuka dengan penutupan magnetik. Bagian dalam tas dilapisi bahan suede dengan dua saku samping dan satu saku resleting.</p>"
+    },
+    "LED Desk Lamp Smart": {
+        "name": "Lampu Meja LED Cerdas",
+        "description": "Lampu meja LED yang menenangkan mata dengan penyesuaian warna ritme sirkadian, kontrol aplikasi, dan dok pengisi daya nirkabel.",
+        "content": "<p>Sesuaikan 2700K-6500K. 1500 lux pada ketinggian meja. Pengisian daya nirkabel Qi 10W terpasang di pangkalan.</p>"
+    },
+    "LED Headlight Bulb": {
+        "name": "Bohlam Lampu Depan LED",
+        "description": "Sepasang bohlam LED konvertibel 10.000 lumen dengan kipas pendingin senyap.",
+        "content": "<p>Suhu warna siang hari 6500K, pemasangan plug-and-play, kompatibel dengan CANBus di sebagian besar kendaraan. Umur 50,000 jam.</p>"
+    },
+    "Light Therapy Lamp": {
+        "name": "Lampu Terapi Cahaya",
+        "description": "Lampu meja spektrum penuh 10.000 lux dengan kehangatan yang dapat disesuaikan dan pengatur waktu 30 menit bawaan.",
+        "content": "<p>Membantu mengatur ritme sirkadian selama bulan-bulan dengan cahaya redup. Sinar UV yang disaring. Dudukan ringkas dan sudut kemiringan yang dapat disesuaikan.</p>"
+    },
+    "linen slim-fit shirt": {
+        "name": "kemeja linen slimfit",
+        "description": "Kemeja linen garmen tipis dengan ujung membulat — cocok untuk kantor dan akhir pekan.",
+        "content": "<p>linen Eropa ditenun dan diselesaikan di Portugal. Tombol batu. Memeluk tubuh secukupnya tanpa membatasi gerakan.</p>"
+    },
+    "Link Necklace Gold": {
+        "name": "Tautan Kalung Emas",
+        "description": "Kalung tautan gaya penjepit kertas poles emas kuning 14 karat, panjang 18 inci.",
+        "content": "<p>Rantai emas 14k solid, gembok udang. Kenakan pakaian berlapis indah dengan liontin pendek atau kenakan sendiri dengan kerah terbuka.</p>"
+    },
+    "Little Dine Wooden High Chair Elegant Comfort for Tiny Foodies": {
+        "name": "Kursi Tinggi Kayu Little Dine Kenyamanan Elegan untuk Pecinta Makanan Mungil",
+        "description": "Boneka binatang katun organik tenunan tangan berukuran sempurna untuk lengan kecil.",
+        "content": "<p>Usus anti alergi daur ulang. Detail wajah yang dibordir — tidak ada detail kecil. Permukaannya bisa dilap.</p>"
+    },
+    "Long Leaf Shaped Earrings": {
+        "name": "Anting Berbentuk Daun Panjang",
+        "description": "Anting drop berbentuk daun dipahat dengan lapisan emas mengkilap.",
+        "content": "<p>Perunggu cor ringan dengan gesper anti alergi. Penyelesaian buatan tangan. Dilengkapi dengan tas beludru.</p>"
+    },
+    "Lumbar Support Cushion": {
+        "name": "Bantal Penopang Lumbar",
+        "description": "Bantal penyangga pinggang busa memori dengan penutup jaring bernapas dan tali pengikat yang dapat disesuaikan.",
+        "content": "<p>Mendorong tulang punggung lurus alami pada semua jenis kursi. Penutup yang dapat dilepas dapat dicuci dengan mesin dengan air dingin. Cocok untuk kantor, mobil, atau sofa apa pun.</p>"
+    },
+    "Lyocell wrap top": {
+        "name": "Lyocell bungkus bagian atas",
+        "description": "Atasan berbungkus lyocell keren dengan tirai lembut dan ikat pinggang alami — serbaguna dari kantor hingga pesta makan malam.",
+        "content": "<p>Dipotong dan dijahit dari 100% lyocell TENCEL™, bungkus kemejanya lapang seperti linen dan tirainya selembut sutra. Kerah V dalam dan dasi samping mudah disesuaikan dengan pinggang mana pun.</p>"
+    },
+    "Madrid": {
+        "name": "Madrid",
+        "description": "Meja angkat listrik halus dengan motor tiga tahap dan pengaturan ketinggian memori.",
+        "content": "<p>Sensor anti-tabrakan dan empat pengaturan ketinggian yang dapat diprogram. Bagian atas meja bambu solid, 60 x 30 inci. Dapat mengangkat beban hingga 220 pon.</p>"
+    },
+    "Magnetic Phone Stand": {
+        "name": "Dudukan Telepon Magnetik",
+        "description": "Dudukan aluminium yang kompatibel dengan MagSafe dengan dudukan tugas berat dan penyesuaian sudut kemiringan.",
+        "content": "<p>Pegang ponsel Anda pada sudut yang sempurna untuk FaceTime, melihat resep, atau mengisi daya. Bahan alumunium dan silikon.</p>"
+    },
+    "Manuka Honey": {
+        "name": "Madu Manuka",
+        "description": "Madu Manuka mentah yang tidak dipasteurisasi dinilai berdasarkan aktivitas enzim alaminya.",
+        "content": "<p>Dieksploitasi dari peternakan lebah terpencil di Selandia Baru. Bersertifikasi UMF 10+. Toples kaca 250g.</p>"
+    },
+    "Men Casual Shoes with PU Upper": {
+        "name": "Sepatu Kasual Pria dengan Upper PU",
+        "description": "Sepatu lapangan yang terinspirasi dari tenis dengan penyangga lateral, bagian tengah kaki yang empuk, dan sol luar herringbone.",
+        "content": "<p>Bodi kulit sintetis dengan lapisan TPU. Midsole yang melingkar memberikan stabilitas melalui gerakan lateral yang cepat. Sol luar multi-pitch.</p>"
+    },
+    "Men Duramo": {
+        "name": "Pria Duramo",
+        "description": "Siluet sepatu lari klasik dengan upper mesh-suede dan tumit empuk.",
+        "content": "<p>Lapisan suede dengan dasar jaring yang dapat menyerap keringat. Sol tengah EVA dengan ruang udara di bagian tumit terbuka. Sepatu gaya hidup klasik yang memulai semuanya.</p>"
+    },
+    "Men Flat Low": {
+        "name": "Pria Datar Rendah",
+        "description": "Sneaker berjalan berbahan kulit dengan insole empuk dan outsole karet fleksibel.",
+        "content": "<p>Bodi kulit lembut dengan tambalan elastis di bagian pergelangan kaki. Sol dalam yang dapat dilepas untuk penggunaan ortotik. Sepatu untuk bekerja sepanjang hari.</p>"
+    },
+    "Men Flat Sneakers": {
+        "name": "Sepatu Flat Pria",
+        "description": "Sepatu olahraga serbaguna dengan bagian atas rajutan, midsole busa, dan desain slip-on.",
+        "content": "<p>Badan rajutan elastis memeluk kaki seperti kaos kaki. Sol tengah EVA yang dibentuk. Sepatu untuk hari-hari perjalanan — mudah melewati keamanan dan cocok untuk hiking.</p>"
+    },
+    "Men Panelled Athleisure Shoes": {
+        "name": "Sepatu Athleisure Berpanel Pria",
+        "description": "Sepatu lapangan klasik berpotongan rendah dari kulit putih dengan jahitan serasi.",
+        "content": "<p>Bagian atas berbahan kulit halus, kerah empuk, dan sol luar karet herringbone. Sepatu putih minimalis yang cocok untuk segala hal.</p>"
+    },
+    "Men Sports Shoes with Mesh upper": {
+        "name": "Sepatu Olahraga Pria dengan Upper Mesh",
+        "description": "Sepatu olahraga mesh bersirkulasi udara dengan midsole empuk dan outsole karet tahan lama.",
+        "content": "<p> Upper mesh teknis, midsole EVA, dan outsole yang sangat tahan abrasi. Bentuk ukuran standar. Cocok untuk latihan sehari-hari dan berlari di atas mesin.</p>"
+    },
+    "Men's Running JF190.1 Grip White": {
+        "name": "Lari Pria JF190.1 Grip Putih",
+        "description": "Sepatu ini berfokus pada bobot ringan dengan midsole busa elastis dan bagian atas mesh bernapas berwarna putih bersih.",
+        "content": "<p>Dirancang untuk berkendara sehari-hari, JF190.1 menyeimbangkan kenyamanan dan pengembalian energi. Bodi terbuat dari plastik daur ulang, offset 8mm, cocok untuk jalan aspal dan jalan datar.</p>"
+    },
+    "Men's Sports T-Shirt - Dry Brown": {
+        "name": "Kaos Olahraga Pria - Coklat Kering",
+        "description": "Kaos olahraga kering berwarna coklat yang menyerap keringat — kain tenun yang cepat kering dengan panel jaring di bagian samping.",
+        "content": "<p> Campuran poliester yang ringan membuat Anda tetap sejuk selama set panjang. Jahitan flatlock mengurangi gesekan dan ujung ao dai tetap sama setiap kali diulang.</p>"
+    },
+    "Merino Wool Knit Booties with Drawstring – Snug Comfort for Newborns": {
+        "name": "Sepatu Bot Rajut Wol Merino dengan Tali – Kenyamanan Nyaman untuk Bayi Baru Lahir",
+        "description": "Sepatu berbahan wol merino yang lembut menjaga kaki si kecil tetap hangat tanpa menimbulkan rasa panas.",
+        "content": "<p>Lapisan wol merino bernapas alami dengan kerah elastis. Bisa dicuci dengan mesin dengan siklus lembut. Ukuran 0-12 bulan.</p>"
+    },
+    "MG20 Wireless Gaming": {
+        "name": "Permainan Nirkabel MG20",
+        "description": "Headset gaming nirkabel latensi rendah dengan kemampuan menggabungkan dua sumber audio dan mikrofon yang dapat dilepas.",
+        "content": "Penerima USB <p>2.4GHz dengan Bluetooth multi-titik. Terima kasih Audio Spasial. Baterai 22 jam, pengisian cepat USB-C.</p>"
+    },
+    "MH40 Wireless Over-Ear": {
+        "name": "Over-Ear Nirkabel MH40",
+        "description": "Headphone over-ear nirkabel bergaya klasik dengan kulit jahitan tangan dan masa pakai baterai 30 jam.",
+        "content": "<p>40mm Speaker berilium, pengisian cepat USB-C, dan bingkai aluminium. Headphone premium untuk penggunaan sehari-hari, dirancang agar tahan lama.</p>"
+    },
+    "Mindfulness Journal": {
+        "name": "Jurnal Perhatian",
+        "description": "Jurnal ini mencakup panduan 12 minggu dengan saran harian untuk rasa syukur, refleksi, dan penetapan niat.",
+        "content": "<p>Sertifikat sertifikasi FSC. Sampul keras berlapis linen. Termasuk bagan pelacakan kebiasaan, latihan pernapasan, dan ulasan mingguan.</p>"
+    },
+    "Mini Crossbody": {
+        "name": "Selempang Mini",
+        "description": "Tas selempang kulit kecil dengan tali rantai dan gesper logam berwarna emas.",
+        "content": "<p>Dapat menampung ponsel, kartu, dan lipstik. Tali menyesuaikan dari 22 hingga 24 inci. Lapisan kain katun bor.</p>"
+    },
+    "Mini Sue Crossbody Bag": {
+        "name": "Tas Selempang Mini Sue",
+        "description": "Tas selempang kulit halus dengan tali pengikat yang dapat disesuaikan, gesper logam warna emas, dan tiga slot kartu.",
+        "content": "<p>Kulit gandum penuh Italia. Tepi tas yang dilukis dengan tangan. Cocok untuk gaya sehari-hari maupun formal.</p>"
+    },
+    "Modular Storage Cube": {
+        "name": "Kubus Penyimpanan Modular",
+        "description": "Kubus penyimpanan kayu ash solid yang dapat ditumpuk dengan pintu flip-up opsional.",
+        "content": "<p>Konfigurasi sebagai satu unit atau ditumpuk ke dalam rak — perakitan modular memungkinkan sistem diperluas sesuai dengan ruang Anda.</p>"
+    },
+    "Monstera Deliciosa": {
+        "name": "Monstera Deliciosa",
+        "description": "Pohon sirih Amerika Selatan dengan daun lobusnya yang ikonik menciptakan sorotan yang mengesankan di ruangan mana pun.",
+        "content": "<p>Dikirim dalam pot pembibitan berukuran 17cm. Cahaya tidak langsung yang kuat. Siram hingga bersih saat tanah kering, lalu tiriskan seluruhnya.</p>"
+    },
+    "Mood Support Mushroom Blend": {
+        "name": "Campuran Jamur Pendukung Suasana Hati",
+        "description": "Kompleks jamur fungsional — surai singa, reishi, dan cordyceps — mendukung kognisi.",
+        "content": "<p>Ekstrak ganda dari tubuh buah organik. 1500mg per porsi. Campurkan ke dalam kopi, teh atau smoothies.</p>"
+    },
+    "MUSHIE Frigg Baby's First Pacifier Floral Heart | Kido Bebe": {
+        "name": "Dot Bunga Pertama Bayi MUSHIE Frigg | Kido Bebe",
+        "description": "Dot silikon padat kelas medis dibentuk untuk mendukung pelekatan alami.",
+        "content": "<p>Bebas BPA, BPS, PVC, dan ftalat. Bentuk gigi simetris. Dapat disterilkan dengan cara direbus dan dicuci di mesin pencuci piring.</p>"
+    },
+    "MW75 Active Noise Cancelling": {
+        "name": "Peredam Kebisingan Aktif MW75",
+        "description": "Peredam bising aktif secara cerdas beradaptasi dengan empat mikrofon dan secara otomatis berhenti saat mendeteksi kepala, ideal untuk bergerak dan fokus.",
+        "content": "<p>Bantalan telinga kulit domba, panel sentuh kaca safir, dan dukungan adaptif aptX resolusi tinggi.</p>"
+    },
+    "NKD High Waisted Shorts": {
+        "name": "Celana Pendek Pinggang Tinggi NKD",
+        "description": "Dibangun untuk kecepatan, kenyamanan, dan pergerakan sehari-hari."
+    },
+    "Organic Turmeric Powder": {
+        "name": "Bubuk Kunyit Organik",
+        "description": "Kunyit India yang dijemur digiling menjadi bubuk halus berpigmen dalam.",
+        "content": "<p>Kaya akan kurkumin. Kombinasikan dengan lada hitam untuk meningkatkan penyerapan. Toples kaca 100g dengan sendok takar.</p>"
+    },
+    "Origins": {
+        "name": "Asal",
+        "description": "Origins Ginger Burst mandi dan mencuci tangan dengan tumbuhan yang memberi energi.",
+        "content": "<p>Formula bebas sulfat dengan jahe, kulit jeruk dan lidah buaya. botol pompa 250ml. Cocok untuk penggunaan sehari-hari.</p>"
+    },
+    "Oval shoulder bag": {
+        "name": "Tas bahu berbentuk oval",
+        "description": "Tas bahu oval kompak dengan tali kulit tipis — muat ponsel, dompet, dan barang-barang pribadi.",
+        "content": "<p>Kulit nappa halus dengan gesper logam warna emas yang dipoles. Tali yang dapat disesuaikan. Sakunya dilapisi dengan suede mikro dengan slot kartu.</p>"
+    },
+    "Oversized poplin button-up shirt": {
+        "name": "Kemeja berkancing poplin berukuran besar",
+        "description": "Kemeja poplin merah muda lembut dengan potongan oversized, jahitan bahu turun, dan keliman melengkung."
+    },
+    "Paris": {
+        "name": "Paris",
+        "description": "Kursi ergonomis ergonomis dengan punggung jaring yang dapat disesuaikan dan sandaran tangan 4D.",
+        "content": "<p>Mekanisme sandaran sinkron, bagian belakang jaring yang dapat bernapas, dan tujuh titik penyesuaian. Menampung hingga 300 pon dan dikirim dalam keadaan rakitan lengkap.</p>"
+    },
+    "Pearl Drop Earrings": {
+        "name": "Anting Mutiara Jatuh",
+        "description": "Anting-anting mutiara air tawar yang dipasang dengan tangan dengan pin berlapis emas 14k dan tautan fleksibel.",
+        "content": "<p>8-9mm mutiara kelas AA. Tetesan sepanjang 1,5 inci. Cocok untuk gaya sehari-hari dan formal. Dilengkapi dengan tas beludru dan kain pembersih.</p>"
+    },
+    "Pearl Necklace": {
+        "name": "Kalung Mutiara",
+        "description": "Kalung mutiara air tawar dengan gesper berlapis emas 14 karat dan panjang 18 inci.",
+        "content": "<p>Ikat tangan dengan simpul di antara masing-masing mutiara. Mutiara berukuran rata-rata 7-8mm. Dilengkapi dengan tas beludru dan kartu petunjuk perawatan.</p>"
+    },
+    "Performance Oil Filter": {
+        "name": "Filter Oli Kinerja",
+        "description": "Filter oli inti sintetis aliran tinggi, cocok untuk interval penggantian oli yang diperpanjang.",
+        "content": "<p>Katup anti-aliran balik dan paking silikon memastikan perlindungan selama start dingin. Kompatibel dengan oli sintetis dan konvensional.</p>"
+    },
+    "Personalized Pillow": {
+        "name": "Bantal yang Dipersonalisasi",
+        "description": "Bantal nyaman yang dicetak dengan gambar atau desain Anda — lembut di kedua sisi.",
+        "content": "<p>16x16 cangkang poliester dengan bagian dalam berisi bulu. Dapat dilepas dan dicuci dengan mesin.</p>"
+    },
+    "Pet Portrait Print": {
+        "name": "Cetak Potret Hewan Peliharaan",
+        "description": "Potret hewan peliharaan Anda digambar tangan, dicetak di atas kertas matte berkualitas arsip.",
+        "content": "<p>Kirim foto apa pun dan artis kami akan mengubahnya menjadi potret bergaya. Tersedia dalam ukuran 8x10 dan 16x20.</p>"
+    },
+    "Pet Shampoo": {
+        "name": "Shampo Hewan Peliharaan",
+        "description": "Gel mandi oatmeal dan lidah buaya membersihkan tanpa menghilangkan minyak alami.",
+        "content": "<p>Menyeimbangkan pH untuk anjing dan kucing. Tidak mengandung sabun. Surfaktan diekstrak dari kelapa. botol 500ml. Tidak diuji pada hewan.</p>"
+    },
+    "Photo Book Mini": {
+        "name": "Buku Foto Mini",
+        "description": "Album foto hardcover berukuran 5x7 yang ringkas — ideal untuk perjalanan, pernikahan, atau perayaan akhir tahun.",
+        "content": "<p>Opsional 20-100 halaman. Kertas tisu berkualitas tinggi. Penjilidan datar untuk halaman foto yang panjang dan bebas distorsi.</p>"
+    },
+    "Photo Candle": {
+        "name": "Lilin Foto",
+        "description": "Lilin berisi lilin kedelai dalam stoples kaca buram yang dibungkus dengan foto favorit Anda.",
+        "content": "<p>Waktu pembakaran 40 jam. Ada pilihan untuk aroma ringan atau tanpa pewangi. Hadiah yang sempurna untuk ulang tahun atau kenangan.</p>"
+    },
+    "Pickleball Racket - Kuikma Open Blue": {
+        "name": "Raket Pickleball - Kuikma Terbuka Biru",
+        "description": "Raket Pickleball siap kompetisi dengan permukaan grafit dan inti polimer sarang lebah.",
+        "content": "<p>USAPA disetujui, bobot permainan 8oz, pegangan empuk berlubang untuk kondisi berkeringat. Bagus untuk gameplay yang terkontrol dan halus.</p>"
+    },
+    "Pillow talk plump effect lip": {
+        "name": "Pillow talk memberikan efek montok pada bibir",
+        "description": "Lipstik matte memiliki hasil akhir yang halus dengan warna merah muda telanjang yang cocok untuk semua warna kulit.",
+        "content": "<p>Formula pelembab yang tahan lama dengan vitamin E dan shea butter. Inti lipstik bisa diganti. Tidak diuji pada hewan dan vegan.</p>"
+    },
+    "Poppy with Tablet": {
+        "name": "Poppy dengan Tablet",
+        "description": "Kursi pelatihan portabel dengan lengan meja tulis terintegrasi dan bantalan kursi berbentuk ergonomis.",
+        "content": "<p>Meja tulis putar built-in, sandaran berbentuk dengan bantalan dan roda ganda. Desain susun menghemat ruang penyimpanan di ruang kelas dan kantor umum.</p>"
+    },
+    "Pothos Marble Queen": {
+        "name": "Ratu Marmer Pothos",
+        "description": "Sirih ratu marmer dengan daun beraneka ragam — daun berwarna putih krem ​​​​dan hijau mencerahkan rak pajangan mana pun.",
+        "content": "<p>Dikirim dalam pot pembibitan berukuran 12cm. Cahaya tidak langsung yang kuat membuat daun tetap gelap. Siram saat satu inci bagian atas tanah kering.</p>"
+    },
+    "Power Steering Pump": {
+        "name": "Pompa Power Steering",
+        "description": "Pompa power steering yang diproduksi ulang diuji sesuai standar OE.",
+        "content": "<p>Termasuk tangki, katrol, dan set segel baru. Garansi jarak tempuh tak terbatas 2 tahun.</p>"
+    },
+    "Premium Cat Food": {
+        "name": "Makanan Kucing Premium",
+        "description": "Makanan kering tanpa biji-bijian dengan salmon asli sebagai bahan pertama dan tambahan taurin.",
+        "content": "<p>Formula untuk kucing dalam ruangan dewasa. Protein kasar minimal 38%. Tas 2,5kg dengan kunci zip yang nyaman. Tanpa pewarna atau pengawet buatan.</p>"
+    },
+    "Pro Earbuds Gen 4": {
+        "name": "Earbud Pro Gen 4",
+        "description": "Peredam bising aktif adaptif, audio spasial, dan total waktu putar 30 jam dengan wadah pengisi daya yang disertakan.",
+        "content": "<p>IPX4 standar tahan keringat. Mikrofon ganda mengurangi kebisingan untuk panggilan yang lebih jelas. Isi daya melalui USB-C dan secara nirkabel.</p>"
+    },
+    "Projector Headlights": {
+        "name": "Lampu Depan Proyektor",
+        "description": "Sepasang lampu depan proyektor LED plug-and-play dengan sinyal belok pemindaian berurutan.",
+        "content": "<p>Lampu proyektor LED memenuhi standar DOT dengan lampu berjalan siang hari. Penggantian langsung, tidak perlu memodifikasi kabel.</p>"
+    },
+    "Quinoa Tri-Color": {
+        "name": "Quinoa Tiga Warna",
+        "description": "Campuran quinoa tiga warna dicuci dan siap dimasak — alternatif yang kaya protein dan bersisik.",
+        "content": "<p>Quinoa putih, merah dan hitam dari koperasi Andes. paket 500g. Masak selama 15 menit.</p>"
+    },
+    "RED TAPE Men Flat Sneakers": {
+        "name": "Sepatu Flat Pria Pita Merah",
+        "description": "Sneaker gaya hidup bersol datar dengan bagian atas berbahan kulit lembut dan siluet berpotongan rendah.",
+        "content": "<p>Kulit gandum timbul, tambalan tumit suede, dan sol karet datar. Cocok untuk jeans, chino, dan celana panjang.</p>"
+    },
+    "Resistance Bands Set": {
+        "name": "Kumpulan Pita Perlawanan",
+        "description": "Set lima tali penahan yang dapat ditumpuk dengan pegangan, tali pergelangan kaki, dan jangkar pintu.",
+        "content": "<p>Gabungkan tali untuk mencapai ketahanan hingga 150 pon. Dilengkapi dengan tas jinjing dan instruksi latihan tercetak.</p>"
+    },
+    "Ribbed halter cami top": {
+        "name": "Atasan cami halter berusuk",
+        "description": "Cami halter berbahan katun bergaris dengan tali bahu yang dapat disesuaikan dan keliman yang dipotong dan pas."
+    },
+    "Safety Helmet": {
+        "name": "Helm Pengaman",
+        "description": "Topi keras memenuhi standar ANSI Z89 dengan sistem suspensi yang dapat disesuaikan dengan kenop dan tali dagu.",
+        "content": "<p>Cangkang HDPE stabil terhadap sinar UV, memenuhi standar ketahanan benturan Kelas 1 C dan bahaya listrik. Dilengkapi dengan bantalan dahi yang menyerap keringat.</p>"
+    },
+    "Set Of 2 3kg Hand Weights": {
+        "name": "Set 2 Beban Tangan 3kg",
+        "description": "Sepasang dumbel berlapis vinil seberat 3kg dengan beban heksagonal anti-bergulir. Dijual dalam set dua potong yang serasi.",
+        "content": "<p>Pegangan pegangan yang nyaman, ideal untuk HIIT, latihan memahat, dan pemulihan. Kepala halter heksagonal menjaga beban tetap stabil di permukaan datar apa pun.</p>"
+    },
+    "Shearling-Suede Tote Bag": {
+        "name": "Tas Jinjing Shearling-Suede",
+        "description": "Tas jinjing berbahan suede lembut dengan trim bulu domba dengan pegangan atas dan saku luas.",
+        "content": "<p>Bodi tas suede lembut dengan kerah bulu hangat. Kunci tombol magnetik. Cocok untuk laptop 13 inci dan barang sehari-hari.</p>"
+    },
+    "Shopping Bag": {
+        "name": "Tas Belanja",
+        "description": "Tas belanja berbahan kulit dengan pegangan double top dan tas tidak bergaris.",
+        "content": "<p>Kulit Italia gandum penuh. Dapat menampung laptop 13 inci, botol air, dan barang sehari-hari. Gesper logam kuningan berubah warna seiring waktu.</p>"
+    },
+    "Shoulder Bag": {
+        "name": "Tas Bahu",
+        "description": "Tas bahu berdraping lembut dari kulit gandum dengan penutup magnet.",
+        "content": "<p>Tali yang dapat disesuaikan dengan dua cara pemakaian. Kompartemen ritsleting internal dan dua kompartemen tambahan. Buatan Spanyol.</p>"
+    },
+    "Shredded Coconut": {
+        "name": "Kelapa parut",
+        "description": "Kelapa parut halus tanpa pemanis dari pohon kelapa yang ditanam secara organik.",
+        "content": "<p>Tanpa sulfit atau gula tambahan. Sempurna untuk granola, kue, dan bola energi. 250g tas yang dapat ditutup kembali.</p>"
+    },
+    "Silicone Fork and Spoon Set – Perfect for Self-Feeding Babies": {
+        "name": "Set Garpu dan Sendok Silikon – Sempurna untuk Bayi yang Makan Sendiri",
+        "description": "Kantong tidur katun organik dengan TOG 2.5 untuk malam yang dingin.",
+        "content": "<p>Lapisan luar bersertifikat GOTS dengan interior anti-alergi. Ritsleting dua arah memudahkan penggantian popok. Ukuran 0-6, 6-18 dan 18-36 bulan.</p>"
+    },
+    "Silk Scarf": {
+        "name": "Syal Sutra",
+        "description": "Syal sutra linting tangan dengan motif botani yang dicetak.",
+        "content": "<p>Kepar sutra 90x90cm. Dicetak dengan mesin dengan pewarna berdampak rendah. Dilengkapi dengan kantong kertas daur ulang sebagai hadiah.</p>"
+    },
+    "Sleep Restore Magnesium Drink": {
+        "name": "Minuman Magnesium Pemulihan Tidur",
+        "description": "Magnesium glisinat dengan kamomil dan ceri asam—ritual malam yang menenangkan.",
+        "content": "<p>Campurkan dalam air hangat 30 menit sebelum tidur. 200mg magnesium yang mudah diserap per porsi. Tanpa kafein, tanpa kecanduan.</p>"
+    },
+    "Small Nappa Leather Pouch With Button": {
+        "name": "Kantong Kulit Nappa Kecil Dengan Kancing",
+        "description": "Tas kulit nappa ringkas dengan penutup kancing magnetis dan slot kartu ramping.",
+        "content": "<p>Kulit nappa lembut. Tepinya dijahit dengan tangan. Dapat menyimpan kartu, uang tunai dan telepon.</p>"
+    },
+    "Smart Lamp WiFi": {
+        "name": "WiFi Lampu Cerdas",
+        "description": "Lampu pintar Wi-Fi menyesuaikan kecerahan dengan 16 juta warna dan menyetel pengatur waktu melalui aplikasi yang menyertainya.",
+        "content": "<p>Bekerja dengan Alexa dan Asisten Google. Kontrol suara dan aplikasi. Lampu LED hemat energi.</p>"
+    },
+    "Smart Speaker Mini": {
+        "name": "Pembicara Cerdas Mini",
+        "description": "Speaker cerdas ringkas dengan suara 360 derajat dan asisten virtual bawaan.",
+        "content": "<p>Audio multi-ruangan melalui Wi-Fi dan Bluetooth. Mendukung Alexa, Google, dan AirPlay 2. Pemasangan sentuh untuk menghubungkan.</p>"
+    },
+    "Snake Plant": {
+        "name": "Tanaman Ular",
+        "description": "Tanaman ular arsitektural bertahan dengan baik meskipun diabaikan — cocok untuk sudut yang remang-remang.",
+        "content": "<p>Dikirim dalam pot pembibitan berukuran 14cm. Menoleransi cahaya rendah. Air secukupnya — cukup setiap 3-4 minggu.</p>"
+    },
+    "Sneakersy Niskie": {
+        "name": "Niskie yang licik",
+        "description": "Sneaker low-top dengan upper berbahan kulit bersih, kerah empuk, dan logo minimalis.",
+        "content": "<p>Kulit gandum penuh, lidah busa, dan sol luar karet vulkanisasi. Sepatu gaya hidup untuk setiap hari — sepasang yang bisa Anda kenakan atau kenakan.</p>"
+    },
+    "Soft Cotton Dribble Bibs 3 Pack – Gentle Protection for Little Messes": {
+        "name": "Soft Cotton Dribble Bibs 3 Pack – Perlindungan Lembut untuk Kekacauan Kecil",
+        "description": "Set tiga oto air liur katun organik dengan kancing bebas nikel yang dapat disesuaikan.",
+        "content": "<p>Inti penyerap tiga lapis dengan lapisan dalam tahan air. Polanya bersertifikat OEKO-TEX. Cocok untuk 3-24 bulan.</p>"
+    },
+    "Solitaire Ring": {
+        "name": "Cincin Solitaire",
+        "description": "Cincin berlian bulat tunggal enam cabang 0,5 karat yang brilian dari emas putih 18 karat dengan batang tepi pisau.",
+        "content": "<p>Berlian disertifikasi oleh GIA F/VS2. Gaya katedral terpasang pada emas putih 18 karat padat. Tersedia dalam ukuran 4-9 dengan layanan pengubahan ukuran gratis.</p>"
+    },
+    "Spider Plant": {
+        "name": "Tanaman Laba-laba",
+        "description": "Pohon anggreknya ceria dengan daun-daun yang melengkung, tumbuh anakan di sepanjang batang yang terkulai.",
+        "content": "<p>Dikirim dalam pot pembibitan berukuran 12cm. Cahaya tidak langsung yang kuat. Melembabkan secara merata; tahan terhadap musim kemarau sesekali.</p>"
+    },
+    "Spirulina Tablets": {
+        "name": "Tablet Spirulina",
+        "description": "Ganggang biru-hijau diolah menjadi pelet bebas pengikat — sumber protein nabati yang baik setiap hari.",
+        "content": "<p>Lab diuji untuk logam berat. 180 tablet per botol. Minum 4-6 tablet dengan air sebelum makan.</p>"
+    },
+    "Square metallic frame sunglasses": {
+        "name": "Kacamata hitam bingkai metalik persegi",
+        "description": "Kacamata hitam berbingkai logam persegi dengan pelipis asetat yang dipoles tangan dan lensa CR-39.",
+        "content": "<p>Wajah baja tahan karat yang ringan. Lensa CR-39 terpolarisasi memblokir 100% UVA/UVB. Bantalan hidung yang dapat disesuaikan. Dilengkapi dengan hard case dan tas microfiber.</p>"
+    },
+    "Steel Toe Boots": {
+        "name": "Sepatu Bot Kaki Baja",
+        "description": "Sepatu keselamatan kulit tahan air dengan ujung kaki komposit dan sol anti selip.",
+        "content": "<p>Memenuhi standar ASTM F2413. Lapisan kaus kaki yang nyaman dan dapat dilepas serta pergelangan kaki yang diperkuat untuk shift sepuluh jam.</p>"
+    },
+    "Stockholm Pendant": {
+        "name": "Liontin Stockholm",
+        "description": "Lampu gantung pahatan terbuat dari kaca amber buatan tangan dan gesper logam hitam matte.",
+        "content": "<p>Pemasangan kabel langsung, kecerahan dapat disesuaikan, dan tampak hebat bila digunakan sendiri atau berkelompok di atas meja makan.</p>"
+    },
+    "Studio Reference Pro": {
+        "name": "Referensi Studio Pro",
+        "description": "Headphone studio berkabel gaya tertutup disetel dengan baik untuk mixing dan perekaman yang presisi.",
+        "content": "<p>Kabel dan bantalan telinga dapat diganti. Respon frekuensi datar hingga 8Hz. Lipatan kompak untuk dibawa.</p>"
+    },
+    "Suede Bowling Bag": {
+        "name": "Tas Bowling Suede",
+        "description": "Siluet tas bowling lembut dari bahan suede berbutir dengan ritsleting atas dan pegangan samping.",
+        "content": "<p>Tasnya luas dengan satu kompartemen ritsleting dan dua kompartemen kandang. Menyimpan tablet, agenda, dan perlengkapan semalam.</p>"
+    },
+    "Suede Mini Bag": {
+        "name": "Tas Mini Suede",
+        "description": "Tas bahu suede kecil dengan rantai dan penutup warna senada.",
+        "content": "<p>Dapat menampung ponsel, kartu, dan lipstik. Rantai menyesuaikan dari 22 hingga 24 inci. Lapisan kain katun bor.</p>"
+    },
+    "Suede Tote Bag": {
+        "name": "Tas Jinjing Suede",
+        "description": "Tas jinjing suede besar dengan pegangan atas, penutup magnet, dan saku tanpa garis.",
+        "content": "<p>Suede warna coklat espresso. Dapat menampung laptop 15 inci, folder dan botol air. Alas kaki tembaga melindungi bagian bawah tas dari abrasi.</p>"
+    },
+    "Supremya Baume": {
+        "name": "Supremya Baume",
+        "description": "Balsem malam kaya yang diformulasikan untuk memberi nutrisi dan regenerasi saat Anda tidur.",
+        "content": "<p>Squalane, ceramide dan kompleks peptida. Toples kaca 50ml dengan sendok bambu. Pijat dengan gerakan memutar sebelum tidur.</p>"
+    },
+    "T9 Pro II Dual Monitor Arm": {
+        "name": "Lengan Monitor Ganda T9 Pro II",
+        "description": "Lengan monitor tunggal dengan penyesuaian gerakan penuh, manajemen kabel terintegrasi, dan penjepit meja.",
+        "content": "<p>Mendukung layar 17-32 inci dengan berat hingga 9kg. Kompatibel dengan VESA 75/100. Penyesuaian ketinggian tanpa alat.</p>"
+    },
+    "Tablet Pro 11": {
+        "name": "Tablet Pro 11",
+        "description": "Tablet Liquid Retina 11 inci dengan chip seri M — ideal untuk membuat sketsa, membuat catatan, dan menonton film.",
+        "content": "<p>Kompatibel dengan Apple Pencil dan Magic Keyboard. Kapasitas 128GB-2TB. Baterai sepanjang hari dan Touch ID.</p>"
+    },
+    "Tape Measure 25ft": {
+        "name": "Pita Pengukur 25 kaki",
+        "description": "Pita pengukur tugas berat sepanjang 25 kaki dengan kait magnet dan penutup karet.",
+        "content": "<p>Kait dengan paku keling tiga dapat menahan beberapa kali jatuh dan benturan. Mencapai hingga 11 kaki, dengan graduasi meter dan inci.</p>"
+    },
+    "Teal Blue 5 Pack Baby Bodysuits – 100% Cotton for Everyday Comfort": {
+        "name": "Bodysuit Bayi 5 Paket Biru Teal – 100% Katun untuk Kenyamanan Sehari-hari",
+        "description": "Bodysuit katun organik bersertifikat GOTS dengan bahu amplop agar mudah dipakai.",
+        "content": "<p>Kain rajutan tunggal yang lembut. Tombol-tombolnya bebas nikel. Bisa dicuci dengan mesin. Tersedia dari ukuran bayi baru lahir hingga 18 bulan.</p>"
+    },
+    "Tennis Ball With Elastic String": {
+        "name": "Bola Tenis Dengan Tali Elastis",
+        "description": "Bola tenis latihan pribadi diikat dengan karet gelang — latih ayunan Anda di mana saja.",
+        "content": "<p>Bola terasa tertutup dengan karet gelang elastis tinggi. Cocok untuk berlatih forehand, backhand, dan servis tanpa partner atau lapangan.</p>"
+    },
+    "Tiffany Lock Bangle": {
+        "name": "Gelang Kunci Tiffany",
+        "description": "Gelang gembok gaya warisan emas kuning 18 karat dengan bukaan berengsel.",
+        "content": "<p>18k emas buatan tangan. Mekanisme penguncian buka-tutup dengan engsel. Tersedia dalam ukuran 60mm dan 65mm. Dilengkapi dengan tas perhiasan timbul tangan.</p>"
+    },
+    "Tool Belt Heavy": {
+        "name": "Sabuk Perkakas Berat",
+        "description": "Sabuk pekerja rangka kulit gandum penuh dengan 16 kompartemen dan jahitan ganda yang diperkuat.",
+        "content": "<p>Tali bahu empuk yang dapat disesuaikan membantu mendistribusikan beban secara merata di seluruh bahu. Dibangun untuk bertahan selama beberapa dekade di lokasi kerja.</p>"
+    },
+    "Train Free Sports Bra": {
+        "name": "Latih Bra Olahraga Gratis",
+        "description": "Dibangun untuk kecepatan, kenyamanan, dan pergerakan sehari-hari."
+    },
+    "Travel ANC Headphone": {
+        "name": "Headphone ANC Perjalanan",
+        "description": "Headphone peredam bising yang dapat dilipat disesuaikan untuk penerbangan jarak jauh dan perjalanan yang bising.",
+        "content": "<p>Baterai hingga 50 jam, pengisian cepat USB-C dan dilengkapi dengan hard case untuk dibawa.</p>"
+    },
+    "Turtleneck Knit": {
+        "name": "Rajutan Turtleneck",
+        "description": "Sweater turtleneck merino tenun halus dengan potongan santai dan kelim bergaris.",
+        "content": "<p>Wol merino super halus, dapat dicuci dengan mesin dalam mode wol. Tersedia dalam warna espresso brown, oatmeal, dan storm grey.</p>"
+    },
+    "Ultimashow 2.0 Mer Lace-Up Sneakers": {
+        "name": "Sepatu Kets Bertali Ultimashow 2.0 Mer",
+        "description": "Sepatu lari trail yang kokoh dengan tapak 4mm, pelat anti-tendangan, dan penutup jari kaki yang diperkuat.",
+        "content": "<p>Sole luar Vibram Megagrip, midsole EVA, dan pelat anti-tendangan TPU. Taklukkan lereng berlumpur, tanjakan berbatu, dan medan teknis.</p>"
+    },
+    "Up Casual Shoes with Rubber Sole": {
+        "name": "Sepatu Kasual dengan Sol Karet",
+        "description": "Sepatu balap ini dilengkapi pelat karbon dengan midsole busa PEBA dan desain rocker melengkung.",
+        "content": "<p>Plat karbon panjang penuh. Busa PEBA mengembalikan lebih dari 80% energi. Dirancang untuk hari perlombaan dari setengah maraton hingga maraton.</p>"
+    },
+    "USB-C Cable Pro": {
+        "name": "Kabel USB-C Pro",
+        "description": "Kabel USB-C ke USB-C 100W dengan penutup parasut, tahan lebih dari 30.000 lipatan.",
+        "content": "<p>Mendukung pengisian cepat PD dan transmisi data 10Gbps. Tersedia dalam panjang 1m dan 2m.</p>"
+    },
+    "Vanish Airbrush Pressed Powder": {
+        "name": "Bedak Padat Airbrush Vanish",
+        "description": "Bedak padat ultra ringan yang mengaburkan pori-pori dan menahan riasan dengan hasil akhir yang halus seperti semprotan.",
+        "content": "<p>Tidak mengandung talk, ditumbuk halus. Delapan warna untuk hasil akhir natural yang dapat meningkatkan cakupan. Dilengkapi dengan kapas kabuki vegan.</p>"
+    },
+    "Velvet Sofa 3-Seater": {
+        "name": "Sofa Beludru 3 Tempat Duduk",
+        "description": "Sofa tiga dudukan berbahan beludru hijau zamrud tua dengan kaki kuningan meruncing.",
+        "content": "<p>Rangka kayu keras yang dikeringkan dengan tungku pembakaran, sistem pegas melengkung, dan kasur berlapis bulu. Termasuk layanan pengiriman sarung tangan putih.</p>"
+    },
+    "Very Conference": {
+        "name": "Sangat Konferensi",
+        "description": "Kursi santai berbahan kulit sintetis dengan kaki stainless steel dan bantalan dudukan berbentuk.",
+        "content": "<p>Rangka aluminium yang dipoles dan mekanisme sandaran elastis memberikan gerakan duduk yang alami. Desain susun menghemat ruang penyimpanan.</p>"
+    },
+    "Vitality Supplements": {
+        "name": "Suplemen Vitalitas",
+        "description": "Kunyah multivitamin setiap hari dengan glukosamin, omega-3, dan probiotik untuk anjing aktif.",
+        "content": "<p>Tablet kunyah lembut rasa sapi. 90 pil per kotak. Mendukung sendi, rambut dan pencernaan. Diproduksi di fasilitas yang diperiksa dokter hewan.</p>"
+    },
+    "Wet/Dry Vacuum": {
+        "name": "Vakum Basah/Kering",
+        "description": "Penyedot debu basah/kering 12 galon milik Kontraktor dengan filter HEPA dan kereta selang.",
+        "content": "<p>6.5 Motor puncak HP dan tangki baja tahan karat. Stopkontak aktif secara otomatis saat alat diaktifkan dan selang 25 kaki yang disertakan.</p>"
+    },
+    "White Delicate Double Pom Baby Hat – Soft & Cozy Warmth for Little Heads": {
+        "name": "Topi Bayi Pom Ganda Halus Putih – Kehangatan Lembut & Nyaman untuk Kepala Kecil",
+        "description": "Cincin permen karet terbuat dari kayu ek, diberi finishing lilin lebah food grade, dan pas untuk tangan si kecil.",
+        "content": "<p>Ek Eropa yang dipanen secara lestari. Antibakteri alami. Dikombinasikan dengan klip silikon untuk menjaga cincin tetap dekat dengan bayi Anda.</p>"
+    },
+    "Wireless Charging Pad": {
+        "name": "Bantalan Pengisi Daya Nirkabel",
+        "description": "Pengisian daya nirkabel cepat 15W memenuhi standar Qi dengan permukaan silikon anti selip.",
+        "content": "<p>Kompatibel dengan iPhone, AirPods, dan ponsel Android. Port masukan USB-C. Bodi aluminium tipis.</p>"
+    },
+    "Women's Thin and Light Sports Shorts Black": {
+        "name": "Celana Pendek Olahraga Wanita Tipis dan Ringan Warna Hitam",
+        "description": "Celana pendek lari ultraringan dengan lapisan terintegrasi dan saku kunci berritsleting.",
+        "content": "<p>Kain elastis 4 arah, lapisan interior mesh bernapas, dan detail reflektif untuk visibilitas dalam kondisi cahaya redup. Bentuk potongan untuk langkah alami dan kecepatan cepat.</p>"
+    },
+    "Wool Coat": {
+        "name": "Mantel Wol",
+        "description": "Mantel wol model double-breasted dengan kerah berlekuk dan saku di pinggiran.",
+        "content": "<p>80% wol, 20% kasmir. lapisan cupro. Ukurannya pas di bahu dengan ruang untuk memakai lapisan dalam.</p>"
+    },
+    "Wool Midi Coat": {
+        "name": "Mantel Midi Wol",
+        "description": "Mantel wol midi dengan saku bilur dan kerah kerah rapi — ikon pakaian luar modern.",
+        "content": "<p>Kain Melton campuran wol Italia dengan lapisan satin lembut. Satu baris kancing dengan gesper dua kancing. Sebatas lutut, menutupi saat cuaca dingin.</p>"
+    },
+    "Wunder Chaga Powder": {
+        "name": "Bubuk Wunder Chaga",
+        "description": "Jamur chaga Siberia yang dipanen secara liar, diekstraksi ganda untuk mengawetkan beta-glukan dan triterpen.",
+        "content": "<p>Rasanya halus, sedikit pahit. Campurkan ke dalam kopi, kaldu, atau smoothie. Toples kaca 100g.</p>"
+    },
+    "ZZ Plant": {
+        "name": "Pabrik ZZ",
+        "description": "Pohon uang berdaun mengkilap tahan terhadap kekeringan, ruangan gelap, dan jadwal perjalanan yang panjang dengan mudah.",
+        "content": "<p>Dikirim dalam pot pembibitan berukuran 14cm. Menoleransi cahaya rendah. Siram hanya ketika tanah benar-benar kering.</p>"
+    }
+}

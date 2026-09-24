@@ -1,0 +1,841 @@
+// RTL stylesheet — loaded conditionally when BaseHelper::isRtlEnabled().
+//
+// Pattern: every rule lives inside a single [dir='rtl'] block. Botble core
+// injects dir="rtl" on the <body> tag via Theme::bodyAttributes() (see
+// platform/packages/theme/src/Theme.php), so this attribute selector
+// catches every descendant.
+//
+// Modelled after shofy/assets/sass/layout/rtl.scss. Each section reverses
+// only those LTR rules where left/right are not interchangeable. Bootstrap
+// 5's own bootstrap.rtl.min.css handles utility classes (mx-*, ms-*, me-*,
+// text-start/end, float-start/end, dropdown-menu placement, etc.) — we
+// only flip the amerce-specific selectors.
+
+[dir='rtl'] {
+
+    // ════════════════════════════════════════════════════════════════
+    // 1. Offcanvas / drawer direction flips
+    // ════════════════════════════════════════════════════════════════
+
+    .offcanvas-start {
+        right: 0;
+        left: auto;
+        transform: translateX(100%);
+
+        &.show {
+            transform: none;
+        }
+    }
+
+    .offcanvas-end {
+        right: auto;
+        left: 0;
+        transform: translateX(-100%);
+
+        &.show {
+            transform: none;
+        }
+    }
+
+    // Search modal close affordance
+    .modal-search {
+        .btn-close-popup,
+        .btn-close {
+            right: auto;
+            left: 20px;
+        }
+    }
+
+    // Newsletter search input — submit icon sits on opposite edge.
+    .form-search-nav {
+        input {
+            padding-right: 23px;
+            padding-left: 52px;
+        }
+
+        .btn,
+        button[type='submit'] {
+            right: auto;
+            left: 12px;
+        }
+    }
+
+    // ════════════════════════════════════════════════════════════════
+    // 2. Header — top bar, action icons, switchers
+    // ════════════════════════════════════════════════════════════════
+
+    .header-inner {
+        // Left/right paddings are symmetric in LTR — no flip needed.
+    }
+
+    .has-by-category {
+        .box-open-header-bottom {
+            margin-right: 0;
+            margin-left: 20px;
+        }
+    }
+
+    .nav-icon-item,
+    .nav-icon-list > * + * {
+        margin-left: 0;
+        margin-right: 8px;
+    }
+
+    // Search dropdown / mega-category sub-nav padding
+    .sub-nav-category {
+        padding-right: 32px;
+        padding-left: 48px;
+    }
+
+    .sub-nav-menu {
+        padding-left: 0;
+        padding-right: 16px;
+        margin-left: 0;
+        margin-right: 16px;
+    }
+
+    // Sticky header layout (left/right wrappers)
+    .header-left,
+    .header-right {
+        // Bootstrap row + col handle order via dir; nothing to override.
+    }
+
+    // Currency/language switcher dropdown anchor
+    .header-select-option {
+        text-align: right;
+    }
+
+    // ════════════════════════════════════════════════════════════════
+    // 3. Main menu & mega menu
+    // ════════════════════════════════════════════════════════════════
+
+    .menu-item {
+        .sub-menu_wrap,
+        .sub-menu_list {
+            right: 0;
+            left: auto;
+        }
+
+        // Mega menu: keep aligned with item, just flip side anchor.
+        .sub-menu_link {
+            text-align: right;
+        }
+    }
+
+    // Caret on items with children
+    .menu-item > a.has-children::after,
+    .nav-mb-item > a.has-children::after,
+    .menu-cus > a.has-children::after {
+        transform: scaleX(-1);
+    }
+
+    // Mobile offcanvas back-button chevron
+    .nav-ul-mb {
+        .back-btn i,
+        .back-btn svg {
+            transform: scaleX(-1);
+        }
+
+        .nav-mb-item .sub-menu_wrap {
+            transform: translateX(100%);
+
+            &.show {
+                transform: none;
+            }
+        }
+    }
+
+    // ════════════════════════════════════════════════════════════════
+    // 4. Hero / banner shortcodes — decorative shape margins
+    // ════════════════════════════════════════════════════════════════
+
+    .hero-shape-left {
+        margin-left: auto;
+        margin-right: -200px;
+    }
+
+    .hero-shape-right {
+        margin-right: auto;
+        margin-left: -200px;
+    }
+
+    // Banner-countdown — keep number group LTR (numbers read left-to-right
+    // in every locale; Bootstrap RTL already preserves digit order).
+    .countdown__timer,
+    .countdown-v01,
+    .countdown-v02,
+    .countdown-v03,
+    .countdown-v04,
+    .countdown-v05,
+    .countdown-v06,
+    .countdown-v07,
+    .countdown-v08 {
+        direction: ltr;
+    }
+
+    // Banner-thumbs-product / banner-1plus2 split: rely on Bootstrap col
+    // row-reverse via [dir='rtl'] inherited; no explicit override.
+
+    // ════════════════════════════════════════════════════════════════
+    // 5. Product card variations (style-1..4, grid/list/small)
+    // ════════════════════════════════════════════════════════════════
+
+    // Action stack (wishlist / compare / quickview)
+    .product-action_list,
+    .product-action_bot {
+        right: auto;
+        left: 12px;
+
+        li {
+            // Slide-in animation origin must flip (LTR slides from right)
+            transform: translateX(-20px);
+
+            &.visible {
+                transform: translateX(0);
+            }
+        }
+    }
+
+    .product-btn_quick {
+        right: auto;
+        left: 12px;
+    }
+
+    // Badge stack (discount / sale / new)
+    .product-badge_list {
+        left: auto;
+        right: 12px;
+    }
+
+    .badge-sale {
+        margin-left: 0;
+        margin-right: 8px;
+    }
+
+    // List variant — text column inverts padding
+    .card-product {
+        &.style-list {
+            .card-product_wrapper,
+            .card-product_info {
+                padding-left: 0;
+                padding-right: 20px;
+            }
+        }
+    }
+
+    // Marketplace "Sold by" eyebrow on product cards
+    .card-product_store {
+        text-align: right;
+    }
+
+    .card-product_store-label {
+        margin-left: 4px;
+        margin-right: 0;
+    }
+
+    // Stock indicator
+    .product-stock {
+        .stock {
+            margin-right: 0;
+            margin-left: 8px;
+        }
+    }
+
+    // ════════════════════════════════════════════════════════════════
+    // 6. Product detail page
+    // ════════════════════════════════════════════════════════════════
+
+    // Gallery — vertical thumb strip (right-thumbnail layout)
+    .tf-product-media-wrap {
+        @media (min-width: 1200px) {
+            padding-right: 0;
+            padding-left: 15px;
+        }
+    }
+
+    .product-thumbs-slider {
+        // Swiper handles RTL via dir attribute on .swiper; just flip arrows.
+    }
+
+    // Quantity stepper buttons
+    .wg-quantity {
+        .btn-quantity {
+            // Symmetric absolute positioning is already mirrored by [dir='rtl']
+            // on the swiper container; nothing to override at this level.
+        }
+    }
+
+    // Action buttons row gap (already flex/gap; no margin flips)
+
+    // Swatches container
+    .product-color_list,
+    .product-size_list,
+    .product-style_list,
+    .product-style_mini_list {
+        // LTR uses gap, not margin-left — already RTL-safe.
+    }
+
+    // Tabs & accordion (product description)
+    .product-accordion-item {
+        .accordion-button {
+            text-align: right;
+
+            &::after {
+                margin-left: 0;
+                margin-right: auto;
+            }
+        }
+    }
+
+    .nav-tab-item {
+        // Bootstrap nav-tabs auto-flips via dir on parent.
+    }
+
+    // Reviews — avatar + content gap
+    .rate-list .rate-click {
+        // Star icon row reads LTR (★★★★★) — keep.
+        direction: ltr;
+    }
+
+    // Sharing icons
+    .product-action_remove,
+    .product-action_remove-form {
+        text-align: right;
+    }
+
+    // ════════════════════════════════════════════════════════════════
+    // 7. Mini-cart drawer & recommendations
+    // ════════════════════════════════════════════════════════════════
+
+    // Recommendations panel divider — flip the border side
+    .tf-minicart-recommendations {
+        border-right: 0;
+        border-left: 1px solid var(--line);
+    }
+
+    // Cart row — X button sits at opposite edge
+    .tf-mini-cart-item {
+        padding-right: 0;
+        padding-left: 28px;
+    }
+
+    .tf-mini-cart-del {
+        right: auto;
+        left: 0;
+    }
+
+    .tf-mini-cart-line-price {
+        .price-old {
+            margin-left: 0;
+            margin-right: 4px;
+        }
+    }
+
+    // Remove (×) link button generic
+    .mini-cart-remove,
+    .cart_remove {
+        right: auto;
+        left: 0;
+    }
+
+    // ════════════════════════════════════════════════════════════════
+    // 8. Cart / checkout
+    // ════════════════════════════════════════════════════════════════
+
+    // Cart table — first column padding inverts
+    .tf-table-page-cart {
+        @media (min-width: 576px) {
+            td:first-child,
+            th:first-child {
+                padding-left: 0;
+                padding-right: 32px;
+            }
+        }
+
+        th:not(:first-child) {
+            border-left: 0;
+            border-right: 1px solid var(--line);
+        }
+    }
+
+    .form-shop-cart {
+        @media (min-width: 1200px) {
+            padding-right: 0;
+            padding-left: 30px;
+        }
+    }
+
+    // Coupon / discount row
+    .type-select {
+        margin-right: -12px;
+        margin-left: -12px;
+
+        &.has-icon {
+            margin-right: 0;
+            margin-left: 0;
+        }
+    }
+
+    // ════════════════════════════════════════════════════════════════
+    // 9. Filters (drawer / dropdown / sidebar)
+    // ════════════════════════════════════════════════════════════════
+
+    .filter-drawer-wrap,
+    .sidebar-filter {
+        // Most rules are symmetric — Bootstrap RTL handles list bullets.
+    }
+
+    // noUiSlider — opt into native RTL via direction attribute
+    .noUi-target {
+        direction: rtl;
+    }
+
+    // Color & size swatch filter row
+    .filter-color-box,
+    .filter-size-box {
+        // Use flex gap, already RTL-safe.
+    }
+
+    // Filter tags
+    .filter-tag {
+        margin-right: 0;
+        margin-left: 8px;
+
+        i {
+            margin-right: 6px;
+            margin-left: 0;
+        }
+    }
+
+    // Shop toolbar — collapse/grid switcher offsets
+    .tf-control-grid {
+        margin-left: 0;
+        margin-right: -1px;
+    }
+
+    // ════════════════════════════════════════════════════════════════
+    // 10. Pagination
+    // ════════════════════════════════════════════════════════════════
+
+    .pagination {
+        direction: rtl;
+    }
+
+    // Prev/next icons inside pagination
+    .pagination .page-link svg,
+    .pagination .page-link i {
+        transform: scaleX(-1);
+    }
+
+    .nav-pag_wrap {
+        // Page numbers list — already inherits dir.
+    }
+
+    // Load-more / infinite arrow
+    .pagination-load-more,
+    .pagination-infinite {
+        .icon,
+        svg {
+            transform: scaleX(-1);
+        }
+    }
+
+    // ════════════════════════════════════════════════════════════════
+    // 11. Swiper / carousels
+    // ════════════════════════════════════════════════════════════════
+
+    // Custom-positioned swiper nav buttons — flip side
+    .nav-prev-swiper {
+        right: 0;
+        left: auto;
+    }
+
+    .nav-next-swiper {
+        left: 0;
+        right: auto;
+    }
+
+    // Arrow icon flip (universal for icomoon chevrons)
+    .nav-prev-swiper i,
+    .nav-next-swiper i,
+    .swiper-button-prev svg,
+    .swiper-button-next svg,
+    .swiper-button-prev i,
+    .swiper-button-next i {
+        transform: scaleX(-1);
+    }
+
+    // ════════════════════════════════════════════════════════════════
+    // 12. Breadcrumb
+    // ════════════════════════════════════════════════════════════════
+
+    .breadcrumbs {
+        text-align: right;
+
+        // Chevron separator
+        li:not(:last-child)::after,
+        .separator,
+        .icon-arrow-right {
+            transform: scaleX(-1);
+        }
+    }
+
+    // ════════════════════════════════════════════════════════════════
+    // 13. Footer
+    // ════════════════════════════════════════════════════════════════
+
+    .footer-heading,
+    .footer-heading-mobile,
+    .footer-link-list,
+    .footer-menu-list,
+    .footer-desc,
+    .footer-infor,
+    .footer-hero-text {
+        text-align: right;
+    }
+
+    // Mobile accordion arrow position
+    .footer-heading-mobile {
+        padding-right: 0;
+        padding-left: 20px;
+
+        &::after,
+        .icon {
+            right: auto;
+            left: 0;
+        }
+    }
+
+    // Newsletter at large viewport — opposite anchor
+    .tf-newsletter {
+        @media (min-width: 992px) {
+            margin-left: 0;
+            margin-right: auto;
+        }
+    }
+
+    .footer-wrap-3 {
+        margin-left: auto;
+        margin-right: 0;
+    }
+
+    // Payment icons, social icons row — flex gap already RTL-safe.
+
+    // ════════════════════════════════════════════════════════════════
+    // 14. Forms — modals (sign / register / forgot / search)
+    // ════════════════════════════════════════════════════════════════
+
+    .form-group {
+        text-align: right;
+    }
+
+    // Input + leading icon — icon sits on opposite edge
+    fieldset {
+        .icon,
+        > i:first-child {
+            right: auto;
+            left: 12px;
+        }
+    }
+
+    // Newsletter / search input with absolute submit
+    .form-newsletter fieldset input,
+    .form-subscribe fieldset input {
+        padding-left: 50px;
+        padding-right: 20px;
+    }
+
+    .form-newsletter .btn,
+    .form-subscribe .btn {
+        right: auto;
+        left: 0;
+    }
+
+    // Floating-label inputs — origin
+    .form-control:not(:placeholder-shown) + label,
+    .form-floating > label {
+        right: 0.75rem;
+        left: auto;
+        transform-origin: top right;
+    }
+
+    // ════════════════════════════════════════════════════════════════
+    // 15. Lookbook hotspots & dropdowns
+    // ════════════════════════════════════════════════════════════════
+
+    // Bootstrap dropstart/dropend arrows swap purpose in RTL
+    .lookbook-item .dropdown {
+        &.dropstart .dropdown-menu::after {
+            right: auto;
+            left: -7px;
+            border-left: unset;
+            border-right: 8px solid var(--white);
+        }
+
+        &.dropend .dropdown-menu::after {
+            left: auto !important;
+            right: -7px !important;
+            border-right: unset !important;
+            border-left: 8px solid var(--white) !important;
+        }
+    }
+
+    // ════════════════════════════════════════════════════════════════
+    // 16. Account dashboard
+    // ════════════════════════════════════════════════════════════════
+
+    .nav-account {
+        text-align: right;
+
+        .icon {
+            margin-right: 0;
+            margin-left: 8px;
+        }
+    }
+
+    .account-title,
+    .account-my_order,
+    .account-my_address,
+    .account-my_recent {
+        text-align: right;
+    }
+
+    // Order list rows
+    .order_recent,
+    .order_prd_item,
+    .order-item {
+        .order_icon {
+            margin-right: 0;
+            margin-left: 12px;
+        }
+    }
+
+    // ════════════════════════════════════════════════════════════════
+    // 17. Marketplace — store cards, listing, detail
+    // ════════════════════════════════════════════════════════════════
+
+    .marketplace-store__filter-category-toggle {
+        margin-left: 0;
+        margin-right: auto;
+    }
+
+    .marketplace-store__filter-category-children {
+        padding-left: 0 !important;
+        padding-right: 28px !important;
+    }
+
+    .marketplace-store__reviews-histogram-label {
+        text-align: left;
+    }
+
+    .marketplace-store__filter-title,
+    .marketplace-store__name,
+    .marketplace-store__description,
+    .marketplace-store__contact {
+        text-align: right;
+    }
+
+    .marketplace-store__send-message-card,
+    .marketplace-store__send-message-info,
+    .marketplace-store__send-message-info-title,
+    .marketplace-store__send-message-lead {
+        text-align: right;
+    }
+
+    // Stores listing grid — search bar offsets
+    .ecommerce-vendors__grid,
+    .ecommerce-vendors__slider {
+        // Bootstrap row + col handles layout direction.
+    }
+
+    // ════════════════════════════════════════════════════════════════
+    // 18. Compare table & wishlist
+    // ════════════════════════════════════════════════════════════════
+
+    .compare-toolbar,
+    .compare-toolbar-info {
+        text-align: right;
+    }
+
+    .compare-product-title,
+    .compare-product-price,
+    .compare-product-actions,
+    .compare-spec-value,
+    .compare-value {
+        text-align: right;
+    }
+
+    .compare-diff-highlight {
+        border-left: 0;
+        border-right: 3px solid var(--primary);
+    }
+
+    .compare-savings-badge,
+    .compare-stock-badge {
+        margin-left: 0;
+        margin-right: 6px;
+    }
+
+    // ════════════════════════════════════════════════════════════════
+    // 19. Quick-view, quick-shop modals
+    // ════════════════════════════════════════════════════════════════
+
+    .quick-view-content,
+    .quick-view-share__label,
+    .quick-view-share__buttons {
+        text-align: right;
+    }
+
+    // ════════════════════════════════════════════════════════════════
+    // 20. Newsletter popup
+    // ════════════════════════════════════════════════════════════════
+
+    .modal-newsletter {
+        text-align: right;
+
+        .btn-close-popup,
+        .btn-close,
+        .btn-cl-pop {
+            right: auto;
+            left: 16px;
+        }
+    }
+
+    // ════════════════════════════════════════════════════════════════
+    // 21. Blog — listing, detail, comments
+    // ════════════════════════════════════════════════════════════════
+
+    .nav-post-list,
+    .nav-post-item,
+    .nav-all-post {
+        text-align: right;
+    }
+
+    // Threaded reply borders & indent
+    .comment_reply {
+        margin-left: 0;
+        margin-right: 30px;
+        padding-left: 0;
+        padding-right: 16px;
+        border-left: 0;
+        border-right: 2px solid var(--line);
+
+        @media (min-width: 1200px) {
+            margin-left: 0;
+            margin-right: 60px;
+            border-left: 0;
+            border-right: 4px solid var(--line);
+        }
+    }
+
+    // ════════════════════════════════════════════════════════════════
+    // 22. Toolbar-bottom (mobile) & scroll-to-top
+    // ════════════════════════════════════════════════════════════════
+
+    .btn-up,
+    .scroll-to-top,
+    #scrollToTopBtn {
+        right: auto;
+        left: 20px;
+    }
+
+    // ════════════════════════════════════════════════════════════════
+    // 23. Shortcodes — block-specific overrides
+    // ════════════════════════════════════════════════════════════════
+
+    // Section eyebrow + title — keep aligned to start (becomes right in RTL)
+    .tf-section-title,
+    .tf-section-subtitle {
+        text-align: right;
+    }
+
+    // "View all" / "Read more" arrow links
+    .tf-btn-view-all svg,
+    .tf-btn-readmore svg,
+    .tf-arrow-link svg,
+    .btn-direc svg,
+    .btn-direc i {
+        transform: scaleX(-1);
+    }
+
+    // Infinity marquee — brand strip stays LTR (marketing brand handedness)
+    .infinity-marquee,
+    .tf-marquee {
+        direction: ltr;
+    }
+
+    // Categories grid arrow buttons (slider variants)
+    .category-v01,
+    .category-v02,
+    .category-v03,
+    .category-v04,
+    .category-v05,
+    .category-v06,
+    .category-v07,
+    .category-v08 {
+        .swiper-button-prev,
+        .swiper-button-next {
+            // Position-flip handled by section 11; nothing more here.
+        }
+    }
+
+    // ════════════════════════════════════════════════════════════════
+    // 24. Container-bleed / negative-margin overflow guards
+    // ════════════════════════════════════════════════════════════════
+    //
+    // Components that use negative `margin-left` to bleed content into the
+    // LTR gutter need their bleed-side mirrored in RTL. Without these flips
+    // the bleed extends BEYOND the right viewport edge and triggers a
+    // horizontal scrollbar (LTR bleeds into the body padding-left, which
+    // browsers don't add to scrollWidth; in RTL the same bleed lands on
+    // the opposite edge where no such padding exists).
+
+    .wrap-sw-over {
+        margin-left: 0;
+        padding-left: 0;
+        margin-right: -10px;
+        padding-right: 10px;
+
+        @media (min-width: 1200px) {
+            margin-left: 0;
+            padding-left: 0;
+            margin-right: -40px;
+            padding-right: 40px;
+        }
+    }
+
+    // Belt-and-braces: any remaining unflipped bleed (third-party widgets,
+    // future component additions) gets clipped at the document root so a
+    // scrollbar never appears. `clip` (vs `hidden`) avoids creating a new
+    // scroll container — sticky positioning + scroll anchoring keep working.
+    // Vertical scroll on the body is unaffected.
+    html {
+        overflow-x: clip;
+    }
+
+    // ════════════════════════════════════════════════════════════════
+    // 25. Misc reset & utility flips
+    // ════════════════════════════════════════════════════════════════
+
+    // Animations that translate horizontally — invert
+    .wow.fadeInLeft,
+    .wow.slideInLeft {
+        // wow.js animations remain visually correct because the keyframes
+        // use translate3d off the same physical axis. Leave alone.
+    }
+
+    // Decorative SVG arrows in section titles
+    .icon-arrow-right > svg,
+    .icon-arrow-up-right > svg {
+        transform: scaleX(-1);
+    }
+
+    // Dropdown caret (Bootstrap default ::after triangle is symmetric).
+    // Leave .dropdown-toggle alone — Bootstrap RTL handles positioning.
+
+    // Generic floats (custom amerce utility classes only — Bootstrap
+    // float-start/float-end already swap in bootstrap.rtl.min.css)
+    .at-float-right {
+        float: left;
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "Color": {
+        "title": "Couleur"
+    },
+    "Size": {
+        "title": "Taille"
+    },
+    "Material": {
+        "title": "Matériel"
+    },
+    "Storage": {
+        "title": "Stockage"
+    }
+}

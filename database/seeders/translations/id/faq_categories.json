@@ -1,0 +1,14 @@
+{
+    "Orders & Shipping": {
+        "name": "Pemesanan & Pengiriman"
+    },
+    "Returns & Refunds": {
+        "name": "Pengembalian & Pengembalian Dana"
+    },
+    "Products & Stock": {
+        "name": "Produk & Stok"
+    },
+    "Account & Payment": {
+        "name": "Akun & Pembayaran"
+    }
+}

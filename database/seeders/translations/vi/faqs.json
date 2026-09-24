@@ -1,0 +1,54 @@
+{
+    "How long does standard shipping take?": {
+        "question": "Vận chuyển tiêu chuẩn mất bao lâu?",
+        "answer": "Vận chuyển tiêu chuẩn đến trong vòng 3-5 ngày làm việc cho đơn hàng nội địa và 7-12 ngày làm việc cho điểm đến quốc tế. Lựa chọn vận chuyển nhanh có sẵn tại bước thanh toán."
+    },
+    "Do you offer free shipping?": {
+        "question": "Quý vị có hỗ trợ miễn phí vận chuyển không?",
+        "answer": "Có — đơn hàng trên 99$ được miễn phí vận chuyển trong khu vực Hoa Kỳ lục địa. Ngưỡng miễn phí vận chuyển quốc tế thay đổi theo điểm đến và được hiển thị tại bước thanh toán."
+    },
+    "How can I track my order?": {
+        "question": "Làm thế nào để theo dõi đơn hàng?",
+        "answer": "Bạn sẽ nhận được liên kết theo dõi qua email ngay khi đơn hàng được gửi đi. Bạn cũng có thể theo dõi kiện hàng từ trang quản lý tài khoản trong mục Đơn hàng của tôi."
+    },
+    "Can I change the shipping address after I place my order?": {
+        "question": "Tôi có thể đổi địa chỉ giao hàng sau khi đặt đơn không?",
+        "answer": "Có thể đổi địa chỉ nếu đơn hàng chưa được xử lý. Hãy liên hệ với chúng tôi trong vòng hai giờ kể từ khi đặt đơn để có cơ hội cập nhật thành công cao nhất."
+    },
+    "What is your return policy?": {
+        "question": "Chính sách đổi trả của quý vị như thế nào?",
+        "answer": "Chúng tôi cho 30 ngày kể từ ngày giao hàng để trả lại bất kỳ sản phẩm nào chưa qua sử dụng trong tình trạng nguyên bản. Hàng giảm giá và đồ lót là hàng cuối — không đổi trả."
+    },
+    "How do I start a return?": {
+        "question": "Làm thế nào để bắt đầu đổi trả?",
+        "answer": "Bắt đầu đổi trả từ trang quản lý tài khoản hoặc gửi email đến returns@amerce.test cùng số đơn hàng. Chúng tôi sẽ gửi nhãn vận chuyển trả hàng trả phí trước cho đơn hàng nội địa."
+    },
+    "When will I receive my refund?": {
+        "question": "Khi nào tôi nhận được tiền hoàn lại?",
+        "answer": "Tiền hoàn được xử lý trong vòng 3-5 ngày làm việc kể từ khi chúng tôi nhận được hàng trả. Tiền thường xuất hiện trong sao kê của bạn sau thêm 5-7 ngày tùy ngân hàng."
+    },
+    "How do I find the right size?": {
+        "question": "Làm thế nào để tìm đúng kích cỡ?",
+        "answer": "Mỗi trang sản phẩm có bảng kích cỡ dựa trên số đo thực tế của sản phẩm. Nếu bạn ở giữa hai size, chúng tôi thường khuyên chọn size lớn hơn cho đồ dệt kim và áo khoác."
+    },
+    "When will sold-out items be restocked?": {
+        "question": "Khi nào sản phẩm hết hàng được nhập lại?",
+        "answer": "Hầu hết các kiểu được nhập lại trong vòng 2-4 tuần. Bấm nút Thông báo cho tôi trên bất kỳ biến thể nào hết hàng để được thông báo qua email khi sản phẩm trở lại."
+    },
+    "Are your products ethically sourced?": {
+        "question": "Sản phẩm của quý vị có nguồn cung có đạo đức không?",
+        "answer": "Có. Chúng tôi chỉ làm việc với các đối tác sản xuất đáp ứng quy tắc ứng xử nhà cung cấp, bao gồm lương công bằng, điều kiện an toàn và nguồn gốc vật liệu được xác minh."
+    },
+    "Which payment methods do you accept?": {
+        "question": "Quý vị chấp nhận những phương thức thanh toán nào?",
+        "answer": "Chúng tôi chấp nhận Visa, Mastercard, American Express, Apple Pay, Google Pay, PayPal và Klarna cho các thị trường được hỗ trợ."
+    },
+    "Is it safe to enter my card details?": {
+        "question": "Nhập thông tin thẻ có an toàn không?",
+        "answer": "Mọi thanh toán đều được xử lý bởi nhà cung cấp được chứng nhận PCI-DSS Level 1 với mã hóa TLS 1.3. Chúng tôi không bao giờ lưu trữ số thẻ đầy đủ trên máy chủ."
+    },
+    "How do I reset my password?": {
+        "question": "Làm thế nào để đặt lại mật khẩu?",
+        "answer": "Sử dụng liên kết Quên mật khẩu trên trang đăng nhập. Một liên kết đặt lại sẽ được gửi đến email đăng ký của bạn và có hiệu lực trong 30 phút."
+    }
+}

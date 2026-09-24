@@ -1,0 +1,39 @@
+/* Local font faces — Envato compliant (no Google Fonts URLs) */
+
+/* === DM Sans === */
+@font-face { font-family: 'DM Sans'; src: url('../fonts/dm-sans/dm-sans-v17-latin-300.woff2') format('woff2'); font-weight: 300; font-style: normal; font-display: swap; }
+@font-face { font-family: 'DM Sans'; src: url('../fonts/dm-sans/dm-sans-v17-latin-500.woff2') format('woff2'); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: 'DM Sans'; src: url('../fonts/dm-sans/dm-sans-v17-latin-600.woff2') format('woff2'); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: 'DM Sans'; src: url('../fonts/dm-sans/dm-sans-v17-latin-700.woff2') format('woff2'); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: 'DM Sans'; src: url('../fonts/dm-sans/dm-sans-v17-latin-regular.woff2') format('woff2'); font-weight: 400; font-style: normal; font-display: swap; }
+
+/* === Urbanist === */
+@font-face { font-family: 'Urbanist'; src: url('../fonts/urbanist/urbanist-v18-latin-300.woff2') format('woff2'); font-weight: 300; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Urbanist'; src: url('../fonts/urbanist/urbanist-v18-latin-500.woff2') format('woff2'); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Urbanist'; src: url('../fonts/urbanist/urbanist-v18-latin-600.woff2') format('woff2'); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Urbanist'; src: url('../fonts/urbanist/urbanist-v18-latin-700.woff2') format('woff2'); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Urbanist'; src: url('../fonts/urbanist/urbanist-v18-latin-800.woff2') format('woff2'); font-weight: 800; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Urbanist'; src: url('../fonts/urbanist/urbanist-v18-latin-900.woff2') format('woff2'); font-weight: 900; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Urbanist'; src: url('../fonts/urbanist/urbanist-v18-latin-regular.woff2') format('woff2'); font-weight: 400; font-style: normal; font-display: swap; }
+
+/* === Outfit === */
+@font-face { font-family: 'Outfit'; src: url('../fonts/outfit/outfit-v15-latin-300.woff2') format('woff2'); font-weight: 300; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Outfit'; src: url('../fonts/outfit/outfit-v15-latin-500.woff2') format('woff2'); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Outfit'; src: url('../fonts/outfit/outfit-v15-latin-600.woff2') format('woff2'); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Outfit'; src: url('../fonts/outfit/outfit-v15-latin-700.woff2') format('woff2'); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Outfit'; src: url('../fonts/outfit/outfit-v15-latin-800.woff2') format('woff2'); font-weight: 800; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Outfit'; src: url('../fonts/outfit/outfit-v15-latin-regular.woff2') format('woff2'); font-weight: 400; font-style: normal; font-display: swap; }
+
+/* === Kumbh Sans === */
+@font-face { font-family: 'Kumbh Sans'; src: url('../fonts/kumbh-sans/kumbh-sans-v27-latin-300.woff2') format('woff2'); font-weight: 300; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Kumbh Sans'; src: url('../fonts/kumbh-sans/kumbh-sans-v27-latin-500.woff2') format('woff2'); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Kumbh Sans'; src: url('../fonts/kumbh-sans/kumbh-sans-v27-latin-600.woff2') format('woff2'); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Kumbh Sans'; src: url('../fonts/kumbh-sans/kumbh-sans-v27-latin-700.woff2') format('woff2'); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Kumbh Sans'; src: url('../fonts/kumbh-sans/kumbh-sans-v27-latin-regular.woff2') format('woff2'); font-weight: 400; font-style: normal; font-display: swap; }
+
+/* === Red Hat Display === */
+@font-face { font-family: 'Red Hat Display'; src: url('../fonts/red-hat-display/red-hat-display-v21-latin-500.woff2') format('woff2'); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Red Hat Display'; src: url('../fonts/red-hat-display/red-hat-display-v21-latin-600.woff2') format('woff2'); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Red Hat Display'; src: url('../fonts/red-hat-display/red-hat-display-v21-latin-700.woff2') format('woff2'); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Red Hat Display'; src: url('../fonts/red-hat-display/red-hat-display-v21-latin-900.woff2') format('woff2'); font-weight: 900; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Red Hat Display'; src: url('../fonts/red-hat-display/red-hat-display-v21-latin-regular.woff2') format('woff2'); font-weight: 400; font-style: normal; font-display: swap; }

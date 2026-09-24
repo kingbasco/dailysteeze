@@ -1,0 +1,73 @@
+// ============================================================
+// Amerce theme — Marketplace shared styles
+// Imported by assets/sass/marketplace.scss.
+// Loaded conditionally when marketplace plugin is active.
+//
+// Note: store-banner / store-tabs / store-filter / reviews → _marketplace-store-detail.scss
+//       store listing rich cards → _marketplace-stores-listing.scss
+//       product-card store-name eyebrow + vendor-card tab → _marketplace-card-store-name.scss
+// This file holds ONLY the bits not owned by those: stores toolbar layout,
+// vendor-info inline pill, and the [ecommerce-vendors] shortcode wrapper.
+// ============================================================
+
+// ----------------------------------------------------------
+// Stores directory toolbar (search + sort form fields)
+// ----------------------------------------------------------
+.marketplace-stores {
+    &__title {
+        font-weight: 600;
+    }
+
+    &__count {
+        font-size: 0.875rem;
+    }
+
+    &__filters {
+        max-width: 100%;
+
+        .marketplace-stores__search {
+            min-width: 220px;
+            flex: 1 1 240px;
+        }
+
+        .marketplace-stores__sort {
+            min-width: 160px;
+            flex: 0 0 auto;
+        }
+    }
+}
+
+// ----------------------------------------------------------
+// Vendor info pill (inline "Sold by" on product detail)
+// ----------------------------------------------------------
+.marketplace-vendor-info {
+    background-color: var(--bs-light, #f8f9fa);
+
+    &__avatar img {
+        width: 32px;
+        height: 32px;
+        object-fit: cover;
+    }
+
+    &__name {
+        transition: color 0.2s ease;
+
+        &:hover {
+            color: var(--bs-primary, #1a1a1a);
+        }
+    }
+}
+
+// ----------------------------------------------------------
+// Shortcode: ecommerce-vendors slider/grid
+// ----------------------------------------------------------
+.ecommerce-vendors {
+    &__grid,
+    &__slider {
+        position: relative;
+    }
+
+    &__slider .swiper {
+        padding-bottom: 0.5rem;
+    }
+}

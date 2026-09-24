@@ -1,0 +1,54 @@
+{
+    "How long does standard shipping take?": {
+        "question": "Berapa lama waktu pengiriman standar?",
+        "answer": "Pengiriman standar tiba dalam 3-5 hari kerja untuk pesanan domestik dan 7-12 hari kerja untuk tujuan internasional. Opsi pengiriman yang dipercepat tersedia saat checkout."
+    },
+    "Do you offer free shipping?": {
+        "question": "Apakah Anda menawarkan pengiriman gratis?",
+        "answer": "Ya — pesanan di atas $99 dikirimkan gratis di wilayah AS. Ambang batas pengiriman internasional gratis bervariasi berdasarkan tujuan dan ditampilkan saat checkout."
+    },
+    "How can I track my order?": {
+        "question": "Bagaimana cara melacak pesanan saya?",
+        "answer": "Anda akan menerima tautan pelacakan melalui email segera setelah pesanan Anda dikirimkan. Anda juga dapat melacak paket Anda dari halaman manajemen akun Anda di bawah Pesanan Saya."
+    },
+    "Can I change the shipping address after I place my order?": {
+        "question": "Bisakah saya mengubah alamat pengiriman setelah saya melakukan pemesanan?",
+        "answer": "Alamat dapat diubah jika pesanan belum diproses. Hubungi kami dalam waktu dua jam setelah melakukan pemesanan untuk mendapatkan peluang terbaik agar pembaruan berhasil."
+    },
+    "What is your return policy?": {
+        "question": "Apa kebijakan pengembalian Anda?",
+        "answer": "Kami memberikan waktu 30 hari sejak tanggal pengiriman untuk mengembalikan produk yang tidak terpakai ke kondisi aslinya. Barang dan pakaian dalam yang didiskon bersifat final — tidak ada pengembalian."
+    },
+    "How do I start a return?": {
+        "question": "Bagaimana cara memulai pengembalian?",
+        "answer": "Lakukan pengembalian dari halaman manajemen akun Anda atau kirim email ke return@amerce.test dengan nomor pesanan Anda. Kami akan mengirimkan label pengiriman pengembalian prabayar untuk pesanan domestik."
+    },
+    "When will I receive my refund?": {
+        "question": "Kapan saya akan menerima pengembalian dana saya?",
+        "answer": "Pengembalian dana diproses dalam 3-5 hari kerja sejak kami menerima barang yang dikembalikan. Dana biasanya muncul di laporan Anda setelah 5-7 hari tambahan, tergantung banknya."
+    },
+    "How do I find the right size?": {
+        "question": "Bagaimana cara menemukan ukuran yang tepat?",
+        "answer": "Setiap halaman produk memiliki tabel ukuran berdasarkan pengukuran produk sebenarnya. Jika Anda berada di antara dua ukuran, kami biasanya menyarankan memilih ukuran yang lebih besar untuk pakaian rajut dan mantel."
+    },
+    "When will sold-out items be restocked?": {
+        "question": "Kapan barang yang terjual habis akan direstock?",
+        "answer": "Sebagian besar model diisi ulang dalam 2-4 minggu. Klik tombol Beritahu Saya pada variasi yang kehabisan stok untuk diberitahu melalui email ketika produk dikembalikan."
+    },
+    "Are your products ethically sourced?": {
+        "question": "Apakah produk Anda bersumber secara etis?",
+        "answer": "Memiliki. Kami hanya bekerja sama dengan mitra manufaktur yang memenuhi kode etik pemasok kami, termasuk upah yang adil, kondisi aman, dan asal bahan yang terverifikasi."
+    },
+    "Which payment methods do you accept?": {
+        "question": "Metode pembayaran apa yang Anda terima?",
+        "answer": "Kami menerima Visa, Mastercard, American Express, Apple Pay, Google Pay, PayPal, dan Klarna untuk pasar yang didukung."
+    },
+    "Is it safe to enter my card details?": {
+        "question": "Apakah aman memasukkan detail kartu saya?",
+        "answer": "Semua pembayaran diproses oleh penyedia bersertifikat PCI-DSS Level 1 dengan enkripsi TLS 1.3. Kami tidak pernah menyimpan nomor kartu lengkap di server kami."
+    },
+    "How do I reset my password?": {
+        "question": "Bagaimana cara mereset kata sandi saya?",
+        "answer": "Gunakan tautan Lupa Kata Sandi di halaman login. Tautan reset akan dikirimkan ke email Anda yang terdaftar dan berlaku selama 30 menit."
+    }
+}

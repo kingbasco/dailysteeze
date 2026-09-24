@@ -1,0 +1,14 @@
+{
+    "Color": {
+        "title": "Renk"
+    },
+    "Size": {
+        "title": "Boyut"
+    },
+    "Material": {
+        "title": "Malzeme"
+    },
+    "Storage": {
+        "title": "Depolamak"
+    }
+}

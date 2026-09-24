@@ -1,0 +1,78 @@
+{
+    "Anthro": {
+        "name": "Antro",
+        "description": "Pakaian dan peralatan rumah tangga multi-gaya yang terinspirasi oleh tradisi kerajinan global."
+    },
+    "Anvouge": {
+        "name": "Anvouge",
+        "description": "Perlengkapan fesyen modern yang dipotong dari serat ramah lingkungan."
+    },
+    "Bohome": {
+        "name": "Bohome",
+        "description": "Peralatan rumah tangga dan tekstil yang terinspirasi bohemian untuk rumah modern yang santai."
+    },
+    "Carolin": {
+        "name": "Karolina",
+        "description": "Perhiasan demi-fine dibuat dengan tangan di bengkel-bengkel kecil di Italia."
+    },
+    "Cheryl": {
+        "name": "Cheryl",
+        "description": "Pola dan bentuk luar biasa untuk wanita modern."
+    },
+    "Crate": {
+        "name": "Peti",
+        "description": "Furnitur yang terinspirasi abad pertengahan dibuat untuk bertahan selama beberapa generasi."
+    },
+    "Findr": {
+        "name": "Temukan",
+        "description": "Perlengkapan audio dirancang untuk kejernihan kualitas studio di lingkungan sehari-hari."
+    },
+    "Intdeco": {
+        "name": "Intdeco",
+        "description": "Sorotan interior memadukan minimalis dan kenyamanan."
+    },
+    "Modave": {
+        "name": "Modifikasi",
+        "description": "Perlengkapan latihan berperforma tinggi yang terbuat dari kain stretch daur ulang."
+    },
+    "Panadoxn": {
+        "name": "Panadoxn",
+        "description": "Kosmetik alami yang diteliti oleh para ahli herbal klinis."
+    },
+    "Shangxi": {
+        "name": "Shangxi",
+        "description": "Teh warisan, keramik, dan aksesoris meditasi."
+    },
+    "Sopify": {
+        "name": "Sopify",
+        "description": "Perangkat rumah pintar yang dirancang untuk penyewa dan pengunjung."
+    },
+    "Textitles": {
+        "name": "Tekstil",
+        "description": "Suede lembut dan kain tenun untuk siluet hobo dan tas bahu kasual."
+    },
+    "Vanfaba": {
+        "name": "Vanfaba",
+        "description": "Perhiasan beraksen, ikat pinggang, dan barang-barang kulit kecil melengkapi penampilan Anda."
+    },
+    "Living": {
+        "name": "Hidup",
+        "description": "Perlengkapan pelindung dan perlengkapan pelindung diri memenuhi standar tempat kerja yang paling ketat."
+    },
+    "West Elm": {
+        "name": "Elm Barat",
+        "description": "Pilihan item bengkel tahan lama untuk pembangun modern."
+    },
+    "Stanza": {
+        "name": "Bait",
+        "description": "Peralatan pengukuran presisi untuk pembangun dan kontraktor."
+    },
+    "Urban": {
+        "name": "Perkotaan",
+        "description": "Bahan habis pakai pemotongan dan pengeboran dipilih untuk keandalan industri."
+    },
+    "Vanfava": {
+        "name": "Vanfava",
+        "description": "Makanan super nabati dan nutrisi penting yang bersih."
+    }
+}

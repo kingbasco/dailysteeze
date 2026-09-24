@@ -1,0 +1,23 @@
+{
+    "No gift wrap": {
+        "option_value": "Tidak ada bungkus kado"
+    },
+    "Standard kraft wrap": {
+        "option_value": "Paket kertas kraft standar"
+    },
+    "Premium silk-ribbon wrap": {
+        "option_value": "Paket pita sutra premium"
+    },
+    "Up to 20 characters": {
+        "option_value": "Maksimum 20 karakter"
+    },
+    "Standard 1-year warranty": {
+        "option_value": "Garansi standar 1 tahun"
+    },
+    "2-year extended warranty": {
+        "option_value": "Garansi diperpanjang 2 tahun"
+    },
+    "3-year premium care": {
+        "option_value": "Perawatan premium selama 3 tahun"
+    }
+}

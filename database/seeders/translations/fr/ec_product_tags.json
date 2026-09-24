@@ -1,0 +1,47 @@
+{
+    "Cotton": {
+        "name": "Coton"
+    },
+    "Linen": {
+        "name": "Lin"
+    },
+    "Wool": {
+        "name": "Laine"
+    },
+    "Leather": {
+        "name": "Cuir"
+    },
+    "Tencel": {
+        "name": "Tencel"
+    },
+    "Recycled": {
+        "name": "Recyclé"
+    },
+    "Made in Portugal": {
+        "name": "Fabriqué au Portugal"
+    },
+    "Made in Italy": {
+        "name": "Fabriqué en Italie"
+    },
+    "Hand-Crafted": {
+        "name": "Fabriqué à la main"
+    },
+    "Vegan": {
+        "name": "Végétalien"
+    },
+    "Limited Run": {
+        "name": "Série limitée"
+    },
+    "Best Seller": {
+        "name": "Meilleur vendeur"
+    },
+    "New Arrival": {
+        "name": "Nouvelle Arrivée"
+    },
+    "Editor Pick": {
+        "name": "Choix de l'éditeur"
+    },
+    "Eco-Friendly": {
+        "name": "Respectueux de l'environnement"
+    }
+}

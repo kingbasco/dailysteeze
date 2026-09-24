@@ -1,0 +1,5739 @@
+-- MySQL dump 10.13  Distrib 8.4.4, for macos15 (arm64)
+--
+-- Host: 127.0.0.1    Database: amerce
+-- ------------------------------------------------------
+-- Server version	8.4.4
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8mb4 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `activations`
+--
+
+DROP TABLE IF EXISTS `activations`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `activations` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `user_id` bigint unsigned NOT NULL,
+  `code` varchar(120) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `completed` tinyint(1) NOT NULL DEFAULT '0',
+  `completed_at` timestamp NULL DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `activations_user_id_index` (`user_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `activations`
+--
+
+LOCK TABLES `activations` WRITE;
+/*!40000 ALTER TABLE `activations` DISABLE KEYS */;
+INSERT INTO `activations` VALUES (1,1,'Awfj0R6CSpatC1xnpAYX48p8xvyqvCN1',1,'2026-05-28 18:57:44','2026-05-28 18:57:44','2026-05-28 18:57:44');
+/*!40000 ALTER TABLE `activations` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `admin_notifications`
+--
+
+DROP TABLE IF EXISTS `admin_notifications`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `admin_notifications` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `action_label` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `action_url` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `description` varchar(400) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `read_at` timestamp NULL DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `permission` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `admin_notifications`
+--
+
+LOCK TABLES `admin_notifications` WRITE;
+/*!40000 ALTER TABLE `admin_notifications` DISABLE KEYS */;
+/*!40000 ALTER TABLE `admin_notifications` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ads`
+--
+
+DROP TABLE IF EXISTS `ads`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ads` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `expired_at` datetime DEFAULT NULL,
+  `location` varchar(120) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `key` varchar(120) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `image` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `url` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `clicked` bigint NOT NULL DEFAULT '0',
+  `order` int DEFAULT '0',
+  `status` varchar(60) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'published',
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `open_in_new_tab` tinyint(1) NOT NULL DEFAULT '1',
+  `tablet_image` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `mobile_image` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `ads_type` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `google_adsense_slot_id` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `ads_key_unique` (`key`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ads`
+--
+
+LOCK TABLES `ads` WRITE;
+/*!40000 ALTER TABLE `ads` DISABLE KEYS */;
+/*!40000 ALTER TABLE `ads` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ads_translations`
+--
+
+DROP TABLE IF EXISTS `ads_translations`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ads_translations` (
+  `lang_code` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `ads_id` bigint unsigned NOT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `image` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `url` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `tablet_image` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `mobile_image` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`lang_code`,`ads_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ads_translations`
+--
+
+LOCK TABLES `ads_translations` WRITE;
+/*!40000 ALTER TABLE `ads_translations` DISABLE KEYS */;
+/*!40000 ALTER TABLE `ads_translations` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `announcements`
+--
+
+DROP TABLE IF EXISTS `announcements`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `announcements` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `content` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `has_action` tinyint(1) NOT NULL DEFAULT '0',
+  `action_label` varchar(60) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `action_url` varchar(400) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `action_open_new_tab` tinyint(1) NOT NULL DEFAULT '0',
+  `dismissible` tinyint(1) NOT NULL DEFAULT '0',
+  `start_date` datetime DEFAULT NULL,
+  `end_date` datetime DEFAULT NULL,
+  `is_active` tinyint(1) NOT NULL DEFAULT '1',
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `announcements`
+--
+
+LOCK TABLES `announcements` WRITE;
+/*!40000 ALTER TABLE `announcements` DISABLE KEYS */;
+/*!40000 ALTER TABLE `announcements` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `announcements_translations`
+--
+
+DROP TABLE IF EXISTS `announcements_translations`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `announcements_translations` (
+  `lang_code` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `announcements_id` bigint unsigned NOT NULL,
+  `content` text COLLATE utf8mb4_unicode_ci,
+  `action_label` varchar(60) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`lang_code`,`announcements_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `announcements_translations`
+--
+
+LOCK TABLES `announcements_translations` WRITE;
+/*!40000 ALTER TABLE `announcements_translations` DISABLE KEYS */;
+/*!40000 ALTER TABLE `announcements_translations` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `audit_histories`
+--
+
+DROP TABLE IF EXISTS `audit_histories`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `audit_histories` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `user_id` bigint unsigned NOT NULL,
+  `user_type` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT 'Botble\\ACL\\Models\\User',
+  `module` varchar(60) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `request` longtext COLLATE utf8mb4_unicode_ci,
+  `action` varchar(120) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `user_agent` text COLLATE utf8mb4_unicode_ci,
+  `ip_address` varchar(45) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `actor_id` bigint unsigned NOT NULL,
+  `actor_type` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT 'Botble\\ACL\\Models\\User',
+  `reference_id` bigint unsigned NOT NULL,
+  `reference_name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `type` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `audit_histories_user_id_index` (`user_id`),
+  KEY `audit_histories_module_index` (`module`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `audit_histories`
+--
+
+LOCK TABLES `audit_histories` WRITE;
+/*!40000 ALTER TABLE `audit_histories` DISABLE KEYS */;
+/*!40000 ALTER TABLE `audit_histories` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `cache`
+--
+
+DROP TABLE IF EXISTS `cache`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `cache` (
+  `key` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `value` mediumtext COLLATE utf8mb4_unicode_ci NOT NULL,
+  `expiration` bigint NOT NULL,
+  PRIMARY KEY (`key`),
+  KEY `cache_expiration_index` (`expiration`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `cache`
+--
+
+LOCK TABLES `cache` WRITE;
+/*!40000 ALTER TABLE `cache` DISABLE KEYS */;
+/*!40000 ALTER TABLE `cache` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `cache_locks`
+--
+
+DROP TABLE IF EXISTS `cache_locks`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `cache_locks` (
+  `key` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `owner` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `expiration` bigint NOT NULL,
+  PRIMARY KEY (`key`),
+  KEY `cache_locks_expiration_index` (`expiration`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `cache_locks`
+--
+
+LOCK TABLES `cache_locks` WRITE;
+/*!40000 ALTER TABLE `cache_locks` DISABLE KEYS */;
+/*!40000 ALTER TABLE `cache_locks` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `categories`
+--
+
+DROP TABLE IF EXISTS `categories`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `categories` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(120) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `parent_id` bigint unsigned NOT NULL DEFAULT '0',
+  `description` text COLLATE utf8mb4_unicode_ci,
+  `status` varchar(60) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'published',
+  `author_id` bigint unsigned DEFAULT NULL,
+  `author_type` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'Botble\\ACL\\Models\\User',
+  `icon` varchar(60) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `order` int unsigned NOT NULL DEFAULT '0',
+  `is_featured` tinyint NOT NULL DEFAULT '0',
+  `is_default` tinyint unsigned NOT NULL DEFAULT '0',
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `categories_parent_id_index` (`parent_id`),
+  KEY `categories_status_index` (`status`),
+  KEY `categories_created_at_index` (`created_at`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `categories`
+--
+
+LOCK TABLES `categories` WRITE;
+/*!40000 ALTER TABLE `categories` DISABLE KEYS */;
+INSERT INTO `categories` VALUES (1,'Style Guides',0,'Outfit ideas, capsule wardrobes, and seasonal trend reports curated by the Amerce editorial team.','published',1,'Botble\\ACL\\Models\\User',NULL,0,0,1,'2026-05-28 18:57:44','2026-05-28 18:57:44'),(2,'Product Spotlights',0,'Deep dives into materials, craftsmanship, and the stories behind our newest drops.','published',1,'Botble\\ACL\\Models\\User',NULL,0,1,0,'2026-05-28 18:57:44','2026-05-28 18:57:44'),(3,'How-To &amp; Care',0,'Practical guides for caring for your purchases — fabric care, leather conditioning, gadget setup.','published',1,'Botble\\ACL\\Models\\User',NULL,0,1,0,'2026-05-28 18:57:44','2026-05-28 18:57:44'),(4,'Sustainability',0,'Articles on circular fashion, ethical sourcing, and the brands moving the industry forward.','published',1,'Botble\\ACL\\Models\\User',NULL,0,1,0,'2026-05-28 18:57:44','2026-05-28 18:57:44'),(5,'Buying Guides',0,'Independent comparison guides to help you choose the product that fits your needs and budget.','published',1,'Botble\\ACL\\Models\\User',NULL,0,1,0,'2026-05-28 18:57:44','2026-05-28 18:57:44'),(6,'Inside Amerce',0,'Behind-the-scenes news, supplier visits, and updates from the Amerce team.','published',1,'Botble\\ACL\\Models\\User',NULL,0,1,0,'2026-05-28 18:57:44','2026-05-28 18:57:44');
+/*!40000 ALTER TABLE `categories` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `categories_translations`
+--
+
+DROP TABLE IF EXISTS `categories_translations`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `categories_translations` (
+  `lang_code` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `categories_id` bigint unsigned NOT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `description` text COLLATE utf8mb4_unicode_ci,
+  PRIMARY KEY (`lang_code`,`categories_id`),
+  KEY `idx_categories_trans_categories_id` (`categories_id`),
+  KEY `idx_categories_trans_category_lang` (`categories_id`,`lang_code`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `categories_translations`
+--
+
+LOCK TABLES `categories_translations` WRITE;
+/*!40000 ALTER TABLE `categories_translations` DISABLE KEYS */;
+INSERT INTO `categories_translations` VALUES ('ar',1,'أدلة النمط','يتم تنسيق أفكار الأزياء وخزانة الملابس وتقارير الاتجاهات الموسمية من قبل فريق التحرير في Amerce.'),('ar',2,'أضواء كاشفة على المنتج','تحليل متعمق للمواد والحرفية والقصص وراء أحدث المجموعات.'),('ar',3,'How-To &amp; Care','Practical guides for caring for your purchases — fabric care, leather conditioning, gadget setup.'),('ar',4,'الاستدامة','مقالات حول الموضة الدائرية والمصادر الأخلاقية والعلامات التجارية التي تقود الصناعة.'),('ar',5,'أدلة الشراء','يساعدك دليل المقارنة المستقل على اختيار المنتج المناسب لاحتياجاتك وميزانيتك.'),('ar',6,'داخل امريكاس','أخبار من وراء الكواليس وزيارات الموردين وتحديثات من فريق Amerce.'),('fr',1,'Guides de style','Les idées de tenues, la garde-robe capsule et les rapports sur les tendances saisonnières sont sélectionnés par l\'équipe éditoriale d\'Amerce.'),('fr',2,'Produits phares','Une analyse approfondie des matériaux, du savoir-faire et des histoires derrière les dernières collections.'),('fr',3,'How-To &amp; Care','Practical guides for caring for your purchases — fabric care, leather conditioning, gadget setup.'),('fr',4,'Durabilité','Articles sur la mode circulaire, l\'approvisionnement éthique et les marques qui animent l\'industrie.'),('fr',5,'Guides d\'achat','Un guide de comparaison indépendant vous aide à choisir le produit adapté à vos besoins et à votre budget.'),('fr',6,'À l\'intérieur de l\'Amérique','Actualités des coulisses, visites de fournisseurs et mises à jour de l\'équipe Amerce.'),('id',1,'Panduan Gaya','Ide pakaian, lemari pakaian kapsul, dan laporan tren musiman dikurasi oleh tim editorial Amerce.'),('id',2,'Sorotan Produk','Analisis mendalam tentang bahan, pengerjaan, dan kisah di balik koleksi terbaru.'),('id',3,'How-To &amp; Care','Practical guides for caring for your purchases — fabric care, leather conditioning, gadget setup.'),('id',4,'Keberlanjutan','Artikel tentang mode sirkular, sumber etis, dan merek yang menggerakkan industri ini.'),('id',5,'Panduan Membeli','Panduan perbandingan independen membantu Anda memilih produk yang tepat sesuai kebutuhan dan anggaran Anda.'),('id',6,'Di dalam Amerika','Berita di balik layar, kunjungan pemasok, dan kabar terbaru dari tim Amerce.'),('tr',1,'Stil Kılavuzları','Kıyafet fikirleri, kapsül gardırop ve sezonluk trend raporları Amerce editör ekibi tarafından küratörlüğünü yapıyor.'),('tr',2,'Ürün Spotları','En son koleksiyonların arkasındaki malzemelerin, işçiliğin ve hikayelerin derinlemesine analizi.'),('tr',3,'How-To &amp; Care','Practical guides for caring for your purchases — fabric care, leather conditioning, gadget setup.'),('tr',4,'Sürdürülebilirlik','Döngüsel moda, etik kaynak kullanımı ve sektörü yönlendiren markalar hakkında makaleler.'),('tr',5,'Satın Alma Kılavuzları','Bağımsız karşılaştırma kılavuzu ihtiyaçlarınıza ve bütçenize uygun doğru ürünü seçmenize yardımcı olur.'),('tr',6,'Amerika\'nın İçinde','Amerce ekibinden perde arkası haberler, tedarikçi ziyaretleri ve güncellemeler.'),('vi',1,'Hướng dẫn phối đồ','Ý tưởng outfit, capsule wardrobe và báo cáo xu hướng theo mùa được tuyển chọn bởi đội ngũ biên tập Amerce.'),('vi',2,'Điểm nhấn sản phẩm','Bài phân tích chuyên sâu về vật liệu, sự thủ công và câu chuyện đằng sau những bộ sưu tập mới nhất.'),('vi',3,'How-To &amp; Care','Practical guides for caring for your purchases — fabric care, leather conditioning, gadget setup.'),('vi',4,'Phát triển bền vững','Bài viết về thời trang tuần hoàn, nguồn cung có đạo đức và những thương hiệu đang dẫn dắt ngành công nghiệp.'),('vi',5,'Hướng dẫn mua sắm','Hướng dẫn so sánh độc lập giúp bạn chọn sản phẩm phù hợp với nhu cầu và ngân sách.'),('vi',6,'Bên trong Amerce','Tin tức hậu trường, các chuyến thăm nhà cung cấp và cập nhật từ đội ngũ Amerce.');
+/*!40000 ALTER TABLE `categories_translations` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `cities`
+--
+
+DROP TABLE IF EXISTS `cities`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `cities` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(120) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `slug` varchar(120) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `state_id` bigint unsigned DEFAULT NULL,
+  `country_id` bigint unsigned DEFAULT NULL,
+  `record_id` varchar(40) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `order` tinyint NOT NULL DEFAULT '0',
+  `image` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `is_default` tinyint unsigned NOT NULL DEFAULT '0',
+  `status` varchar(60) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'published',
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `zip_code` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `cities_slug_unique` (`slug`),
+  KEY `idx_cities_name` (`name`),
+  KEY `idx_cities_state_status` (`state_id`,`status`),
+  KEY `idx_cities_status` (`status`),
+  KEY `idx_cities_state_id` (`state_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `cities`
+--
+
+LOCK TABLES `cities` WRITE;
+/*!40000 ALTER TABLE `cities` DISABLE KEYS */;
+/*!40000 ALTER TABLE `cities` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `cities_translations`
+--
+
+DROP TABLE IF EXISTS `cities_translations`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `cities_translations` (
+  `lang_code` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `cities_id` bigint unsigned NOT NULL,
+  `name` varchar(120) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `slug` varchar(120) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`lang_code`,`cities_id`),
+  KEY `idx_cities_trans_city_lang` (`cities_id`,`lang_code`),
+  KEY `idx_cities_trans_name` (`name`),
+  KEY `idx_cities_trans_cities_id` (`cities_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `cities_translations`
+--
+
+LOCK TABLES `cities_translations` WRITE;
+/*!40000 ALTER TABLE `cities_translations` DISABLE KEYS */;
+/*!40000 ALTER TABLE `cities_translations` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `contact_custom_field_options`
+--
+
+DROP TABLE IF EXISTS `contact_custom_field_options`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `contact_custom_field_options` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `custom_field_id` bigint unsigned NOT NULL,
+  `label` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `value` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `order` int NOT NULL DEFAULT '999',
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `contact_custom_field_options`
+--
+
+LOCK TABLES `contact_custom_field_options` WRITE;
+/*!40000 ALTER TABLE `contact_custom_field_options` DISABLE KEYS */;
+/*!40000 ALTER TABLE `contact_custom_field_options` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `contact_custom_field_options_translations`
+--
+
+DROP TABLE IF EXISTS `contact_custom_field_options_translations`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `contact_custom_field_options_translations` (
+  `contact_custom_field_options_id` bigint unsigned NOT NULL,
+  `lang_code` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `label` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `value` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`lang_code`,`contact_custom_field_options_id`),
+  KEY `idx_contact_cfo_trans_cfo_id` (`contact_custom_field_options_id`),
+  KEY `idx_contact_cfo_trans_cfo_lang` (`contact_custom_field_options_id`,`lang_code`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `contact_custom_field_options_translations`
+--
+
+LOCK TABLES `contact_custom_field_options_translations` WRITE;
+/*!40000 ALTER TABLE `contact_custom_field_options_translations` DISABLE KEYS */;
+/*!40000 ALTER TABLE `contact_custom_field_options_translations` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `contact_custom_fields`
+--
+
+DROP TABLE IF EXISTS `contact_custom_fields`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `contact_custom_fields` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `type` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `required` tinyint(1) NOT NULL DEFAULT '0',
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `placeholder` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `order` int NOT NULL DEFAULT '999',
+  `status` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'published',
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `contact_custom_fields`
+--
+
+LOCK TABLES `contact_custom_fields` WRITE;
+/*!40000 ALTER TABLE `contact_custom_fields` DISABLE KEYS */;
+/*!40000 ALTER TABLE `contact_custom_fields` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `contact_custom_fields_translations`
+--
+
+DROP TABLE IF EXISTS `contact_custom_fields_translations`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `contact_custom_fields_translations` (
+  `contact_custom_fields_id` bigint unsigned NOT NULL,
+  `lang_code` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `placeholder` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`lang_code`,`contact_custom_fields_id`),
+  KEY `idx_contact_cf_trans_cf_id` (`contact_custom_fields_id`),
+  KEY `idx_contact_cf_trans_cf_lang` (`contact_custom_fields_id`,`lang_code`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `contact_custom_fields_translations`
+--
+
+LOCK TABLES `contact_custom_fields_translations` WRITE;
+/*!40000 ALTER TABLE `contact_custom_fields_translations` DISABLE KEYS */;
+/*!40000 ALTER TABLE `contact_custom_fields_translations` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `contact_replies`
+--
+
+DROP TABLE IF EXISTS `contact_replies`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `contact_replies` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `message` longtext COLLATE utf8mb4_unicode_ci NOT NULL,
+  `contact_id` bigint unsigned NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `contact_replies`
+--
+
+LOCK TABLES `contact_replies` WRITE;
+/*!40000 ALTER TABLE `contact_replies` DISABLE KEYS */;
+/*!40000 ALTER TABLE `contact_replies` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `contacts`
+--
+
+DROP TABLE IF EXISTS `contacts`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `contacts` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(60) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `email` varchar(60) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `phone` varchar(60) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `address` varchar(120) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `subject` varchar(120) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `content` longtext COLLATE utf8mb4_unicode_ci NOT NULL,
+  `custom_fields` text COLLATE utf8mb4_unicode_ci,
+  `status` varchar(60) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'unread',
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `contacts`
+--
+
+LOCK TABLES `contacts` WRITE;
+/*!40000 ALTER TABLE `contacts` DISABLE KEYS */;
+INSERT INTO `contacts` VALUES (1,'Sophia Bennett','sophia.bennett@example.com','+1-415-555-0142','124 Folsom Street, San Francisco, CA','Question about international shipping rates','Hi team — could you tell me whether you ship to Singapore and what the typical delivery window is for the spring outerwear collection? Many thanks.',NULL,'read','2026-05-28 18:57:45','2026-05-28 18:57:45'),(2,'Marcus Tan','marcus.tan@example.com','+44-20-7946-0312','47 Hatton Garden, London EC1N','Wholesale enquiry — boutique partnership','Good morning. I run a curated mens boutique in central London. We would love to discuss stocking a small selection of your accessories range. Could you send over your wholesale lookbook and minimum order quantities?',NULL,'unread','2026-05-28 18:57:45','2026-05-28 18:57:45'),(3,'Elena Rodriguez','elena.rodriguez@example.com','+34-93-555-0188','Carrer de Mallorca 287, Barcelona','Order #AM-10458 — color confirmation','Could you confirm the exact shade of the walnut side table I ordered last week? I want to make sure it matches the rest of my living room before it ships.',NULL,'read','2026-05-28 18:57:45','2026-05-28 18:57:45');
+/*!40000 ALTER TABLE `contacts` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `countries`
+--
+
+DROP TABLE IF EXISTS `countries`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `countries` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(120) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `nationality` varchar(120) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `order` tinyint NOT NULL DEFAULT '0',
+  `image` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `is_default` tinyint unsigned NOT NULL DEFAULT '0',
+  `status` varchar(60) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'published',
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `code` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `idx_countries_name` (`name`),
+  KEY `idx_countries_status` (`status`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `countries`
+--
+
+LOCK TABLES `countries` WRITE;
+/*!40000 ALTER TABLE `countries` DISABLE KEYS */;
+/*!40000 ALTER TABLE `countries` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `countries_translations`
+--
+
+DROP TABLE IF EXISTS `countries_translations`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `countries_translations` (
+  `lang_code` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `countries_id` bigint unsigned NOT NULL,
+  `name` varchar(120) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `nationality` varchar(120) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`lang_code`,`countries_id`),
+  KEY `idx_countries_trans_country_lang` (`countries_id`,`lang_code`),
+  KEY `idx_countries_trans_name` (`name`),
+  KEY `idx_countries_trans_countries_id` (`countries_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `countries_translations`
+--
+
+LOCK TABLES `countries_translations` WRITE;
+/*!40000 ALTER TABLE `countries_translations` DISABLE KEYS */;
+/*!40000 ALTER TABLE `countries_translations` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `dashboard_widget_settings`
+--
+
+DROP TABLE IF EXISTS `dashboard_widget_settings`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `dashboard_widget_settings` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `settings` text COLLATE utf8mb4_unicode_ci,
+  `user_id` bigint unsigned NOT NULL,
+  `widget_id` bigint unsigned NOT NULL,
+  `order` tinyint unsigned NOT NULL DEFAULT '0',
+  `status` tinyint unsigned NOT NULL DEFAULT '1',
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `dashboard_widget_settings_user_id_index` (`user_id`),
+  KEY `dashboard_widget_settings_widget_id_index` (`widget_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `dashboard_widget_settings`
+--
+
+LOCK TABLES `dashboard_widget_settings` WRITE;
+/*!40000 ALTER TABLE `dashboard_widget_settings` DISABLE KEYS */;
+/*!40000 ALTER TABLE `dashboard_widget_settings` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `dashboard_widgets`
+--
+
+DROP TABLE IF EXISTS `dashboard_widgets`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `dashboard_widgets` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(120) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `dashboard_widgets`
+--
+
+LOCK TABLES `dashboard_widgets` WRITE;
+/*!40000 ALTER TABLE `dashboard_widgets` DISABLE KEYS */;
+/*!40000 ALTER TABLE `dashboard_widgets` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `device_tokens`
+--
+
+DROP TABLE IF EXISTS `device_tokens`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `device_tokens` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `token` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `platform` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `app_version` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `device_id` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `user_type` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `user_id` bigint unsigned DEFAULT NULL,
+  `is_active` tinyint(1) NOT NULL DEFAULT '1',
+  `last_used_at` timestamp NULL DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `device_tokens_token_unique` (`token`),
+  KEY `device_tokens_user_type_user_id_index` (`user_type`,`user_id`),
+  KEY `device_tokens_platform_is_active_index` (`platform`,`is_active`),
+  KEY `device_tokens_is_active_index` (`is_active`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `device_tokens`
+--
+
+LOCK TABLES `device_tokens` WRITE;
+/*!40000 ALTER TABLE `device_tokens` DISABLE KEYS */;
+/*!40000 ALTER TABLE `device_tokens` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_abandoned_carts`
+--
+
+DROP TABLE IF EXISTS `ec_abandoned_carts`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_abandoned_carts` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `customer_id` bigint unsigned DEFAULT NULL,
+  `session_id` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `cart_data` json NOT NULL,
+  `total_amount` decimal(15,2) NOT NULL DEFAULT '0.00',
+  `items_count` int NOT NULL DEFAULT '0',
+  `email` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `phone` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `customer_name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `abandoned_at` timestamp NULL DEFAULT NULL,
+  `reminder_sent_at` timestamp NULL DEFAULT NULL,
+  `reminders_sent` int NOT NULL DEFAULT '0',
+  `last_email_sequence` tinyint unsigned NOT NULL DEFAULT '0',
+  `recovery_token` varchar(64) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `coupon_code` varchar(32) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `clicked_at` timestamp NULL DEFAULT NULL,
+  `unsubscribe_token` varchar(64) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `unsubscribed_at` timestamp NULL DEFAULT NULL,
+  `is_recovered` tinyint(1) NOT NULL DEFAULT '0',
+  `recovered_at` timestamp NULL DEFAULT NULL,
+  `recovered_order_id` bigint unsigned DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `ec_abandoned_carts_recovery_token_unique` (`recovery_token`),
+  UNIQUE KEY `ec_abandoned_carts_unsubscribe_token_unique` (`unsubscribe_token`),
+  KEY `ec_abandoned_carts_abandoned_at_is_recovered_index` (`abandoned_at`,`is_recovered`),
+  KEY `ec_abandoned_carts_created_at_is_recovered_index` (`created_at`,`is_recovered`),
+  KEY `ec_abandoned_carts_customer_id_index` (`customer_id`),
+  KEY `ec_abandoned_carts_session_id_index` (`session_id`),
+  KEY `ec_abandoned_carts_email_index` (`email`),
+  KEY `ec_abandoned_carts_recovered_order_id_index` (`recovered_order_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_abandoned_carts`
+--
+
+LOCK TABLES `ec_abandoned_carts` WRITE;
+/*!40000 ALTER TABLE `ec_abandoned_carts` DISABLE KEYS */;
+/*!40000 ALTER TABLE `ec_abandoned_carts` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_brands`
+--
+
+DROP TABLE IF EXISTS `ec_brands`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_brands` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `description` mediumtext COLLATE utf8mb4_unicode_ci,
+  `website` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `logo` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `status` varchar(60) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'published',
+  `order` tinyint unsigned NOT NULL DEFAULT '0',
+  `is_featured` tinyint unsigned NOT NULL DEFAULT '0',
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_brands`
+--
+
+LOCK TABLES `ec_brands` WRITE;
+/*!40000 ALTER TABLE `ec_brands` DISABLE KEYS */;
+INSERT INTO `ec_brands` VALUES (1,'Anthro','Eclectic apparel and home goods inspired by global craftsmanship traditions.','https://example.com/anthro','brands/anthro.png','published',0,1,'2026-05-28 18:57:45','2026-05-28 18:57:45'),(2,'Anvouge','Modern fashion essentials cut from sustainable fibers.','https://example.com/anvouge','brands/anvouge.png','published',1,1,'2026-05-28 18:57:45','2026-05-28 18:57:45'),(3,'Bohome','Bohemian-inspired homewares and textiles for the relaxed modern home.','https://example.com/bohome','brands/bohome.png','published',2,1,'2026-05-28 18:57:45','2026-05-28 18:57:45'),(4,'Carolin','Demi-fine jewelry made by hand in small Italian ateliers.','https://example.com/carolin','brands/carolin.png','published',3,1,'2026-05-28 18:57:45','2026-05-28 18:57:45'),(5,'Cheryl','Bold prints and silhouettes for the contemporary woman.','https://example.com/cheryl','brands/cheryl.png','published',4,0,'2026-05-28 18:57:45','2026-05-28 18:57:45'),(6,'Crate','Mid-century-inspired furniture built to last generations.','https://example.com/crate','brands/crate.png','published',5,1,'2026-05-28 18:57:45','2026-05-28 18:57:45'),(7,'Findr','Audio gear engineered for studio-grade clarity in everyday environments.','https://example.com/findr','brands/findr.png','published',6,0,'2026-05-28 18:57:45','2026-05-28 18:57:45'),(8,'Intdeco','Interior accents that bridge minimalism and warmth.','https://example.com/intdeco','brands/intdeco.png','published',7,0,'2026-05-28 18:57:45','2026-05-28 18:57:45'),(9,'Modave','Performance activewear made with recycled high-stretch knits.','https://example.com/modave','brands/modave.png','published',8,0,'2026-05-28 18:57:45','2026-05-28 18:57:45'),(10,'Panadoxn','Botanical skincare formulated by clinical herbalists.','https://example.com/panadoxn','brands/panadoxn.png','published',9,0,'2026-05-28 18:57:45','2026-05-28 18:57:45'),(11,'Shangxi','Heritage tea, ceramics, and meditation accessories.','https://example.com/shangxi','brands/shangxi.png','published',10,0,'2026-05-28 18:57:45','2026-05-28 18:57:45'),(12,'Sopify','Smart home devices designed for renters and travelers.','https://example.com/sopify','brands/sopify.png','published',11,0,'2026-05-28 18:57:45','2026-05-28 18:57:45');
+/*!40000 ALTER TABLE `ec_brands` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_brands_translations`
+--
+
+DROP TABLE IF EXISTS `ec_brands_translations`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_brands_translations` (
+  `lang_code` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `ec_brands_id` bigint unsigned NOT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `description` mediumtext COLLATE utf8mb4_unicode_ci,
+  PRIMARY KEY (`lang_code`,`ec_brands_id`),
+  KEY `idx_brands_fk` (`ec_brands_id`),
+  KEY `idx_brands_brands_lang` (`ec_brands_id`,`lang_code`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_brands_translations`
+--
+
+LOCK TABLES `ec_brands_translations` WRITE;
+/*!40000 ALTER TABLE `ec_brands_translations` DISABLE KEYS */;
+INSERT INTO `ec_brands_translations` VALUES ('ar',1,'أنثرو','ملابس وأدوات منزلية متعددة الأنماط مستوحاة من التقاليد الحرفية العالمية.'),('ar',2,'أنفوج','أساسيات الموضة الحديثة مقطوعة من ألياف مستدامة.'),('ar',3,'بوهوم','أدوات منزلية ومنسوجات مستوحاة من الطراز البوهيمي للمنزل العصري المريح.'),('ar',4,'كارولين','تُصنع المجوهرات نصف الفاخرة يدويًا في ورش صغيرة في إيطاليا.'),('ar',5,'شيريل','أنماط وأشكال متميزة للمرأة العصرية.'),('ar',6,'قفص','تم تصميم الأثاث المستوحى من منتصف القرن ليدوم لأجيال.'),('ar',7,'مكتشف','معدات صوتية مصممة لتحقيق وضوح بجودة الاستوديو في البيئات اليومية.'),('ar',8,'انتديكو','تجمع المزايا الداخلية بين البساطة والراحة.'),('ar',9,'موداف','معدات تدريب عالية الأداء مصنوعة من نسيج مطاطي مُعاد تدويره.'),('ar',10,'بانادوكسن','مستحضرات التجميل الطبيعية التي بحثها خبراء الأعشاب السريرية.'),('ar',11,'شانغشى','الشاي التراثي والسيراميك وإكسسوارات التأمل.'),('ar',12,'سوبيفاي','أجهزة منزلية ذكية مصممة للمستأجرين والزوار.'),('fr',1,'Anthro','Vêtements et articles pour la maison multi-styles inspirés des traditions artisanales mondiales.'),('fr',2,'Anvouge','Des essentiels de la mode moderne coupés à partir de fibres durables.'),('fr',3,'Bohème','Articles de maison et textiles d\'inspiration bohème pour une maison moderne et décontractée.'),('fr',4,'Caroline','Les bijoux demi-fins sont fabriqués à la main dans de petits ateliers en Italie.'),('fr',5,'Cheryl','Des motifs et des formes exceptionnels pour les femmes modernes.'),('fr',6,'Caisse','Les meubles inspirés du milieu du siècle sont conçus pour durer des générations.'),('fr',7,'Trouver','Équipement audio conçu pour une clarté de qualité studio dans les environnements quotidiens.'),('fr',8,'Intdéco','Les points forts de l\'intérieur allient minimalisme et confort.'),('fr',9,'Modave','Équipement d\'entraînement haute performance fabriqué à partir de tissu extensible recyclé.'),('fr',10,'Panadoxn','Cosmétiques naturels recherchés par des experts cliniques en plantes médicinales.'),('fr',11,'Shangxi','Thé du patrimoine, céramiques et accessoires de méditation.'),('fr',12,'Sopifier','Appareils domestiques intelligents conçus pour les locataires et les visiteurs.'),('id',1,'Antro','Pakaian dan peralatan rumah tangga multi-gaya yang terinspirasi oleh tradisi kerajinan global.'),('id',2,'Anvouge','Perlengkapan fesyen modern yang dipotong dari serat ramah lingkungan.'),('id',3,'Bohome','Peralatan rumah tangga dan tekstil yang terinspirasi bohemian untuk rumah modern yang santai.'),('id',4,'Karolina','Perhiasan demi-fine dibuat dengan tangan di bengkel-bengkel kecil di Italia.'),('id',5,'Cheryl','Pola dan bentuk luar biasa untuk wanita modern.'),('id',6,'Peti','Furnitur yang terinspirasi abad pertengahan dibuat untuk bertahan selama beberapa generasi.'),('id',7,'Temukan','Perlengkapan audio dirancang untuk kejernihan kualitas studio di lingkungan sehari-hari.'),('id',8,'Intdeco','Sorotan interior memadukan minimalis dan kenyamanan.'),('id',9,'Modifikasi','Perlengkapan latihan berperforma tinggi yang terbuat dari kain stretch daur ulang.'),('id',10,'Panadoxn','Kosmetik alami yang diteliti oleh para ahli herbal klinis.'),('id',11,'Shangxi','Teh warisan, keramik, dan aksesoris meditasi.'),('id',12,'Sopify','Perangkat rumah pintar yang dirancang untuk penyewa dan pengunjung.'),('tr',1,'Antropo','Küresel zanaat geleneklerinden ilham alan çok stilde giysiler ve ev eşyaları.'),('tr',2,'Anvouge','Sürdürülebilir elyaflardan kesilmiş modern moda temelleri.'),('tr',3,'Bohome','Rahat ve modern ev için bohem esintili ev eşyaları ve tekstil ürünleri.'),('tr',4,'Carolin','Yarı kaliteli takılar İtalya\'daki küçük atölyelerde el yapımıdır.'),('tr',5,'Cheryl','Modern kadınlar için olağanüstü desenler ve şekiller.'),('tr',6,'Sandık','Yüzyılın ortasından ilham alan mobilyalar nesiller boyu dayanacak şekilde tasarlandı.'),('tr',7,'Bulucu','Günlük ortamlarda stüdyo kalitesinde netlik için tasarlanmış ses ekipmanı.'),('tr',8,'Indeco','İç mekandaki vurgular minimalizm ve rahatlığı birleştiriyor.'),('tr',9,'modave','Geri dönüştürülmüş esnek kumaştan yapılmış yüksek performanslı antrenman ekipmanı.'),('tr',10,'Panadoxn','Klinik bitkisel uzmanlar tarafından araştırılan doğal kozmetikler.'),('tr',11,'Şangxi','Miras çay, seramik ve meditasyon aksesuarları.'),('tr',12,'sopify','Kiracılar ve ziyaretçiler için tasarlanmış akıllı ev cihazları.'),('vi',1,'Anthro','Trang phục và đồ gia dụng đa phong cách lấy cảm hứng từ truyền thống thủ công toàn cầu.'),('vi',2,'Anvouge','Đồ thời trang thiết yếu hiện đại được cắt may từ sợi bền vững.'),('vi',3,'Bohome','Đồ gia dụng và dệt may cảm hứng bohemian cho ngôi nhà hiện đại thư thái.'),('vi',4,'Carolin','Trang sức demi-fine làm thủ công tại các xưởng nhỏ ở Ý.'),('vi',5,'Cheryl','Họa tiết và phom dáng nổi bật dành cho phụ nữ hiện đại.'),('vi',6,'Crate','Nội thất cảm hứng mid-century được chế tác bền vững qua nhiều thế hệ.'),('vi',7,'Findr','Thiết bị âm thanh thiết kế cho độ rõ chuẩn studio trong môi trường thường ngày.'),('vi',8,'Intdeco','Điểm nhấn nội thất kết hợp giữa tối giản và ấm cúng.'),('vi',9,'Modave','Đồ tập hiệu năng cao làm từ vải thun co giãn tái chế.'),('vi',10,'Panadoxn','Mỹ phẩm thiên nhiên được nghiên cứu bởi các chuyên gia thảo dược lâm sàng.'),('vi',11,'Shangxi','Trà di sản, gốm sứ và phụ kiện thiền.'),('vi',12,'Sopify','Thiết bị nhà thông minh thiết kế dành cho người thuê nhà và du khách.');
+/*!40000 ALTER TABLE `ec_brands_translations` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_cart`
+--
+
+DROP TABLE IF EXISTS `ec_cart`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_cart` (
+  `identifier` varchar(60) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `instance` varchar(60) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `customer_id` bigint unsigned DEFAULT NULL,
+  `content` longtext COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`identifier`,`instance`),
+  KEY `ec_cart_customer_instance_index` (`customer_id`,`instance`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_cart`
+--
+
+LOCK TABLES `ec_cart` WRITE;
+/*!40000 ALTER TABLE `ec_cart` DISABLE KEYS */;
+/*!40000 ALTER TABLE `ec_cart` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_currencies`
+--
+
+DROP TABLE IF EXISTS `ec_currencies`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_currencies` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `symbol` varchar(10) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `is_prefix_symbol` tinyint unsigned NOT NULL DEFAULT '0',
+  `decimals` tinyint unsigned DEFAULT '0',
+  `number_format_style` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'western',
+  `space_between_price_and_currency` tinyint(1) NOT NULL DEFAULT '0',
+  `order` int unsigned DEFAULT '0',
+  `is_default` tinyint NOT NULL DEFAULT '0',
+  `exchange_rate` double NOT NULL DEFAULT '1',
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_currencies`
+--
+
+LOCK TABLES `ec_currencies` WRITE;
+/*!40000 ALTER TABLE `ec_currencies` DISABLE KEYS */;
+INSERT INTO `ec_currencies` VALUES (1,'USD','$',1,2,'western',0,0,1,1,'2026-05-28 18:57:45','2026-05-28 18:57:45'),(2,'EUR','€',0,2,'western',0,1,0,0.84,'2026-05-28 18:57:45','2026-05-28 18:57:45'),(3,'VND','₫',0,0,'western',0,2,0,23203,'2026-05-28 18:57:45','2026-05-28 18:57:45'),(4,'NGN','₦',1,2,'western',0,2,0,895.52,'2026-05-28 18:57:45','2026-05-28 18:57:45');
+/*!40000 ALTER TABLE `ec_currencies` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_customer_addresses`
+--
+
+DROP TABLE IF EXISTS `ec_customer_addresses`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_customer_addresses` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `email` varchar(60) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `phone` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `country` varchar(120) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `state` varchar(120) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `city` varchar(120) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `address` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `customer_id` bigint unsigned NOT NULL,
+  `is_default` tinyint unsigned NOT NULL DEFAULT '0',
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `zip_code` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_customer_addresses`
+--
+
+LOCK TABLES `ec_customer_addresses` WRITE;
+/*!40000 ALTER TABLE `ec_customer_addresses` DISABLE KEYS */;
+INSERT INTO `ec_customer_addresses` VALUES (1,'Emma Collins','customer@botble.com','+1-555-0108','DE','Texas','Phoenix','741 Spruce Street',1,1,'2026-05-28 18:57:57','2026-05-28 18:57:57','60601'),(2,'Emma Collins','customer@botble.com','+1-555-0106','US','California','Dallas','456 Oak Avenue',1,0,'2026-05-28 18:57:57','2026-05-28 18:57:57','10001'),(3,'Sophia Ramirez','vendor@botble.com','+1-555-0106','US','New York','Los Angeles','987 Birch Boulevard',2,1,'2026-05-28 18:57:57','2026-05-28 18:57:57','19101'),(4,'Sophia Ramirez','vendor@botble.com','+1-555-0102','US','New York','Los Angeles','789 Pine Road',2,0,'2026-05-28 18:57:57','2026-05-28 18:57:57','77001'),(5,'Olivia Carter','customer1@example.com','+1-555-0104','GB','California','Chicago','321 Maple Drive',3,1,'2026-05-28 18:57:58','2026-05-28 18:57:58','60601'),(6,'Ava Mitchell','customer2@example.com','+1-555-0110','CA','Texas','San Diego','321 Maple Drive',4,1,'2026-05-28 18:57:58','2026-05-28 18:57:58','33101'),(7,'Isabella Brooks','customer3@example.com','+1-555-0102','US','Georgia','Dallas','654 Cedar Lane',5,1,'2026-05-28 18:57:58','2026-05-28 18:57:58','77001'),(8,'James Whitfield','customer4@example.com','+1-555-0101','DE','Michigan','San Diego','123 Main Street',6,1,'2026-05-28 18:57:58','2026-05-28 18:57:58','30301'),(9,'Liam Bennett','customer5@example.com','+1-555-0102','DE','New York','San Diego','456 Oak Avenue',7,1,'2026-05-28 18:57:59','2026-05-28 18:57:59','19101'),(10,'Noah Patterson','customer6@example.com','+1-555-0107','GB','Ohio','Houston','123 Main Street',8,1,'2026-05-28 18:57:59','2026-05-28 18:57:59','19101'),(11,'Charlotte Reed','customer7@example.com','+1-555-0106','US','Michigan','Phoenix','654 Cedar Lane',9,1,'2026-05-28 18:57:59','2026-05-28 18:57:59','19101'),(12,'Amelia Foster','customer8@example.com','+1-555-0109','US','Ohio','Houston','123 Main Street',10,1,'2026-05-28 18:57:59','2026-05-28 18:57:59','30301');
+/*!40000 ALTER TABLE `ec_customer_addresses` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_customer_deletion_requests`
+--
+
+DROP TABLE IF EXISTS `ec_customer_deletion_requests`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_customer_deletion_requests` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `customer_id` bigint unsigned NOT NULL,
+  `customer_name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `customer_phone` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `customer_email` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `token` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `verification_code` varchar(6) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `code_expires_at` timestamp NULL DEFAULT NULL,
+  `status` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'waiting_for_confirmation',
+  `reason` text COLLATE utf8mb4_unicode_ci,
+  `confirmed_at` datetime DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `ec_customer_deletion_requests_token_unique` (`token`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_customer_deletion_requests`
+--
+
+LOCK TABLES `ec_customer_deletion_requests` WRITE;
+/*!40000 ALTER TABLE `ec_customer_deletion_requests` DISABLE KEYS */;
+/*!40000 ALTER TABLE `ec_customer_deletion_requests` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_customer_password_resets`
+--
+
+DROP TABLE IF EXISTS `ec_customer_password_resets`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_customer_password_resets` (
+  `email` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `token` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  KEY `ec_customer_password_resets_email_index` (`email`),
+  KEY `ec_customer_password_resets_token_index` (`token`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_customer_password_resets`
+--
+
+LOCK TABLES `ec_customer_password_resets` WRITE;
+/*!40000 ALTER TABLE `ec_customer_password_resets` DISABLE KEYS */;
+/*!40000 ALTER TABLE `ec_customer_password_resets` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_customer_recently_viewed_products`
+--
+
+DROP TABLE IF EXISTS `ec_customer_recently_viewed_products`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_customer_recently_viewed_products` (
+  `customer_id` bigint unsigned NOT NULL,
+  `product_id` bigint unsigned NOT NULL,
+  PRIMARY KEY (`customer_id`,`product_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_customer_recently_viewed_products`
+--
+
+LOCK TABLES `ec_customer_recently_viewed_products` WRITE;
+/*!40000 ALTER TABLE `ec_customer_recently_viewed_products` DISABLE KEYS */;
+/*!40000 ALTER TABLE `ec_customer_recently_viewed_products` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_customer_used_coupons`
+--
+
+DROP TABLE IF EXISTS `ec_customer_used_coupons`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_customer_used_coupons` (
+  `discount_id` bigint unsigned NOT NULL,
+  `customer_id` bigint unsigned NOT NULL,
+  PRIMARY KEY (`discount_id`,`customer_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_customer_used_coupons`
+--
+
+LOCK TABLES `ec_customer_used_coupons` WRITE;
+/*!40000 ALTER TABLE `ec_customer_used_coupons` DISABLE KEYS */;
+/*!40000 ALTER TABLE `ec_customer_used_coupons` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_customers`
+--
+
+DROP TABLE IF EXISTS `ec_customers`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_customers` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `email` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `password` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `avatar` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `dob` date DEFAULT NULL,
+  `tax_class` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'regular',
+  `tax_id` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `phone` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `remember_token` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `confirmed_at` datetime DEFAULT NULL,
+  `email_verify_token` varchar(120) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `is_vendor` tinyint(1) NOT NULL DEFAULT '0',
+  `vendor_verified_at` datetime DEFAULT NULL,
+  `status` varchar(60) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'activated',
+  `block_reason` varchar(400) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `private_notes` text COLLATE utf8mb4_unicode_ci,
+  `stripe_account_id` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `stripe_account_active` tinyint(1) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  KEY `ec_customers_is_vendor_index` (`is_vendor`),
+  KEY `ec_customers_vendor_verified_at_index` (`vendor_verified_at`)
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_customers`
+--
+
+LOCK TABLES `ec_customers` WRITE;
+/*!40000 ALTER TABLE `ec_customers` DISABLE KEYS */;
+INSERT INTO `ec_customers` VALUES (1,'Emma Collins','customer@botble.com','$2y$12$ahfQcWVKoMI3.UnvHRGhjeShyD9aYS0zbC7WbzgDxKk2fDbxf9o26','testimonials/avatar-1.jpg','2000-05-28','regular',NULL,'+1-555-0101',NULL,'2026-05-28 18:57:57','2026-05-28 18:57:57','2026-05-29 01:57:57',NULL,0,NULL,'activated',NULL,NULL,NULL,0),(2,'Sophia Ramirez','vendor@botble.com','$2y$12$IjnT5jA0dxAbc.wgh9OkhOr2IGn/DiEjOonJY4BzsM2Qo4oCVlA..','testimonials/avatar-2.jpg','1991-05-23','regular',NULL,'+1-555-0102',NULL,'2026-05-28 18:57:57','2026-05-28 18:58:00','2026-05-29 01:57:57',NULL,1,'2026-05-29 01:58:00','activated',NULL,NULL,NULL,0),(3,'Olivia Carter','customer1@example.com','$2y$12$N9uCAxnY1yY/sqx7iv7zL.9iOwtKEdpBXWZvMlEmbdlEp7GrR.7V6','testimonials/avatar-3.jpg','1986-05-16','regular',NULL,'+1-555-0105',NULL,'2026-05-28 18:57:58','2026-05-28 18:58:00','2026-05-29 01:57:57',NULL,1,'2026-05-29 01:58:00','activated',NULL,NULL,NULL,0),(4,'Ava Mitchell','customer2@example.com','$2y$12$OnV/Ebquys9T6wLSnyN1pO62U5dVK4jCXss354sfMgtDW3xYd/9Aq','testimonials/avatar-4.jpg','1981-05-06','regular',NULL,'+1-555-0103',NULL,'2026-05-28 18:57:58','2026-05-28 18:58:00','2026-05-29 01:57:57',NULL,1,'2026-05-29 01:58:00','activated',NULL,NULL,NULL,0),(5,'Isabella Brooks','customer3@example.com','$2y$12$Og.6zY9Mh1yfXE5BU.xvJ.g87rcBjzphjk/3h0MXxgfOIMh4xJSvq','testimonials/avatar-5.jpg','2005-05-20','regular',NULL,'+1-555-0101',NULL,'2026-05-28 18:57:58','2026-05-28 18:58:01','2026-05-29 01:57:57',NULL,1,'2026-05-29 01:58:00','activated',NULL,NULL,NULL,0),(6,'James Whitfield','customer4@example.com','$2y$12$Gd9gKxcjBHeK8O0ORku7vOjmDzRhWiPyQh9q3RrQLreNO5DC94bbC','testimonials/avatar-6.jpg','1977-05-04','regular',NULL,'+1-555-0104',NULL,'2026-05-28 18:57:58','2026-05-28 18:58:01','2026-05-29 01:57:57',NULL,1,'2026-05-29 01:58:00','activated',NULL,NULL,NULL,0),(7,'Liam Bennett','customer5@example.com','$2y$12$IACvRfIX29se.SdYYA//Y.8l6pNvxUNv6bxsIDkdKbsnXBYoDdLmy','testimonials/avatar-7.jpg','1997-05-27','regular',NULL,'+1-555-0104',NULL,'2026-05-28 18:57:59','2026-05-28 18:58:01','2026-05-29 01:57:57',NULL,1,'2026-05-29 01:58:00','activated',NULL,NULL,NULL,0),(8,'Noah Patterson','customer6@example.com','$2y$12$XIwDnNbYhKOg5aMuv3pite2rALWgseEQDOebAQCK9bfXzdIjfdWlO','testimonials/avatar-8.jpg','1979-05-22','regular',NULL,'+1-555-0101',NULL,'2026-05-28 18:57:59','2026-05-28 18:58:01','2026-05-29 01:57:57',NULL,1,'2026-05-29 01:58:00','activated',NULL,NULL,NULL,0),(9,'Charlotte Reed','customer7@example.com','$2y$12$iwvUtEGpAgxjaV5heiRzAuoXeTfP0yH.Fg0I441v8IfbDqrbgxIfa','testimonials/avatar-9.jpg','1988-05-01','regular',NULL,'+1-555-0104',NULL,'2026-05-28 18:57:59','2026-05-28 18:58:02','2026-05-29 01:57:57',NULL,1,'2026-05-29 01:58:00','activated',NULL,NULL,NULL,0),(10,'Amelia Foster','customer8@example.com','$2y$12$5LjnZ.tfQ3p3ZnzvyW5OvumvewiGnTeJXJW0vFoylrHZA/b2epCAG','testimonials/avatar-10.jpg','1994-05-18','regular',NULL,'+1-555-0106',NULL,'2026-05-28 18:57:59','2026-05-28 18:58:02','2026-05-29 01:57:57',NULL,0,NULL,'activated',NULL,NULL,NULL,0);
+/*!40000 ALTER TABLE `ec_customers` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_discount_customers`
+--
+
+DROP TABLE IF EXISTS `ec_discount_customers`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_discount_customers` (
+  `discount_id` bigint unsigned NOT NULL,
+  `customer_id` bigint unsigned NOT NULL,
+  PRIMARY KEY (`discount_id`,`customer_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_discount_customers`
+--
+
+LOCK TABLES `ec_discount_customers` WRITE;
+/*!40000 ALTER TABLE `ec_discount_customers` DISABLE KEYS */;
+/*!40000 ALTER TABLE `ec_discount_customers` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_discount_product_categories`
+--
+
+DROP TABLE IF EXISTS `ec_discount_product_categories`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_discount_product_categories` (
+  `discount_id` bigint unsigned NOT NULL,
+  `product_category_id` bigint unsigned NOT NULL,
+  PRIMARY KEY (`discount_id`,`product_category_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_discount_product_categories`
+--
+
+LOCK TABLES `ec_discount_product_categories` WRITE;
+/*!40000 ALTER TABLE `ec_discount_product_categories` DISABLE KEYS */;
+/*!40000 ALTER TABLE `ec_discount_product_categories` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_discount_product_collections`
+--
+
+DROP TABLE IF EXISTS `ec_discount_product_collections`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_discount_product_collections` (
+  `discount_id` bigint unsigned NOT NULL,
+  `product_collection_id` bigint unsigned NOT NULL,
+  PRIMARY KEY (`discount_id`,`product_collection_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_discount_product_collections`
+--
+
+LOCK TABLES `ec_discount_product_collections` WRITE;
+/*!40000 ALTER TABLE `ec_discount_product_collections` DISABLE KEYS */;
+/*!40000 ALTER TABLE `ec_discount_product_collections` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_discount_products`
+--
+
+DROP TABLE IF EXISTS `ec_discount_products`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_discount_products` (
+  `discount_id` bigint unsigned NOT NULL,
+  `product_id` bigint unsigned NOT NULL,
+  PRIMARY KEY (`discount_id`,`product_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_discount_products`
+--
+
+LOCK TABLES `ec_discount_products` WRITE;
+/*!40000 ALTER TABLE `ec_discount_products` DISABLE KEYS */;
+/*!40000 ALTER TABLE `ec_discount_products` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_discounts`
+--
+
+DROP TABLE IF EXISTS `ec_discounts`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_discounts` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `title` varchar(120) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `code` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `start_date` datetime DEFAULT NULL,
+  `end_date` datetime DEFAULT NULL,
+  `quantity` int DEFAULT NULL,
+  `total_used` int unsigned NOT NULL DEFAULT '0',
+  `value` double DEFAULT NULL,
+  `type` varchar(60) COLLATE utf8mb4_unicode_ci DEFAULT 'coupon',
+  `can_use_with_promotion` tinyint(1) NOT NULL DEFAULT '0',
+  `can_use_with_flash_sale` tinyint(1) NOT NULL DEFAULT '0',
+  `discount_on` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `product_quantity` int unsigned DEFAULT NULL,
+  `type_option` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'amount',
+  `target` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'all-orders',
+  `min_order_price` decimal(15,2) DEFAULT NULL,
+  `apply_via_url` tinyint(1) NOT NULL DEFAULT '0',
+  `display_at_checkout` tinyint(1) NOT NULL DEFAULT '0',
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `store_id` bigint unsigned DEFAULT NULL,
+  `description` varchar(400) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `ec_discounts_code_unique` (`code`),
+  KEY `ec_discounts_store_id_index` (`store_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_discounts`
+--
+
+LOCK TABLES `ec_discounts` WRITE;
+/*!40000 ALTER TABLE `ec_discounts` DISABLE KEYS */;
+INSERT INTO `ec_discounts` VALUES (1,'Welcome 10% Off','WELCOME10','2026-05-28 01:58:00','2026-07-28 01:58:00',NULL,0,10,'coupon',0,0,NULL,NULL,'percentage','all-orders',0.00,0,1,'2026-05-28 18:58:00','2026-05-28 18:58:00',NULL,'A welcome discount for first-time shoppers — 10% off any order.'),(2,'Free Shipping Over $50','FREESHIP','2026-05-28 01:58:00',NULL,NULL,0,100,'coupon',0,0,NULL,NULL,'shipping','all-orders',50.00,0,1,'2026-05-28 18:58:00','2026-05-28 18:58:00',NULL,'Free shipping on any order $50 or above.'),(3,'Spring Sale — $25 Off','SPRING25','2026-05-28 01:58:00','2026-06-28 01:58:00',500,0,25,'coupon',0,0,NULL,NULL,'amount','all-orders',150.00,0,1,'2026-05-28 18:58:00','2026-05-28 18:58:00',NULL,'A flat $25 off orders over $150.'),(4,'VIP Member 20% Off','VIP20','2026-05-28 01:58:00','2026-08-27 01:58:00',NULL,0,20,'coupon',0,0,NULL,NULL,'percentage','all-orders',100.00,0,1,'2026-05-28 18:58:00','2026-05-28 18:58:00',NULL,'Exclusive 20% off for newsletter subscribers.'),(5,'Bundle & Save $50','BUNDLE50','2026-05-28 01:58:00','2026-07-13 01:58:00',NULL,0,50,'coupon',0,0,NULL,NULL,'amount','all-orders',300.00,0,1,'2026-05-28 18:58:00','2026-05-28 18:58:00',NULL,'Save $50 when you spend $300 or more.');
+/*!40000 ALTER TABLE `ec_discounts` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_flash_sale_products`
+--
+
+DROP TABLE IF EXISTS `ec_flash_sale_products`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_flash_sale_products` (
+  `flash_sale_id` bigint unsigned NOT NULL,
+  `product_id` bigint unsigned NOT NULL,
+  `price` double unsigned DEFAULT NULL,
+  `quantity` int unsigned DEFAULT NULL,
+  `sold` int unsigned NOT NULL DEFAULT '0',
+  KEY `ec_flash_sale_products_product_id_flash_sale_id_index` (`product_id`,`flash_sale_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_flash_sale_products`
+--
+
+LOCK TABLES `ec_flash_sale_products` WRITE;
+/*!40000 ALTER TABLE `ec_flash_sale_products` DISABLE KEYS */;
+INSERT INTO `ec_flash_sale_products` VALUES (1,14,55.3,50,0),(1,8,62.3,50,0),(1,6,41.3,50,0),(1,9,14.7,50,0),(1,5,13.3,50,0),(1,16,97.3,50,0),(1,10,12.6,50,0),(1,2,17.5,50,0),(1,12,34.3,50,0),(2,7,29.25,75,0),(2,12,36.75,75,0),(2,5,14.25,75,0),(2,16,104.25,75,0),(2,2,18.75,75,0),(2,9,15.75,75,0);
+/*!40000 ALTER TABLE `ec_flash_sale_products` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_flash_sales`
+--
+
+DROP TABLE IF EXISTS `ec_flash_sales`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_flash_sales` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `end_date` datetime NOT NULL,
+  `status` varchar(60) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'published',
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_flash_sales`
+--
+
+LOCK TABLES `ec_flash_sales` WRITE;
+/*!40000 ALTER TABLE `ec_flash_sales` DISABLE KEYS */;
+INSERT INTO `ec_flash_sales` VALUES (1,'48-Hour Flash Sale','2026-05-31 01:58:00','published','2026-05-28 18:58:00','2026-05-28 18:58:00'),(2,'Weekend Doorbusters','2026-06-03 01:58:00','published','2026-05-28 18:58:00','2026-05-28 18:58:00');
+/*!40000 ALTER TABLE `ec_flash_sales` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_flash_sales_translations`
+--
+
+DROP TABLE IF EXISTS `ec_flash_sales_translations`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_flash_sales_translations` (
+  `lang_code` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `ec_flash_sales_id` bigint unsigned NOT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`lang_code`,`ec_flash_sales_id`),
+  KEY `idx_flash_sales_fk` (`ec_flash_sales_id`),
+  KEY `idx_flash_sales_flash_sales_lang` (`ec_flash_sales_id`,`lang_code`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_flash_sales_translations`
+--
+
+LOCK TABLES `ec_flash_sales_translations` WRITE;
+/*!40000 ALTER TABLE `ec_flash_sales_translations` DISABLE KEYS */;
+/*!40000 ALTER TABLE `ec_flash_sales_translations` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_global_option_value`
+--
+
+DROP TABLE IF EXISTS `ec_global_option_value`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_global_option_value` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `option_id` bigint unsigned NOT NULL COMMENT 'option id',
+  `option_value` tinytext COLLATE utf8mb4_unicode_ci COMMENT 'option value',
+  `affect_price` double DEFAULT NULL COMMENT 'value of price of this option affect',
+  `order` int NOT NULL DEFAULT '9999',
+  `affect_type` tinyint NOT NULL DEFAULT '0' COMMENT '0. fixed 1. percent',
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_global_option_value`
+--
+
+LOCK TABLES `ec_global_option_value` WRITE;
+/*!40000 ALTER TABLE `ec_global_option_value` DISABLE KEYS */;
+INSERT INTO `ec_global_option_value` VALUES (1,1,'No gift wrap',0,0,0,'2026-05-28 18:57:45','2026-05-28 18:57:45'),(2,1,'Standard kraft wrap',4.99,1,0,'2026-05-28 18:57:45','2026-05-28 18:57:45'),(3,1,'Premium silk-ribbon wrap',9.99,2,0,'2026-05-28 18:57:45','2026-05-28 18:57:45'),(4,2,'Up to 20 characters',14.99,0,0,'2026-05-28 18:57:45','2026-05-28 18:57:45'),(5,3,'Standard 1-year warranty',0,0,0,'2026-05-28 18:57:45','2026-05-28 18:57:45'),(6,3,'2-year extended warranty',29.99,1,0,'2026-05-28 18:57:45','2026-05-28 18:57:45'),(7,3,'3-year premium care',59.99,2,0,'2026-05-28 18:57:45','2026-05-28 18:57:45');
+/*!40000 ALTER TABLE `ec_global_option_value` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_global_option_value_translations`
+--
+
+DROP TABLE IF EXISTS `ec_global_option_value_translations`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_global_option_value_translations` (
+  `lang_code` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `ec_global_option_value_id` bigint unsigned NOT NULL,
+  `option_value` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`lang_code`,`ec_global_option_value_id`),
+  KEY `idx_global_option_value_fk` (`ec_global_option_value_id`),
+  KEY `idx_global_option_value_global_option_value_lang` (`ec_global_option_value_id`,`lang_code`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_global_option_value_translations`
+--
+
+LOCK TABLES `ec_global_option_value_translations` WRITE;
+/*!40000 ALTER TABLE `ec_global_option_value_translations` DISABLE KEYS */;
+INSERT INTO `ec_global_option_value_translations` VALUES ('ar',1,'لا يوجد تغليف هدايا'),('ar',2,'حزمة ورق الكرافت القياسية'),('ar',3,'حزمة الشريط الحريري الفاخر'),('ar',4,'الحد الأقصى 20 حرفا'),('ar',5,'ضمان قياسي لمدة سنة واحدة'),('ar',6,'ضمان ممتد لمدة عامين'),('ar',7,'رعاية متميزة لمدة 3 سنوات'),('fr',1,'Pas d\'emballage cadeau'),('fr',2,'Emballage en papier kraft standard'),('fr',3,'Paquet de rubans de soie haut de gamme'),('fr',4,'20 caractères maximum'),('fr',5,'Garantie standard 1 an'),('fr',6,'Garantie prolongée de 2 ans'),('fr',7,'Soins premium pendant 3 ans'),('id',1,'Tidak ada bungkus kado'),('id',2,'Paket kertas kraft standar'),('id',3,'Paket pita sutra premium'),('id',4,'Maksimum 20 karakter'),('id',5,'Garansi standar 1 tahun'),('id',6,'Garansi diperpanjang 2 tahun'),('id',7,'Perawatan premium selama 3 tahun'),('tr',1,'Hediye paketi yok'),('tr',2,'Standart kraft kağıt paketi'),('tr',3,'Premium ipek kurdele paketi'),('tr',4,'Maksimum 20 karakter'),('tr',5,'Standart 1 yıl garanti'),('tr',6,'2 yıl uzatılmış garanti'),('tr',7,'3 yıl boyunca premium bakım'),('vi',1,'Không gói quà'),('vi',2,'Gói giấy kraft tiêu chuẩn'),('vi',3,'Gói ruy băng lụa cao cấp'),('vi',4,'Tối đa 20 ký tự'),('vi',5,'Bảo hành tiêu chuẩn 1 năm'),('vi',6,'Bảo hành mở rộng 2 năm'),('vi',7,'Chăm sóc cao cấp 3 năm');
+/*!40000 ALTER TABLE `ec_global_option_value_translations` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_global_options`
+--
+
+DROP TABLE IF EXISTS `ec_global_options`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_global_options` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT 'Name of options',
+  `option_type` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT 'option type',
+  `required` tinyint(1) NOT NULL DEFAULT '0' COMMENT 'Checked if this option is required',
+  `price_per_product` tinyint(1) NOT NULL DEFAULT '0',
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_global_options`
+--
+
+LOCK TABLES `ec_global_options` WRITE;
+/*!40000 ALTER TABLE `ec_global_options` DISABLE KEYS */;
+INSERT INTO `ec_global_options` VALUES (1,'Gift Wrapping','Botble\\Ecommerce\\Option\\OptionType\\Dropdown',0,0,'2026-05-28 18:57:45','2026-05-28 18:57:45'),(2,'Engraving','Botble\\Ecommerce\\Option\\OptionType\\Field',0,0,'2026-05-28 18:57:45','2026-05-28 18:57:45'),(3,'Extended Warranty','Botble\\Ecommerce\\Option\\OptionType\\RadioButton',0,0,'2026-05-28 18:57:45','2026-05-28 18:57:45');
+/*!40000 ALTER TABLE `ec_global_options` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_global_options_translations`
+--
+
+DROP TABLE IF EXISTS `ec_global_options_translations`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_global_options_translations` (
+  `lang_code` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `ec_global_options_id` bigint unsigned NOT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`lang_code`,`ec_global_options_id`),
+  KEY `idx_global_options_fk` (`ec_global_options_id`),
+  KEY `idx_global_options_global_options_lang` (`ec_global_options_id`,`lang_code`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_global_options_translations`
+--
+
+LOCK TABLES `ec_global_options_translations` WRITE;
+/*!40000 ALTER TABLE `ec_global_options_translations` DISABLE KEYS */;
+INSERT INTO `ec_global_options_translations` VALUES ('ar',1,'تغليف الهدايا'),('ar',2,'نقش'),('ar',3,'الضمان الممتد'),('fr',1,'Emballage cadeau'),('fr',2,'Gravure'),('fr',3,'Garantie prolongée'),('id',1,'Pembungkus Kado'),('id',2,'Ukiran'),('id',3,'Perpanjangan Garansi'),('tr',1,'Hediye Paketleme'),('tr',2,'Oymak'),('tr',3,'Uzatılmış Garanti'),('vi',1,'Gói quà'),('vi',2,'Khắc tên'),('vi',3,'Bảo hành mở rộng');
+/*!40000 ALTER TABLE `ec_global_options_translations` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_grouped_products`
+--
+
+DROP TABLE IF EXISTS `ec_grouped_products`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_grouped_products` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `parent_product_id` bigint unsigned NOT NULL,
+  `product_id` bigint unsigned NOT NULL,
+  `fixed_qty` int NOT NULL DEFAULT '1',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_grouped_products`
+--
+
+LOCK TABLES `ec_grouped_products` WRITE;
+/*!40000 ALTER TABLE `ec_grouped_products` DISABLE KEYS */;
+/*!40000 ALTER TABLE `ec_grouped_products` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_invoice_item_tax_components`
+--
+
+DROP TABLE IF EXISTS `ec_invoice_item_tax_components`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_invoice_item_tax_components` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `invoice_item_id` bigint unsigned NOT NULL,
+  `name` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `code` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `rate` decimal(8,4) NOT NULL DEFAULT '0.0000',
+  `amount` decimal(15,2) NOT NULL DEFAULT '0.00',
+  `jurisdiction` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `metadata` json DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `idx_iitc_invoice_item` (`invoice_item_id`),
+  CONSTRAINT `ec_invoice_item_tax_components_invoice_item_id_foreign` FOREIGN KEY (`invoice_item_id`) REFERENCES `ec_invoice_items` (`id`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_invoice_item_tax_components`
+--
+
+LOCK TABLES `ec_invoice_item_tax_components` WRITE;
+/*!40000 ALTER TABLE `ec_invoice_item_tax_components` DISABLE KEYS */;
+/*!40000 ALTER TABLE `ec_invoice_item_tax_components` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_invoice_items`
+--
+
+DROP TABLE IF EXISTS `ec_invoice_items`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_invoice_items` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `invoice_id` bigint unsigned NOT NULL,
+  `reference_type` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `reference_id` bigint unsigned NOT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `description` varchar(400) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `image` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `qty` int unsigned NOT NULL,
+  `price` decimal(15,2) NOT NULL DEFAULT '0.00',
+  `sub_total` decimal(15,2) unsigned NOT NULL,
+  `tax_amount` decimal(15,2) unsigned NOT NULL DEFAULT '0.00',
+  `discount_amount` decimal(15,2) unsigned NOT NULL DEFAULT '0.00',
+  `amount` decimal(15,2) unsigned NOT NULL,
+  `options` text COLLATE utf8mb4_unicode_ci,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `ec_invoice_items_reference_type_reference_id_index` (`reference_type`,`reference_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_invoice_items`
+--
+
+LOCK TABLES `ec_invoice_items` WRITE;
+/*!40000 ALTER TABLE `ec_invoice_items` DISABLE KEYS */;
+/*!40000 ALTER TABLE `ec_invoice_items` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_invoices`
+--
+
+DROP TABLE IF EXISTS `ec_invoices`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_invoices` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `reference_type` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `reference_id` bigint unsigned NOT NULL,
+  `code` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `customer_name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `company_name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `company_logo` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `customer_email` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `customer_phone` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `customer_address` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `customer_country` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `customer_state` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `customer_city` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `customer_zip_code` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `customer_address_line` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `customer_tax_id` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `sub_total` decimal(15,2) unsigned NOT NULL,
+  `tax_amount` decimal(15,2) DEFAULT '0.00',
+  `shipping_amount` decimal(15,2) unsigned NOT NULL DEFAULT '0.00',
+  `shipping_tax_amount` decimal(15,2) DEFAULT '0.00',
+  `payment_fee` decimal(15,2) DEFAULT '0.00',
+  `discount_amount` decimal(15,2) unsigned NOT NULL DEFAULT '0.00',
+  `shipping_option` varchar(60) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `shipping_method` varchar(60) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'default',
+  `coupon_code` varchar(120) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `discount_description` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `amount` decimal(15,2) unsigned NOT NULL,
+  `description` text COLLATE utf8mb4_unicode_ci,
+  `payment_id` bigint unsigned DEFAULT NULL,
+  `status` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'pending',
+  `paid_at` timestamp NULL DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `ec_invoices_code_unique` (`code`),
+  KEY `ec_invoices_reference_type_reference_id_index` (`reference_type`,`reference_id`),
+  KEY `ec_invoices_payment_id_index` (`payment_id`),
+  KEY `ec_invoices_status_index` (`status`),
+  KEY `ec_invoices_reference_id_reference_type_index` (`reference_id`,`reference_type`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_invoices`
+--
+
+LOCK TABLES `ec_invoices` WRITE;
+/*!40000 ALTER TABLE `ec_invoices` DISABLE KEYS */;
+/*!40000 ALTER TABLE `ec_invoices` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_option_value`
+--
+
+DROP TABLE IF EXISTS `ec_option_value`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_option_value` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `option_id` bigint unsigned NOT NULL COMMENT 'option id',
+  `option_value` tinytext COLLATE utf8mb4_unicode_ci COMMENT 'option value',
+  `affect_price` double DEFAULT NULL COMMENT 'value of price of this option affect',
+  `order` int NOT NULL DEFAULT '9999',
+  `affect_type` tinyint NOT NULL DEFAULT '0' COMMENT '0. fixed 1. percent',
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_option_value`
+--
+
+LOCK TABLES `ec_option_value` WRITE;
+/*!40000 ALTER TABLE `ec_option_value` DISABLE KEYS */;
+/*!40000 ALTER TABLE `ec_option_value` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_option_value_translations`
+--
+
+DROP TABLE IF EXISTS `ec_option_value_translations`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_option_value_translations` (
+  `lang_code` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `ec_option_value_id` bigint unsigned NOT NULL,
+  `option_value` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`lang_code`,`ec_option_value_id`),
+  KEY `idx_option_value_fk` (`ec_option_value_id`),
+  KEY `idx_option_value_option_value_lang` (`ec_option_value_id`,`lang_code`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_option_value_translations`
+--
+
+LOCK TABLES `ec_option_value_translations` WRITE;
+/*!40000 ALTER TABLE `ec_option_value_translations` DISABLE KEYS */;
+/*!40000 ALTER TABLE `ec_option_value_translations` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_options`
+--
+
+DROP TABLE IF EXISTS `ec_options`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_options` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT 'Name of options',
+  `option_type` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT 'option type',
+  `product_id` bigint unsigned NOT NULL DEFAULT '0',
+  `order` int NOT NULL DEFAULT '9999',
+  `required` tinyint(1) NOT NULL DEFAULT '0' COMMENT 'Checked if this option is required',
+  `price_per_product` tinyint(1) NOT NULL DEFAULT '0',
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_options`
+--
+
+LOCK TABLES `ec_options` WRITE;
+/*!40000 ALTER TABLE `ec_options` DISABLE KEYS */;
+/*!40000 ALTER TABLE `ec_options` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_options_translations`
+--
+
+DROP TABLE IF EXISTS `ec_options_translations`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_options_translations` (
+  `lang_code` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `ec_options_id` bigint unsigned NOT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`lang_code`,`ec_options_id`),
+  KEY `idx_options_fk` (`ec_options_id`),
+  KEY `idx_options_options_lang` (`ec_options_id`,`lang_code`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_options_translations`
+--
+
+LOCK TABLES `ec_options_translations` WRITE;
+/*!40000 ALTER TABLE `ec_options_translations` DISABLE KEYS */;
+/*!40000 ALTER TABLE `ec_options_translations` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_order_addresses`
+--
+
+DROP TABLE IF EXISTS `ec_order_addresses`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_order_addresses` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `phone` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `email` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `country` varchar(120) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `state` varchar(120) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `city` varchar(120) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `address` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `order_id` bigint unsigned NOT NULL,
+  `zip_code` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `type` varchar(60) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'shipping_address',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `ec_order_addresses_order_id_type_unique` (`order_id`,`type`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_order_addresses`
+--
+
+LOCK TABLES `ec_order_addresses` WRITE;
+/*!40000 ALTER TABLE `ec_order_addresses` DISABLE KEYS */;
+/*!40000 ALTER TABLE `ec_order_addresses` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_order_histories`
+--
+
+DROP TABLE IF EXISTS `ec_order_histories`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_order_histories` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `action` varchar(120) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `description` varchar(400) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `user_id` bigint unsigned DEFAULT NULL,
+  `order_id` bigint unsigned NOT NULL,
+  `extras` text COLLATE utf8mb4_unicode_ci,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_order_histories`
+--
+
+LOCK TABLES `ec_order_histories` WRITE;
+/*!40000 ALTER TABLE `ec_order_histories` DISABLE KEYS */;
+/*!40000 ALTER TABLE `ec_order_histories` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_order_metadata`
+--
+
+DROP TABLE IF EXISTS `ec_order_metadata`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_order_metadata` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `order_id` bigint unsigned NOT NULL,
+  `meta_key` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `meta_value` text COLLATE utf8mb4_unicode_ci,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `ec_order_metadata_order_id_meta_key_index` (`order_id`,`meta_key`),
+  KEY `ec_order_metadata_order_id_index` (`order_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_order_metadata`
+--
+
+LOCK TABLES `ec_order_metadata` WRITE;
+/*!40000 ALTER TABLE `ec_order_metadata` DISABLE KEYS */;
+/*!40000 ALTER TABLE `ec_order_metadata` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_order_product`
+--
+
+DROP TABLE IF EXISTS `ec_order_product`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_order_product` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `order_id` bigint unsigned NOT NULL,
+  `qty` int NOT NULL,
+  `price` decimal(15,2) NOT NULL,
+  `tax_amount` decimal(15,2) DEFAULT '0.00',
+  `tax_breakdown` json DEFAULT NULL,
+  `options` text COLLATE utf8mb4_unicode_ci,
+  `product_options` text COLLATE utf8mb4_unicode_ci COMMENT 'product option data',
+  `product_id` bigint unsigned DEFAULT NULL,
+  `product_name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `product_image` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `weight` double DEFAULT '0',
+  `restock_quantity` int unsigned DEFAULT '0',
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `product_type` varchar(60) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'physical',
+  `times_downloaded` int NOT NULL DEFAULT '0',
+  `license_code` text COLLATE utf8mb4_unicode_ci,
+  `downloaded_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `ec_order_product_order_id_product_id_index` (`order_id`,`product_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_order_product`
+--
+
+LOCK TABLES `ec_order_product` WRITE;
+/*!40000 ALTER TABLE `ec_order_product` DISABLE KEYS */;
+/*!40000 ALTER TABLE `ec_order_product` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_order_product_tax_components`
+--
+
+DROP TABLE IF EXISTS `ec_order_product_tax_components`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_order_product_tax_components` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `order_product_id` bigint unsigned NOT NULL,
+  `name` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `code` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `rate` decimal(8,4) NOT NULL DEFAULT '0.0000',
+  `amount` decimal(15,2) NOT NULL DEFAULT '0.00',
+  `jurisdiction` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `metadata` json DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `idx_opt_order_product` (`order_product_id`),
+  KEY `idx_opt_order_product_code` (`order_product_id`,`code`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_order_product_tax_components`
+--
+
+LOCK TABLES `ec_order_product_tax_components` WRITE;
+/*!40000 ALTER TABLE `ec_order_product_tax_components` DISABLE KEYS */;
+/*!40000 ALTER TABLE `ec_order_product_tax_components` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_order_referrals`
+--
+
+DROP TABLE IF EXISTS `ec_order_referrals`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_order_referrals` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `ip` varchar(39) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `landing_domain` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `landing_page` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `landing_params` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `referral` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `gclid` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `fclid` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `utm_source` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `utm_campaign` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `utm_medium` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `utm_term` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `utm_content` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `referrer_url` text COLLATE utf8mb4_unicode_ci,
+  `referrer_domain` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `order_id` bigint unsigned DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `ec_order_referrals_order_id_index` (`order_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_order_referrals`
+--
+
+LOCK TABLES `ec_order_referrals` WRITE;
+/*!40000 ALTER TABLE `ec_order_referrals` DISABLE KEYS */;
+/*!40000 ALTER TABLE `ec_order_referrals` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_order_return_histories`
+--
+
+DROP TABLE IF EXISTS `ec_order_return_histories`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_order_return_histories` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `user_id` bigint unsigned DEFAULT NULL,
+  `order_return_id` bigint unsigned NOT NULL,
+  `action` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `description` varchar(400) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `reason` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_order_return_histories`
+--
+
+LOCK TABLES `ec_order_return_histories` WRITE;
+/*!40000 ALTER TABLE `ec_order_return_histories` DISABLE KEYS */;
+/*!40000 ALTER TABLE `ec_order_return_histories` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_order_return_items`
+--
+
+DROP TABLE IF EXISTS `ec_order_return_items`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_order_return_items` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `order_return_id` bigint unsigned NOT NULL COMMENT 'Order return id',
+  `order_product_id` bigint unsigned NOT NULL COMMENT 'Order product id',
+  `product_id` bigint unsigned NOT NULL COMMENT 'Product id',
+  `product_name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `product_image` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `qty` int NOT NULL COMMENT 'Quantity return',
+  `price` decimal(15,2) NOT NULL COMMENT 'Price Product',
+  `reason` text COLLATE utf8mb4_unicode_ci,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `refund_amount` decimal(12,2) DEFAULT '0.00',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_order_return_items`
+--
+
+LOCK TABLES `ec_order_return_items` WRITE;
+/*!40000 ALTER TABLE `ec_order_return_items` DISABLE KEYS */;
+/*!40000 ALTER TABLE `ec_order_return_items` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_order_returns`
+--
+
+DROP TABLE IF EXISTS `ec_order_returns`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_order_returns` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `code` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `order_id` bigint unsigned NOT NULL COMMENT 'Order ID',
+  `store_id` bigint unsigned DEFAULT NULL COMMENT 'Store ID',
+  `user_id` bigint unsigned NOT NULL COMMENT 'Customer ID',
+  `reason` text COLLATE utf8mb4_unicode_ci COMMENT 'Reason return order',
+  `images` json DEFAULT NULL,
+  `order_status` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT 'Order current status',
+  `return_status` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT 'Return status',
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `ec_order_returns_code_unique` (`code`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_order_returns`
+--
+
+LOCK TABLES `ec_order_returns` WRITE;
+/*!40000 ALTER TABLE `ec_order_returns` DISABLE KEYS */;
+/*!40000 ALTER TABLE `ec_order_returns` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_order_tax_information`
+--
+
+DROP TABLE IF EXISTS `ec_order_tax_information`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_order_tax_information` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `order_id` bigint unsigned NOT NULL,
+  `company_name` varchar(120) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `company_address` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `company_tax_code` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `company_email` varchar(60) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `ec_order_tax_information_order_id_index` (`order_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_order_tax_information`
+--
+
+LOCK TABLES `ec_order_tax_information` WRITE;
+/*!40000 ALTER TABLE `ec_order_tax_information` DISABLE KEYS */;
+/*!40000 ALTER TABLE `ec_order_tax_information` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_orders`
+--
+
+DROP TABLE IF EXISTS `ec_orders`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_orders` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `code` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `user_id` bigint unsigned DEFAULT NULL,
+  `shipping_option` varchar(60) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `shipping_method` varchar(60) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'default',
+  `status` varchar(120) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'pending',
+  `amount` decimal(15,2) NOT NULL,
+  `tax_amount` decimal(15,2) DEFAULT '0.00',
+  `shipping_amount` decimal(15,2) DEFAULT NULL,
+  `shipping_tax_amount` decimal(15,2) DEFAULT '0.00',
+  `payment_fee` decimal(15,2) DEFAULT '0.00',
+  `description` text COLLATE utf8mb4_unicode_ci,
+  `coupon_code` varchar(120) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `discount_amount` decimal(15,2) DEFAULT NULL,
+  `sub_total` decimal(15,2) NOT NULL,
+  `is_confirmed` tinyint(1) NOT NULL DEFAULT '0',
+  `discount_description` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `is_finished` tinyint(1) DEFAULT '0',
+  `cancellation_reason` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `cancellation_reason_description` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `completed_at` timestamp NULL DEFAULT NULL,
+  `token` varchar(120) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `payment_id` bigint unsigned DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `store_id` bigint unsigned DEFAULT NULL,
+  `proof_file` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `private_notes` text COLLATE utf8mb4_unicode_ci,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `ec_orders_code_unique` (`code`),
+  KEY `ec_orders_user_id_status_created_at_index` (`user_id`,`status`,`created_at`),
+  KEY `ec_orders_store_id_index` (`store_id`),
+  KEY `ec_orders_store_finished_index` (`store_id`,`is_finished`),
+  KEY `ec_orders_status_created_at_index` (`status`,`created_at`),
+  KEY `ec_orders_user_id_is_finished_index` (`user_id`,`is_finished`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_orders`
+--
+
+LOCK TABLES `ec_orders` WRITE;
+/*!40000 ALTER TABLE `ec_orders` DISABLE KEYS */;
+/*!40000 ALTER TABLE `ec_orders` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_product_attribute_sets`
+--
+
+DROP TABLE IF EXISTS `ec_product_attribute_sets`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_product_attribute_sets` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `title` varchar(120) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `slug` varchar(120) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `display_layout` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'dropdown',
+  `is_searchable` tinyint unsigned NOT NULL DEFAULT '1',
+  `is_comparable` tinyint unsigned NOT NULL DEFAULT '1',
+  `is_use_in_product_listing` tinyint unsigned NOT NULL DEFAULT '0',
+  `status` varchar(60) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'published',
+  `order` tinyint unsigned NOT NULL DEFAULT '0',
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `use_image_from_product_variation` tinyint unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  KEY `idx_order_id` (`order`,`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_product_attribute_sets`
+--
+
+LOCK TABLES `ec_product_attribute_sets` WRITE;
+/*!40000 ALTER TABLE `ec_product_attribute_sets` DISABLE KEYS */;
+INSERT INTO `ec_product_attribute_sets` VALUES (1,'Color','color','visual',1,1,1,'published',0,'2026-05-28 18:57:45','2026-05-28 18:57:45',1),(2,'Size','size','text',1,1,1,'published',1,'2026-05-28 18:57:45','2026-05-28 18:57:45',0),(3,'Material','material','text',1,1,1,'published',2,'2026-05-28 18:57:45','2026-05-28 18:57:45',0);
+/*!40000 ALTER TABLE `ec_product_attribute_sets` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_product_attribute_sets_translations`
+--
+
+DROP TABLE IF EXISTS `ec_product_attribute_sets_translations`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_product_attribute_sets_translations` (
+  `lang_code` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `ec_product_attribute_sets_id` bigint unsigned NOT NULL,
+  `title` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`lang_code`,`ec_product_attribute_sets_id`),
+  KEY `idx_product_attribute_sets_fk` (`ec_product_attribute_sets_id`),
+  KEY `idx_product_attribute_sets_product_attribute_sets_lang` (`ec_product_attribute_sets_id`,`lang_code`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_product_attribute_sets_translations`
+--
+
+LOCK TABLES `ec_product_attribute_sets_translations` WRITE;
+/*!40000 ALTER TABLE `ec_product_attribute_sets_translations` DISABLE KEYS */;
+INSERT INTO `ec_product_attribute_sets_translations` VALUES ('ar',1,'لون'),('ar',2,'مقاس'),('ar',3,'مادة'),('fr',1,'Couleur'),('fr',2,'Taille'),('fr',3,'Matériel'),('id',1,'Warna'),('id',2,'Ukuran'),('id',3,'Bahan'),('tr',1,'Renk'),('tr',2,'Boyut'),('tr',3,'Malzeme'),('vi',1,'Màu sắc'),('vi',2,'Kích cỡ'),('vi',3,'Chất liệu');
+/*!40000 ALTER TABLE `ec_product_attribute_sets_translations` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_product_attributes`
+--
+
+DROP TABLE IF EXISTS `ec_product_attributes`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_product_attributes` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `attribute_set_id` bigint unsigned NOT NULL,
+  `title` varchar(120) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `slug` varchar(120) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `color` varchar(120) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `image` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `is_default` tinyint unsigned NOT NULL DEFAULT '0',
+  `order` tinyint unsigned NOT NULL DEFAULT '0',
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `attribute_set_status_index` (`attribute_set_id`),
+  KEY `idx_attribute_set_id` (`attribute_set_id`),
+  KEY `idx_attribute_set_order_id` (`attribute_set_id`,`order`,`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_product_attributes`
+--
+
+LOCK TABLES `ec_product_attributes` WRITE;
+/*!40000 ALTER TABLE `ec_product_attributes` DISABLE KEYS */;
+INSERT INTO `ec_product_attributes` VALUES (1,1,'Black','black','#000000',NULL,1,0,'2026-05-28 18:57:45','2026-05-28 18:57:45'),(2,1,'White','white','#FFFFFF',NULL,0,1,'2026-05-28 18:57:45','2026-05-28 18:57:45'),(3,1,'Beige','beige','#D6BFA0',NULL,0,2,'2026-05-28 18:57:45','2026-05-28 18:57:45'),(4,1,'Olive','olive','#6B7843',NULL,0,3,'2026-05-28 18:57:45','2026-05-28 18:57:45'),(5,1,'Navy','navy','#10243F',NULL,0,4,'2026-05-28 18:57:45','2026-05-28 18:57:45'),(6,1,'Burgundy','burgundy','#7B1F2B',NULL,0,5,'2026-05-28 18:57:45','2026-05-28 18:57:45'),(7,1,'Charcoal','charcoal','#374049',NULL,0,6,'2026-05-28 18:57:45','2026-05-28 18:57:45'),(8,1,'Cream','cream','#F1E8D7',NULL,0,7,'2026-05-28 18:57:45','2026-05-28 18:57:45'),(9,1,'Pink','pink','#F2C2BB',NULL,0,8,'2026-05-28 18:57:45','2026-05-28 18:57:45'),(10,1,'Brown','brown','#905D5D',NULL,0,9,'2026-05-28 18:57:45','2026-05-28 18:57:45'),(11,1,'Green','green','#B2BD9F',NULL,0,10,'2026-05-28 18:57:45','2026-05-28 18:57:45'),(12,1,'Blue','blue','#87CEEB',NULL,0,11,'2026-05-28 18:57:45','2026-05-28 18:57:45'),(13,2,'XS','xs',NULL,NULL,1,0,'2026-05-28 18:57:45','2026-05-28 18:57:45'),(14,2,'S','s',NULL,NULL,0,1,'2026-05-28 18:57:45','2026-05-28 18:57:45'),(15,2,'M','m',NULL,NULL,0,2,'2026-05-28 18:57:45','2026-05-28 18:57:45'),(16,2,'L','l',NULL,NULL,0,3,'2026-05-28 18:57:45','2026-05-28 18:57:45'),(17,2,'XL','xl',NULL,NULL,0,4,'2026-05-28 18:57:45','2026-05-28 18:57:45'),(18,2,'XXL','xxl',NULL,NULL,0,5,'2026-05-28 18:57:45','2026-05-28 18:57:45'),(19,3,'Cotton','cotton',NULL,NULL,1,0,'2026-05-28 18:57:45','2026-05-28 18:57:45'),(20,3,'Linen','linen',NULL,NULL,0,1,'2026-05-28 18:57:45','2026-05-28 18:57:45'),(21,3,'Wool','wool',NULL,NULL,0,2,'2026-05-28 18:57:45','2026-05-28 18:57:45'),(22,3,'Tencel','tencel',NULL,NULL,0,3,'2026-05-28 18:57:45','2026-05-28 18:57:45'),(23,3,'Recycled Polyester','recycled-polyester',NULL,NULL,0,4,'2026-05-28 18:57:45','2026-05-28 18:57:45'),(24,3,'Full-Grain Leather','full-grain-leather',NULL,NULL,0,5,'2026-05-28 18:57:45','2026-05-28 18:57:45');
+/*!40000 ALTER TABLE `ec_product_attributes` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_product_attributes_translations`
+--
+
+DROP TABLE IF EXISTS `ec_product_attributes_translations`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_product_attributes_translations` (
+  `lang_code` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `ec_product_attributes_id` bigint unsigned NOT NULL,
+  `title` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`lang_code`,`ec_product_attributes_id`),
+  KEY `idx_product_attributes_fk` (`ec_product_attributes_id`),
+  KEY `idx_product_attributes_product_attributes_lang` (`ec_product_attributes_id`,`lang_code`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_product_attributes_translations`
+--
+
+LOCK TABLES `ec_product_attributes_translations` WRITE;
+/*!40000 ALTER TABLE `ec_product_attributes_translations` DISABLE KEYS */;
+INSERT INTO `ec_product_attributes_translations` VALUES ('ar',1,'أسود'),('ar',2,'أبيض'),('ar',3,'البيج'),('ar',4,'زيتون'),('ar',5,'البحرية'),('ar',6,'بورجوندي'),('ar',7,'فحم'),('ar',8,'كريم'),('ar',9,'Pink'),('ar',10,'Brown'),('ar',11,'Green'),('ar',12,'Blue'),('ar',13,'XS'),('ar',14,'S'),('ar',15,'M'),('ar',16,'L'),('ar',17,'XL'),('ar',18,'XXL'),('ar',19,'قطن'),('ar',20,'الكتان'),('ar',21,'صوف'),('ar',22,'ايوسل'),('ar',23,'البوليستر المعاد تدويره'),('ar',24,'جلد محبب بالكامل'),('fr',1,'Noir'),('fr',2,'Blanc'),('fr',3,'Beige'),('fr',4,'Olive'),('fr',5,'Marine'),('fr',6,'Bourgogne'),('fr',7,'Charbon de bois'),('fr',8,'Crème'),('fr',9,'Pink'),('fr',10,'Brown'),('fr',11,'Green'),('fr',12,'Blue'),('fr',13,'XS'),('fr',14,'S'),('fr',15,'M'),('fr',16,'L'),('fr',17,'XL'),('fr',18,'XXL'),('fr',19,'Coton'),('fr',20,'Lin'),('fr',21,'Laine'),('fr',22,'Tencel'),('fr',23,'Polyester recyclé'),('fr',24,'Cuir pleine fleur'),('id',1,'Hitam'),('id',2,'Putih'),('id',3,'Krem'),('id',4,'Zaitun'),('id',5,'Angkatan laut'),('id',6,'merah anggur'),('id',7,'Arang'),('id',8,'Krim'),('id',9,'Pink'),('id',10,'Brown'),('id',11,'Green'),('id',12,'Blue'),('id',13,'XS'),('id',14,'S'),('id',15,'M'),('id',16,'L'),('id',17,'XL'),('id',18,'XXL'),('id',19,'Kapas'),('id',20,'Linen'),('id',21,'Wol'),('id',22,'Tencel'),('id',23,'Poliester Daur Ulang'),('id',24,'Kulit Gandum Penuh'),('tr',1,'Siyah'),('tr',2,'Beyaz'),('tr',3,'Bej'),('tr',4,'Zeytin'),('tr',5,'Donanma'),('tr',6,'Bordo'),('tr',7,'Kömür'),('tr',8,'Krem'),('tr',9,'Pink'),('tr',10,'Brown'),('tr',11,'Green'),('tr',12,'Blue'),('tr',13,'XS'),('tr',14,'S'),('tr',15,'M'),('tr',16,'L'),('tr',17,'XL'),('tr',18,'XXL'),('tr',19,'Pamuk'),('tr',20,'Keten'),('tr',21,'Yün'),('tr',22,'Tencel'),('tr',23,'Geri Dönüştürülmüş Polyester'),('tr',24,'Tam Sırçalı Deri'),('vi',1,'Đen'),('vi',2,'Trắng'),('vi',3,'Be'),('vi',4,'Ô-liu'),('vi',5,'Xanh navy'),('vi',6,'Đỏ burgundy'),('vi',7,'Xám than'),('vi',8,'Kem'),('vi',9,'Pink'),('vi',10,'Brown'),('vi',11,'Green'),('vi',12,'Blue'),('vi',13,'XS'),('vi',14,'S'),('vi',15,'M'),('vi',16,'L'),('vi',17,'XL'),('vi',18,'XXL'),('vi',19,'Cotton'),('vi',20,'Linen'),('vi',21,'Len'),('vi',22,'Tencel'),('vi',23,'Polyester tái chế'),('vi',24,'Da nguyên tấm');
+/*!40000 ALTER TABLE `ec_product_attributes_translations` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_product_categories`
+--
+
+DROP TABLE IF EXISTS `ec_product_categories`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_product_categories` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `slug` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `parent_id` bigint unsigned NOT NULL DEFAULT '0',
+  `description` mediumtext COLLATE utf8mb4_unicode_ci,
+  `status` varchar(60) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'published',
+  `order` int unsigned NOT NULL DEFAULT '0',
+  `image` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `is_featured` tinyint unsigned NOT NULL DEFAULT '0',
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `icon` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `icon_image` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `ec_product_categories_parent_id_status_created_at_index` (`parent_id`,`status`,`created_at`),
+  KEY `ec_product_categories_parent_id_status_index` (`parent_id`,`status`),
+  KEY `idx_categories_status_order` (`status`,`order`),
+  KEY `idx_categories_order` (`order`),
+  KEY `ec_product_categories_slug_index` (`slug`),
+  KEY `idx_ec_product_categories_status` (`status`),
+  KEY `idx_ec_product_categories_parent_id` (`parent_id`),
+  KEY `idx_ec_product_categories_status_parent_order` (`status`,`parent_id`,`order`),
+  KEY `idx_ec_product_categories_is_featured` (`is_featured`),
+  KEY `idx_ec_product_categories_name` (`name`),
+  KEY `idx_ec_product_categories_slug` (`slug`)
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_product_categories`
+--
+
+LOCK TABLES `ec_product_categories` WRITE;
+/*!40000 ALTER TABLE `ec_product_categories` DISABLE KEYS */;
+INSERT INTO `ec_product_categories` VALUES (1,'Yoga',NULL,0,'Yoga apparel and accessories engineered for breath, balance, and flow.','published',0,'categories/cate-37.jpg',1,'2026-05-28 18:57:45','2026-05-28 18:57:45',NULL,NULL),(2,'Leggings',NULL,0,'High-rise compression leggings with four-way stretch and squat-proof fabric.','published',1,'categories/cate-38.jpg',1,'2026-05-28 18:57:45','2026-05-28 18:57:45',NULL,NULL),(3,'Tennis',NULL,0,'Court-ready tennis apparel — pleated skirts, polo dresses, performance shorts.','published',2,'categories/cate-39.jpg',1,'2026-05-28 18:57:45','2026-05-28 18:57:45',NULL,NULL),(4,'Gym',NULL,0,'Strength-training gear built for weight rooms and high-rep circuits.','published',3,'categories/cate-40.jpg',1,'2026-05-28 18:57:45','2026-05-28 18:57:45',NULL,NULL),(5,'Running',NULL,0,'Lightweight running apparel with reflective trims and sweat-wicking knits.','published',4,'categories/cate-41.jpg',1,'2026-05-28 18:57:45','2026-05-28 18:57:45',NULL,NULL),(6,'Outerwear',NULL,0,'Coats, jackets, and overshirts for every season.','published',5,'categories/cate-1.jpg',0,'2026-05-28 18:57:45','2026-05-28 18:57:45',NULL,NULL),(7,'Tops & Shirts',NULL,0,'Tees, button-ups, knits, and blouses cut for everyday wear.','published',6,'categories/cate-2.jpg',0,'2026-05-28 18:57:45','2026-05-28 18:57:45',NULL,NULL),(8,'Bottoms',NULL,0,'Trousers, denim, skirts, and shorts in modern silhouettes.','published',7,'categories/cate-3.jpg',0,'2026-05-28 18:57:45','2026-05-28 18:57:45',NULL,NULL),(9,'Dresses',NULL,0,'Mini, midi, and maxi dresses for every occasion.','published',8,'categories/cate-4.jpg',0,'2026-05-28 18:57:45','2026-05-28 18:57:45',NULL,NULL),(10,'Footwear',NULL,0,'Sneakers, boots, heels, and flats from leading independent makers.','published',9,'categories/cate-5.jpg',0,'2026-05-28 18:57:45','2026-05-28 18:57:45',NULL,NULL),(11,'Accessories',NULL,0,'Bags, wallets, belts, and jewelry to finish every look.','published',10,'categories/cate-6.jpg',0,'2026-05-28 18:57:45','2026-05-28 18:57:45',NULL,NULL),(12,'Beauty & Cosmetics',NULL,0,'Skincare, fragrance, and color cosmetics from cult-favorite brands.','published',11,'categories/cate-7.jpg',0,'2026-05-28 18:57:45','2026-05-28 18:57:45',NULL,NULL),(13,'Electronics',NULL,0,'Headphones, smart home, and personal tech worth keeping.','published',12,'categories/cate-8.jpg',0,'2026-05-28 18:57:45','2026-05-28 18:57:45',NULL,NULL),(14,'Home & Furniture',NULL,0,'Living room, bedroom, and dining pieces with sustainable provenance.','published',13,'categories/cate-9.jpg',0,'2026-05-28 18:57:45','2026-05-28 18:57:45',NULL,NULL),(15,'Sports & Fitness',NULL,0,'Activewear, yoga gear, and recovery essentials.','published',14,'categories/cate-10.jpg',0,'2026-05-28 18:57:45','2026-05-28 18:57:45',NULL,NULL),(16,'Jewelry & Watches',NULL,0,'Fine and demi-fine jewelry, plus mechanical timepieces.','published',15,'categories/cate-11.jpg',0,'2026-05-28 18:57:45','2026-05-28 18:57:45',NULL,NULL);
+/*!40000 ALTER TABLE `ec_product_categories` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_product_categories_translations`
+--
+
+DROP TABLE IF EXISTS `ec_product_categories_translations`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_product_categories_translations` (
+  `lang_code` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `ec_product_categories_id` bigint unsigned NOT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `slug` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `description` mediumtext COLLATE utf8mb4_unicode_ci,
+  PRIMARY KEY (`lang_code`,`ec_product_categories_id`),
+  KEY `idx_product_categories_fk` (`ec_product_categories_id`),
+  KEY `idx_product_categories_product_categories_lang` (`ec_product_categories_id`,`lang_code`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_product_categories_translations`
+--
+
+LOCK TABLES `ec_product_categories_translations` WRITE;
+/*!40000 ALTER TABLE `ec_product_categories_translations` DISABLE KEYS */;
+INSERT INTO `ec_product_categories_translations` VALUES ('ar',1,'اليوغا',NULL,'ملابس وإكسسوارات اليوغا مصممة للتنفس والتوازن والتدفق.'),('ar',2,'طماق',NULL,'طماق ضغط عالية الارتفاع مع نسيج مطاطي مقاوم للقرفصاء في أربعة اتجاهات.'),('ar',3,'التنس',NULL,'ملابس التنس الجاهزة للملاعب - التنانير ذات الثنيات، وفساتين البولو، وسراويل الأداء.'),('ar',4,'نادي رياضي',NULL,'معدات تدريب القوة مصممة لغرف الأثقال والدوائر عالية التكرار.'),('ar',5,'جري',NULL,'ملابس جري خفيفة الوزن مع حواف عاكسة وحياكة مقاومة للعرق.'),('ar',6,'ملابس خارجية',NULL,'المعاطف والسترات والقمصان لكل موسم.'),('ar',7,'بلايز وقمصان',NULL,'تم تصميم القمصان والأزرار والحياكة والبلوزات للأيام غير الرسمية.'),('ar',8,'قيعان',NULL,'بناطيل وجينز وتنانير وشورتات بأشكال عصرية.'),('ar',9,'فساتين',NULL,'فساتين ميني، ميدي وماكسي لجميع المناسبات.'),('ar',10,'الأحذية',NULL,'الأحذية الرياضية والأحذية ذات الكعب العالي والأحذية المسطحة من أبرز الشركات المصنعة المستقلة.'),('ar',11,'مُكَمِّلات',NULL,'حقائب اليد والمحافظ والأحزمة والمجوهرات لإكمال أي ملابس.'),('ar',12,'التجميل ومستحضرات التجميل',NULL,'العناية بالبشرة والعطور والمكياج من الماركات المفضلة.'),('ar',13,'إلكترونيات',NULL,'سماعات الرأس والأجهزة المنزلية الذكية والتكنولوجيا الشخصية تستحق الامتلاك.'),('ar',14,'المنزل والأثاث',NULL,'أثاث غرفة المعيشة وغرفة النوم وغرفة الطعام من مصادر مستدامة.'),('ar',15,'الرياضة واللياقة البدنية',NULL,'معدات التمرين الأساسية، ومعدات اليوغا، وإكسسوارات التعافي.'),('ar',16,'المجوهرات والساعات',NULL,'المجوهرات الراقية والساعات النصف دقيقة والميكانيكية.'),('fr',1,'Yoga',NULL,'Vêtements et accessoires de yoga conçus pour la respiration, l\'équilibre et la fluidité.'),('fr',2,'Guêtres',NULL,'Legging de compression taille haute avec tissu extensible dans quatre directions et résistant aux squats.'),('fr',3,'Tennis',NULL,'Vêtements de tennis prêts pour le court : jupes plissées, robes polo, shorts de performance.'),('fr',4,'Salle de sport',NULL,'Équipement de musculation conçu pour les salles de musculation et les circuits à haute répétition.'),('fr',5,'En cours d\'exécution',NULL,'Vêtements de course légers avec bordures réfléchissantes et tricots évacuant la transpiration.'),('fr',6,'Vêtements d\'extérieur',NULL,'Des manteaux, vestes et surchemises pour toutes les saisons.'),('fr',7,'Hauts et chemises',NULL,'Les t-shirts, les chemises boutonnées, les pulls et les chemisiers sont adaptés aux journées décontractées.'),('fr',8,'Bas',NULL,'Pantalons, jeans, jupes et shorts aux formes modernes.'),('fr',9,'Robes',NULL,'Des robes mini, midi et maxi pour toutes les occasions.'),('fr',10,'Chaussure',NULL,'Baskets, bottes, talons et chaussures plates des principaux fabricants indépendants.'),('fr',11,'Accessoires',NULL,'Sacs à main, portefeuilles, ceintures et bijoux pour compléter n\'importe quelle tenue.'),('fr',12,'Beauté et cosmétiques',NULL,'Soins de la peau, parfums et maquillage de marques préférées.'),('fr',13,'Électronique',NULL,'Les écouteurs, les appareils domestiques intelligents et la technologie personnelle valent la peine d’être possédés.'),('fr',14,'Maison et meubles',NULL,'Meubles de salon, de chambre et de salle à manger issus de sources durables.'),('fr',15,'Sports et remise en forme',NULL,'Équipement d\'entraînement essentiel, équipement de yoga et accessoires de récupération.'),('fr',16,'Bijoux et montres',NULL,'Joaillerie haut de gamme, montres demi-fines et mécaniques.'),('id',1,'Yoga',NULL,'Pakaian dan aksesori yoga dirancang untuk pernapasan, keseimbangan, dan aliran.'),('id',2,'Pembalut kaki',NULL,'Legging kompresi bertingkat tinggi dengan bahan stretch empat arah dan anti jongkok.'),('id',3,'Tenis',NULL,'Pakaian tenis yang siap digunakan di lapangan — rok lipit, gaun polo, celana pendek performa.'),('id',4,'gimnasium',NULL,'Perlengkapan latihan kekuatan yang dibuat untuk ruang angkat beban dan sirkuit dengan repetisi tinggi.'),('id',5,'Berlari',NULL,'Pakaian lari ringan dengan trim reflektif dan rajutan yang menyerap keringat.'),('id',6,'Pakaian luar',NULL,'Mantel, jaket, dan kaos luar untuk setiap musim.'),('id',7,'Atasan & Kemeja',NULL,'T-shirt, kancing, rajutan, dan blus disesuaikan untuk hari-hari santai.'),('id',8,'Bawahan',NULL,'Celana panjang, jeans, rok dan celana pendek dengan bentuk yang modern.'),('id',9,'Gaun',NULL,'Gaun mini, midi, dan maxi untuk setiap kesempatan.'),('id',10,'Alas kaki',NULL,'Sepatu kets, sepatu bot, sepatu hak tinggi, dan sepatu datar dari produsen independen terkemuka.'),('id',11,'Aksesoris',NULL,'Tas tangan, dompet, ikat pinggang, dan perhiasan untuk melengkapi pakaian apa pun.'),('id',12,'Kecantikan & Kosmetik',NULL,'Perawatan kulit, parfum dan makeup dari merek favorit.'),('id',13,'Elektronik',NULL,'Headphone, perangkat rumah pintar, dan teknologi pribadi layak untuk dimiliki.'),('id',14,'Rumah & Perabotan',NULL,'Perabotan ruang tamu, kamar tidur, dan ruang makan dari sumber berkelanjutan.'),('id',15,'Olahraga & Kebugaran',NULL,'Perlengkapan olahraga penting, perlengkapan yoga, dan aksesori pemulihan.'),('id',16,'Perhiasan & Jam Tangan',NULL,'Perhiasan kelas atas, jam tangan setengah halus dan mekanis.'),('tr',1,'Yoga',NULL,'Nefes, denge ve akış için tasarlanmış yoga kıyafetleri ve aksesuarları.'),('tr',2,'Tozluk',NULL,'Dört yöne esneyen ve çömelmeye dayanıklı kumaştan üretilmiş, yüksek belli kompresyon taytları.'),('tr',3,'Tenis',NULL,'Sahaya hazır tenis kıyafetleri - pilili etekler, polo elbiseler, performans şortları.'),('tr',4,'Spor salonu',NULL,'Ağırlık salonları ve yüksek tekrarlı devreler için tasarlanmış kuvvet antrenmanı ekipmanı.'),('tr',5,'Koşma',NULL,'Reflektörlü şeritlere ve ter tutmayan örgülere sahip hafif koşu kıyafeti.'),('tr',6,'Dış giyim',NULL,'Her mevsime uygun montlar, ceketler ve kabanlar.'),('tr',7,'Üstler ve Gömlekler',NULL,'Tişörtler, düğmeler, örgüler ve bluzlar gündelik günlere göre tasarlandı.'),('tr',8,'Dipler',NULL,'Modern şekillere sahip pantolonlar, kot pantolonlar, etekler ve şortlar.'),('tr',9,'Elbiseler',NULL,'Her duruma uygun mini, midi ve maxi elbiseler.'),('tr',10,'Ayakkabı',NULL,'Önde gelen bağımsız üreticilerden spor ayakkabılar, botlar, topuklu ayakkabılar ve düz ayakkabılar.'),('tr',11,'Aksesuarlar',NULL,'Her türlü kıyafeti tamamlayacak çantalar, cüzdanlar, kemerler ve takılar.'),('tr',12,'Güzellik ve Kozmetik',NULL,'Favori markalardan cilt bakımı, parfüm ve makyaj.'),('tr',13,'Elektronik',NULL,'Kulaklıklar, akıllı ev cihazları ve kişisel teknolojiler sahip olmaya değer.'),('tr',14,'Ev ve Mobilya',NULL,'Sürdürülebilir kaynaklardan oturma odası, yatak odası ve yemek odası mobilyaları.'),('tr',15,'Spor ve Fitness',NULL,'Temel egzersiz ekipmanı, yoga ekipmanı ve dinlenme aksesuarları.'),('tr',16,'Takı ve Saatler',NULL,'Üst düzey mücevherler, yarı kaliteli ve mekanik saatler.'),('vi',1,'Yoga',NULL,'Trang phục và phụ kiện yoga được thiết kế để mang lại hơi thở, sự cân bằng và dòng chảy.'),('vi',2,'xà cạp',NULL,'Quần legging cạp cao co dãn 4 chiều, chống squat.'),('vi',3,'quần vợt',NULL,'Trang phục quần vợt sẵn sàng trên sân - váy xếp li, váy polo, quần đùi biểu diễn.'),('vi',4,'phòng tập thể dục',NULL,'Thiết bị rèn luyện sức mạnh được chế tạo cho phòng tập tạ và các bài tập có số lần tập cao.'),('vi',5,'Đang chạy',NULL,'Trang phục chạy bộ nhẹ có viền phản quang và vải dệt kim thấm mồ hôi.'),('vi',6,'Áo khoác',NULL,'Áo khoác, jacket và áo overshirt cho mọi mùa.'),('vi',7,'Áo & Sơ mi',NULL,'Áo thun, áo cài nút, áo dệt kim và áo blouse được cắt may cho ngày thường.'),('vi',8,'Quần & Váy',NULL,'Quần tây, jean, chân váy và quần short với phom dáng hiện đại.'),('vi',9,'Đầm',NULL,'Đầm mini, midi và maxi cho mọi dịp.'),('vi',10,'Giày dép',NULL,'Sneaker, boot, giày cao gót và giày bệt từ các nhà sản xuất độc lập hàng đầu.'),('vi',11,'Phụ kiện',NULL,'Túi xách, ví, thắt lưng và trang sức để hoàn thiện mọi outfit.'),('vi',12,'Làm đẹp & Mỹ phẩm',NULL,'Chăm sóc da, nước hoa và mỹ phẩm trang điểm từ các thương hiệu được yêu thích.'),('vi',13,'Điện tử',NULL,'Tai nghe, thiết bị nhà thông minh và công nghệ cá nhân đáng để sở hữu.'),('vi',14,'Nhà & Nội thất',NULL,'Đồ phòng khách, phòng ngủ và phòng ăn với nguồn gốc bền vững.'),('vi',15,'Thể thao & Thể hình',NULL,'Đồ tập, dụng cụ yoga và phụ kiện hồi phục thiết yếu.'),('vi',16,'Trang sức & Đồng hồ',NULL,'Trang sức cao cấp, demi-fine và đồng hồ cơ.');
+/*!40000 ALTER TABLE `ec_product_categories_translations` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_product_categorizables`
+--
+
+DROP TABLE IF EXISTS `ec_product_categorizables`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_product_categorizables` (
+  `category_id` bigint unsigned NOT NULL,
+  `reference_id` bigint unsigned NOT NULL,
+  `reference_type` varchar(120) COLLATE utf8mb4_unicode_ci NOT NULL,
+  PRIMARY KEY (`category_id`,`reference_id`,`reference_type`),
+  KEY `ec_product_categorizables_category_id_index` (`category_id`),
+  KEY `ec_product_categorizables_reference_id_index` (`reference_id`),
+  KEY `ec_product_categorizables_reference_type_index` (`reference_type`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_product_categorizables`
+--
+
+LOCK TABLES `ec_product_categorizables` WRITE;
+/*!40000 ALTER TABLE `ec_product_categorizables` DISABLE KEYS */;
+/*!40000 ALTER TABLE `ec_product_categorizables` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_product_category_product`
+--
+
+DROP TABLE IF EXISTS `ec_product_category_product`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_product_category_product` (
+  `category_id` bigint unsigned NOT NULL,
+  `product_id` bigint unsigned NOT NULL,
+  PRIMARY KEY (`product_id`,`category_id`),
+  KEY `ec_product_category_product_category_id_index` (`category_id`),
+  KEY `ec_product_category_product_product_id_index` (`product_id`),
+  KEY `idx_product_category_composite` (`product_id`,`category_id`),
+  KEY `idx_product_category` (`product_id`,`category_id`),
+  KEY `idx_product_id_category_id` (`product_id`,`category_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_product_category_product`
+--
+
+LOCK TABLES `ec_product_category_product` WRITE;
+/*!40000 ALTER TABLE `ec_product_category_product` DISABLE KEYS */;
+INSERT INTO `ec_product_category_product` VALUES (1,8),(1,9),(1,15),(2,1),(3,1),(3,2),(3,7),(3,8),(3,13),(3,16),(3,17),(3,18),(4,3),(4,5),(4,6),(4,8),(4,9),(5,10),(5,16),(6,4),(6,5),(6,14),(7,3),(7,4),(7,7),(7,13),(7,14),(7,17),(8,4),(8,8),(8,9),(8,12),(8,15),(8,16),(9,1),(9,7),(9,11),(9,14),(9,18),(10,2),(10,10),(10,17),(11,3),(11,5),(11,9),(11,11),(11,12),(11,13),(12,7),(12,10),(12,11),(12,14),(12,17),(12,18),(13,1),(13,2),(13,12),(13,13),(14,3),(14,6),(14,10),(15,6),(15,12),(15,15),(15,16),(15,18),(16,2),(16,4),(16,5),(16,6),(16,11),(16,15);
+/*!40000 ALTER TABLE `ec_product_category_product` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_product_collection_products`
+--
+
+DROP TABLE IF EXISTS `ec_product_collection_products`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_product_collection_products` (
+  `product_collection_id` bigint unsigned NOT NULL,
+  `product_id` bigint unsigned NOT NULL,
+  PRIMARY KEY (`product_id`,`product_collection_id`),
+  KEY `ec_product_collection_products_product_collection_id_index` (`product_collection_id`),
+  KEY `ec_product_collection_products_product_id_index` (`product_id`),
+  KEY `idx_product_id_collection_id` (`product_id`,`product_collection_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_product_collection_products`
+--
+
+LOCK TABLES `ec_product_collection_products` WRITE;
+/*!40000 ALTER TABLE `ec_product_collection_products` DISABLE KEYS */;
+INSERT INTO `ec_product_collection_products` VALUES (1,2),(2,5),(3,9),(3,13),(3,14),(4,7),(4,15),(4,17),(4,18),(5,4),(5,6),(5,12),(5,16),(6,8),(6,11),(7,3),(8,10),(9,1);
+/*!40000 ALTER TABLE `ec_product_collection_products` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_product_collections`
+--
+
+DROP TABLE IF EXISTS `ec_product_collections`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_product_collections` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `slug` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `description` varchar(400) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `image` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `status` varchar(60) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'published',
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `is_featured` tinyint unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_product_collections`
+--
+
+LOCK TABLES `ec_product_collections` WRITE;
+/*!40000 ALTER TABLE `ec_product_collections` DISABLE KEYS */;
+INSERT INTO `ec_product_collections` VALUES (1,'Spring Essentials','spring-essentials','Lightweight layers, fluid silhouettes, and the colors driving this seasons mood boards.','collection/cls-1.jpg','published','2026-05-28 18:57:45','2026-05-28 18:57:45',1),(2,'Limited Edition','limited-edition','One-time runs from independent makers. Once they sell through, they are gone.','collection/cls-10.jpg','published','2026-05-28 18:57:45','2026-05-28 18:57:45',1),(3,'Best Sellers','best-sellers','The pieces our customers reorder season after season.','collection/cls-11.jpg','published','2026-05-28 18:57:45','2026-05-28 18:57:45',1),(4,'Sustainable Picks','sustainable-picks','Products with a verified sustainability story — recycled materials, low-impact dyes, or fair-wage manufacturing.','collection/cls-12.jpg','published','2026-05-28 18:57:45','2026-05-28 18:57:45',1),(5,'Workwear','workwear','Tailored basics ready for the office, the studio, and everything in between.','collection/cls-1.jpg','published','2026-05-28 18:57:45','2026-05-28 18:57:45',0),(6,'Weekend','weekend','Off-duty essentials that elevate the simplest jeans-and-tee uniform.','collection/cls-10.jpg','published','2026-05-28 18:57:45','2026-05-28 18:57:45',0),(7,'Shop Women','shop-women','Curated wardrobes for every season — dresses, layering pieces, and weekend staples.','collection/cls-6.jpg','published','2026-05-28 18:57:45','2026-05-28 18:57:45',0),(8,'Shop Men','shop-men','Tailored essentials and modern basics — built to last beyond the trend cycle.','collection/cls-7.jpg','published','2026-05-28 18:57:45','2026-05-28 18:57:45',0),(9,'Shop Essentials','shop-essentials','The everyday pieces our customers reorder — denim, knits, and timeless outerwear.','collection/cls-8.jpg','published','2026-05-28 18:57:45','2026-05-28 18:57:45',0);
+/*!40000 ALTER TABLE `ec_product_collections` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_product_collections_translations`
+--
+
+DROP TABLE IF EXISTS `ec_product_collections_translations`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_product_collections_translations` (
+  `lang_code` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `ec_product_collections_id` bigint unsigned NOT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `description` varchar(400) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`lang_code`,`ec_product_collections_id`),
+  KEY `idx_product_collections_fk` (`ec_product_collections_id`),
+  KEY `idx_product_collections_product_collections_lang` (`ec_product_collections_id`,`lang_code`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_product_collections_translations`
+--
+
+LOCK TABLES `ec_product_collections_translations` WRITE;
+/*!40000 ALTER TABLE `ec_product_collections_translations` DISABLE KEYS */;
+INSERT INTO `ec_product_collections_translations` VALUES ('ar',1,'أساسيات الربيع','الملابس الخفيفة والفضفاضة والألوان الزاهية هي التي تتصدر المزاج العام هذا الموسم.'),('ar',2,'طبعة محدودة','الشحنات الوحيدة من الشركات المصنعة المستقلة. إذا تم بيعه، فقد ذهب.'),('ar',3,'أفضل البائعين','المنتجات التي يثق بها العملاء ويعيدون طلبها في كل موسم.'),('ar',4,'اللقطات المستدامة','منتجات ذات قصص استدامة مثبتة - مواد معاد تدويرها، أو أصباغ منخفضة التأثير، أو مصنوعة بأجور عادلة.'),('ar',5,'ملابس العمل','الأساسيات المتطورة جاهزة للمكتب والاستوديو وفي كل مكان بينهما.'),('ar',6,'عطلة نهاية الأسبوع','تعمل الأساسيات خارج أوقات العمل على رفع مستوى أبسط أطقم الجينز والقمصان.'),('ar',7,'تسوق النساء','خزانة ملابس منسقة لكل موسم - الفساتين والطبقات وأساسيات عطلة نهاية الأسبوع.'),('ar',8,'تسوق الرجال','أساسيات متطورة وأساسيات حديثة - تدوم إلى ما بعد دورات الموضة.'),('ar',9,'تسوق الأساسيات','يعيد العملاء طلب القطع اليومية - الدنيم والحياكة والمعاطف الخالدة.'),('fr',1,'Les essentiels du printemps','Des tenues légères, des coupes amples et des couleurs vives sont en tête du mood board cette saison.'),('fr',2,'Édition limitée','Expéditions exclusives de fabricants indépendants. S\'il est épuisé, il est parti.'),('fr',3,'Meilleures ventes','Des produits auxquels les clients font confiance et qui les commandent chaque saison.'),('fr',4,'Choix durables','Des produits avec des histoires de durabilité éprouvées : matériaux recyclés, colorants à faible impact ou fabriqués avec des salaires équitables.'),('fr',5,'Vêtements de travail','Les basiques sophistiqués sont prêts pour le bureau, le studio et partout ailleurs.'),('fr',6,'Fin de semaine','Les essentiels décontractés rehaussent les ensembles jeans et t-shirts les plus simples.'),('fr',7,'Magasinez les femmes','Une garde-robe organisée pour chaque saison : robes, superpositions et essentiels du week-end.'),('fr',8,'Acheter des hommes','Des essentiels sophistiqués et des basiques modernes – qui durent au-delà des cycles de la mode.'),('fr',9,'Achetez les essentiels','Les clients commandent des pièces du quotidien : jeans, tricots et manteaux intemporels.'),('id',1,'Hal Penting Musim Semi','Pakaian ringan, pakaian longgar, dan warna-warna cerah memimpin mood board musim ini.'),('id',2,'Edisi Terbatas','Pengiriman tunggal dari produsen independen. Kalau sudah terjual habis.'),('id',3,'Terlaris','Produk yang dipercaya dan dipesan ulang oleh pelanggan setiap musim.'),('id',4,'Pilihan Berkelanjutan','Produk dengan kisah keberlanjutan yang terbukti — bahan daur ulang, pewarna berdampak rendah, atau dibuat dengan upah yang wajar.'),('id',5,'Pakaian kerja','Perlengkapan dasar yang canggih siap digunakan di kantor, studio, dan di mana pun di antaranya.'),('id',6,'Akhir pekan','Barang-barang penting di luar tugas menonjolkan set jeans dan T-shirt paling sederhana.'),('id',7,'Belanja Wanita','Lemari pakaian pilihan untuk setiap musim — gaun, pakaian berlapis, dan kebutuhan akhir pekan.'),('id',8,'Toko Pria','Hal-hal penting yang canggih dan dasar-dasar modern — bertahan melampaui siklus mode.'),('id',9,'Belanja Penting','Barang sehari-hari yang dipesan ulang oleh pelanggan — denim, rajutan, dan mantel yang tak lekang oleh waktu.'),('tr',1,'Baharın Temelleri','Hafif kıyafetler, bol kesimler ve parlak renkler bu sezon mood board\'un başını çekiyor.'),('tr',2,'Sınırlı sayıda','Bağımsız üreticilerden tek gönderi. Eğer tükendiyse, gitmiştir.'),('tr',3,'En Çok Satanlar','Müşterilerin güvendiği ve her sezon yeniden sipariş ettiği ürünler.'),('tr',4,'Sürdürülebilir Seçimler','Kanıtlanmış sürdürülebilirlik öykülerine sahip ürünler: geri dönüştürülmüş malzemeler, düşük etkili boyalar veya adil ücretlerle üretilen ürünler.'),('tr',5,'İş kıyafeti','Ofis, stüdyo ve aradaki her yer için gelişmiş temel öğeler hazır.'),('tr',6,'Hafta sonu','İş dışında giyilen malzemeler, en basit kot pantolon ve tişört takımlarını öne çıkarıyor.'),('tr',7,'Kadın Alışverişi','Her mevsime uygun seçilmiş bir gardırop; elbiseler, üst üste binmeler ve hafta sonu vazgeçilmezleri.'),('tr',8,'Erkek Alışverişi','Moda döngülerinin ötesinde kalıcı, sofistike temeller ve modern temeller.'),('tr',9,'Temel Eşyaları Satın Alın','Müşterilerin yeniden sipariş ettiği gündelik parçalar: denim, örgüler ve zamansız montlar.'),('vi',1,'Thiết yếu mùa Xuân','Lớp trang phục nhẹ, phom rộng rãi và những gam màu đang dẫn dắt mood board mùa này.'),('vi',2,'Phiên bản giới hạn','Những lô hàng duy nhất từ các nhà sản xuất độc lập. Bán hết là không còn nữa.'),('vi',3,'Bán chạy nhất','Những sản phẩm được khách hàng tin dùng và đặt lại qua từng mùa.'),('vi',4,'Lựa chọn bền vững','Sản phẩm có câu chuyện bền vững được kiểm chứng — vật liệu tái chế, thuốc nhuộm ít tác động hoặc sản xuất với mức lương công bằng.'),('vi',5,'Trang phục công sở','Đồ cơ bản tinh tế sẵn sàng cho văn phòng, studio và mọi nơi khác.'),('vi',6,'Cuối tuần','Đồ off-duty thiết yếu nâng tầm những bộ jeans-và-áo thun đơn giản nhất.'),('vi',7,'Mua đồ Nữ','Tủ đồ tuyển chọn cho mọi mùa — đầm, đồ layering và đồ thiết yếu cuối tuần.'),('vi',8,'Mua đồ Nam','Đồ thiết yếu tinh tế và đồ cơ bản hiện đại — bền vượt qua chu kỳ thời trang.'),('vi',9,'Mua đồ thiết yếu','Những món đồ hàng ngày khách hàng đặt lại — denim, đồ dệt kim và áo khoác vượt thời gian.');
+/*!40000 ALTER TABLE `ec_product_collections_translations` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_product_cross_sale_relations`
+--
+
+DROP TABLE IF EXISTS `ec_product_cross_sale_relations`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_product_cross_sale_relations` (
+  `from_product_id` bigint unsigned NOT NULL,
+  `to_product_id` bigint unsigned NOT NULL,
+  `is_variant` tinyint(1) NOT NULL DEFAULT '0',
+  `price` decimal(15,2) DEFAULT '0.00',
+  `price_type` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'fixed',
+  `apply_to_all_variations` tinyint(1) NOT NULL DEFAULT '1',
+  PRIMARY KEY (`from_product_id`,`to_product_id`),
+  KEY `ec_product_cross_sale_relations_from_product_id_index` (`from_product_id`),
+  KEY `ec_product_cross_sale_relations_to_product_id_index` (`to_product_id`),
+  KEY `idx_product_cross_sale` (`from_product_id`,`to_product_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_product_cross_sale_relations`
+--
+
+LOCK TABLES `ec_product_cross_sale_relations` WRITE;
+/*!40000 ALTER TABLE `ec_product_cross_sale_relations` DISABLE KEYS */;
+INSERT INTO `ec_product_cross_sale_relations` VALUES (1,2,0,0.00,'fixed',1),(1,4,0,0.00,'fixed',1),(1,6,0,0.00,'fixed',1),(1,9,0,0.00,'fixed',1),(1,15,0,0.00,'fixed',1),(1,17,0,0.00,'fixed',1),(2,3,0,0.00,'fixed',1),(2,11,0,0.00,'fixed',1),(2,12,0,0.00,'fixed',1),(2,15,0,0.00,'fixed',1),(2,18,0,0.00,'fixed',1),(3,1,0,0.00,'fixed',1),(3,6,0,0.00,'fixed',1),(3,8,0,0.00,'fixed',1),(3,14,0,0.00,'fixed',1),(3,17,0,0.00,'fixed',1),(4,3,0,0.00,'fixed',1),(4,8,0,0.00,'fixed',1),(4,10,0,0.00,'fixed',1),(4,15,0,0.00,'fixed',1),(4,17,0,0.00,'fixed',1),(5,1,0,0.00,'fixed',1),(5,2,0,0.00,'fixed',1),(5,3,0,0.00,'fixed',1),(5,4,0,0.00,'fixed',1),(5,8,0,0.00,'fixed',1),(5,9,0,0.00,'fixed',1),(6,1,0,0.00,'fixed',1),(6,3,0,0.00,'fixed',1),(6,10,0,0.00,'fixed',1),(6,12,0,0.00,'fixed',1),(6,14,0,0.00,'fixed',1),(6,17,0,0.00,'fixed',1),(7,1,0,0.00,'fixed',1),(7,4,0,0.00,'fixed',1),(7,6,0,0.00,'fixed',1),(7,13,0,0.00,'fixed',1),(7,17,0,0.00,'fixed',1),(8,4,0,0.00,'fixed',1),(8,6,0,0.00,'fixed',1),(8,12,0,0.00,'fixed',1),(8,13,0,0.00,'fixed',1),(8,15,0,0.00,'fixed',1),(8,17,0,0.00,'fixed',1),(9,6,0,0.00,'fixed',1),(9,8,0,0.00,'fixed',1),(9,12,0,0.00,'fixed',1),(9,13,0,0.00,'fixed',1),(9,17,0,0.00,'fixed',1),(9,18,0,0.00,'fixed',1),(10,3,0,0.00,'fixed',1),(10,11,0,0.00,'fixed',1),(10,12,0,0.00,'fixed',1),(10,13,0,0.00,'fixed',1),(10,18,0,0.00,'fixed',1),(11,1,0,0.00,'fixed',1),(11,2,0,0.00,'fixed',1),(11,4,0,0.00,'fixed',1),(11,7,0,0.00,'fixed',1),(11,16,0,0.00,'fixed',1),(12,3,0,0.00,'fixed',1),(12,4,0,0.00,'fixed',1),(12,14,0,0.00,'fixed',1),(12,16,0,0.00,'fixed',1),(12,17,0,0.00,'fixed',1),(12,18,0,0.00,'fixed',1),(13,7,0,0.00,'fixed',1),(13,11,0,0.00,'fixed',1),(13,12,0,0.00,'fixed',1),(13,14,0,0.00,'fixed',1),(13,15,0,0.00,'fixed',1),(13,17,0,0.00,'fixed',1),(13,18,0,0.00,'fixed',1),(14,6,0,0.00,'fixed',1),(14,10,0,0.00,'fixed',1),(14,11,0,0.00,'fixed',1),(14,12,0,0.00,'fixed',1),(14,16,0,0.00,'fixed',1),(15,2,0,0.00,'fixed',1),(15,3,0,0.00,'fixed',1),(15,4,0,0.00,'fixed',1),(15,6,0,0.00,'fixed',1),(15,10,0,0.00,'fixed',1),(15,17,0,0.00,'fixed',1),(15,18,0,0.00,'fixed',1),(16,3,0,0.00,'fixed',1),(16,7,0,0.00,'fixed',1),(16,9,0,0.00,'fixed',1),(16,10,0,0.00,'fixed',1),(16,13,0,0.00,'fixed',1),(16,17,0,0.00,'fixed',1),(16,18,0,0.00,'fixed',1),(17,3,0,0.00,'fixed',1),(17,4,0,0.00,'fixed',1),(17,6,0,0.00,'fixed',1),(17,9,0,0.00,'fixed',1),(17,10,0,0.00,'fixed',1),(17,18,0,0.00,'fixed',1),(18,6,0,0.00,'fixed',1),(18,10,0,0.00,'fixed',1),(18,11,0,0.00,'fixed',1),(18,14,0,0.00,'fixed',1),(18,17,0,0.00,'fixed',1);
+/*!40000 ALTER TABLE `ec_product_cross_sale_relations` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_product_files`
+--
+
+DROP TABLE IF EXISTS `ec_product_files`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_product_files` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `product_id` bigint unsigned DEFAULT NULL,
+  `url` varchar(400) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `extras` mediumtext COLLATE utf8mb4_unicode_ci,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `ec_product_files_product_id_index` (`product_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_product_files`
+--
+
+LOCK TABLES `ec_product_files` WRITE;
+/*!40000 ALTER TABLE `ec_product_files` DISABLE KEYS */;
+/*!40000 ALTER TABLE `ec_product_files` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_product_label_products`
+--
+
+DROP TABLE IF EXISTS `ec_product_label_products`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_product_label_products` (
+  `product_label_id` bigint unsigned NOT NULL,
+  `product_id` bigint unsigned NOT NULL,
+  PRIMARY KEY (`product_label_id`,`product_id`),
+  KEY `ec_product_label_products_product_label_id_index` (`product_label_id`),
+  KEY `ec_product_label_products_product_id_index` (`product_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_product_label_products`
+--
+
+LOCK TABLES `ec_product_label_products` WRITE;
+/*!40000 ALTER TABLE `ec_product_label_products` DISABLE KEYS */;
+INSERT INTO `ec_product_label_products` VALUES (1,12),(1,15),(2,6),(4,9),(4,18),(6,3);
+/*!40000 ALTER TABLE `ec_product_label_products` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_product_labels`
+--
+
+DROP TABLE IF EXISTS `ec_product_labels`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_product_labels` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `color` varchar(120) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `status` varchar(60) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'published',
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `text_color` varchar(120) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `ec_product_labels_status_index` (`status`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_product_labels`
+--
+
+LOCK TABLES `ec_product_labels` WRITE;
+/*!40000 ALTER TABLE `ec_product_labels` DISABLE KEYS */;
+INSERT INTO `ec_product_labels` VALUES (1,'Hot','#F0460E','published','2026-05-28 18:57:45','2026-05-28 18:57:45','#FFFFFF'),(2,'New','#22C55E','published','2026-05-28 18:57:45','2026-05-28 18:57:45','#FFFFFF'),(3,'Sale','#EF4444','published','2026-05-28 18:57:45','2026-05-28 18:57:45','#FFFFFF'),(4,'Best Seller','#1E1E1E','published','2026-05-28 18:57:45','2026-05-28 18:57:45','#FFFFFF'),(5,'Limited','#7B1F2B','published','2026-05-28 18:57:45','2026-05-28 18:57:45','#FFFFFF'),(6,'Eco','#6B7843','published','2026-05-28 18:57:45','2026-05-28 18:57:45','#FFFFFF');
+/*!40000 ALTER TABLE `ec_product_labels` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_product_labels_translations`
+--
+
+DROP TABLE IF EXISTS `ec_product_labels_translations`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_product_labels_translations` (
+  `lang_code` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `ec_product_labels_id` bigint unsigned NOT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `description` varchar(400) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`lang_code`,`ec_product_labels_id`),
+  KEY `idx_product_labels_fk` (`ec_product_labels_id`),
+  KEY `idx_product_labels_product_labels_lang` (`ec_product_labels_id`,`lang_code`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_product_labels_translations`
+--
+
+LOCK TABLES `ec_product_labels_translations` WRITE;
+/*!40000 ALTER TABLE `ec_product_labels_translations` DISABLE KEYS */;
+INSERT INTO `ec_product_labels_translations` VALUES ('ar',1,'حار',NULL),('ar',2,'جديد',NULL),('ar',3,'أُوكَازيُون',NULL),('ar',4,'الأكثر مبيعًا',NULL),('ar',5,'محدود',NULL),('ar',6,'سابقة بمعنى البِيْئَة',NULL),('fr',1,'Chaud',NULL),('fr',2,'Nouveau',NULL),('fr',3,'Vente',NULL),('fr',4,'Meilleur vendeur',NULL),('fr',5,'Limité',NULL),('fr',6,'Écologique',NULL),('id',1,'Panas',NULL),('id',2,'Baru',NULL),('id',3,'Penjualan',NULL),('id',4,'Penjual Terbaik',NULL),('id',5,'Terbatas',NULL),('id',6,'ramah lingkungan',NULL),('tr',1,'Sıcak',NULL),('tr',2,'Yeni',NULL),('tr',3,'Satış',NULL),('tr',4,'En çok satan kitap',NULL),('tr',5,'Sınırlı',NULL),('tr',6,'Eko',NULL),('vi',1,'Hot',NULL),('vi',2,'Mới',NULL),('vi',3,'Giảm giá',NULL),('vi',4,'Bán chạy nhất',NULL),('vi',5,'Giới hạn',NULL),('vi',6,'Eco',NULL);
+/*!40000 ALTER TABLE `ec_product_labels_translations` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_product_license_codes`
+--
+
+DROP TABLE IF EXISTS `ec_product_license_codes`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_product_license_codes` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `product_id` bigint unsigned NOT NULL,
+  `license_code` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `status` varchar(60) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'available',
+  `assigned_order_product_id` bigint unsigned DEFAULT NULL,
+  `assigned_at` timestamp NULL DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `ec_product_license_codes_product_id_status_index` (`product_id`,`status`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_product_license_codes`
+--
+
+LOCK TABLES `ec_product_license_codes` WRITE;
+/*!40000 ALTER TABLE `ec_product_license_codes` DISABLE KEYS */;
+/*!40000 ALTER TABLE `ec_product_license_codes` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_product_related_relations`
+--
+
+DROP TABLE IF EXISTS `ec_product_related_relations`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_product_related_relations` (
+  `from_product_id` bigint unsigned NOT NULL,
+  `to_product_id` bigint unsigned NOT NULL,
+  PRIMARY KEY (`from_product_id`,`to_product_id`),
+  KEY `ec_product_related_relations_from_product_id_index` (`from_product_id`),
+  KEY `ec_product_related_relations_to_product_id_index` (`to_product_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_product_related_relations`
+--
+
+LOCK TABLES `ec_product_related_relations` WRITE;
+/*!40000 ALTER TABLE `ec_product_related_relations` DISABLE KEYS */;
+/*!40000 ALTER TABLE `ec_product_related_relations` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_product_specification_attribute`
+--
+
+DROP TABLE IF EXISTS `ec_product_specification_attribute`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_product_specification_attribute` (
+  `product_id` bigint unsigned NOT NULL,
+  `attribute_id` bigint unsigned NOT NULL,
+  `value` text COLLATE utf8mb4_unicode_ci,
+  `hidden` tinyint(1) NOT NULL DEFAULT '0',
+  `order` tinyint NOT NULL DEFAULT '0',
+  PRIMARY KEY (`product_id`,`attribute_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_product_specification_attribute`
+--
+
+LOCK TABLES `ec_product_specification_attribute` WRITE;
+/*!40000 ALTER TABLE `ec_product_specification_attribute` DISABLE KEYS */;
+INSERT INTO `ec_product_specification_attribute` VALUES (1,1,'55% Polyester, 30% Acrylic, 13% Polyamide, 2% Elastane',0,0),(1,2,'Made in Portugal',0,1),(1,3,'Machine wash cold. Tumble dry low. Do not bleach.',0,2),(1,4,'Barcelona, Spain',0,3),(1,5,'12 months manufacturer warranty',0,4),(1,6,'1',0,5),(2,1,'55% Polyester, 30% Acrylic, 13% Polyamide, 2% Elastane',0,0),(2,2,'Made in Portugal',0,1),(2,3,'Machine wash cold. Tumble dry low. Do not bleach.',0,2),(2,4,'Barcelona, Spain',0,3),(2,5,'12 months manufacturer warranty',0,4),(2,6,'1',0,5),(3,1,'55% Polyester, 30% Acrylic, 13% Polyamide, 2% Elastane',0,0),(3,2,'Made in Portugal',0,1),(3,3,'Machine wash cold. Tumble dry low. Do not bleach.',0,2),(3,4,'Barcelona, Spain',0,3),(3,5,'12 months manufacturer warranty',0,4),(3,6,'1',0,5),(4,1,'55% Polyester, 30% Acrylic, 13% Polyamide, 2% Elastane',0,0),(4,2,'Made in Portugal',0,1),(4,3,'Machine wash cold. Tumble dry low. Do not bleach.',0,2),(4,4,'Barcelona, Spain',0,3),(4,5,'12 months manufacturer warranty',0,4),(4,6,'1',0,5),(5,1,'55% Polyester, 30% Acrylic, 13% Polyamide, 2% Elastane',0,0),(5,2,'Made in Portugal',0,1),(5,3,'Machine wash cold. Tumble dry low. Do not bleach.',0,2),(5,4,'Barcelona, Spain',0,3),(5,5,'12 months manufacturer warranty',0,4),(5,6,'1',0,5),(6,1,'55% Polyester, 30% Acrylic, 13% Polyamide, 2% Elastane',0,0),(6,2,'Made in Portugal',0,1),(6,3,'Machine wash cold. Tumble dry low. Do not bleach.',0,2),(6,4,'Barcelona, Spain',0,3),(6,5,'12 months manufacturer warranty',0,4),(6,6,'1',0,5),(7,1,'55% Polyester, 30% Acrylic, 13% Polyamide, 2% Elastane',0,0),(7,2,'Made in Portugal',0,1),(7,3,'Machine wash cold. Tumble dry low. Do not bleach.',0,2),(7,4,'Barcelona, Spain',0,3),(7,5,'12 months manufacturer warranty',0,4),(7,6,'1',0,5),(8,1,'55% Polyester, 30% Acrylic, 13% Polyamide, 2% Elastane',0,0),(8,2,'Made in Portugal',0,1),(8,3,'Machine wash cold. Tumble dry low. Do not bleach.',0,2),(8,4,'Barcelona, Spain',0,3),(8,5,'12 months manufacturer warranty',0,4),(8,6,'1',0,5),(9,1,'55% Polyester, 30% Acrylic, 13% Polyamide, 2% Elastane',0,0),(9,2,'Made in Portugal',0,1),(9,3,'Machine wash cold. Tumble dry low. Do not bleach.',0,2),(9,4,'Barcelona, Spain',0,3),(9,5,'12 months manufacturer warranty',0,4),(9,6,'1',0,5),(10,1,'55% Polyester, 30% Acrylic, 13% Polyamide, 2% Elastane',0,0),(10,2,'Made in Portugal',0,1),(10,3,'Machine wash cold. Tumble dry low. Do not bleach.',0,2),(10,4,'Barcelona, Spain',0,3),(10,5,'12 months manufacturer warranty',0,4),(10,6,'1',0,5),(11,1,'55% Polyester, 30% Acrylic, 13% Polyamide, 2% Elastane',0,0),(11,2,'Made in Portugal',0,1),(11,3,'Machine wash cold. Tumble dry low. Do not bleach.',0,2),(11,4,'Barcelona, Spain',0,3),(11,5,'12 months manufacturer warranty',0,4),(11,6,'1',0,5),(12,1,'55% Polyester, 30% Acrylic, 13% Polyamide, 2% Elastane',0,0),(12,2,'Made in Portugal',0,1),(12,3,'Machine wash cold. Tumble dry low. Do not bleach.',0,2),(12,4,'Barcelona, Spain',0,3),(12,5,'12 months manufacturer warranty',0,4),(12,6,'1',0,5),(13,1,'55% Polyester, 30% Acrylic, 13% Polyamide, 2% Elastane',0,0),(13,2,'Made in Portugal',0,1),(13,3,'Machine wash cold. Tumble dry low. Do not bleach.',0,2),(13,4,'Barcelona, Spain',0,3),(13,5,'12 months manufacturer warranty',0,4),(13,6,'1',0,5),(14,1,'55% Polyester, 30% Acrylic, 13% Polyamide, 2% Elastane',0,0),(14,2,'Made in Portugal',0,1),(14,3,'Machine wash cold. Tumble dry low. Do not bleach.',0,2),(14,4,'Barcelona, Spain',0,3),(14,5,'12 months manufacturer warranty',0,4),(14,6,'1',0,5),(15,1,'55% Polyester, 30% Acrylic, 13% Polyamide, 2% Elastane',0,0),(15,2,'Made in Portugal',0,1),(15,3,'Machine wash cold. Tumble dry low. Do not bleach.',0,2),(15,4,'Barcelona, Spain',0,3),(15,5,'12 months manufacturer warranty',0,4),(15,6,'1',0,5),(16,1,'55% Polyester, 30% Acrylic, 13% Polyamide, 2% Elastane',0,0),(16,2,'Made in Portugal',0,1),(16,3,'Machine wash cold. Tumble dry low. Do not bleach.',0,2),(16,4,'Barcelona, Spain',0,3),(16,5,'12 months manufacturer warranty',0,4),(16,6,'1',0,5),(17,1,'55% Polyester, 30% Acrylic, 13% Polyamide, 2% Elastane',0,0),(17,2,'Made in Portugal',0,1),(17,3,'Machine wash cold. Tumble dry low. Do not bleach.',0,2),(17,4,'Barcelona, Spain',0,3),(17,5,'12 months manufacturer warranty',0,4),(17,6,'1',0,5),(18,1,'55% Polyester, 30% Acrylic, 13% Polyamide, 2% Elastane',0,0),(18,2,'Made in Portugal',0,1),(18,3,'Machine wash cold. Tumble dry low. Do not bleach.',0,2),(18,4,'Barcelona, Spain',0,3),(18,5,'12 months manufacturer warranty',0,4),(18,6,'1',0,5);
+/*!40000 ALTER TABLE `ec_product_specification_attribute` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_product_specification_attribute_translations`
+--
+
+DROP TABLE IF EXISTS `ec_product_specification_attribute_translations`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_product_specification_attribute_translations` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `product_id` bigint unsigned NOT NULL,
+  `attribute_id` bigint unsigned NOT NULL,
+  `lang_code` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `value` text COLLATE utf8mb4_unicode_ci,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `psat_unique` (`product_id`,`attribute_id`,`lang_code`),
+  KEY `psat_product_attribute_index` (`product_id`,`attribute_id`),
+  KEY `psat_product_id_index` (`product_id`),
+  KEY `psat_attribute_id_index` (`attribute_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_product_specification_attribute_translations`
+--
+
+LOCK TABLES `ec_product_specification_attribute_translations` WRITE;
+/*!40000 ALTER TABLE `ec_product_specification_attribute_translations` DISABLE KEYS */;
+/*!40000 ALTER TABLE `ec_product_specification_attribute_translations` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_product_tag_product`
+--
+
+DROP TABLE IF EXISTS `ec_product_tag_product`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_product_tag_product` (
+  `product_id` bigint unsigned NOT NULL,
+  `tag_id` bigint unsigned NOT NULL,
+  PRIMARY KEY (`product_id`,`tag_id`),
+  KEY `ec_product_tag_product_product_id_index` (`product_id`),
+  KEY `ec_product_tag_product_tag_id_index` (`tag_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_product_tag_product`
+--
+
+LOCK TABLES `ec_product_tag_product` WRITE;
+/*!40000 ALTER TABLE `ec_product_tag_product` DISABLE KEYS */;
+INSERT INTO `ec_product_tag_product` VALUES (1,2),(1,3),(1,7),(2,5),(2,10),(2,13),(3,3),(3,5),(3,14),(4,1),(4,8),(4,10),(5,1),(5,3),(5,8),(6,4),(6,6),(6,9),(7,2),(7,4),(7,12),(8,6),(8,10),(8,13),(9,7),(9,11),(9,13),(10,4),(10,10),(10,12),(11,1),(11,4),(11,15),(12,3),(12,8),(12,9),(13,3),(13,7),(13,13),(14,7),(14,10),(14,12),(15,1),(15,3),(15,14),(16,3),(16,7),(16,14),(17,3),(17,4),(17,9),(18,7),(18,8),(18,15);
+/*!40000 ALTER TABLE `ec_product_tag_product` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_product_tags`
+--
+
+DROP TABLE IF EXISTS `ec_product_tags`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_product_tags` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(120) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `description` varchar(400) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `content` mediumtext COLLATE utf8mb4_unicode_ci,
+  `status` varchar(60) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'published',
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_product_tags`
+--
+
+LOCK TABLES `ec_product_tags` WRITE;
+/*!40000 ALTER TABLE `ec_product_tags` DISABLE KEYS */;
+INSERT INTO `ec_product_tags` VALUES (1,'Cotton','Products tagged with Cotton.',NULL,'published','2026-05-28 18:57:45','2026-05-28 18:57:45'),(2,'Linen','Products tagged with Linen.',NULL,'published','2026-05-28 18:57:45','2026-05-28 18:57:45'),(3,'Wool','Products tagged with Wool.',NULL,'published','2026-05-28 18:57:45','2026-05-28 18:57:45'),(4,'Leather','Products tagged with Leather.',NULL,'published','2026-05-28 18:57:45','2026-05-28 18:57:45'),(5,'Tencel','Products tagged with Tencel.',NULL,'published','2026-05-28 18:57:45','2026-05-28 18:57:45'),(6,'Recycled','Products tagged with Recycled.',NULL,'published','2026-05-28 18:57:45','2026-05-28 18:57:45'),(7,'Made in Portugal','Products tagged with Made in Portugal.',NULL,'published','2026-05-28 18:57:45','2026-05-28 18:57:45'),(8,'Made in Italy','Products tagged with Made in Italy.',NULL,'published','2026-05-28 18:57:45','2026-05-28 18:57:45'),(9,'Hand-Crafted','Products tagged with Hand-Crafted.',NULL,'published','2026-05-28 18:57:45','2026-05-28 18:57:45'),(10,'Vegan','Products tagged with Vegan.',NULL,'published','2026-05-28 18:57:45','2026-05-28 18:57:45'),(11,'Limited Run','Products tagged with Limited Run.',NULL,'published','2026-05-28 18:57:45','2026-05-28 18:57:45'),(12,'Best Seller','Products tagged with Best Seller.',NULL,'published','2026-05-28 18:57:45','2026-05-28 18:57:45'),(13,'New Arrival','Products tagged with New Arrival.',NULL,'published','2026-05-28 18:57:45','2026-05-28 18:57:45'),(14,'Editor Pick','Products tagged with Editor Pick.',NULL,'published','2026-05-28 18:57:45','2026-05-28 18:57:45'),(15,'Eco-Friendly','Products tagged with Eco-Friendly.',NULL,'published','2026-05-28 18:57:45','2026-05-28 18:57:45');
+/*!40000 ALTER TABLE `ec_product_tags` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_product_tags_translations`
+--
+
+DROP TABLE IF EXISTS `ec_product_tags_translations`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_product_tags_translations` (
+  `lang_code` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `ec_product_tags_id` bigint unsigned NOT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `content` mediumtext COLLATE utf8mb4_unicode_ci,
+  PRIMARY KEY (`lang_code`,`ec_product_tags_id`),
+  KEY `idx_product_tags_fk` (`ec_product_tags_id`),
+  KEY `idx_product_tags_product_tags_lang` (`ec_product_tags_id`,`lang_code`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_product_tags_translations`
+--
+
+LOCK TABLES `ec_product_tags_translations` WRITE;
+/*!40000 ALTER TABLE `ec_product_tags_translations` DISABLE KEYS */;
+INSERT INTO `ec_product_tags_translations` VALUES ('ar',1,'قطن',NULL),('ar',2,'الكتان',NULL),('ar',3,'صوف',NULL),('ar',4,'جلد',NULL),('ar',5,'ايوسل',NULL),('ar',6,'المعاد تدويرها',NULL),('ar',7,'صنع في البرتغال',NULL),('ar',8,'صنع في إيطاليا',NULL),('ar',9,'مصنوع يدويًا',NULL),('ar',10,'نباتي',NULL),('ar',11,'تشغيل محدود',NULL),('ar',12,'الأكثر مبيعًا',NULL),('ar',13,'وصول جديد',NULL),('ar',14,'اختيار المحرر',NULL),('ar',15,'صديقة للبيئة',NULL),('fr',1,'Coton',NULL),('fr',2,'Lin',NULL),('fr',3,'Laine',NULL),('fr',4,'Cuir',NULL),('fr',5,'Tencel',NULL),('fr',6,'Recyclé',NULL),('fr',7,'Fabriqué au Portugal',NULL),('fr',8,'Fabriqué en Italie',NULL),('fr',9,'Fabriqué à la main',NULL),('fr',10,'Végétalien',NULL),('fr',11,'Série limitée',NULL),('fr',12,'Meilleur vendeur',NULL),('fr',13,'Nouvelle Arrivée',NULL),('fr',14,'Choix de l\'éditeur',NULL),('fr',15,'Respectueux de l\'environnement',NULL),('id',1,'Kapas',NULL),('id',2,'Linen',NULL),('id',3,'Wol',NULL),('id',4,'Kulit',NULL),('id',5,'Tencel',NULL),('id',6,'Daur ulang',NULL),('id',7,'Dibuat di Portugal',NULL),('id',8,'Dibuat di Italia',NULL),('id',9,'Kerajinan Tangan',NULL),('id',10,'vegan',NULL),('id',11,'Jangka Terbatas',NULL),('id',12,'Penjual Terbaik',NULL),('id',13,'Kedatangan Baru',NULL),('id',14,'Pilihan Editor',NULL),('id',15,'Ramah Lingkungan',NULL),('tr',1,'Pamuk',NULL),('tr',2,'Keten',NULL),('tr',3,'Yün',NULL),('tr',4,'Deri',NULL),('tr',5,'Tencel',NULL),('tr',6,'Geri dönüştürülmüş',NULL),('tr',7,'Portekiz\'de yapıldı',NULL),('tr',8,'İtalya\'da yapıldı',NULL),('tr',9,'El Yapımı',NULL),('tr',10,'vegan',NULL),('tr',11,'Sınırlı Çalıştırma',NULL),('tr',12,'En çok satan kitap',NULL),('tr',13,'Yeni gelen',NULL),('tr',14,'Editörün Seçimi',NULL),('tr',15,'Çevre Dostu',NULL),('vi',1,'Cotton',NULL),('vi',2,'Linen',NULL),('vi',3,'Len',NULL),('vi',4,'Da',NULL),('vi',5,'Tencel',NULL),('vi',6,'Tái chế',NULL),('vi',7,'Sản xuất tại Bồ Đào Nha',NULL),('vi',8,'Sản xuất tại Ý',NULL),('vi',9,'Thủ công',NULL),('vi',10,'Thuần chay',NULL),('vi',11,'Lô giới hạn',NULL),('vi',12,'Bán chạy nhất',NULL),('vi',13,'Hàng mới về',NULL),('vi',14,'Biên tập viên chọn',NULL),('vi',15,'Thân thiện môi trường',NULL);
+/*!40000 ALTER TABLE `ec_product_tags_translations` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_product_up_sale_relations`
+--
+
+DROP TABLE IF EXISTS `ec_product_up_sale_relations`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_product_up_sale_relations` (
+  `from_product_id` bigint unsigned NOT NULL,
+  `to_product_id` bigint unsigned NOT NULL,
+  `is_variant` tinyint(1) NOT NULL DEFAULT '0',
+  `price` decimal(15,2) DEFAULT '0.00',
+  `price_type` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'fixed',
+  `apply_to_all_variations` tinyint(1) NOT NULL DEFAULT '1',
+  PRIMARY KEY (`from_product_id`,`to_product_id`),
+  KEY `ec_product_up_sale_relations_from_product_id_index` (`from_product_id`),
+  KEY `ec_product_up_sale_relations_to_product_id_index` (`to_product_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_product_up_sale_relations`
+--
+
+LOCK TABLES `ec_product_up_sale_relations` WRITE;
+/*!40000 ALTER TABLE `ec_product_up_sale_relations` DISABLE KEYS */;
+INSERT INTO `ec_product_up_sale_relations` VALUES (1,4,0,20.00,'percent',1),(1,12,0,20.00,'fixed',1),(2,13,0,20.00,'fixed',1),(2,14,0,15.00,'percent',1),(3,8,0,10.00,'fixed',1),(3,9,0,10.00,'fixed',1),(4,7,0,15.00,'percent',1),(4,11,0,20.00,'percent',1),(5,7,0,15.00,'percent',1),(5,9,0,5.00,'fixed',1),(6,8,0,10.00,'fixed',1),(6,10,0,5.00,'fixed',1),(7,3,0,50.00,'fixed',1),(8,3,0,20.00,'fixed',1),(8,17,0,10.00,'percent',1),(9,4,0,10.00,'fixed',1),(9,16,0,20.00,'fixed',1),(10,4,0,5.00,'fixed',1),(10,18,0,20.00,'percent',1),(11,14,0,50.00,'fixed',1),(11,16,0,20.00,'fixed',1),(12,11,0,15.00,'percent',1),(12,16,0,10.00,'percent',1),(13,10,0,10.00,'percent',1),(13,12,0,10.00,'fixed',1),(14,7,0,5.00,'fixed',1),(14,12,0,5.00,'percent',1),(15,12,0,10.00,'fixed',1),(15,18,0,10.00,'percent',1),(16,5,0,10.00,'fixed',1),(16,14,0,10.00,'fixed',1),(17,5,0,5.00,'fixed',1),(17,11,0,10.00,'percent',1),(18,10,0,10.00,'fixed',1),(18,13,0,5.00,'fixed',1);
+/*!40000 ALTER TABLE `ec_product_up_sale_relations` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_product_variation_items`
+--
+
+DROP TABLE IF EXISTS `ec_product_variation_items`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_product_variation_items` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `attribute_id` bigint unsigned NOT NULL,
+  `variation_id` bigint unsigned NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `ec_product_variation_items_attribute_id_variation_id_unique` (`attribute_id`,`variation_id`),
+  KEY `attribute_variation_index` (`attribute_id`,`variation_id`),
+  KEY `idx_variation_id` (`variation_id`),
+  KEY `idx_variation_attribute_covering` (`variation_id`,`attribute_id`),
+  KEY `ec_product_variation_items_variation_id_attribute_id_index` (`variation_id`,`attribute_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=37 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_product_variation_items`
+--
+
+LOCK TABLES `ec_product_variation_items` WRITE;
+/*!40000 ALTER TABLE `ec_product_variation_items` DISABLE KEYS */;
+INSERT INTO `ec_product_variation_items` VALUES (31,1,25),(36,1,30),(30,2,24),(34,2,28),(5,3,3),(7,6,4),(32,8,26),(27,9,21),(33,9,27),(11,10,6),(28,10,22),(9,11,5),(29,11,23),(35,12,29),(10,13,5),(6,15,3),(12,17,6),(8,18,4),(13,19,7),(23,19,17),(24,19,18),(16,20,10),(20,20,14),(17,21,11),(25,21,19),(21,22,15),(15,23,9),(26,23,20),(14,24,8),(18,24,12),(19,24,13),(22,24,16);
+/*!40000 ALTER TABLE `ec_product_variation_items` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_product_variations`
+--
+
+DROP TABLE IF EXISTS `ec_product_variations`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_product_variations` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `product_id` bigint unsigned DEFAULT NULL,
+  `configurable_product_id` bigint unsigned NOT NULL,
+  `is_default` tinyint NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `ec_product_variations_product_id_configurable_product_id_unique` (`product_id`,`configurable_product_id`),
+  KEY `configurable_product_index` (`product_id`,`configurable_product_id`),
+  KEY `idx_configurable_product_id` (`configurable_product_id`),
+  KEY `idx_product_variations_config` (`configurable_product_id`,`is_default`),
+  KEY `ec_product_variations_product_id_index` (`product_id`),
+  KEY `ec_product_variations_configurable_product_id_index` (`configurable_product_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=31 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_product_variations`
+--
+
+LOCK TABLES `ec_product_variations` WRITE;
+/*!40000 ALTER TABLE `ec_product_variations` DISABLE KEYS */;
+INSERT INTO `ec_product_variations` VALUES (3,21,7,1),(4,22,7,0),(5,23,7,0),(6,24,7,0),(7,25,9,1),(8,26,9,0),(9,27,11,1),(10,28,15,1),(11,29,15,0),(12,30,15,0),(13,31,15,0),(14,32,17,1),(15,33,17,0),(16,34,17,0),(17,35,17,0),(18,36,17,0),(19,37,18,1),(20,38,18,0),(21,39,1,1),(22,40,1,0),(23,41,1,0),(24,42,2,1),(25,43,2,0),(26,44,2,0),(27,45,3,1),(28,46,3,0),(29,47,4,1),(30,48,4,0);
+/*!40000 ALTER TABLE `ec_product_variations` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_product_views`
+--
+
+DROP TABLE IF EXISTS `ec_product_views`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_product_views` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `product_id` bigint unsigned NOT NULL,
+  `views` int NOT NULL DEFAULT '1',
+  `date` date NOT NULL DEFAULT '2026-05-29',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `ec_product_views_product_id_date_unique` (`product_id`,`date`),
+  KEY `ec_product_views_product_id_index` (`product_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_product_views`
+--
+
+LOCK TABLES `ec_product_views` WRITE;
+/*!40000 ALTER TABLE `ec_product_views` DISABLE KEYS */;
+/*!40000 ALTER TABLE `ec_product_views` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_product_with_attribute_set`
+--
+
+DROP TABLE IF EXISTS `ec_product_with_attribute_set`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_product_with_attribute_set` (
+  `attribute_set_id` bigint unsigned NOT NULL,
+  `product_id` bigint unsigned NOT NULL,
+  `order` tinyint unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`product_id`,`attribute_set_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_product_with_attribute_set`
+--
+
+LOCK TABLES `ec_product_with_attribute_set` WRITE;
+/*!40000 ALTER TABLE `ec_product_with_attribute_set` DISABLE KEYS */;
+INSERT INTO `ec_product_with_attribute_set` VALUES (1,1,0),(1,2,0),(1,3,0),(1,4,0),(1,7,0),(2,7,0),(3,9,0),(3,11,0),(3,15,0),(3,17,0),(3,18,0);
+/*!40000 ALTER TABLE `ec_product_with_attribute_set` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_products`
+--
+
+DROP TABLE IF EXISTS `ec_products`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_products` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `slug` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `description` text COLLATE utf8mb4_unicode_ci,
+  `content` longtext COLLATE utf8mb4_unicode_ci,
+  `status` varchar(60) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'published',
+  `images` text COLLATE utf8mb4_unicode_ci,
+  `video_media` text COLLATE utf8mb4_unicode_ci,
+  `sku` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `order` int unsigned NOT NULL DEFAULT '0',
+  `quantity` int unsigned DEFAULT NULL,
+  `allow_checkout_when_out_of_stock` tinyint unsigned NOT NULL DEFAULT '0',
+  `with_storehouse_management` tinyint unsigned NOT NULL DEFAULT '0',
+  `stock_status` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT 'in_stock',
+  `is_featured` tinyint unsigned NOT NULL DEFAULT '0',
+  `is_new_until` date DEFAULT NULL,
+  `brand_id` bigint unsigned DEFAULT NULL,
+  `is_variation` tinyint NOT NULL DEFAULT '0',
+  `variations_count` int unsigned NOT NULL DEFAULT '0',
+  `reviews_count` int unsigned NOT NULL DEFAULT '0',
+  `reviews_avg` decimal(3,2) NOT NULL DEFAULT '0.00',
+  `sale_type` tinyint NOT NULL DEFAULT '0',
+  `price` double unsigned DEFAULT NULL,
+  `sale_price` double unsigned DEFAULT NULL,
+  `start_date` timestamp NULL DEFAULT NULL,
+  `end_date` timestamp NULL DEFAULT NULL,
+  `length` double DEFAULT NULL,
+  `wide` double DEFAULT NULL,
+  `height` double DEFAULT NULL,
+  `weight` double DEFAULT NULL,
+  `tax_id` bigint unsigned DEFAULT NULL,
+  `tax_class` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'standard',
+  `views` bigint NOT NULL DEFAULT '0',
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `store_id` bigint unsigned DEFAULT NULL,
+  `created_by_id` bigint unsigned DEFAULT '0',
+  `created_by_type` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'Botble\\ACL\\Models\\User',
+  `approved_by` bigint unsigned DEFAULT '0',
+  `image` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `product_type` varchar(60) COLLATE utf8mb4_unicode_ci DEFAULT 'physical',
+  `barcode` varchar(150) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `cost_per_item` double DEFAULT NULL,
+  `currency_code` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `price_includes_tax` tinyint(1) NOT NULL DEFAULT '0',
+  `generate_license_code` tinyint(1) NOT NULL DEFAULT '0',
+  `license_code_type` enum('auto_generate','pick_from_list') COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'auto_generate',
+  `minimum_order_quantity` int unsigned DEFAULT '0',
+  `maximum_order_quantity` int unsigned DEFAULT '0',
+  `notify_attachment_updated` tinyint(1) NOT NULL DEFAULT '0',
+  `specification_table_id` bigint unsigned DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `ec_products_brand_id_status_is_variation_created_at_index` (`brand_id`,`status`,`is_variation`,`created_at`),
+  KEY `sale_type_index` (`sale_type`),
+  KEY `start_date_index` (`start_date`),
+  KEY `end_date_index` (`end_date`),
+  KEY `sale_price_index` (`sale_price`),
+  KEY `is_variation_index` (`is_variation`),
+  KEY `ec_products_sku_index` (`sku`),
+  KEY `idx_products_export` (`id`,`is_variation`),
+  KEY `idx_store_variation_status` (`store_id`,`is_variation`,`status`),
+  KEY `idx_variation_name_id` (`is_variation`,`name`,`id`),
+  KEY `ec_products_variations_count_index` (`variations_count`),
+  KEY `ec_products_slug_index` (`slug`),
+  KEY `idx_products_status_variation` (`status`,`is_variation`,`id`),
+  KEY `idx_products_price_sale` (`sale_type`,`sale_price`,`price`),
+  KEY `idx_products_order_created` (`order`,`created_at`),
+  KEY `idx_products_stock` (`with_storehouse_management`,`stock_status`,`quantity`),
+  KEY `ec_products_reviews_count_index` (`reviews_count`),
+  KEY `ec_products_reviews_avg_index` (`reviews_avg`),
+  KEY `ec_products_status_is_variation_index` (`status`,`is_variation`),
+  KEY `ec_products_storehouse_quantity_index` (`with_storehouse_management`,`quantity`),
+  KEY `ec_products_currency_code_index` (`currency_code`)
+) ENGINE=InnoDB AUTO_INCREMENT=49 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_products`
+--
+
+LOCK TABLES `ec_products` WRITE;
+/*!40000 ALTER TABLE `ec_products` DISABLE KEYS */;
+INSERT INTO `ec_products` VALUES (1,'Lyocell wrap top','lyocell-wrap-top','A cool-touch lyocell wrap top with a soft drape and self-tie waist — versatile from desk to dinner.','<p>Cut from 100% TENCEL™ lyocell, the wrap top breathes like linen and falls like silk. The deep V neckline and side-tie closure adjust to any waist shape.</p>','published','[\"products\\/product-14.jpg\",\"products\\/product-14-3-1.jpg\",\"products\\/product-14-4-1.jpg\"]','[[{\"key\":\"file\",\"value\":\"products\\/videos\\/video-1.mp4\"},{\"key\":\"url\",\"value\":null},{\"key\":\"thumbnail\",\"value\":\"products\\/videos\\/1.jpg\"}]]','HL-173-A1',0,13,0,1,'in_stock',1,NULL,4,0,3,10,3.00,0,99.99,69.99,NULL,NULL,16,10,20,849,NULL,'standard',16196,'2026-05-28 18:57:52','2026-05-28 18:58:02',1,0,'Botble\\ACL\\Models\\User',0,'products/product-14.jpg','physical','2608295081858',NULL,NULL,0,0,'auto_generate',0,0,0,1),(2,'Wool Midi Coat','wool-midi-coat','A midi-length wool coat with welt pockets and a clean notch lapel — a modern outerwear classic.','<p>Italian wool-blend melton with a soft satin lining. Single-breasted with two-button closure. Falls below the knee for full coverage on cold days.</p>','published','[\"products\\/product-15.jpg\",\"products\\/product-15-4-1.jpg\",\"products\\/product-15-3-1.jpg\"]','[[{\"key\":\"file\",\"value\":null},{\"key\":\"url\",\"value\":\"https:\\/\\/www.youtube.com\\/watch?v=6JYIGclVQdw\"},{\"key\":\"thumbnail\",\"value\":\"products\\/videos\\/1.jpg\"}]]','4A-181',0,12,0,1,'in_stock',1,NULL,1,0,3,10,4.00,0,25.99,15.99,NULL,NULL,10,19,17,616,NULL,'standard',43491,'2026-05-28 18:57:52','2026-05-28 18:58:02',2,0,'Botble\\ACL\\Models\\User',0,'products/product-15.jpg','physical','5076285785609',NULL,NULL,0,0,'auto_generate',0,0,0,1),(3,'Buttons cotton top','buttons-cotton-top','A button-front cotton top with a relaxed fit and mother-of-pearl closures.','<p>Mid-weight 180 GSM cotton poplin holds its shape across long days. Mother-of-pearl buttons. Slightly cropped hem pairs well with high-rise denim.</p>','published','[\"products\\/product-16.jpg\",\"products\\/product-16-3-1.jpg\"]',NULL,'QP-146',0,16,0,1,'in_stock',1,NULL,6,0,2,10,3.70,0,49.99,29.99,NULL,NULL,14,11,17,649,NULL,'standard',13817,'2026-05-28 18:57:52','2026-05-28 18:58:02',3,0,'Botble\\ACL\\Models\\User',0,'products/product-16.jpg','physical','0217402357506',NULL,NULL,0,0,'auto_generate',0,0,0,1),(4,'linen slim-fit shirt','linen-slim-fit-shirt','A garment-washed linen shirt with a slim cut and rounded hem — equal parts office and weekend.','<p>European flax woven and finished in Portugal. Stone buttons. Slim through the body without restricting movement.</p>','published','[\"products\\/product-17.jpg\",\"products\\/product-17-3-1.jpg\"]',NULL,'F8-199',0,15,0,1,'in_stock',1,NULL,2,0,2,10,2.80,0,79.99,45.99,NULL,NULL,13,19,11,628,NULL,'standard',57605,'2026-05-28 18:57:52','2026-05-28 18:58:02',4,0,'Botble\\ACL\\Models\\User',0,'products/product-17.jpg','physical','0670417931183',NULL,NULL,0,0,'auto_generate',0,0,0,1),(5,'High neck midi wool coat','high-neck-midi-wool-coat','A high-neck wool coat in a soft camel — funnel collar zips fully closed for blustery commutes.','<p>Brushed wool melton with a recycled-polyester twill lining. Hidden two-way zipper. Fully welt-pocketed at the hip.</p>','published','[\"products\\/product-5.jpg\",\"products\\/product-5-2-1.jpg\",\"products\\/product-5-3-1.jpg\",\"products\\/product-5-4-1.jpg\"]',NULL,'9J-186',0,19,0,1,'in_stock',0,NULL,8,0,0,10,2.80,0,19.99,9.99,NULL,NULL,15,16,16,729,NULL,'standard',14250,'2026-05-28 18:57:52','2026-05-28 18:58:02',1,0,'Botble\\ACL\\Models\\User',0,'products/product-5.jpg','physical','2988984207128',NULL,NULL,0,0,'auto_generate',0,0,0,1),(6,'Square metallic frame sunglasses','square-metallic-frame-sunglasses','Square metallic-frame sunglasses with hand-polished acetate temples and CR-39 lenses.','<p>Lightweight stainless-steel front. CR-39 polarized lenses block 100% UVA/UVB. Adjustable nose pads. Includes a hard case and microfiber pouch.</p>','published','[\"products\\/product-6.jpg\",\"products\\/product-6-2-1.jpg\",\"products\\/product-6-3-1.jpg\"]',NULL,'EX-134',0,17,0,1,'in_stock',0,NULL,3,0,0,10,3.00,0,59.99,34.99,NULL,NULL,10,20,18,567,NULL,'standard',19130,'2026-05-28 18:57:52','2026-05-28 18:58:02',2,0,'Botble\\ACL\\Models\\User',0,'products/product-6.jpg','physical','1824959020150',NULL,NULL,0,0,'auto_generate',0,0,0,1),(7,'Leather shopper bag with stitching','leather-shopper-bag-with-stitching','A roomy leather shopper with contrast saddle stitching and reinforced corners.','<p>Vegetable-tanned full-grain leather develops a warm patina with use. Open top with magnetic closure. Suede-lined interior with two slip pockets and one zip.</p>','published','[\"products\\/product-7.jpg\",\"products\\/product-7-2-1.jpg\",\"products\\/product-7-3-1.jpg\",\"products\\/product-7-4-1.jpg\"]',NULL,'HU-164-A1',0,15,0,1,'in_stock',0,NULL,12,0,4,10,2.60,0,39.99,22.99,NULL,NULL,20,16,15,847,NULL,'standard',75989,'2026-05-28 18:57:52','2026-05-28 18:58:02',3,0,'Botble\\ACL\\Models\\User',0,'products/product-7.jpg','physical','9271897893124',NULL,NULL,0,0,'auto_generate',0,0,0,1),(8,'Leather shopper bag with stitching','leather-shopper-bag-with-stitching','A larger version of our signature leather shopper — built for laptops, books, and a 16-inch tablet.','<p>Same vegetable-tanned full-grain leather and saddle-stitched construction, scaled up. Padded interior sleeve fits up to a 16-inch laptop.</p>','published','[\"products\\/product-8.jpg\",\"products\\/product-8-2-1.jpg\",\"products\\/product-8-3-1.jpg\",\"products\\/product-8-4-1.jpg\"]',NULL,'ZV-108',0,17,0,1,'in_stock',0,NULL,12,0,0,10,3.10,0,89.99,NULL,NULL,NULL,16,14,11,809,NULL,'standard',120727,'2026-05-28 18:57:52','2026-05-28 18:58:02',4,0,'Botble\\ACL\\Models\\User',0,'products/product-8.jpg','physical','8465427449269',NULL,NULL,0,0,'auto_generate',0,0,0,1),(9,'Oval shoulder bag','oval-shoulder-bag','A compact oval shoulder bag with a slim leather strap — fits a phone, wallet, and essentials.','<p>Smooth nappa leather with a polished gold-tone clasp. Adjustable strap. Microsuede-lined interior with a single card slot.</p>','published','[\"products\\/product-9.jpg\",\"products\\/product-9-2-1.jpg\",\"products\\/product-9-3-1.jpg\"]',NULL,'ME-114-A1',0,17,0,1,'in_stock',0,NULL,8,0,2,10,3.50,0,21.99,12.99,NULL,NULL,16,16,17,610,NULL,'standard',199417,'2026-05-28 18:57:52','2026-05-28 18:58:02',1,0,'Botble\\ACL\\Models\\User',0,'products/product-9.jpg','physical','6529683774700',NULL,NULL,0,0,'auto_generate',0,0,0,1),(10,'Oval shoulder bag','oval-shoulder-bag','The oval shoulder bag in pebbled black leather — a clean, minimal carry.','<p>Pebbled grain hides daily wear and tear. Same gold-tone clasp and microsuede lining as the nappa version.</p>','published','[\"products\\/product-10.jpg\"]',NULL,'JC-140',0,20,0,1,'in_stock',0,NULL,9,0,0,10,3.50,0,18.99,NULL,NULL,NULL,10,10,20,507,NULL,'standard',86175,'2026-05-28 18:57:53','2026-05-28 18:58:02',2,0,'Botble\\ACL\\Models\\User',0,'products/product-10.jpg','physical','3003002001447',NULL,NULL,0,0,'auto_generate',0,0,0,1),(11,'Oval shoulder bag','oval-shoulder-bag','The oval shoulder bag in cream — a versatile neutral that goes with any outfit.','<p>Cream nappa leather with the same hardware and lining. Spot-clean only — comes with a complimentary leather protector.</p>','published','[\"products\\/product-11.jpg\"]',NULL,'ED-129-A1',0,11,0,1,'in_stock',0,NULL,5,0,1,10,3.30,0,21.99,12.99,NULL,NULL,11,11,19,817,NULL,'standard',129812,'2026-05-28 18:57:53','2026-05-28 18:58:02',3,0,'Botble\\ACL\\Models\\User',0,'products/product-11.jpg','physical','2990779681143',NULL,NULL,0,0,'auto_generate',0,0,0,1),(12,'Oversized poplin button-up shirt','oversized-poplin-button-up-shirt','Soft pink poplin shirt with an oversized fit, dropped shoulder seams and a curved hem.','<p>100% organic cotton poplin. Machine wash cold. Pairs effortlessly with denim, tailored trousers, or layered under a knit. Designed in Barcelona, made in Portugal.</p>','published','[\"products\\/product-12.jpg\",\"products\\/product-12-2-1.jpg\"]',NULL,'WO-138',0,18,0,1,'in_stock',0,NULL,2,0,0,10,3.30,0,49.99,36.75,NULL,NULL,15,19,20,654,NULL,'standard',11589,'2026-05-28 18:57:53','2026-05-28 18:58:02',4,0,'Botble\\ACL\\Models\\User',0,'products/product-12.jpg','physical','7152398662711',NULL,NULL,0,0,'auto_generate',0,0,0,1),(13,'Ribbed halter cami top','ribbed-halter-cami-top','A ribbed cotton halter cami with adjustable shoulder straps and a cropped, fitted hem.','<p>Soft-ribbed organic cotton with a touch of elastane for a body-skimming fit. High-neck halter front, scoop back. Available in beige, black, and ivory.</p>','published','[\"products\\/product-1.jpg\",\"products\\/product-1-2-1.jpg\",\"products\\/product-1-3-1.jpg\",\"products\\/product-1-4-1.jpg\"]',NULL,'SQ-166',0,18,0,1,'in_stock',0,NULL,10,0,0,10,3.10,0,39.99,24.99,NULL,NULL,12,11,13,693,NULL,'standard',162313,'2026-05-28 18:57:53','2026-05-28 18:58:02',1,0,'Botble\\ACL\\Models\\User',0,'products/product-1.jpg','physical','6215369449849',NULL,NULL,0,0,'auto_generate',0,0,0,1),(14,'Cropped wool-blend knit sweater','cropped-wool-blend-knit-sweater','A cropped crew-neck sweater in a warm wool blend — slouchy through the body with ribbed hem and cuffs.','<p>Mid-gauge knit in a wool-merino-cashmere blend. Drop shoulders and dropped sleeves give it an easy oversized line that pairs with anything from denim to tailored trousers.</p>','published','[\"products\\/product-2.jpg\",\"products\\/product-2-2-1.jpg\",\"products\\/product-2-3-1.jpg\"]','[[{\"key\":\"file\",\"value\":\"products\\/videos\\/video-2.mp4\"},{\"key\":\"url\",\"value\":null},{\"key\":\"thumbnail\",\"value\":\"products\\/videos\\/2.jpg\"}]]','M7-128',0,18,0,1,'in_stock',0,NULL,3,0,0,10,3.20,0,79.99,NULL,NULL,NULL,18,15,19,751,NULL,'standard',26800,'2026-05-28 18:57:53','2026-05-28 18:58:02',2,0,'Botble\\ACL\\Models\\User',0,'products/product-2.jpg','physical','7221953612215',NULL,NULL,0,0,'auto_generate',0,0,0,1),(15,'Garment-washed linen overshirt','garment-washed-linen-overshirt','A relaxed-fit linen overshirt with a clean spread collar and shell buttons — sized to wear over a tee.','<p>Pure European flax in a 200 GSM weight. Garment-washed for a soft, lived-in hand. Available in olive, navy, and stone.</p>','published','[\"products\\/product-3.jpg\",\"products\\/product-3-2-1.jpg\",\"products\\/product-3-3-1.jpg\",\"products\\/product-3-4-1.jpg\"]',NULL,'LD-165-A1',0,20,0,1,'in_stock',0,NULL,12,0,4,10,3.30,0,69.99,44.99,NULL,NULL,19,14,13,677,NULL,'standard',194267,'2026-05-28 18:57:53','2026-05-28 18:58:02',3,0,'Botble\\ACL\\Models\\User',0,'products/product-3.jpg','physical','8280708931611',NULL,NULL,0,0,'auto_generate',0,0,0,1),(16,'Funnel-neck wool jacket','funnel-neck-wool-jacket','A short wool jacket with a stand-up funnel collar, snap-button placket, and full-zip closure.','<p>Charcoal melton wool with a recycled-poly twill lining. Storm-flap front conceals a YKK two-way zip. Sized for layering over a knit or button-up.</p>','published','[\"products\\/product-4.jpg\",\"products\\/product-4-2-1.jpg\"]',NULL,'XN-197',0,20,0,1,'in_stock',0,NULL,12,0,0,10,2.70,0,139.99,NULL,NULL,NULL,20,20,11,575,NULL,'standard',183034,'2026-05-28 18:57:53','2026-05-28 18:58:02',4,0,'Botble\\ACL\\Models\\User',0,'products/product-4.jpg','physical','3650504246281',NULL,NULL,0,0,'auto_generate',0,0,0,1),(17,'Train Free Sports Bra','train-free-sports-bra','Built for speed, comfort, and everyday movement.','<p>Compression-fit running bra with rope-detail back strap and seamless knit underbust band. Moves with the body and dries fast.</p>','published','[\"products\\/lookbook-prd-1.jpg\"]',NULL,'HJ-197-A1',0,13,0,1,'in_stock',0,NULL,10,0,5,10,3.10,0,39.99,29.99,NULL,NULL,17,17,13,711,NULL,'standard',38179,'2026-05-28 18:57:53','2026-05-28 18:58:02',1,0,'Botble\\ACL\\Models\\User',0,'products/lookbook-prd-1.jpg','physical','1190278979968',NULL,NULL,0,0,'auto_generate',0,0,0,1),(18,'NKD High Waisted Shorts','nkd-high-waisted-shorts','Built for speed, comfort, and everyday movement.','<p>High-rise running shorts with built-in liner and laser-cut waistband. Hidden zip pocket at the back yoke.</p>','published','[\"products\\/lookbook-prd-2.jpg\"]',NULL,'4K-138-A1',0,12,0,1,'in_stock',0,NULL,11,0,2,10,3.10,0,79.99,69.99,NULL,NULL,13,11,11,671,NULL,'standard',86562,'2026-05-28 18:57:53','2026-05-28 18:58:02',2,0,'Botble\\ACL\\Models\\User',0,'products/lookbook-prd-2.jpg','physical','2186130923247',NULL,NULL,0,0,'auto_generate',0,0,0,1),(21,'Leather shopper bag with stitching',NULL,NULL,NULL,'published','[\"products\\/product-7-2-1.jpg\"]',NULL,'HU-164-A1',0,15,0,1,'in_stock',0,NULL,12,1,0,0,0.00,0,39.99,NULL,NULL,NULL,20,16,15,847,NULL,'standard',0,'2026-05-28 18:57:54','2026-05-28 18:58:02',3,0,'Botble\\ACL\\Models\\User',0,NULL,'physical','3341148332903',NULL,NULL,0,0,'auto_generate',0,0,0,NULL),(22,'Leather shopper bag with stitching',NULL,NULL,NULL,'published','[\"products\\/product-7-3-1.jpg\"]',NULL,'HU-164-A1-A2',0,15,0,1,'in_stock',0,NULL,12,1,0,0,0.00,0,39.99,NULL,NULL,NULL,20,16,15,847,NULL,'standard',0,'2026-05-28 18:57:54','2026-05-28 18:58:02',3,0,'Botble\\ACL\\Models\\User',0,NULL,'physical','4830533927941',NULL,NULL,0,0,'auto_generate',0,0,0,NULL),(23,'Leather shopper bag with stitching',NULL,NULL,NULL,'published','[\"products\\/product-7-4-1.jpg\"]',NULL,'HU-164-A1-A3',0,15,0,1,'in_stock',0,NULL,12,1,0,0,0.00,0,39.99,NULL,NULL,NULL,20,16,15,847,NULL,'standard',0,'2026-05-28 18:57:54','2026-05-28 18:58:02',3,0,'Botble\\ACL\\Models\\User',0,NULL,'physical','9667225744662',NULL,NULL,0,0,'auto_generate',0,0,0,NULL),(24,'Leather shopper bag with stitching',NULL,NULL,NULL,'published','[\"products\\/product-7.jpg\"]',NULL,'HU-164-A1-A4',0,15,0,1,'in_stock',0,NULL,12,1,0,0,0.00,0,39.99,NULL,NULL,NULL,20,16,15,847,NULL,'standard',0,'2026-05-28 18:57:54','2026-05-28 18:58:02',3,0,'Botble\\ACL\\Models\\User',0,NULL,'physical','0349744700778',NULL,NULL,0,0,'auto_generate',0,0,0,NULL),(25,'Oval shoulder bag',NULL,NULL,NULL,'published','[\"products\\/product-9-2-1.jpg\"]',NULL,'ME-114-A1',0,17,0,1,'in_stock',0,NULL,8,1,0,0,0.00,0,21.99,NULL,NULL,NULL,16,16,17,610,NULL,'standard',0,'2026-05-28 18:57:54','2026-05-28 18:58:02',1,0,'Botble\\ACL\\Models\\User',0,NULL,'physical','8093990354774',NULL,NULL,0,0,'auto_generate',0,0,0,NULL),(26,'Oval shoulder bag',NULL,NULL,NULL,'published','[\"products\\/product-9-3-1.jpg\"]',NULL,'ME-114-A1-A2',0,17,0,1,'in_stock',0,NULL,8,1,0,0,0.00,0,21.99,NULL,NULL,NULL,16,16,17,610,NULL,'standard',0,'2026-05-28 18:57:54','2026-05-28 18:58:02',1,0,'Botble\\ACL\\Models\\User',0,NULL,'physical','9047089865626',NULL,NULL,0,0,'auto_generate',0,0,0,NULL),(27,'Oval shoulder bag',NULL,NULL,NULL,'published','[\"products\\/product-11.jpg\"]',NULL,'ED-129-A1',0,11,0,1,'in_stock',0,NULL,5,1,0,0,0.00,0,21.99,NULL,NULL,NULL,11,11,19,817,NULL,'standard',0,'2026-05-28 18:57:54','2026-05-28 18:58:02',3,0,'Botble\\ACL\\Models\\User',0,NULL,'physical','6901683344716',NULL,NULL,0,0,'auto_generate',0,0,0,NULL),(28,'Garment-washed linen overshirt',NULL,NULL,NULL,'published','[\"products\\/product-3-2-1.jpg\"]',NULL,'LD-165-A1',0,20,0,1,'in_stock',0,NULL,12,1,0,0,0.00,0,69.99,NULL,NULL,NULL,19,14,13,677,NULL,'standard',0,'2026-05-28 18:57:54','2026-05-28 18:58:02',3,0,'Botble\\ACL\\Models\\User',0,NULL,'physical','9192434868019',NULL,NULL,0,0,'auto_generate',0,0,0,NULL),(29,'Garment-washed linen overshirt',NULL,NULL,NULL,'published','[\"products\\/product-3-3-1.jpg\"]',NULL,'LD-165-A1-A2',0,20,0,1,'in_stock',0,NULL,12,1,0,0,0.00,0,69.99,NULL,NULL,NULL,19,14,13,677,NULL,'standard',0,'2026-05-28 18:57:55','2026-05-28 18:58:02',3,0,'Botble\\ACL\\Models\\User',0,NULL,'physical','7508258545012',NULL,NULL,0,0,'auto_generate',0,0,0,NULL),(30,'Garment-washed linen overshirt',NULL,NULL,NULL,'published','[\"products\\/product-3-4-1.jpg\"]',NULL,'LD-165-A1-A3',0,20,0,1,'in_stock',0,NULL,12,1,0,0,0.00,0,69.99,NULL,NULL,NULL,19,14,13,677,NULL,'standard',0,'2026-05-28 18:57:55','2026-05-28 18:58:02',3,0,'Botble\\ACL\\Models\\User',0,NULL,'physical','3447671959485',NULL,NULL,0,0,'auto_generate',0,0,0,NULL),(31,'Garment-washed linen overshirt',NULL,NULL,NULL,'published','[\"products\\/product-3.jpg\"]',NULL,'LD-165-A1-A4',0,20,0,1,'in_stock',0,NULL,12,1,0,0,0.00,0,69.99,NULL,NULL,NULL,19,14,13,677,NULL,'standard',0,'2026-05-28 18:57:55','2026-05-28 18:58:02',3,0,'Botble\\ACL\\Models\\User',0,NULL,'physical','6632482331491',NULL,NULL,0,0,'auto_generate',0,0,0,NULL),(32,'Train Free Sports Bra',NULL,NULL,NULL,'published','[\"products\\/lookbook-prd-1.jpg\"]',NULL,'HJ-197-A1',0,13,0,1,'in_stock',0,NULL,10,1,0,0,0.00,0,39.99,NULL,NULL,NULL,17,17,13,711,NULL,'standard',0,'2026-05-28 18:57:55','2026-05-28 18:58:02',1,0,'Botble\\ACL\\Models\\User',0,NULL,'physical','7555211784964',NULL,NULL,0,0,'auto_generate',0,0,0,NULL),(33,'Train Free Sports Bra',NULL,NULL,NULL,'published','[\"products\\/lookbook-prd-1.jpg\"]',NULL,'HJ-197-A1-A2',0,13,0,1,'in_stock',0,NULL,10,1,0,0,0.00,0,39.99,NULL,NULL,NULL,17,17,13,711,NULL,'standard',0,'2026-05-28 18:57:55','2026-05-28 18:58:02',1,0,'Botble\\ACL\\Models\\User',0,NULL,'physical','0656271108275',NULL,NULL,0,0,'auto_generate',0,0,0,NULL),(34,'Train Free Sports Bra',NULL,NULL,NULL,'published','[\"products\\/lookbook-prd-1.jpg\"]',NULL,'HJ-197-A1-A3',0,13,0,1,'in_stock',0,NULL,10,1,0,0,0.00,0,39.99,NULL,NULL,NULL,17,17,13,711,NULL,'standard',0,'2026-05-28 18:57:55','2026-05-28 18:58:02',1,0,'Botble\\ACL\\Models\\User',0,NULL,'physical','1601926297148',NULL,NULL,0,0,'auto_generate',0,0,0,NULL),(35,'Train Free Sports Bra',NULL,NULL,NULL,'published','[\"products\\/lookbook-prd-1.jpg\"]',NULL,'HJ-197-A1-A4',0,13,0,1,'in_stock',0,NULL,10,1,0,0,0.00,0,39.99,NULL,NULL,NULL,17,17,13,711,NULL,'standard',0,'2026-05-28 18:57:55','2026-05-28 18:58:02',1,0,'Botble\\ACL\\Models\\User',0,NULL,'physical','4693097206620',NULL,NULL,0,0,'auto_generate',0,0,0,NULL),(36,'Train Free Sports Bra',NULL,NULL,NULL,'published','[\"products\\/lookbook-prd-1.jpg\"]',NULL,'HJ-197-A1-A5',0,13,0,1,'in_stock',0,NULL,10,1,0,0,0.00,0,39.99,NULL,NULL,NULL,17,17,13,711,NULL,'standard',0,'2026-05-28 18:57:55','2026-05-28 18:58:02',1,0,'Botble\\ACL\\Models\\User',0,NULL,'physical','0921573267778',NULL,NULL,0,0,'auto_generate',0,0,0,NULL),(37,'NKD High Waisted Shorts',NULL,NULL,NULL,'published','[\"products\\/lookbook-prd-2.jpg\"]',NULL,'4K-138-A1',0,12,0,1,'in_stock',0,NULL,11,1,0,0,0.00,0,79.99,NULL,NULL,NULL,13,11,11,671,NULL,'standard',0,'2026-05-28 18:57:55','2026-05-28 18:58:02',2,0,'Botble\\ACL\\Models\\User',0,NULL,'physical','0282907052201',NULL,NULL,0,0,'auto_generate',0,0,0,NULL),(38,'NKD High Waisted Shorts',NULL,NULL,NULL,'published','[\"products\\/lookbook-prd-2.jpg\"]',NULL,'4K-138-A1-A2',0,12,0,1,'in_stock',0,NULL,11,1,0,0,0.00,0,79.99,NULL,NULL,NULL,13,11,11,671,NULL,'standard',0,'2026-05-28 18:57:55','2026-05-28 18:58:02',2,0,'Botble\\ACL\\Models\\User',0,NULL,'physical','5694219163530',NULL,NULL,0,0,'auto_generate',0,0,0,NULL),(39,'Lyocell wrap top',NULL,NULL,NULL,'published','[\"products\\/product-14.jpg\"]',NULL,'HL-173-A1-PIN',0,13,0,1,'in_stock',0,NULL,4,1,0,0,0.00,0,99.99,NULL,NULL,NULL,16,10,20,849,NULL,'standard',0,'2026-05-28 18:57:56','2026-05-28 18:58:02',1,0,'Botble\\ACL\\Models\\User',0,NULL,'physical','8722428350520',NULL,NULL,0,0,'auto_generate',0,0,0,NULL),(40,'Lyocell wrap top',NULL,NULL,NULL,'published','[\"products\\/product-14-3-1.jpg\"]',NULL,'HL-173-A1-BRO',0,13,0,1,'in_stock',0,NULL,4,1,0,0,0.00,0,99.99,NULL,NULL,NULL,16,10,20,849,NULL,'standard',0,'2026-05-28 18:57:56','2026-05-28 18:58:02',1,0,'Botble\\ACL\\Models\\User',0,NULL,'physical','0175903932854',NULL,NULL,0,0,'auto_generate',0,0,0,NULL),(41,'Lyocell wrap top',NULL,NULL,NULL,'published','[\"products\\/product-14-4-1.jpg\"]',NULL,'HL-173-A1-GRE',0,13,0,1,'in_stock',0,NULL,4,1,0,0,0.00,0,99.99,NULL,NULL,NULL,16,10,20,849,NULL,'standard',0,'2026-05-28 18:57:57','2026-05-28 18:58:02',1,0,'Botble\\ACL\\Models\\User',0,NULL,'physical','7570685069515',NULL,NULL,0,0,'auto_generate',0,0,0,NULL),(42,'Wool Midi Coat',NULL,NULL,NULL,'published','[\"products\\/product-15.jpg\"]',NULL,'4A-181-WHI',0,12,0,1,'in_stock',0,NULL,1,1,0,0,0.00,0,25.99,NULL,NULL,NULL,10,19,17,616,NULL,'standard',0,'2026-05-28 18:57:57','2026-05-28 18:58:02',2,0,'Botble\\ACL\\Models\\User',0,NULL,'physical','5775613322423',NULL,NULL,0,0,'auto_generate',0,0,0,NULL),(43,'Wool Midi Coat',NULL,NULL,NULL,'published','[\"products\\/product-15-4-1.jpg\"]',NULL,'4A-181-BLA',0,12,0,1,'in_stock',0,NULL,1,1,0,0,0.00,0,25.99,NULL,NULL,NULL,10,19,17,616,NULL,'standard',0,'2026-05-28 18:57:57','2026-05-28 18:58:02',2,0,'Botble\\ACL\\Models\\User',0,NULL,'physical','4244775927537',NULL,NULL,0,0,'auto_generate',0,0,0,NULL),(44,'Wool Midi Coat',NULL,NULL,NULL,'published','[\"products\\/product-15-3-1.jpg\"]',NULL,'4A-181-CRE',0,12,0,1,'in_stock',0,NULL,1,1,0,0,0.00,0,25.99,NULL,NULL,NULL,10,19,17,616,NULL,'standard',0,'2026-05-28 18:57:57','2026-05-28 18:58:02',2,0,'Botble\\ACL\\Models\\User',0,NULL,'physical','4481692900223',NULL,NULL,0,0,'auto_generate',0,0,0,NULL),(45,'Buttons cotton top',NULL,NULL,NULL,'published','[\"products\\/product-16.jpg\"]',NULL,'QP-146-PIN',0,16,0,1,'in_stock',0,NULL,6,1,0,0,0.00,0,49.99,NULL,NULL,NULL,14,11,17,649,NULL,'standard',0,'2026-05-28 18:57:57','2026-05-28 18:58:02',3,0,'Botble\\ACL\\Models\\User',0,NULL,'physical','3796793482372',NULL,NULL,0,0,'auto_generate',0,0,0,NULL),(46,'Buttons cotton top',NULL,NULL,NULL,'published','[\"products\\/product-16-3-1.jpg\"]',NULL,'QP-146-WHI',0,16,0,1,'in_stock',0,NULL,6,1,0,0,0.00,0,49.99,NULL,NULL,NULL,14,11,17,649,NULL,'standard',0,'2026-05-28 18:57:57','2026-05-28 18:58:02',3,0,'Botble\\ACL\\Models\\User',0,NULL,'physical','6008672624481',NULL,NULL,0,0,'auto_generate',0,0,0,NULL),(47,'linen slim-fit shirt',NULL,NULL,NULL,'published','[\"products\\/product-17.jpg\"]',NULL,'F8-199-BLU',0,15,0,1,'in_stock',0,NULL,2,1,0,0,0.00,0,79.99,NULL,NULL,NULL,13,19,11,628,NULL,'standard',0,'2026-05-28 18:57:57','2026-05-28 18:58:02',4,0,'Botble\\ACL\\Models\\User',0,NULL,'physical','2479706137682',NULL,NULL,0,0,'auto_generate',0,0,0,NULL),(48,'linen slim-fit shirt',NULL,NULL,NULL,'published','[\"products\\/product-17-3-1.jpg\"]',NULL,'F8-199-BLA',0,15,0,1,'in_stock',0,NULL,2,1,0,0,0.00,0,79.99,NULL,NULL,NULL,13,19,11,628,NULL,'standard',0,'2026-05-28 18:57:57','2026-05-28 18:58:02',4,0,'Botble\\ACL\\Models\\User',0,NULL,'physical','0460893375010',NULL,NULL,0,0,'auto_generate',0,0,0,NULL);
+/*!40000 ALTER TABLE `ec_products` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_products_translations`
+--
+
+DROP TABLE IF EXISTS `ec_products_translations`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_products_translations` (
+  `lang_code` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `ec_products_id` bigint unsigned NOT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `slug` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `description` text COLLATE utf8mb4_unicode_ci,
+  `content` text COLLATE utf8mb4_unicode_ci,
+  PRIMARY KEY (`lang_code`,`ec_products_id`),
+  KEY `idx_products_fk` (`ec_products_id`),
+  KEY `idx_products_products_lang` (`ec_products_id`,`lang_code`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_products_translations`
+--
+
+LOCK TABLES `ec_products_translations` WRITE;
+/*!40000 ALTER TABLE `ec_products_translations` DISABLE KEYS */;
+INSERT INTO `ec_products_translations` VALUES ('ar',1,'طبقة علوية ملفوفة من اللايوسل',NULL,'قطعة علوية رائعة ملفوفة من الليوسيل مع ثنية ناعمة وحزام خصر طبيعي - متعددة الاستخدامات من المكتب إلى حفلة العشاء.','<p> هذا القميص الملفوف مصنوع من مادة الليوسيل TENCEL™ بنسبة 100%، وهو مصنوع من قماش الكتان وستائر ناعمة كالحرير. رقبة عميقة على شكل حرف V وربطة عنق جانبية يمكن تعديلها بسهولة لتناسب أي خصر.</p>'),('ar',2,'معطف صوف ميدي',NULL,'معطف متوسط ​​الطول من الصوف مع جيوب مبطنة وياقة طية صدر أنيقة - أيقونة عصرية للملابس الخارجية.','<p> نسيج ميلتون من مزيج الصوف الإيطالي مع بطانة ناعمة من الساتان. صف واحد من الأزرار بإبزيم ذو زرين. بطول الركبة، لتغطية الأيام الباردة.</p>'),('ar',3,'توب من القطن بأزرار',NULL,'قميص قطني بأزرار أمامية وقصة فضفاضة وأزرار رقيقة من عرق اللؤلؤ.','<p>180 GSM قماش البوبلين القطني متوسط ​​الوزن يحافظ على شكله جيدًا طوال اليوم. أزرار أم اللؤلؤ. تتناسق الحاشية القصيرة قليلاً بشكل جميل مع الجينز عالي الخصر.</p>'),('ar',4,'قميص من الكتان بقصة ضيقة',NULL,'قميص كتان نحيف مغسول بحاشية مستديرة - مناسب لكل من المكتب وعطلة نهاية الأسبوع.','<p> يتم نسج الكتان الأوروبي وتشطيبه في البرتغال. زر الحجر. معانقة الجسم بشكل معتدل دون تقييد الحركة.</p>'),('ar',5,'معطف صوف ميدي بياقة عالية',NULL,'معطف من صوف الجمل الناعم بياقة عالية - يمكن إغلاق الياقة القمعية بسحاب للرحلات الباردة والرياح.','<p> نسيج من الصوف الناعم الممشط مع بطانة من البوليستر المعاد تدويره. قفل مخفي في اتجاهين. جيوب بحاشية كاملة على الورك.</p>'),('ar',6,'نظارة شمسية بإطار معدني مربع',NULL,'نظارات شمسية بإطار معدني مربع وأذرع من الأسيتات مصقولة يدوياً وعدسات CR-39.','<p> وجه من الفولاذ المقاوم للصدأ خفيف الوزن. عدسات CR-39 المستقطبة تحجب الأشعة فوق البنفسجية فئة A وB بنسبة 100%. وسادة أنف قابلة للتعديل. يأتي مع حافظة صلبة وحقيبة من الألياف الدقيقة.</p>'),('ar',7,'حقيبة تسوق جلدية مع خياطة',NULL,'حقيبة تسوق جلدية واسعة مع خياطة سرج متباينة وزوايا معززة.','<p> جلد محبب بالكامل مدبوغ بالخضراوات يُطور مظهرًا دافئًا بمرور الوقت. يفتح الفم بإغلاق مغناطيسي. الجزء الداخلي للحقيبة مبطن بالسويدي مع جيبين جانبيين وجيب واحد بسحاب.</p>'),('ar',8,'حقيبة تسوق جلدية مع خياطة',NULL,'حقيبة تسوق جلدية واسعة مع خياطة سرج متباينة وزوايا معززة.','<p> جلد محبب بالكامل مدبوغ بالخضراوات يُطور مظهرًا دافئًا بمرور الوقت. يفتح الفم بإغلاق مغناطيسي. الجزء الداخلي للحقيبة مبطن بالسويدي مع جيبين جانبيين وجيب واحد بسحاب.</p>'),('ar',9,'حقيبة كتف بيضاوية',NULL,'حقيبة كتف بيضاوية صغيرة الحجم مع أحزمة جلدية رفيعة - تناسب الهاتف والمحفظة والأغراض الشخصية.','<p> جلد نابا ناعم مع إبزيم معدني ذهبي اللون. حزام قابل للتعديل. الجيب مبطن بجلد سويدي صغير مع فتحة للبطاقات.</p>'),('ar',10,'حقيبة كتف بيضاوية',NULL,'حقيبة كتف بيضاوية صغيرة الحجم مع أحزمة جلدية رفيعة - تناسب الهاتف والمحفظة والأغراض الشخصية.','<p> جلد نابا ناعم مع إبزيم معدني ذهبي اللون. حزام قابل للتعديل. الجيب مبطن بجلد سويدي صغير مع فتحة للبطاقات.</p>'),('ar',11,'حقيبة كتف بيضاوية',NULL,'حقيبة كتف بيضاوية صغيرة الحجم مع أحزمة جلدية رفيعة - تناسب الهاتف والمحفظة والأغراض الشخصية.','<p> جلد نابا ناعم مع إبزيم معدني ذهبي اللون. حزام قابل للتعديل. الجيب مبطن بجلد سويدي صغير مع فتحة للبطاقات.</p>'),('ar',12,'قميص بوبلين كبير الحجم بأزرار',NULL,'قميص بوبلين وردي ناعم بقصته الكبيرة، ودرزات كتف منسدلة، وحاشية منحنية.','<p>100% organic cotton poplin. Machine wash cold. Pairs effortlessly with denim, tailored trousers, or layered under a knit. Designed in Barcelona, made in Portugal.</p>'),('ar',13,'أعلى كامي الرسن مضلع',NULL,'قميص كامي من القطن المضلع مع أحزمة كتف قابلة للتعديل وحاشية قصيرة ومجهزة.','<p>Soft-ribbed organic cotton with a touch of elastane for a body-skimming fit. High-neck halter front, scoop back. Available in beige, black, and ivory.</p>'),('ar',14,'سترة قصيرة منسوجة من مزيج الصوف',NULL,'سترة قصيرة بياقة دائرية مصنوعة من مزيج الصوف الدافئ - فضفاضة على الجسم مع أطراف أكمام وحاشية مضلعة.','<p>Mid-gauge knit in a wool-merino-cashmere blend. Drop shoulders and dropped sleeves give it an easy oversized line that pairs with anything from denim to tailored trousers.</p>'),('ar',15,'قميص من الكتان مغسول بالملابس',NULL,'قميص علوي من الكتان مريح مع ياقة منتشرة وأزرار صدفية - مقاس مناسب للارتداء فوق تي شيرت.','<p>Pure European flax in a 200 GSM weight. Garment-washed for a soft, lived-in hand. Available in olive, navy, and stone.</p>'),('ar',16,'سترة من الصوف بفتحة رقبة على شكل قمع',NULL,'سترة قصيرة من الصوف مع ياقة قمع واقفة، وفتحة بزر كبس، وإغلاق بسحاب كامل.','<p>Charcoal melton wool with a recycled-poly twill lining. Storm-flap front conceals a YKK two-way zip. Sized for layering over a knit or button-up.</p>'),('ar',17,'تدريب حمالة صدر رياضية مجانية',NULL,'مصمم للسرعة والراحة والحركة اليومية.','<p>Compression-fit running bra with rope-detail back strap and seamless knit underbust band. Moves with the body and dries fast.</p>'),('ar',18,'NKD شورت عالي الخصر',NULL,'مصمم للسرعة والراحة والحركة اليومية.','<p>High-rise running shorts with built-in liner and laser-cut waistband. Hidden zip pocket at the back yoke.</p>'),('ar',21,'حقيبة تسوق جلدية مع خياطة',NULL,'حقيبة تسوق جلدية واسعة مع خياطة سرج متباينة وزوايا معززة.','<p> جلد محبب بالكامل مدبوغ بالخضراوات يُطور مظهرًا دافئًا بمرور الوقت. يفتح الفم بإغلاق مغناطيسي. الجزء الداخلي للحقيبة مبطن بالسويدي مع جيبين جانبيين وجيب واحد بسحاب.</p>'),('ar',22,'حقيبة تسوق جلدية مع خياطة',NULL,'حقيبة تسوق جلدية واسعة مع خياطة سرج متباينة وزوايا معززة.','<p> جلد محبب بالكامل مدبوغ بالخضراوات يُطور مظهرًا دافئًا بمرور الوقت. يفتح الفم بإغلاق مغناطيسي. الجزء الداخلي للحقيبة مبطن بالسويدي مع جيبين جانبيين وجيب واحد بسحاب.</p>'),('ar',23,'حقيبة تسوق جلدية مع خياطة',NULL,'حقيبة تسوق جلدية واسعة مع خياطة سرج متباينة وزوايا معززة.','<p> جلد محبب بالكامل مدبوغ بالخضراوات يُطور مظهرًا دافئًا بمرور الوقت. يفتح الفم بإغلاق مغناطيسي. الجزء الداخلي للحقيبة مبطن بالسويدي مع جيبين جانبيين وجيب واحد بسحاب.</p>'),('ar',24,'حقيبة تسوق جلدية مع خياطة',NULL,'حقيبة تسوق جلدية واسعة مع خياطة سرج متباينة وزوايا معززة.','<p> جلد محبب بالكامل مدبوغ بالخضراوات يُطور مظهرًا دافئًا بمرور الوقت. يفتح الفم بإغلاق مغناطيسي. الجزء الداخلي للحقيبة مبطن بالسويدي مع جيبين جانبيين وجيب واحد بسحاب.</p>'),('ar',25,'حقيبة كتف بيضاوية',NULL,'حقيبة كتف بيضاوية صغيرة الحجم مع أحزمة جلدية رفيعة - تناسب الهاتف والمحفظة والأغراض الشخصية.','<p> جلد نابا ناعم مع إبزيم معدني ذهبي اللون. حزام قابل للتعديل. الجيب مبطن بجلد سويدي صغير مع فتحة للبطاقات.</p>'),('ar',26,'حقيبة كتف بيضاوية',NULL,'حقيبة كتف بيضاوية صغيرة الحجم مع أحزمة جلدية رفيعة - تناسب الهاتف والمحفظة والأغراض الشخصية.','<p> جلد نابا ناعم مع إبزيم معدني ذهبي اللون. حزام قابل للتعديل. الجيب مبطن بجلد سويدي صغير مع فتحة للبطاقات.</p>'),('ar',27,'حقيبة كتف بيضاوية',NULL,'حقيبة كتف بيضاوية صغيرة الحجم مع أحزمة جلدية رفيعة - تناسب الهاتف والمحفظة والأغراض الشخصية.','<p> جلد نابا ناعم مع إبزيم معدني ذهبي اللون. حزام قابل للتعديل. الجيب مبطن بجلد سويدي صغير مع فتحة للبطاقات.</p>'),('ar',28,'قميص من الكتان مغسول بالملابس',NULL,'قميص علوي من الكتان مريح مع ياقة منتشرة وأزرار صدفية - مقاس مناسب للارتداء فوق تي شيرت.',NULL),('ar',29,'قميص من الكتان مغسول بالملابس',NULL,'قميص علوي من الكتان مريح مع ياقة منتشرة وأزرار صدفية - مقاس مناسب للارتداء فوق تي شيرت.',NULL),('ar',30,'قميص من الكتان مغسول بالملابس',NULL,'قميص علوي من الكتان مريح مع ياقة منتشرة وأزرار صدفية - مقاس مناسب للارتداء فوق تي شيرت.',NULL),('ar',31,'قميص من الكتان مغسول بالملابس',NULL,'قميص علوي من الكتان مريح مع ياقة منتشرة وأزرار صدفية - مقاس مناسب للارتداء فوق تي شيرت.',NULL),('ar',32,'تدريب حمالة صدر رياضية مجانية',NULL,'مصمم للسرعة والراحة والحركة اليومية.',NULL),('ar',33,'تدريب حمالة صدر رياضية مجانية',NULL,'مصمم للسرعة والراحة والحركة اليومية.',NULL),('ar',34,'تدريب حمالة صدر رياضية مجانية',NULL,'مصمم للسرعة والراحة والحركة اليومية.',NULL),('ar',35,'تدريب حمالة صدر رياضية مجانية',NULL,'مصمم للسرعة والراحة والحركة اليومية.',NULL),('ar',36,'تدريب حمالة صدر رياضية مجانية',NULL,'مصمم للسرعة والراحة والحركة اليومية.',NULL),('ar',37,'NKD شورت عالي الخصر',NULL,'مصمم للسرعة والراحة والحركة اليومية.',NULL),('ar',38,'NKD شورت عالي الخصر',NULL,'مصمم للسرعة والراحة والحركة اليومية.',NULL),('ar',39,'طبقة علوية ملفوفة من اللايوسل',NULL,'قطعة علوية رائعة ملفوفة من الليوسيل مع ثنية ناعمة وحزام خصر طبيعي - متعددة الاستخدامات من المكتب إلى حفلة العشاء.','<p> هذا القميص الملفوف مصنوع من مادة الليوسيل TENCEL™ بنسبة 100%، وهو مصنوع من قماش الكتان وستائر ناعمة كالحرير. رقبة عميقة على شكل حرف V وربطة عنق جانبية يمكن تعديلها بسهولة لتناسب أي خصر.</p>'),('ar',40,'طبقة علوية ملفوفة من اللايوسل',NULL,'قطعة علوية رائعة ملفوفة من الليوسيل مع ثنية ناعمة وحزام خصر طبيعي - متعددة الاستخدامات من المكتب إلى حفلة العشاء.','<p> هذا القميص الملفوف مصنوع من مادة الليوسيل TENCEL™ بنسبة 100%، وهو مصنوع من قماش الكتان وستائر ناعمة كالحرير. رقبة عميقة على شكل حرف V وربطة عنق جانبية يمكن تعديلها بسهولة لتناسب أي خصر.</p>'),('ar',41,'طبقة علوية ملفوفة من اللايوسل',NULL,'قطعة علوية رائعة ملفوفة من الليوسيل مع ثنية ناعمة وحزام خصر طبيعي - متعددة الاستخدامات من المكتب إلى حفلة العشاء.','<p> هذا القميص الملفوف مصنوع من مادة الليوسيل TENCEL™ بنسبة 100%، وهو مصنوع من قماش الكتان وستائر ناعمة كالحرير. رقبة عميقة على شكل حرف V وربطة عنق جانبية يمكن تعديلها بسهولة لتناسب أي خصر.</p>'),('ar',42,'معطف صوف ميدي',NULL,'معطف متوسط ​​الطول من الصوف مع جيوب مبطنة وياقة طية صدر أنيقة - أيقونة عصرية للملابس الخارجية.','<p> نسيج ميلتون من مزيج الصوف الإيطالي مع بطانة ناعمة من الساتان. صف واحد من الأزرار بإبزيم ذو زرين. بطول الركبة، لتغطية الأيام الباردة.</p>'),('ar',43,'معطف صوف ميدي',NULL,'معطف متوسط ​​الطول من الصوف مع جيوب مبطنة وياقة طية صدر أنيقة - أيقونة عصرية للملابس الخارجية.','<p> نسيج ميلتون من مزيج الصوف الإيطالي مع بطانة ناعمة من الساتان. صف واحد من الأزرار بإبزيم ذو زرين. بطول الركبة، لتغطية الأيام الباردة.</p>'),('ar',44,'معطف صوف ميدي',NULL,'معطف متوسط ​​الطول من الصوف مع جيوب مبطنة وياقة طية صدر أنيقة - أيقونة عصرية للملابس الخارجية.','<p> نسيج ميلتون من مزيج الصوف الإيطالي مع بطانة ناعمة من الساتان. صف واحد من الأزرار بإبزيم ذو زرين. بطول الركبة، لتغطية الأيام الباردة.</p>'),('ar',45,'توب من القطن بأزرار',NULL,'قميص قطني بأزرار أمامية وقصة فضفاضة وأزرار رقيقة من عرق اللؤلؤ.','<p>180 GSM قماش البوبلين القطني متوسط ​​الوزن يحافظ على شكله جيدًا طوال اليوم. أزرار أم اللؤلؤ. تتناسق الحاشية القصيرة قليلاً بشكل جميل مع الجينز عالي الخصر.</p>'),('ar',46,'توب من القطن بأزرار',NULL,'قميص قطني بأزرار أمامية وقصة فضفاضة وأزرار رقيقة من عرق اللؤلؤ.','<p>180 GSM قماش البوبلين القطني متوسط ​​الوزن يحافظ على شكله جيدًا طوال اليوم. أزرار أم اللؤلؤ. تتناسق الحاشية القصيرة قليلاً بشكل جميل مع الجينز عالي الخصر.</p>'),('ar',47,'قميص من الكتان بقصة ضيقة',NULL,'قميص كتان نحيف مغسول بحاشية مستديرة - مناسب لكل من المكتب وعطلة نهاية الأسبوع.','<p> يتم نسج الكتان الأوروبي وتشطيبه في البرتغال. زر الحجر. معانقة الجسم بشكل معتدل دون تقييد الحركة.</p>'),('ar',48,'قميص من الكتان بقصة ضيقة',NULL,'قميص كتان نحيف مغسول بحاشية مستديرة - مناسب لكل من المكتب وعطلة نهاية الأسبوع.','<p> يتم نسج الكتان الأوروبي وتشطيبه في البرتغال. زر الحجر. معانقة الجسم بشكل معتدل دون تقييد الحركة.</p>'),('fr',1,'Haut cache-cœur en lyocell',NULL,'Haut cache-cœur en lyocell cool avec drapé doux et ceinture naturelle — polyvalent du bureau à un dîner.','<p>Coupée et cousue à partir de 100 % lyocell TENCEL™, la chemise portefeuille est aussi aérée que le lin et ses drapés sont aussi doux que la soie. Le col en V profond et le lien latéral s\'ajustent facilement à n\'importe quelle taille.</p>'),('fr',2,'Manteau mi-long en laine',NULL,'Manteau midi en laine avec poches passepoilées et col à revers soigné : une icône moderne des vêtements d\'extérieur.','<p>Tissu melton en laine mélangée italienne avec doublure en satin doux. Une seule rangée de boutons avec boucle à deux boutons. Jusqu\'aux genoux, couvrant les journées froides.</p>'),('fr',3,'Top en coton à boutons',NULL,'Chemise boutonnée en coton avec une coupe ample et de délicats boutons en nacre.','Le tissu en popeline de coton de poids moyen <p>180 GSM conserve sa forme tout au long de la journée. Boutons en nacre. L\'ourlet légèrement raccourci se coordonne à merveille avec un jean taille haute.</p>'),('fr',4,'chemise slim en lin',NULL,'Chemise slim en lin lavé avec ourlet arrondi — idéale aussi bien pour le bureau que pour le week-end.','<p>Le lin européen est tissé et fini au Portugal. Bouton en pierre. Serrer le corps modérément sans restreindre les mouvements.</p>'),('fr',5,'Manteau midi en laine à col montant',NULL,'Manteau en laine camel doux à col montant — le col cheminée peut être fermé par une fermeture éclair pour les voyages froids et venteux.','<p>Tissu melton en laine brossée douce avec doublure en polyester recyclé. Serrure bidirectionnelle cachée. Poches passepoilées sur la hanche.</p>'),('fr',6,'Lunettes de soleil à monture métallique carrée',NULL,'Lunettes de soleil à monture carrée en métal avec branches en acétate polies à la main et verres CR-39.','<p>Face légère en acier inoxydable. Les verres polarisés CR-39 bloquent 100 % des UVA/UVB. Plaquette nasale réglable. Livré avec étui rigide et sac en microfibre.</p>'),('fr',7,'Sac cabas en cuir avec surpiqûres',NULL,'Sac cabas spacieux en cuir avec coutures sellier contrastées et coins renforcés.','<p>Le cuir pleine fleur au tannage végétal développe une patine chaleureuse au fil du temps. La bouche s\'ouvre avec une fermeture magnétique. L\'intérieur du sac est doublé de daim avec deux poches latérales et une poche zippée.</p>'),('fr',8,'Sac cabas en cuir avec surpiqûres',NULL,'Sac cabas spacieux en cuir avec coutures sellier contrastées et coins renforcés.','<p>Le cuir pleine fleur au tannage végétal développe une patine chaleureuse au fil du temps. La bouche s\'ouvre avec une fermeture magnétique. L\'intérieur du sac est doublé de daim avec deux poches latérales et une poche zippée.</p>'),('fr',9,'Sac bandoulière ovale',NULL,'Sac à bandoulière ovale compact avec de fines lanières en cuir — peut contenir un téléphone, un portefeuille et des objets personnels.','<p>Cuir nappa lisse avec boucle en métal doré poli. Sangle réglable. La poche est doublée de micro-suède avec une fente pour carte.</p>'),('fr',10,'Sac bandoulière ovale',NULL,'Sac à bandoulière ovale compact avec de fines lanières en cuir — peut contenir un téléphone, un portefeuille et des objets personnels.','<p>Cuir nappa lisse avec boucle en métal doré poli. Sangle réglable. La poche est doublée de micro-suède avec une fente pour carte.</p>'),('fr',11,'Sac bandoulière ovale',NULL,'Sac à bandoulière ovale compact avec de fines lanières en cuir — peut contenir un téléphone, un portefeuille et des objets personnels.','<p>Cuir nappa lisse avec boucle en métal doré poli. Sangle réglable. La poche est doublée de micro-suède avec une fente pour carte.</p>'),('fr',12,'Chemise boutonnée oversize en popeline',NULL,'Chemise en popeline rose tendre avec une coupe oversize, des coutures épaules descendues et un ourlet arrondi.','<p>100% organic cotton poplin. Machine wash cold. Pairs effortlessly with denim, tailored trousers, or layered under a knit. Designed in Barcelona, made in Portugal.</p>'),('fr',13,'Caraco dos nu côtelé',NULL,'Une camisole dos nu en coton côtelé avec des bretelles réglables et un ourlet court ajusté.','<p>Soft-ribbed organic cotton with a touch of elastane for a body-skimming fit. High-neck halter front, scoop back. Available in beige, black, and ivory.</p>'),('fr',14,'Pull raccourci en maille de laine mélangée',NULL,'Un pull court à col rond en laine mélangée chaude — ample sur la longueur avec ourlet et poignets côtelés.','<p>Mid-gauge knit in a wool-merino-cashmere blend. Drop shoulders and dropped sleeves give it an easy oversized line that pairs with anything from denim to tailored trousers.</p>'),('fr',15,'Surchemise en lin lavé en pièce',NULL,'Une surchemise en lin de coupe décontractée avec un col italien épuré et des boutons en coquillage — conçue pour être portée sur un t-shirt.','<p>Pure European flax in a 200 GSM weight. Garment-washed for a soft, lived-in hand. Available in olive, navy, and stone.</p>'),('fr',16,'Veste en laine à col cheminée',NULL,'Une veste courte en laine avec un col cheminée montant, une patte de boutonnage à boutons-pression et une fermeture zippée sur toute la longueur.','<p>Charcoal melton wool with a recycled-poly twill lining. Storm-flap front conceals a YKK two-way zip. Sized for layering over a knit or button-up.</p>'),('fr',17,'Soutien-gorge de sport sans entraînement',NULL,'Conçu pour la vitesse, le confort et les mouvements quotidiens.','<p>Compression-fit running bra with rope-detail back strap and seamless knit underbust band. Moves with the body and dries fast.</p>'),('fr',18,'Short taille haute NKD',NULL,'Conçu pour la vitesse, le confort et les mouvements quotidiens.','<p>High-rise running shorts with built-in liner and laser-cut waistband. Hidden zip pocket at the back yoke.</p>'),('fr',21,'Sac cabas en cuir avec surpiqûres',NULL,'Sac cabas spacieux en cuir avec coutures sellier contrastées et coins renforcés.','<p>Le cuir pleine fleur au tannage végétal développe une patine chaleureuse au fil du temps. La bouche s\'ouvre avec une fermeture magnétique. L\'intérieur du sac est doublé de daim avec deux poches latérales et une poche zippée.</p>'),('fr',22,'Sac cabas en cuir avec surpiqûres',NULL,'Sac cabas spacieux en cuir avec coutures sellier contrastées et coins renforcés.','<p>Le cuir pleine fleur au tannage végétal développe une patine chaleureuse au fil du temps. La bouche s\'ouvre avec une fermeture magnétique. L\'intérieur du sac est doublé de daim avec deux poches latérales et une poche zippée.</p>'),('fr',23,'Sac cabas en cuir avec surpiqûres',NULL,'Sac cabas spacieux en cuir avec coutures sellier contrastées et coins renforcés.','<p>Le cuir pleine fleur au tannage végétal développe une patine chaleureuse au fil du temps. La bouche s\'ouvre avec une fermeture magnétique. L\'intérieur du sac est doublé de daim avec deux poches latérales et une poche zippée.</p>'),('fr',24,'Sac cabas en cuir avec surpiqûres',NULL,'Sac cabas spacieux en cuir avec coutures sellier contrastées et coins renforcés.','<p>Le cuir pleine fleur au tannage végétal développe une patine chaleureuse au fil du temps. La bouche s\'ouvre avec une fermeture magnétique. L\'intérieur du sac est doublé de daim avec deux poches latérales et une poche zippée.</p>'),('fr',25,'Sac bandoulière ovale',NULL,'Sac à bandoulière ovale compact avec de fines lanières en cuir — peut contenir un téléphone, un portefeuille et des objets personnels.','<p>Cuir nappa lisse avec boucle en métal doré poli. Sangle réglable. La poche est doublée de micro-suède avec une fente pour carte.</p>'),('fr',26,'Sac bandoulière ovale',NULL,'Sac à bandoulière ovale compact avec de fines lanières en cuir — peut contenir un téléphone, un portefeuille et des objets personnels.','<p>Cuir nappa lisse avec boucle en métal doré poli. Sangle réglable. La poche est doublée de micro-suède avec une fente pour carte.</p>'),('fr',27,'Sac bandoulière ovale',NULL,'Sac à bandoulière ovale compact avec de fines lanières en cuir — peut contenir un téléphone, un portefeuille et des objets personnels.','<p>Cuir nappa lisse avec boucle en métal doré poli. Sangle réglable. La poche est doublée de micro-suède avec une fente pour carte.</p>'),('fr',28,'Surchemise en lin lavé en pièce',NULL,'Une surchemise en lin de coupe décontractée avec un col italien épuré et des boutons en coquillage — conçue pour être portée sur un t-shirt.',NULL),('fr',29,'Surchemise en lin lavé en pièce',NULL,'Une surchemise en lin de coupe décontractée avec un col italien épuré et des boutons en coquillage — conçue pour être portée sur un t-shirt.',NULL),('fr',30,'Surchemise en lin lavé en pièce',NULL,'Une surchemise en lin de coupe décontractée avec un col italien épuré et des boutons en coquillage — conçue pour être portée sur un t-shirt.',NULL),('fr',31,'Surchemise en lin lavé en pièce',NULL,'Une surchemise en lin de coupe décontractée avec un col italien épuré et des boutons en coquillage — conçue pour être portée sur un t-shirt.',NULL),('fr',32,'Soutien-gorge de sport sans entraînement',NULL,'Conçu pour la vitesse, le confort et les mouvements quotidiens.',NULL),('fr',33,'Soutien-gorge de sport sans entraînement',NULL,'Conçu pour la vitesse, le confort et les mouvements quotidiens.',NULL),('fr',34,'Soutien-gorge de sport sans entraînement',NULL,'Conçu pour la vitesse, le confort et les mouvements quotidiens.',NULL),('fr',35,'Soutien-gorge de sport sans entraînement',NULL,'Conçu pour la vitesse, le confort et les mouvements quotidiens.',NULL),('fr',36,'Soutien-gorge de sport sans entraînement',NULL,'Conçu pour la vitesse, le confort et les mouvements quotidiens.',NULL),('fr',37,'Short taille haute NKD',NULL,'Conçu pour la vitesse, le confort et les mouvements quotidiens.',NULL),('fr',38,'Short taille haute NKD',NULL,'Conçu pour la vitesse, le confort et les mouvements quotidiens.',NULL),('fr',39,'Haut cache-cœur en lyocell',NULL,'Haut cache-cœur en lyocell cool avec drapé doux et ceinture naturelle — polyvalent du bureau à un dîner.','<p>Coupée et cousue à partir de 100 % lyocell TENCEL™, la chemise portefeuille est aussi aérée que le lin et ses drapés sont aussi doux que la soie. Le col en V profond et le lien latéral s\'ajustent facilement à n\'importe quelle taille.</p>'),('fr',40,'Haut cache-cœur en lyocell',NULL,'Haut cache-cœur en lyocell cool avec drapé doux et ceinture naturelle — polyvalent du bureau à un dîner.','<p>Coupée et cousue à partir de 100 % lyocell TENCEL™, la chemise portefeuille est aussi aérée que le lin et ses drapés sont aussi doux que la soie. Le col en V profond et le lien latéral s\'ajustent facilement à n\'importe quelle taille.</p>'),('fr',41,'Haut cache-cœur en lyocell',NULL,'Haut cache-cœur en lyocell cool avec drapé doux et ceinture naturelle — polyvalent du bureau à un dîner.','<p>Coupée et cousue à partir de 100 % lyocell TENCEL™, la chemise portefeuille est aussi aérée que le lin et ses drapés sont aussi doux que la soie. Le col en V profond et le lien latéral s\'ajustent facilement à n\'importe quelle taille.</p>'),('fr',42,'Manteau mi-long en laine',NULL,'Manteau midi en laine avec poches passepoilées et col à revers soigné : une icône moderne des vêtements d\'extérieur.','<p>Tissu melton en laine mélangée italienne avec doublure en satin doux. Une seule rangée de boutons avec boucle à deux boutons. Jusqu\'aux genoux, couvrant les journées froides.</p>'),('fr',43,'Manteau mi-long en laine',NULL,'Manteau midi en laine avec poches passepoilées et col à revers soigné : une icône moderne des vêtements d\'extérieur.','<p>Tissu melton en laine mélangée italienne avec doublure en satin doux. Une seule rangée de boutons avec boucle à deux boutons. Jusqu\'aux genoux, couvrant les journées froides.</p>'),('fr',44,'Manteau mi-long en laine',NULL,'Manteau midi en laine avec poches passepoilées et col à revers soigné : une icône moderne des vêtements d\'extérieur.','<p>Tissu melton en laine mélangée italienne avec doublure en satin doux. Une seule rangée de boutons avec boucle à deux boutons. Jusqu\'aux genoux, couvrant les journées froides.</p>'),('fr',45,'Top en coton à boutons',NULL,'Chemise boutonnée en coton avec une coupe ample et de délicats boutons en nacre.','Le tissu en popeline de coton de poids moyen <p>180 GSM conserve sa forme tout au long de la journée. Boutons en nacre. L\'ourlet légèrement raccourci se coordonne à merveille avec un jean taille haute.</p>'),('fr',46,'Top en coton à boutons',NULL,'Chemise boutonnée en coton avec une coupe ample et de délicats boutons en nacre.','Le tissu en popeline de coton de poids moyen <p>180 GSM conserve sa forme tout au long de la journée. Boutons en nacre. L\'ourlet légèrement raccourci se coordonne à merveille avec un jean taille haute.</p>'),('fr',47,'chemise slim en lin',NULL,'Chemise slim en lin lavé avec ourlet arrondi — idéale aussi bien pour le bureau que pour le week-end.','<p>Le lin européen est tissé et fini au Portugal. Bouton en pierre. Serrer le corps modérément sans restreindre les mouvements.</p>'),('fr',48,'chemise slim en lin',NULL,'Chemise slim en lin lavé avec ourlet arrondi — idéale aussi bien pour le bureau que pour le week-end.','<p>Le lin européen est tissé et fini au Portugal. Bouton en pierre. Serrer le corps modérément sans restreindre les mouvements.</p>'),('id',1,'Lyocell bungkus bagian atas',NULL,'Atasan berbungkus lyocell keren dengan tirai lembut dan ikat pinggang alami — serbaguna dari kantor hingga pesta makan malam.','<p>Dipotong dan dijahit dari 100% lyocell TENCEL™, bungkus kemejanya lapang seperti linen dan tirainya selembut sutra. Kerah V dalam dan dasi samping mudah disesuaikan dengan pinggang mana pun.</p>'),('id',2,'Mantel Midi Wol',NULL,'Mantel wol midi dengan saku bilur dan kerah kerah rapi — ikon pakaian luar modern.','<p>Kain Melton campuran wol Italia dengan lapisan satin lembut. Satu baris kancing dengan gesper dua kancing. Sebatas lutut, menutupi saat cuaca dingin.</p>'),('id',3,'Atasan berbahan katun kancing',NULL,'Kemeja katun berkancing di bagian depan dengan potongan longgar dan kancing mutiara yang halus.','<p>180 GSM kain katun poplin berat sedang mempertahankan bentuknya dengan baik sepanjang hari. Kancing mutiara. Kelim yang sedikit dipotong berpadu indah dengan jeans berpinggang tinggi.</p>'),('id',4,'kemeja linen slimfit',NULL,'Kemeja linen garmen tipis dengan ujung membulat — cocok untuk kantor dan akhir pekan.','<p>linen Eropa ditenun dan diselesaikan di Portugal. Tombol batu. Memeluk tubuh secukupnya tanpa membatasi gerakan.</p>'),('id',5,'Mantel wol midi leher tinggi',NULL,'Mantel wol kerah tinggi unta yang lembut — kerah corong dapat ditutup ritsleting untuk perjalanan yang dingin dan berangin.','<p>Kain wol Melton yang disikat lembut dengan lapisan poliester daur ulang. Kunci dua arah yang tersembunyi. Kantong bilur penuh di pinggul.</p>'),('id',6,'Kacamata hitam bingkai metalik persegi',NULL,'Kacamata hitam berbingkai logam persegi dengan pelipis asetat yang dipoles tangan dan lensa CR-39.','<p>Wajah baja tahan karat yang ringan. Lensa CR-39 terpolarisasi memblokir 100% UVA/UVB. Bantalan hidung yang dapat disesuaikan. Dilengkapi dengan hard case dan tas microfiber.</p>'),('id',7,'Tas pembelanja kulit dengan jahitan',NULL,'Tas pembelanja kulit yang lapang dengan jahitan pelana kontras dan sudut yang diperkuat.','<p>Kulit gandum utuh yang disamak nabati mengembangkan patina hangat seiring berjalannya waktu. Mulut terbuka dengan penutupan magnetik. Bagian dalam tas dilapisi bahan suede dengan dua saku samping dan satu saku resleting.</p>'),('id',8,'Tas pembelanja kulit dengan jahitan',NULL,'Tas pembelanja kulit yang lapang dengan jahitan pelana kontras dan sudut yang diperkuat.','<p>Kulit gandum utuh yang disamak nabati mengembangkan patina hangat seiring berjalannya waktu. Mulut terbuka dengan penutupan magnetik. Bagian dalam tas dilapisi bahan suede dengan dua saku samping dan satu saku resleting.</p>'),('id',9,'Tas bahu berbentuk oval',NULL,'Tas bahu oval kompak dengan tali kulit tipis — muat ponsel, dompet, dan barang-barang pribadi.','<p>Kulit nappa halus dengan gesper logam warna emas yang dipoles. Tali yang dapat disesuaikan. Sakunya dilapisi dengan suede mikro dengan slot kartu.</p>'),('id',10,'Tas bahu berbentuk oval',NULL,'Tas bahu oval kompak dengan tali kulit tipis — muat ponsel, dompet, dan barang-barang pribadi.','<p>Kulit nappa halus dengan gesper logam warna emas yang dipoles. Tali yang dapat disesuaikan. Sakunya dilapisi dengan suede mikro dengan slot kartu.</p>'),('id',11,'Tas bahu berbentuk oval',NULL,'Tas bahu oval kompak dengan tali kulit tipis — muat ponsel, dompet, dan barang-barang pribadi.','<p>Kulit nappa halus dengan gesper logam warna emas yang dipoles. Tali yang dapat disesuaikan. Sakunya dilapisi dengan suede mikro dengan slot kartu.</p>'),('id',12,'Kemeja berkancing poplin berukuran besar',NULL,'Kemeja poplin merah muda lembut dengan potongan oversized, jahitan bahu turun, dan keliman melengkung.','<p>100% organic cotton poplin. Machine wash cold. Pairs effortlessly with denim, tailored trousers, or layered under a knit. Designed in Barcelona, made in Portugal.</p>'),('id',13,'Atasan cami halter berusuk',NULL,'Cami halter berbahan katun bergaris dengan tali bahu yang dapat disesuaikan dan keliman yang dipotong dan pas.','<p>Soft-ribbed organic cotton with a touch of elastane for a body-skimming fit. High-neck halter front, scoop back. Available in beige, black, and ivory.</p>'),('id',14,'Sweater rajut berbahan campuran wol',NULL,'Sweter cropped crew-neck berbahan campuran wol hangat — longgar di badan dengan ujung bergaris dan manset.','<p>Mid-gauge knit in a wool-merino-cashmere blend. Drop shoulders and dropped sleeves give it an easy oversized line that pairs with anything from denim to tailored trousers.</p>'),('id',15,'Kemeja linen yang sudah dicuci dengan pakaian',NULL,'Kemeja luar linen berpotongan santai dengan kerah lebar dan kancing cangkang yang rapi — seukuran untuk dikenakan di atas kaus.','<p>Pure European flax in a 200 GSM weight. Garment-washed for a soft, lived-in hand. Available in olive, navy, and stone.</p>'),('id',16,'Jaket wol leher corong',NULL,'Jaket wol pendek dengan kerah corong tegak, saku rok kancing jepret, dan penutup ritsleting penuh.','<p>Charcoal melton wool with a recycled-poly twill lining. Storm-flap front conceals a YKK two-way zip. Sized for layering over a knit or button-up.</p>'),('id',17,'Latih Bra Olahraga Gratis',NULL,'Dibangun untuk kecepatan, kenyamanan, dan pergerakan sehari-hari.','<p>Compression-fit running bra with rope-detail back strap and seamless knit underbust band. Moves with the body and dries fast.</p>'),('id',18,'Celana Pendek Pinggang Tinggi NKD',NULL,'Dibangun untuk kecepatan, kenyamanan, dan pergerakan sehari-hari.','<p>High-rise running shorts with built-in liner and laser-cut waistband. Hidden zip pocket at the back yoke.</p>'),('id',21,'Tas pembelanja kulit dengan jahitan',NULL,'Tas pembelanja kulit yang lapang dengan jahitan pelana kontras dan sudut yang diperkuat.','<p>Kulit gandum utuh yang disamak nabati mengembangkan patina hangat seiring berjalannya waktu. Mulut terbuka dengan penutupan magnetik. Bagian dalam tas dilapisi bahan suede dengan dua saku samping dan satu saku resleting.</p>'),('id',22,'Tas pembelanja kulit dengan jahitan',NULL,'Tas pembelanja kulit yang lapang dengan jahitan pelana kontras dan sudut yang diperkuat.','<p>Kulit gandum utuh yang disamak nabati mengembangkan patina hangat seiring berjalannya waktu. Mulut terbuka dengan penutupan magnetik. Bagian dalam tas dilapisi bahan suede dengan dua saku samping dan satu saku resleting.</p>'),('id',23,'Tas pembelanja kulit dengan jahitan',NULL,'Tas pembelanja kulit yang lapang dengan jahitan pelana kontras dan sudut yang diperkuat.','<p>Kulit gandum utuh yang disamak nabati mengembangkan patina hangat seiring berjalannya waktu. Mulut terbuka dengan penutupan magnetik. Bagian dalam tas dilapisi bahan suede dengan dua saku samping dan satu saku resleting.</p>'),('id',24,'Tas pembelanja kulit dengan jahitan',NULL,'Tas pembelanja kulit yang lapang dengan jahitan pelana kontras dan sudut yang diperkuat.','<p>Kulit gandum utuh yang disamak nabati mengembangkan patina hangat seiring berjalannya waktu. Mulut terbuka dengan penutupan magnetik. Bagian dalam tas dilapisi bahan suede dengan dua saku samping dan satu saku resleting.</p>'),('id',25,'Tas bahu berbentuk oval',NULL,'Tas bahu oval kompak dengan tali kulit tipis — muat ponsel, dompet, dan barang-barang pribadi.','<p>Kulit nappa halus dengan gesper logam warna emas yang dipoles. Tali yang dapat disesuaikan. Sakunya dilapisi dengan suede mikro dengan slot kartu.</p>'),('id',26,'Tas bahu berbentuk oval',NULL,'Tas bahu oval kompak dengan tali kulit tipis — muat ponsel, dompet, dan barang-barang pribadi.','<p>Kulit nappa halus dengan gesper logam warna emas yang dipoles. Tali yang dapat disesuaikan. Sakunya dilapisi dengan suede mikro dengan slot kartu.</p>'),('id',27,'Tas bahu berbentuk oval',NULL,'Tas bahu oval kompak dengan tali kulit tipis — muat ponsel, dompet, dan barang-barang pribadi.','<p>Kulit nappa halus dengan gesper logam warna emas yang dipoles. Tali yang dapat disesuaikan. Sakunya dilapisi dengan suede mikro dengan slot kartu.</p>'),('id',28,'Kemeja linen yang sudah dicuci dengan pakaian',NULL,'Kemeja luar linen berpotongan santai dengan kerah lebar dan kancing cangkang yang rapi — seukuran untuk dikenakan di atas kaus.',NULL),('id',29,'Kemeja linen yang sudah dicuci dengan pakaian',NULL,'Kemeja luar linen berpotongan santai dengan kerah lebar dan kancing cangkang yang rapi — seukuran untuk dikenakan di atas kaus.',NULL),('id',30,'Kemeja linen yang sudah dicuci dengan pakaian',NULL,'Kemeja luar linen berpotongan santai dengan kerah lebar dan kancing cangkang yang rapi — seukuran untuk dikenakan di atas kaus.',NULL),('id',31,'Kemeja linen yang sudah dicuci dengan pakaian',NULL,'Kemeja luar linen berpotongan santai dengan kerah lebar dan kancing cangkang yang rapi — seukuran untuk dikenakan di atas kaus.',NULL),('id',32,'Latih Bra Olahraga Gratis',NULL,'Dibangun untuk kecepatan, kenyamanan, dan pergerakan sehari-hari.',NULL),('id',33,'Latih Bra Olahraga Gratis',NULL,'Dibangun untuk kecepatan, kenyamanan, dan pergerakan sehari-hari.',NULL),('id',34,'Latih Bra Olahraga Gratis',NULL,'Dibangun untuk kecepatan, kenyamanan, dan pergerakan sehari-hari.',NULL),('id',35,'Latih Bra Olahraga Gratis',NULL,'Dibangun untuk kecepatan, kenyamanan, dan pergerakan sehari-hari.',NULL),('id',36,'Latih Bra Olahraga Gratis',NULL,'Dibangun untuk kecepatan, kenyamanan, dan pergerakan sehari-hari.',NULL),('id',37,'Celana Pendek Pinggang Tinggi NKD',NULL,'Dibangun untuk kecepatan, kenyamanan, dan pergerakan sehari-hari.',NULL),('id',38,'Celana Pendek Pinggang Tinggi NKD',NULL,'Dibangun untuk kecepatan, kenyamanan, dan pergerakan sehari-hari.',NULL),('id',39,'Lyocell bungkus bagian atas',NULL,'Atasan berbungkus lyocell keren dengan tirai lembut dan ikat pinggang alami — serbaguna dari kantor hingga pesta makan malam.','<p>Dipotong dan dijahit dari 100% lyocell TENCEL™, bungkus kemejanya lapang seperti linen dan tirainya selembut sutra. Kerah V dalam dan dasi samping mudah disesuaikan dengan pinggang mana pun.</p>'),('id',40,'Lyocell bungkus bagian atas',NULL,'Atasan berbungkus lyocell keren dengan tirai lembut dan ikat pinggang alami — serbaguna dari kantor hingga pesta makan malam.','<p>Dipotong dan dijahit dari 100% lyocell TENCEL™, bungkus kemejanya lapang seperti linen dan tirainya selembut sutra. Kerah V dalam dan dasi samping mudah disesuaikan dengan pinggang mana pun.</p>'),('id',41,'Lyocell bungkus bagian atas',NULL,'Atasan berbungkus lyocell keren dengan tirai lembut dan ikat pinggang alami — serbaguna dari kantor hingga pesta makan malam.','<p>Dipotong dan dijahit dari 100% lyocell TENCEL™, bungkus kemejanya lapang seperti linen dan tirainya selembut sutra. Kerah V dalam dan dasi samping mudah disesuaikan dengan pinggang mana pun.</p>'),('id',42,'Mantel Midi Wol',NULL,'Mantel wol midi dengan saku bilur dan kerah kerah rapi — ikon pakaian luar modern.','<p>Kain Melton campuran wol Italia dengan lapisan satin lembut. Satu baris kancing dengan gesper dua kancing. Sebatas lutut, menutupi saat cuaca dingin.</p>'),('id',43,'Mantel Midi Wol',NULL,'Mantel wol midi dengan saku bilur dan kerah kerah rapi — ikon pakaian luar modern.','<p>Kain Melton campuran wol Italia dengan lapisan satin lembut. Satu baris kancing dengan gesper dua kancing. Sebatas lutut, menutupi saat cuaca dingin.</p>'),('id',44,'Mantel Midi Wol',NULL,'Mantel wol midi dengan saku bilur dan kerah kerah rapi — ikon pakaian luar modern.','<p>Kain Melton campuran wol Italia dengan lapisan satin lembut. Satu baris kancing dengan gesper dua kancing. Sebatas lutut, menutupi saat cuaca dingin.</p>'),('id',45,'Atasan berbahan katun kancing',NULL,'Kemeja katun berkancing di bagian depan dengan potongan longgar dan kancing mutiara yang halus.','<p>180 GSM kain katun poplin berat sedang mempertahankan bentuknya dengan baik sepanjang hari. Kancing mutiara. Kelim yang sedikit dipotong berpadu indah dengan jeans berpinggang tinggi.</p>'),('id',46,'Atasan berbahan katun kancing',NULL,'Kemeja katun berkancing di bagian depan dengan potongan longgar dan kancing mutiara yang halus.','<p>180 GSM kain katun poplin berat sedang mempertahankan bentuknya dengan baik sepanjang hari. Kancing mutiara. Kelim yang sedikit dipotong berpadu indah dengan jeans berpinggang tinggi.</p>'),('id',47,'kemeja linen slimfit',NULL,'Kemeja linen garmen tipis dengan ujung membulat — cocok untuk kantor dan akhir pekan.','<p>linen Eropa ditenun dan diselesaikan di Portugal. Tombol batu. Memeluk tubuh secukupnya tanpa membatasi gerakan.</p>'),('id',48,'kemeja linen slimfit',NULL,'Kemeja linen garmen tipis dengan ujung membulat — cocok untuk kantor dan akhir pekan.','<p>linen Eropa ditenun dan diselesaikan di Portugal. Tombol batu. Memeluk tubuh secukupnya tanpa membatasi gerakan.</p>'),('tr',1,'Lyocell anvelop üst',NULL,'Yumuşak dökümlü ve doğal bel bantlı, havalı liyosel anvelop üst - ofisten akşam yemeği partisine kadar çok yönlü.','<p>%100 liyosel TENCEL™\'den kesilip dikilen anvelop gömlek, keten kadar havadar ve ipek kadar yumuşak perdelere sahip. Derin V yaka ve yan kravat her bele kolayca uyum sağlar.</p>'),('tr',2,'Yün Midi Kaban',NULL,'Şerit cepli ve zarif yaka yakalı midi yün ceket - modern bir dış giyim simgesi.','<p>Yumuşak saten astarlı, İtalyan yün karışımlı melton kumaş. İki düğmeli tokalı tek sıra düğmeler. Soğuk günlere karşı diz boyu.</p>'),('tr',3,'Düğmeli pamuklu üst',NULL,'Bol kesimli, narin sedef düğmeli, önü düğmeli pamuklu gömlek.','<p>180 GSM orta gramajlı pamuklu poplin kumaş gün boyu şeklini iyi korur. Sedef düğmeler. Hafifçe kısaltılmış etek kısmı, yüksek belli kot pantolonlarla güzel bir şekilde uyum sağlar.</p>'),('tr',4,'keten dar kesim gömlek',NULL,'Hem ofis hem de hafta sonu için uygun, yuvarlak kenarlı, yıkanmış ince keten gömlek.','<p>Avrupa keteni Portekiz\'de dokunur ve tamamlanır. Taş düğmesi. Hareketi kısıtlamadan vücuda orta derecede sarılmak.</p>'),('tr',5,'Yüksek yaka midi yün kaban',NULL,'Yumuşak deve rengi yüksek yakalı yün palto — huni yaka, soğuk ve rüzgarlı yolculuklar için fermuarla kapatılabilir.','<p>Geri dönüştürülmüş polyester astarlı yumuşak fırçalanmış yün melton kumaş. Gizli iki yönlü kilit. Kalçada tam şerit cepler.</p>'),('tr',6,'Kare metalik çerçeveli güneş gözlüğü',NULL,'Elle parlatılmış asetat saplı, CR-39 lensli, kare metal çerçeveli güneş gözlüğü.','<p>Hafif paslanmaz çelik yüzey. Polarize CR-39 lensler %100 UVA/UVB\'yi engeller. Ayarlanabilir burun yastığı. Sert kılıf ve mikrofiber çantayla birlikte gelir.</p>'),('tr',7,'Dikişli deri alışveriş çantası',NULL,'Kontrast dikişli ve güçlendirilmiş köşeli, geniş deri alışveriş çantası.','<p>Bitkisel tabaklanmış sırçalı deri zamanla sıcak bir patina geliştirir. Ağız mıknatıslı kapama ile açılır. Çantanın iç kısmı süet astarlı olup iki yan cepli ve bir fermuarlı ceplidir.</p>'),('tr',8,'Dikişli deri alışveriş çantası',NULL,'Kontrast dikişli ve güçlendirilmiş köşeli, geniş deri alışveriş çantası.','<p>Bitkisel tabaklanmış sırçalı deri zamanla sıcak bir patina geliştirir. Ağız mıknatıslı kapama ile açılır. Çantanın iç kısmı süet astarlı olup iki yan cepli ve bir fermuarlı ceplidir.</p>'),('tr',9,'Oval omuz çantası',NULL,'İnce deri askılı kompakt oval omuz çantası; telefon, cüzdan ve kişisel eşyalar için uygundur.','<p>Pürüzsüz Nappa deri ve parlak altın tonunda metal toka. Ayarlanabilir kayış. Cep, kart yuvası bulunan mikro süet ile kaplıdır.</p>'),('tr',10,'Oval omuz çantası',NULL,'İnce deri askılı kompakt oval omuz çantası; telefon, cüzdan ve kişisel eşyalar için uygundur.','<p>Pürüzsüz Nappa deri ve parlak altın tonunda metal toka. Ayarlanabilir kayış. Cep, kart yuvası bulunan mikro süet ile kaplıdır.</p>'),('tr',11,'Oval omuz çantası',NULL,'İnce deri askılı kompakt oval omuz çantası; telefon, cüzdan ve kişisel eşyalar için uygundur.','<p>Pürüzsüz Nappa deri ve parlak altın tonunda metal toka. Ayarlanabilir kayış. Cep, kart yuvası bulunan mikro süet ile kaplıdır.</p>'),('tr',12,'Büyük beden poplin düğmeli gömlek',NULL,'Oversize kesimli, düşük omuz dikişli, etek ucu kıvrımlı yumuşak pembe poplin gömlek.','<p>100% organic cotton poplin. Machine wash cold. Pairs effortlessly with denim, tailored trousers, or layered under a knit. Designed in Barcelona, made in Portugal.</p>'),('tr',13,'Fitilli askılı askılı üst',NULL,'Ayarlanabilir omuz askılı, kısaltılmış, bedene oturan etek kısmı olan, fitilli pamuklu askılı atlet.','<p>Soft-ribbed organic cotton with a touch of elastane for a body-skimming fit. High-neck halter front, scoop back. Available in beige, black, and ivory.</p>'),('tr',14,'Yün karışımlı kısa örgü kazak',NULL,'Sıcak tutan yün karışımından, kısa, bisiklet yakalı, vücudu saran, etek kısmı ve manşetleri ribanalı bir kazak.','<p>Mid-gauge knit in a wool-merino-cashmere blend. Drop shoulders and dropped sleeves give it an easy oversized line that pairs with anything from denim to tailored trousers.</p>'),('tr',15,'Yıkanmış keten ince gömlek',NULL,'Temiz yakalı ve deniz kabuğu düğmeli, tişört üzerine giyilebilecek boyutta, rahat kesim keten bir ceket.','<p>Pure European flax in a 200 GSM weight. Garment-washed for a soft, lived-in hand. Available in olive, navy, and stone.</p>'),('tr',16,'Huni yakalı yün ceket',NULL,'Dik yakalı, çıtçıtlı patletli, tam fermuarlı kısa yün ceket.','<p>Charcoal melton wool with a recycled-poly twill lining. Storm-flap front conceals a YKK two-way zip. Sized for layering over a knit or button-up.</p>'),('tr',17,'Trensiz Spor Sütyeni',NULL,'Hız, konfor ve günlük hareket için tasarlandı.','<p>Compression-fit running bra with rope-detail back strap and seamless knit underbust band. Moves with the body and dries fast.</p>'),('tr',18,'NKD Yüksek Bel Şort',NULL,'Hız, konfor ve günlük hareket için tasarlandı.','<p>High-rise running shorts with built-in liner and laser-cut waistband. Hidden zip pocket at the back yoke.</p>'),('tr',21,'Dikişli deri alışveriş çantası',NULL,'Kontrast dikişli ve güçlendirilmiş köşeli, geniş deri alışveriş çantası.','<p>Bitkisel tabaklanmış sırçalı deri zamanla sıcak bir patina geliştirir. Ağız mıknatıslı kapama ile açılır. Çantanın iç kısmı süet astarlı olup iki yan cepli ve bir fermuarlı ceplidir.</p>'),('tr',22,'Dikişli deri alışveriş çantası',NULL,'Kontrast dikişli ve güçlendirilmiş köşeli, geniş deri alışveriş çantası.','<p>Bitkisel tabaklanmış sırçalı deri zamanla sıcak bir patina geliştirir. Ağız mıknatıslı kapama ile açılır. Çantanın iç kısmı süet astarlı olup iki yan cepli ve bir fermuarlı ceplidir.</p>'),('tr',23,'Dikişli deri alışveriş çantası',NULL,'Kontrast dikişli ve güçlendirilmiş köşeli, geniş deri alışveriş çantası.','<p>Bitkisel tabaklanmış sırçalı deri zamanla sıcak bir patina geliştirir. Ağız mıknatıslı kapama ile açılır. Çantanın iç kısmı süet astarlı olup iki yan cepli ve bir fermuarlı ceplidir.</p>'),('tr',24,'Dikişli deri alışveriş çantası',NULL,'Kontrast dikişli ve güçlendirilmiş köşeli, geniş deri alışveriş çantası.','<p>Bitkisel tabaklanmış sırçalı deri zamanla sıcak bir patina geliştirir. Ağız mıknatıslı kapama ile açılır. Çantanın iç kısmı süet astarlı olup iki yan cepli ve bir fermuarlı ceplidir.</p>'),('tr',25,'Oval omuz çantası',NULL,'İnce deri askılı kompakt oval omuz çantası; telefon, cüzdan ve kişisel eşyalar için uygundur.','<p>Pürüzsüz Nappa deri ve parlak altın tonunda metal toka. Ayarlanabilir kayış. Cep, kart yuvası bulunan mikro süet ile kaplıdır.</p>'),('tr',26,'Oval omuz çantası',NULL,'İnce deri askılı kompakt oval omuz çantası; telefon, cüzdan ve kişisel eşyalar için uygundur.','<p>Pürüzsüz Nappa deri ve parlak altın tonunda metal toka. Ayarlanabilir kayış. Cep, kart yuvası bulunan mikro süet ile kaplıdır.</p>'),('tr',27,'Oval omuz çantası',NULL,'İnce deri askılı kompakt oval omuz çantası; telefon, cüzdan ve kişisel eşyalar için uygundur.','<p>Pürüzsüz Nappa deri ve parlak altın tonunda metal toka. Ayarlanabilir kayış. Cep, kart yuvası bulunan mikro süet ile kaplıdır.</p>'),('tr',28,'Yıkanmış keten ince gömlek',NULL,'Temiz yakalı ve deniz kabuğu düğmeli, tişört üzerine giyilebilecek boyutta, rahat kesim keten bir ceket.',NULL),('tr',29,'Yıkanmış keten ince gömlek',NULL,'Temiz yakalı ve deniz kabuğu düğmeli, tişört üzerine giyilebilecek boyutta, rahat kesim keten bir ceket.',NULL),('tr',30,'Yıkanmış keten ince gömlek',NULL,'Temiz yakalı ve deniz kabuğu düğmeli, tişört üzerine giyilebilecek boyutta, rahat kesim keten bir ceket.',NULL),('tr',31,'Yıkanmış keten ince gömlek',NULL,'Temiz yakalı ve deniz kabuğu düğmeli, tişört üzerine giyilebilecek boyutta, rahat kesim keten bir ceket.',NULL),('tr',32,'Trensiz Spor Sütyeni',NULL,'Hız, konfor ve günlük hareket için tasarlandı.',NULL),('tr',33,'Trensiz Spor Sütyeni',NULL,'Hız, konfor ve günlük hareket için tasarlandı.',NULL),('tr',34,'Trensiz Spor Sütyeni',NULL,'Hız, konfor ve günlük hareket için tasarlandı.',NULL),('tr',35,'Trensiz Spor Sütyeni',NULL,'Hız, konfor ve günlük hareket için tasarlandı.',NULL),('tr',36,'Trensiz Spor Sütyeni',NULL,'Hız, konfor ve günlük hareket için tasarlandı.',NULL),('tr',37,'NKD Yüksek Bel Şort',NULL,'Hız, konfor ve günlük hareket için tasarlandı.',NULL),('tr',38,'NKD Yüksek Bel Şort',NULL,'Hız, konfor ve günlük hareket için tasarlandı.',NULL),('tr',39,'Lyocell anvelop üst',NULL,'Yumuşak dökümlü ve doğal bel bantlı, havalı liyosel anvelop üst - ofisten akşam yemeği partisine kadar çok yönlü.','<p>%100 liyosel TENCEL™\'den kesilip dikilen anvelop gömlek, keten kadar havadar ve ipek kadar yumuşak perdelere sahip. Derin V yaka ve yan kravat her bele kolayca uyum sağlar.</p>'),('tr',40,'Lyocell anvelop üst',NULL,'Yumuşak dökümlü ve doğal bel bantlı, havalı liyosel anvelop üst - ofisten akşam yemeği partisine kadar çok yönlü.','<p>%100 liyosel TENCEL™\'den kesilip dikilen anvelop gömlek, keten kadar havadar ve ipek kadar yumuşak perdelere sahip. Derin V yaka ve yan kravat her bele kolayca uyum sağlar.</p>'),('tr',41,'Lyocell anvelop üst',NULL,'Yumuşak dökümlü ve doğal bel bantlı, havalı liyosel anvelop üst - ofisten akşam yemeği partisine kadar çok yönlü.','<p>%100 liyosel TENCEL™\'den kesilip dikilen anvelop gömlek, keten kadar havadar ve ipek kadar yumuşak perdelere sahip. Derin V yaka ve yan kravat her bele kolayca uyum sağlar.</p>'),('tr',42,'Yün Midi Kaban',NULL,'Şerit cepli ve zarif yaka yakalı midi yün ceket - modern bir dış giyim simgesi.','<p>Yumuşak saten astarlı, İtalyan yün karışımlı melton kumaş. İki düğmeli tokalı tek sıra düğmeler. Soğuk günlere karşı diz boyu.</p>'),('tr',43,'Yün Midi Kaban',NULL,'Şerit cepli ve zarif yaka yakalı midi yün ceket - modern bir dış giyim simgesi.','<p>Yumuşak saten astarlı, İtalyan yün karışımlı melton kumaş. İki düğmeli tokalı tek sıra düğmeler. Soğuk günlere karşı diz boyu.</p>'),('tr',44,'Yün Midi Kaban',NULL,'Şerit cepli ve zarif yaka yakalı midi yün ceket - modern bir dış giyim simgesi.','<p>Yumuşak saten astarlı, İtalyan yün karışımlı melton kumaş. İki düğmeli tokalı tek sıra düğmeler. Soğuk günlere karşı diz boyu.</p>'),('tr',45,'Düğmeli pamuklu üst',NULL,'Bol kesimli, narin sedef düğmeli, önü düğmeli pamuklu gömlek.','<p>180 GSM orta gramajlı pamuklu poplin kumaş gün boyu şeklini iyi korur. Sedef düğmeler. Hafifçe kısaltılmış etek kısmı, yüksek belli kot pantolonlarla güzel bir şekilde uyum sağlar.</p>'),('tr',46,'Düğmeli pamuklu üst',NULL,'Bol kesimli, narin sedef düğmeli, önü düğmeli pamuklu gömlek.','<p>180 GSM orta gramajlı pamuklu poplin kumaş gün boyu şeklini iyi korur. Sedef düğmeler. Hafifçe kısaltılmış etek kısmı, yüksek belli kot pantolonlarla güzel bir şekilde uyum sağlar.</p>'),('tr',47,'keten dar kesim gömlek',NULL,'Hem ofis hem de hafta sonu için uygun, yuvarlak kenarlı, yıkanmış ince keten gömlek.','<p>Avrupa keteni Portekiz\'de dokunur ve tamamlanır. Taş düğmesi. Hareketi kısıtlamadan vücuda orta derecede sarılmak.</p>'),('tr',48,'keten dar kesim gömlek',NULL,'Hem ofis hem de hafta sonu için uygun, yuvarlak kenarlı, yıkanmış ince keten gömlek.','<p>Avrupa keteni Portekiz\'de dokunur ve tamamlanır. Taş düğmesi. Hareketi kısıtlamadan vücuda orta derecede sarılmak.</p>'),('vi',1,'Áo wrap lyocell',NULL,'Áo wrap lyocell mát tay với độ rủ mềm và thắt eo tự nhiên — linh hoạt từ công sở đến tiệc tối.','<p>Cắt may từ 100% lyocell TENCEL™, áo wrap có độ thoáng như linen và rủ mềm như lụa. Cổ chữ V sâu cùng dây buộc bên hông dễ dàng điều chỉnh theo mọi vòng eo.</p>'),('vi',2,'Áo khoác len dáng midi',NULL,'Áo khoác len midi với túi welt và cổ ve gọn — biểu tượng outerwear hiện đại.','<p>Vải melton pha len Ý với lớp lót sa tanh mềm. Một hàng nút với khóa hai nút. Dài qua đầu gối, che kín cho những ngày lạnh.</p>'),('vi',3,'Áo cotton cài nút',NULL,'Áo cotton cài nút phía trước với form rộng rãi và nút xà cừ tinh tế.','<p>Vải cotton poplin trọng lượng vừa 180 GSM giữ form tốt suốt cả ngày. Nút xà cừ. Gấu áo hơi cropped phối đẹp với quần jean lưng cao.</p>'),('vi',4,'Áo sơ mi linen ôm vừa',NULL,'Áo sơ mi linen wash garment dáng slim với gấu bo tròn — hợp cả công sở lẫn cuối tuần.','<p>Linen châu Âu được dệt và hoàn thiện tại Bồ Đào Nha. Nút đá. Ôm body vừa phải mà không bó cử động.</p>'),('vi',5,'Áo khoác len cổ cao dáng midi',NULL,'Áo khoác len cổ cao tông camel mềm — cổ funnel có thể kéo khóa kín cho những hành trình gió lạnh.','<p>Vải melton len chải mềm với lớp lót polyester tái chế. Khóa hai chiều ẩn. Túi welt đầy đủ tại hông.</p>'),('vi',6,'Kính râm gọng kim loại vuông',NULL,'Kính râm gọng kim loại vuông với càng acetate đánh bóng tay và tròng CR-39.','<p>Phần mặt thép không gỉ nhẹ. Tròng CR-39 phân cực chặn 100% UVA/UVB. Đệm mũi điều chỉnh được. Kèm hộp cứng và túi vi sợi.</p>'),('vi',7,'Túi shopper da khâu nổi',NULL,'Túi shopper da rộng rãi với đường khâu yên ngựa tương phản và góc gia cố.','<p>Da nguyên tấm thuộc thực vật phát triển lớp patina ấm áp theo thời gian. Miệng mở với khóa nam châm. Lòng túi lót da lộn với hai túi phụ và một túi khóa kéo.</p>'),('vi',8,'Túi shopper da khâu nổi',NULL,'Túi shopper da rộng rãi với đường khâu yên ngựa tương phản và góc gia cố.','<p>Da nguyên tấm thuộc thực vật phát triển lớp patina ấm áp theo thời gian. Miệng mở với khóa nam châm. Lòng túi lót da lộn với hai túi phụ và một túi khóa kéo.</p>'),('vi',9,'Túi đeo vai oval',NULL,'Túi đeo vai oval nhỏ gọn với quai da mỏng — vừa điện thoại, ví và vật dụng cá nhân.','<p>Da nappa mịn với khóa kim loại tông vàng đánh bóng. Quai điều chỉnh được. Lòng túi lót vi da lộn với một khe thẻ.</p>'),('vi',10,'Túi đeo vai oval',NULL,'Túi đeo vai oval nhỏ gọn với quai da mỏng — vừa điện thoại, ví và vật dụng cá nhân.','<p>Da nappa mịn với khóa kim loại tông vàng đánh bóng. Quai điều chỉnh được. Lòng túi lót vi da lộn với một khe thẻ.</p>'),('vi',11,'Túi đeo vai oval',NULL,'Túi đeo vai oval nhỏ gọn với quai da mỏng — vừa điện thoại, ví và vật dụng cá nhân.','<p>Da nappa mịn với khóa kim loại tông vàng đánh bóng. Quai điều chỉnh được. Lòng túi lót vi da lộn với một khe thẻ.</p>'),('vi',12,'Áo sơ mi cài cúc cỡ lớn bằng vải poplin',NULL,'Áo sơ mi vải poplin màu hồng mềm mại vừa vặn, đường may trễ vai và viền cong.','<p>100% organic cotton poplin. Machine wash cold. Pairs effortlessly with denim, tailored trousers, or layered under a knit. Designed in Barcelona, made in Portugal.</p>'),('vi',13,'Áo cami dây có gân',NULL,'Áo yếm dây cotton có gân với dây đeo vai có thể điều chỉnh và viền cắt vừa vặn.','<p>Soft-ribbed organic cotton with a touch of elastane for a body-skimming fit. High-neck halter front, scoop back. Available in beige, black, and ivory.</p>'),('vi',14,'Áo len dệt kim pha trộn len',NULL,'Một chiếc áo len cổ tròn cắt ngắn bằng hỗn hợp len ấm áp - ôm sát cơ thể với viền và cổ tay áo có gân.','<p>Mid-gauge knit in a wool-merino-cashmere blend. Drop shoulders and dropped sleeves give it an easy oversized line that pairs with anything from denim to tailored trousers.</p>'),('vi',15,'Áo khoác ngoài bằng vải lanh đã giặt',NULL,'Một chiếc áo khoác ngoài bằng vải lanh vừa vặn thoải mái với cổ áo xòe sạch sẽ và hàng cúc vỏ - có kích thước để mặc bên ngoài áo phông.','<p>Pure European flax in a 200 GSM weight. Garment-washed for a soft, lived-in hand. Available in olive, navy, and stone.</p>'),('vi',16,'Áo khoác len cổ phễu',NULL,'Một chiếc áo khoác len ngắn có cổ phễu dựng đứng, túi cài khuy và khóa kéo toàn phần.','<p>Charcoal melton wool with a recycled-poly twill lining. Storm-flap front conceals a YKK two-way zip. Sized for layering over a knit or button-up.</p>'),('vi',17,'Áo ngực thể thao miễn phí',NULL,'Được thiết kế cho tốc độ, sự thoải mái và chuyển động hàng ngày.','<p>Compression-fit running bra with rope-detail back strap and seamless knit underbust band. Moves with the body and dries fast.</p>'),('vi',18,'Quần Short Cạp Cao NKD',NULL,'Được thiết kế cho tốc độ, sự thoải mái và chuyển động hàng ngày.','<p>High-rise running shorts with built-in liner and laser-cut waistband. Hidden zip pocket at the back yoke.</p>'),('vi',21,'Túi shopper da khâu nổi',NULL,'Túi shopper da rộng rãi với đường khâu yên ngựa tương phản và góc gia cố.','<p>Da nguyên tấm thuộc thực vật phát triển lớp patina ấm áp theo thời gian. Miệng mở với khóa nam châm. Lòng túi lót da lộn với hai túi phụ và một túi khóa kéo.</p>'),('vi',22,'Túi shopper da khâu nổi',NULL,'Túi shopper da rộng rãi với đường khâu yên ngựa tương phản và góc gia cố.','<p>Da nguyên tấm thuộc thực vật phát triển lớp patina ấm áp theo thời gian. Miệng mở với khóa nam châm. Lòng túi lót da lộn với hai túi phụ và một túi khóa kéo.</p>'),('vi',23,'Túi shopper da khâu nổi',NULL,'Túi shopper da rộng rãi với đường khâu yên ngựa tương phản và góc gia cố.','<p>Da nguyên tấm thuộc thực vật phát triển lớp patina ấm áp theo thời gian. Miệng mở với khóa nam châm. Lòng túi lót da lộn với hai túi phụ và một túi khóa kéo.</p>'),('vi',24,'Túi shopper da khâu nổi',NULL,'Túi shopper da rộng rãi với đường khâu yên ngựa tương phản và góc gia cố.','<p>Da nguyên tấm thuộc thực vật phát triển lớp patina ấm áp theo thời gian. Miệng mở với khóa nam châm. Lòng túi lót da lộn với hai túi phụ và một túi khóa kéo.</p>'),('vi',25,'Túi đeo vai oval',NULL,'Túi đeo vai oval nhỏ gọn với quai da mỏng — vừa điện thoại, ví và vật dụng cá nhân.','<p>Da nappa mịn với khóa kim loại tông vàng đánh bóng. Quai điều chỉnh được. Lòng túi lót vi da lộn với một khe thẻ.</p>'),('vi',26,'Túi đeo vai oval',NULL,'Túi đeo vai oval nhỏ gọn với quai da mỏng — vừa điện thoại, ví và vật dụng cá nhân.','<p>Da nappa mịn với khóa kim loại tông vàng đánh bóng. Quai điều chỉnh được. Lòng túi lót vi da lộn với một khe thẻ.</p>'),('vi',27,'Túi đeo vai oval',NULL,'Túi đeo vai oval nhỏ gọn với quai da mỏng — vừa điện thoại, ví và vật dụng cá nhân.','<p>Da nappa mịn với khóa kim loại tông vàng đánh bóng. Quai điều chỉnh được. Lòng túi lót vi da lộn với một khe thẻ.</p>'),('vi',28,'Áo khoác ngoài bằng vải lanh đã giặt',NULL,'Một chiếc áo khoác ngoài bằng vải lanh vừa vặn thoải mái với cổ áo xòe sạch sẽ và hàng cúc vỏ - có kích thước để mặc bên ngoài áo phông.',NULL),('vi',29,'Áo khoác ngoài bằng vải lanh đã giặt',NULL,'Một chiếc áo khoác ngoài bằng vải lanh vừa vặn thoải mái với cổ áo xòe sạch sẽ và hàng cúc vỏ - có kích thước để mặc bên ngoài áo phông.',NULL),('vi',30,'Áo khoác ngoài bằng vải lanh đã giặt',NULL,'Một chiếc áo khoác ngoài bằng vải lanh vừa vặn thoải mái với cổ áo xòe sạch sẽ và hàng cúc vỏ - có kích thước để mặc bên ngoài áo phông.',NULL),('vi',31,'Áo khoác ngoài bằng vải lanh đã giặt',NULL,'Một chiếc áo khoác ngoài bằng vải lanh vừa vặn thoải mái với cổ áo xòe sạch sẽ và hàng cúc vỏ - có kích thước để mặc bên ngoài áo phông.',NULL),('vi',32,'Áo ngực thể thao miễn phí',NULL,'Được thiết kế cho tốc độ, sự thoải mái và chuyển động hàng ngày.',NULL),('vi',33,'Áo ngực thể thao miễn phí',NULL,'Được thiết kế cho tốc độ, sự thoải mái và chuyển động hàng ngày.',NULL),('vi',34,'Áo ngực thể thao miễn phí',NULL,'Được thiết kế cho tốc độ, sự thoải mái và chuyển động hàng ngày.',NULL),('vi',35,'Áo ngực thể thao miễn phí',NULL,'Được thiết kế cho tốc độ, sự thoải mái và chuyển động hàng ngày.',NULL),('vi',36,'Áo ngực thể thao miễn phí',NULL,'Được thiết kế cho tốc độ, sự thoải mái và chuyển động hàng ngày.',NULL),('vi',37,'Quần Short Cạp Cao NKD',NULL,'Được thiết kế cho tốc độ, sự thoải mái và chuyển động hàng ngày.',NULL),('vi',38,'Quần Short Cạp Cao NKD',NULL,'Được thiết kế cho tốc độ, sự thoải mái và chuyển động hàng ngày.',NULL),('vi',39,'Áo wrap lyocell',NULL,'Áo wrap lyocell mát tay với độ rủ mềm và thắt eo tự nhiên — linh hoạt từ công sở đến tiệc tối.','<p>Cắt may từ 100% lyocell TENCEL™, áo wrap có độ thoáng như linen và rủ mềm như lụa. Cổ chữ V sâu cùng dây buộc bên hông dễ dàng điều chỉnh theo mọi vòng eo.</p>'),('vi',40,'Áo wrap lyocell',NULL,'Áo wrap lyocell mát tay với độ rủ mềm và thắt eo tự nhiên — linh hoạt từ công sở đến tiệc tối.','<p>Cắt may từ 100% lyocell TENCEL™, áo wrap có độ thoáng như linen và rủ mềm như lụa. Cổ chữ V sâu cùng dây buộc bên hông dễ dàng điều chỉnh theo mọi vòng eo.</p>'),('vi',41,'Áo wrap lyocell',NULL,'Áo wrap lyocell mát tay với độ rủ mềm và thắt eo tự nhiên — linh hoạt từ công sở đến tiệc tối.','<p>Cắt may từ 100% lyocell TENCEL™, áo wrap có độ thoáng như linen và rủ mềm như lụa. Cổ chữ V sâu cùng dây buộc bên hông dễ dàng điều chỉnh theo mọi vòng eo.</p>'),('vi',42,'Áo khoác len dáng midi',NULL,'Áo khoác len midi với túi welt và cổ ve gọn — biểu tượng outerwear hiện đại.','<p>Vải melton pha len Ý với lớp lót sa tanh mềm. Một hàng nút với khóa hai nút. Dài qua đầu gối, che kín cho những ngày lạnh.</p>'),('vi',43,'Áo khoác len dáng midi',NULL,'Áo khoác len midi với túi welt và cổ ve gọn — biểu tượng outerwear hiện đại.','<p>Vải melton pha len Ý với lớp lót sa tanh mềm. Một hàng nút với khóa hai nút. Dài qua đầu gối, che kín cho những ngày lạnh.</p>'),('vi',44,'Áo khoác len dáng midi',NULL,'Áo khoác len midi với túi welt và cổ ve gọn — biểu tượng outerwear hiện đại.','<p>Vải melton pha len Ý với lớp lót sa tanh mềm. Một hàng nút với khóa hai nút. Dài qua đầu gối, che kín cho những ngày lạnh.</p>'),('vi',45,'Áo cotton cài nút',NULL,'Áo cotton cài nút phía trước với form rộng rãi và nút xà cừ tinh tế.','<p>Vải cotton poplin trọng lượng vừa 180 GSM giữ form tốt suốt cả ngày. Nút xà cừ. Gấu áo hơi cropped phối đẹp với quần jean lưng cao.</p>'),('vi',46,'Áo cotton cài nút',NULL,'Áo cotton cài nút phía trước với form rộng rãi và nút xà cừ tinh tế.','<p>Vải cotton poplin trọng lượng vừa 180 GSM giữ form tốt suốt cả ngày. Nút xà cừ. Gấu áo hơi cropped phối đẹp với quần jean lưng cao.</p>'),('vi',47,'Áo sơ mi linen ôm vừa',NULL,'Áo sơ mi linen wash garment dáng slim với gấu bo tròn — hợp cả công sở lẫn cuối tuần.','<p>Linen châu Âu được dệt và hoàn thiện tại Bồ Đào Nha. Nút đá. Ôm body vừa phải mà không bó cử động.</p>'),('vi',48,'Áo sơ mi linen ôm vừa',NULL,'Áo sơ mi linen wash garment dáng slim với gấu bo tròn — hợp cả công sở lẫn cuối tuần.','<p>Linen châu Âu được dệt và hoàn thiện tại Bồ Đào Nha. Nút đá. Ôm body vừa phải mà không bó cử động.</p>');
+/*!40000 ALTER TABLE `ec_products_translations` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_review_replies`
+--
+
+DROP TABLE IF EXISTS `ec_review_replies`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_review_replies` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `user_id` bigint unsigned DEFAULT NULL,
+  `customer_id` bigint unsigned DEFAULT NULL,
+  `review_id` bigint unsigned NOT NULL,
+  `message` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `ec_review_replies_review_id_unique` (`review_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_review_replies`
+--
+
+LOCK TABLES `ec_review_replies` WRITE;
+/*!40000 ALTER TABLE `ec_review_replies` DISABLE KEYS */;
+/*!40000 ALTER TABLE `ec_review_replies` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_reviews`
+--
+
+DROP TABLE IF EXISTS `ec_reviews`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_reviews` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `customer_id` bigint unsigned DEFAULT NULL,
+  `customer_name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `customer_email` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `product_id` bigint unsigned NOT NULL,
+  `star` double NOT NULL,
+  `comment` text COLLATE utf8mb4_unicode_ci,
+  `status` varchar(60) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'published',
+  `badge_type` varchar(30) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'auto',
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `images` text COLLATE utf8mb4_unicode_ci,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `ec_reviews_product_id_customer_id_unique` (`product_id`,`customer_id`),
+  KEY `ec_reviews_product_id_customer_id_status_created_at_index` (`product_id`,`customer_id`,`status`,`created_at`),
+  KEY `review_relation_index` (`product_id`,`customer_id`,`status`),
+  KEY `ec_reviews_product_id_status_index` (`product_id`,`status`),
+  KEY `ec_reviews_customer_id_status_index` (`customer_id`,`status`)
+) ENGINE=InnoDB AUTO_INCREMENT=181 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_reviews`
+--
+
+LOCK TABLES `ec_reviews` WRITE;
+/*!40000 ALTER TABLE `ec_reviews` DISABLE KEYS */;
+INSERT INTO `ec_reviews` VALUES (1,8,NULL,NULL,16,1,'The best store template! Excellent coding! Very good support! Thank you so much for all the help, I really appreciated.','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(2,7,NULL,NULL,4,2,'We have received brilliant service support and will be expanding the features with the developer. Nice product!','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(3,9,NULL,NULL,4,2,'Great system, great support, good job Botble. I\'m looking forward to more great functional plugins.','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(4,7,NULL,NULL,12,2,'The best store template! Excellent coding! Very good support! Thank you so much for all the help, I really appreciated.','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(5,6,NULL,NULL,9,4,'Great E-commerce system. And much more : Wonderful Customer Support.','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(6,6,NULL,NULL,12,3,'Clean & perfect source code','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(7,7,NULL,NULL,10,5,'Very enthusiastic support! Excellent code is written. It\'s a true pleasure working with.','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(8,5,NULL,NULL,7,4,'The script is the best of its class, fast, easy to implement and work with , and the most important thing is the great support team , Recommend with no doubt.','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(9,6,NULL,NULL,2,5,'Very enthusiastic support! Excellent code is written. It\'s a true pleasure working with.','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(10,1,NULL,NULL,14,3,'These guys are amazing! Responses immediately, amazing support and help... I immediately feel at ease after Purchasing..','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(11,2,NULL,NULL,12,1,'Cool template. Excellent code quality. The support responds very quickly, which is very rare on themeforest and codecanyon.net, I buy a lot of templates, and everyone will have a response from technical support for two or three days. Thanks to tech support. I recommend to buy.','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(12,6,NULL,NULL,15,2,'Customer Support are grade (A*), however the code is a way too over engineered for it\'s purpose.','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(13,10,NULL,NULL,2,4,'Very enthusiastic support! Excellent code is written. It\'s a true pleasure working with.','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(14,10,NULL,NULL,1,3,'Clean & perfect source code','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(15,1,NULL,NULL,7,1,'I Love this Script. I also found how to add other fees. Now I just wait the BIG update for the Marketplace with the Bulk Import. Just do not forget to make it to be Multi-language for us the Botble Fans.','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(16,8,NULL,NULL,13,2,'Second or third time that I buy a Botble product, happy with the products and support. You guys do a good job :)','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(17,9,NULL,NULL,3,2,'Amazing code, amazing support. Overall, im really confident in Botble and im happy I made the right choice! Thank you so much guys for coding this masterpiece','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(18,1,NULL,NULL,3,4,'We have received brilliant service support and will be expanding the features with the developer. Nice product!','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(19,10,NULL,NULL,8,2,'For me the best eCommerce script on Envato at this moment: modern, clean code, a lot of great features. The customer support is great too: I always get an answer within hours!','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(20,7,NULL,NULL,6,5,'I Love this Script. I also found how to add other fees. Now I just wait the BIG update for the Marketplace with the Bulk Import. Just do not forget to make it to be Multi-language for us the Botble Fans.','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(21,4,NULL,NULL,12,4,'These guys are amazing! Responses immediately, amazing support and help... I immediately feel at ease after Purchasing..','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(22,4,NULL,NULL,13,5,'We have received brilliant service support and will be expanding the features with the developer. Nice product!','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(23,7,NULL,NULL,3,4,'Good app, good backup service and support. Good documentation.','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(24,3,NULL,NULL,11,3,'This script is well coded and is super fast. The support is pretty quick. Very patient and helpful team. I strongly recommend it and they deserve more than 5 stars.','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(25,10,NULL,NULL,14,2,'Second or third time that I buy a Botble product, happy with the products and support. You guys do a good job :)','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(26,5,NULL,NULL,15,2,'Those guys now what they are doing, the release such a good product that it\'s a pleasure to work with ! Even when I was stuck on the project, I created a ticket and the next day it was replied by the team. GOOD JOB guys. I love working with them :)','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(27,3,NULL,NULL,17,3,'It\'s not my first experience here on Codecanyon and I can honestly tell you all that Botble puts a LOT of effort into the support. They answer so fast, they helped me tons of times. REALLY by far THE BEST EXPERIENCE on Codecanyon. Those guys at Botble are so good that they deserve 5 stars. I recommend them, I trust them and I can\'t wait to see what they will sell in a near future. Thank you Botble :)','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(28,1,NULL,NULL,18,1,'The best ecommerce CMS! Excellent coding! best support service! Thank you so much..... I really like your hard work.','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(29,1,NULL,NULL,12,3,'Cool template. Excellent code quality. The support responds very quickly, which is very rare on themeforest and codecanyon.net, I buy a lot of templates, and everyone will have a response from technical support for two or three days. Thanks to tech support. I recommend to buy.','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(30,9,NULL,NULL,2,4,'Those guys now what they are doing, the release such a good product that it\'s a pleasure to work with ! Even when I was stuck on the project, I created a ticket and the next day it was replied by the team. GOOD JOB guys. I love working with them :)','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(31,9,NULL,NULL,14,4,'Customer Support are grade (A*), however the code is a way too over engineered for it\'s purpose.','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(32,3,NULL,NULL,16,1,'The best ecommerce CMS! Excellent coding! best support service! Thank you so much..... I really like your hard work.','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(33,9,NULL,NULL,11,5,'The script is the best of its class, fast, easy to implement and work with , and the most important thing is the great support team , Recommend with no doubt.','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(34,10,NULL,NULL,17,5,'Clean & perfect source code','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(35,7,NULL,NULL,17,4,'Great E-commerce system. And much more : Wonderful Customer Support.','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(36,5,NULL,NULL,1,3,'As a developer I reviewed this script. This is really awesome ecommerce script. I have convinced when I noticed that it\'s built on fully WordPress concept.','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(37,3,NULL,NULL,10,4,'We have received brilliant service support and will be expanding the features with the developer. Nice product!','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(38,2,NULL,NULL,6,2,'I Love this Script. I also found how to add other fees. Now I just wait the BIG update for the Marketplace with the Bulk Import. Just do not forget to make it to be Multi-language for us the Botble Fans.','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(39,10,NULL,NULL,7,3,'Second or third time that I buy a Botble product, happy with the products and support. You guys do a good job :)','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(40,10,NULL,NULL,6,1,'Customer Support are grade (A*), however the code is a way too over engineered for it\'s purpose.','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(41,6,NULL,NULL,6,3,'Solution is too robust for our purpose so we didn\'t use it at the end. But I appreciate customer support during initial configuration.','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(42,3,NULL,NULL,2,5,'As a developer I reviewed this script. This is really awesome ecommerce script. I have convinced when I noticed that it\'s built on fully WordPress concept.','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(43,2,NULL,NULL,8,1,'It\'s not my first experience here on Codecanyon and I can honestly tell you all that Botble puts a LOT of effort into the support. They answer so fast, they helped me tons of times. REALLY by far THE BEST EXPERIENCE on Codecanyon. Those guys at Botble are so good that they deserve 5 stars. I recommend them, I trust them and I can\'t wait to see what they will sell in a near future. Thank you Botble :)','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(44,6,NULL,NULL,13,3,'Great E-commerce system. And much more : Wonderful Customer Support.','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(45,9,NULL,NULL,7,2,'Very enthusiastic support! Excellent code is written. It\'s a true pleasure working with.','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(46,6,NULL,NULL,5,3,'Perfect +++++++++ i love it really also i get to fast ticket answers... Thanks Lot BOTBLE Teams','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(47,3,NULL,NULL,4,2,'This script is well coded and is super fast. The support is pretty quick. Very patient and helpful team. I strongly recommend it and they deserve more than 5 stars.','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(48,8,NULL,NULL,14,1,'The best store template! Excellent coding! Very good support! Thank you so much for all the help, I really appreciated.','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(49,4,NULL,NULL,17,3,'Perfect +++++++++ i love it really also i get to fast ticket answers... Thanks Lot BOTBLE Teams','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(50,1,NULL,NULL,15,2,'The best store template! Excellent coding! Very good support! Thank you so much for all the help, I really appreciated.','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(51,1,NULL,NULL,1,2,'Great E-commerce system. And much more : Wonderful Customer Support.','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(52,6,NULL,NULL,16,4,'Good app, good backup service and support. Good documentation.','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(53,8,NULL,NULL,11,4,'The script is the best of its class, fast, easy to implement and work with , and the most important thing is the great support team , Recommend with no doubt.','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(54,10,NULL,NULL,13,4,'Good app, good backup service and support. Good documentation.','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(55,4,NULL,NULL,8,5,'Amazing code, amazing support. Overall, im really confident in Botble and im happy I made the right choice! Thank you so much guys for coding this masterpiece','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(56,8,NULL,NULL,5,3,'Amazing code, amazing support. Overall, im really confident in Botble and im happy I made the right choice! Thank you so much guys for coding this masterpiece','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(57,5,NULL,NULL,14,5,'Solution is too robust for our purpose so we didn\'t use it at the end. But I appreciate customer support during initial configuration.','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(58,7,NULL,NULL,9,3,'Ok good product. I have some issues in customizations. But its not correct to blame the developer. The product is good. Good luck for your business.','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(59,4,NULL,NULL,5,3,'Clean & perfect source code','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(60,2,NULL,NULL,18,5,'This web app is really good in design, code quality & features. Besides, the customer support provided by the Botble team was really fast & helpful. You guys are awesome!','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(61,8,NULL,NULL,10,3,'Those guys now what they are doing, the release such a good product that it\'s a pleasure to work with ! Even when I was stuck on the project, I created a ticket and the next day it was replied by the team. GOOD JOB guys. I love working with them :)','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(62,3,NULL,NULL,5,1,'Ok good product. I have some issues in customizations. But its not correct to blame the developer. The product is good. Good luck for your business.','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(63,3,NULL,NULL,12,3,'Clean & perfect source code','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(64,9,NULL,NULL,16,2,'We have received brilliant service support and will be expanding the features with the developer. Nice product!','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(65,6,NULL,NULL,8,2,'Customer Support are grade (A*), however the code is a way too over engineered for it\'s purpose.','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(66,2,NULL,NULL,11,5,'I Love this Script. I also found how to add other fees. Now I just wait the BIG update for the Marketplace with the Bulk Import. Just do not forget to make it to be Multi-language for us the Botble Fans.','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(67,5,NULL,NULL,3,3,'It\'s not my first experience here on Codecanyon and I can honestly tell you all that Botble puts a LOT of effort into the support. They answer so fast, they helped me tons of times. REALLY by far THE BEST EXPERIENCE on Codecanyon. Those guys at Botble are so good that they deserve 5 stars. I recommend them, I trust them and I can\'t wait to see what they will sell in a near future. Thank you Botble :)','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(68,5,NULL,NULL,9,5,'We have received brilliant service support and will be expanding the features with the developer. Nice product!','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(69,3,NULL,NULL,14,2,'For me the best eCommerce script on Envato at this moment: modern, clean code, a lot of great features. The customer support is great too: I always get an answer within hours!','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(70,7,NULL,NULL,14,2,'We have received brilliant service support and will be expanding the features with the developer. Nice product!','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(71,5,NULL,NULL,8,4,'The script is the best of its class, fast, easy to implement and work with , and the most important thing is the great support team , Recommend with no doubt.','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(72,5,NULL,NULL,18,2,'The best store template! Excellent coding! Very good support! Thank you so much for all the help, I really appreciated.','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(73,2,NULL,NULL,1,2,'The best ecommerce CMS! Excellent coding! best support service! Thank you so much..... I really like your hard work.','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(74,9,NULL,NULL,1,5,'Ok good product. I have some issues in customizations. But its not correct to blame the developer. The product is good. Good luck for your business.','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(75,9,NULL,NULL,5,3,'Good app, good backup service and support. Good documentation.','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(76,7,NULL,NULL,5,1,'Customer Support are grade (A*), however the code is a way too over engineered for it\'s purpose.','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(77,6,NULL,NULL,11,3,'Good app, good backup service and support. Good documentation.','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(78,1,NULL,NULL,2,5,'For me the best eCommerce script on Envato at this moment: modern, clean code, a lot of great features. The customer support is great too: I always get an answer within hours!','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(79,5,NULL,NULL,6,4,'The script is the best of its class, fast, easy to implement and work with , and the most important thing is the great support team , Recommend with no doubt.','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(80,7,NULL,NULL,18,5,'The best store template! Excellent coding! Very good support! Thank you so much for all the help, I really appreciated.','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(81,4,NULL,NULL,9,4,'I Love this Script. I also found how to add other fees. Now I just wait the BIG update for the Marketplace with the Bulk Import. Just do not forget to make it to be Multi-language for us the Botble Fans.','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(82,8,NULL,NULL,6,5,'We have received brilliant service support and will be expanding the features with the developer. Nice product!','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(83,10,NULL,NULL,11,1,'Very enthusiastic support! Excellent code is written. It\'s a true pleasure working with.','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(84,1,NULL,NULL,11,3,'Clean & perfect source code','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(85,4,NULL,NULL,11,4,'The script is the best of its class, fast, easy to implement and work with , and the most important thing is the great support team , Recommend with no doubt.','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(86,2,NULL,NULL,14,4,'This web app is really good in design, code quality & features. Besides, the customer support provided by the Botble team was really fast & helpful. You guys are awesome!','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(87,10,NULL,NULL,3,5,'Amazing code, amazing support. Overall, im really confident in Botble and im happy I made the right choice! Thank you so much guys for coding this masterpiece','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(88,10,NULL,NULL,4,5,'Cool template. Excellent code quality. The support responds very quickly, which is very rare on themeforest and codecanyon.net, I buy a lot of templates, and everyone will have a response from technical support for two or three days. Thanks to tech support. I recommend to buy.','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(89,4,NULL,NULL,4,1,'These guys are amazing! Responses immediately, amazing support and help... I immediately feel at ease after Purchasing..','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(90,1,NULL,NULL,13,5,'The best store template! Excellent coding! Very good support! Thank you so much for all the help, I really appreciated.','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(91,1,NULL,NULL,17,2,'Second or third time that I buy a Botble product, happy with the products and support. You guys do a good job :)','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(92,6,NULL,NULL,4,4,'It\'s not my first experience here on Codecanyon and I can honestly tell you all that Botble puts a LOT of effort into the support. They answer so fast, they helped me tons of times. REALLY by far THE BEST EXPERIENCE on Codecanyon. Those guys at Botble are so good that they deserve 5 stars. I recommend them, I trust them and I can\'t wait to see what they will sell in a near future. Thank you Botble :)','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(93,9,NULL,NULL,10,2,'Solution is too robust for our purpose so we didn\'t use it at the end. But I appreciate customer support during initial configuration.','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(94,8,NULL,NULL,9,3,'Great system, great support, good job Botble. I\'m looking forward to more great functional plugins.','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(95,5,NULL,NULL,12,5,'Solution is too robust for our purpose so we didn\'t use it at the end. But I appreciate customer support during initial configuration.','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(96,7,NULL,NULL,1,3,'This web app is really good in design, code quality & features. Besides, the customer support provided by the Botble team was really fast & helpful. You guys are awesome!','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(97,2,NULL,NULL,16,4,'Perfect +++++++++ i love it really also i get to fast ticket answers... Thanks Lot BOTBLE Teams','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(98,1,NULL,NULL,4,4,'Very enthusiastic support! Excellent code is written. It\'s a true pleasure working with.','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(99,3,NULL,NULL,3,1,'I Love this Script. I also found how to add other fees. Now I just wait the BIG update for the Marketplace with the Bulk Import. Just do not forget to make it to be Multi-language for us the Botble Fans.','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(100,8,NULL,NULL,4,5,'Customer Support are grade (A*), however the code is a way too over engineered for it\'s purpose.','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(101,2,NULL,NULL,15,3,'As a developer I reviewed this script. This is really awesome ecommerce script. I have convinced when I noticed that it\'s built on fully WordPress concept.','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(102,10,NULL,NULL,10,5,'The script is the best of its class, fast, easy to implement and work with , and the most important thing is the great support team , Recommend with no doubt.','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(103,5,NULL,NULL,13,1,'The best ecommerce CMS! Excellent coding! best support service! Thank you so much..... I really like your hard work.','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(104,4,NULL,NULL,10,4,'For me the best eCommerce script on Envato at this moment: modern, clean code, a lot of great features. The customer support is great too: I always get an answer within hours!','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(105,7,NULL,NULL,13,3,'Great E-commerce system. And much more : Wonderful Customer Support.','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(106,6,NULL,NULL,3,5,'Second or third time that I buy a Botble product, happy with the products and support. You guys do a good job :)','published','auto','2026-05-28 18:57:59','2026-05-28 18:57:59',NULL),(107,3,NULL,NULL,13,1,'Second or third time that I buy a Botble product, happy with the products and support. You guys do a good job :)','published','auto','2026-05-28 18:58:00','2026-05-28 18:58:00',NULL),(108,7,NULL,NULL,7,2,'The code is good, in general, if you like it, can you give it 5 stars?','published','auto','2026-05-28 18:58:00','2026-05-28 18:58:00',NULL),(109,5,NULL,NULL,4,1,'The script is the best of its class, fast, easy to implement and work with , and the most important thing is the great support team , Recommend with no doubt.','published','auto','2026-05-28 18:58:00','2026-05-28 18:58:00',NULL),(110,6,NULL,NULL,10,1,'Great system, great support, good job Botble. I\'m looking forward to more great functional plugins.','published','auto','2026-05-28 18:58:00','2026-05-28 18:58:00',NULL),(111,9,NULL,NULL,15,5,'Perfect +++++++++ i love it really also i get to fast ticket answers... Thanks Lot BOTBLE Teams','published','auto','2026-05-28 18:58:00','2026-05-28 18:58:00',NULL),(112,9,NULL,NULL,6,3,'For me the best eCommerce script on Envato at this moment: modern, clean code, a lot of great features. The customer support is great too: I always get an answer within hours!','published','auto','2026-05-28 18:58:00','2026-05-28 18:58:00',NULL),(113,4,NULL,NULL,15,3,'This script is well coded and is super fast. The support is pretty quick. Very patient and helpful team. I strongly recommend it and they deserve more than 5 stars.','published','auto','2026-05-28 18:58:00','2026-05-28 18:58:00',NULL),(114,2,NULL,NULL,7,4,'This web app is really good in design, code quality & features. Besides, the customer support provided by the Botble team was really fast & helpful. You guys are awesome!','published','auto','2026-05-28 18:58:00','2026-05-28 18:58:00',NULL),(115,5,NULL,NULL,17,1,'Clean & perfect source code','published','auto','2026-05-28 18:58:00','2026-05-28 18:58:00',NULL),(116,4,NULL,NULL,3,5,'The best ecommerce CMS! Excellent coding! best support service! Thank you so much..... I really like your hard work.','published','auto','2026-05-28 18:58:00','2026-05-28 18:58:00',NULL),(117,1,NULL,NULL,6,2,'Clean & perfect source code','published','auto','2026-05-28 18:58:00','2026-05-28 18:58:00',NULL),(118,8,NULL,NULL,8,5,'The script is the best of its class, fast, easy to implement and work with , and the most important thing is the great support team , Recommend with no doubt.','published','auto','2026-05-28 18:58:00','2026-05-28 18:58:00',NULL),(119,5,NULL,NULL,10,3,'Great system, great support, good job Botble. I\'m looking forward to more great functional plugins.','published','auto','2026-05-28 18:58:00','2026-05-28 18:58:00',NULL),(120,8,NULL,NULL,7,2,'Good app, good backup service and support. Good documentation.','published','auto','2026-05-28 18:58:00','2026-05-28 18:58:00',NULL),(121,6,NULL,NULL,17,5,'Perfect +++++++++ i love it really also i get to fast ticket answers... Thanks Lot BOTBLE Teams','published','auto','2026-05-28 18:58:00','2026-05-28 18:58:00',NULL),(122,5,NULL,NULL,5,3,'This script is well coded and is super fast. The support is pretty quick. Very patient and helpful team. I strongly recommend it and they deserve more than 5 stars.','published','auto','2026-05-28 18:58:00','2026-05-28 18:58:00',NULL),(123,2,NULL,NULL,3,3,'The best ecommerce CMS! Excellent coding! best support service! Thank you so much..... I really like your hard work.','published','auto','2026-05-28 18:58:00','2026-05-28 18:58:00',NULL),(124,4,NULL,NULL,2,4,'Cool template. Excellent code quality. The support responds very quickly, which is very rare on themeforest and codecanyon.net, I buy a lot of templates, and everyone will have a response from technical support for two or three days. Thanks to tech support. I recommend to buy.','published','auto','2026-05-28 18:58:00','2026-05-28 18:58:00',NULL),(125,8,NULL,NULL,2,2,'The best ecommerce CMS! Excellent coding! best support service! Thank you so much..... I really like your hard work.','published','auto','2026-05-28 18:58:00','2026-05-28 18:58:00',NULL),(126,7,NULL,NULL,8,1,'Great system, great support, good job Botble. I\'m looking forward to more great functional plugins.','published','auto','2026-05-28 18:58:00','2026-05-28 18:58:00',NULL),(127,1,NULL,NULL,16,3,'Ok good product. I have some issues in customizations. But its not correct to blame the developer. The product is good. Good luck for your business.','published','auto','2026-05-28 18:58:00','2026-05-28 18:58:00',NULL),(128,8,NULL,NULL,17,2,'Best ecommerce CMS online store!','published','auto','2026-05-28 18:58:00','2026-05-28 18:58:00',NULL),(129,1,NULL,NULL,10,4,'Second or third time that I buy a Botble product, happy with the products and support. You guys do a good job :)','published','auto','2026-05-28 18:58:00','2026-05-28 18:58:00',NULL),(130,5,NULL,NULL,2,5,'It\'s not my first experience here on Codecanyon and I can honestly tell you all that Botble puts a LOT of effort into the support. They answer so fast, they helped me tons of times. REALLY by far THE BEST EXPERIENCE on Codecanyon. Those guys at Botble are so good that they deserve 5 stars. I recommend them, I trust them and I can\'t wait to see what they will sell in a near future. Thank you Botble :)','published','auto','2026-05-28 18:58:00','2026-05-28 18:58:00',NULL),(131,4,NULL,NULL,16,4,'Solution is too robust for our purpose so we didn\'t use it at the end. But I appreciate customer support during initial configuration.','published','auto','2026-05-28 18:58:00','2026-05-28 18:58:00',NULL),(132,1,NULL,NULL,5,2,'Clean & perfect source code','published','auto','2026-05-28 18:58:00','2026-05-28 18:58:00',NULL),(133,6,NULL,NULL,14,5,'Good app, good backup service and support. Good documentation.','published','auto','2026-05-28 18:58:00','2026-05-28 18:58:00',NULL),(134,3,NULL,NULL,7,3,'This web app is really good in design, code quality & features. Besides, the customer support provided by the Botble team was really fast & helpful. You guys are awesome!','published','auto','2026-05-28 18:58:00','2026-05-28 18:58:00',NULL),(135,6,NULL,NULL,18,5,'The script is the best of its class, fast, easy to implement and work with , and the most important thing is the great support team , Recommend with no doubt.','published','auto','2026-05-28 18:58:00','2026-05-28 18:58:00',NULL),(136,3,NULL,NULL,15,5,'Customer Support are grade (A*), however the code is a way too over engineered for it\'s purpose.','published','auto','2026-05-28 18:58:00','2026-05-28 18:58:00',NULL),(137,4,NULL,NULL,14,4,'Second or third time that I buy a Botble product, happy with the products and support. You guys do a good job :)','published','auto','2026-05-28 18:58:00','2026-05-28 18:58:00',NULL),(138,6,NULL,NULL,1,1,'For me the best eCommerce script on Envato at this moment: modern, clean code, a lot of great features. The customer support is great too: I always get an answer within hours!','published','auto','2026-05-28 18:58:00','2026-05-28 18:58:00',NULL),(139,4,NULL,NULL,7,2,'For me the best eCommerce script on Envato at this moment: modern, clean code, a lot of great features. The customer support is great too: I always get an answer within hours!','published','auto','2026-05-28 18:58:00','2026-05-28 18:58:00',NULL),(140,2,NULL,NULL,4,2,'Very enthusiastic support! Excellent code is written. It\'s a true pleasure working with.','published','auto','2026-05-28 18:58:00','2026-05-28 18:58:00',NULL),(141,9,NULL,NULL,12,4,'These guys are amazing! Responses immediately, amazing support and help... I immediately feel at ease after Purchasing..','published','auto','2026-05-28 18:58:00','2026-05-28 18:58:00',NULL),(142,8,NULL,NULL,15,2,'Customer Support are grade (A*), however the code is a way too over engineered for it\'s purpose.','published','auto','2026-05-28 18:58:00','2026-05-28 18:58:00',NULL),(143,2,NULL,NULL,5,5,'The best store template! Excellent coding! Very good support! Thank you so much for all the help, I really appreciated.','published','auto','2026-05-28 18:58:00','2026-05-28 18:58:00',NULL),(144,9,NULL,NULL,13,3,'We have received brilliant service support and will be expanding the features with the developer. Nice product!','published','auto','2026-05-28 18:58:00','2026-05-28 18:58:00',NULL),(145,3,NULL,NULL,18,4,'Very enthusiastic support! Excellent code is written. It\'s a true pleasure working with.','published','auto','2026-05-28 18:58:00','2026-05-28 18:58:00',NULL),(146,7,NULL,NULL,16,4,'The best store template! Excellent coding! Very good support! Thank you so much for all the help, I really appreciated.','published','auto','2026-05-28 18:58:00','2026-05-28 18:58:00',NULL),(147,10,NULL,NULL,9,5,'Second or third time that I buy a Botble product, happy with the products and support. You guys do a good job :)','published','auto','2026-05-28 18:58:00','2026-05-28 18:58:00',NULL),(148,9,NULL,NULL,17,2,'For me the best eCommerce script on Envato at this moment: modern, clean code, a lot of great features. The customer support is great too: I always get an answer within hours!','published','auto','2026-05-28 18:58:00','2026-05-28 18:58:00',NULL),(149,1,NULL,NULL,9,4,'Best ecommerce CMS online store!','published','auto','2026-05-28 18:58:00','2026-05-28 18:58:00',NULL),(150,10,NULL,NULL,18,2,'I Love this Script. I also found how to add other fees. Now I just wait the BIG update for the Marketplace with the Bulk Import. Just do not forget to make it to be Multi-language for us the Botble Fans.','published','auto','2026-05-28 18:58:00','2026-05-28 18:58:00',NULL),(151,2,NULL,NULL,13,4,'The best store template! Excellent coding! Very good support! Thank you so much for all the help, I really appreciated.','published','auto','2026-05-28 18:58:00','2026-05-28 18:58:00',NULL),(152,4,NULL,NULL,6,2,'Second or third time that I buy a Botble product, happy with the products and support. You guys do a good job :)','published','auto','2026-05-28 18:58:00','2026-05-28 18:58:00',NULL),(153,10,NULL,NULL,5,4,'Best ecommerce CMS online store!','published','auto','2026-05-28 18:58:00','2026-05-28 18:58:00',NULL),(154,5,NULL,NULL,11,4,'Best ecommerce CMS online store!','published','auto','2026-05-28 18:58:00','2026-05-28 18:58:00',NULL),(155,2,NULL,NULL,17,4,'As a developer I reviewed this script. This is really awesome ecommerce script. I have convinced when I noticed that it\'s built on fully WordPress concept.','published','auto','2026-05-28 18:58:00','2026-05-28 18:58:00',NULL),(156,10,NULL,NULL,15,4,'For me the best eCommerce script on Envato at this moment: modern, clean code, a lot of great features. The customer support is great too: I always get an answer within hours!','published','auto','2026-05-28 18:58:00','2026-05-28 18:58:00',NULL),(157,2,NULL,NULL,2,5,'Customer Support are grade (A*), however the code is a way too over engineered for it\'s purpose.','published','auto','2026-05-28 18:58:00','2026-05-28 18:58:00',NULL),(158,8,NULL,NULL,3,5,'For me the best eCommerce script on Envato at this moment: modern, clean code, a lot of great features. The customer support is great too: I always get an answer within hours!','published','auto','2026-05-28 18:58:00','2026-05-28 18:58:00',NULL),(159,9,NULL,NULL,9,2,'Those guys now what they are doing, the release such a good product that it\'s a pleasure to work with ! Even when I was stuck on the project, I created a ticket and the next day it was replied by the team. GOOD JOB guys. I love working with them :)','published','auto','2026-05-28 18:58:00','2026-05-28 18:58:00',NULL),(160,7,NULL,NULL,11,1,'These guys are amazing! Responses immediately, amazing support and help... I immediately feel at ease after Purchasing..','published','auto','2026-05-28 18:58:00','2026-05-28 18:58:00',NULL),(161,8,NULL,NULL,1,2,'Those guys now what they are doing, the release such a good product that it\'s a pleasure to work with ! Even when I was stuck on the project, I created a ticket and the next day it was replied by the team. GOOD JOB guys. I love working with them :)','published','auto','2026-05-28 18:58:00','2026-05-28 18:58:00',NULL),(162,10,NULL,NULL,12,5,'The script is the best of its class, fast, easy to implement and work with , and the most important thing is the great support team , Recommend with no doubt.','published','auto','2026-05-28 18:58:00','2026-05-28 18:58:00',NULL),(163,3,NULL,NULL,1,5,'As a developer I reviewed this script. This is really awesome ecommerce script. I have convinced when I noticed that it\'s built on fully WordPress concept.','published','auto','2026-05-28 18:58:00','2026-05-28 18:58:00',NULL),(164,8,NULL,NULL,18,2,'These guys are amazing! Responses immediately, amazing support and help... I immediately feel at ease after Purchasing..','published','auto','2026-05-28 18:58:00','2026-05-28 18:58:00',NULL),(165,2,NULL,NULL,10,4,'For me the best eCommerce script on Envato at this moment: modern, clean code, a lot of great features. The customer support is great too: I always get an answer within hours!','published','auto','2026-05-28 18:58:00','2026-05-28 18:58:00',NULL),(166,4,NULL,NULL,1,4,'We have received brilliant service support and will be expanding the features with the developer. Nice product!','published','auto','2026-05-28 18:58:00','2026-05-28 18:58:00',NULL),(167,5,NULL,NULL,16,3,'Those guys now what they are doing, the release such a good product that it\'s a pleasure to work with ! Even when I was stuck on the project, I created a ticket and the next day it was replied by the team. GOOD JOB guys. I love working with them :)','published','auto','2026-05-28 18:58:00','2026-05-28 18:58:00',NULL),(168,3,NULL,NULL,8,4,'Those guys now what they are doing, the release such a good product that it\'s a pleasure to work with ! Even when I was stuck on the project, I created a ticket and the next day it was replied by the team. GOOD JOB guys. I love working with them :)','published','auto','2026-05-28 18:58:00','2026-05-28 18:58:00',NULL),(169,1,NULL,NULL,8,5,'Amazing code, amazing support. Overall, im really confident in Botble and im happy I made the right choice! Thank you so much guys for coding this masterpiece','published','auto','2026-05-28 18:58:00','2026-05-28 18:58:00',NULL),(170,3,NULL,NULL,6,3,'The code is good, in general, if you like it, can you give it 5 stars?','published','auto','2026-05-28 18:58:00','2026-05-28 18:58:00',NULL),(171,9,NULL,NULL,8,2,'Second or third time that I buy a Botble product, happy with the products and support. You guys do a good job :)','published','auto','2026-05-28 18:58:00','2026-05-28 18:58:00',NULL),(172,3,NULL,NULL,9,3,'The best ecommerce CMS! Excellent coding! best support service! Thank you so much..... I really like your hard work.','published','auto','2026-05-28 18:58:00','2026-05-28 18:58:00',NULL),(173,10,NULL,NULL,16,1,'Solution is too robust for our purpose so we didn\'t use it at the end. But I appreciate customer support during initial configuration.','published','auto','2026-05-28 18:58:00','2026-05-28 18:58:00',NULL),(174,8,NULL,NULL,12,3,'Great E-commerce system. And much more : Wonderful Customer Support.','published','auto','2026-05-28 18:58:00','2026-05-28 18:58:00',NULL),(175,2,NULL,NULL,9,2,'These guys are amazing! Responses immediately, amazing support and help... I immediately feel at ease after Purchasing..','published','auto','2026-05-28 18:58:00','2026-05-28 18:58:00',NULL),(176,9,NULL,NULL,18,4,'For me the best eCommerce script on Envato at this moment: modern, clean code, a lot of great features. The customer support is great too: I always get an answer within hours!','published','auto','2026-05-28 18:58:00','2026-05-28 18:58:00',NULL),(177,7,NULL,NULL,2,1,'Great E-commerce system. And much more : Wonderful Customer Support.','published','auto','2026-05-28 18:58:00','2026-05-28 18:58:00',NULL),(178,6,NULL,NULL,7,3,'These guys are amazing! Responses immediately, amazing support and help... I immediately feel at ease after Purchasing..','published','auto','2026-05-28 18:58:00','2026-05-28 18:58:00',NULL),(179,4,NULL,NULL,18,1,'Amazing code, amazing support. Overall, im really confident in Botble and im happy I made the right choice! Thank you so much guys for coding this masterpiece','published','auto','2026-05-28 18:58:00','2026-05-28 18:58:00',NULL),(180,7,NULL,NULL,15,5,'The code is good, in general, if you like it, can you give it 5 stars?','published','auto','2026-05-28 18:58:00','2026-05-28 18:58:00',NULL);
+/*!40000 ALTER TABLE `ec_reviews` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_shared_wishlists`
+--
+
+DROP TABLE IF EXISTS `ec_shared_wishlists`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_shared_wishlists` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `code` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `product_ids` text COLLATE utf8mb4_unicode_ci,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `ec_shared_wishlists_code_unique` (`code`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_shared_wishlists`
+--
+
+LOCK TABLES `ec_shared_wishlists` WRITE;
+/*!40000 ALTER TABLE `ec_shared_wishlists` DISABLE KEYS */;
+/*!40000 ALTER TABLE `ec_shared_wishlists` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_shipment_histories`
+--
+
+DROP TABLE IF EXISTS `ec_shipment_histories`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_shipment_histories` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `action` varchar(120) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `description` varchar(400) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `user_id` bigint unsigned DEFAULT NULL,
+  `shipment_id` bigint unsigned NOT NULL,
+  `order_id` bigint unsigned NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `user_type` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'Botble\\ACL\\Models\\User',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_shipment_histories`
+--
+
+LOCK TABLES `ec_shipment_histories` WRITE;
+/*!40000 ALTER TABLE `ec_shipment_histories` DISABLE KEYS */;
+/*!40000 ALTER TABLE `ec_shipment_histories` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_shipments`
+--
+
+DROP TABLE IF EXISTS `ec_shipments`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_shipments` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `order_id` bigint unsigned NOT NULL,
+  `user_id` bigint unsigned DEFAULT NULL,
+  `weight` double DEFAULT '0',
+  `shipment_id` varchar(120) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `rate_id` varchar(120) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `note` text COLLATE utf8mb4_unicode_ci,
+  `status` varchar(120) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'pending',
+  `cod_amount` decimal(15,2) DEFAULT '0.00',
+  `cod_status` varchar(60) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'pending',
+  `cross_checking_status` varchar(60) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'pending',
+  `price` decimal(15,2) DEFAULT '0.00',
+  `store_id` bigint unsigned DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `tracking_id` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `shipping_company_name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `tracking_link` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `estimate_date_shipped` datetime DEFAULT NULL,
+  `date_shipped` datetime DEFAULT NULL,
+  `customer_delivered_confirmed_at` timestamp NULL DEFAULT NULL,
+  `label_url` text COLLATE utf8mb4_unicode_ci,
+  `metadata` mediumtext COLLATE utf8mb4_unicode_ci,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `ec_shipments_order_id_unique` (`order_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_shipments`
+--
+
+LOCK TABLES `ec_shipments` WRITE;
+/*!40000 ALTER TABLE `ec_shipments` DISABLE KEYS */;
+/*!40000 ALTER TABLE `ec_shipments` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_shipping`
+--
+
+DROP TABLE IF EXISTS `ec_shipping`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_shipping` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `country` varchar(120) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_shipping`
+--
+
+LOCK TABLES `ec_shipping` WRITE;
+/*!40000 ALTER TABLE `ec_shipping` DISABLE KEYS */;
+INSERT INTO `ec_shipping` VALUES (1,'Domestic',NULL,'2026-05-28 18:58:00','2026-05-28 18:58:00'),(2,'International',NULL,'2026-05-28 18:58:00','2026-05-28 18:58:00');
+/*!40000 ALTER TABLE `ec_shipping` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_shipping_rule_items`
+--
+
+DROP TABLE IF EXISTS `ec_shipping_rule_items`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_shipping_rule_items` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `shipping_rule_id` bigint unsigned NOT NULL,
+  `name` varchar(120) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `country` varchar(120) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `state` varchar(120) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `city` varchar(120) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `zip_code` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `zip_code_from` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `zip_code_to` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `adjustment_price` decimal(15,2) DEFAULT '0.00',
+  `is_enabled` tinyint(1) NOT NULL DEFAULT '1',
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `idx_zip_range` (`zip_code_from`,`zip_code_to`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_shipping_rule_items`
+--
+
+LOCK TABLES `ec_shipping_rule_items` WRITE;
+/*!40000 ALTER TABLE `ec_shipping_rule_items` DISABLE KEYS */;
+/*!40000 ALTER TABLE `ec_shipping_rule_items` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_shipping_rules`
+--
+
+DROP TABLE IF EXISTS `ec_shipping_rules`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_shipping_rules` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(120) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `shipping_id` bigint unsigned NOT NULL,
+  `type` varchar(24) COLLATE utf8mb4_unicode_ci DEFAULT 'based_on_price',
+  `from` decimal(15,2) DEFAULT '0.00',
+  `to` decimal(15,2) DEFAULT '0.00',
+  `price` decimal(15,2) DEFAULT '0.00',
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_shipping_rules`
+--
+
+LOCK TABLES `ec_shipping_rules` WRITE;
+/*!40000 ALTER TABLE `ec_shipping_rules` DISABLE KEYS */;
+INSERT INTO `ec_shipping_rules` VALUES (1,'Free Standard Shipping (orders $99+)',1,'based_on_price',99.00,NULL,0.00,'2026-05-28 18:58:00','2026-05-28 18:58:00'),(2,'Standard (3-5 business days)',1,'based_on_price',0.00,NULL,7.99,'2026-05-28 18:58:00','2026-05-28 18:58:00'),(3,'Express (1-2 business days)',1,'based_on_price',0.00,NULL,19.99,'2026-05-28 18:58:00','2026-05-28 18:58:00'),(4,'Local Pickup',1,'based_on_price',0.00,NULL,0.00,'2026-05-28 18:58:00','2026-05-28 18:58:00'),(5,'International Standard (7-12 days)',2,'based_on_price',0.00,NULL,24.99,'2026-05-28 18:58:00','2026-05-28 18:58:00'),(6,'International Express (3-5 days)',2,'based_on_price',0.00,NULL,49.99,'2026-05-28 18:58:00','2026-05-28 18:58:00');
+/*!40000 ALTER TABLE `ec_shipping_rules` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_specification_attributes`
+--
+
+DROP TABLE IF EXISTS `ec_specification_attributes`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_specification_attributes` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `group_id` bigint unsigned NOT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `type` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `options` text COLLATE utf8mb4_unicode_ci,
+  `default_value` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `author_type` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `author_id` bigint unsigned DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `author_index` (`author_type`,`author_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_specification_attributes`
+--
+
+LOCK TABLES `ec_specification_attributes` WRITE;
+/*!40000 ALTER TABLE `ec_specification_attributes` DISABLE KEYS */;
+INSERT INTO `ec_specification_attributes` VALUES (1,1,'Composition','text',NULL,'55% Polyester, 30% Acrylic, 13% Polyamide, 2% Elastane','2026-05-28 18:58:02','2026-05-28 18:58:02',NULL,NULL),(2,1,'Origin','text',NULL,'Made in Portugal','2026-05-28 18:58:02','2026-05-28 18:58:02',NULL,NULL),(3,1,'Care','text',NULL,'Machine wash cold. Tumble dry low. Do not bleach.','2026-05-28 18:58:02','2026-05-28 18:58:02',NULL,NULL),(4,2,'Designed In','text',NULL,'Barcelona, Spain','2026-05-28 18:58:02','2026-05-28 18:58:02',NULL,NULL),(5,2,'Warranty','text',NULL,'12 months manufacturer warranty','2026-05-28 18:58:02','2026-05-28 18:58:02',NULL,NULL),(6,2,'Made From Recycled Materials','checkbox',NULL,'1','2026-05-28 18:58:02','2026-05-28 18:58:02',NULL,NULL);
+/*!40000 ALTER TABLE `ec_specification_attributes` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_specification_attributes_translations`
+--
+
+DROP TABLE IF EXISTS `ec_specification_attributes_translations`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_specification_attributes_translations` (
+  `lang_code` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `ec_specification_attributes_id` bigint unsigned NOT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `options` text COLLATE utf8mb4_unicode_ci,
+  `default_value` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`lang_code`,`ec_specification_attributes_id`),
+  KEY `idx_specification_attributes_fk` (`ec_specification_attributes_id`),
+  KEY `idx_specification_attributes_specification_attributes_lang` (`ec_specification_attributes_id`,`lang_code`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_specification_attributes_translations`
+--
+
+LOCK TABLES `ec_specification_attributes_translations` WRITE;
+/*!40000 ALTER TABLE `ec_specification_attributes_translations` DISABLE KEYS */;
+/*!40000 ALTER TABLE `ec_specification_attributes_translations` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_specification_groups`
+--
+
+DROP TABLE IF EXISTS `ec_specification_groups`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_specification_groups` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `description` varchar(400) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `author_type` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `author_id` bigint unsigned DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `author_index` (`author_type`,`author_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_specification_groups`
+--
+
+LOCK TABLES `ec_specification_groups` WRITE;
+/*!40000 ALTER TABLE `ec_specification_groups` DISABLE KEYS */;
+INSERT INTO `ec_specification_groups` VALUES (1,'Material & Composition','Fibre breakdown, origin and care guidance.','2026-05-28 18:58:02','2026-05-28 18:58:02',NULL,NULL),(2,'Product Details','Provenance, warranty and sustainability.','2026-05-28 18:58:02','2026-05-28 18:58:02',NULL,NULL);
+/*!40000 ALTER TABLE `ec_specification_groups` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_specification_groups_translations`
+--
+
+DROP TABLE IF EXISTS `ec_specification_groups_translations`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_specification_groups_translations` (
+  `lang_code` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `ec_specification_groups_id` bigint unsigned NOT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `description` varchar(400) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`lang_code`,`ec_specification_groups_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_specification_groups_translations`
+--
+
+LOCK TABLES `ec_specification_groups_translations` WRITE;
+/*!40000 ALTER TABLE `ec_specification_groups_translations` DISABLE KEYS */;
+/*!40000 ALTER TABLE `ec_specification_groups_translations` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_specification_table_group`
+--
+
+DROP TABLE IF EXISTS `ec_specification_table_group`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_specification_table_group` (
+  `table_id` bigint unsigned NOT NULL,
+  `group_id` bigint unsigned NOT NULL,
+  `order` tinyint NOT NULL DEFAULT '0',
+  PRIMARY KEY (`table_id`,`group_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_specification_table_group`
+--
+
+LOCK TABLES `ec_specification_table_group` WRITE;
+/*!40000 ALTER TABLE `ec_specification_table_group` DISABLE KEYS */;
+INSERT INTO `ec_specification_table_group` VALUES (1,1,0),(1,2,1);
+/*!40000 ALTER TABLE `ec_specification_table_group` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_specification_tables`
+--
+
+DROP TABLE IF EXISTS `ec_specification_tables`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_specification_tables` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `description` varchar(400) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `author_type` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `author_id` bigint unsigned DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `author_index` (`author_type`,`author_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_specification_tables`
+--
+
+LOCK TABLES `ec_specification_tables` WRITE;
+/*!40000 ALTER TABLE `ec_specification_tables` DISABLE KEYS */;
+INSERT INTO `ec_specification_tables` VALUES (1,'Default Specifications','Default specification layout applied to all products.','2026-05-28 18:58:02','2026-05-28 18:58:02',NULL,NULL);
+/*!40000 ALTER TABLE `ec_specification_tables` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_specification_tables_translations`
+--
+
+DROP TABLE IF EXISTS `ec_specification_tables_translations`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_specification_tables_translations` (
+  `lang_code` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `ec_specification_tables_id` bigint unsigned NOT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `description` varchar(400) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`lang_code`,`ec_specification_tables_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_specification_tables_translations`
+--
+
+LOCK TABLES `ec_specification_tables_translations` WRITE;
+/*!40000 ALTER TABLE `ec_specification_tables_translations` DISABLE KEYS */;
+/*!40000 ALTER TABLE `ec_specification_tables_translations` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_store_locators`
+--
+
+DROP TABLE IF EXISTS `ec_store_locators`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_store_locators` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(60) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `email` varchar(60) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `phone` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `address` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `country` varchar(120) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `state` varchar(120) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `city` varchar(120) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `is_primary` tinyint(1) DEFAULT '0',
+  `is_shipping_location` tinyint(1) DEFAULT '1',
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `zip_code` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_store_locators`
+--
+
+LOCK TABLES `ec_store_locators` WRITE;
+/*!40000 ALTER TABLE `ec_store_locators` DISABLE KEYS */;
+/*!40000 ALTER TABLE `ec_store_locators` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_tax_products`
+--
+
+DROP TABLE IF EXISTS `ec_tax_products`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_tax_products` (
+  `tax_id` bigint unsigned NOT NULL,
+  `product_id` bigint unsigned NOT NULL,
+  PRIMARY KEY (`product_id`,`tax_id`),
+  KEY `ec_tax_products_tax_id_index` (`tax_id`),
+  KEY `ec_tax_products_product_id_index` (`product_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_tax_products`
+--
+
+LOCK TABLES `ec_tax_products` WRITE;
+/*!40000 ALTER TABLE `ec_tax_products` DISABLE KEYS */;
+/*!40000 ALTER TABLE `ec_tax_products` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_tax_rules`
+--
+
+DROP TABLE IF EXISTS `ec_tax_rules`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_tax_rules` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `tax_id` bigint unsigned NOT NULL,
+  `country` varchar(120) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `state` varchar(120) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `city` varchar(120) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `zip_code` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `priority` int DEFAULT NULL,
+  `is_enabled` tinyint(1) NOT NULL DEFAULT '1',
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `percentage` float DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_tax_rules`
+--
+
+LOCK TABLES `ec_tax_rules` WRITE;
+/*!40000 ALTER TABLE `ec_tax_rules` DISABLE KEYS */;
+/*!40000 ALTER TABLE `ec_tax_rules` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_taxes`
+--
+
+DROP TABLE IF EXISTS `ec_taxes`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_taxes` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `percentage` float DEFAULT NULL,
+  `priority` int DEFAULT NULL,
+  `status` varchar(60) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'published',
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_taxes`
+--
+
+LOCK TABLES `ec_taxes` WRITE;
+/*!40000 ALTER TABLE `ec_taxes` DISABLE KEYS */;
+/*!40000 ALTER TABLE `ec_taxes` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_taxes_translations`
+--
+
+DROP TABLE IF EXISTS `ec_taxes_translations`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_taxes_translations` (
+  `lang_code` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `ec_taxes_id` bigint unsigned NOT NULL,
+  `title` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`lang_code`,`ec_taxes_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_taxes_translations`
+--
+
+LOCK TABLES `ec_taxes_translations` WRITE;
+/*!40000 ALTER TABLE `ec_taxes_translations` DISABLE KEYS */;
+/*!40000 ALTER TABLE `ec_taxes_translations` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ec_wish_lists`
+--
+
+DROP TABLE IF EXISTS `ec_wish_lists`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ec_wish_lists` (
+  `customer_id` bigint unsigned NOT NULL,
+  `product_id` bigint unsigned NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`customer_id`,`product_id`),
+  KEY `wishlist_relation_index` (`product_id`,`customer_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ec_wish_lists`
+--
+
+LOCK TABLES `ec_wish_lists` WRITE;
+/*!40000 ALTER TABLE `ec_wish_lists` DISABLE KEYS */;
+/*!40000 ALTER TABLE `ec_wish_lists` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `failed_jobs`
+--
+
+DROP TABLE IF EXISTS `failed_jobs`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `failed_jobs` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `uuid` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `connection` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `queue` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `payload` longtext COLLATE utf8mb4_unicode_ci NOT NULL,
+  `exception` longtext COLLATE utf8mb4_unicode_ci NOT NULL,
+  `failed_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `failed_jobs_uuid_unique` (`uuid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `failed_jobs`
+--
+
+LOCK TABLES `failed_jobs` WRITE;
+/*!40000 ALTER TABLE `failed_jobs` DISABLE KEYS */;
+/*!40000 ALTER TABLE `failed_jobs` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `faq_categories`
+--
+
+DROP TABLE IF EXISTS `faq_categories`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `faq_categories` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(120) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `order` tinyint NOT NULL DEFAULT '0',
+  `status` varchar(60) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'published',
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `description` varchar(400) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `faq_categories`
+--
+
+LOCK TABLES `faq_categories` WRITE;
+/*!40000 ALTER TABLE `faq_categories` DISABLE KEYS */;
+INSERT INTO `faq_categories` VALUES (1,'Orders &amp; Shipping',0,'published','2026-05-28 18:57:45','2026-05-28 18:57:45','Everything about placing, tracking, and receiving your order.'),(2,'Returns &amp; Refunds',1,'published','2026-05-28 18:57:45','2026-05-28 18:57:45','Our 30-day return policy and how to start a return.'),(3,'Products &amp; Stock',2,'published','2026-05-28 18:57:45','2026-05-28 18:57:45','Sizing, materials, restocks, and product care.'),(4,'Account &amp; Payment',3,'published','2026-05-28 18:57:45','2026-05-28 18:57:45','Managing your account and accepted payment methods.');
+/*!40000 ALTER TABLE `faq_categories` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `faq_categories_translations`
+--
+
+DROP TABLE IF EXISTS `faq_categories_translations`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `faq_categories_translations` (
+  `lang_code` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `faq_categories_id` bigint unsigned NOT NULL,
+  `name` varchar(120) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`lang_code`,`faq_categories_id`),
+  KEY `idx_faq_cat_trans_faq_cat_id` (`faq_categories_id`),
+  KEY `idx_faq_cat_trans_faq_cat_lang` (`faq_categories_id`,`lang_code`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `faq_categories_translations`
+--
+
+LOCK TABLES `faq_categories_translations` WRITE;
+/*!40000 ALTER TABLE `faq_categories_translations` DISABLE KEYS */;
+INSERT INTO `faq_categories_translations` VALUES ('ar',1,'Orders &amp; Shipping'),('ar',2,'Returns &amp; Refunds'),('ar',3,'Products &amp; Stock'),('ar',4,'Account &amp; Payment'),('fr',1,'Orders &amp; Shipping'),('fr',2,'Returns &amp; Refunds'),('fr',3,'Products &amp; Stock'),('fr',4,'Account &amp; Payment'),('id',1,'Orders &amp; Shipping'),('id',2,'Returns &amp; Refunds'),('id',3,'Products &amp; Stock'),('id',4,'Account &amp; Payment'),('tr',1,'Orders &amp; Shipping'),('tr',2,'Returns &amp; Refunds'),('tr',3,'Products &amp; Stock'),('tr',4,'Account &amp; Payment'),('vi',1,'Orders &amp; Shipping'),('vi',2,'Returns &amp; Refunds'),('vi',3,'Products &amp; Stock'),('vi',4,'Account &amp; Payment');
+/*!40000 ALTER TABLE `faq_categories_translations` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `faqs`
+--
+
+DROP TABLE IF EXISTS `faqs`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `faqs` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `question` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `answer` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `category_id` bigint unsigned NOT NULL,
+  `status` varchar(60) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'published',
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `faqs`
+--
+
+LOCK TABLES `faqs` WRITE;
+/*!40000 ALTER TABLE `faqs` DISABLE KEYS */;
+INSERT INTO `faqs` VALUES (1,'How long does standard shipping take?','Standard shipping arrives within 3-5 business days for domestic orders and 7-12 business days for international destinations. Express options are available at checkout.',1,'published','2026-05-28 18:57:45','2026-05-28 18:57:45'),(2,'Do you offer free shipping?','Yes — orders above $99 ship free within the continental US. International free-shipping thresholds vary by destination and are shown at checkout.',1,'published','2026-05-28 18:57:45','2026-05-28 18:57:45'),(3,'How can I track my order?','You will receive a tracking link by email as soon as your order is dispatched. You can also follow the parcel from your account dashboard under My Orders.',1,'published','2026-05-28 18:57:45','2026-05-28 18:57:45'),(4,'Can I change the shipping address after I place my order?','Address changes are possible if your order has not yet entered fulfilment. Contact us within two hours of placing the order for the best chance of a successful update.',1,'published','2026-05-28 18:57:45','2026-05-28 18:57:45'),(5,'What is your return policy?','We offer 30 days from delivery to return any unworn item in its original condition. Sale items and intimate apparel are final sale.',2,'published','2026-05-28 18:57:45','2026-05-28 18:57:45'),(6,'How do I start a return?','Start a return from your account dashboard or email returns@amerce.test with your order number. We will send a prepaid return label for domestic orders.',2,'published','2026-05-28 18:57:45','2026-05-28 18:57:45'),(7,'When will I receive my refund?','Refunds are processed within 3-5 business days of us receiving your return. The funds typically appear on your statement within an additional 5-7 days, depending on your bank.',2,'published','2026-05-28 18:57:45','2026-05-28 18:57:45'),(8,'How do I find the right size?','Each product page includes a size chart based on actual garment measurements. If you are between sizes, we generally recommend sizing up for our knitwear and outerwear.',3,'published','2026-05-28 18:57:45','2026-05-28 18:57:45'),(9,'When will sold-out items be restocked?','Most styles restock within 2-4 weeks. Click the Notify Me button on any sold-out variant to be alerted by email the moment it returns.',3,'published','2026-05-28 18:57:45','2026-05-28 18:57:45'),(10,'Are your products ethically sourced?','Yes. We work only with manufacturing partners who meet our supplier code of conduct, covering fair wages, safe conditions, and verified material provenance.',3,'published','2026-05-28 18:57:45','2026-05-28 18:57:45'),(11,'Which payment methods do you accept?','We accept Visa, Mastercard, American Express, Apple Pay, Google Pay, PayPal, and Klarna for eligible markets.',4,'published','2026-05-28 18:57:45','2026-05-28 18:57:45'),(12,'Is it safe to enter my card details?','All payments are processed by PCI-DSS Level 1 certified providers using TLS 1.3 encryption. We never store full card numbers on our servers.',4,'published','2026-05-28 18:57:45','2026-05-28 18:57:45'),(13,'How do I reset my password?','Use the Forgot Password link on the login page. A reset link will be sent to your registered email address and is valid for 30 minutes.',4,'published','2026-05-28 18:57:45','2026-05-28 18:57:45');
+/*!40000 ALTER TABLE `faqs` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `faqs_translations`
+--
+
+DROP TABLE IF EXISTS `faqs_translations`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `faqs_translations` (
+  `lang_code` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `faqs_id` bigint unsigned NOT NULL,
+  `question` text COLLATE utf8mb4_unicode_ci,
+  `answer` text COLLATE utf8mb4_unicode_ci,
+  PRIMARY KEY (`lang_code`,`faqs_id`),
+  KEY `idx_faqs_trans_faqs_id` (`faqs_id`),
+  KEY `idx_faqs_trans_faq_lang` (`faqs_id`,`lang_code`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `faqs_translations`
+--
+
+LOCK TABLES `faqs_translations` WRITE;
+/*!40000 ALTER TABLE `faqs_translations` DISABLE KEYS */;
+INSERT INTO `faqs_translations` VALUES ('ar',1,'كم من الوقت يستغرق الشحن القياسي؟','يصل الشحن القياسي خلال 3-5 أيام عمل للطلبات المحلية و7-12 يوم عمل للوجهات الدولية. تتوفر خيارات الشحن المعجل عند الخروج.'),('ar',2,'هل تقدمون الشحن المجاني؟','نعم - يتم شحن الطلبات التي تزيد قيمتها عن 99 دولارًا مجانًا داخل الولايات المتحدة القارية. يختلف الحد الأدنى للشحن الدولي المجاني حسب الوجهة ويتم عرضه عند الخروج.'),('ar',3,'كيف يمكنني تتبع طلبي؟','سوف تتلقى رابط تتبع عبر البريد الإلكتروني بمجرد شحن طلبك. يمكنك أيضًا تتبع الحزمة الخاصة بك من صفحة إدارة حسابك ضمن طلباتي.'),('ar',4,'هل يمكنني تغيير عنوان الشحن بعد تقديم طلبي؟','يمكن تغيير العنوان إذا لم تتم معالجة الطلب. اتصل بنا خلال ساعتين من تقديم طلبك للحصول على أفضل فرصة لتحديث ناجح.'),('ar',5,'ما هي سياسة الإرجاع الخاصة بك؟','نمنح 30 يومًا من تاريخ التسليم لإعادة أي منتج غير مستخدم بحالته الأصلية. العناصر والملابس الداخلية المخفضة نهائية - ولا توجد عوائد.'),('ar',6,'كيف أبدأ العودة؟','ابدأ عملية الإرجاع من صفحة إدارة حسابك أو أرسل بريدًا إلكترونيًا إلى return@amerce.test يتضمن رقم طلبك. سوف نرسل ملصق شحن الإرجاع المدفوع مسبقًا للطلبات المحلية.'),('ar',7,'متى سأستلم أموالي المستردة؟','تتم معالجة المبالغ المستردة في غضون 3-5 أيام عمل من تاريخ استلامنا للمنتج المرتجع. تظهر الأموال عادة في كشف حسابك بعد 5-7 أيام إضافية حسب البنك.'),('ar',8,'كيف أجد الحجم المناسب؟','تحتوي كل صفحة منتج على مخطط حجم يعتمد على قياسات المنتج الفعلية. إذا كان مقاسك بين مقاسين، فنوصي عادةً باختيار المقاس الأكبر للملابس المحبوكة والمعاطف.'),('ar',9,'متى سيتم إعادة تخزين العناصر المباعة؟','يتم إعادة تخزين معظم الأنماط في غضون 2-4 أسابيع. انقر فوق الزر \"أخطرني\" الموجود على أي إصدار غير متوفر في المخزون ليتم إعلامك عبر البريد الإلكتروني عندما يعود المنتج.'),('ar',10,'هل منتجاتك من مصادر أخلاقية؟','يملك. نحن نعمل فقط مع شركاء التصنيع الذين يستوفون قواعد سلوك الموردين الخاصة بنا، بما في ذلك الأجور العادلة والظروف الآمنة وأصول المواد التي تم التحقق منها.'),('ar',11,'ما هي طرق الدفع التي تقبلونها؟','نحن نقبل Visa وMastercard وAmerican Express وApple Pay وGoogle Pay وPayPal وKlarna للأسواق المدعومة.'),('ar',12,'هل من الآمن إدخال تفاصيل بطاقتي؟','تتم معالجة جميع المدفوعات بواسطة مزود معتمد من PCI-DSS من المستوى 1 مع تشفير TLS 1.3. لا نقوم مطلقًا بتخزين أرقام البطاقات الكاملة على خوادمنا.'),('ar',13,'كيف يمكنني إعادة تعيين كلمة المرور الخاصة بي؟','استخدم رابط نسيت كلمة المرور في صفحة تسجيل الدخول. سيتم إرسال رابط إعادة التعيين إلى بريدك الإلكتروني المسجل وهو صالح لمدة 30 دقيقة.'),('fr',1,'Combien de temps prend l\'expédition standard ?','L\'expédition standard arrive dans un délai de 3 à 5 jours ouvrables pour les commandes nationales et de 7 à 12 jours ouvrables pour les destinations internationales. Des options d’expédition accélérée sont disponibles à la caisse.'),('fr',2,'Offrez-vous la livraison gratuite ?','Oui, les commandes de plus de 99 $ sont expédiées gratuitement dans la zone continentale des États-Unis. Le seuil de livraison internationale gratuite varie selon la destination et est affiché au moment du paiement.'),('fr',3,'Comment puis-je suivre ma commande ?','Vous recevrez un lien de suivi par e-mail dès que votre commande sera expédiée. Vous pouvez également suivre votre colis depuis la page de gestion de votre compte sous Mes commandes.'),('fr',4,'Puis-je modifier l\'adresse de livraison après avoir passé ma commande ?','L\'adresse peut être modifiée si la commande n\'a pas été traitée. Contactez-nous dans les deux heures suivant votre commande pour avoir les meilleures chances de réussite de la mise à jour.'),('fr',5,'Quelle est votre politique de retour ?','Nous vous accordons 30 jours à compter de la date de livraison pour retourner tout produit non utilisé dans son état d\'origine. Les articles et sous-vêtements à prix réduit sont définitifs – aucun retour.'),('fr',6,'Comment démarrer un retour ?','Initiez un retour depuis la page de gestion de votre compte ou envoyez un e-mail à return@amerce.test avec votre numéro de commande. Nous enverrons une étiquette de retour prépayée pour les commandes nationales.'),('fr',7,'Quand vais-je recevoir mon remboursement ?','Les remboursements sont traités dans les 3 à 5 jours ouvrables à compter de la réception de l\'article retourné. Les fonds apparaissent généralement sur votre relevé après 5 à 7 jours supplémentaires selon la banque.'),('fr',8,'Comment trouver la bonne taille ?','Chaque page de produit comporte un tableau des tailles basé sur les mesures réelles du produit. Si vous êtes entre deux tailles, nous vous recommandons généralement de choisir la taille la plus grande pour les tricots et les manteaux.'),('fr',9,'Quand les articles épuisés seront-ils réapprovisionnés ?','La plupart des styles sont réapprovisionnés dans un délai de 2 à 4 semaines. Cliquez sur le bouton M\'avertir de toute variation en rupture de stock pour être averti par e-mail du retour du produit.'),('fr',10,'Vos produits sont-ils issus de sources éthiques ?','Avoir. Nous travaillons uniquement avec des partenaires de fabrication qui respectent notre code de conduite des fournisseurs, notamment des salaires équitables, des conditions sûres et des origines de matériaux vérifiées.'),('fr',11,'Quels modes de paiement acceptez-vous ?','Nous acceptons Visa, Mastercard, American Express, Apple Pay, Google Pay, PayPal et Klarna pour les marchés pris en charge.'),('fr',12,'Est-il sécuritaire de saisir les détails de ma carte ?','Tous les paiements sont traités par un fournisseur certifié PCI-DSS niveau 1 avec cryptage TLS 1.3. Nous ne stockons jamais les numéros de carte complets sur nos serveurs.'),('fr',13,'Comment réinitialiser mon mot de passe ?','Utilisez le lien Mot de passe oublié sur la page de connexion. Un lien de réinitialisation sera envoyé à votre adresse e-mail enregistrée et est valable 30 minutes.'),('id',1,'Berapa lama waktu pengiriman standar?','Pengiriman standar tiba dalam 3-5 hari kerja untuk pesanan domestik dan 7-12 hari kerja untuk tujuan internasional. Opsi pengiriman yang dipercepat tersedia saat checkout.'),('id',2,'Apakah Anda menawarkan pengiriman gratis?','Ya — pesanan di atas $99 dikirimkan gratis di wilayah AS. Ambang batas pengiriman internasional gratis bervariasi berdasarkan tujuan dan ditampilkan saat checkout.'),('id',3,'Bagaimana cara melacak pesanan saya?','Anda akan menerima tautan pelacakan melalui email segera setelah pesanan Anda dikirimkan. Anda juga dapat melacak paket Anda dari halaman manajemen akun Anda di bawah Pesanan Saya.'),('id',4,'Bisakah saya mengubah alamat pengiriman setelah saya melakukan pemesanan?','Alamat dapat diubah jika pesanan belum diproses. Hubungi kami dalam waktu dua jam setelah melakukan pemesanan untuk mendapatkan peluang terbaik agar pembaruan berhasil.'),('id',5,'Apa kebijakan pengembalian Anda?','Kami memberikan waktu 30 hari sejak tanggal pengiriman untuk mengembalikan produk yang tidak terpakai ke kondisi aslinya. Barang dan pakaian dalam yang didiskon bersifat final — tidak ada pengembalian.'),('id',6,'Bagaimana cara memulai pengembalian?','Lakukan pengembalian dari halaman manajemen akun Anda atau kirim email ke return@amerce.test dengan nomor pesanan Anda. Kami akan mengirimkan label pengiriman pengembalian prabayar untuk pesanan domestik.'),('id',7,'Kapan saya akan menerima pengembalian dana saya?','Pengembalian dana diproses dalam 3-5 hari kerja sejak kami menerima barang yang dikembalikan. Dana biasanya muncul di laporan Anda setelah 5-7 hari tambahan, tergantung banknya.'),('id',8,'Bagaimana cara menemukan ukuran yang tepat?','Setiap halaman produk memiliki tabel ukuran berdasarkan pengukuran produk sebenarnya. Jika Anda berada di antara dua ukuran, kami biasanya menyarankan memilih ukuran yang lebih besar untuk pakaian rajut dan mantel.'),('id',9,'Kapan barang yang terjual habis akan direstock?','Sebagian besar model diisi ulang dalam 2-4 minggu. Klik tombol Beritahu Saya pada variasi yang kehabisan stok untuk diberitahu melalui email ketika produk dikembalikan.'),('id',10,'Apakah produk Anda bersumber secara etis?','Memiliki. Kami hanya bekerja sama dengan mitra manufaktur yang memenuhi kode etik pemasok kami, termasuk upah yang adil, kondisi aman, dan asal bahan yang terverifikasi.'),('id',11,'Metode pembayaran apa yang Anda terima?','Kami menerima Visa, Mastercard, American Express, Apple Pay, Google Pay, PayPal, dan Klarna untuk pasar yang didukung.'),('id',12,'Apakah aman memasukkan detail kartu saya?','Semua pembayaran diproses oleh penyedia bersertifikat PCI-DSS Level 1 dengan enkripsi TLS 1.3. Kami tidak pernah menyimpan nomor kartu lengkap di server kami.'),('id',13,'Bagaimana cara mereset kata sandi saya?','Gunakan tautan Lupa Kata Sandi di halaman login. Tautan reset akan dikirimkan ke email Anda yang terdaftar dan berlaku selama 30 menit.'),('tr',1,'Standart gönderim ne kadar sürer?','Standart kargo, yurt içi siparişlerde 3-5 iş günü, yurt dışı siparişlerde ise 7-12 iş günü içerisinde ulaşır. Ödeme sırasında hızlandırılmış gönderim seçenekleri mevcuttur.'),('tr',2,'Ücretsiz kargo sunuyor musunuz?','Evet — 99$\'ın üzerindeki siparişler ABD kıtasında ücretsiz olarak gönderilir. Ücretsiz uluslararası gönderim eşiği varış noktasına göre değişir ve ödeme sırasında görüntülenir.'),('tr',3,'Siparişimi nasıl takip edebilirim?','Siparişiniz gönderilir gönderilmez e-posta yoluyla bir takip bağlantısı alacaksınız. Paketinizi ayrıca siparişlerim altındaki hesap yönetimi sayfanızdan da takip edebilirsiniz.'),('tr',4,'Siparişimi verdikten sonra teslimat adresini değiştirebilir miyim?','Siparişin işleme koyulmaması durumunda adres değiştirilebilir. Başarılı bir güncelleme şansı için siparişinizi verdikten sonraki iki saat içinde bizimle iletişime geçin.'),('tr',5,'İade politikanız nedir?','Kullanılmamış ürünü orijinal haliyle iade etmek için teslimat tarihinden itibaren 30 gün süre veriyoruz. İndirimli ürünler ve iç çamaşırları sondur; iade yoktur.'),('tr',6,'İade işlemini nasıl başlatabilirim?','Hesap yönetimi sayfanızdan bir iade işlemi başlatın veya sipariş numaranızla birlikte return@amerce.test adresine bir e-posta gönderin. Yurtiçi siparişlerde ön ödemeli iade nakliye etiketi göndereceğiz.'),('tr',7,'Geri ödememi ne zaman alacağım?','Geri ödemeler, iade edilen ürünün tarafımıza ulaşmasından itibaren 3-5 iş günü içerisinde gerçekleştirilir. Fonlar genellikle bankaya bağlı olarak ek 5-7 gün sonra ekstrenizde görünür.'),('tr',8,'Doğru boyutu nasıl bulurum?','Her ürün sayfasında gerçek ürün ölçülerine dayalı bir beden tablosu bulunur. Eğer iki beden arasında kaldıysanız triko ve kabanlarda genellikle büyük bedeni tercih etmenizi öneririz.'),('tr',9,'Tükenen ürünler ne zaman stoklara eklenecek?','Çoğu stil 2-4 hafta içinde yeniden stoklanır. Ürün iade edildiğinde e-postayla bilgilendirilmek için stokta olmayan herhangi bir varyasyonda Bana Bildir düğmesini tıklayın.'),('tr',10,'Ürünleriniz etik kurallara uygun mu?','Sahip olmak. Yalnızca adil ücretler, güvenli koşullar ve doğrulanmış malzeme menşeleri de dahil olmak üzere tedarikçi davranış kurallarımızı karşılayan üretim ortaklarıyla çalışıyoruz.'),('tr',11,'Hangi ödeme yöntemlerini kabul ediyorsunuz?','Desteklenen pazarlar için Visa, Mastercard, American Express, Apple Pay, Google Pay, PayPal ve Klarna\'yı kabul ediyoruz.'),('tr',12,'Kart bilgilerimi girmem güvenli mi?','Tüm ödemeler, TLS 1.3 şifrelemesine sahip PCI-DSS Seviye 1 sertifikalı bir sağlayıcı tarafından işlenir. Kart numaralarının tamamını hiçbir zaman sunucularımızda saklamayız.'),('tr',13,'Şifremi nasıl sıfırlarım?','Giriş sayfasındaki Şifremi Unuttum bağlantısını kullanın. Kayıtlı e-posta adresinize bir sıfırlama bağlantısı gönderilecek ve 30 dakika süreyle geçerlidir.'),('vi',1,'Vận chuyển tiêu chuẩn mất bao lâu?','Vận chuyển tiêu chuẩn đến trong vòng 3-5 ngày làm việc cho đơn hàng nội địa và 7-12 ngày làm việc cho điểm đến quốc tế. Lựa chọn vận chuyển nhanh có sẵn tại bước thanh toán.'),('vi',2,'Quý vị có hỗ trợ miễn phí vận chuyển không?','Có — đơn hàng trên 99$ được miễn phí vận chuyển trong khu vực Hoa Kỳ lục địa. Ngưỡng miễn phí vận chuyển quốc tế thay đổi theo điểm đến và được hiển thị tại bước thanh toán.'),('vi',3,'Làm thế nào để theo dõi đơn hàng?','Bạn sẽ nhận được liên kết theo dõi qua email ngay khi đơn hàng được gửi đi. Bạn cũng có thể theo dõi kiện hàng từ trang quản lý tài khoản trong mục Đơn hàng của tôi.'),('vi',4,'Tôi có thể đổi địa chỉ giao hàng sau khi đặt đơn không?','Có thể đổi địa chỉ nếu đơn hàng chưa được xử lý. Hãy liên hệ với chúng tôi trong vòng hai giờ kể từ khi đặt đơn để có cơ hội cập nhật thành công cao nhất.'),('vi',5,'Chính sách đổi trả của quý vị như thế nào?','Chúng tôi cho 30 ngày kể từ ngày giao hàng để trả lại bất kỳ sản phẩm nào chưa qua sử dụng trong tình trạng nguyên bản. Hàng giảm giá và đồ lót là hàng cuối — không đổi trả.'),('vi',6,'Làm thế nào để bắt đầu đổi trả?','Bắt đầu đổi trả từ trang quản lý tài khoản hoặc gửi email đến returns@amerce.test cùng số đơn hàng. Chúng tôi sẽ gửi nhãn vận chuyển trả hàng trả phí trước cho đơn hàng nội địa.'),('vi',7,'Khi nào tôi nhận được tiền hoàn lại?','Tiền hoàn được xử lý trong vòng 3-5 ngày làm việc kể từ khi chúng tôi nhận được hàng trả. Tiền thường xuất hiện trong sao kê của bạn sau thêm 5-7 ngày tùy ngân hàng.'),('vi',8,'Làm thế nào để tìm đúng kích cỡ?','Mỗi trang sản phẩm có bảng kích cỡ dựa trên số đo thực tế của sản phẩm. Nếu bạn ở giữa hai size, chúng tôi thường khuyên chọn size lớn hơn cho đồ dệt kim và áo khoác.'),('vi',9,'Khi nào sản phẩm hết hàng được nhập lại?','Hầu hết các kiểu được nhập lại trong vòng 2-4 tuần. Bấm nút Thông báo cho tôi trên bất kỳ biến thể nào hết hàng để được thông báo qua email khi sản phẩm trở lại.'),('vi',10,'Sản phẩm của quý vị có nguồn cung có đạo đức không?','Có. Chúng tôi chỉ làm việc với các đối tác sản xuất đáp ứng quy tắc ứng xử nhà cung cấp, bao gồm lương công bằng, điều kiện an toàn và nguồn gốc vật liệu được xác minh.'),('vi',11,'Quý vị chấp nhận những phương thức thanh toán nào?','Chúng tôi chấp nhận Visa, Mastercard, American Express, Apple Pay, Google Pay, PayPal và Klarna cho các thị trường được hỗ trợ.'),('vi',12,'Nhập thông tin thẻ có an toàn không?','Mọi thanh toán đều được xử lý bởi nhà cung cấp được chứng nhận PCI-DSS Level 1 với mã hóa TLS 1.3. Chúng tôi không bao giờ lưu trữ số thẻ đầy đủ trên máy chủ.'),('vi',13,'Làm thế nào để đặt lại mật khẩu?','Sử dụng liên kết Quên mật khẩu trên trang đăng nhập. Một liên kết đặt lại sẽ được gửi đến email đăng ký của bạn và có hiệu lực trong 30 phút.');
+/*!40000 ALTER TABLE `faqs_translations` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `fob_product_size_guide_relations`
+--
+
+DROP TABLE IF EXISTS `fob_product_size_guide_relations`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `fob_product_size_guide_relations` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `size_guide_id` bigint unsigned NOT NULL,
+  `reference_id` bigint unsigned NOT NULL,
+  `reference_type` varchar(60) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `fob_psg_relations_size_guide_id_idx` (`size_guide_id`),
+  KEY `fob_psg_relations_ref_idx` (`reference_id`,`reference_type`),
+  CONSTRAINT `fob_product_size_guide_relations_size_guide_id_foreign` FOREIGN KEY (`size_guide_id`) REFERENCES `fob_product_size_guides` (`id`) ON DELETE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `fob_product_size_guide_relations`
+--
+
+LOCK TABLES `fob_product_size_guide_relations` WRITE;
+/*!40000 ALTER TABLE `fob_product_size_guide_relations` DISABLE KEYS */;
+INSERT INTO `fob_product_size_guide_relations` VALUES (1,1,8,'category','2026-05-28 18:58:02','2026-05-28 18:58:02'),(2,1,9,'category','2026-05-28 18:58:02','2026-05-28 18:58:02'),(3,1,10,'category','2026-05-28 18:58:02','2026-05-28 18:58:02'),(4,1,4,'category','2026-05-28 18:58:02','2026-05-28 18:58:02'),(5,1,2,'category','2026-05-28 18:58:02','2026-05-28 18:58:02'),(6,1,6,'category','2026-05-28 18:58:02','2026-05-28 18:58:02'),(7,1,5,'category','2026-05-28 18:58:02','2026-05-28 18:58:02'),(8,1,3,'category','2026-05-28 18:58:02','2026-05-28 18:58:02'),(9,1,7,'category','2026-05-28 18:58:02','2026-05-28 18:58:02'),(10,1,1,'category','2026-05-28 18:58:02','2026-05-28 18:58:02');
+/*!40000 ALTER TABLE `fob_product_size_guide_relations` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `fob_product_size_guides`
+--
+
+DROP TABLE IF EXISTS `fob_product_size_guides`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `fob_product_size_guides` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `description` text COLLATE utf8mb4_unicode_ci,
+  `image` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `table_headers` json DEFAULT NULL,
+  `table_rows` json DEFAULT NULL,
+  `status` varchar(60) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'published',
+  `order` int NOT NULL DEFAULT '0',
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `fob_psg_status_idx` (`status`),
+  KEY `fob_psg_order_idx` (`order`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `fob_product_size_guides`
+--
+
+LOCK TABLES `fob_product_size_guides` WRITE;
+/*!40000 ALTER TABLE `fob_product_size_guides` DISABLE KEYS */;
+INSERT INTO `fob_product_size_guides` VALUES (1,'Default Size Chart','<h6>Bust</h6><p>Measure around the fullest part of your bust.</p><h6>Waist</h6><p>Measure around the narrowest part of your torso.</p><h6>Low Hip</h6><p>With your feet together measure around the fullest part of your hips/rear.</p>',NULL,'[\"size\", \"us\", \"bust\", \"waist\", \"low-hip\"]','[[\"XS\", \"2\", \"32\", \"24 - 25\", \"33 - 34\"], [\"S\", \"4\", \"34 - 35\", \"26 - 27\", \"35 - 26\"], [\"M\", \"6\", \"36 - 37\", \"28 - 29\", \"38 - 40\"], [\"L\", \"8\", \"38 - 29\", \"30 - 31\", \"42 - 44\"], [\"XL\", \"10\", \"40 - 41\", \"32 - 33\", \"45 - 47\"], [\"XXL\", \"12\", \"42 - 43\", \"34 - 35\", \"48 - 50\"]]','published',0,'2026-05-28 18:58:02','2026-05-28 18:58:02');
+/*!40000 ALTER TABLE `fob_product_size_guides` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `fob_size_guide_headers`
+--
+
+DROP TABLE IF EXISTS `fob_size_guide_headers`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `fob_size_guide_headers` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `slug` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `category` varchar(60) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'general',
+  `order` int NOT NULL DEFAULT '0',
+  `status` varchar(60) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'published',
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `fob_size_guide_headers_slug_unique` (`slug`),
+  KEY `fob_psg_headers_status_idx` (`status`),
+  KEY `fob_psg_headers_category_idx` (`category`),
+  KEY `fob_psg_headers_order_idx` (`order`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `fob_size_guide_headers`
+--
+
+LOCK TABLES `fob_size_guide_headers` WRITE;
+/*!40000 ALTER TABLE `fob_size_guide_headers` DISABLE KEYS */;
+INSERT INTO `fob_size_guide_headers` VALUES (1,'Size','size','general',0,'published','2026-05-28 18:58:02','2026-05-28 18:58:02'),(2,'US','us','general',1,'published','2026-05-28 18:58:02','2026-05-28 18:58:02'),(3,'Bust','bust','general',2,'published','2026-05-28 18:58:02','2026-05-28 18:58:02'),(4,'Waist','waist','general',3,'published','2026-05-28 18:58:02','2026-05-28 18:58:02'),(5,'Low Hip','low-hip','general',4,'published','2026-05-28 18:58:02','2026-05-28 18:58:02');
+/*!40000 ALTER TABLE `fob_size_guide_headers` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `fob_size_guide_headers_translations`
+--
+
+DROP TABLE IF EXISTS `fob_size_guide_headers_translations`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `fob_size_guide_headers_translations` (
+  `lang_code` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `fob_size_guide_headers_id` bigint unsigned NOT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`lang_code`,`fob_size_guide_headers_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `fob_size_guide_headers_translations`
+--
+
+LOCK TABLES `fob_size_guide_headers_translations` WRITE;
+/*!40000 ALTER TABLE `fob_size_guide_headers_translations` DISABLE KEYS */;
+/*!40000 ALTER TABLE `fob_size_guide_headers_translations` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `galleries`
+--
+
+DROP TABLE IF EXISTS `galleries`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `galleries` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(120) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `description` longtext COLLATE utf8mb4_unicode_ci NOT NULL,
+  `is_featured` tinyint unsigned NOT NULL DEFAULT '0',
+  `order` tinyint unsigned NOT NULL DEFAULT '0',
+  `image` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `user_id` bigint unsigned DEFAULT NULL,
+  `status` varchar(60) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'published',
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `galleries_user_id_index` (`user_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `galleries`
+--
+
+LOCK TABLES `galleries` WRITE;
+/*!40000 ALTER TABLE `galleries` DISABLE KEYS */;
+/*!40000 ALTER TABLE `galleries` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `galleries_translations`
+--
+
+DROP TABLE IF EXISTS `galleries_translations`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `galleries_translations` (
+  `lang_code` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `galleries_id` bigint unsigned NOT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `description` longtext COLLATE utf8mb4_unicode_ci,
+  PRIMARY KEY (`lang_code`,`galleries_id`),
+  KEY `idx_galleries_trans_galleries_id` (`galleries_id`),
+  KEY `idx_galleries_trans_gallery_lang` (`galleries_id`,`lang_code`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `galleries_translations`
+--
+
+LOCK TABLES `galleries_translations` WRITE;
+/*!40000 ALTER TABLE `galleries_translations` DISABLE KEYS */;
+/*!40000 ALTER TABLE `galleries_translations` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `gallery_meta`
+--
+
+DROP TABLE IF EXISTS `gallery_meta`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `gallery_meta` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `images` text COLLATE utf8mb4_unicode_ci,
+  `reference_id` bigint unsigned NOT NULL,
+  `reference_type` varchar(120) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `gallery_meta_reference_id_index` (`reference_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `gallery_meta`
+--
+
+LOCK TABLES `gallery_meta` WRITE;
+/*!40000 ALTER TABLE `gallery_meta` DISABLE KEYS */;
+/*!40000 ALTER TABLE `gallery_meta` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `gallery_meta_translations`
+--
+
+DROP TABLE IF EXISTS `gallery_meta_translations`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `gallery_meta_translations` (
+  `lang_code` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `gallery_meta_id` bigint unsigned NOT NULL,
+  `images` text COLLATE utf8mb4_unicode_ci,
+  PRIMARY KEY (`lang_code`,`gallery_meta_id`),
+  KEY `idx_gallery_meta_trans_gm_id` (`gallery_meta_id`),
+  KEY `idx_gallery_meta_trans_gm_lang` (`gallery_meta_id`,`lang_code`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `gallery_meta_translations`
+--
+
+LOCK TABLES `gallery_meta_translations` WRITE;
+/*!40000 ALTER TABLE `gallery_meta_translations` DISABLE KEYS */;
+/*!40000 ALTER TABLE `gallery_meta_translations` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `jobs`
+--
+
+DROP TABLE IF EXISTS `jobs`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `jobs` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `queue` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `payload` longtext COLLATE utf8mb4_unicode_ci NOT NULL,
+  `attempts` tinyint unsigned NOT NULL,
+  `reserved_at` int unsigned DEFAULT NULL,
+  `available_at` int unsigned NOT NULL,
+  `created_at` int unsigned NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `jobs_queue_index` (`queue`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `jobs`
+--
+
+LOCK TABLES `jobs` WRITE;
+/*!40000 ALTER TABLE `jobs` DISABLE KEYS */;
+/*!40000 ALTER TABLE `jobs` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `language_meta`
+--
+
+DROP TABLE IF EXISTS `language_meta`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `language_meta` (
+  `lang_meta_id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `lang_meta_code` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `lang_meta_origin` varchar(32) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `reference_id` bigint unsigned NOT NULL,
+  `reference_type` varchar(120) COLLATE utf8mb4_unicode_ci NOT NULL,
+  PRIMARY KEY (`lang_meta_id`),
+  KEY `language_meta_reference_id_index` (`reference_id`),
+  KEY `meta_code_index` (`lang_meta_code`),
+  KEY `meta_origin_index` (`lang_meta_origin`),
+  KEY `meta_reference_type_index` (`reference_type`)
+) ENGINE=InnoDB AUTO_INCREMENT=43 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `language_meta`
+--
+
+LOCK TABLES `language_meta` WRITE;
+/*!40000 ALTER TABLE `language_meta` DISABLE KEYS */;
+INSERT INTO `language_meta` VALUES (7,'en','788d484710bfe8a980222cf5a2294348',3,'Botble\\Menu\\Models\\Menu'),(8,'en','6016ab757009865dad0df1d83ca7754c',2,'Botble\\Menu\\Models\\Menu'),(9,'en','1a0953416df1c71857b8718dd8deebd1',1,'Botble\\Menu\\Models\\Menu'),(10,'en','3583393f0dfcb9525d26ccb912e36c32',1,'Botble\\Menu\\Models\\MenuLocation'),(11,'en','665dfdd05dbc15736cc529a4c175cc15',2,'Botble\\Menu\\Models\\MenuLocation'),(12,'en','f21a1d799e12726fbe1b1c3f1d1b3961',3,'Botble\\Menu\\Models\\MenuLocation'),(13,'vi','3583393f0dfcb9525d26ccb912e36c32',4,'Botble\\Menu\\Models\\MenuLocation'),(14,'vi','1a0953416df1c71857b8718dd8deebd1',4,'Botble\\Menu\\Models\\Menu'),(15,'vi','665dfdd05dbc15736cc529a4c175cc15',5,'Botble\\Menu\\Models\\MenuLocation'),(16,'vi','6016ab757009865dad0df1d83ca7754c',5,'Botble\\Menu\\Models\\Menu'),(17,'vi','f21a1d799e12726fbe1b1c3f1d1b3961',6,'Botble\\Menu\\Models\\MenuLocation'),(18,'vi','788d484710bfe8a980222cf5a2294348',6,'Botble\\Menu\\Models\\Menu'),(19,'ar','3583393f0dfcb9525d26ccb912e36c32',7,'Botble\\Menu\\Models\\MenuLocation'),(20,'ar','1a0953416df1c71857b8718dd8deebd1',7,'Botble\\Menu\\Models\\Menu'),(21,'ar','665dfdd05dbc15736cc529a4c175cc15',8,'Botble\\Menu\\Models\\MenuLocation'),(22,'ar','6016ab757009865dad0df1d83ca7754c',8,'Botble\\Menu\\Models\\Menu'),(23,'ar','f21a1d799e12726fbe1b1c3f1d1b3961',9,'Botble\\Menu\\Models\\MenuLocation'),(24,'ar','788d484710bfe8a980222cf5a2294348',9,'Botble\\Menu\\Models\\Menu'),(25,'fr','3583393f0dfcb9525d26ccb912e36c32',10,'Botble\\Menu\\Models\\MenuLocation'),(26,'fr','1a0953416df1c71857b8718dd8deebd1',10,'Botble\\Menu\\Models\\Menu'),(27,'fr','665dfdd05dbc15736cc529a4c175cc15',11,'Botble\\Menu\\Models\\MenuLocation'),(28,'fr','6016ab757009865dad0df1d83ca7754c',11,'Botble\\Menu\\Models\\Menu'),(29,'fr','f21a1d799e12726fbe1b1c3f1d1b3961',12,'Botble\\Menu\\Models\\MenuLocation'),(30,'fr','788d484710bfe8a980222cf5a2294348',12,'Botble\\Menu\\Models\\Menu'),(31,'id','3583393f0dfcb9525d26ccb912e36c32',13,'Botble\\Menu\\Models\\MenuLocation'),(32,'id','1a0953416df1c71857b8718dd8deebd1',13,'Botble\\Menu\\Models\\Menu'),(33,'id','665dfdd05dbc15736cc529a4c175cc15',14,'Botble\\Menu\\Models\\MenuLocation'),(34,'id','6016ab757009865dad0df1d83ca7754c',14,'Botble\\Menu\\Models\\Menu'),(35,'id','f21a1d799e12726fbe1b1c3f1d1b3961',15,'Botble\\Menu\\Models\\MenuLocation'),(36,'id','788d484710bfe8a980222cf5a2294348',15,'Botble\\Menu\\Models\\Menu'),(37,'tr','3583393f0dfcb9525d26ccb912e36c32',16,'Botble\\Menu\\Models\\MenuLocation'),(38,'tr','1a0953416df1c71857b8718dd8deebd1',16,'Botble\\Menu\\Models\\Menu'),(39,'tr','665dfdd05dbc15736cc529a4c175cc15',17,'Botble\\Menu\\Models\\MenuLocation'),(40,'tr','6016ab757009865dad0df1d83ca7754c',17,'Botble\\Menu\\Models\\Menu'),(41,'tr','f21a1d799e12726fbe1b1c3f1d1b3961',18,'Botble\\Menu\\Models\\MenuLocation'),(42,'tr','788d484710bfe8a980222cf5a2294348',18,'Botble\\Menu\\Models\\Menu');
+/*!40000 ALTER TABLE `language_meta` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `languages`
+--
+
+DROP TABLE IF EXISTS `languages`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `languages` (
+  `lang_id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `lang_name` varchar(120) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `lang_locale` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `lang_code` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `lang_flag` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `lang_is_default` tinyint unsigned NOT NULL DEFAULT '0',
+  `lang_order` int NOT NULL DEFAULT '0',
+  `lang_is_rtl` tinyint unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`lang_id`),
+  KEY `lang_locale_index` (`lang_locale`),
+  KEY `lang_code_index` (`lang_code`),
+  KEY `lang_is_default_index` (`lang_is_default`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `languages`
+--
+
+LOCK TABLES `languages` WRITE;
+/*!40000 ALTER TABLE `languages` DISABLE KEYS */;
+INSERT INTO `languages` VALUES (1,'English','en','en','us',1,0,0),(2,'Tiếng Việt','vi','vi','vn',0,1,0),(3,'العربية','ar','ar','sa',0,2,1),(4,'Français','fr','fr','fr',0,3,0),(5,'Bahasa Indonesia','id','id','id',0,4,0),(6,'Türkçe','tr','tr','tr',0,5,0);
+/*!40000 ALTER TABLE `languages` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `media_files`
+--
+
+DROP TABLE IF EXISTS `media_files`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `media_files` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `user_id` bigint unsigned NOT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `alt` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `folder_id` bigint unsigned NOT NULL DEFAULT '0',
+  `mime_type` varchar(120) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `size` int NOT NULL,
+  `url` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `options` text COLLATE utf8mb4_unicode_ci,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `deleted_at` timestamp NULL DEFAULT NULL,
+  `visibility` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'public',
+  PRIMARY KEY (`id`),
+  KEY `media_files_user_id_index` (`user_id`),
+  KEY `media_files_index` (`folder_id`,`user_id`,`created_at`),
+  KEY `media_files_folder_deleted_name` (`folder_id`,`deleted_at`,`name`)
+) ENGINE=InnoDB AUTO_INCREMENT=59 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `media_files`
+--
+
+LOCK TABLES `media_files` WRITE;
+/*!40000 ALTER TABLE `media_files` DISABLE KEYS */;
+INSERT INTO `media_files` VALUES (1,0,'cod','cod',1,'image/png',12121,'payments/cod-1.png','[]','2026-05-28 18:57:42','2026-05-28 18:57:42',NULL,'public'),(2,0,'bank-transfer','bank-transfer',1,'image/png',29089,'payments/bank-transfer-1.png','[]','2026-05-28 18:57:42','2026-05-28 18:57:42',NULL,'public'),(3,0,'stripe','stripe',1,'image/webp',7516,'payments/stripe-1.webp','[]','2026-05-28 18:57:42','2026-05-28 18:57:42',NULL,'public'),(4,0,'paypal','paypal',1,'image/png',3001,'payments/paypal-1.png','[]','2026-05-28 18:57:43','2026-05-28 18:57:43',NULL,'public'),(5,0,'mollie','mollie',1,'image/png',8968,'payments/mollie-1.png','[]','2026-05-28 18:57:43','2026-05-28 18:57:43',NULL,'public'),(6,0,'paystack','paystack',1,'image/png',31015,'payments/paystack-1.png','[]','2026-05-28 18:57:43','2026-05-28 18:57:43',NULL,'public'),(7,0,'razorpay','razorpay',1,'image/png',8489,'payments/razorpay-1.png','[]','2026-05-28 18:57:44','2026-05-28 18:57:44',NULL,'public'),(8,0,'sslcommerz','sslcommerz',1,'image/png',3482,'payments/sslcommerz-1.png','[]','2026-05-28 18:57:44','2026-05-28 18:57:44',NULL,'public'),(9,0,'product-14_3','product-14_3',2,'image/jpeg',13655,'products/product-14-3-1.jpg','[]','2026-05-28 18:57:45','2026-05-28 18:57:45',NULL,'public'),(10,0,'product-14_4','product-14_4',2,'image/jpeg',13655,'products/product-14-4-1.jpg','[]','2026-05-28 18:57:45','2026-05-28 18:57:45',NULL,'public'),(11,0,'product-15_4','product-15_4',2,'image/jpeg',13655,'products/product-15-4-1.jpg','[]','2026-05-28 18:57:46','2026-05-28 18:57:46',NULL,'public'),(12,0,'product-15_3','product-15_3',2,'image/jpeg',13655,'products/product-15-3-1.jpg','[]','2026-05-28 18:57:46','2026-05-28 18:57:46',NULL,'public'),(13,0,'product-16_3','product-16_3',2,'image/jpeg',13655,'products/product-16-3-1.jpg','[]','2026-05-28 18:57:46','2026-05-28 18:57:46',NULL,'public'),(14,0,'product-17_3','product-17_3',2,'image/jpeg',13655,'products/product-17-3-1.jpg','[]','2026-05-28 18:57:46','2026-05-28 18:57:46',NULL,'public'),(15,0,'product-5_2','product-5_2',2,'image/jpeg',13655,'products/product-5-2-1.jpg','[]','2026-05-28 18:57:47','2026-05-28 18:57:47',NULL,'public'),(16,0,'product-5_3','product-5_3',2,'image/jpeg',13655,'products/product-5-3-1.jpg','[]','2026-05-28 18:57:47','2026-05-28 18:57:47',NULL,'public'),(17,0,'product-5_4','product-5_4',2,'image/jpeg',13655,'products/product-5-4-1.jpg','[]','2026-05-28 18:57:47','2026-05-28 18:57:47',NULL,'public'),(18,0,'product-6_2','product-6_2',2,'image/jpeg',13655,'products/product-6-2-1.jpg','[]','2026-05-28 18:57:47','2026-05-28 18:57:47',NULL,'public'),(19,0,'product-6_3','product-6_3',2,'image/jpeg',13655,'products/product-6-3-1.jpg','[]','2026-05-28 18:57:47','2026-05-28 18:57:47',NULL,'public'),(20,0,'product-7_2','product-7_2',2,'image/jpeg',13655,'products/product-7-2-1.jpg','[]','2026-05-28 18:57:48','2026-05-28 18:57:48',NULL,'public'),(21,0,'product-7_3','product-7_3',2,'image/jpeg',13655,'products/product-7-3-1.jpg','[]','2026-05-28 18:57:48','2026-05-28 18:57:48',NULL,'public'),(22,0,'product-7_4','product-7_4',2,'image/jpeg',13655,'products/product-7-4-1.jpg','[]','2026-05-28 18:57:48','2026-05-28 18:57:48',NULL,'public'),(23,0,'product-8_2','product-8_2',2,'image/jpeg',13655,'products/product-8-2-1.jpg','[]','2026-05-28 18:57:48','2026-05-28 18:57:48',NULL,'public'),(24,0,'product-8_3','product-8_3',2,'image/jpeg',13655,'products/product-8-3-1.jpg','[]','2026-05-28 18:57:49','2026-05-28 18:57:49',NULL,'public'),(25,0,'product-8_4','product-8_4',2,'image/jpeg',13655,'products/product-8-4-1.jpg','[]','2026-05-28 18:57:49','2026-05-28 18:57:49',NULL,'public'),(26,0,'product-9_2','product-9_2',2,'image/jpeg',13655,'products/product-9-2-1.jpg','[]','2026-05-28 18:57:49','2026-05-28 18:57:49',NULL,'public'),(27,0,'product-9_3','product-9_3',2,'image/jpeg',13655,'products/product-9-3-1.jpg','[]','2026-05-28 18:57:49','2026-05-28 18:57:49',NULL,'public'),(28,0,'product-12_2','product-12_2',2,'image/jpeg',13655,'products/product-12-2-1.jpg','[]','2026-05-28 18:57:49','2026-05-28 18:57:49',NULL,'public'),(29,0,'product-1_2','product-1_2',2,'image/jpeg',13655,'products/product-1-2-1.jpg','[]','2026-05-28 18:57:50','2026-05-28 18:57:50',NULL,'public'),(30,0,'product-1_3','product-1_3',2,'image/jpeg',13655,'products/product-1-3-1.jpg','[]','2026-05-28 18:57:50','2026-05-28 18:57:50',NULL,'public'),(31,0,'product-1_4','product-1_4',2,'image/jpeg',13655,'products/product-1-4-1.jpg','[]','2026-05-28 18:57:50','2026-05-28 18:57:50',NULL,'public'),(32,0,'product-2_2','product-2_2',2,'image/jpeg',13655,'products/product-2-2-1.jpg','[]','2026-05-28 18:57:50','2026-05-28 18:57:50',NULL,'public'),(33,0,'product-2_3','product-2_3',2,'image/jpeg',13655,'products/product-2-3-1.jpg','[]','2026-05-28 18:57:51','2026-05-28 18:57:51',NULL,'public'),(34,0,'product-3_2','product-3_2',2,'image/jpeg',13655,'products/product-3-2-1.jpg','[]','2026-05-28 18:57:51','2026-05-28 18:57:51',NULL,'public'),(35,0,'product-3_3','product-3_3',2,'image/jpeg',13655,'products/product-3-3-1.jpg','[]','2026-05-28 18:57:51','2026-05-28 18:57:51',NULL,'public'),(36,0,'product-3_4','product-3_4',2,'image/jpeg',13655,'products/product-3-4-1.jpg','[]','2026-05-28 18:57:51','2026-05-28 18:57:51',NULL,'public'),(37,0,'product-4_2','product-4_2',2,'image/jpeg',13655,'products/product-4-2-1.jpg','[]','2026-05-28 18:57:51','2026-05-28 18:57:51',NULL,'public'),(38,0,'tes-1','tes-1',3,'image/jpeg',3439,'testimonials/tes-1.jpg','[]','2026-05-28 18:58:02','2026-05-28 18:58:02',NULL,'public'),(39,0,'tes-2','tes-2',3,'image/jpeg',3439,'testimonials/tes-2.jpg','[]','2026-05-28 18:58:02','2026-05-28 18:58:02',NULL,'public'),(40,0,'member-1','member-1',4,'image/jpeg',3439,'member/member-1.jpg','[]','2026-05-28 18:58:02','2026-05-28 18:58:02',NULL,'public'),(41,0,'member-2','member-2',4,'image/jpeg',3439,'member/member-2.jpg','[]','2026-05-28 18:58:02','2026-05-28 18:58:02',NULL,'public'),(42,0,'member-3','member-3',4,'image/jpeg',3439,'member/member-3.jpg','[]','2026-05-28 18:58:02','2026-05-28 18:58:02',NULL,'public'),(43,0,'member-4','member-4',4,'image/jpeg',3439,'member/member-4.jpg','[]','2026-05-28 18:58:02','2026-05-28 18:58:02',NULL,'public'),(44,0,'s-contact-1','s-contact-1',5,'image/jpeg',41514,'section/s-contact-1.jpg','[]','2026-05-28 18:58:02','2026-05-28 18:58:02',NULL,'public'),(45,0,'s-contact-2','s-contact-2',5,'image/jpeg',16643,'section/s-contact-2.jpg','[]','2026-05-28 18:58:02','2026-05-28 18:58:02',NULL,'public'),(46,0,'banner-12','banner-12',5,'image/jpeg',22623,'section/banner-12.jpg','[]','2026-05-28 18:58:02','2026-05-28 18:58:02',NULL,'public'),(47,0,'banner-39','banner-39',5,'image/jpeg',33208,'section/banner-39.jpg','[]','2026-05-28 18:58:02','2026-05-28 18:58:02',NULL,'public'),(48,0,'banner-lookbook-11','banner-lookbook-11',5,'image/jpeg',18237,'section/banner-lookbook-11.jpg','[]','2026-05-28 18:58:02','2026-05-28 18:58:02',NULL,'public'),(49,0,'tes-16','tes-16',3,'image/jpeg',3439,'testimonials/tes-16.jpg','[]','2026-05-28 18:58:02','2026-05-28 18:58:02',NULL,'public'),(50,0,'tes-17','tes-17',3,'image/jpeg',3439,'testimonials/tes-17.jpg','[]','2026-05-28 18:58:02','2026-05-28 18:58:02',NULL,'public'),(51,0,'tes-18','tes-18',3,'image/jpeg',3439,'testimonials/tes-18.jpg','[]','2026-05-28 18:58:02','2026-05-28 18:58:02',NULL,'public'),(52,0,'tes-19','tes-19',3,'image/jpeg',3439,'testimonials/tes-19.jpg','[]','2026-05-28 18:58:02','2026-05-28 18:58:02',NULL,'public'),(53,0,'banner-40','banner-40',5,'image/jpeg',29491,'section/banner-40.jpg','[]','2026-05-28 18:58:02','2026-05-28 18:58:02',NULL,'public'),(54,0,'gallery-37','gallery-37',6,'image/jpeg',12537,'gallery/gallery-37.jpg','[]','2026-05-28 18:58:02','2026-05-28 18:58:02',NULL,'public'),(55,0,'gallery-38','gallery-38',6,'image/jpeg',12537,'gallery/gallery-38.jpg','[]','2026-05-28 18:58:02','2026-05-28 18:58:02',NULL,'public'),(56,0,'gallery-39','gallery-39',6,'image/jpeg',12537,'gallery/gallery-39.jpg','[]','2026-05-28 18:58:02','2026-05-28 18:58:02',NULL,'public'),(57,0,'gallery-40','gallery-40',6,'image/jpeg',12537,'gallery/gallery-40.jpg','[]','2026-05-28 18:58:02','2026-05-28 18:58:02',NULL,'public'),(58,0,'gallery-41','gallery-41',6,'image/jpeg',12537,'gallery/gallery-41.jpg','[]','2026-05-28 18:58:02','2026-05-28 18:58:02',NULL,'public');
+/*!40000 ALTER TABLE `media_files` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `media_folder_permissions`
+--
+
+DROP TABLE IF EXISTS `media_folder_permissions`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `media_folder_permissions` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `folder_id` bigint unsigned NOT NULL,
+  `user_id` bigint unsigned NOT NULL,
+  `permission` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'view',
+  `granted_by` bigint unsigned DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `media_folder_permissions_folder_id_user_id_unique` (`folder_id`,`user_id`),
+  KEY `media_folder_permissions_folder_id_index` (`folder_id`),
+  KEY `media_folder_permissions_user_id_index` (`user_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `media_folder_permissions`
+--
+
+LOCK TABLES `media_folder_permissions` WRITE;
+/*!40000 ALTER TABLE `media_folder_permissions` DISABLE KEYS */;
+/*!40000 ALTER TABLE `media_folder_permissions` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `media_folders`
+--
+
+DROP TABLE IF EXISTS `media_folders`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `media_folders` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `user_id` bigint unsigned NOT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `color` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `slug` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `parent_id` bigint unsigned NOT NULL DEFAULT '0',
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `deleted_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `media_folders_user_id_index` (`user_id`),
+  KEY `media_folders_index` (`parent_id`,`user_id`,`created_at`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `media_folders`
+--
+
+LOCK TABLES `media_folders` WRITE;
+/*!40000 ALTER TABLE `media_folders` DISABLE KEYS */;
+INSERT INTO `media_folders` VALUES (1,0,'payments',NULL,'payments',0,'2026-05-28 18:57:42','2026-05-28 18:57:42',NULL),(2,0,'products',NULL,'products',0,'2026-05-28 18:57:45','2026-05-28 18:57:45',NULL),(3,0,'testimonials',NULL,'testimonials',0,'2026-05-28 18:58:02','2026-05-28 18:58:02',NULL),(4,0,'member',NULL,'member',0,'2026-05-28 18:58:02','2026-05-28 18:58:02',NULL),(5,0,'section',NULL,'section',0,'2026-05-28 18:58:02','2026-05-28 18:58:02',NULL),(6,0,'gallery',NULL,'gallery',0,'2026-05-28 18:58:02','2026-05-28 18:58:02',NULL);
+/*!40000 ALTER TABLE `media_folders` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `media_settings`
+--
+
+DROP TABLE IF EXISTS `media_settings`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `media_settings` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `key` varchar(120) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `value` text COLLATE utf8mb4_unicode_ci,
+  `media_id` bigint unsigned DEFAULT NULL,
+  `user_id` bigint unsigned DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `media_settings`
+--
+
+LOCK TABLES `media_settings` WRITE;
+/*!40000 ALTER TABLE `media_settings` DISABLE KEYS */;
+/*!40000 ALTER TABLE `media_settings` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `menu_locations`
+--
+
+DROP TABLE IF EXISTS `menu_locations`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `menu_locations` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `menu_id` bigint unsigned NOT NULL,
+  `location` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `menu_locations_menu_id_created_at_index` (`menu_id`,`created_at`)
+) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `menu_locations`
+--
+
+LOCK TABLES `menu_locations` WRITE;
+/*!40000 ALTER TABLE `menu_locations` DISABLE KEYS */;
+INSERT INTO `menu_locations` VALUES (1,1,'main-menu','2026-05-28 18:58:02','2026-05-28 18:58:02'),(2,2,'footer-menu-1','2026-05-28 18:58:03','2026-05-28 18:58:03'),(3,3,'footer-menu-2','2026-05-28 18:58:03','2026-05-28 18:58:03'),(4,4,'main-menu','2026-05-28 18:58:03','2026-05-28 18:58:03'),(5,5,'footer-menu-1','2026-05-28 18:58:03','2026-05-28 18:58:03'),(6,6,'footer-menu-2','2026-05-28 18:58:03','2026-05-28 18:58:03'),(7,7,'main-menu','2026-05-28 18:58:03','2026-05-28 18:58:03'),(8,8,'footer-menu-1','2026-05-28 18:58:03','2026-05-28 18:58:03'),(9,9,'footer-menu-2','2026-05-28 18:58:03','2026-05-28 18:58:03'),(10,10,'main-menu','2026-05-28 18:58:03','2026-05-28 18:58:03'),(11,11,'footer-menu-1','2026-05-28 18:58:03','2026-05-28 18:58:03'),(12,12,'footer-menu-2','2026-05-28 18:58:03','2026-05-28 18:58:03'),(13,13,'main-menu','2026-05-28 18:58:03','2026-05-28 18:58:03'),(14,14,'footer-menu-1','2026-05-28 18:58:03','2026-05-28 18:58:03'),(15,15,'footer-menu-2','2026-05-28 18:58:03','2026-05-28 18:58:03'),(16,16,'main-menu','2026-05-28 18:58:03','2026-05-28 18:58:03'),(17,17,'footer-menu-1','2026-05-28 18:58:03','2026-05-28 18:58:03'),(18,18,'footer-menu-2','2026-05-28 18:58:03','2026-05-28 18:58:03');
+/*!40000 ALTER TABLE `menu_locations` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `menu_nodes`
+--
+
+DROP TABLE IF EXISTS `menu_nodes`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `menu_nodes` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `menu_id` bigint unsigned NOT NULL,
+  `parent_id` bigint unsigned NOT NULL DEFAULT '0',
+  `reference_id` bigint unsigned DEFAULT NULL,
+  `reference_type` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `url` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `icon_font` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `position` tinyint unsigned NOT NULL DEFAULT '0',
+  `title` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `css_class` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `target` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '_self',
+  `has_child` tinyint unsigned NOT NULL DEFAULT '0',
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `menu_nodes_menu_id_index` (`menu_id`),
+  KEY `menu_nodes_parent_id_index` (`parent_id`),
+  KEY `reference_id` (`reference_id`),
+  KEY `reference_type` (`reference_type`)
+) ENGINE=InnoDB AUTO_INCREMENT=211 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `menu_nodes`
+--
+
+LOCK TABLES `menu_nodes` WRITE;
+/*!40000 ALTER TABLE `menu_nodes` DISABLE KEYS */;
+INSERT INTO `menu_nodes` VALUES (1,1,0,NULL,NULL,'https://amerce.botble.com',NULL,0,'Home','has-mega-menu','_self',1,'2026-05-28 18:58:02','2026-05-28 18:58:02'),(2,1,1,NULL,NULL,'https://amerce.botble.com',NULL,0,'Main Demo',NULL,'_self',0,'2026-05-28 18:58:02','2026-05-28 18:58:02'),(3,1,1,NULL,NULL,'https://amerce-mental.botble.com',NULL,1,'Home Mental',NULL,'_self',0,'2026-05-28 18:58:02','2026-05-28 18:58:02'),(4,1,1,NULL,NULL,'https://amerce-electronics.botble.com',NULL,2,'Home Electronics',NULL,'_self',0,'2026-05-28 18:58:02','2026-05-28 18:58:02'),(5,1,1,NULL,NULL,'https://amerce-pod.botble.com',NULL,3,'Home POD',NULL,'_self',0,'2026-05-28 18:58:02','2026-05-28 18:58:02'),(6,1,1,NULL,NULL,'https://amerce-pet-care.botble.com',NULL,4,'Home Pet Care',NULL,'_self',0,'2026-05-28 18:58:02','2026-05-28 18:58:02'),(7,1,1,NULL,NULL,'https://amerce-baby.botble.com',NULL,5,'Home Baby',NULL,'_self',0,'2026-05-28 18:58:02','2026-05-28 18:58:02'),(8,1,1,NULL,NULL,'https://amerce-auto.botble.com',NULL,6,'Home Auto',NULL,'_self',0,'2026-05-28 18:58:02','2026-05-28 18:58:02'),(9,1,1,NULL,NULL,'https://amerce-decor.botble.com',NULL,7,'Home Decor',NULL,'_self',0,'2026-05-28 18:58:02','2026-05-28 18:58:02'),(10,1,1,NULL,NULL,'https://amerce-cosmetic.botble.com',NULL,8,'Home Cosmetic',NULL,'_self',0,'2026-05-28 18:58:02','2026-05-28 18:58:02'),(11,1,1,NULL,NULL,'https://amerce-organic.botble.com',NULL,9,'Home Organic',NULL,'_self',0,'2026-05-28 18:58:02','2026-05-28 18:58:02'),(12,1,1,NULL,NULL,'https://amerce-fashion.botble.com',NULL,10,'Home Fashion',NULL,'_self',0,'2026-05-28 18:58:02','2026-05-28 18:58:02'),(13,1,1,NULL,NULL,'https://amerce-headphone.botble.com',NULL,11,'Home Headphone',NULL,'_self',0,'2026-05-28 18:58:02','2026-05-28 18:58:02'),(14,1,1,NULL,NULL,'https://amerce-jewelry.botble.com',NULL,12,'Home Jewelry',NULL,'_self',0,'2026-05-28 18:58:02','2026-05-28 18:58:02'),(15,1,1,NULL,NULL,'https://amerce-garden.botble.com',NULL,13,'Home Garden',NULL,'_self',0,'2026-05-28 18:58:02','2026-05-28 18:58:02'),(16,1,1,NULL,NULL,'https://amerce-construct.botble.com',NULL,14,'Home Construct',NULL,'_self',0,'2026-05-28 18:58:02','2026-05-28 18:58:02'),(17,1,1,NULL,NULL,'https://amerce-furniture.botble.com',NULL,15,'Home Furniture',NULL,'_self',0,'2026-05-28 18:58:02','2026-05-28 18:58:02'),(18,1,1,NULL,NULL,'https://amerce-fashion-2.botble.com',NULL,16,'Home Fashion 2',NULL,'_self',0,'2026-05-28 18:58:02','2026-05-28 18:58:02'),(19,1,1,NULL,NULL,'https://amerce-bag.botble.com',NULL,17,'Home Bag',NULL,'_self',0,'2026-05-28 18:58:02','2026-05-28 18:58:02'),(20,1,1,NULL,NULL,'https://amerce-sport.botble.com',NULL,18,'Home Sport',NULL,'_self',0,'2026-05-28 18:58:02','2026-05-28 18:58:02'),(21,1,1,NULL,NULL,'https://amerce-office.botble.com',NULL,19,'Home Office',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(22,1,1,NULL,NULL,'https://amerce-sneaker.botble.com',NULL,20,'Home Sneaker',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(23,1,0,NULL,NULL,'/products',NULL,1,'Shop','has-mega-menu','_self',1,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(24,1,23,NULL,NULL,'#',NULL,0,'Shop Layout',NULL,'_self',1,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(25,1,24,NULL,NULL,'/products',NULL,0,'Default',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(26,1,24,NULL,NULL,'/products?layout=left-sidebar',NULL,1,'Left Sidebar',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(27,1,24,NULL,NULL,'/products?layout=right-sidebar',NULL,2,'Right Sidebar',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(28,1,24,NULL,NULL,'/products?layout=full-width',NULL,3,'Full Width',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(29,1,24,NULL,NULL,'/products?layout=sub-collection',NULL,4,'Sub Collection',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(30,1,24,NULL,NULL,'/collections',NULL,5,'Collection List',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(31,1,23,NULL,NULL,'#',NULL,1,'View Style',NULL,'_self',1,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(32,1,31,NULL,NULL,'/products',NULL,0,'Default',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(33,1,31,NULL,NULL,'/products?layout=grid',NULL,1,'Grid View',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(34,1,31,NULL,NULL,'/products?layout=list',NULL,2,'List View',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(35,1,23,NULL,NULL,'#',NULL,2,'Browse',NULL,'_self',1,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(36,1,35,NULL,NULL,'/products',NULL,0,'All Products',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(37,1,35,NULL,NULL,'/products?source=latest',NULL,1,'New Arrivals',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(38,1,35,NULL,NULL,'/products?sort=best-seller',NULL,2,'Best Sellers',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(39,1,35,NULL,NULL,'/products?source=featured',NULL,3,'Featured',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(40,1,35,NULL,NULL,'/products?on_sale=1',NULL,4,'On Sale',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(41,1,0,NULL,NULL,'/products/lyocell-wrap-top',NULL,2,'Product','has-mega-menu','_self',1,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(42,1,41,NULL,NULL,'#',NULL,0,'Product Layout',NULL,'_self',1,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(43,1,42,NULL,NULL,'/products/lyocell-wrap-top',NULL,0,'Default',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(44,1,42,NULL,NULL,'/products/lyocell-wrap-top?layout=right-thumbnail',NULL,1,'Right Thumbnail',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(45,1,42,NULL,NULL,'/products/lyocell-wrap-top?layout=bottom-thumbnail',NULL,2,'Bottom Thumbnail',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(46,1,42,NULL,NULL,'/products/lyocell-wrap-top?layout=grid',NULL,3,'Product Grid',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(47,1,42,NULL,NULL,'/products/lyocell-wrap-top?layout=grid-2',NULL,4,'Product Grid 2',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(48,1,42,NULL,NULL,'/products/lyocell-wrap-top?layout=stacked',NULL,5,'Product Stacked',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(49,1,42,NULL,NULL,'/products/lyocell-wrap-top?layout=description-accordion',NULL,6,'Description Accordion',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(50,1,0,NULL,NULL,'/blog',NULL,3,'Blog',NULL,'_self',1,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(51,1,50,NULL,NULL,'/blog',NULL,0,'Blog',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(52,1,50,NULL,NULL,'/how-to-build-a-capsule-wardrobe-that-fits-your-lifestyle',NULL,1,'Blog Single',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(53,1,0,NULL,NULL,'/about',NULL,4,'Pages',NULL,'_self',1,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(54,1,53,NULL,NULL,'/about',NULL,0,'About Us',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(55,1,53,NULL,NULL,'/contact',NULL,1,'Contact Us',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(56,1,53,NULL,NULL,'/our-stores',NULL,2,'Our Store',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(57,1,53,NULL,NULL,'/orders/tracking',NULL,3,'Invoice',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(58,1,53,NULL,NULL,'/page-not-found',NULL,4,'404',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(59,1,53,NULL,NULL,'/compare/lyocell-wrap-top-vs-wool-midi-coat-vs-buttons-cotton-top',NULL,5,'Compare',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(60,1,53,NULL,NULL,'/customer/overview',NULL,6,'My Account',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(61,2,0,NULL,NULL,'/shipping',NULL,0,'Shipping',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(62,2,0,NULL,NULL,'/returns-refunds',NULL,1,'Return & Refund',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(63,2,0,NULL,NULL,'/privacy-policy',NULL,2,'Privacy Policy',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(64,2,0,NULL,NULL,'/terms-of-service',NULL,3,'Terms & Conditions',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(65,2,0,NULL,NULL,'/faq',NULL,4,'Orders FAQs',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(66,3,0,NULL,NULL,'/about',NULL,0,'About Us',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(67,3,0,NULL,NULL,'/our-stores',NULL,1,'Our Stories',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(68,3,0,NULL,NULL,'/contact',NULL,2,'Contact us',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(69,3,0,NULL,NULL,'/blog',NULL,3,'Latest New',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(70,3,0,NULL,NULL,'/customer/overview',NULL,4,'My Account',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(71,4,0,NULL,NULL,'/',NULL,0,'Trang chủ',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(72,4,0,NULL,NULL,'/products',NULL,1,'Mua sắm',NULL,'_self',1,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(73,4,72,NULL,NULL,'/products?source=latest',NULL,0,'Hàng mới về',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(74,4,72,NULL,NULL,'/products?sort=best-seller',NULL,1,'Bán chạy nhất',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(75,4,72,NULL,NULL,'/products?on_sale=1',NULL,2,'Giảm giá',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(76,4,72,NULL,NULL,'/products',NULL,3,'Tất cả sản phẩm',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(77,4,0,NULL,NULL,'/products',NULL,2,'Danh mục',NULL,'_self',1,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(78,4,77,NULL,NULL,'/product-categories/outerwear',NULL,0,'Áo khoác',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(79,4,77,NULL,NULL,'/product-categories/tops-shirts',NULL,1,'Áo & Sơ mi',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(80,4,77,NULL,NULL,'/product-categories/bottoms',NULL,2,'Quần & Váy',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(81,4,77,NULL,NULL,'/product-categories/dresses',NULL,3,'Đầm',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(82,4,77,NULL,NULL,'/product-categories/footwear',NULL,4,'Giày dép',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(83,4,77,NULL,NULL,'/product-categories/accessories',NULL,5,'Phụ kiện',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(84,4,0,NULL,NULL,'/brands',NULL,3,'Thương hiệu',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(85,4,0,NULL,NULL,'/blog',NULL,4,'Tạp chí',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(86,4,0,NULL,NULL,'/about',NULL,5,'Giới thiệu',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(87,4,0,NULL,NULL,'/contact',NULL,6,'Liên hệ',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(88,5,0,NULL,NULL,'/contact',NULL,0,'Liên hệ với chúng tôi',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(89,5,0,NULL,NULL,'/faq',NULL,1,'Câu hỏi thường gặp',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(90,5,0,NULL,NULL,'/shipping',NULL,2,'Vận chuyển',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(91,5,0,NULL,NULL,'/returns-refunds',NULL,3,'Đổi trả & Hoàn tiền',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(92,5,0,NULL,NULL,'/customer/orders',NULL,4,'Theo dõi đơn hàng',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(93,6,0,NULL,NULL,'/about',NULL,0,'Giới thiệu',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(94,6,0,NULL,NULL,'/our-stores',NULL,1,'Cửa hàng',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(95,6,0,NULL,NULL,'/sustainability',NULL,2,'Phát triển bền vững',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(96,6,0,NULL,NULL,'/careers',NULL,3,'Tuyển dụng',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(97,6,0,NULL,NULL,'/privacy-policy',NULL,4,'Chính sách bảo mật',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(98,6,0,NULL,NULL,'/terms-conditions',NULL,5,'Điều khoản & Điều kiện',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(99,7,0,NULL,NULL,'/',NULL,0,'الصفحة الرئيسية',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(100,7,0,NULL,NULL,'/products',NULL,1,'التسوق',NULL,'_self',1,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(101,7,100,NULL,NULL,'/products?source=latest',NULL,0,'الوافدون الجدد',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(102,7,100,NULL,NULL,'/products?sort=best-seller',NULL,1,'الأكثر مبيعًا',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(103,7,100,NULL,NULL,'/products?on_sale=1',NULL,2,'تخفيض',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(104,7,100,NULL,NULL,'/products',NULL,3,'جميع المنتجات',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(105,7,0,NULL,NULL,'/products',NULL,2,'فئة',NULL,'_self',1,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(106,7,105,NULL,NULL,'/product-categories/outerwear',NULL,0,'سترة',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(107,7,105,NULL,NULL,'/product-categories/tops-shirts',NULL,1,'قميص',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(108,7,105,NULL,NULL,'/product-categories/bottoms',NULL,2,'السراويل والتنانير',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(109,7,105,NULL,NULL,'/product-categories/dresses',NULL,3,'فستان',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(110,7,105,NULL,NULL,'/product-categories/footwear',NULL,4,'أحذية',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(111,7,105,NULL,NULL,'/product-categories/accessories',NULL,5,'ملحق',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(112,7,0,NULL,NULL,'/brands',NULL,3,'علامة تجارية',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(113,7,0,NULL,NULL,'/blog',NULL,4,'مجلة',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(114,7,0,NULL,NULL,'/about',NULL,5,'يقدم',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(115,7,0,NULL,NULL,'/contact',NULL,6,'اتصال',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(116,8,0,NULL,NULL,'/contact',NULL,0,'اتصل بنا',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(117,8,0,NULL,NULL,'/faq',NULL,1,'الأسئلة المتداولة',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(118,8,0,NULL,NULL,'/shipping',NULL,2,'ينقل',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(119,8,0,NULL,NULL,'/returns-refunds',NULL,3,'العوائد والمبالغ المستردة',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(120,8,0,NULL,NULL,'/customer/orders',NULL,4,'تتبع الطلب',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(121,9,0,NULL,NULL,'/about',NULL,0,'يقدم',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(122,9,0,NULL,NULL,'/our-stores',NULL,1,'محل',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(123,9,0,NULL,NULL,'/sustainability',NULL,2,'التنمية المستدامة',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(124,9,0,NULL,NULL,'/careers',NULL,3,'توظيف',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(125,9,0,NULL,NULL,'/privacy-policy',NULL,4,'سياسة الخصوصية',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(126,9,0,NULL,NULL,'/terms-conditions',NULL,5,'الشروط والأحكام',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(127,10,0,NULL,NULL,'/',NULL,0,'Page d\'accueil',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(128,10,0,NULL,NULL,'/products',NULL,1,'Achats',NULL,'_self',1,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(129,10,128,NULL,NULL,'/products?source=latest',NULL,0,'Nouveautés',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(130,10,128,NULL,NULL,'/products?sort=best-seller',NULL,1,'Meilleur vendeur',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(131,10,128,NULL,NULL,'/products?on_sale=1',NULL,2,'Rabais',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(132,10,128,NULL,NULL,'/products',NULL,3,'Tous les produits',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(133,10,0,NULL,NULL,'/products',NULL,2,'Catégorie',NULL,'_self',1,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(134,10,133,NULL,NULL,'/product-categories/outerwear',NULL,0,'Veste',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(135,10,133,NULL,NULL,'/product-categories/tops-shirts',NULL,1,'Chemise',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(136,10,133,NULL,NULL,'/product-categories/bottoms',NULL,2,'Pantalons et jupes',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(137,10,133,NULL,NULL,'/product-categories/dresses',NULL,3,'Robe',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(138,10,133,NULL,NULL,'/product-categories/footwear',NULL,4,'Chaussures',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(139,10,133,NULL,NULL,'/product-categories/accessories',NULL,5,'Accessoire',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(140,10,0,NULL,NULL,'/brands',NULL,3,'Marque déposée',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(141,10,0,NULL,NULL,'/blog',NULL,4,'Revue',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(142,10,0,NULL,NULL,'/about',NULL,5,'Introduire',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(143,10,0,NULL,NULL,'/contact',NULL,6,'Contact',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(144,11,0,NULL,NULL,'/contact',NULL,0,'Contactez-nous',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(145,11,0,NULL,NULL,'/faq',NULL,1,'Questions fréquemment posées',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(146,11,0,NULL,NULL,'/shipping',NULL,2,'Transport',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(147,11,0,NULL,NULL,'/returns-refunds',NULL,3,'Retours et remboursements',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(148,11,0,NULL,NULL,'/customer/orders',NULL,4,'Suivi des commandes',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(149,12,0,NULL,NULL,'/about',NULL,0,'Introduire',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(150,12,0,NULL,NULL,'/our-stores',NULL,1,'Boutique',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(151,12,0,NULL,NULL,'/sustainability',NULL,2,'Développement durable',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(152,12,0,NULL,NULL,'/careers',NULL,3,'Recrutement',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(153,12,0,NULL,NULL,'/privacy-policy',NULL,4,'Politique de confidentialité',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(154,12,0,NULL,NULL,'/terms-conditions',NULL,5,'Conditions générales',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(155,13,0,NULL,NULL,'/',NULL,0,'Halaman rumah',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(156,13,0,NULL,NULL,'/products',NULL,1,'Belanja',NULL,'_self',1,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(157,13,156,NULL,NULL,'/products?source=latest',NULL,0,'Pendatang baru',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(158,13,156,NULL,NULL,'/products?sort=best-seller',NULL,1,'Penjual terbaik',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(159,13,156,NULL,NULL,'/products?on_sale=1',NULL,2,'Diskon',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(160,13,156,NULL,NULL,'/products',NULL,3,'Semua produk',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(161,13,0,NULL,NULL,'/products',NULL,2,'Kategori',NULL,'_self',1,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(162,13,161,NULL,NULL,'/product-categories/outerwear',NULL,0,'Jaket',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(163,13,161,NULL,NULL,'/product-categories/tops-shirts',NULL,1,'Kemeja',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(164,13,161,NULL,NULL,'/product-categories/bottoms',NULL,2,'Celana & Rok',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(165,13,161,NULL,NULL,'/product-categories/dresses',NULL,3,'Gaun',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(166,13,161,NULL,NULL,'/product-categories/footwear',NULL,4,'Sepatu',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(167,13,161,NULL,NULL,'/product-categories/accessories',NULL,5,'Aksesori',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(168,13,0,NULL,NULL,'/brands',NULL,3,'Merek dagang',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(169,13,0,NULL,NULL,'/blog',NULL,4,'Majalah',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(170,13,0,NULL,NULL,'/about',NULL,5,'Memperkenalkan',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(171,13,0,NULL,NULL,'/contact',NULL,6,'Kontak',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(172,14,0,NULL,NULL,'/contact',NULL,0,'Hubungi kami',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(173,14,0,NULL,NULL,'/faq',NULL,1,'Pertanyaan yang sering diajukan',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(174,14,0,NULL,NULL,'/shipping',NULL,2,'Mengangkut',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(175,14,0,NULL,NULL,'/returns-refunds',NULL,3,'Pengembalian & Pengembalian Dana',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(176,14,0,NULL,NULL,'/customer/orders',NULL,4,'Pelacakan pesanan',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(177,15,0,NULL,NULL,'/about',NULL,0,'Memperkenalkan',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(178,15,0,NULL,NULL,'/our-stores',NULL,1,'Toko',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(179,15,0,NULL,NULL,'/sustainability',NULL,2,'Pembangunan berkelanjutan',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(180,15,0,NULL,NULL,'/careers',NULL,3,'Rekrutmen',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(181,15,0,NULL,NULL,'/privacy-policy',NULL,4,'Kebijakan privasi',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(182,15,0,NULL,NULL,'/terms-conditions',NULL,5,'Syarat & Ketentuan',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(183,16,0,NULL,NULL,'/',NULL,0,'Ana sayfa',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(184,16,0,NULL,NULL,'/products',NULL,1,'Alışveriş',NULL,'_self',1,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(185,16,184,NULL,NULL,'/products?source=latest',NULL,0,'Yeni gelenler',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(186,16,184,NULL,NULL,'/products?sort=best-seller',NULL,1,'En çok satan kitap',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(187,16,184,NULL,NULL,'/products?on_sale=1',NULL,2,'İndirim',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(188,16,184,NULL,NULL,'/products',NULL,3,'Tüm ürünler',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(189,16,0,NULL,NULL,'/products',NULL,2,'Kategori',NULL,'_self',1,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(190,16,189,NULL,NULL,'/product-categories/outerwear',NULL,0,'Ceket',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(191,16,189,NULL,NULL,'/product-categories/tops-shirts',NULL,1,'Gömlek',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(192,16,189,NULL,NULL,'/product-categories/bottoms',NULL,2,'Pantolon ve Etekler',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(193,16,189,NULL,NULL,'/product-categories/dresses',NULL,3,'Elbise',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(194,16,189,NULL,NULL,'/product-categories/footwear',NULL,4,'Ayakkabı',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(195,16,189,NULL,NULL,'/product-categories/accessories',NULL,5,'Aksesuar',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(196,16,0,NULL,NULL,'/brands',NULL,3,'Ticari marka',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(197,16,0,NULL,NULL,'/blog',NULL,4,'Dergi',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(198,16,0,NULL,NULL,'/about',NULL,5,'Tanıtmak',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(199,16,0,NULL,NULL,'/contact',NULL,6,'Temas etmek',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(200,17,0,NULL,NULL,'/contact',NULL,0,'Bize Ulaşın',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(201,17,0,NULL,NULL,'/faq',NULL,1,'Sık sorulan sorular',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(202,17,0,NULL,NULL,'/shipping',NULL,2,'Taşıma',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(203,17,0,NULL,NULL,'/returns-refunds',NULL,3,'İade ve Para İadeleri',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(204,17,0,NULL,NULL,'/customer/orders',NULL,4,'Sipariş takibi',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(205,18,0,NULL,NULL,'/about',NULL,0,'Tanıtmak',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(206,18,0,NULL,NULL,'/our-stores',NULL,1,'Mağaza',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(207,18,0,NULL,NULL,'/sustainability',NULL,2,'Sürdürülebilir kalkınma',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(208,18,0,NULL,NULL,'/careers',NULL,3,'işe alım',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(209,18,0,NULL,NULL,'/privacy-policy',NULL,4,'Gizlilik politikası',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03'),(210,18,0,NULL,NULL,'/terms-conditions',NULL,5,'Şartlar ve Koşullar',NULL,'_self',0,'2026-05-28 18:58:03','2026-05-28 18:58:03');
+/*!40000 ALTER TABLE `menu_nodes` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `menus`
+--
+
+DROP TABLE IF EXISTS `menus`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `menus` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(120) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `slug` varchar(120) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `status` varchar(60) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'published',
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `menus_slug_unique` (`slug`)
+) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `menus`
+--
+
+LOCK TABLES `menus` WRITE;
+/*!40000 ALTER TABLE `menus` DISABLE KEYS */;
+INSERT INTO `menus` VALUES (1,'Main Menu','main-menu','published','2026-05-28 18:58:02','2026-05-28 18:58:02'),(2,'Footer Help','footer-help','published','2026-05-28 18:58:03','2026-05-28 18:58:03'),(3,'Footer Company','footer-company','published','2026-05-28 18:58:03','2026-05-28 18:58:03'),(4,'Menu chính','main-menu-vi','published','2026-05-28 18:58:03','2026-05-28 18:58:03'),(5,'Hỗ trợ','footer-help-vi','published','2026-05-28 18:58:03','2026-05-28 18:58:03'),(6,'Công ty','footer-company-vi','published','2026-05-28 18:58:03','2026-05-28 18:58:03'),(7,'القائمة الرئيسية','main-menu-ar','published','2026-05-28 18:58:03','2026-05-28 18:58:03'),(8,'مساعدة التذييل','footer-help-ar','published','2026-05-28 18:58:03','2026-05-28 18:58:03'),(9,'شركة التذييل','footer-company-ar','published','2026-05-28 18:58:03','2026-05-28 18:58:03'),(10,'menu principal','main-menu-fr','published','2026-05-28 18:58:03','2026-05-28 18:58:03'),(11,'aide-pied de page','footer-help-fr','published','2026-05-28 18:58:03','2026-05-28 18:58:03'),(12,'société de pied de page','footer-company-fr','published','2026-05-28 18:58:03','2026-05-28 18:58:03'),(13,'menu utama','main-menu-id','published','2026-05-28 18:58:03','2026-05-28 18:58:03'),(14,'bantuan footer','footer-help-id','published','2026-05-28 18:58:03','2026-05-28 18:58:03'),(15,'perusahaan footer','footer-company-id','published','2026-05-28 18:58:03','2026-05-28 18:58:03'),(16,'ana menü','main-menu-tr','published','2026-05-28 18:58:03','2026-05-28 18:58:03'),(17,'alt bilgi yardımı','footer-help-tr','published','2026-05-28 18:58:03','2026-05-28 18:58:03'),(18,'alt bilgi şirketi','footer-company-tr','published','2026-05-28 18:58:03','2026-05-28 18:58:03');
+/*!40000 ALTER TABLE `menus` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `meta_boxes`
+--
+
+DROP TABLE IF EXISTS `meta_boxes`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `meta_boxes` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `meta_key` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `meta_value` text COLLATE utf8mb4_unicode_ci,
+  `reference_id` bigint unsigned NOT NULL,
+  `reference_type` varchar(120) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `meta_boxes_reference_id_index` (`reference_id`),
+  KEY `meta_boxes_ref_idx` (`reference_id`,`reference_type`)
+) ENGINE=InnoDB AUTO_INCREMENT=28 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `meta_boxes`
+--
+
+LOCK TABLES `meta_boxes` WRITE;
+/*!40000 ALTER TABLE `meta_boxes` DISABLE KEYS */;
+INSERT INTO `meta_boxes` VALUES (1,'subtitle','[\"Elevate Your Game Today\"]',1,'Botble\\SimpleSlider\\Models\\SimpleSliderItem','2026-05-28 18:57:45','2026-05-28 18:57:45'),(2,'button_label','[\"Shop Styles\"]',1,'Botble\\SimpleSlider\\Models\\SimpleSliderItem','2026-05-28 18:57:45','2026-05-28 18:57:45'),(3,'alignment','[\"center\"]',1,'Botble\\SimpleSlider\\Models\\SimpleSliderItem','2026-05-28 18:57:45','2026-05-28 18:57:45'),(4,'subtitle','[\"Move with Confidence\"]',2,'Botble\\SimpleSlider\\Models\\SimpleSliderItem','2026-05-28 18:57:45','2026-05-28 18:57:45'),(5,'button_label','[\"Shop Styles\"]',2,'Botble\\SimpleSlider\\Models\\SimpleSliderItem','2026-05-28 18:57:45','2026-05-28 18:57:45'),(6,'alignment','[\"center\"]',2,'Botble\\SimpleSlider\\Models\\SimpleSliderItem','2026-05-28 18:57:45','2026-05-28 18:57:45'),(7,'subtitle','[\"Built for Motion\"]',3,'Botble\\SimpleSlider\\Models\\SimpleSliderItem','2026-05-28 18:57:45','2026-05-28 18:57:45'),(8,'button_label','[\"Shop Styles\"]',3,'Botble\\SimpleSlider\\Models\\SimpleSliderItem','2026-05-28 18:57:45','2026-05-28 18:57:45'),(9,'alignment','[\"center\"]',3,'Botble\\SimpleSlider\\Models\\SimpleSliderItem','2026-05-28 18:57:45','2026-05-28 18:57:45'),(10,'faq_ids','[[4,7,10,11,13]]',1,'Botble\\Ecommerce\\Models\\Product','2026-05-28 18:57:52','2026-05-28 18:57:52'),(11,'faq_ids','[[1,3,5,8,11]]',2,'Botble\\Ecommerce\\Models\\Product','2026-05-28 18:57:52','2026-05-28 18:57:52'),(12,'faq_ids','[[3,4,5,6,7]]',3,'Botble\\Ecommerce\\Models\\Product','2026-05-28 18:57:52','2026-05-28 18:57:52'),(13,'faq_ids','[[1,5,7,8,10]]',4,'Botble\\Ecommerce\\Models\\Product','2026-05-28 18:57:52','2026-05-28 18:57:52'),(14,'faq_ids','[[2,3,6,7,10]]',5,'Botble\\Ecommerce\\Models\\Product','2026-05-28 18:57:52','2026-05-28 18:57:52'),(15,'faq_ids','[[5,6,9,12,13]]',6,'Botble\\Ecommerce\\Models\\Product','2026-05-28 18:57:52','2026-05-28 18:57:52'),(16,'faq_ids','[[3,6,7,10,12]]',7,'Botble\\Ecommerce\\Models\\Product','2026-05-28 18:57:52','2026-05-28 18:57:52'),(17,'faq_ids','[[5,6,7,11,13]]',8,'Botble\\Ecommerce\\Models\\Product','2026-05-28 18:57:52','2026-05-28 18:57:52'),(18,'faq_ids','[[2,3,9,11,12]]',9,'Botble\\Ecommerce\\Models\\Product','2026-05-28 18:57:53','2026-05-28 18:57:53'),(19,'faq_ids','[[2,3,4,6,13]]',10,'Botble\\Ecommerce\\Models\\Product','2026-05-28 18:57:53','2026-05-28 18:57:53'),(20,'faq_ids','[[1,2,3,4,9]]',11,'Botble\\Ecommerce\\Models\\Product','2026-05-28 18:57:53','2026-05-28 18:57:53'),(21,'faq_ids','[[1,4,5,6,10]]',12,'Botble\\Ecommerce\\Models\\Product','2026-05-28 18:57:53','2026-05-28 18:57:53'),(22,'faq_ids','[[1,5,6,8,11]]',13,'Botble\\Ecommerce\\Models\\Product','2026-05-28 18:57:53','2026-05-28 18:57:53'),(23,'faq_ids','[[1,3,6,11,12]]',14,'Botble\\Ecommerce\\Models\\Product','2026-05-28 18:57:53','2026-05-28 18:57:53'),(24,'faq_ids','[[4,6,8,10,12]]',15,'Botble\\Ecommerce\\Models\\Product','2026-05-28 18:57:53','2026-05-28 18:57:53'),(25,'faq_ids','[[1,4,8,10,13]]',16,'Botble\\Ecommerce\\Models\\Product','2026-05-28 18:57:53','2026-05-28 18:57:53'),(26,'faq_ids','[[2,3,9,10,13]]',17,'Botble\\Ecommerce\\Models\\Product','2026-05-28 18:57:53','2026-05-28 18:57:53'),(27,'faq_ids','[[1,4,8,12,13]]',18,'Botble\\Ecommerce\\Models\\Product','2026-05-28 18:57:53','2026-05-28 18:57:53');
+/*!40000 ALTER TABLE `meta_boxes` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `migrations`
+--
+
+DROP TABLE IF EXISTS `migrations`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `migrations` (
+  `id` int unsigned NOT NULL AUTO_INCREMENT,
+  `migration` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `batch` int NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=335 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `migrations`
+--
+
+LOCK TABLES `migrations` WRITE;
+/*!40000 ALTER TABLE `migrations` DISABLE KEYS */;
+INSERT INTO `migrations` VALUES (1,'0001_01_01_000001_create_cache_table',1),(2,'2013_04_09_032329_create_base_tables',1),(3,'2013_04_09_062329_create_revisions_table',1),(4,'2014_10_12_000000_create_users_table',1),(5,'2014_10_12_100000_create_password_reset_tokens_table',1),(6,'2015_06_18_033822_create_blog_table',1),(7,'2015_06_29_025744_create_audit_history',1),(8,'2016_05_28_112028_create_system_request_logs_table',1),(9,'2016_06_10_230148_create_acl_tables',1),(10,'2016_06_14_230857_create_menus_table',1),(11,'2016_06_17_091537_create_contacts_table',1),(12,'2016_06_28_221418_create_pages_table',1),(13,'2016_10_03_032336_create_languages_table',1),(14,'2016_10_05_074239_create_setting_table',1),(15,'2016_10_07_193005_create_translations_table',1),(16,'2016_10_13_150201_create_galleries_table',1),(17,'2016_11_28_032840_create_dashboard_widget_tables',1),(18,'2016_12_16_084601_create_widgets_table',1),(19,'2017_05_09_070343_create_media_tables',1),(20,'2017_05_18_080441_create_payment_tables',1),(21,'2017_07_11_140018_create_simple_slider_table',1),(22,'2017_10_24_154832_create_newsletter_table',1),(23,'2017_11_03_070450_create_slug_table',1),(24,'2018_07_09_214610_create_testimonial_table',1),(25,'2018_07_09_221238_create_faq_table',1),(26,'2019_01_05_053554_create_jobs_table',1),(27,'2019_08_19_000000_create_failed_jobs_table',1),(28,'2019_11_18_061011_create_country_table',1),(29,'2019_12_14_000001_create_personal_access_tokens_table',1),(30,'2020_03_05_041139_create_ecommerce_tables',1),(31,'2020_11_18_150916_ads_create_ads_table',1),(32,'2021_01_01_044147_ecommerce_create_flash_sale_table',1),(33,'2021_01_17_082713_add_column_is_featured_to_product_collections_table',1),(34,'2021_01_18_024333_add_zip_code_into_table_customer_addresses',1),(35,'2021_02_16_092633_remove_default_value_for_author_type',1),(36,'2021_02_18_073505_update_table_ec_reviews',1),(37,'2021_03_10_024419_add_column_confirmed_at_to_table_ec_customers',1),(38,'2021_03_10_025153_change_column_tax_amount',1),(39,'2021_03_20_033103_add_column_availability_to_table_ec_products',1),(40,'2021_03_27_144913_add_customer_type_into_table_payments',1),(41,'2021_04_28_074008_ecommerce_create_product_label_table',1),(42,'2021_05_24_034720_make_column_currency_nullable',1),(43,'2021_05_31_173037_ecommerce_create_ec_products_translations',1),(44,'2021_07_06_030002_create_marketplace_table',1),(45,'2021_08_09_161302_add_metadata_column_to_payments_table',1),(46,'2021_08_17_105016_remove_column_currency_id_in_some_tables',1),(47,'2021_08_30_142128_add_images_column_to_ec_reviews_table',1),(48,'2021_09_04_150137_add_vendor_verified_at_to_ec_customers_table',1),(49,'2021_10_04_030050_add_column_created_by_to_table_ec_products',1),(50,'2021_10_04_033903_add_column_approved_by_into_table_ec_products',1),(51,'2021_10_05_122616_add_status_column_to_ec_customers_table',1),(52,'2021_10_06_124943_add_transaction_id_column_to_mp_customer_withdrawals_table',1),(53,'2021_10_10_054216_add_columns_to_mp_customer_revenues_table',1),(54,'2021_10_19_020859_update_metadata_field',1),(55,'2021_10_25_021023_fix-priority-load-for-language-advanced',1),(56,'2021_11_03_025806_nullable_phone_number_in_ec_customer_addresses',1),(57,'2021_11_23_071403_correct_languages_for_product_variations',1),(58,'2021_11_28_031808_add_product_tags_translations',1),(59,'2021_12_01_031123_add_featured_image_to_ec_products',1),(60,'2021_12_02_035301_add_ads_translations_table',1),(61,'2021_12_03_030600_create_blog_translations',1),(62,'2021_12_03_075608_create_page_translations',1),(63,'2021_12_03_082134_create_faq_translations',1),(64,'2021_12_03_082953_create_gallery_translations',1),(65,'2021_12_03_083642_create_testimonials_translations',1),(66,'2021_12_03_084118_create_location_translations',1),(67,'2021_12_03_094518_migrate_old_location_data',1),(68,'2021_12_06_031304_update_table_mp_customer_revenues',1),(69,'2021_12_10_034440_switch_plugin_location_to_use_language_advanced',1),(70,'2022_01_01_033107_update_table_ec_shipments',1),(71,'2022_01_16_085908_improve_plugin_location',1),(72,'2022_02_16_042457_improve_product_attribute_sets',1),(73,'2022_03_22_075758_correct_product_name',1),(74,'2022_04_19_113334_add_index_to_ec_products',1),(75,'2022_04_19_113923_add_index_to_table_posts',1),(76,'2022_04_20_100851_add_index_to_media_table',1),(77,'2022_04_20_101046_add_index_to_menu_table',1),(78,'2022_04_28_144405_remove_unused_table',1),(79,'2022_04_30_034048_create_gallery_meta_translations_table',1),(80,'2022_05_05_115015_create_ec_customer_recently_viewed_products_table',1),(81,'2022_05_18_143720_add_index_to_table_ec_product_categories',1),(82,'2022_06_16_095633_add_index_to_some_tables',1),(83,'2022_06_28_151901_activate_paypal_stripe_plugin',1),(84,'2022_06_30_035148_create_order_referrals_table',1),(85,'2022_07_07_153354_update_charge_id_in_table_payments',1),(86,'2022_07_10_034813_move_lang_folder_to_root',1),(87,'2022_07_24_153815_add_completed_at_to_ec_orders_table',1),(88,'2022_08_04_051940_add_missing_column_expires_at',1),(89,'2022_08_04_052122_delete_location_backup_tables',1),(90,'2022_08_14_032836_create_ec_order_returns_table',1),(91,'2022_08_14_033554_create_ec_order_return_items_table',1),(92,'2022_08_15_040324_add_billing_address',1),(93,'2022_08_30_091114_support_digital_products_table',1),(94,'2022_09_01_000001_create_admin_notifications_tables',1),(95,'2022_09_13_095744_create_options_table',1),(96,'2022_09_13_104347_create_option_value_table',1),(97,'2022_10_05_163518_alter_table_ec_order_product',1),(98,'2022_10_12_041517_create_invoices_table',1),(99,'2022_10_12_142226_update_orders_table',1),(100,'2022_10_13_024916_update_table_order_returns',1),(101,'2022_10_14_024629_drop_column_is_featured',1),(102,'2022_10_19_152916_add_columns_to_mp_stores_table',1),(103,'2022_10_20_062849_create_mp_category_sale_commissions_table',1),(104,'2022_10_21_030830_update_columns_in_ec_shipments_table',1),(105,'2022_10_28_021046_update_columns_in_ec_shipments_table',1),(106,'2022_11_02_071413_add_more_info_for_store',1),(107,'2022_11_02_080444_add_tax_info',1),(108,'2022_11_16_034522_update_type_column_in_ec_shipping_rules_table',1),(109,'2022_11_18_063357_add_missing_timestamp_in_table_settings',1),(110,'2022_11_19_041643_add_ec_tax_product_table',1),(111,'2022_12_02_093615_update_slug_index_columns',1),(112,'2022_12_12_063830_update_tax_defadult_in_ec_tax_products_table',1),(113,'2022_12_17_041532_fix_address_in_order_invoice',1),(114,'2022_12_26_070329_create_ec_product_views_table',1),(115,'2023_01_04_033051_fix_product_categories',1),(116,'2023_01_09_050400_add_ec_global_options_translations_table',1),(117,'2023_01_10_093754_add_missing_option_value_id',1),(118,'2023_01_17_082713_add_column_barcode_and_cost_per_item_to_product_table',1),(119,'2023_01_26_021854_add_ec_customer_used_coupons_table',1),(120,'2023_01_30_024431_add_alt_to_media_table',1),(121,'2023_02_01_062030_add_store_translations',1),(122,'2023_02_08_015900_update_options_column_in_ec_order_product_table',1),(123,'2023_02_13_032133_update_fee_column_mp_customer_revenues_table',1),(124,'2023_02_16_042611_drop_table_password_resets',1),(125,'2023_02_17_023648_fix_store_prefix',1),(126,'2023_02_27_095752_remove_duplicate_reviews',1),(127,'2023_03_20_115757_add_user_type_column_to_ec_shipment_histories_table',1),(128,'2023_04_17_062645_add_open_in_new_tab',1),(129,'2023_04_21_082427_create_ec_product_categorizables_table',1),(130,'2023_04_23_005903_add_column_permissions_to_admin_notifications',1),(131,'2023_04_23_061847_increase_state_translations_abbreviation_column',1),(132,'2023_05_03_011331_add_missing_column_price_into_invoice_items_table',1),(133,'2023_05_10_075124_drop_column_id_in_role_users_table',1),(134,'2023_05_17_025812_fix_invoice_issue',1),(135,'2023_05_26_073140_move_option_make_phone_field_optional_at_checkout_page_to_mandatory_fields',1),(136,'2023_05_27_144611_fix_exchange_rate_setting',1),(137,'2023_06_22_084331_add_generate_license_code_to_ec_products_table',1),(138,'2023_06_30_042512_create_ec_order_tax_information_table',1),(139,'2023_07_06_011444_create_slug_translations_table',1),(140,'2023_07_14_022724_remove_column_id_from_ec_product_collection_products',1),(141,'2023_07_26_041451_add_more_columns_to_location_table',1),(142,'2023_07_27_041451_add_more_columns_to_location_translation_table',1),(143,'2023_08_09_012940_remove_column_status_in_ec_product_attributes',1),(144,'2023_08_11_060908_create_announcements_table',1),(145,'2023_08_15_064505_create_ec_tax_rules_table',1),(146,'2023_08_15_073307_drop_unique_in_states_cities_translations',1),(147,'2023_08_21_021819_make_column_address_in_ec_customer_addresses_nullable',1),(148,'2023_08_21_090810_make_page_content_nullable',1),(149,'2023_08_22_094114_drop_unique_for_barcode',1),(150,'2023_08_29_074620_make_column_author_id_nullable',1),(151,'2023_08_29_075308_make_column_user_id_nullable',1),(152,'2023_08_30_031811_add_apply_via_url_column_to_ec_discounts_table',1),(153,'2023_09_07_094312_add_index_to_product_sku_and_translations',1),(154,'2023_09_14_021936_update_index_for_slugs_table',1),(155,'2023_09_14_022423_add_index_for_language_table',1),(156,'2023_09_19_024955_create_discount_product_categories_table',1),(157,'2023_10_17_070728_add_icon_and_icon_image_to_product_categories_table',1),(158,'2023_10_21_065016_make_state_id_in_table_cities_nullable',1),(159,'2023_11_07_023805_add_tablet_mobile_image',1),(160,'2023_11_10_080225_migrate_contact_blacklist_email_domains_to_core',1),(161,'2023_11_14_033417_change_request_column_in_table_audit_histories',1),(162,'2023_11_17_063408_add_description_column_to_faq_categories_table',1),(163,'2023_11_22_154643_add_unique_in_table_ec_products_variations',1),(164,'2023_11_27_032313_add_price_columns_to_ec_product_cross_sale_relations_table',1),(165,'2023_12_06_023945_add_display_on_checkout_column_to_ec_discounts_table',1),(166,'2023_12_07_095130_add_color_column_to_media_folders_table',1),(167,'2023_12_12_105220_drop_translations_table',1),(168,'2023_12_17_162208_make_sure_column_color_in_media_folders_nullable',1),(169,'2023_12_25_040604_ec_create_review_replies_table',1),(170,'2023_12_26_090340_add_private_notes_column_to_ec_customers_table',1),(171,'2024_01_15_000001_create_fob_product_size_guides_table',1),(172,'2024_01_15_000002_create_fob_product_size_guide_relations_table',1),(173,'2024_01_15_000003_create_fob_size_guide_headers_table',1),(174,'2024_01_15_000004_create_fob_size_guide_headers_translations_table',1),(175,'2024_01_16_070706_fix_translation_tables',1),(176,'2024_01_23_075227_add_proof_file_to_ec_orders_table',1),(177,'2024_03_14_041050_migrate_lazy_load_theme_options',1),(178,'2024_03_20_080001_migrate_change_attribute_email_to_nullable_form_contacts_table',1),(179,'2024_03_21_100334_update_section_title_shape',1),(180,'2024_03_25_000001_update_captcha_settings_for_contact',1),(181,'2024_03_25_000001_update_captcha_settings_for_newsletter',1),(182,'2024_03_26_041531_add_cancel_reason_to_ec_orders_table',1),(183,'2024_03_27_062402_create_ec_customer_deletion_requests_table',1),(184,'2024_03_29_042242_migrate_old_captcha_settings',1),(185,'2024_03_29_093946_create_ec_order_return_histories_table',1),(186,'2024_04_01_043317_add_google_adsense_slot_id_to_ads_table',1),(187,'2024_04_01_063523_add_customer_columns_to_ec_reviews_table',1),(188,'2024_04_03_062451_add_cover_image_to_table_mp_stores',1),(189,'2024_04_04_110758_update_value_column_in_user_meta_table',1),(190,'2024_04_15_092654_migrate_ecommerce_google_tag_manager_code_setting',1),(191,'2024_04_16_035713_add_min_max_order_quantity_columns_to_products_table',1),(192,'2024_04_19_063914_create_custom_fields_table',1),(193,'2024_04_27_100730_improve_analytics_setting',1),(194,'2024_05_07_073153_improve_table_wishlist',1),(195,'2024_05_07_082630_create_mp_messages_table',1),(196,'2024_05_07_093703_add_missing_zip_code_into_table_store_locators',1),(197,'2024_05_12_091229_add_column_visibility_to_table_media_files',1),(198,'2024_05_15_021503_fix_invoice_path',1),(199,'2024_06_20_160724_create_ec_shared_wishlists_table',1),(200,'2024_06_28_025104_add_notify_attachment_updated_column_to_ec_products_table',1),(201,'2024_07_03_030900_add_downloaded_at_column_to_ec_order_product_table',1),(202,'2024_07_04_083133_create_payment_logs_table',1),(203,'2024_07_07_091316_fix_column_url_in_menu_nodes_table',1),(204,'2024_07_12_100000_change_random_hash_for_media',1),(205,'2024_07_14_071826_make_customer_email_nullable',1),(206,'2024_07_15_104916_add_video_media_column_to_ec_products_table',1),(207,'2024_07_19_131849_add_documents_to_mp_stores_table',1),(208,'2024_07_26_052530_add_percentage_to_tax_rules_table',1),(209,'2024_07_30_091615_fix_order_column_in_categories_table',1),(210,'2024_08_14_123028_add_customer_delivered_confirmed_at_column_to_ec_shipments_table',1),(211,'2024_08_17_094600_add_image_into_countries',1),(212,'2024_08_18_083119_add_tax_id_column_to_mp_stores_table',1),(213,'2024_08_19_132849_create_specification_tables',1),(214,'2024_08_27_141244_add_block_reason_to_ec_customers_table',1),(215,'2024_09_07_060744_add_author_column_to_specification_tables',1),(216,'2024_09_14_064023_add_can_use_with_flash_sale_column_to_ec_discounts_table',1),(217,'2024_09_14_100108_add_stripe_connect_details_to_ec_customers_table',1),(218,'2024_09_17_125408_add_square_logo_to_stores_table',1),(219,'2024_09_25_073928_remove_wrong_product_slugs',1),(220,'2024_09_30_024515_create_sessions_table',1),(221,'2024_12_01_000000_add_indexes_to_blog_translations_tables',1),(222,'2024_12_01_000000_add_indexes_to_contact_translations_tables',1),(223,'2024_12_01_000000_add_indexes_to_ecommerce_translations_tables',1),(224,'2024_12_01_000000_add_indexes_to_faq_translations_tables',1),(225,'2024_12_01_000000_add_indexes_to_gallery_translations_tables',1),(226,'2024_12_01_000000_add_indexes_to_pages_translations_table',1),(227,'2024_12_01_000000_add_indexes_to_slugs_translations_table',1),(228,'2024_12_01_000000_add_indexes_to_testimonials_translations_table',1),(229,'2024_12_01_000000_add_key_prefix_index_to_slugs_table',1),(230,'2024_12_19_000001_create_device_tokens_table',1),(231,'2024_12_19_000002_create_push_notifications_table',1),(232,'2024_12_19_000003_create_push_notification_recipients_table',1),(233,'2024_12_30_000001_create_user_settings_table',1),(234,'2025_01_06_033807_add_default_value_for_categories_author_type',1),(235,'2025_01_08_093652_add_zip_code_to_cities',1),(236,'2025_01_10_000000_fix_order_invoice_rounding_issues',1),(237,'2025_01_12_094943_correct_blog_posts_images',1),(238,'2025_01_15_050230_migrate_old_theme_options',1),(239,'2025_01_15_optimize_products_export_index',1),(240,'2025_01_17_082713_correct_column_barcode_and_cost_per_item_to_product_table',1),(241,'2025_01_24_044641_migrate_old_country_data',1),(242,'2025_01_28_233602_add_private_notes_into_ec_orders_table',1),(243,'2025_02_11_153025_add_action_label_to_announcement_translations',1),(244,'2025_02_13_021247_add_tax_translations',1),(245,'2025_02_24_152621_add_text_color_to_product_labels_table',1),(246,'2025_04_08_040931_create_social_logins_table',1),(247,'2025_04_12_000001_add_payment_fee_to_ec_orders_table',1),(248,'2025_04_12_000002_add_payment_fee_to_ec_invoices_table',1),(249,'2025_04_12_000003_add_payment_fee_to_payments_table',1),(250,'2025_04_21_000000_add_tablet_mobile_image_to_ads_translations_table',1),(251,'2025_05_05_000001_add_user_type_to_audit_histories_table',1),(252,'2025_05_05_092036_make_user_id_and_tax_amount_nullable',1),(253,'2025_05_15_082342_drop_email_unique_index_in_ec_customers_table',1),(254,'2025_05_22_000001_add_payment_fee_type_to_settings_table',1),(255,'2025_06_07_081731_add_translations_for_specification_groups_and_tables',1),(256,'2025_06_17_091813_increase_note_in_shipments_table',1),(257,'2025_06_24_000001_create_ec_product_license_codes_table',1),(258,'2025_06_24_080427_add_license_code_type_to_products_table',1),(259,'2025_07_06_030754_add_phone_to_users_table',1),(260,'2025_07_06_062402_create_ec_customer_deletion_requests_table',1),(261,'2025_07_07_161729_change_license_code_to_text_in_ec_product_license_codes_table',1),(262,'2025_07_08_162756_increase_license_code_column_size_in_ec_order_product_table',1),(263,'2025_07_09_000001_add_customer_address_fields_to_ec_invoices_table',1),(264,'2025_07_15_090809_create_ec_abandoned_carts_table',1),(265,'2025_07_24_120510_increase_barcode_column_length_in_ec_products_table',1),(266,'2025_07_31_021805_add_indexes_for_vendor_categories_optimization',1),(267,'2025_07_31_083459_add_indexes_for_location_search_performance',1),(268,'2025_07_31_133600_add_performance_indexes_to_ec_product_categories_table',1),(269,'2025_07_31_add_performance_indexes_to_slugs_table',1),(270,'2025_08_01_161205_optimize_product_variation_query_indexes',1),(271,'2025_08_07_073854_add_verification_fields_to_mp_stores_table',1),(272,'2025_08_08_145059_correct_tax_amount_in_order_and_invoice_tables',1),(273,'2025_09_05_025247_create_ec_product_specification_attribute_translations_table',1),(274,'2025_09_08_025516_add_variations_count_to_ec_products_table',1),(275,'2025_09_08_080248_add_slug_column_to_ec_product_categories_table',1),(276,'2025_09_08_080330_add_slug_column_to_ec_product_categories_translations_table',1),(277,'2025_09_08_080443_populate_slug_column_for_product_categories',1),(278,'2025_09_08_081216_add_slug_column_to_ec_products_table',1),(279,'2025_09_08_081237_add_slug_column_to_ec_products_translations_table',1),(280,'2025_09_08_081321_populate_slug_column_for_products',1),(281,'2025_09_10_073321_add_performance_indexes_to_ecommerce_tables',1),(282,'2025_09_18_093922_fix_tax_rounding_in_order_products_and_invoices',1),(283,'2025_09_21_030756_add_reviews_cache_to_ec_products_table',1),(284,'2025_09_30_090432_add_performance_indexes_to_ec_product_categories_table',1),(285,'2025_10_10_090331_add_number_format_style_to_ec_currencies_table',1),(286,'2025_10_10_092235_add_space_between_price_and_currency_to_ec_currencies_table',1),(287,'2025_10_11_074318_add_price_includes_tax_to_ec_products_table',1),(288,'2025_10_13_043527_generate_slugs_for_product_collections',1),(289,'2025_10_22_020518_add_verification_code_to_ec_customer_deletion_requests_table',1),(290,'2025_10_22_090000_remove_duplicate_order_addresses',1),(291,'2025_10_28_133220_add_unique_order_id_to_shipments_table',1),(292,'2025_10_28_134738_fix_order_payment_shipment_discount_data_issues',1),(293,'2025_11_05_000001_add_indexes_for_marketplace_performance_optimization',1),(294,'2025_11_05_032148_add_performance_indexes_to_ecommerce_tables',1),(295,'2025_11_07_000001_add_actor_type_to_audit_histories_table',1),(296,'2025_11_10_000000_cleanup_duplicate_widgets',1),(297,'2025_11_10_100000_create_ec_order_metadata_table',1),(298,'2025_11_12_100000_improve_ec_customer_recently_viewed_products_table',1),(299,'2025_11_18_214150_add_covering_indexes_to_product_relation_tables',1),(300,'2025_12_02_045049_add_index_to_product_labels_table',1),(301,'2025_12_12_150000_add_sequence_columns_to_abandoned_carts',1),(302,'2025_12_16_160000_add_is_new_until_to_ec_products_table',1),(303,'2025_12_28_000628_add_images_column_to_ec_order_returns_table',1),(304,'2026_01_05_162601_update_missing_slugs_for_ec_product_categories_table',1),(305,'2026_01_09_024811_add_currency_code_to_ec_products_table',1),(306,'2026_01_10_000001_add_status_to_simple_slider_items_table',1),(307,'2026_01_11_221755_add_price_columns_to_ec_product_up_sale_relations_table',1),(308,'2026_01_14_035001_add_customer_id_to_ec_cart_table',1),(309,'2026_01_26_084750_add_customer_id_to_ec_review_replies_table',1),(310,'2026_01_31_144854_add_zip_code_range_to_ec_shipping_rule_items_table',1),(311,'2026_02_02_090000_add_tax_location_to_mp_stores_table',1),(312,'2026_02_02_090000_create_ec_order_product_tax_components_table',1),(313,'2026_02_02_090001_create_ec_invoice_item_tax_components_table',1),(314,'2026_02_02_090002_add_tax_class_to_ec_customers_table',1),(315,'2026_02_02_090003_add_tax_class_to_ec_products_table',1),(316,'2026_02_02_090004_add_tax_breakdown_to_ec_order_product_table',1),(317,'2026_02_03_090000_drop_foreign_key_from_ec_order_product_tax_components_table',1),(318,'2026_02_07_090000_remove_duplicate_product_variation_records',1),(319,'2026_02_11_090000_add_price_per_product_to_options_tables',1),(320,'2026_02_11_090000_add_shipping_tax_amount_to_ec_orders_and_invoices_table',1),(321,'2026_02_11_160300_convert_specification_options_to_id_based_format',1),(322,'2026_03_03_150041_add_content_to_ec_product_tags_table',1),(323,'2026_03_04_000001_add_name_to_ec_shipping_rule_items_table',1),(324,'2026_03_04_000002_normalize_zip_codes_in_ec_shipping_rule_items_table',1),(325,'2026_03_06_020547_make_comment_nullable_in_ec_reviews_table',1),(326,'2026_03_06_020805_fix_empty_status_in_ec_invoices_table',1),(327,'2026_03_07_153100_add_index_to_meta_boxes_table',1),(328,'2026_03_10_105000_add_badge_type_to_ec_reviews_table',1),(329,'2026_03_23_000000_create_media_folder_permissions_table',1),(330,'2026_03_27_085220_add_folder_deleted_name_index_to_media_files_table',1),(331,'2026_04_20_000000_add_sessions_invalidated_at_to_users_table',1),(332,'2026_04_24_000001_reconcile_payment_amount_with_order_total',1),(333,'2026_04_25_000001_backfill_missing_order_shipping_addresses',1),(334,'2026_05_12_000000_change_description_column_type_in_blog_tables',1);
+/*!40000 ALTER TABLE `migrations` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `mp_category_sale_commissions`
+--
+
+DROP TABLE IF EXISTS `mp_category_sale_commissions`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `mp_category_sale_commissions` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `product_category_id` bigint unsigned NOT NULL,
+  `commission_percentage` decimal(8,2) NOT NULL DEFAULT '0.00',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `mp_category_sale_commissions_product_category_id_unique` (`product_category_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `mp_category_sale_commissions`
+--
+
+LOCK TABLES `mp_category_sale_commissions` WRITE;
+/*!40000 ALTER TABLE `mp_category_sale_commissions` DISABLE KEYS */;
+/*!40000 ALTER TABLE `mp_category_sale_commissions` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `mp_customer_revenues`
+--
+
+DROP TABLE IF EXISTS `mp_customer_revenues`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `mp_customer_revenues` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `customer_id` bigint unsigned DEFAULT NULL,
+  `order_id` bigint unsigned DEFAULT NULL,
+  `sub_amount` decimal(15,2) DEFAULT '0.00',
+  `fee` decimal(15,2) unsigned DEFAULT '0.00',
+  `amount` decimal(15,2) DEFAULT '0.00',
+  `current_balance` decimal(15,2) DEFAULT '0.00',
+  `currency` varchar(120) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `description` text COLLATE utf8mb4_unicode_ci,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `user_id` bigint unsigned NOT NULL DEFAULT '0',
+  `type` varchar(60) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `mp_customer_revenues_customer_id_index` (`customer_id`),
+  KEY `mp_customer_revenues_order_id_index` (`order_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `mp_customer_revenues`
+--
+
+LOCK TABLES `mp_customer_revenues` WRITE;
+/*!40000 ALTER TABLE `mp_customer_revenues` DISABLE KEYS */;
+/*!40000 ALTER TABLE `mp_customer_revenues` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `mp_customer_withdrawals`
+--
+
+DROP TABLE IF EXISTS `mp_customer_withdrawals`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `mp_customer_withdrawals` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `customer_id` bigint unsigned DEFAULT NULL,
+  `fee` decimal(15,2) unsigned DEFAULT '0.00',
+  `amount` decimal(15,2) unsigned DEFAULT '0.00',
+  `current_balance` decimal(15,2) unsigned DEFAULT '0.00',
+  `currency` varchar(120) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `description` text COLLATE utf8mb4_unicode_ci,
+  `bank_info` text COLLATE utf8mb4_unicode_ci,
+  `payment_channel` varchar(60) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `user_id` bigint unsigned NOT NULL DEFAULT '0',
+  `status` varchar(60) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'pending',
+  `images` text COLLATE utf8mb4_unicode_ci,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `transaction_id` varchar(60) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `mp_customer_withdrawals_customer_id_index` (`customer_id`),
+  KEY `mp_customer_withdrawals_status_index` (`status`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `mp_customer_withdrawals`
+--
+
+LOCK TABLES `mp_customer_withdrawals` WRITE;
+/*!40000 ALTER TABLE `mp_customer_withdrawals` DISABLE KEYS */;
+/*!40000 ALTER TABLE `mp_customer_withdrawals` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `mp_messages`
+--
+
+DROP TABLE IF EXISTS `mp_messages`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `mp_messages` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `store_id` bigint unsigned NOT NULL,
+  `customer_id` bigint unsigned DEFAULT NULL,
+  `name` varchar(60) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `email` varchar(60) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `content` longtext COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `mp_messages`
+--
+
+LOCK TABLES `mp_messages` WRITE;
+/*!40000 ALTER TABLE `mp_messages` DISABLE KEYS */;
+/*!40000 ALTER TABLE `mp_messages` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `mp_stores`
+--
+
+DROP TABLE IF EXISTS `mp_stores`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `mp_stores` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `email` varchar(60) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `phone` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `address` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `country` varchar(120) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `state` varchar(120) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `city` varchar(120) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `customer_id` bigint unsigned DEFAULT NULL,
+  `logo` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `logo_square` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `cover_image` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `description` varchar(400) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `content` longtext COLLATE utf8mb4_unicode_ci,
+  `status` varchar(60) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'published',
+  `is_verified` tinyint(1) NOT NULL DEFAULT '0',
+  `verified_at` timestamp NULL DEFAULT NULL,
+  `verified_by` bigint unsigned DEFAULT NULL,
+  `verification_note` text COLLATE utf8mb4_unicode_ci,
+  `vendor_verified_at` datetime DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `zip_code` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `company` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `tax_id` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `tax_country` varchar(120) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `tax_state` varchar(120) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `certificate_file` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `government_id_file` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `mp_stores_customer_id_index` (`customer_id`),
+  KEY `mp_stores_status_index` (`status`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `mp_stores`
+--
+
+LOCK TABLES `mp_stores` WRITE;
+/*!40000 ALTER TABLE `mp_stores` DISABLE KEYS */;
+INSERT INTO `mp_stores` VALUES (1,'Anthro Studio','hello@anthro.example.com','+1-415-555-0142','512 Valencia Street','US','California','San Francisco',2,'testimonials/avatar-1.jpg',NULL,NULL,'Eclectic apparel and home goods inspired by global craftsmanship traditions.','<p>Anthro Studio sources from independent artisans across four continents. Every piece is checked by hand before it ships from our San Francisco fulfilment center.</p>','published',1,NULL,NULL,NULL,NULL,'2026-05-28 18:58:02','2026-05-28 18:58:02','94110','Anthro Studio Inc.',NULL,NULL,NULL,NULL,NULL),(2,'Crate Furniture Co.','orders@crate.example.com','+1-503-555-0188','1840 NE Alberta Street','US','Oregon','Portland',7,'testimonials/avatar-2.jpg',NULL,NULL,'Mid-century-inspired furniture built to last generations.','<p>Every Crate piece is built one at a time in our Portland workshop using sustainably harvested American hardwoods.</p>','published',1,NULL,NULL,NULL,NULL,'2026-05-28 18:58:02','2026-05-28 18:58:02','97211','Crate Furniture Co.',NULL,NULL,NULL,NULL,NULL),(3,'Findr Audio','support@findr.example.com','+44-20-7946-0310','17 Hanbury Street','GB','Greater London','London',9,'testimonials/avatar-3.jpg',NULL,NULL,'Audio gear engineered for studio-grade clarity in everyday environments.','<p>Founded by ex-studio engineers, Findr brings reference-quality sound to wireless headphones and earbuds.</p>','published',1,NULL,NULL,NULL,NULL,'2026-05-28 18:58:02','2026-05-28 18:58:02','E1 6QR','Findr Audio Ltd.',NULL,NULL,NULL,NULL,NULL),(4,'Bohome Living','hello@bohome.example.com','+34-93-555-0122','Carrer de Sepulveda 102','ES','Catalonia','Barcelona',9,'testimonials/avatar-4.jpg',NULL,NULL,'Bohemian-inspired homewares and textiles for the relaxed modern home.','<p>Bohome partners with co-operatives in Morocco, Turkey, and India to bring you authentic, fair-traded textiles.</p>','published',1,NULL,NULL,NULL,NULL,'2026-05-28 18:58:02','2026-05-28 18:58:02','08015','Bohome Living S.L.',NULL,NULL,NULL,NULL,NULL);
+/*!40000 ALTER TABLE `mp_stores` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `mp_stores_translations`
+--
+
+DROP TABLE IF EXISTS `mp_stores_translations`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `mp_stores_translations` (
+  `lang_code` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `mp_stores_id` bigint unsigned NOT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `description` varchar(400) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `content` longtext COLLATE utf8mb4_unicode_ci,
+  `address` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `company` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `cover_image` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`lang_code`,`mp_stores_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `mp_stores_translations`
+--
+
+LOCK TABLES `mp_stores_translations` WRITE;
+/*!40000 ALTER TABLE `mp_stores_translations` DISABLE KEYS */;
+/*!40000 ALTER TABLE `mp_stores_translations` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `mp_vendor_info`
+--
+
+DROP TABLE IF EXISTS `mp_vendor_info`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `mp_vendor_info` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `customer_id` bigint unsigned NOT NULL DEFAULT '0',
+  `balance` decimal(15,2) NOT NULL DEFAULT '0.00',
+  `total_fee` decimal(15,2) NOT NULL DEFAULT '0.00',
+  `total_revenue` decimal(15,2) NOT NULL DEFAULT '0.00',
+  `signature` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `bank_info` text COLLATE utf8mb4_unicode_ci,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `payout_payment_method` varchar(120) COLLATE utf8mb4_unicode_ci DEFAULT 'bank_transfer',
+  `tax_info` text COLLATE utf8mb4_unicode_ci,
+  PRIMARY KEY (`id`),
+  KEY `mp_vendor_info_customer_id_index` (`customer_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `mp_vendor_info`
+--
+
+LOCK TABLES `mp_vendor_info` WRITE;
+/*!40000 ALTER TABLE `mp_vendor_info` DISABLE KEYS */;
+/*!40000 ALTER TABLE `mp_vendor_info` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `newsletters`
+--
+
+DROP TABLE IF EXISTS `newsletters`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `newsletters` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `email` varchar(120) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `name` varchar(120) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `status` varchar(60) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'subscribed',
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `newsletters`
+--
+
+LOCK TABLES `newsletters` WRITE;
+/*!40000 ALTER TABLE `newsletters` DISABLE KEYS */;
+/*!40000 ALTER TABLE `newsletters` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `pages`
+--
+
+DROP TABLE IF EXISTS `pages`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `pages` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(120) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `content` longtext COLLATE utf8mb4_unicode_ci,
+  `user_id` bigint unsigned DEFAULT NULL,
+  `image` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `template` varchar(60) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `description` varchar(400) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `status` varchar(60) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'published',
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `pages_user_id_index` (`user_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `pages`
+--
+
+LOCK TABLES `pages` WRITE;
+/*!40000 ALTER TABLE `pages` DISABLE KEYS */;
+INSERT INTO `pages` VALUES (1,'About','[page-banner heading=\"About Us\" subtitle=\"With over 15 years of experience, we craft timeless collections that transcend<br class=\\\"d-none d-lg-block\\\">trends and inspire lasting elegance.\"][/page-banner]\n[stats-counter hero_image=\"section/s-contact-1.jpg\" heading=\"Design, attention to detail & efficiency to delight the world\" description=\"From the moment it is conceived to the moment it is worn, every one of our garments follows this path. We could do it at a fast pace. However, at Amerce, we choose to take care of all those who are walking this path with us.\" quantity=\"4\" value_1=\"8.2k\" animate_to_1=\"\" suffix_1=\"\" label_1=\"Products Available\" desc_1=\"We offer a wide selection of high-quality products to meet every need.\" value_2=\"\" animate_to_2=\"10\" suffix_2=\"k\" label_2=\"Happy Customers\" desc_2=\"Serving over 10,000 delighted customers who trust us for quality and service.\" value_3=\"\" animate_to_3=\"96\" suffix_3=\"\" label_3=\"Partner Brand\" desc_3=\"Our top-brand partnerships bring a trusted collection for your store and home.\" value_4=\"\" animate_to_4=\"16\" suffix_4=\"k\" label_4=\"Products For Sale\" desc_4=\"That\'s why we strive to offer a diverse range of products that cater to all styles.\"][/stats-counter]\n[image-accordion image=\"section/s-contact-2.jpg\" heading=\"Offering Rare And Beautiful Items Worldwide\" quantity=\"4\" title_1=\"Introduction\" body_1=\"Welcome to Amerce Store, your premier destination for fashion-forward clothing and accessories. We pride ourselves on offering a curated selection of rare and beautiful items sourced both locally and globally.\" title_2=\"Our Vision\" body_2=\"We envision a world where thoughtful design meets everyday life — pieces that age gracefully, partners we trust, and customers we treat as people, not transactions.\" title_3=\"What Sets Us Apart\" body_3=\"Independently audited suppliers, hand-checked products, and a 30-day no-questions return policy backed by a human customer support team.\" title_4=\"Our Commitment\" body_4=\"Quality goods, transparent supply chains, and fair labor — every order, every time.\"][/image-accordion]\n[about-testimonials heading=\"Customer Say!\" subtitle=\"Our customers adore our products, and we constantly aim to delight them.\" quantity=\"2\" image_1=\"testimonials/tes-1.jpg\" name_1=\"Emma Collins\" text_1=\"\\\"Totally obsessed with this outfit! The fit is perfect, the fabric feels premium, and I\'ve been getting compliments non-stop. It instantly lifts my confidence — such a great find!\\\"\" image_2=\"testimonials/tes-2.jpg\" name_2=\"Sophia Ramirez\" text_2=\"\\\"I\'m amazed by how comfortable yet stylish this piece is. It pairs effortlessly with everything, and the quality really stands out. Definitely becoming my go-to for everyday looks!\\\"\"][/about-testimonials]\n[about-team heading=\"Meet Our Teams\" subtitle=\"Experts committed to excellence in every detail.\" quantity=\"4\" image_1=\"member/member-1.jpg\" name_1=\"Annette Black\" role_1=\"Founder/CEO\" social_links_1=\"\" image_2=\"member/member-2.jpg\" name_2=\"Brooklyn Simmons\" role_2=\"Manager\" social_links_2=\"\" image_3=\"member/member-3.jpg\" name_3=\"Jane Cooper\" role_3=\"Sales Director\" social_links_3=\"\" image_4=\"member/member-4.jpg\" name_4=\"Lisa Bonet\" role_4=\"Sales Director\" social_links_4=\"\"][/about-team]',1,NULL,'landing','About Amerce — our story, sourcing standards, and the people behind every product.','published','2026-05-28 18:58:02','2026-05-28 18:58:02'),(2,'Contact','',1,NULL,'landing','Reach the Amerce customer support and partnerships teams.','published','2026-05-28 18:58:02','2026-05-28 18:58:02'),(3,'FAQ','[page-banner heading=\"FAQs\" subtitle=\"Got questions? We\'ve got answers! Browse our FAQs to find information on orders, shipping,<br class=\\\"d-none d-lg-block\\\">returns, and more. If you need further assistance, feel free to contact our team.\"][/page-banner]\n[faq-page sidebar_image=\"section/banner-12.jpg\" sidebar_title=\"Save 25% <br class=\\\"d-none d-sm-block\\\">Today\" sidebar_subtitle=\"T-Shirts, Hoodies & More\" sidebar_cta=\"View More\" sidebar_url=\"/products\" quantity=\"16\" category_1=\"My Account\" category_id_1=\"myAccount\" question_1=\"1. What can I do if I forgot my password?\" answer_1=\"Use the \\\"Forgot password\\\" link on the sign-in page. We will email you a one-time link to set a new password — it expires in 30 minutes for security.\" category_2=\"My Account\" category_id_2=\"myAccount\" question_2=\"2. How do I update my email address?\" answer_2=\"Sign in, open Account → Settings, and change the email field. We send a confirmation email to the new address; the change takes effect once you click that link.\" category_3=\"My Account\" category_id_3=\"myAccount\" question_3=\"3. Can I delete my account?\" answer_3=\"Yes. From Account → Settings, scroll to Delete account. We retain order history for tax/legal reasons but personal contact details are removed within 30 days.\" category_4=\"Orders & Purchases\" category_id_4=\"ordersPurchases\" question_4=\"1. How do I place an order?\" answer_4=\"Add items to your cart, click checkout, choose a shipping method, then enter your payment details. You will receive an order confirmation email immediately.\" category_5=\"Orders & Purchases\" category_id_5=\"ordersPurchases\" question_5=\"2. Can I edit or cancel an order?\" answer_5=\"Orders can be edited or cancelled from your account dashboard within 1 hour of placement. After that the warehouse has begun picking and we cannot intercept.\" category_6=\"Orders & Purchases\" category_id_6=\"ordersPurchases\" question_6=\"3. What payment methods are accepted?\" answer_6=\"We accept Visa, Mastercard, American Express, Apple Pay, Google Pay, and PayPal. All transactions use TLS 1.3 encryption.\" category_7=\"Returns & Refunds\" category_id_7=\"returnsRefunds\" question_7=\"1. What is the return window?\" answer_7=\"30 days from delivery for any unworn item in original condition. Sale items, intimate apparel, and final-sale flash sale purchases are excluded.\" category_8=\"Returns & Refunds\" category_id_8=\"returnsRefunds\" question_8=\"2. How do I start a return?\" answer_8=\"Open the order in your account dashboard and click \\\"Start return\\\". We email a prepaid label for domestic orders within one business day.\" category_9=\"Returns & Refunds\" category_id_9=\"returnsRefunds\" question_9=\"3. When will I see my refund?\" answer_9=\"Refunds are processed within 3-5 business days of us receiving the return. Bank posting times vary; allow up to 10 business days for the credit to appear.\" category_10=\"Shipping & Tracking\" category_id_10=\"shippingTracking\" question_10=\"1. How long does shipping take?\" answer_10=\"Domestic standard ships in 3-5 business days. Express in 1-2. International standard takes 7-12 business days; express options are available at checkout.\" category_11=\"Shipping & Tracking\" category_id_11=\"shippingTracking\" question_11=\"2. How do I track my order?\" answer_11=\"A tracking link is included in your shipment confirmation email. You can also see status from Account → Orders → Track.\" category_12=\"Shipping & Tracking\" category_id_12=\"shippingTracking\" question_12=\"3. Do you ship internationally?\" answer_12=\"Yes — to most countries. Duties and taxes are pre-paid at checkout for select destinations; otherwise the courier may collect them on delivery.\" category_13=\"Fees & Billing\" category_id_13=\"feesBilling\" question_13=\"1. Are duties and taxes included?\" answer_13=\"Domestic prices include sales tax shown at checkout. International orders to supported destinations include duties and taxes; otherwise the courier collects on delivery.\" category_14=\"Fees & Billing\" category_id_14=\"feesBilling\" question_14=\"2. Why was I charged twice?\" answer_14=\"You likely see a temporary authorization hold plus the actual charge. The authorization drops off in 3-5 business days. Email billing@amerce.test if you still see two charges after that.\" category_15=\"Other Topic\" category_id_15=\"otherTopic\" question_15=\"1. Do you have physical stores?\" answer_15=\"Yes — visit our Stores page for a list of flagship and partner locations.\" category_16=\"Other Topic\" category_id_16=\"otherTopic\" question_16=\"2. How can I contact customer support?\" answer_16=\"Email hello@amerce.test or use the contact form. We reply within one business day.\"][/faq-page]',1,NULL,'landing','Frequently asked questions about orders, shipping, returns, and account management.','published','2026-05-28 18:58:02','2026-05-28 18:58:02'),(4,'Privacy Policy','[page-banner heading=\"Privacy Policy\"][/page-banner]\n[term-content quantity=\"7\" title_1=\"1. Information We Collect\" body_1=\"<p class=\\\"term-text cl-text-2\\\">When you visit the Site, we automatically collect certain information about your device — web browser, IP address, time zone, and some of the cookies installed on your device. As you browse, we also collect data about the pages or products you view, what referred you to the Site, and how you interact with it. We refer to this as \\\"Device Information\\\".</p><p class=\\\"term-text cl-text-2\\\">When you make a purchase or attempt to purchase through the Site, we collect your name, billing address, shipping address, and payment information (including card number, email address, and phone number). We refer to this as \\\"Order Information\\\".</p>\" title_2=\"2. How We Use Your Information\" body_2=\"<p class=\\\"term-text cl-text-2\\\">We use Order Information to fulfil orders placed through the Site (process payment, arrange shipping, provide invoices and order confirmations). We use it to communicate with you, screen orders for fraud, and — in line with your preferences — share marketing about products you may like.</p><p class=\\\"term-text cl-text-2\\\">We use Device Information to screen for fraud and to improve the Site through analytics about how customers browse and interact with us.</p>\" title_3=\"3. Sharing Your Personal Information\" body_3=\"<p class=\\\"term-text cl-text-2\\\">We share Personal Information with third-party service providers who help us run the Site. We may also share information to comply with applicable laws, respond to a subpoena or lawful request, or otherwise protect our rights.</p>\" title_4=\"4. Data Retention\" body_4=\"<p class=\\\"term-text cl-text-2\\\">When you place an order, we maintain the Order Information for our records unless and until you ask us to delete it.</p>\" title_5=\"5. Your Rights\" body_5=\"<p class=\\\"term-text cl-text-2\\\">You can request access, correction, or deletion of any personal data we hold about you. Email privacy@amerce.test from the address on file and we will respond within 30 days.</p>\" title_6=\"6. Cookies\" body_6=\"<p class=\\\"term-text cl-text-2\\\">Cookies are used to keep your cart between visits, remember your preferences, and measure aggregate traffic. You can disable cookies in your browser, though some Site features may stop working.</p>\" title_7=\"7. Changes\" body_7=\"<p class=\\\"term-text cl-text-2\\\">We may update this policy from time to time to reflect changes to our practices or for operational, legal, or regulatory reasons. The latest version will always be on this page.</p>\"][/term-content]',1,NULL,'landing','How Amerce collects, uses, and protects your personal information.','published','2026-05-28 18:58:02','2026-05-28 18:58:02'),(5,'Terms &amp; Conditions','[page-banner heading=\"Terms & Conditions\"][/page-banner]\n[term-content quantity=\"7\" title_1=\"1. Acceptance of Terms\" body_1=\"<p class=\\\"term-text cl-text-2\\\">By accessing or using the Amerce store you agree to these terms. We reserve the right to update them with reasonable notice; the latest version is always available on this page.</p>\" title_2=\"2. Orders & Payment\" body_2=\"<p class=\\\"term-text cl-text-2\\\">All prices are in USD unless otherwise stated. We accept the payment methods displayed at checkout. An order becomes binding once you receive an order confirmation email.</p>\" title_3=\"3. Shipping\" body_3=\"<p class=\\\"term-text cl-text-2\\\">Shipping options, lead times, and rates are listed on our Shipping page. Risk passes to you on delivery.</p>\" title_4=\"4. Returns\" body_4=\"<p class=\\\"term-text cl-text-2\\\">You have 30 days from delivery to return any unworn item for a refund. See our Returns &amp; Refunds page for the full process.</p>\" title_5=\"5. Intellectual Property\" body_5=\"<p class=\\\"term-text cl-text-2\\\">All content on the Site — text, photography, logos, code — is owned by Amerce or its licensors and may not be reproduced without written permission.</p>\" title_6=\"6. Limitation of Liability\" body_6=\"<p class=\\\"term-text cl-text-2\\\">To the maximum extent permitted by law, Amerce is not liable for indirect or consequential damages arising from use of the Site or the products purchased through it.</p>\" title_7=\"7. Governing Law\" body_7=\"<p class=\\\"term-text cl-text-2\\\">These terms are governed by the laws of the State of New York. Any dispute will be resolved in the state or federal courts located in New York County.</p>\"][/term-content]',1,NULL,'landing','The legal terms governing your use of the Amerce store.','published','2026-05-28 18:58:02','2026-05-28 18:58:02'),(6,'Returns &amp; Refunds','[page-banner heading=\"Returns & Refunds\"][/page-banner]\n[term-content quantity=\"6\" title_1=\"1. Returns\" body_1=\"<p class=\\\"term-text cl-text-2\\\">We want you to be completely satisfied with your purchase. If for any reason you are not, you may return any unworn item within 30 days of receiving your order for a refund or exchange. Items must be in original packaging and the same condition as you received them.</p>\" title_2=\"2. How to Start a Return\" body_2=\"<p class=\\\"term-text cl-text-2\\\">Open the order in your account dashboard and click \\\"Start return\\\", or email returns@amerce.test with your order number. We will send a prepaid return label for domestic orders within one business day.</p>\" title_3=\"3. Refunds\" body_3=\"<p class=\\\"term-text cl-text-2\\\">Refunds are processed within 3-5 business days of us receiving the return and applied to the original payment method. Bank posting times vary; allow up to 10 business days for the credit to appear.</p>\" title_4=\"4. Exclusions\" body_4=\"<p class=\\\"term-text cl-text-2\\\">Sale items, intimate apparel, and final-sale flash sale purchases are excluded from returns. Personalised or made-to-order items are also non-returnable unless faulty.</p>\" title_5=\"5. Damaged or Faulty Items\" body_5=\"<p class=\\\"term-text cl-text-2\\\">If your order arrives damaged or faulty, email us within 7 days with photos. We will replace the item or issue a full refund — including any return shipping cost — at our expense.</p>\" title_6=\"6. International Returns\" body_6=\"<p class=\\\"term-text cl-text-2\\\">International customers are responsible for return shipping unless the item is faulty. We do not refund original shipping or duty charges on international returns.</p>\"][/term-content]',1,NULL,'landing','Our 30-day return policy and the step-by-step return process.','published','2026-05-28 18:58:02','2026-05-28 18:58:02'),(7,'Shipping','[page-banner heading=\"Shipping\"][/page-banner]\n[term-content quantity=\"6\" title_1=\"1. Shipping Methods\" body_1=\"<p class=\\\"term-text cl-text-2\\\">We offer the following shipping methods for domestic and international orders: standard ground, expedited 2-day, and priority overnight (where available).</p>\" title_2=\"2. Domestic Rates\" body_2=\"<p class=\\\"term-text cl-text-2\\\">Standard ground is free on orders over $99. Express 1-2 day shipping is $19.99 flat. Priority overnight is calculated by weight at checkout.</p>\" title_3=\"3. International\" body_3=\"<p class=\\\"term-text cl-text-2\\\">We ship to most countries. International standard shipping is $24.99 with 7-12 business day delivery. Express options appear at checkout. Duties and taxes are pre-paid for select destinations; otherwise the courier collects them on delivery.</p>\" title_4=\"4. Processing Time\" body_4=\"<p class=\\\"term-text cl-text-2\\\">Orders placed before 2pm EST on business days ship the same day. Orders placed after 2pm or on weekends/holidays ship the next business day.</p>\" title_5=\"5. Tracking\" body_5=\"<p class=\\\"term-text cl-text-2\\\">A tracking link is included in your shipment confirmation email. You can also see live status from Account → Orders → Track.</p>\" title_6=\"6. Lost or Stuck Shipments\" body_6=\"<p class=\\\"term-text cl-text-2\\\">If a tracking number has not updated for more than 7 business days, email shipping@amerce.test. We will open an investigation with the carrier and either refund or reship the order at our expense.</p>\"][/term-content]',1,NULL,'landing','Domestic and international shipping options, lead times, and rates.','published','2026-05-28 18:58:02','2026-05-28 18:58:02'),(8,'Our Stores','',1,NULL,'landing','Visit Amerce in person — flagship locations and partner boutiques worldwide.','published','2026-05-28 18:58:02','2026-05-28 18:58:02'),(9,'Blog','<div class=\"container py-5\"><h1>Journal</h1><p>Browse our latest stories — style guides, product spotlights, sustainability deep-dives, and more.</p></div>',1,NULL,'default','Style guides, product spotlights, and stories from the Amerce team.','published','2026-05-28 18:58:02','2026-05-28 18:58:02'),(10,'Careers','<div class=\"container py-5\"><h1>Careers at Amerce</h1><p>We are a small, distributed team building a more thoughtful kind of retail. We hire across product, engineering, supply chain, and customer experience.</p><p>Open roles are posted to our company LinkedIn page. To apply, send a short note and your resume to <a href=\"mailto:careers@amerce.test\">careers@amerce.test</a>.</p></div>',1,NULL,'default','Open roles and what it is like to work at Amerce.','published','2026-05-28 18:58:02','2026-05-28 18:58:02'),(11,'Sustainability','<div class=\"container py-5\"><h1>Sustainability at Amerce</h1><p>Every product carries a story. We work directly with mills and ateliers, prioritise recycled and traceable materials, and ship in plastic-free packaging.</p><p>Our 2026 goal: 90% of materials with a verified chain of custody, and a transparent annual impact report.</p></div>',1,NULL,'default','How Amerce sources responsibly and reduces its environmental footprint.','published','2026-05-28 18:58:02','2026-05-28 18:58:02'),(12,'Homepage','[simple-slider key=\"home-hero\" style=\"style-1\" is_autoplay=\"yes\" autoplay_speed=\"3000\" show_arrows=\"yes\" show_dots=\"yes\"][/simple-slider]\n[ecommerce-products style=\"style-slider\" title=\"Today\'s Best Choices\" subtitle=\"Discover today\'s standout sportswear picks.\" source=\"featured\" limit=\"4\" items_per_row=\"4\"][/ecommerce-products]\n[categories-grid style=\"style-card-vertical\" title=\"Shop By Categories\" subtitle=\"Explore essential activewear collections for every workout style.\" category_ids=\"1,2,3,4,5\" limit=\"5\" show_count=\"no\"][/categories-grid]\n[banner-products-composite title=\"Weekly Top Highlights\" subtitle=\"Fresh styles and must-have picks curated for your week.\" image=\"section/banner-39.jpg\" overline=\"Built for every move.\" heading=\"Gear Up For &lt;br&gt; Greatness\" button_text=\"Shop Now\" button_url=\"/products\" source=\"featured\" limit=\"4\"][/banner-products-composite]\n[lookbook-hotspot style=\"style-v4-carousel\" image=\"section/banner-lookbook-11.jpg\" quantity=\"2\" x_percent_1=\"38\" y_percent_1=\"42\" product_id_1=\"17\" column_1=\"1\" overline_1=\"Run Ready Bra\" x_percent_2=\"64\" y_percent_2=\"70\" product_id_2=\"18\" column_2=\"1\" overline_2=\"Run Ready Shorts\"][/lookbook-hotspot]\n[testimonials style=\"style-image-card\" title=\"What Our Customers Say\" subtitle=\"Real feedback from those who train, move, and live in our gear.\" autoplay=\"yes\" quantity=\"4\" avatar_1=\"testimonials/tes-16.jpg\" name_1=\"Jenna L.\" role_1=\"Yoga Instructor\" rating_1=\"5\" content_1=\"\\\"Super comfortable and breathable &mdash; perfect for my daily workouts.\\\"\" avatar_2=\"testimonials/tes-17.jpg\" name_2=\"Jenna L.\" role_2=\"Yoga Instructor\" rating_2=\"5\" content_2=\"\\\"The fit is amazing. Stylish, flexible, and great for the gym.\\\"\" avatar_3=\"testimonials/tes-18.jpg\" name_3=\"Jenna L.\" role_3=\"Yoga Instructor\" rating_3=\"5\" content_3=\"\\\"Quality is top-notch. I feel more confident every time I wear it.\\\"\" avatar_4=\"testimonials/tes-19.jpg\" name_4=\"Jenna L.\" role_4=\"Yoga Instructor\" rating_4=\"5\" content_4=\"\\\"Love the fabric! Lightweight and moves with me during every session.\\\"\"][/testimonials]\n[parallax-banner style=\"style-1\" image=\"section/banner-40.jpg\" heading=\"Elevate Your &lt;br&gt; Workout Style\" subheading=\"Premium activewear crafted for comfort, &lt;br&gt; performance, and confidence.\" button_text=\"Shop Styles\" button_url=\"/products\" text_alignment=\"left\" marquee_text=\"NEW SEASON PICKS, TRENDING STYLES, LIMITED DROPS\"][/parallax-banner]\n[image-gallery style=\"style-default\" title=\"Follow Us On Instagram\" subtitle=\"@Amerce\" quantity=\"5\" image_1=\"gallery/gallery-37.jpg\" link_1=\"/products\" image_2=\"gallery/gallery-38.jpg\" link_2=\"/products\" image_3=\"gallery/gallery-39.jpg\" link_3=\"/products\" image_4=\"gallery/gallery-40.jpg\" link_4=\"/products\" image_5=\"gallery/gallery-41.jpg\" link_5=\"/products\"][/image-gallery]',NULL,NULL,'homepage','Amerce — multi-purpose ecommerce homepage demo.','published','2026-05-28 18:58:02','2026-05-28 18:58:02');
+/*!40000 ALTER TABLE `pages` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `pages_translations`
+--
+
+DROP TABLE IF EXISTS `pages_translations`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `pages_translations` (
+  `lang_code` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `pages_id` bigint unsigned NOT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `description` varchar(400) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `content` longtext COLLATE utf8mb4_unicode_ci,
+  PRIMARY KEY (`lang_code`,`pages_id`),
+  KEY `idx_pages_trans_pages_id` (`pages_id`),
+  KEY `idx_pages_trans_page_lang` (`pages_id`,`lang_code`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `pages_translations`
+--
+
+LOCK TABLES `pages_translations` WRITE;
+/*!40000 ALTER TABLE `pages_translations` DISABLE KEYS */;
+INSERT INTO `pages_translations` VALUES ('ar',1,'عن','تقديم Amerce - قصة العلامة التجارية ومعايير التوريد والفريق الذي يقف وراء كل منتج.','[page-banner heading=\"معلومات عنا\" subtitle=\"With over 15 years of experience, we craft timeless collections that transcend<br class=\\\"d-none d-lg-block\\\">trends and inspire lasting elegance.\"][/page-banner]\n[stats-counter hero_image=\"section/s-contact-1.jpg\" heading=\"التصميم والاهتمام بالتفاصيل والكفاءة يرضي العالم\" description=\"منذ لحظة تصورها وحتى لحظة ارتدائها، يتبع كل منتج من منتجاتنا هذه الرحلة. يمكننا أن نفعل ذلك بمعدل أسرع. ومع ذلك، في Amerce، نختار الاعتناء بكل من يشارك معنا في هذه الرحلة.\" quantity=\"4\" value_1=\"8.2k\" animate_to_1=\"\" suffix_1=\"\" label_1=\"المنتجات الموجودة\" desc_1=\"نحن نقدم مجموعة متنوعة من المنتجات عالية الجودة لتلبية جميع الاحتياجات.\" value_2=\"\" animate_to_2=\"10\" suffix_2=\"k\" label_2=\"العملاء الراضين\" desc_2=\"نخدم أكثر من 10,000 عميل راضٍ يثقون بنا من حيث الجودة والخدمة.\" value_3=\"\" animate_to_3=\"96\" suffix_3=\"\" label_3=\"العلامة التجارية الشريكة\" desc_3=\"تجلب الشراكات مع العلامات التجارية الرائدة مجموعات موثوقة إلى متجرك ومنزلك.\" value_4=\"\" animate_to_4=\"16\" suffix_4=\"k\" label_4=\"منتجات للبيع\" desc_4=\"ولهذا السبب نسعى جاهدين لتقديم مجموعة متنوعة من خطوط الإنتاج، المناسبة لكل نمط.\"][/stats-counter]\n[image-accordion image=\"section/s-contact-2.jpg\" heading=\"جلب العناصر النادرة والرائعة إلى جميع أنحاء العالم\" quantity=\"4\" title_1=\"يقدم\" body_1=\"مرحبًا بك في متجر Amerce، وجهتك الأولى للأزياء والإكسسوارات العصرية. نحن فخورون بتقديم مجموعة مختارة بعناية من القطع النادرة والرائعة المطلوبة على الصعيدين الوطني والدولي.\" title_2=\"رؤيتنا\" body_2=\"نحن نهدف إلى عالم يمتزج فيه التصميم المتطور مع الحياة اليومية - المنتجات التي تصمد أمام اختبار الزمن، والشركاء الموثوق بهم، والعملاء الذين يتم التعامل معهم مثل الأشخاص، وليس المعاملات.\" title_3=\"ما الذي يجعل الفرق\" body_3=\"يتم تدقيق الموردين بشكل مستقل، ويتم اختبار المنتجات يدويًا، وتوجد سياسة إرجاع بدون سبب لمدة 30 يومًا، مدعومة بفريق خدمة عملاء متخصص.\" title_4=\"التزامنا\" body_4=\"منتجات عالية الجودة وسلاسل توريد شفافة وظروف عمل عادلة - في كل طلب وفي كل مرة.\"][/image-accordion]\n[about-testimonials heading=\"ماذا يقول العملاء!\" subtitle=\"العملاء يحبون منتجاتنا، ونحن نسعى جاهدين لإرضائهم.\" quantity=\"2\" image_1=\"testimonials/tes-1.jpg\" name_1=\"إيما كولينز\" text_1=\"\\\"Totally obsessed with this outfit! The fit is perfect, the fabric feels premium, and I\'ve been getting compliments non-stop. It instantly lifts my confidence — such a great find!\\\"\" image_2=\"testimonials/tes-2.jpg\" name_2=\"صوفيا راميريز\" text_2=\"\\\"I\'m amazed by how comfortable yet stylish this piece is. It pairs effortlessly with everything, and the quality really stands out. Definitely becoming my go-to for everyday looks!\\\"\"][/about-testimonials]\n[about-team heading=\"تعرف على الفريق\" subtitle=\"محترفون ملتزمون بالإتقان في كل التفاصيل.\" quantity=\"4\" image_1=\"member/member-1.jpg\" name_1=\"أنيت بلاك\" role_1=\"المؤسس/الرئيس التنفيذي\" social_links_1=\"\" image_2=\"member/member-2.jpg\" name_2=\"بروكلين سيمونز\" role_2=\"يدير\" social_links_2=\"\" image_3=\"member/member-3.jpg\" name_3=\"جين كوبر\" role_3=\"مدير المبيعات\" social_links_3=\"\" image_4=\"member/member-4.jpg\" name_4=\"ليزا بونيت\" role_4=\"مدير المبيعات\" social_links_4=\"\"][/about-team]'),('ar',2,'اتصال','اتصل بفريق خدمة العملاء والتعاون في Amerce.',''),('ar',3,'FAQ','الأسئلة المتداولة حول الطلبات والشحن والمرتجعات وإدارة الحساب.','[page-banner heading=\"الأسئلة المتداولة\" subtitle=\"Got questions? We\'ve got answers! Browse our الأسئلة المتداولة to find information on orders, shipping,<br class=\\\"d-none d-lg-block\\\">returns, and more. If you need further assistance, feel free to contact our team.\"][/page-banner]\n[faq-page sidebar_image=\"section/banner-12.jpg\" sidebar_title=\"Save 25% <br class=\\\"d-none d-sm-block\\\">Today\" sidebar_subtitle=\"قمصان، هوديس وأكثر\" sidebar_cta=\"شاهد المزيد\" sidebar_url=\"/products\" quantity=\"16\" category_1=\"حسابي\" category_id_1=\"myAccount\" question_1=\"1. ماذا يمكنني أن أفعل إذا نسيت كلمة المرور الخاصة بي؟\" answer_1=\"Use the \\\"Forgot password\\\" link on the sign-in page. We will email you a one-time link to set a new password — it expires in 30 minutes for security.\" category_2=\"حسابي\" category_id_2=\"myAccount\" question_2=\"2. كيفية تحديث عنوان البريد الإلكتروني؟\" answer_2=\"قم بتسجيل الدخول، افتح الحساب → الإعدادات وقم بتغيير حقول البريد الإلكتروني. سنرسل رسالة تأكيد بالبريد الإلكتروني إلى العنوان الجديد؛ سيصبح التغيير ساري المفعول عندما تنقر على هذا الرابط.\" category_3=\"حسابي\" category_id_3=\"myAccount\" question_3=\"3. هل يمكنني حذف حسابي؟\" answer_3=\"يملك. من الحساب → الإعدادات، قم بالتمرير لأسفل إلى حذف الحساب. نحن نحتفظ بسجل الطلبات لأسباب ضريبية/قانونية، ولكن يتم حذف معلومات الاتصال الشخصية خلال 30 يومًا.\" category_4=\"الطلبات والتسوق\" category_id_4=\"ordersPurchases\" question_4=\"1. كيف تطلب؟\" answer_4=\"قم بإضافة المنتجات إلى سلة التسوق، ثم انقر فوق إتمام الطلب، ثم حدد طريقة الشحن، ثم أدخل معلومات الدفع. سوف تتلقى رسالة تأكيد الطلب عبر البريد الإلكتروني على الفور.\" category_5=\"الطلبات والتسوق\" category_id_5=\"ordersPurchases\" question_5=\"2. هل يمكنني تعديل أو إلغاء طلبي؟\" answer_5=\"يمكن تعديل الطلبات أو إلغاؤها من لوحة تحكم حسابك خلال ساعة واحدة من تقديمها. بعد ذلك بدأ المستودع بالتعبئة ولم نتمكن من التدخل.\" category_6=\"الطلبات والتسوق\" category_id_6=\"ordersPurchases\" question_6=\"3. ما هي طرق الدفع المقبولة؟\" answer_6=\"نحن نقبل Visa وMastercard وAmerican Express وApple Pay وGoogle Pay وPayPal. تستخدم جميع المعاملات تشفير TLS 1.3.\" category_7=\"العوائد والمبالغ المستردة\" category_id_7=\"returnsRefunds\" question_7=\"1. ما هي مدة الإرجاع؟\" answer_7=\"30 يومًا من تاريخ الاستلام للمنتجات غير المستخدمة وغير المستهلكة. لا ينطبق على سلع البيع والملابس الداخلية وعناصر البيع الفوري.\" category_8=\"العوائد والمبالغ المستردة\" category_id_8=\"returnsRefunds\" question_8=\"2. كيف أبدأ عملية الإرجاع؟\" answer_8=\"Open the order in your account dashboard and click \\\"Start return\\\". We email a prepaid label for domestic orders within one business day.\" category_9=\"العوائد والمبالغ المستردة\" category_id_9=\"returnsRefunds\" question_9=\"3. متى سأسترد أموالي؟\" answer_9=\"تتم معالجة المبالغ المستردة في غضون 3-5 أيام عمل من تاريخ استلامنا للمنتج المرتجع. قد تختلف أوقات الائتمان البنكي؛ يُرجى الانتظار لمدة تصل إلى 10 أيام عمل حتى تظهر دفعتك.\" category_10=\"الشحن والتتبع\" category_id_10=\"shippingTracking\" question_10=\"1. كم من الوقت يستغرق الشحن؟\" answer_10=\"يستغرق الشحن المحلي القياسي من 3 إلى 5 أيام عمل. الشحن السريع 1-2 أيام. يستغرق الشحن القياسي الدولي من 7 إلى 12 يوم عمل؛ تتوفر خيارات الشحن المعجل في صفحة الخروج.\" category_11=\"الشحن والتتبع\" category_id_11=\"shippingTracking\" question_11=\"2. كيفية تتبع الطلبات؟\" answer_11=\"يتم تضمين رابط التتبع في رسالة البريد الإلكتروني لتأكيد الشحن. يمكنك أيضًا عرض الحالة من الحساب → الطلبات → التتبع.\" category_12=\"الشحن والتتبع\" category_id_12=\"shippingTracking\" question_12=\"3. هل تشحن دوليًا؟\" answer_12=\"نعم – لمعظم البلدان. يتم دفع الضرائب والرسوم مسبقًا في صفحة الخروج لوجهات معينة؛ إذا لم يكن الأمر كذلك، يجوز لوحدة الشحن جمعها عند التسليم.\" category_13=\"الرسوم والمدفوعات\" category_id_13=\"feesBilling\" question_13=\"1. هل يشمل السعر الضرائب والرسوم؟\" answer_13=\"الأسعار المحلية تشمل ضريبة المبيعات الموضحة عند الخروج. تشمل الطلبات الدولية للوجهات المدعومة الضرائب والرسوم؛ وبخلاف ذلك، ستقوم وحدة الشحن باستلامها عند التسليم.\" category_14=\"الرسوم والمدفوعات\" category_id_14=\"feesBilling\" question_14=\"2. لماذا تم محاسبتي مرتين؟\" answer_14=\"ربما ترى تعليقًا للتفويض بالإضافة إلى الرسوم الفعلية. سيتم إلغاء الحجز تلقائيًا خلال 3-5 أيام عمل. أرسل بريدًا إلكترونيًا إلى billing@amerce.test إذا كنت لا تزال ترى رسومين بعد ذلك الوقت.\" category_15=\"موضوعات أخرى\" category_id_15=\"otherTopic\" question_15=\"1. هل لديك متجر فعلي؟\" answer_15=\"نعم — يرجى زيارة صفحة المتاجر للحصول على قائمة بالمتاجر الرئيسية والشركاء.\" category_16=\"موضوعات أخرى\" category_id_16=\"otherTopic\" question_16=\"2. كيفية الاتصال بخدمة العملاء؟\" answer_16=\"أرسل بريدًا إلكترونيًا إلى hello@amerce.test أو استخدم نموذج الاتصال. سوف نقوم بالرد خلال يوم عمل واحد.\"][/faq-page]'),('ar',4,'سياسة الخصوصية','كيف تقوم Amerce بجمع معلوماتك الشخصية واستخدامها وحمايتها.','[page-banner heading=\"سياسة الخصوصية\"][/page-banner]\n[term-content quantity=\"7\" title_1=\"1. المعلومات التي نجمعها\" body_1=\"<p class=\\\"term-text cl-text-2\\\">When you visit the Site, we automatically collect certain information about your device — web browser, IP address, time zone, and some of the cookies installed on your device. As you browse, we also collect data about the pages or products you view, what referred you to the Site, and how you interact with it. We refer to this as \\\"Device Information\\\".</p><p class=\\\"term-text cl-text-2\\\">When you make a purchase or attempt to purchase through the Site, we collect your name, billing address, shipping address, and payment information (including card number, email address, and phone number). We refer to this as \\\"Order Information\\\".</p>\" title_2=\"2. كيف نستخدم معلوماتك\" body_2=\"<p class=\\\"term-text cl-text-2\\\">We use Order Information to fulfil orders placed through the Site (process payment, arrange shipping, provide invoices and order confirmations). We use it to communicate with you, screen orders for fraud, and — in line with your preferences — share marketing about products you may like.</p><p class=\\\"term-text cl-text-2\\\">We use Device Information to screen for fraud and to improve the Site through analytics about how customers browse and interact with us.</p>\" title_3=\"3. مشاركة معلوماتك الشخصية\" body_3=\"<p class=\\\"term-text cl-text-2\\\">We share Personal Information with third-party service providers who help us run the Site. We may also share information to comply with applicable laws, respond to a subpoena or lawful request, or otherwise protect our rights.</p>\" title_4=\"4. تخزين البيانات\" body_4=\"<p class=\\\"term-text cl-text-2\\\">When you place an order, we maintain the Order Information for our records unless and until you ask us to delete it.</p>\" title_5=\"5. حقوقك\" body_5=\"<p class=\\\"term-text cl-text-2\\\">You can request access, correction, or deletion of any personal data we hold about you. Email privacy@amerce.test from the address on file and we will respond within 30 days.</p>\" title_6=\"6. ملفات تعريف الارتباط\" body_6=\"<p class=\\\"term-text cl-text-2\\\">Cookies are used to keep your cart between visits, remember your preferences, and measure aggregate traffic. You can disable cookies in your browser, though some Site features may stop working.</p>\" title_7=\"7. التغيير\" body_7=\"<p class=\\\"term-text cl-text-2\\\">We may update this policy from time to time to reflect changes to our practices or for operational, legal, or regulatory reasons. The latest version will always be on this page.</p>\"][/term-content]'),('ar',5,'الشروط والأحكام','تنطبق الشروط القانونية عند استخدام متجر Amerce.','[page-banner heading=\"الشروط والأحكام\"][/page-banner]\n[term-content quantity=\"7\" title_1=\"1. قبول الشروط\" body_1=\"<p class=\\\"term-text cl-text-2\\\">By accessing or using the أميرس store you agree to these terms. We reserve the right to update them with reasonable notice; the latest version is always available on this page.</p>\" title_2=\"2. الطلبات والدفع\" body_2=\"<p class=\\\"term-text cl-text-2\\\">All prices are in USD unless otherwise stated. We accept the payment methods displayed at checkout. An order becomes binding once you receive an order confirmation email.</p>\" title_3=\"3. الشحن\" body_3=\"<p class=\\\"term-text cl-text-2\\\">ينقل options, lead times, and rates are listed on our ينقل page. Risk passes to you on delivery.</p>\" title_4=\"4. المرتجعات\" body_4=\"<p class=\\\"term-text cl-text-2\\\">You have 30 days from delivery to return any unworn item for a refund. See our العوائد والمبالغ المستردة page for the full process.</p>\" title_5=\"5. الملكية الفكرية\" body_5=\"<p class=\\\"term-text cl-text-2\\\">All content on the Site — text, photography, logos, code — is owned by أميرس or its licensors and may not be reproduced without written permission.</p>\" title_6=\"6. حدود المسؤولية\" body_6=\"<p class=\\\"term-text cl-text-2\\\">To the maximum extent permitted by law, أميرس is not liable for indirect or consequential damages arising from use of the Site or the products purchased through it.</p>\" title_7=\"7. القانون المعمول به\" body_7=\"<p class=\\\"term-text cl-text-2\\\">These terms are governed by the laws of the State of New York. Any dispute will be resolved in the state or federal courts located in New York County.</p>\"][/term-content]'),('ar',6,'العوائد والمبالغ المستردة','سياسة الإرجاع الخاصة بنا لمدة 30 يومًا وعملية الإرجاع خطوة بخطوة.','[page-banner heading=\"العوائد والمبالغ المستردة\"][/page-banner]\n[term-content quantity=\"6\" title_1=\"1. المرتجعات\" body_1=\"<p class=\\\"term-text cl-text-2\\\">We want you to be completely satisfied with your purchase. If for any reason you are not, you may return any unworn item within 30 days of receiving your order for a refund or exchange. أغراض must be in original packaging and the same condition as you received them.</p>\" title_2=\"2. كيف تبدأ عملية الإرجاع\" body_2=\"<p class=\\\"term-text cl-text-2\\\">Open the order in your account dashboard and click \\\"Start return\\\", or email returns@amerce.test with your order number. We will send a prepaid return label for domestic orders within one business day.</p>\" title_3=\"3. استرداد الأموال\" body_3=\"<p class=\\\"term-text cl-text-2\\\">Refunds are processed within 3-5 business days of us receiving the return and applied to the original payment method. Bank posting times vary; allow up to 10 business days for the credit to appear.</p>\" title_4=\"4. الاستثناءات\" body_4=\"<p class=\\\"term-text cl-text-2\\\">Sale items, intimate apparel, and final-sale flash sale purchases are excluded from returns. Personalised or made-to-order items are also non-returnable unless faulty.</p>\" title_5=\"5. المنتجات التالفة أو المعيبة\" body_5=\"<p class=\\\"term-text cl-text-2\\\">If your order arrives damaged or faulty, email us within 7 days with photos. We will replace the item or issue a full refund — including any return shipping cost — at our expense.</p>\" title_6=\"6. العودة الدولية\" body_6=\"<p class=\\\"term-text cl-text-2\\\">International customers are responsible for return shipping unless the item is faulty. We do not refund original shipping or duty charges on international returns.</p>\"][/term-content]'),('ar',7,'شحن','طرق الشحن المحلي والدولي وأوقاته ورسومه.','[page-banner heading=\"ينقل\"][/page-banner]\n[term-content quantity=\"6\" title_1=\"1. طريقة الشحن\" body_1=\"<p class=\\\"term-text cl-text-2\\\">We offer the following shipping methods for domestic and international orders: standard ground, expedited 2-day, and priority overnight (where available).</p>\" title_2=\"2. الرسوم المحلية\" body_2=\"<p class=\\\"term-text cl-text-2\\\">Standard ground is free on orders over $99. Express 1-2 day shipping is $19.99 flat. Priority overnight is calculated by weight at checkout.</p>\" title_3=\"3. الدولية\" body_3=\"<p class=\\\"term-text cl-text-2\\\">We ship to most countries. International standard shipping is $24.99 with 7-12 business day delivery. Express options appear at checkout. Duties and taxes are pre-paid for select destinations; otherwise the courier collects them on delivery.</p>\" title_4=\"4. وقت المعالجة\" body_4=\"<p class=\\\"term-text cl-text-2\\\">Orders placed before 2pm EST on business days ship the same day. Orders placed after 2pm or on weekends/holidays ship the next business day.</p>\" title_5=\"5. التتبع\" body_5=\"<p class=\\\"term-text cl-text-2\\\">A tracking link is included in your shipment confirmation email. You can also see live status from Account → Orders → Track.</p>\" title_6=\"6. الطلبات المفقودة أو المعلقة\" body_6=\"<p class=\\\"term-text cl-text-2\\\">If a tracking number has not updated for more than 7 business days, email shipping@amerce.test. We will open an investigation with the carrier and either refund or reship the order at our expense.</p>\"][/term-content]'),('ar',8,'متاجرنا','قم بزيارة Amerce مباشرة — المتاجر الرئيسية والشركاء في جميع أنحاء العالم.',''),('ar',9,'Blog','تعليمات الزي وقصص العلامات التجارية والمحتوى من وراء الكواليس من فريق تحرير Amerce.','<div class=\"container py-5\"><h1>مذكرة</h1><p>اكتشف أحدث قصصنا - أدلة الأسلوب، وأبرز المنتجات، وتحليل الاستدامة المتعمق والمزيد.</p></div>'),('ar',10,'وظائف','انضم إلى Amerce - المناصب المفتوحة والقيم الثقافية وفوائد الفريق.','<div class=\"container py-5\"><h1>التوظيف في Amerce</h1><p>نحن فريق صغير وموزع لبناء نموذج بيع بالتجزئة أكثر دقة. نقوم بالتوظيف عبر المنتجات والهندسة وسلسلة التوريد وتجربة العملاء.</p><p>يتم نشر الوظائف المفتوحة على صفحة LinkedIn الخاصة بالشركة. للتقديم، أرسل خطابًا قصيرًا واستأنفه إلى <a href=\"mailto:careers@amerce.test\">careers@amerce.test</a>.</p></div>'),('ar',11,'Sustainability','How Amerce sources responsibly and reduces its environmental footprint.','<div class=\"container py-5\"><h1>التنمية المستدامة في أمريكا</h1><p>كل منتج يحمل قصة. نحن نعمل مباشرة مع المصانع وورش العمل الحرفية، ونعطي الأولوية للمواد المعاد تدويرها والتي يمكن تتبعها، ونقوم بتغليف عبوات خالية من البلاستيك.</p><p>هدفنا لعام 2026: أن يكون لدى 90% من المواد سلسلة توريد تم التحقق منها وتقارير تأثير سنوية شفافة.</p></div>'),('ar',12,'الصفحة الرئيسية','Amerce — موطن لتجربة التجارة الإلكترونية المتنوعة.','[simple-slider key=\"home-hero\" style=\"style-1\" is_autoplay=\"yes\" autoplay_speed=\"3000\" show_arrows=\"yes\" show_dots=\"yes\"][/simple-slider]\n[ecommerce-products style=\"style-slider\" title=\"أفضل الخيارات اليوم\" subtitle=\"اكتشف خيارات الملابس الرياضية الرائعة اليوم.\" source=\"featured\" limit=\"4\" items_per_row=\"4\"][/ecommerce-products]\n[categories-grid style=\"style-card-vertical\" title=\"تسوق حسب الفئة\" subtitle=\"اكتشف مجموعات الملابس الرياضية الأساسية لكل أسلوب تمرين.\" category_ids=\"1,2,3,4,5\" limit=\"5\" show_count=\"no\"][/categories-grid]\n[banner-products-composite title=\"أبرز الأحداث لهذا الأسبوع\" subtitle=\"أنماط جديدة واختيارات لا يمكن تفويتها منسقة لأسبوعك.\" image=\"section/banner-39.jpg\" overline=\"ولد لكل حركة.\" heading=\"جاهز لـ &lt;br&gt; العظمة\" button_text=\"اشتري الآن\" button_url=\"/products\" source=\"featured\" limit=\"4\"][/banner-products-composite]\n[lookbook-hotspot style=\"style-v4-carousel\" image=\"section/banner-lookbook-11.jpg\" quantity=\"2\" x_percent_1=\"38\" y_percent_1=\"42\" product_id_1=\"17\" column_1=\"1\" overline_1=\"تشغيل حمالة الصدر جاهزة\" x_percent_2=\"64\" y_percent_2=\"70\" product_id_2=\"18\" column_2=\"1\" overline_2=\"جاهز لتشغيل السراويل القصيرة\"][/lookbook-hotspot]\n[testimonials style=\"style-image-card\" title=\"ماذا يقول العملاء عنا\" subtitle=\"ردود فعل حقيقية من الأشخاص الذين يتدربون ويتحركون ويعيشون مع ملابسنا.\" autoplay=\"yes\" quantity=\"4\" avatar_1=\"testimonials/tes-16.jpg\" name_1=\"جينا ل.\" role_1=\"مدرب اليوغا\" rating_1=\"5\" content_1=\"\\\"Super comfortable and breathable &mdash; perfect for my daily workouts.\\\"\" avatar_2=\"testimonials/tes-17.jpg\" name_2=\"جينا ل.\" role_2=\"مدرب اليوغا\" rating_2=\"5\" content_2=\"\\\"The fit is amazing. Stylish, flexible, and great for the gym.\\\"\" avatar_3=\"testimonials/tes-18.jpg\" name_3=\"جينا ل.\" role_3=\"مدرب اليوغا\" rating_3=\"5\" content_3=\"\\\"Quality is top-notch. I feel more confident every time I wear it.\\\"\" avatar_4=\"testimonials/tes-19.jpg\" name_4=\"جينا ل.\" role_4=\"مدرب اليوغا\" rating_4=\"5\" content_4=\"\\\"Love the fabric! Lightweight and moves with me during every session.\\\"\"][/testimonials]\n[parallax-banner style=\"style-1\" image=\"section/banner-40.jpg\" heading=\"رفع مستوى أسلوب التمرين &lt;br&gt;\" subheading=\"ملابس رياضية فاخرة مصممة لتوفير الراحة والأداء والثقة.\" button_text=\"اشتري الآن\" button_url=\"/products\" text_alignment=\"left\" marquee_text=\"اختيار الموسم الجديد، والأنماط الرائجة، ومجموعة محدودة\"][/parallax-banner]\n[image-gallery style=\"style-default\" title=\"تابعونا على الانستقرام\" subtitle=\"@أميرسي\" quantity=\"5\" image_1=\"gallery/gallery-37.jpg\" link_1=\"/products\" image_2=\"gallery/gallery-38.jpg\" link_2=\"/products\" image_3=\"gallery/gallery-39.jpg\" link_3=\"/products\" image_4=\"gallery/gallery-40.jpg\" link_4=\"/products\" image_5=\"gallery/gallery-41.jpg\" link_5=\"/products\"][/image-gallery]'),('fr',1,'À propos','Présentation d\'Amerce - histoire de la marque, normes d\'approvisionnement et équipe derrière chaque produit.','[page-banner heading=\"À propos de nous\" subtitle=\"With over 15 years of experience, we craft timeless collections that transcend<br class=\\\"d-none d-lg-block\\\">trends and inspire lasting elegance.\"][/page-banner]\n[stats-counter hero_image=\"section/s-contact-1.jpg\" heading=\"Le design, l’attention aux détails et l’efficacité plaisent au monde\" description=\"De sa conception jusqu\'à son port, chacun de nos produits suit ce voyage. Nous pouvons le faire à un rythme plus rapide. Cependant, chez Amerce, nous choisissons de prendre soin de tous ceux qui font ce voyage avec nous.\" quantity=\"4\" value_1=\"8.2k\" animate_to_1=\"\" suffix_1=\"\" label_1=\"Produits existants\" desc_1=\"Nous proposons une variété de produits de haute qualité pour répondre à tous les besoins.\" value_2=\"\" animate_to_2=\"10\" suffix_2=\"k\" label_2=\"Clients satisfaits\" desc_2=\"Au service de plus de 10 000 clients satisfaits qui nous font confiance pour la qualité et le service.\" value_3=\"\" animate_to_3=\"96\" suffix_3=\"\" label_3=\"Marque partenaire\" desc_3=\"Les partenariats avec de grandes marques apportent des collections de confiance dans votre magasin et chez vous.\" value_4=\"\" animate_to_4=\"16\" suffix_4=\"k\" label_4=\"Produits à vendre\" desc_4=\"C\'est pourquoi nous nous efforçons de proposer une variété de gammes de produits, adaptées à chaque style.\"][/stats-counter]\n[image-accordion image=\"section/s-contact-2.jpg\" heading=\"Apporter des objets rares et exquis dans le monde entier\" quantity=\"4\" title_1=\"Introduire\" body_1=\"Bienvenue chez Amerce Store, votre destination privilégiée pour la mode et les accessoires avant-gardistes. Nous sommes fiers d\'offrir une collection soigneusement sélectionnée de pièces rares et exquises recherchées tant au niveau national qu\'international.\" title_2=\"Notre vision\" body_2=\"Nous visons un monde où le design sophistiqué se mêle à la vie quotidienne : des produits qui résistent à l\'épreuve du temps, des partenaires de confiance et des clients traités comme des personnes et non comme des transactions.\" title_3=\"Ce qui fait la différence\" body_3=\"Les fournisseurs sont audités de manière indépendante, les produits sont testés manuellement et il existe une politique de retour sans motif de 30 jours, soutenue par une équipe de service client dédiée.\" title_4=\"Notre engagement\" body_4=\"Des produits de qualité, des chaînes d\'approvisionnement transparentes et des conditions de travail équitables : à chaque commande, à chaque fois.\"][/image-accordion]\n[about-testimonials heading=\"Ce que disent les clients !\" subtitle=\"Les clients aiment nos produits et nous nous efforçons de leur plaire.\" quantity=\"2\" image_1=\"testimonials/tes-1.jpg\" name_1=\"Emma Collins\" text_1=\"\\\"Totally obsessed with this outfit! The fit is perfect, the fabric feels premium, and I\'ve been getting compliments non-stop. It instantly lifts my confidence — such a great find!\\\"\" image_2=\"testimonials/tes-2.jpg\" name_2=\"Sophie Ramírez\" text_2=\"\\\"I\'m amazed by how comfortable yet stylish this piece is. It pairs effortlessly with everything, and the quality really stands out. Definitely becoming my go-to for everyday looks!\\\"\"][/about-testimonials]\n[about-team heading=\"Rencontrez l\'équipe\" subtitle=\"Des professionnels dédiés à la perfection dans les moindres détails.\" quantity=\"4\" image_1=\"member/member-1.jpg\" name_1=\"Annette Noir\" role_1=\"Fondateur/PDG\" social_links_1=\"\" image_2=\"member/member-2.jpg\" name_2=\"Brooklyn Simmons\" role_2=\"Gérer\" social_links_2=\"\" image_3=\"member/member-3.jpg\" name_3=\"Jane Cooper\" role_3=\"Directeur des ventes\" social_links_3=\"\" image_4=\"member/member-4.jpg\" name_4=\"Lisa Bonet\" role_4=\"Directeur des ventes\" social_links_4=\"\"][/about-team]'),('fr',2,'Contact','Contactez l\'équipe de service client et de coopération d\'Amerce.',''),('fr',3,'FAQ','Questions fréquemment posées sur les commandes, l\'expédition, les retours et la gestion des comptes.','[page-banner heading=\"Foire aux questions\" subtitle=\"Got questions? We\'ve got answers! Browse our Foire aux questions to find information on orders, shipping,<br class=\\\"d-none d-lg-block\\\">returns, and more. If you need further assistance, feel free to contact our team.\"][/page-banner]\n[faq-page sidebar_image=\"section/banner-12.jpg\" sidebar_title=\"Save 25% <br class=\\\"d-none d-sm-block\\\">Today\" sidebar_subtitle=\"T-shirts, sweats à capuche et plus\" sidebar_cta=\"Voir plus\" sidebar_url=\"/products\" quantity=\"16\" category_1=\"Mon compte\" category_id_1=\"myAccount\" question_1=\"1. Que puis-je faire si j\'oublie mon mot de passe ?\" answer_1=\"Use the \\\"Forgot password\\\" link on the sign-in page. We will email you a one-time link to set a new password — it expires in 30 minutes for security.\" category_2=\"Mon compte\" category_id_2=\"myAccount\" question_2=\"2. Comment mettre à jour l\'adresse e-mail ?\" answer_2=\"Connectez-vous, ouvrez Compte → Paramètres et modifiez les champs de courrier électronique. Nous enverrons un e-mail de confirmation à la nouvelle adresse ; Le changement prendra effet lorsque vous cliquerez sur ce lien.\" category_3=\"Mon compte\" category_id_3=\"myAccount\" question_3=\"3. Puis-je supprimer mon compte ?\" answer_3=\"Avoir. Dans Compte → Paramètres, faites défiler jusqu\'à Supprimer le compte. Nous conservons l\'historique des commandes pour des raisons fiscales/légales, mais les coordonnées personnelles sont supprimées dans les 30 jours.\" category_4=\"Commandes et achats\" category_id_4=\"ordersPurchases\" question_4=\"1. Comment commander ?\" answer_4=\"Ajoutez des produits au panier, cliquez sur Commander, sélectionnez le mode d\'expédition, puis saisissez les informations de paiement. Vous recevrez immédiatement un e-mail de confirmation de commande.\" category_5=\"Commandes et achats\" category_id_5=\"ordersPurchases\" question_5=\"2. Puis-je modifier ou annuler ma commande ?\" answer_5=\"Les commandes peuvent être modifiées ou annulées à partir du tableau de bord de votre compte dans l\'heure suivant leur passation. Après cela, l\'entrepôt a commencé à emballer et nous n\'avons pas pu intervenir.\" category_6=\"Commandes et achats\" category_id_6=\"ordersPurchases\" question_6=\"3. Quels modes de paiement sont acceptés ?\" answer_6=\"Nous acceptons Visa, Mastercard, American Express, Apple Pay, Google Pay et PayPal. Toutes les transactions utilisent le cryptage TLS 1.3.\" category_7=\"Retours et remboursements\" category_id_7=\"returnsRefunds\" question_7=\"1. Quelle est la durée du délai de retour ?\" answer_7=\"30 jours à compter de la date de réception pour les produits non utilisés et non portés. Non applicable aux articles soldés, aux sous-vêtements et aux articles en vente flash en vente finale.\" category_8=\"Retours et remboursements\" category_id_8=\"returnsRefunds\" question_8=\"2. Comment démarrer le processus de retour ?\" answer_8=\"Open the order in your account dashboard and click \\\"Start return\\\". We email a prepaid label for domestic orders within one business day.\" category_9=\"Retours et remboursements\" category_id_9=\"returnsRefunds\" question_9=\"3. Quand recevrai-je mon remboursement ?\" answer_9=\"Les remboursements sont traités dans les 3 à 5 jours ouvrables à compter de la réception de l\'article retourné. Les délais de crédit bancaire peuvent varier ; Veuillez prévoir jusqu\'à 10 jours ouvrables pour voir votre paiement reflété.\" category_10=\"Expédition et suivi\" category_id_10=\"shippingTracking\" question_10=\"1. Combien de temps prend l’expédition ?\" answer_10=\"L\'expédition nationale standard prend 3 à 5 jours ouvrables. Expédition rapide 1-2 jours. L\'expédition standard internationale prend 7 à 12 jours ouvrables ; Des options d\'expédition accélérée sont disponibles sur la page de paiement.\" category_11=\"Expédition et suivi\" category_id_11=\"shippingTracking\" question_11=\"2. Comment suivre les commandes ?\" answer_11=\"Le lien de suivi est inclus dans l\'e-mail de confirmation d\'expédition. Vous pouvez également afficher le statut depuis Compte → Commandes → Suivi.\" category_12=\"Expédition et suivi\" category_id_12=\"shippingTracking\" question_12=\"3. Expédiez-vous à l’international ?\" answer_12=\"Oui, dans la plupart des pays. Les taxes et frais sont prépayés sur la page de paiement pour certaines destinations ; Dans le cas contraire, l\'unité d\'expédition pourra le récupérer à la livraison.\" category_13=\"Frais et paiements\" category_id_13=\"feesBilling\" question_13=\"1. Les taxes et frais sont-ils inclus ?\" answer_13=\"Les prix nationaux incluent la taxe de vente indiquée au moment du paiement. Les commandes internationales vers les destinations prises en charge incluent les taxes et les frais ; Dans le cas contraire, l\'unité d\'expédition le récupérera à la livraison.\" category_14=\"Frais et paiements\" category_id_14=\"feesBilling\" question_14=\"2. Pourquoi ai-je été facturé deux fois ?\" answer_14=\"Vous voyez peut-être une autorisation retenue avec le montant réel des frais. La retenue sera automatiquement annulée dans un délai de 3 à 5 jours ouvrables. Envoyez un e-mail à billing@amerce.test si vous voyez toujours deux frais après cette heure.\" category_15=\"Autres sujets\" category_id_15=\"otherTopic\" question_15=\"1. Avez-vous un magasin physique ?\" answer_15=\"Oui, veuillez visiter la page Magasins pour une liste des principaux magasins et partenaires.\" category_16=\"Autres sujets\" category_id_16=\"otherTopic\" question_16=\"2. Comment contacter le service client ?\" answer_16=\"Envoyez un e-mail à hello@amerce.test ou utilisez le formulaire de contact. Nous vous répondrons dans un délai d\'un jour ouvrable.\"][/faq-page]'),('fr',4,'politique de confidentialité','Comment Amerce collecte, utilise et protège vos informations personnelles.','[page-banner heading=\"politique de confidentialité\"][/page-banner]\n[term-content quantity=\"7\" title_1=\"1. Informations que nous collectons\" body_1=\"<p class=\\\"term-text cl-text-2\\\">When you visit the Site, we automatically collect certain information about your device — web browser, IP address, time zone, and some of the cookies installed on your device. As you browse, we also collect data about the pages or products you view, what referred you to the Site, and how you interact with it. We refer to this as \\\"Device Information\\\".</p><p class=\\\"term-text cl-text-2\\\">When you make a purchase or attempt to purchase through the Site, we collect your name, billing address, shipping address, and payment information (including card number, email address, and phone number). We refer to this as \\\"Order Information\\\".</p>\" title_2=\"2. Comment nous utilisons vos informations\" body_2=\"<p class=\\\"term-text cl-text-2\\\">We use Order Information to fulfil orders placed through the Site (process payment, arrange shipping, provide invoices and order confirmations). We use it to communicate with you, screen orders for fraud, and — in line with your preferences — share marketing about products you may like.</p><p class=\\\"term-text cl-text-2\\\">We use Device Information to screen for fraud and to improve the Site through analytics about how customers browse and interact with us.</p>\" title_3=\"3. Partage de vos informations personnelles\" body_3=\"<p class=\\\"term-text cl-text-2\\\">We share Personal Information with third-party service providers who help us run the Site. We may also share information to comply with applicable laws, respond to a subpoena or lawful request, or otherwise protect our rights.</p>\" title_4=\"4. Stockage des données\" body_4=\"<p class=\\\"term-text cl-text-2\\\">When you place an order, we maintain the Order Information for our records unless and until you ask us to delete it.</p>\" title_5=\"5. Vos droits\" body_5=\"<p class=\\\"term-text cl-text-2\\\">You can request access, correction, or deletion of any personal data we hold about you. Email privacy@amerce.test from the address on file and we will respond within 30 days.</p>\" title_6=\"6. Cookies\" body_6=\"<p class=\\\"term-text cl-text-2\\\">Cookies are used to keep your cart between visits, remember your preferences, and measure aggregate traffic. You can disable cookies in your browser, though some Site features may stop working.</p>\" title_7=\"7. Changement\" body_7=\"<p class=\\\"term-text cl-text-2\\\">We may update this policy from time to time to reflect changes to our practices or for operational, legal, or regulatory reasons. The latest version will always be on this page.</p>\"][/term-content]'),('fr',5,'Conditions générales','Les conditions légales s\'appliquent lorsque vous utilisez la boutique Amerce.','[page-banner heading=\"Conditions générales\"][/page-banner]\n[term-content quantity=\"7\" title_1=\"1. Acceptation des conditions\" body_1=\"<p class=\\\"term-text cl-text-2\\\">By accessing or using the Amérique store you agree to these terms. We reserve the right to update them with reasonable notice; the latest version is always available on this page.</p>\" title_2=\"2. Commandes et paiement\" body_2=\"<p class=\\\"term-text cl-text-2\\\">All prices are in USD unless otherwise stated. We accept the payment methods displayed at checkout. An order becomes binding once you receive an order confirmation email.</p>\" title_3=\"3. Expédition\" body_3=\"<p class=\\\"term-text cl-text-2\\\">Transport options, lead times, and rates are listed on our Transport page. Risk passes to you on delivery.</p>\" title_4=\"4. Retours\" body_4=\"<p class=\\\"term-text cl-text-2\\\">You have 30 days from delivery to return any unworn item for a refund. See our Retours et remboursements page for the full process.</p>\" title_5=\"5. Propriété intellectuelle\" body_5=\"<p class=\\\"term-text cl-text-2\\\">All content on the Site — text, photography, logos, code — is owned by Amérique or its licensors and may not be reproduced without written permission.</p>\" title_6=\"6. Limitation de responsabilité\" body_6=\"<p class=\\\"term-text cl-text-2\\\">To the maximum extent permitted by law, Amérique is not liable for indirect or consequential damages arising from use of the Site or the products purchased through it.</p>\" title_7=\"7. Loi applicable\" body_7=\"<p class=\\\"term-text cl-text-2\\\">These terms are governed by the laws of the State of New York. Any dispute will be resolved in the state or federal courts located in New York County.</p>\"][/term-content]'),('fr',6,'Retours et remboursements','Notre politique de retour de 30 jours et notre processus de retour étape par étape.','[page-banner heading=\"Retours et remboursements\"][/page-banner]\n[term-content quantity=\"6\" title_1=\"1. Retours\" body_1=\"<p class=\\\"term-text cl-text-2\\\">We want you to be completely satisfied with your purchase. If for any reason you are not, you may return any unworn item within 30 days of receiving your order for a refund or exchange. Articles must be in original packaging and the same condition as you received them.</p>\" title_2=\"2. Comment démarrer un retour\" body_2=\"<p class=\\\"term-text cl-text-2\\\">Open the order in your account dashboard and click \\\"Start return\\\", or email returns@amerce.test with your order number. We will send a prepaid return label for domestic orders within one business day.</p>\" title_3=\"3. Remboursement\" body_3=\"<p class=\\\"term-text cl-text-2\\\">Refunds are processed within 3-5 business days of us receiving the return and applied to the original payment method. Bank posting times vary; allow up to 10 business days for the credit to appear.</p>\" title_4=\"4. Exclusions\" body_4=\"<p class=\\\"term-text cl-text-2\\\">Sale items, intimate apparel, and final-sale flash sale purchases are excluded from returns. Personalised or made-to-order items are also non-returnable unless faulty.</p>\" title_5=\"5. Produits endommagés ou défectueux\" body_5=\"<p class=\\\"term-text cl-text-2\\\">If your order arrives damaged or faulty, email us within 7 days with photos. We will replace the item or issue a full refund — including any return shipping cost — at our expense.</p>\" title_6=\"6. Retours internationaux\" body_6=\"<p class=\\\"term-text cl-text-2\\\">International customers are responsible for return shipping unless the item is faulty. We do not refund original shipping or duty charges on international returns.</p>\"][/term-content]'),('fr',7,'Expédition','Méthodes, délais et frais d\'expédition nationaux et internationaux.','[page-banner heading=\"Transport\"][/page-banner]\n[term-content quantity=\"6\" title_1=\"1. Méthode d\'expédition\" body_1=\"<p class=\\\"term-text cl-text-2\\\">We offer the following shipping methods for domestic and international orders: standard ground, expedited 2-day, and priority overnight (where available).</p>\" title_2=\"2. Frais nationaux\" body_2=\"<p class=\\\"term-text cl-text-2\\\">Standard ground is free on orders over $99. Express 1-2 day shipping is $19.99 flat. Priority overnight is calculated by weight at checkout.</p>\" title_3=\"3. Internationale\" body_3=\"<p class=\\\"term-text cl-text-2\\\">We ship to most countries. International standard shipping is $24.99 with 7-12 business day delivery. Express options appear at checkout. Duties and taxes are pre-paid for select destinations; otherwise the courier collects them on delivery.</p>\" title_4=\"4. Délai de traitement\" body_4=\"<p class=\\\"term-text cl-text-2\\\">Orders placed before 2pm EST on business days ship the same day. Orders placed after 2pm or on weekends/holidays ship the next business day.</p>\" title_5=\"5. Suivi\" body_5=\"<p class=\\\"term-text cl-text-2\\\">A tracking link is included in your shipment confirmation email. You can also see live status from Account → Orders → Track.</p>\" title_6=\"6. Commandes perdues ou bloquées\" body_6=\"<p class=\\\"term-text cl-text-2\\\">If a tracking number has not updated for more than 7 business days, email shipping@amerce.test. We will open an investigation with the carrier and either refund or reship the order at our expense.</p>\"][/term-content]'),('fr',8,'Nos magasins','Visitez Amerce directement – ​​magasins phares et partenaires dans le monde entier.',''),('fr',9,'Blog','Instructions de tenue, histoires de marque et contenu en coulisses de l\'équipe éditoriale d\'Amerce.','<div class=\"container py-5\"><h1>Agenda</h1><p>Découvrez nos dernières histoires : guides de style, produits phares, analyse approfondie de la durabilité et bien plus encore.</p></div>'),('fr',10,'Carrières','Rejoignez Amerce - postes ouverts, valeurs culturelles et avantages d\'équipe.','<div class=\"container py-5\"><h1>Recrutement chez Amerce</h1><p>Nous sommes une petite équipe distribuée construisant un modèle de vente au détail plus raffiné. Nous recrutons dans les domaines des produits, de l\'ingénierie, de la chaîne d\'approvisionnement et de l\'expérience client.</p><p>Les postes vacants sont publiés sur la page LinkedIn de l\'entreprise. Pour postuler, envoyez une courte lettre et un curriculum vitae à <a href=\"mailto:careers@amerce.test\">careers@amerce.test</a>.</p></div>'),('fr',11,'Sustainability','How Amerce sources responsibly and reduces its environmental footprint.','<div class=\"container py-5\"><h1>Développement durable en Amérique</h1><p>Chaque produit porte une histoire. Nous travaillons directement avec des usines et des ateliers d\'artisans, priorisons les matériaux recyclés et traçables et emballons sans plastique.</p><p>Notre objectif 2026 : 90 % des matériaux disposent d\'une chaîne d\'approvisionnement vérifiée et d\'un rapport d\'impact annuel transparent.</p></div>'),('fr',12,'Page d\'accueil','Amerce – abrite une expérience de commerce électronique polyvalente.','[simple-slider key=\"home-hero\" style=\"style-1\" is_autoplay=\"yes\" autoplay_speed=\"3000\" show_arrows=\"yes\" show_dots=\"yes\"][/simple-slider]\n[ecommerce-products style=\"style-slider\" title=\"Les meilleurs choix du jour\" subtitle=\"Découvrez dès aujourd’hui des options de vêtements de sport exceptionnelles.\" source=\"featured\" limit=\"4\" items_per_row=\"4\"][/ecommerce-products]\n[categories-grid style=\"style-card-vertical\" title=\"Acheter par catégorie\" subtitle=\"Explorez les collections de vêtements de sport essentielles pour chaque style d\'entraînement.\" category_ids=\"1,2,3,4,5\" limit=\"5\" show_count=\"no\"][/categories-grid]\n[banner-products-composite title=\"Les meilleurs moments de la semaine\" subtitle=\"Nouveaux styles et choix incontournables sélectionnés pour votre semaine.\" image=\"section/banner-39.jpg\" overline=\"Né pour chaque mouvement.\" heading=\"Prêt pour la grandeur &lt;br&gt;\" button_text=\"Acheter maintenant\" button_url=\"/products\" source=\"featured\" limit=\"4\"][/banner-products-composite]\n[lookbook-hotspot style=\"style-v4-carousel\" image=\"section/banner-lookbook-11.jpg\" quantity=\"2\" x_percent_1=\"38\" y_percent_1=\"42\" product_id_1=\"17\" column_1=\"1\" overline_1=\"Soutien-gorge prêt à courir\" x_percent_2=\"64\" y_percent_2=\"70\" product_id_2=\"18\" column_2=\"1\" overline_2=\"Short prêt à courir\"][/lookbook-hotspot]\n[testimonials style=\"style-image-card\" title=\"Ce que les clients disent de nous\" subtitle=\"De vrais retours de personnes qui s\'entraînent, bougent et vivent avec nos vêtements.\" autoplay=\"yes\" quantity=\"4\" avatar_1=\"testimonials/tes-16.jpg\" name_1=\"Jenna L.\" role_1=\"Instructeur de yoga\" rating_1=\"5\" content_1=\"\\\"Super comfortable and breathable &mdash; perfect for my daily workouts.\\\"\" avatar_2=\"testimonials/tes-17.jpg\" name_2=\"Jenna L.\" role_2=\"Instructeur de yoga\" rating_2=\"5\" content_2=\"\\\"The fit is amazing. Stylish, flexible, and great for the gym.\\\"\" avatar_3=\"testimonials/tes-18.jpg\" name_3=\"Jenna L.\" role_3=\"Instructeur de yoga\" rating_3=\"5\" content_3=\"\\\"Quality is top-notch. I feel more confident every time I wear it.\\\"\" avatar_4=\"testimonials/tes-19.jpg\" name_4=\"Jenna L.\" role_4=\"Instructeur de yoga\" rating_4=\"5\" content_4=\"\\\"Love the fabric! Lightweight and moves with me during every session.\\\"\"][/testimonials]\n[parallax-banner style=\"style-1\" image=\"section/banner-40.jpg\" heading=\"Élevez le style d&apos;entraînement &lt;br&gt;\" subheading=\"Des vêtements de sport haut de gamme conçus pour le confort, la performance et la confiance.\" button_text=\"Acheter maintenant\" button_url=\"/products\" text_alignment=\"left\" marquee_text=\"NOUVEAU CHOIX DE SAISON, STYLES TENDANCES, COLLECTION LIMITÉE\"][/parallax-banner]\n[image-gallery style=\"style-default\" title=\"Suivez-nous sur Instagram\" subtitle=\"@Amerce\" quantity=\"5\" image_1=\"gallery/gallery-37.jpg\" link_1=\"/products\" image_2=\"gallery/gallery-38.jpg\" link_2=\"/products\" image_3=\"gallery/gallery-39.jpg\" link_3=\"/products\" image_4=\"gallery/gallery-40.jpg\" link_4=\"/products\" image_5=\"gallery/gallery-41.jpg\" link_5=\"/products\"][/image-gallery]'),('id',1,'Tentang','Memperkenalkan Amerce — kisah merek, standar pasokan, dan tim di balik setiap produk.','[page-banner heading=\"Tentang Kami\" subtitle=\"With over 15 years of experience, we craft timeless collections that transcend<br class=\\\"d-none d-lg-block\\\">trends and inspire lasting elegance.\"][/page-banner]\n[stats-counter hero_image=\"section/s-contact-1.jpg\" heading=\"Desain, perhatian terhadap detail dan efisiensi menyenangkan dunia\" description=\"Dari saat dirancang hingga dipakai, setiap produk kami mengikuti perjalanan ini. Kita bisa melakukannya dengan lebih cepat. Namun, di Amerce, kami memilih untuk menjaga semua orang yang melakukan perjalanan bersama kami.\" quantity=\"4\" value_1=\"8.2k\" animate_to_1=\"\" suffix_1=\"\" label_1=\"Produk yang Ada\" desc_1=\"Kami menawarkan berbagai produk berkualitas tinggi untuk memenuhi setiap kebutuhan.\" value_2=\"\" animate_to_2=\"10\" suffix_2=\"k\" label_2=\"Pelanggan yang Puas\" desc_2=\"Melayani lebih dari 10.000 pelanggan yang puas dan mempercayai kami untuk kualitas dan layanan.\" value_3=\"\" animate_to_3=\"96\" suffix_3=\"\" label_3=\"Merek Mitra\" desc_3=\"Kemitraan dengan merek terkemuka menghadirkan koleksi tepercaya ke toko dan rumah Anda.\" value_4=\"\" animate_to_4=\"16\" suffix_4=\"k\" label_4=\"Produk Dijual\" desc_4=\"Itu sebabnya kami berusaha menghadirkan beragam lini produk, cocok untuk setiap gaya.\"][/stats-counter]\n[image-accordion image=\"section/s-contact-2.jpg\" heading=\"Membawa Barang Langka dan Indah ke Seluruh Dunia\" quantity=\"4\" title_1=\"Memperkenalkan\" body_1=\"Selamat datang di Amerce Store, tujuan utama Anda untuk fashion dan aksesoris penentu tren. Kami bangga menawarkan koleksi barang langka dan indah yang dipilih dengan cermat yang dicari baik secara nasional maupun internasional.\" title_2=\"Visi kami\" body_2=\"Kami bertujuan untuk mewujudkan dunia di mana desain canggih berpadu dengan kehidupan sehari-hari — produk yang bertahan dalam ujian waktu, mitra yang tepercaya, dan pelanggan yang diperlakukan seperti manusia, bukan transaksi.\" title_3=\"Apa yang Membuat Perbedaan\" body_3=\"Pemasok diaudit secara independen, produk diuji secara manual, dan terdapat kebijakan pengembalian tanpa alasan selama 30 hari, yang didukung oleh tim layanan pelanggan khusus.\" title_4=\"Komitmen kami\" body_4=\"Produk berkualitas, rantai pasokan yang transparan, dan kondisi tenaga kerja yang adil — setiap pesanan, setiap saat.\"][/image-accordion]\n[about-testimonials heading=\"Apa Kata Pelanggan!\" subtitle=\"Pelanggan menyukai produk kami, dan kami berusaha menyenangkan mereka.\" quantity=\"2\" image_1=\"testimonials/tes-1.jpg\" name_1=\"Emma Collins\" text_1=\"\\\"Totally obsessed with this outfit! The fit is perfect, the fabric feels premium, and I\'ve been getting compliments non-stop. It instantly lifts my confidence — such a great find!\\\"\" image_2=\"testimonials/tes-2.jpg\" name_2=\"Sophia Ramirez\" text_2=\"\\\"I\'m amazed by how comfortable yet stylish this piece is. It pairs effortlessly with everything, and the quality really stands out. Definitely becoming my go-to for everyday looks!\\\"\"][/about-testimonials]\n[about-team heading=\"Temui Tim\" subtitle=\"Profesional yang berdedikasi pada kesempurnaan dalam setiap detail.\" quantity=\"4\" image_1=\"member/member-1.jpg\" name_1=\"Annette Hitam\" role_1=\"Pendiri/CEO\" social_links_1=\"\" image_2=\"member/member-2.jpg\" name_2=\"Brooklyn Simmons\" role_2=\"Mengelola\" social_links_2=\"\" image_3=\"member/member-3.jpg\" name_3=\"Jane Cooper\" role_3=\"Direktur Penjualan\" social_links_3=\"\" image_4=\"member/member-4.jpg\" name_4=\"Lisa Bonet\" role_4=\"Direktur Penjualan\" social_links_4=\"\"][/about-team]'),('id',2,'Kontak','Hubungi tim layanan pelanggan dan kerja sama Amerce.',''),('id',3,'FAQ','Pertanyaan yang sering diajukan tentang pesanan, pengiriman, pengembalian, dan manajemen akun.','[page-banner heading=\"Pertanyaan yang Sering Diajukan\" subtitle=\"Got questions? We\'ve got answers! Browse our Pertanyaan yang Sering Diajukan to find information on orders, shipping,<br class=\\\"d-none d-lg-block\\\">returns, and more. If you need further assistance, feel free to contact our team.\"][/page-banner]\n[faq-page sidebar_image=\"section/banner-12.jpg\" sidebar_title=\"Save 25% <br class=\\\"d-none d-sm-block\\\">Today\" sidebar_subtitle=\"T-Shirt, Hoodie, dan Lainnya\" sidebar_cta=\"Lihat Lebih Banyak\" sidebar_url=\"/products\" quantity=\"16\" category_1=\"Akun Saya\" category_id_1=\"myAccount\" question_1=\"1. Apa yang dapat saya lakukan jika saya lupa kata sandi?\" answer_1=\"Use the \\\"Forgot password\\\" link on the sign-in page. We will email you a one-time link to set a new password — it expires in 30 minutes for security.\" category_2=\"Akun Saya\" category_id_2=\"myAccount\" question_2=\"2. Bagaimana cara memperbarui alamat email?\" answer_2=\"Masuk, buka Akun → Pengaturan dan ubah bidang email. Kami akan mengirimkan email konfirmasi ke alamat baru; Perubahan akan berlaku ketika Anda mengeklik tautan itu.\" category_3=\"Akun Saya\" category_id_3=\"myAccount\" question_3=\"3. Bisakah saya menghapus akun saya?\" answer_3=\"Memiliki. Dari Akun → Pengaturan, gulir ke bawah ke Hapus akun. Kami menyimpan riwayat pesanan karena alasan pajak/hukum, tetapi informasi kontak pribadi akan dihapus dalam waktu 30 hari.\" category_4=\"Pemesanan & Belanja\" category_id_4=\"ordersPurchases\" question_4=\"1. Bagaimana cara memesannya?\" answer_4=\"Tambahkan produk ke keranjang, klik checkout, pilih metode pengiriman, lalu masukkan informasi pembayaran. Anda akan segera menerima email konfirmasi pesanan.\" category_5=\"Pemesanan & Belanja\" category_id_5=\"ordersPurchases\" question_5=\"2. Bisakah saya mengedit atau membatalkan pesanan saya?\" answer_5=\"Pesanan dapat diedit atau dibatalkan dari dasbor akun Anda dalam waktu 1 jam setelah penempatan. Setelah itu, gudang mulai berkemas dan kami tidak bisa campur tangan.\" category_6=\"Pemesanan & Belanja\" category_id_6=\"ordersPurchases\" question_6=\"3. Metode pembayaran apa yang diterima?\" answer_6=\"Kami menerima Visa, Mastercard, American Express, Apple Pay, Google Pay, dan PayPal. Semua transaksi menggunakan enkripsi TLS 1.3.\" category_7=\"Pengembalian & Pengembalian Dana\" category_id_7=\"returnsRefunds\" question_7=\"1. Berapa lama periode pengembaliannya?\" answer_7=\"30 hari sejak tanggal penerimaan untuk produk yang belum terpakai dan belum dipakai. Tidak berlaku untuk item sale, pakaian dalam, dan item flash sale penjualan akhir.\" category_8=\"Pengembalian & Pengembalian Dana\" category_id_8=\"returnsRefunds\" question_8=\"2. Bagaimana cara memulai proses pengembalian?\" answer_8=\"Open the order in your account dashboard and click \\\"Start return\\\". We email a prepaid label for domestic orders within one business day.\" category_9=\"Pengembalian & Pengembalian Dana\" category_id_9=\"returnsRefunds\" question_9=\"3. Kapan saya akan menerima pengembalian dana saya?\" answer_9=\"Pengembalian dana diproses dalam 3-5 hari kerja sejak kami menerima barang yang dikembalikan. Waktu kredit bank mungkin berbeda; Harap tunggu hingga 10 hari kerja agar pembayaran Anda terlihat.\" category_10=\"Pengiriman & Pelacakan\" category_id_10=\"shippingTracking\" question_10=\"1. Berapa lama waktu pengiriman?\" answer_10=\"Pengiriman domestik standar memakan waktu 3-5 hari kerja. Pengiriman cepat 1-2 hari. Pengiriman standar internasional memakan waktu 7-12 hari kerja; Opsi pengiriman yang dipercepat tersedia di halaman checkout.\" category_11=\"Pengiriman & Pelacakan\" category_id_11=\"shippingTracking\" question_11=\"2. Bagaimana cara melacak pesanan?\" answer_11=\"Tautan pelacakan disertakan dalam email konfirmasi pengiriman. Anda juga dapat melihat status dari Akun → Pesanan → Pelacakan.\" category_12=\"Pengiriman & Pelacakan\" category_id_12=\"shippingTracking\" question_12=\"3. Apakah Anda mengirim secara internasional?\" answer_12=\"Ya — di sebagian besar negara. Pajak dan biaya dibayar di muka di halaman checkout untuk tujuan tertentu; Jika tidak, unit pengiriman dapat mengambilnya pada saat pengiriman.\" category_13=\"Biaya & Pembayaran\" category_id_13=\"feesBilling\" question_13=\"1. Apakah sudah termasuk pajak dan biaya?\" answer_13=\"Harga domestik termasuk pajak penjualan yang ditunjukkan saat checkout. Pesanan internasional ke tujuan yang didukung sudah termasuk pajak dan biaya; Jika tidak, unit pengiriman akan mengambilnya pada saat pengiriman.\" category_14=\"Biaya & Pembayaran\" category_id_14=\"feesBilling\" question_14=\"2. Mengapa saya ditagih dua kali?\" answer_14=\"Anda mungkin melihat penangguhan otorisasi bersama dengan tagihan sebenarnya. Penangguhan akan otomatis dibatalkan dalam 3-5 hari kerja. Kirim email ke billing@amerce.test jika Anda masih melihat dua tagihan setelah waktu tersebut.\" category_15=\"Topik Lainnya\" category_id_15=\"otherTopic\" question_15=\"1. Apakah Anda memiliki toko fisik?\" answer_15=\"Ya — silakan kunjungi halaman Toko untuk melihat daftar toko dan mitra utama.\" category_16=\"Topik Lainnya\" category_id_16=\"otherTopic\" question_16=\"2. Bagaimana cara menghubungi layanan pelanggan?\" answer_16=\"Email hello@amerce.test atau gunakan formulir kontak. Kami akan merespons dalam satu hari kerja.\"][/faq-page]'),('id',4,'Kebijakan Privasi','Bagaimana Amerce mengumpulkan, menggunakan dan melindungi informasi pribadi Anda.','[page-banner heading=\"Kebijakan Privasi\"][/page-banner]\n[term-content quantity=\"7\" title_1=\"1. Informasi yang Kami Kumpulkan\" body_1=\"<p class=\\\"term-text cl-text-2\\\">When you visit the Site, we automatically collect certain information about your device — web browser, IP address, time zone, and some of the cookies installed on your device. As you browse, we also collect data about the pages or products you view, what referred you to the Site, and how you interact with it. We refer to this as \\\"Device Information\\\".</p><p class=\\\"term-text cl-text-2\\\">When you make a purchase or attempt to purchase through the Site, we collect your name, billing address, shipping address, and payment information (including card number, email address, and phone number). We refer to this as \\\"Order Information\\\".</p>\" title_2=\"2. Bagaimana Kami Menggunakan Informasi Anda\" body_2=\"<p class=\\\"term-text cl-text-2\\\">We use Order Information to fulfil orders placed through the Site (process payment, arrange shipping, provide invoices and order confirmations). We use it to communicate with you, screen orders for fraud, and — in line with your preferences — share marketing about products you may like.</p><p class=\\\"term-text cl-text-2\\\">We use Device Information to screen for fraud and to improve the Site through analytics about how customers browse and interact with us.</p>\" title_3=\"3. Berbagi Informasi Pribadi Anda\" body_3=\"<p class=\\\"term-text cl-text-2\\\">We share Personal Information with third-party service providers who help us run the Site. We may also share information to comply with applicable laws, respond to a subpoena or lawful request, or otherwise protect our rights.</p>\" title_4=\"4. Penyimpanan Data\" body_4=\"<p class=\\\"term-text cl-text-2\\\">When you place an order, we maintain the Order Information for our records unless and until you ask us to delete it.</p>\" title_5=\"5. Hak Anda\" body_5=\"<p class=\\\"term-text cl-text-2\\\">You can request access, correction, or deletion of any personal data we hold about you. Email privacy@amerce.test from the address on file and we will respond within 30 days.</p>\" title_6=\"6. Kue\" body_6=\"<p class=\\\"term-text cl-text-2\\\">Cookies are used to keep your cart between visits, remember your preferences, and measure aggregate traffic. You can disable cookies in your browser, though some Site features may stop working.</p>\" title_7=\"7. Perubahan\" body_7=\"<p class=\\\"term-text cl-text-2\\\">We may update this policy from time to time to reflect changes to our practices or for operational, legal, or regulatory reasons. The latest version will always be on this page.</p>\"][/term-content]'),('id',5,'Syarat & Ketentuan','Ketentuan hukum berlaku saat Anda menggunakan toko Amerce.','[page-banner heading=\"Syarat & Ketentuan\"][/page-banner]\n[term-content quantity=\"7\" title_1=\"1. Penerimaan Persyaratan\" body_1=\"<p class=\\\"term-text cl-text-2\\\">By accessing or using the Mendenda store you agree to these terms. We reserve the right to update them with reasonable notice; the latest version is always available on this page.</p>\" title_2=\"2. Pemesanan & Pembayaran\" body_2=\"<p class=\\\"term-text cl-text-2\\\">All prices are in USD unless otherwise stated. We accept the payment methods displayed at checkout. An order becomes binding once you receive an order confirmation email.</p>\" title_3=\"3. Pengiriman\" body_3=\"<p class=\\\"term-text cl-text-2\\\">Mengangkut options, lead times, and rates are listed on our Mengangkut page. Risk passes to you on delivery.</p>\" title_4=\"4. Pengembalian\" body_4=\"<p class=\\\"term-text cl-text-2\\\">You have 30 days from delivery to return any unworn item for a refund. See our Pengembalian &amp; Pengembalian Dana page for the full process.</p>\" title_5=\"5. Kekayaan Intelektual\" body_5=\"<p class=\\\"term-text cl-text-2\\\">All content on the Site — text, photography, logos, code — is owned by Mendenda or its licensors and may not be reproduced without written permission.</p>\" title_6=\"6. Batasan Tanggung Jawab\" body_6=\"<p class=\\\"term-text cl-text-2\\\">To the maximum extent permitted by law, Mendenda is not liable for indirect or consequential damages arising from use of the Site or the products purchased through it.</p>\" title_7=\"7. Hukum yang Berlaku\" body_7=\"<p class=\\\"term-text cl-text-2\\\">These terms are governed by the laws of the State of New York. Any dispute will be resolved in the state or federal courts located in New York County.</p>\"][/term-content]'),('id',6,'Pengembalian & Pengembalian Dana','Kebijakan pengembalian 30 hari kami dan proses pengembalian langkah demi langkah.','[page-banner heading=\"Pengembalian & Pengembalian Dana\"][/page-banner]\n[term-content quantity=\"6\" title_1=\"1. Pengembalian\" body_1=\"<p class=\\\"term-text cl-text-2\\\">We want you to be completely satisfied with your purchase. If for any reason you are not, you may return any unworn item within 30 days of receiving your order for a refund or exchange. Barang must be in original packaging and the same condition as you received them.</p>\" title_2=\"2. Bagaimana Memulai Pengembalian\" body_2=\"<p class=\\\"term-text cl-text-2\\\">Open the order in your account dashboard and click \\\"Start return\\\", or email returns@amerce.test with your order number. We will send a prepaid return label for domestic orders within one business day.</p>\" title_3=\"3. Pengembalian dana\" body_3=\"<p class=\\\"term-text cl-text-2\\\">Refunds are processed within 3-5 business days of us receiving the return and applied to the original payment method. Bank posting times vary; allow up to 10 business days for the credit to appear.</p>\" title_4=\"4. Pengecualian\" body_4=\"<p class=\\\"term-text cl-text-2\\\">Sale items, intimate apparel, and final-sale flash sale purchases are excluded from returns. Personalised or made-to-order items are also non-returnable unless faulty.</p>\" title_5=\"5. Produk Rusak atau Cacat\" body_5=\"<p class=\\\"term-text cl-text-2\\\">If your order arrives damaged or faulty, email us within 7 days with photos. We will replace the item or issue a full refund — including any return shipping cost — at our expense.</p>\" title_6=\"6. Pengembalian Internasional\" body_6=\"<p class=\\\"term-text cl-text-2\\\">International customers are responsible for return shipping unless the item is faulty. We do not refund original shipping or duty charges on international returns.</p>\"][/term-content]'),('id',7,'Pengiriman','Metode pengiriman domestik dan internasional, waktu dan biaya.','[page-banner heading=\"Mengangkut\"][/page-banner]\n[term-content quantity=\"6\" title_1=\"1. Metode Pengiriman\" body_1=\"<p class=\\\"term-text cl-text-2\\\">We offer the following shipping methods for domestic and international orders: standard ground, expedited 2-day, and priority overnight (where available).</p>\" title_2=\"2. Biaya Domestik\" body_2=\"<p class=\\\"term-text cl-text-2\\\">Standard ground is free on orders over $99. Express 1-2 day shipping is $19.99 flat. Priority overnight is calculated by weight at checkout.</p>\" title_3=\"3. Internasional\" body_3=\"<p class=\\\"term-text cl-text-2\\\">We ship to most countries. International standard shipping is $24.99 with 7-12 business day delivery. Express options appear at checkout. Duties and taxes are pre-paid for select destinations; otherwise the courier collects them on delivery.</p>\" title_4=\"4. Waktu Pemrosesan\" body_4=\"<p class=\\\"term-text cl-text-2\\\">Orders placed before 2pm EST on business days ship the same day. Orders placed after 2pm or on weekends/holidays ship the next business day.</p>\" title_5=\"5. Pelacakan\" body_5=\"<p class=\\\"term-text cl-text-2\\\">A tracking link is included in your shipment confirmation email. You can also see live status from Account → Orders → Track.</p>\" title_6=\"6. Pesanan Hilang atau Terjebak\" body_6=\"<p class=\\\"term-text cl-text-2\\\">If a tracking number has not updated for more than 7 business days, email shipping@amerce.test. We will open an investigation with the carrier and either refund or reship the order at our expense.</p>\"][/term-content]'),('id',8,'Toko kami','Kunjungi Amerce secara langsung — toko utama dan mitra di seluruh dunia.',''),('id',9,'Blog','Instruksi pakaian, cerita merek, dan konten di balik layar dari tim editorial Amerce.','<div class=\"container py-5\"><h1>Buku harian</h1><p>Jelajahi kisah terbaru kami — panduan gaya, sorotan produk, analisis keberlanjutan mendalam, dan banyak lagi.</p></div>'),('id',10,'Karir','Bergabunglah dengan Amerce — posisi terbuka, nilai budaya, dan keuntungan tim.','<div class=\"container py-5\"><h1>Rekrutmen Di Amerce</h1><p>Kami adalah tim kecil terdistribusi yang membangun model ritel yang lebih baik. Kami merekrut seluruh produk, teknik, rantai pasokan, dan pengalaman pelanggan.</p><p>Posisi terbuka diposting di halaman LinkedIn perusahaan. Untuk melamar, kirim surat pendek dan resume ke <a href=\"mailto:careers@amerce.test\">careers@amerce.test</a>.</p></div>'),('id',11,'Sustainability','How Amerce sources responsibly and reduces its environmental footprint.','<div class=\"container py-5\"><h1>Pembangunan Berkelanjutan di Amerika</h1><p>Setiap produk membawa cerita. Kami bekerja sama langsung dengan pabrik dan bengkel pengrajin, memprioritaskan bahan daur ulang dan dapat dilacak, serta mengemas bebas plastik.</p><p>Sasaran kami pada tahun 2026: 90% material memiliki rantai pasokan yang terverifikasi, dan pelaporan dampak tahunan yang transparan.</p></div>'),('id',12,'Beranda','Amerce — rumah bagi pengalaman e-commerce yang serbaguna.','[simple-slider key=\"home-hero\" style=\"style-1\" is_autoplay=\"yes\" autoplay_speed=\"3000\" show_arrows=\"yes\" show_dots=\"yes\"][/simple-slider]\n[ecommerce-products style=\"style-slider\" title=\"Pilihan Terbaik Hari Ini\" subtitle=\"Jelajahi pilihan pakaian olahraga yang luar biasa hari ini.\" source=\"featured\" limit=\"4\" items_per_row=\"4\"][/ecommerce-products]\n[categories-grid style=\"style-card-vertical\" title=\"Belanja Berdasarkan Kategori\" subtitle=\"Jelajahi koleksi pakaian olahraga penting untuk setiap gaya olahraga.\" category_ids=\"1,2,3,4,5\" limit=\"5\" show_count=\"no\"][/categories-grid]\n[banner-products-composite title=\"Sorotan Teratas Minggu Ini\" subtitle=\"Gaya baru dan pilihan yang tidak boleh dilewatkan, dikurasi untuk minggu Anda.\" image=\"section/banner-39.jpg\" overline=\"Lahir untuk setiap gerakan.\" heading=\"Siap Untuk &lt;br&gt; Kehebatan\" button_text=\"Beli Sekarang\" button_url=\"/products\" source=\"featured\" limit=\"4\"][/banner-products-composite]\n[lookbook-hotspot style=\"style-v4-carousel\" image=\"section/banner-lookbook-11.jpg\" quantity=\"2\" x_percent_1=\"38\" y_percent_1=\"42\" product_id_1=\"17\" column_1=\"1\" overline_1=\"Bra Siap Lari\" x_percent_2=\"64\" y_percent_2=\"70\" product_id_2=\"18\" column_2=\"1\" overline_2=\"Celana Pendek Siap Lari\"][/lookbook-hotspot]\n[testimonials style=\"style-image-card\" title=\"Apa Kata Pelanggan Tentang Kami\" subtitle=\"Umpan balik nyata dari orang-orang yang melatih, bergerak, dan hidup dengan pakaian kami.\" autoplay=\"yes\" quantity=\"4\" avatar_1=\"testimonials/tes-16.jpg\" name_1=\"Jenna L.\" role_1=\"Instruktur Yoga\" rating_1=\"5\" content_1=\"\\\"Super comfortable and breathable &mdash; perfect for my daily workouts.\\\"\" avatar_2=\"testimonials/tes-17.jpg\" name_2=\"Jenna L.\" role_2=\"Instruktur Yoga\" rating_2=\"5\" content_2=\"\\\"The fit is amazing. Stylish, flexible, and great for the gym.\\\"\" avatar_3=\"testimonials/tes-18.jpg\" name_3=\"Jenna L.\" role_3=\"Instruktur Yoga\" rating_3=\"5\" content_3=\"\\\"Quality is top-notch. I feel more confident every time I wear it.\\\"\" avatar_4=\"testimonials/tes-19.jpg\" name_4=\"Jenna L.\" role_4=\"Instruktur Yoga\" rating_4=\"5\" content_4=\"\\\"Love the fabric! Lightweight and moves with me during every session.\\\"\"][/testimonials]\n[parallax-banner style=\"style-1\" image=\"section/banner-40.jpg\" heading=\"Tinggikan Gaya Latihan &lt;br&gt;\" subheading=\"Pakaian olahraga premium dibuat untuk kenyamanan, performa, dan kepercayaan diri.\" button_text=\"Beli sekarang\" button_url=\"/products\" text_alignment=\"left\" marquee_text=\"PILIHAN MUSIM BARU, GAYA TREN, KOLEKSI TERBATAS\"][/parallax-banner]\n[image-gallery style=\"style-default\" title=\"Ikuti Kami Di Instagram\" subtitle=\"@Mendenda\" quantity=\"5\" image_1=\"gallery/gallery-37.jpg\" link_1=\"/products\" image_2=\"gallery/gallery-38.jpg\" link_2=\"/products\" image_3=\"gallery/gallery-39.jpg\" link_3=\"/products\" image_4=\"gallery/gallery-40.jpg\" link_4=\"/products\" image_5=\"gallery/gallery-41.jpg\" link_5=\"/products\"][/image-gallery]'),('tr',1,'Hakkında','Amerce ile tanışın - marka hikayesi, tedarik standartları ve her ürünün arkasındaki ekip.','[page-banner heading=\"Hakkımızda\" subtitle=\"With over 15 years of experience, we craft timeless collections that transcend<br class=\\\"d-none d-lg-block\\\">trends and inspire lasting elegance.\"][/page-banner]\n[stats-counter hero_image=\"section/s-contact-1.jpg\" heading=\"Tasarım, detaylara verilen önem ve verimlilik dünyayı memnun ediyor\" description=\"Tasarlandığı andan giyildiği ana kadar her ürünümüz bu yolculuğu takip ediyor. Bunu daha hızlı bir şekilde yapabiliriz. Ancak Amerce olarak bu yolculukta bizimle birlikte olan herkesle ilgilenmeyi seçiyoruz.\" quantity=\"4\" value_1=\"8.2k\" animate_to_1=\"\" suffix_1=\"\" label_1=\"Mevcut Ürünler\" desc_1=\"Her türlü ihtiyacı karşılamak için yüksek kaliteli ürünler sunuyoruz.\" value_2=\"\" animate_to_2=\"10\" suffix_2=\"k\" label_2=\"Memnun Müşteriler\" desc_2=\"Kalite ve hizmet konusunda bize güvenen 10.000\'den fazla memnun müşteriye hizmet veriyoruz.\" value_3=\"\" animate_to_3=\"96\" suffix_3=\"\" label_3=\"İş Ortağı Markası\" desc_3=\"Önde gelen markalarla yapılan ortaklıklar, güvenilir koleksiyonları mağazanıza ve evinize getirir.\" value_4=\"\" animate_to_4=\"16\" suffix_4=\"k\" label_4=\"Satılık Ürünler\" desc_4=\"Bu nedenle her tarza uygun çeşitli ürün grupları sunmaya çalışıyoruz.\"][/stats-counter]\n[image-accordion image=\"section/s-contact-2.jpg\" heading=\"Nadir ve Enfes Ürünleri Dünya Çapına Getiriyoruz\" quantity=\"4\" title_1=\"Tanıtmak\" body_1=\"Trend belirleyen moda ve aksesuarlar için ilk adresiniz olan Amerce Store\'a hoş geldiniz. Hem ulusal hem de uluslararası alanda aranan, nadir ve seçkin parçalardan özenle seçilmiş bir koleksiyon sunmaktan gurur duyuyoruz.\" title_2=\"Vizyonumuz\" body_2=\"Sofistike tasarımın günlük yaşamla harmanlandığı bir dünyayı hedefliyoruz; zamana karşı dayanıklı ürünler, güvenilen ortaklar ve işlem değil, insan gibi davranılan müşteriler.\" title_3=\"Farkı Yaratan Nedir?\" body_3=\"Tedarikçiler bağımsız olarak denetlenir, ürünler elle test edilir ve özel bir müşteri hizmetleri ekibi tarafından desteklenen 30 günlük sebepsiz iade politikası vardır.\" title_4=\"Taahhüdümüz\" body_4=\"Kaliteli ürünler, şeffaf tedarik zincirleri ve adil çalışma koşulları - her siparişte, her zaman.\"][/image-accordion]\n[about-testimonials heading=\"Müşteriler Ne Diyor?\" subtitle=\"Müşterilerimiz ürünlerimizi seviyor ve biz de onları memnun etmeye çalışıyoruz.\" quantity=\"2\" image_1=\"testimonials/tes-1.jpg\" name_1=\"Emma Collins\" text_1=\"\\\"Totally obsessed with this outfit! The fit is perfect, the fabric feels premium, and I\'ve been getting compliments non-stop. It instantly lifts my confidence — such a great find!\\\"\" image_2=\"testimonials/tes-2.jpg\" name_2=\"Sofya Ramirez\" text_2=\"\\\"I\'m amazed by how comfortable yet stylish this piece is. It pairs effortlessly with everything, and the quality really stands out. Definitely becoming my go-to for everyday looks!\\\"\"][/about-testimonials]\n[about-team heading=\"Ekiple Tanışın\" subtitle=\"Her ayrıntıda mükemmelliğe kendini adamış profesyoneller.\" quantity=\"4\" image_1=\"member/member-1.jpg\" name_1=\"Annette Siyah\" role_1=\"Kurucu/CEO\" social_links_1=\"\" image_2=\"member/member-2.jpg\" name_2=\"Brooklyn Simmons\" role_2=\"Üstesinden gelmek\" social_links_2=\"\" image_3=\"member/member-3.jpg\" name_3=\"Jane Cooper\" role_3=\"Satış Direktörü\" social_links_3=\"\" image_4=\"member/member-4.jpg\" name_4=\"Lisa Bonet\" role_4=\"Satış Direktörü\" social_links_4=\"\"][/about-team]'),('tr',2,'Temas etmek','Amerce\'in müşteri hizmetleri ve işbirliği ekibiyle iletişime geçin.',''),('tr',3,'FAQ','Siparişler, gönderim, iadeler ve hesap yönetimi hakkında sık sorulan sorular.','[page-banner heading=\"Sıkça Sorulan Sorular\" subtitle=\"Got questions? We\'ve got answers! Browse our Sıkça Sorulan Sorular to find information on orders, shipping,<br class=\\\"d-none d-lg-block\\\">returns, and more. If you need further assistance, feel free to contact our team.\"][/page-banner]\n[faq-page sidebar_image=\"section/banner-12.jpg\" sidebar_title=\"Save 25% <br class=\\\"d-none d-sm-block\\\">Today\" sidebar_subtitle=\"Tişörtler, Kapüşonlular ve Daha Fazlası\" sidebar_cta=\"Daha Fazlasını Gör\" sidebar_url=\"/products\" quantity=\"16\" category_1=\"Hesabım\" category_id_1=\"myAccount\" question_1=\"1. Şifremi unutursam ne yapabilirim?\" answer_1=\"Use the \\\"Forgot password\\\" link on the sign-in page. We will email you a one-time link to set a new password — it expires in 30 minutes for security.\" category_2=\"Hesabım\" category_id_2=\"myAccount\" question_2=\"2. E-posta adresi nasıl güncellenir?\" answer_2=\"Oturum açın, Hesap → Ayarlar\'ı açın ve e-posta alanlarını değiştirin. Yeni adrese bir onay e-postası göndereceğiz; Bu bağlantıya tıkladığınızda değişiklik geçerli olacaktır.\" category_3=\"Hesabım\" category_id_3=\"myAccount\" question_3=\"3. Hesabımı silebilir miyim?\" answer_3=\"Sahip olmak. Hesap → Ayarlar\'dan Hesabı sil seçeneğine ilerleyin. Sipariş geçmişini vergi/yasal nedenlerden dolayı saklıyoruz ancak kişisel iletişim bilgileri 30 gün içinde silinir.\" category_4=\"Siparişler ve Alışveriş\" category_id_4=\"ordersPurchases\" question_4=\"1. Nasıl sipariş verilir?\" answer_4=\"Ürünleri sepete ekleyin, ödeme seçeneğini tıklayın, gönderim yöntemini seçin ve ardından ödeme bilgilerini girin. Hemen bir sipariş onay e-postası alacaksınız.\" category_5=\"Siparişler ve Alışveriş\" category_id_5=\"ordersPurchases\" question_5=\"2. Siparişimi düzenleyebilir veya iptal edebilir miyim?\" answer_5=\"Siparişler, verildikten sonraki 1 saat içinde hesap kontrol panelinizden düzenlenebilir veya iptal edilebilir. Daha sonra depo toplanmaya başladı ve biz müdahale edemedik.\" category_6=\"Siparişler ve Alışveriş\" category_id_6=\"ordersPurchases\" question_6=\"3. Hangi ödeme yöntemleri kabul ediliyor?\" answer_6=\"Visa, Mastercard, American Express, Apple Pay, Google Pay ve PayPal\'ı kabul ediyoruz. Tüm işlemlerde TLS 1.3 şifrelemesi kullanılır.\" category_7=\"İade ve Para İadeleri\" category_id_7=\"returnsRefunds\" question_7=\"1. İade süresi ne kadardır?\" answer_7=\"Kullanılmamış ve giyilmemiş ürünler için teslim tarihinden itibaren 30 gün. İndirimli ürünler, iç giyim ve son indirim flaş indirim ürünleri için geçerli değildir.\" category_8=\"İade ve Para İadeleri\" category_id_8=\"returnsRefunds\" question_8=\"2. İade sürecini nasıl başlatabilirim?\" answer_8=\"Open the order in your account dashboard and click \\\"Start return\\\". We email a prepaid label for domestic orders within one business day.\" category_9=\"İade ve Para İadeleri\" category_id_9=\"returnsRefunds\" question_9=\"3. Geri ödememi ne zaman alacağım?\" answer_9=\"Geri ödemeler, iade edilen ürünün tarafımıza ulaşmasından itibaren 3-5 iş günü içerisinde gerçekleştirilir. Banka kredi süreleri değişiklik gösterebilir; Ödemenizin yansıtıldığını görmek için lütfen 10 iş gününe kadar bekleyin.\" category_10=\"Nakliye ve Takip\" category_id_10=\"shippingTracking\" question_10=\"1. Nakliye ne kadar sürer?\" answer_10=\"Standart yurt içi kargo 3-5 iş günü sürmektedir. Hızlı kargo 1-2 gün. Uluslararası standart nakliye 7-12 iş günü sürer; Ödeme sayfasında hızlandırılmış gönderim seçenekleri mevcuttur.\" category_11=\"Nakliye ve Takip\" category_id_11=\"shippingTracking\" question_11=\"2. Siparişler nasıl takip edilir?\" answer_11=\"Takip bağlantısı gönderim onayı e-postasına dahildir. Durumu Hesap → Siparişler → Takip bölümünden de görüntüleyebilirsiniz.\" category_12=\"Nakliye ve Takip\" category_id_12=\"shippingTracking\" question_12=\"3. Uluslararası gönderim yapıyor musunuz?\" answer_12=\"Evet — çoğu ülkeye. Belirli destinasyonlar için vergi ve harçlar ödeme sayfasında önceden ödenir; Aksi takdirde nakliye birimi teslimat sırasında ürünü teslim alabilir.\" category_13=\"Ücretler ve Ödemeler\" category_id_13=\"feesBilling\" question_13=\"1. Vergi ve harçlar dahil mi?\" answer_13=\"Yurt içi fiyatlara ödeme sırasında gösterilen satış vergisi dahildir. Desteklenen varış noktalarına verilen uluslararası siparişlere vergiler ve harçlar dahildir; Aksi takdirde kargo birimi teslimat sırasında ürünü teslim alacaktır.\" category_14=\"Ücretler ve Ödemeler\" category_id_14=\"feesBilling\" question_14=\"2. Neden iki kez ücretlendirildim?\" answer_14=\"Gerçek ödemeyle birlikte bir provizyon bekletmesi görüyor olabilirsiniz. Durdurma 3-5 iş günü içinde otomatik olarak iptal edilecektir. Bu sürenin sonunda hala iki ödeme görüyorsanız billing@amerce.test adresine e-posta gönderin.\" category_15=\"Diğer Konular\" category_id_15=\"otherTopic\" question_15=\"1. Fiziksel bir mağazanız var mı?\" answer_15=\"Evet — önemli mağazaların ve iş ortaklarının listesi için lütfen Mağazalar sayfasını ziyaret edin.\" category_16=\"Diğer Konular\" category_id_16=\"otherTopic\" question_16=\"2. Müşteri hizmetleriyle nasıl iletişime geçilir?\" answer_16=\"hello@amerce.test adresine e-posta gönderin veya iletişim formunu kullanın. Bir iş günü içinde yanıt vereceğiz.\"][/faq-page]'),('tr',4,'Gizlilik Politikası','Amerce kişisel bilgilerinizi nasıl toplar, kullanır ve korur.','[page-banner heading=\"Gizlilik Politikası\"][/page-banner]\n[term-content quantity=\"7\" title_1=\"1. Topladığımız Bilgiler\" body_1=\"<p class=\\\"term-text cl-text-2\\\">When you visit the Site, we automatically collect certain information about your device — web browser, IP address, time zone, and some of the cookies installed on your device. As you browse, we also collect data about the pages or products you view, what referred you to the Site, and how you interact with it. We refer to this as \\\"Device Information\\\".</p><p class=\\\"term-text cl-text-2\\\">When you make a purchase or attempt to purchase through the Site, we collect your name, billing address, shipping address, and payment information (including card number, email address, and phone number). We refer to this as \\\"Order Information\\\".</p>\" title_2=\"2. Bilgilerinizi Nasıl Kullanıyoruz\" body_2=\"<p class=\\\"term-text cl-text-2\\\">We use Order Information to fulfil orders placed through the Site (process payment, arrange shipping, provide invoices and order confirmations). We use it to communicate with you, screen orders for fraud, and — in line with your preferences — share marketing about products you may like.</p><p class=\\\"term-text cl-text-2\\\">We use Device Information to screen for fraud and to improve the Site through analytics about how customers browse and interact with us.</p>\" title_3=\"3. Kişisel Bilgilerinizin Paylaşılması\" body_3=\"<p class=\\\"term-text cl-text-2\\\">We share Personal Information with third-party service providers who help us run the Site. We may also share information to comply with applicable laws, respond to a subpoena or lawful request, or otherwise protect our rights.</p>\" title_4=\"4. Veri Depolama\" body_4=\"<p class=\\\"term-text cl-text-2\\\">When you place an order, we maintain the Order Information for our records unless and until you ask us to delete it.</p>\" title_5=\"5. Haklarınız\" body_5=\"<p class=\\\"term-text cl-text-2\\\">You can request access, correction, or deletion of any personal data we hold about you. Email privacy@amerce.test from the address on file and we will respond within 30 days.</p>\" title_6=\"6. Çerezler\" body_6=\"<p class=\\\"term-text cl-text-2\\\">Cookies are used to keep your cart between visits, remember your preferences, and measure aggregate traffic. You can disable cookies in your browser, though some Site features may stop working.</p>\" title_7=\"7. Değişim\" body_7=\"<p class=\\\"term-text cl-text-2\\\">We may update this policy from time to time to reflect changes to our practices or for operational, legal, or regulatory reasons. The latest version will always be on this page.</p>\"][/term-content]'),('tr',5,'Şartlar ve Koşullar','Amerce mağazasını kullandığınızda yasal şartlar geçerlidir.','[page-banner heading=\"Şartlar ve Koşullar\"][/page-banner]\n[term-content quantity=\"7\" title_1=\"1. Şartların Kabulü\" body_1=\"<p class=\\\"term-text cl-text-2\\\">By accessing or using the Amerika store you agree to these terms. We reserve the right to update them with reasonable notice; the latest version is always available on this page.</p>\" title_2=\"2. Siparişler ve Ödeme\" body_2=\"<p class=\\\"term-text cl-text-2\\\">All prices are in USD unless otherwise stated. We accept the payment methods displayed at checkout. An order becomes binding once you receive an order confirmation email.</p>\" title_3=\"3. Nakliye\" body_3=\"<p class=\\\"term-text cl-text-2\\\">Taşıma options, lead times, and rates are listed on our Taşıma page. Risk passes to you on delivery.</p>\" title_4=\"4. İade\" body_4=\"<p class=\\\"term-text cl-text-2\\\">You have 30 days from delivery to return any unworn item for a refund. See our İade ve Para İadeleri page for the full process.</p>\" title_5=\"5. Fikri Mülkiyet\" body_5=\"<p class=\\\"term-text cl-text-2\\\">All content on the Site — text, photography, logos, code — is owned by Amerika or its licensors and may not be reproduced without written permission.</p>\" title_6=\"6. Sorumluluğun Sınırlandırılması\" body_6=\"<p class=\\\"term-text cl-text-2\\\">To the maximum extent permitted by law, Amerika is not liable for indirect or consequential damages arising from use of the Site or the products purchased through it.</p>\" title_7=\"7. Geçerli Kanun\" body_7=\"<p class=\\\"term-text cl-text-2\\\">These terms are governed by the laws of the State of New York. Any dispute will be resolved in the state or federal courts located in New York County.</p>\"][/term-content]'),('tr',6,'İade ve Para İadeleri','30 günlük iade politikamız ve adım adım iade sürecimiz.','[page-banner heading=\"İade ve Para İadeleri\"][/page-banner]\n[term-content quantity=\"6\" title_1=\"1. İade\" body_1=\"<p class=\\\"term-text cl-text-2\\\">We want you to be completely satisfied with your purchase. If for any reason you are not, you may return any unworn item within 30 days of receiving your order for a refund or exchange. Öğeler must be in original packaging and the same condition as you received them.</p>\" title_2=\"2. İade Nasıl Başlatılır\" body_2=\"<p class=\\\"term-text cl-text-2\\\">Open the order in your account dashboard and click \\\"Start return\\\", or email returns@amerce.test with your order number. We will send a prepaid return label for domestic orders within one business day.</p>\" title_3=\"3. İade\" body_3=\"<p class=\\\"term-text cl-text-2\\\">Refunds are processed within 3-5 business days of us receiving the return and applied to the original payment method. Bank posting times vary; allow up to 10 business days for the credit to appear.</p>\" title_4=\"4. İstisnalar\" body_4=\"<p class=\\\"term-text cl-text-2\\\">Sale items, intimate apparel, and final-sale flash sale purchases are excluded from returns. Personalised or made-to-order items are also non-returnable unless faulty.</p>\" title_5=\"5. Hasarlı veya Arızalı Ürünler\" body_5=\"<p class=\\\"term-text cl-text-2\\\">If your order arrives damaged or faulty, email us within 7 days with photos. We will replace the item or issue a full refund — including any return shipping cost — at our expense.</p>\" title_6=\"6. Uluslararası İadeler\" body_6=\"<p class=\\\"term-text cl-text-2\\\">International customers are responsible for return shipping unless the item is faulty. We do not refund original shipping or duty charges on international returns.</p>\"][/term-content]'),('tr',7,'Nakliye','Yurt içi ve yurt dışı gönderim yöntemleri, süreleri ve ücretleri.','[page-banner heading=\"Taşıma\"][/page-banner]\n[term-content quantity=\"6\" title_1=\"1. Nakliye Yöntemi\" body_1=\"<p class=\\\"term-text cl-text-2\\\">We offer the following shipping methods for domestic and international orders: standard ground, expedited 2-day, and priority overnight (where available).</p>\" title_2=\"2. Yurtiçi Ücretler\" body_2=\"<p class=\\\"term-text cl-text-2\\\">Standard ground is free on orders over $99. Express 1-2 day shipping is $19.99 flat. Priority overnight is calculated by weight at checkout.</p>\" title_3=\"3. Uluslararası\" body_3=\"<p class=\\\"term-text cl-text-2\\\">We ship to most countries. International standard shipping is $24.99 with 7-12 business day delivery. Express options appear at checkout. Duties and taxes are pre-paid for select destinations; otherwise the courier collects them on delivery.</p>\" title_4=\"4. İşlem Süresi\" body_4=\"<p class=\\\"term-text cl-text-2\\\">Orders placed before 2pm EST on business days ship the same day. Orders placed after 2pm or on weekends/holidays ship the next business day.</p>\" title_5=\"5. Takip\" body_5=\"<p class=\\\"term-text cl-text-2\\\">A tracking link is included in your shipment confirmation email. You can also see live status from Account → Orders → Track.</p>\" title_6=\"6. Kayıp veya Takılan Siparişler\" body_6=\"<p class=\\\"term-text cl-text-2\\\">If a tracking number has not updated for more than 7 business days, email shipping@amerce.test. We will open an investigation with the carrier and either refund or reship the order at our expense.</p>\"][/term-content]'),('tr',8,'Mağazalarımız','Amerce\'i doğrudan ziyaret edin; dünya çapındaki amiral mağazaları ve ortakları.',''),('tr',9,'Blog','Amerce editör ekibinden kıyafet talimatları, marka hikayeleri ve kamera arkası içerikleri.','<div class=\"container py-5\"><h1>Günlük</h1><p>Stil kılavuzları, öne çıkan ürünler, derinlemesine sürdürülebilirlik analizi ve daha fazlasını içeren en son hikayelerimizi keşfedin.</p></div>'),('tr',10,'Kariyer','Amerce\'e katılın — açık pozisyonlar, kültürel değerler ve takım avantajları.','<div class=\"container py-5\"><h1>Amerce\'de İşe Alım</h1><p>Biz daha rafine bir perakende modeli inşa eden küçük, dağınık bir ekibiz. Ürün, mühendislik, tedarik zinciri ve müşteri deneyimi genelinde işe alım yapıyoruz.</p><p>Açık pozisyonlar şirketin LinkedIn sayfasında yayınlanmaktadır. Başvurmak için <a href=\"mailto:careers@amerce.test\">careers@amerce.test</a> adresine kısa bir mektup ve özgeçmiş gönderin.</p></div>'),('tr',11,'Sustainability','How Amerce sources responsibly and reduces its environmental footprint.','<div class=\"container py-5\"><h1>Amerika\'da Sürdürülebilir Kalkınma</h1><p>Her ürün bir hikaye taşır. Doğrudan fabrikalar ve zanaatkar atölyeleriyle çalışıyoruz, geri dönüştürülmüş ve izlenebilir malzemelere öncelik veriyoruz ve plastik içermeyen ambalajlar yapıyoruz.</p><p>2026 hedefimiz: Malzemelerin %90\'ının doğrulanmış bir tedarik zincirine ve şeffaf yıllık etki raporlamasına sahip olması.</p></div>'),('tr',12,'Ana sayfa','Amerce — çok yönlü bir e-ticaret deneyimine ev sahipliği yapıyor.','[simple-slider key=\"home-hero\" style=\"style-1\" is_autoplay=\"yes\" autoplay_speed=\"3000\" show_arrows=\"yes\" show_dots=\"yes\"][/simple-slider]\n[ecommerce-products style=\"style-slider\" title=\"Bugünün En İyi Seçimleri\" subtitle=\"Bugün olağanüstü spor giyim seçeneklerini keşfedin.\" source=\"featured\" limit=\"4\" items_per_row=\"4\"][/ecommerce-products]\n[categories-grid style=\"style-card-vertical\" title=\"Kategoriye Göre Alışveriş Yapın\" subtitle=\"Her antrenman tarzına uygun temel spor giyim koleksiyonlarını keşfedin.\" category_ids=\"1,2,3,4,5\" limit=\"5\" show_count=\"no\"][/categories-grid]\n[banner-products-composite title=\"Bu Haftanın En Önemli Gelişmeleri\" subtitle=\"Haftanız için seçilmiş yeni stiller ve kaçırılmayacak seçimler.\" image=\"section/banner-39.jpg\" overline=\"Her hareket için doğmuştur.\" heading=\"&lt;br&gt; Büyüklüğüne Hazır\" button_text=\"Şimdi al\" button_url=\"/products\" source=\"featured\" limit=\"4\"][/banner-products-composite]\n[lookbook-hotspot style=\"style-v4-carousel\" image=\"section/banner-lookbook-11.jpg\" quantity=\"2\" x_percent_1=\"38\" y_percent_1=\"42\" product_id_1=\"17\" column_1=\"1\" overline_1=\"Koşuya Hazır Sütyen\" x_percent_2=\"64\" y_percent_2=\"70\" product_id_2=\"18\" column_2=\"1\" overline_2=\"Koşuya Hazır Şortlar\"][/lookbook-hotspot]\n[testimonials style=\"style-image-card\" title=\"Müşteriler Hakkımızda Ne Diyor?\" subtitle=\"Kıyafetlerimizle antrenman yapan, hareket eden ve yaşayan insanlardan gerçek geri bildirimler.\" autoplay=\"yes\" quantity=\"4\" avatar_1=\"testimonials/tes-16.jpg\" name_1=\"Jenna L.\" role_1=\"Yoga eğitmeni\" rating_1=\"5\" content_1=\"\\\"Super comfortable and breathable &mdash; perfect for my daily workouts.\\\"\" avatar_2=\"testimonials/tes-17.jpg\" name_2=\"Jenna L.\" role_2=\"Yoga eğitmeni\" rating_2=\"5\" content_2=\"\\\"The fit is amazing. Stylish, flexible, and great for the gym.\\\"\" avatar_3=\"testimonials/tes-18.jpg\" name_3=\"Jenna L.\" role_3=\"Yoga eğitmeni\" rating_3=\"5\" content_3=\"\\\"Quality is top-notch. I feel more confident every time I wear it.\\\"\" avatar_4=\"testimonials/tes-19.jpg\" name_4=\"Jenna L.\" role_4=\"Yoga eğitmeni\" rating_4=\"5\" content_4=\"\\\"Love the fabric! Lightweight and moves with me during every session.\\\"\"][/testimonials]\n[parallax-banner style=\"style-1\" image=\"section/banner-40.jpg\" heading=\"Yükselt &lt;br&gt; Egzersiz Stili\" subheading=\"Konfor, performans ve güven için tasarlanmış birinci sınıf spor giyim.\" button_text=\"Şimdi al\" button_url=\"/products\" text_alignment=\"left\" marquee_text=\"YENİ SEZON SEÇİMİ, TREND STİLLER, SINIRLI KOLEKSİYON\"][/parallax-banner]\n[image-gallery style=\"style-default\" title=\"Bizi Instagram\'da Takip Edin\" subtitle=\"@Amerce\" quantity=\"5\" image_1=\"gallery/gallery-37.jpg\" link_1=\"/products\" image_2=\"gallery/gallery-38.jpg\" link_2=\"/products\" image_3=\"gallery/gallery-39.jpg\" link_3=\"/products\" image_4=\"gallery/gallery-40.jpg\" link_4=\"/products\" image_5=\"gallery/gallery-41.jpg\" link_5=\"/products\"][/image-gallery]'),('vi',1,'Giới thiệu','Giới thiệu Amerce — câu chuyện thương hiệu, tiêu chuẩn nguồn cung và đội ngũ đứng sau từng sản phẩm.','[page-banner heading=\"Về Chúng Tôi\" subtitle=\"With over 15 years of experience, we craft timeless collections that transcend<br class=\\\"d-none d-lg-block\\\">trends and inspire lasting elegance.\"][/page-banner]\n[stats-counter hero_image=\"section/s-contact-1.jpg\" heading=\"Thiết kế, sự tỉ mỉ trong từng chi tiết và hiệu quả làm hài lòng thế giới\" description=\"Từ khoảnh khắc được hình thành đến khi được khoác lên người, mỗi sản phẩm của chúng tôi đều đi theo hành trình này. Chúng tôi có thể làm điều đó với tốc độ nhanh hơn. Tuy nhiên, tại Amerce, chúng tôi chọn chăm sóc tất cả những ai đang đồng hành cùng chúng tôi trên hành trình này.\" quantity=\"4\" value_1=\"8.2k\" animate_to_1=\"\" suffix_1=\"\" label_1=\"Sản Phẩm Hiện Có\" desc_1=\"Chúng tôi cung cấp đa dạng sản phẩm chất lượng cao để đáp ứng mọi nhu cầu.\" value_2=\"\" animate_to_2=\"10\" suffix_2=\"k\" label_2=\"Khách Hàng Hài Lòng\" desc_2=\"Phục vụ hơn 10.000 khách hàng hài lòng tin tưởng chúng tôi về chất lượng và dịch vụ.\" value_3=\"\" animate_to_3=\"96\" suffix_3=\"\" label_3=\"Thương Hiệu Đối Tác\" desc_3=\"Quan hệ đối tác với các thương hiệu hàng đầu mang đến bộ sưu tập đáng tin cậy cho cửa hàng và ngôi nhà của bạn.\" value_4=\"\" animate_to_4=\"16\" suffix_4=\"k\" label_4=\"Sản Phẩm Đang Bán\" desc_4=\"Đó là lý do chúng tôi nỗ lực mang đến nhiều dòng sản phẩm đa dạng, phù hợp với mọi phong cách.\"][/stats-counter]\n[image-accordion image=\"section/s-contact-2.jpg\" heading=\"Mang Đến Những Món Đồ Quý Hiếm Và Tinh Tế Trên Toàn Thế Giới\" quantity=\"4\" title_1=\"Giới Thiệu\" body_1=\"Chào mừng đến với Cửa hàng Amerce, điểm đến hàng đầu cho thời trang và phụ kiện đi đầu xu hướng. Chúng tôi tự hào mang đến bộ sưu tập được tuyển chọn kỹ lưỡng những món đồ quý hiếm và tinh tế được tìm kiếm cả trong nước lẫn quốc tế.\" title_2=\"Tầm Nhìn Của Chúng Tôi\" body_2=\"Chúng tôi hướng đến một thế giới nơi thiết kế tinh tế hòa quyện cùng cuộc sống thường ngày — những sản phẩm bền đẹp theo thời gian, những đối tác đáng tin cậy, và những khách hàng được đối xử như con người, không phải giao dịch.\" title_3=\"Điều Làm Nên Sự Khác Biệt\" body_3=\"Nhà cung cấp được kiểm toán độc lập, sản phẩm được kiểm tra thủ công, và chính sách đổi trả 30 ngày không cần lý do, hỗ trợ bởi đội ngũ chăm sóc khách hàng tận tâm.\" title_4=\"Cam Kết Của Chúng Tôi\" body_4=\"Sản phẩm chất lượng, chuỗi cung ứng minh bạch và điều kiện lao động công bằng — mỗi đơn hàng, mỗi lần đặt.\"][/image-accordion]\n[about-testimonials heading=\"Khách Hàng Nói Gì!\" subtitle=\"Khách hàng yêu thích sản phẩm của chúng tôi, và chúng tôi luôn nỗ lực làm hài lòng họ.\" quantity=\"2\" image_1=\"testimonials/tes-1.jpg\" name_1=\"Emma Collins\" text_1=\"\\\"Totally obsessed with this outfit! The fit is perfect, the fabric feels premium, and I\'ve been getting compliments non-stop. It instantly lifts my confidence — such a great find!\\\"\" image_2=\"testimonials/tes-2.jpg\" name_2=\"Sophia Ramirez\" text_2=\"\\\"I\'m amazed by how comfortable yet stylish this piece is. It pairs effortlessly with everything, and the quality really stands out. Definitely becoming my go-to for everyday looks!\\\"\"][/about-testimonials]\n[about-team heading=\"Gặp Gỡ Đội Ngũ\" subtitle=\"Những chuyên gia tận tâm với sự hoàn hảo trong từng chi tiết.\" quantity=\"4\" image_1=\"member/member-1.jpg\" name_1=\"Annette Black\" role_1=\"Nhà Sáng Lập/CEO\" social_links_1=\"\" image_2=\"member/member-2.jpg\" name_2=\"Brooklyn Simmons\" role_2=\"Quản Lý\" social_links_2=\"\" image_3=\"member/member-3.jpg\" name_3=\"Jane Cooper\" role_3=\"Giám Đốc Kinh Doanh\" social_links_3=\"\" image_4=\"member/member-4.jpg\" name_4=\"Lisa Bonet\" role_4=\"Giám Đốc Kinh Doanh\" social_links_4=\"\"][/about-team]'),('vi',2,'Liên hệ','Liên hệ với đội ngũ chăm sóc khách hàng và hợp tác của Amerce.',''),('vi',3,'Câu hỏi thường gặp','Câu hỏi thường gặp về đơn hàng, vận chuyển, đổi trả và quản lý tài khoản.','[page-banner heading=\"Câu Hỏi Thường Gặp\" subtitle=\"Got questions? We\'ve got answers! Browse our Câu Hỏi Thường Gặp to find information on orders, shipping,<br class=\\\"d-none d-lg-block\\\">returns, and more. If you need further assistance, feel free to contact our team.\"][/page-banner]\n[faq-page sidebar_image=\"section/banner-12.jpg\" sidebar_title=\"Save 25% <br class=\\\"d-none d-sm-block\\\">Today\" sidebar_subtitle=\"Áo Thun, Áo Hoodie Và Hơn Thế Nữa\" sidebar_cta=\"Xem Thêm\" sidebar_url=\"/products\" quantity=\"16\" category_1=\"Tài Khoản Của Tôi\" category_id_1=\"myAccount\" question_1=\"1. Tôi có thể làm gì nếu quên mật khẩu?\" answer_1=\"Use the \\\"Forgot password\\\" link on the sign-in page. We will email you a one-time link to set a new password — it expires in 30 minutes for security.\" category_2=\"Tài Khoản Của Tôi\" category_id_2=\"myAccount\" question_2=\"2. Làm thế nào để cập nhật địa chỉ email?\" answer_2=\"Đăng nhập, mở Tài khoản → Cài đặt và thay đổi trường email. Chúng tôi sẽ gửi email xác nhận đến địa chỉ mới; thay đổi sẽ có hiệu lực khi bạn nhấp vào liên kết đó.\" category_3=\"Tài Khoản Của Tôi\" category_id_3=\"myAccount\" question_3=\"3. Tôi có thể xóa tài khoản của mình không?\" answer_3=\"Có. Từ Tài khoản → Cài đặt, kéo xuống mục Xóa tài khoản. Chúng tôi giữ lại lịch sử đơn hàng vì lý do thuế/pháp lý, nhưng thông tin liên hệ cá nhân sẽ được xóa trong vòng 30 ngày.\" category_4=\"Đơn Hàng & Mua Sắm\" category_id_4=\"ordersPurchases\" question_4=\"1. Làm thế nào để đặt hàng?\" answer_4=\"Thêm sản phẩm vào giỏ hàng, nhấp thanh toán, chọn phương thức vận chuyển, sau đó nhập thông tin thanh toán. Bạn sẽ nhận được email xác nhận đơn hàng ngay lập tức.\" category_5=\"Đơn Hàng & Mua Sắm\" category_id_5=\"ordersPurchases\" question_5=\"2. Tôi có thể chỉnh sửa hoặc hủy đơn hàng không?\" answer_5=\"Đơn hàng có thể được chỉnh sửa hoặc hủy từ bảng điều khiển tài khoản của bạn trong vòng 1 giờ sau khi đặt. Sau đó, kho hàng đã bắt đầu soạn hàng và chúng tôi không thể can thiệp.\" category_6=\"Đơn Hàng & Mua Sắm\" category_id_6=\"ordersPurchases\" question_6=\"3. Những phương thức thanh toán nào được chấp nhận?\" answer_6=\"Chúng tôi chấp nhận Visa, Mastercard, American Express, Apple Pay, Google Pay và PayPal. Mọi giao dịch đều sử dụng mã hóa TLS 1.3.\" category_7=\"Đổi Trả & Hoàn Tiền\" category_id_7=\"returnsRefunds\" question_7=\"1. Thời hạn đổi trả là bao lâu?\" answer_7=\"30 ngày kể từ ngày nhận hàng đối với sản phẩm chưa qua sử dụng, còn nguyên trạng. Không áp dụng cho hàng giảm giá, đồ lót và các mặt hàng flash sale bán cuối cùng.\" category_8=\"Đổi Trả & Hoàn Tiền\" category_id_8=\"returnsRefunds\" question_8=\"2. Làm thế nào để bắt đầu quy trình đổi trả?\" answer_8=\"Open the order in your account dashboard and click \\\"Start return\\\". We email a prepaid label for domestic orders within one business day.\" category_9=\"Đổi Trả & Hoàn Tiền\" category_id_9=\"returnsRefunds\" question_9=\"3. Khi nào tôi sẽ nhận được tiền hoàn lại?\" answer_9=\"Tiền hoàn được xử lý trong vòng 3-5 ngày làm việc kể từ khi chúng tôi nhận được hàng trả lại. Thời gian ghi có của ngân hàng có thể khác nhau; vui lòng đợi tối đa 10 ngày làm việc để thấy khoản tiền được ghi nhận.\" category_10=\"Vận Chuyển & Theo Dõi\" category_id_10=\"shippingTracking\" question_10=\"1. Vận chuyển mất bao lâu?\" answer_10=\"Vận chuyển tiêu chuẩn nội địa mất 3-5 ngày làm việc. Vận chuyển nhanh 1-2 ngày. Vận chuyển tiêu chuẩn quốc tế mất 7-12 ngày làm việc; tùy chọn vận chuyển nhanh có sẵn ở trang thanh toán.\" category_11=\"Vận Chuyển & Theo Dõi\" category_id_11=\"shippingTracking\" question_11=\"2. Làm thế nào để theo dõi đơn hàng?\" answer_11=\"Liên kết theo dõi được đính kèm trong email xác nhận vận chuyển. Bạn cũng có thể xem trạng thái từ Tài khoản → Đơn hàng → Theo dõi.\" category_12=\"Vận Chuyển & Theo Dõi\" category_id_12=\"shippingTracking\" question_12=\"3. Bạn có vận chuyển quốc tế không?\" answer_12=\"Có — đến hầu hết các quốc gia. Thuế và phí được trả trước ở trang thanh toán cho một số điểm đến nhất định; nếu không, đơn vị vận chuyển có thể thu khi giao hàng.\" category_13=\"Phí & Thanh Toán\" category_id_13=\"feesBilling\" question_13=\"1. Thuế và phí đã được bao gồm chưa?\" answer_13=\"Giá nội địa bao gồm thuế bán hàng hiển thị ở trang thanh toán. Đơn hàng quốc tế đến các điểm đến được hỗ trợ đã bao gồm thuế và phí; nếu không, đơn vị vận chuyển sẽ thu khi giao hàng.\" category_14=\"Phí & Thanh Toán\" category_id_14=\"feesBilling\" question_14=\"2. Tại sao tôi bị tính phí hai lần?\" answer_14=\"Có thể bạn đang thấy khoản tạm giữ ủy quyền cùng với khoản phí thực tế. Khoản tạm giữ sẽ tự hủy trong 3-5 ngày làm việc. Hãy gửi email đến billing@amerce.test nếu sau thời gian đó bạn vẫn thấy hai khoản phí.\" category_15=\"Chủ Đề Khác\" category_id_15=\"otherTopic\" question_15=\"1. Bạn có cửa hàng vật lý không?\" answer_15=\"Có — vui lòng truy cập trang Cửa hàng để xem danh sách các cửa hàng chính và đối tác.\" category_16=\"Chủ Đề Khác\" category_id_16=\"otherTopic\" question_16=\"2. Làm thế nào để liên hệ bộ phận chăm sóc khách hàng?\" answer_16=\"Gửi email đến hello@amerce.test hoặc sử dụng biểu mẫu liên hệ. Chúng tôi sẽ phản hồi trong vòng một ngày làm việc.\"][/faq-page]'),('vi',4,'Chính sách bảo mật','Cách Amerce thu thập, sử dụng và bảo vệ thông tin cá nhân của bạn.','[page-banner heading=\"Chính Sách Bảo Mật\"][/page-banner]\n[term-content quantity=\"7\" title_1=\"1. Thông Tin Chúng Tôi Thu Thập\" body_1=\"<p class=\\\"term-text cl-text-2\\\">When you visit the Site, we automatically collect certain information about your device — web browser, IP address, time zone, and some of the cookies installed on your device. As you browse, we also collect data about the pages or products you view, what referred you to the Site, and how you interact with it. We refer to this as \\\"Device Information\\\".</p><p class=\\\"term-text cl-text-2\\\">When you make a purchase or attempt to purchase through the Site, we collect your name, billing address, shipping address, and payment information (including card number, email address, and phone number). We refer to this as \\\"Order Information\\\".</p>\" title_2=\"2. Cách Chúng Tôi Sử Dụng Thông Tin Của Bạn\" body_2=\"<p class=\\\"term-text cl-text-2\\\">We use Order Information to fulfil orders placed through the Site (process payment, arrange shipping, provide invoices and order confirmations). We use it to communicate with you, screen orders for fraud, and — in line with your preferences — share marketing about products you may like.</p><p class=\\\"term-text cl-text-2\\\">We use Device Information to screen for fraud and to improve the Site through analytics about how customers browse and interact with us.</p>\" title_3=\"3. Chia Sẻ Thông Tin Cá Nhân Của Bạn\" body_3=\"<p class=\\\"term-text cl-text-2\\\">We share Personal Information with third-party service providers who help us run the Site. We may also share information to comply with applicable laws, respond to a subpoena or lawful request, or otherwise protect our rights.</p>\" title_4=\"4. Lưu Trữ Dữ Liệu\" body_4=\"<p class=\\\"term-text cl-text-2\\\">When you place an order, we maintain the Order Information for our records unless and until you ask us to delete it.</p>\" title_5=\"5. Quyền Của Bạn\" body_5=\"<p class=\\\"term-text cl-text-2\\\">You can request access, correction, or deletion of any personal data we hold about you. Email privacy@amerce.test from the address on file and we will respond within 30 days.</p>\" title_6=\"6. Cookie\" body_6=\"<p class=\\\"term-text cl-text-2\\\">Cookies are used to keep your cart between visits, remember your preferences, and measure aggregate traffic. You can disable cookies in your browser, though some Site features may stop working.</p>\" title_7=\"7. Thay Đổi\" body_7=\"<p class=\\\"term-text cl-text-2\\\">We may update this policy from time to time to reflect changes to our practices or for operational, legal, or regulatory reasons. The latest version will always be on this page.</p>\"][/term-content]'),('vi',5,'Điều khoản & Điều kiện','Các điều khoản pháp lý áp dụng khi bạn sử dụng cửa hàng Amerce.','[page-banner heading=\"Điều Khoản & Điều Kiện\"][/page-banner]\n[term-content quantity=\"7\" title_1=\"1. Chấp Thuận Điều Khoản\" body_1=\"<p class=\\\"term-text cl-text-2\\\">By accessing or using the Mỹ store you agree to these terms. We reserve the right to update them with reasonable notice; the latest version is always available on this page.</p>\" title_2=\"2. Đơn Hàng & Thanh Toán\" body_2=\"<p class=\\\"term-text cl-text-2\\\">All prices are in USD unless otherwise stated. We accept the payment methods displayed at checkout. An order becomes binding once you receive an order confirmation email.</p>\" title_3=\"3. Vận Chuyển\" body_3=\"<p class=\\\"term-text cl-text-2\\\">Vận Chuyển options, lead times, and rates are listed on our Vận Chuyển page. Risk passes to you on delivery.</p>\" title_4=\"4. Đổi Trả\" body_4=\"<p class=\\\"term-text cl-text-2\\\">You have 30 days from delivery to return any unworn item for a refund. See our Đổi Trả &amp; Hoàn Tiền page for the full process.</p>\" title_5=\"5. Sở Hữu Trí Tuệ\" body_5=\"<p class=\\\"term-text cl-text-2\\\">All content on the Site — text, photography, logos, code — is owned by Mỹ or its licensors and may not be reproduced without written permission.</p>\" title_6=\"6. Giới Hạn Trách Nhiệm\" body_6=\"<p class=\\\"term-text cl-text-2\\\">To the maximum extent permitted by law, Mỹ is not liable for indirect or consequential damages arising from use of the Site or the products purchased through it.</p>\" title_7=\"7. Luật Áp Dụng\" body_7=\"<p class=\\\"term-text cl-text-2\\\">These terms are governed by the laws of the State of New York. Any dispute will be resolved in the state or federal courts located in New York County.</p>\"][/term-content]'),('vi',6,'Đổi trả & Hoàn tiền','Chính sách đổi trả 30 ngày và quy trình đổi trả từng bước của chúng tôi.','[page-banner heading=\"Đổi Trả & Hoàn Tiền\"][/page-banner]\n[term-content quantity=\"6\" title_1=\"1. Đổi Trả\" body_1=\"<p class=\\\"term-text cl-text-2\\\">We want you to be completely satisfied with your purchase. If for any reason you are not, you may return any unworn item within 30 days of receiving your order for a refund or exchange. Mặt hàng must be in original packaging and the same condition as you received them.</p>\" title_2=\"2. Cách Bắt Đầu Đổi Trả\" body_2=\"<p class=\\\"term-text cl-text-2\\\">Open the order in your account dashboard and click \\\"Start return\\\", or email returns@amerce.test with your order number. We will send a prepaid return label for domestic orders within one business day.</p>\" title_3=\"3. Hoàn Tiền\" body_3=\"<p class=\\\"term-text cl-text-2\\\">Refunds are processed within 3-5 business days of us receiving the return and applied to the original payment method. Bank posting times vary; allow up to 10 business days for the credit to appear.</p>\" title_4=\"4. Các Trường Hợp Loại Trừ\" body_4=\"<p class=\\\"term-text cl-text-2\\\">Sale items, intimate apparel, and final-sale flash sale purchases are excluded from returns. Personalised or made-to-order items are also non-returnable unless faulty.</p>\" title_5=\"5. Sản Phẩm Bị Hư Hỏng Hoặc Lỗi\" body_5=\"<p class=\\\"term-text cl-text-2\\\">If your order arrives damaged or faulty, email us within 7 days with photos. We will replace the item or issue a full refund — including any return shipping cost — at our expense.</p>\" title_6=\"6. Đổi Trả Quốc Tế\" body_6=\"<p class=\\\"term-text cl-text-2\\\">International customers are responsible for return shipping unless the item is faulty. We do not refund original shipping or duty charges on international returns.</p>\"][/term-content]'),('vi',7,'Vận chuyển','Các phương thức vận chuyển trong nước và quốc tế, thời gian và cước phí.','[page-banner heading=\"Vận Chuyển\"][/page-banner]\n[term-content quantity=\"6\" title_1=\"1. Phương Thức Vận Chuyển\" body_1=\"<p class=\\\"term-text cl-text-2\\\">We offer the following shipping methods for domestic and international orders: standard ground, expedited 2-day, and priority overnight (where available).</p>\" title_2=\"2. Phí Nội Địa\" body_2=\"<p class=\\\"term-text cl-text-2\\\">Standard ground is free on orders over $99. Express 1-2 day shipping is $19.99 flat. Priority overnight is calculated by weight at checkout.</p>\" title_3=\"3. Quốc Tế\" body_3=\"<p class=\\\"term-text cl-text-2\\\">We ship to most countries. International standard shipping is $24.99 with 7-12 business day delivery. Express options appear at checkout. Duties and taxes are pre-paid for select destinations; otherwise the courier collects them on delivery.</p>\" title_4=\"4. Thời Gian Xử Lý\" body_4=\"<p class=\\\"term-text cl-text-2\\\">Orders placed before 2pm EST on business days ship the same day. Orders placed after 2pm or on weekends/holidays ship the next business day.</p>\" title_5=\"5. Theo Dõi\" body_5=\"<p class=\\\"term-text cl-text-2\\\">A tracking link is included in your shipment confirmation email. You can also see live status from Account → Orders → Track.</p>\" title_6=\"6. Đơn Hàng Bị Thất Lạc Hoặc Bị Kẹt\" body_6=\"<p class=\\\"term-text cl-text-2\\\">If a tracking number has not updated for more than 7 business days, email shipping@amerce.test. We will open an investigation with the carrier and either refund or reship the order at our expense.</p>\"][/term-content]'),('vi',8,'Hệ thống cửa hàng','Ghé thăm Amerce trực tiếp — các cửa hàng chính và đối tác trên toàn thế giới.',''),('vi',9,'Tạp chí','Hướng dẫn phối đồ, câu chuyện thương hiệu và nội dung hậu trường từ đội ngũ biên tập Amerce.','<div class=\"container py-5\"><h1>Nhật Ký</h1><p>Khám phá những câu chuyện mới nhất của chúng tôi — hướng dẫn phong cách, điểm nhấn sản phẩm, phân tích chuyên sâu về bền vững và nhiều hơn nữa.</p></div>'),('vi',10,'Tuyển dụng','Tham gia Amerce — các vị trí đang mở, giá trị văn hóa và quyền lợi dành cho đội ngũ.','<div class=\"container py-5\"><h1>Tuyển Dụng Tại Amerce</h1><p>Chúng tôi là một đội ngũ nhỏ, làm việc phân tán, đang xây dựng một mô hình bán lẻ tinh tế hơn. Chúng tôi tuyển dụng trong các mảng sản phẩm, kỹ thuật, chuỗi cung ứng và trải nghiệm khách hàng.</p><p>Các vị trí đang tuyển được đăng trên trang LinkedIn của công ty. Để ứng tuyển, hãy gửi một thư ngắn và sơ yếu lý lịch đến <a href=\"mailto:careers@amerce.test\">careers@amerce.test</a>.</p></div>'),('vi',11,'Sustainability','How Amerce sources responsibly and reduces its environmental footprint.','<div class=\"container py-5\"><h1>Phát Triển Bền Vững Tại Amerce</h1><p>Mỗi sản phẩm đều mang một câu chuyện. Chúng tôi làm việc trực tiếp với các nhà máy và xưởng thủ công, ưu tiên vật liệu tái chế và có thể truy xuất nguồn gốc, và đóng gói không sử dụng nhựa.</p><p>Mục tiêu năm 2026 của chúng tôi: 90% nguyên vật liệu có chuỗi cung ứng được xác minh, và báo cáo tác động hằng năm minh bạch.</p></div>'),('vi',12,'Trang chủ','Amerce — trang chủ trải nghiệm thương mại điện tử đa năng.','[simple-slider key=\"home-hero\" style=\"style-1\" is_autoplay=\"yes\" autoplay_speed=\"3000\" show_arrows=\"yes\" show_dots=\"yes\"][/simple-slider]\n[ecommerce-products style=\"style-slider\" title=\"Lựa Chọn Tốt Nhất Hôm Nay\" subtitle=\"Khám phá những lựa chọn đồ thể thao nổi bật hôm nay.\" source=\"featured\" limit=\"4\" items_per_row=\"4\"][/ecommerce-products]\n[categories-grid style=\"style-card-vertical\" title=\"Mua Sắm Theo Danh Mục\" subtitle=\"Khám phá các bộ sưu tập đồ thể thao thiết yếu cho mọi phong cách tập luyện.\" category_ids=\"1,2,3,4,5\" limit=\"5\" show_count=\"no\"][/categories-grid]\n[banner-products-composite title=\"Điểm Nhấn Hàng Đầu Tuần Này\" subtitle=\"Những phong cách mới và lựa chọn không thể bỏ qua được tuyển chọn cho tuần của bạn.\" image=\"section/banner-39.jpg\" overline=\"Sinh ra cho mọi chuyển động.\" heading=\"Sẵn Sàng Cho &lt;br&gt; Sự Vĩ Đại\" button_text=\"Mua Ngay\" button_url=\"/products\" source=\"featured\" limit=\"4\"][/banner-products-composite]\n[lookbook-hotspot style=\"style-v4-carousel\" image=\"section/banner-lookbook-11.jpg\" quantity=\"2\" x_percent_1=\"38\" y_percent_1=\"42\" product_id_1=\"17\" column_1=\"1\" overline_1=\"Áo Bra Sẵn Sàng Chạy Bộ\" x_percent_2=\"64\" y_percent_2=\"70\" product_id_2=\"18\" column_2=\"1\" overline_2=\"Quần Đùi Sẵn Sàng Chạy Bộ\"][/lookbook-hotspot]\n[testimonials style=\"style-image-card\" title=\"Khách Hàng Nói Gì Về Chúng Tôi\" subtitle=\"Phản hồi chân thực từ những người tập luyện, vận động và sống cùng trang phục của chúng tôi.\" autoplay=\"yes\" quantity=\"4\" avatar_1=\"testimonials/tes-16.jpg\" name_1=\"Jenna L.\" role_1=\"Huấn Luyện Viên Yoga\" rating_1=\"5\" content_1=\"\\\"Super comfortable and breathable &mdash; perfect for my daily workouts.\\\"\" avatar_2=\"testimonials/tes-17.jpg\" name_2=\"Jenna L.\" role_2=\"Huấn Luyện Viên Yoga\" rating_2=\"5\" content_2=\"\\\"The fit is amazing. Stylish, flexible, and great for the gym.\\\"\" avatar_3=\"testimonials/tes-18.jpg\" name_3=\"Jenna L.\" role_3=\"Huấn Luyện Viên Yoga\" rating_3=\"5\" content_3=\"\\\"Quality is top-notch. I feel more confident every time I wear it.\\\"\" avatar_4=\"testimonials/tes-19.jpg\" name_4=\"Jenna L.\" role_4=\"Huấn Luyện Viên Yoga\" rating_4=\"5\" content_4=\"\\\"Love the fabric! Lightweight and moves with me during every session.\\\"\"][/testimonials]\n[parallax-banner style=\"style-1\" image=\"section/banner-40.jpg\" heading=\"Nâng Tầm &lt;br&gt; Phong Cách Tập Luyện\" subheading=\"Đồ thể thao cao cấp được chế tác cho sự thoải mái, &lt;br&gt; hiệu năng và tự tin.\" button_text=\"Mua ngay\" button_url=\"/products\" text_alignment=\"left\" marquee_text=\"LỰA CHỌN MÙA MỚI, PHONG CÁCH ĐANG XU HƯỚNG, BỘ SƯU TẬP GIỚI HẠN\"][/parallax-banner]\n[image-gallery style=\"style-default\" title=\"Theo Dõi Chúng Tôi Trên Instagram\" subtitle=\"@Amerce\" quantity=\"5\" image_1=\"gallery/gallery-37.jpg\" link_1=\"/products\" image_2=\"gallery/gallery-38.jpg\" link_2=\"/products\" image_3=\"gallery/gallery-39.jpg\" link_3=\"/products\" image_4=\"gallery/gallery-40.jpg\" link_4=\"/products\" image_5=\"gallery/gallery-41.jpg\" link_5=\"/products\"][/image-gallery]');
+/*!40000 ALTER TABLE `pages_translations` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `password_reset_tokens`
+--
+
+DROP TABLE IF EXISTS `password_reset_tokens`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `password_reset_tokens` (
+  `email` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `token` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`email`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `password_reset_tokens`
+--
+
+LOCK TABLES `password_reset_tokens` WRITE;
+/*!40000 ALTER TABLE `password_reset_tokens` DISABLE KEYS */;
+/*!40000 ALTER TABLE `password_reset_tokens` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `payment_logs`
+--
+
+DROP TABLE IF EXISTS `payment_logs`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `payment_logs` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `payment_method` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `request` longtext COLLATE utf8mb4_unicode_ci,
+  `response` longtext COLLATE utf8mb4_unicode_ci,
+  `ip_address` varchar(45) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `payment_logs`
+--
+
+LOCK TABLES `payment_logs` WRITE;
+/*!40000 ALTER TABLE `payment_logs` DISABLE KEYS */;
+/*!40000 ALTER TABLE `payment_logs` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `payments`
+--
+
+DROP TABLE IF EXISTS `payments`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `payments` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `currency` varchar(120) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `user_id` bigint unsigned NOT NULL DEFAULT '0',
+  `charge_id` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `payment_channel` varchar(60) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `description` varchar(400) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `amount` decimal(15,2) unsigned NOT NULL,
+  `payment_fee` decimal(15,2) DEFAULT '0.00',
+  `order_id` bigint unsigned DEFAULT NULL,
+  `status` varchar(60) COLLATE utf8mb4_unicode_ci DEFAULT 'pending',
+  `payment_type` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT 'confirm',
+  `customer_id` bigint unsigned DEFAULT NULL,
+  `refunded_amount` decimal(15,2) unsigned DEFAULT NULL,
+  `refund_note` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `customer_type` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `metadata` mediumtext COLLATE utf8mb4_unicode_ci,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `payments`
+--
+
+LOCK TABLES `payments` WRITE;
+/*!40000 ALTER TABLE `payments` DISABLE KEYS */;
+/*!40000 ALTER TABLE `payments` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `personal_access_tokens`
+--
+
+DROP TABLE IF EXISTS `personal_access_tokens`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `personal_access_tokens` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `tokenable_type` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `tokenable_id` bigint unsigned NOT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `token` varchar(64) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `abilities` text COLLATE utf8mb4_unicode_ci,
+  `last_used_at` timestamp NULL DEFAULT NULL,
+  `expires_at` timestamp NULL DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `personal_access_tokens_token_unique` (`token`),
+  KEY `personal_access_tokens_tokenable_type_tokenable_id_index` (`tokenable_type`,`tokenable_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `personal_access_tokens`
+--
+
+LOCK TABLES `personal_access_tokens` WRITE;
+/*!40000 ALTER TABLE `personal_access_tokens` DISABLE KEYS */;
+/*!40000 ALTER TABLE `personal_access_tokens` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `post_categories`
+--
+
+DROP TABLE IF EXISTS `post_categories`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `post_categories` (
+  `category_id` bigint unsigned NOT NULL,
+  `post_id` bigint unsigned NOT NULL,
+  KEY `post_categories_category_id_index` (`category_id`),
+  KEY `post_categories_post_id_index` (`post_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `post_categories`
+--
+
+LOCK TABLES `post_categories` WRITE;
+/*!40000 ALTER TABLE `post_categories` DISABLE KEYS */;
+INSERT INTO `post_categories` VALUES (2,1),(6,2),(3,2),(6,3),(4,3),(5,4),(1,4),(3,5),(4,5),(2,6),(1,6),(6,7),(5,7),(2,8),(3,8),(2,9),(4,9),(1,10),(2,10);
+/*!40000 ALTER TABLE `post_categories` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `post_tags`
+--
+
+DROP TABLE IF EXISTS `post_tags`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `post_tags` (
+  `tag_id` bigint unsigned NOT NULL,
+  `post_id` bigint unsigned NOT NULL,
+  KEY `post_tags_tag_id_index` (`tag_id`),
+  KEY `post_tags_post_id_index` (`post_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `post_tags`
+--
+
+LOCK TABLES `post_tags` WRITE;
+/*!40000 ALTER TABLE `post_tags` DISABLE KEYS */;
+INSERT INTO `post_tags` VALUES (5,1),(10,1),(7,2),(2,2),(12,2),(5,3),(8,3),(5,4),(12,4),(10,4),(8,5),(5,5),(9,5),(4,6),(11,6),(5,6),(11,7),(9,7),(4,7),(11,8),(10,8),(5,8),(3,9),(1,9),(9,9),(10,10),(3,10),(2,10);
+/*!40000 ALTER TABLE `post_tags` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `posts`
+--
+
+DROP TABLE IF EXISTS `posts`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `posts` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `description` text COLLATE utf8mb4_unicode_ci,
+  `content` longtext COLLATE utf8mb4_unicode_ci,
+  `status` varchar(60) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'published',
+  `author_id` bigint unsigned DEFAULT NULL,
+  `author_type` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `is_featured` tinyint unsigned NOT NULL DEFAULT '0',
+  `image` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `views` int unsigned NOT NULL DEFAULT '0',
+  `format_type` varchar(30) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `posts_status_index` (`status`),
+  KEY `posts_author_id_index` (`author_id`),
+  KEY `posts_author_type_index` (`author_type`),
+  KEY `posts_created_at_index` (`created_at`)
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `posts`
+--
+
+LOCK TABLES `posts` WRITE;
+/*!40000 ALTER TABLE `posts` DISABLE KEYS */;
+INSERT INTO `posts` VALUES (1,'How to Build a Capsule Wardrobe That Fits Your Lifestyle','Learn the art of mixing timeless basics with statement pieces for effortless, everyday style.','<p>A capsule wardrobe is built on a tight palette of pieces that play well together. Start with a statement outerwear piece — a rich fur or wool coat — and let it anchor a season of looks. From there, layer in neutral knits, tailored trousers, and a single pair of go-everywhere boots.</p><p>The trick is choosing items that serve at least three different occasions. A great coat earns its keep on commutes, dinners, and lazy Sunday walks alike.</p>','published',1,'Botble\\ACL\\Models\\User',1,'blog/blog-1.jpg',1538,NULL,'2026-05-28 18:57:45','2026-05-28 18:57:45'),(2,'The Investment Bag: Why a Quality Handbag Pays for Itself','A deep dive into woven leather, structured silhouettes, and the bags worth saving for.','<p>A well-made handbag is one of the rare fashion purchases that genuinely improves with age. Hand-woven full-grain leather develops a patina you simply cannot fake, and the structured silhouette holds its shape through decades of use.</p><p>Cost per wear on a quality bag, calculated across ten years of daily carry, almost always beats fast fashion alternatives.</p>','published',1,'Botble\\ACL\\Models\\User',1,'blog/blog-2.jpg',2137,NULL,'2026-05-28 18:57:45','2026-05-28 18:57:45'),(3,'Why Accessories Define More Than Just Your Outfit','Explore how small details like jewelry and bags can transform your entire look.','<p>Statement earrings, a sculptural necklace, a single perfectly chosen ring — accessories carry an outsized share of the styling work. The same black slip dress reads boho with hammered gold hoops, dressed-up with diamond studs, or downtown-cool with a stack of silver cuffs.</p><p>Build a small collection of pieces in different metals and silhouettes, and you have ten outfits in three.</p>','published',1,'Botble\\ACL\\Models\\User',1,'blog/blog-3.jpg',924,NULL,'2026-05-28 18:57:45','2026-05-28 18:57:45'),(4,'From Work to Weekend: Outfits That Do It All','Find versatile looks that transition seamlessly from office hours to after-hours fun.','<p>The most useful pieces in any wardrobe are those that travel between contexts without missing a beat. A linen overshirt in a warm earth tone reads polished over a tee for a midweek meeting, then loosens up perfectly for Friday evening drinks.</p><p>Look for relaxed tailoring, natural fibers, and colors slightly off the corporate-blue defaults.</p>','published',1,'Botble\\ACL\\Models\\User',1,'blog/blog-4.jpg',270,NULL,'2026-05-28 18:57:45','2026-05-28 18:57:45'),(5,'The Secret to Effortless Elegance in Every Season','Discover key layering techniques and fabric choices that keep you chic year-round.','<p>Effortless elegance comes from a small set of decisions, not a large wardrobe. Choose pieces in natural fibers — cashmere, mohair, real fur or its high-quality alternatives — and let texture do the visual heavy lifting.</p><p>A cropped fur jacket layered over a fine ribbed knit is the kind of pairing that looks composed in any season, in almost any city.</p>','published',1,'Botble\\ACL\\Models\\User',1,'blog/blog-5.jpg',632,NULL,'2026-05-28 18:57:45','2026-05-28 18:57:45'),(6,'Sustainable Fashion Choices That Never Go Out of Style','Learn how to shop smarter with eco-friendly pieces that look good and do good.','<p>Sustainable fashion is no longer about compromise. Linen-blend utility dresses, recycled-leather belt details, and plant-dyed fabrics offer the kind of considered style that improves with each wear and washes cleanly into your existing wardrobe.</p><p>Buy fewer pieces, choose better fibers, and let your closet quietly outlast every micro-trend.</p>','published',1,'Botble\\ACL\\Models\\User',1,'blog/blog-6.jpg',1022,NULL,'2026-05-28 18:57:45','2026-05-28 18:57:45'),(7,'Must-Have Wardrobe Staples for Every Season','The 10 timeless basics every closet needs — and how to wear each one beyond the obvious.','<p>A ribbed sage tank, a perfect white tee, a tonal slip dress — staples are the connective tissue of a wardrobe. Choose them in colors slightly off white and slightly off black: sage, ecru, charcoal, oat. They photograph better, they age better, and they layer better.</p>','published',1,'Botble\\ACL\\Models\\User',0,'blog/blog-7.jpg',649,NULL,'2026-05-28 18:57:45','2026-05-28 18:57:45'),(8,'Essential Styling Rules Every Woman Should Know','Proportion, palette, and the small tailoring tweaks that make ready-to-wear look custom.','<p>The two rules that quietly do the most work: balance volume with structure, and keep your color story under three shades. A boxy waistcoat over a column skirt is a master class in proportion. Tonal dressing in warm sand and chocolate reads more expensive than any logo ever could.</p>','published',1,'Botble\\ACL\\Models\\User',0,'blog/blog-8.jpg',518,NULL,'2026-05-28 18:57:45','2026-05-28 18:57:45'),(9,'Mastering Color Palettes for a Modern Wardrobe','Understand how to blend tones and textures to express your personality through fashion.','<p>The best dressers know their palette. Stick to a tight family of warm whites, creams, and bone tones and you will rarely make a wrong choice. Add a single statement color twice a year — a clay red, a deep olive — and let everything else relate to your base.</p><p>Texture, not contrast, is what keeps a tonal outfit from going flat.</p>','published',1,'Botble\\ACL\\Models\\User',0,'blog/blog-9.jpg',1729,NULL,'2026-05-28 18:57:45','2026-05-28 18:57:45'),(10,'Modern Accessories That Instantly Elevate Your Look','A scarf at the neck, a structured belt, a single bold ring — small pieces, big impact.','<p>The fastest wardrobe upgrade is rarely a new dress. A pussy-bow blouse in burnished copper, a silk scarf knotted just so, or a slim-belted waist over wide trousers can shift an outfit from forgettable to photographed.</p><p>Build a small toolkit of statement accessories and rotate them — your wardrobe will feel three times its size.</p>','published',1,'Botble\\ACL\\Models\\User',0,'blog/blog-10.jpg',1565,NULL,'2026-05-28 18:57:45','2026-05-28 18:57:45');
+/*!40000 ALTER TABLE `posts` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `posts_translations`
+--
+
+DROP TABLE IF EXISTS `posts_translations`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `posts_translations` (
+  `lang_code` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `posts_id` bigint unsigned NOT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `description` text COLLATE utf8mb4_unicode_ci,
+  `content` longtext COLLATE utf8mb4_unicode_ci,
+  PRIMARY KEY (`lang_code`,`posts_id`),
+  KEY `idx_posts_trans_posts_id` (`posts_id`),
+  KEY `idx_posts_trans_post_lang` (`posts_id`,`lang_code`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `posts_translations`
+--
+
+LOCK TABLES `posts_translations` WRITE;
+/*!40000 ALTER TABLE `posts_translations` DISABLE KEYS */;
+INSERT INTO `posts_translations` VALUES ('ar',1,'كيفية بناء خزانة ملابس تناسب نمط حياتك','تعلم فن المزج بين الأساسيات الخالدة والقطع المميزة للحصول على أسلوب يومي سهل.','<p>A capsule wardrobe is built on a tight palette of pieces that play well together. Start with a statement outerwear piece — a rich fur or wool coat — and let it anchor a season of looks. From there, layer in neutral knits, tailored trousers, and a single pair of go-everywhere boots.</p><p>The trick is choosing items that serve at least three different occasions. A great coat earns its keep on commutes, dinners, and lazy Sunday walks alike.</p>'),('ar',2,'حقيبة الاستثمار: لماذا تدفع حقيبة اليد عالية الجودة ثمنها بنفسها','نظرة عميقة على الجلد المنسوج والتصميمات الهيكلية والحقائب التي تستحق الادخار من أجلها.','<p>A well-made handbag is one of the rare fashion purchases that genuinely improves with age. Hand-woven full-grain leather develops a patina you simply cannot fake, and the structured silhouette holds its shape through decades of use.</p><p>Cost per wear on a quality bag, calculated across ten years of daily carry, almost always beats fast fashion alternatives.</p>'),('ar',3,'لماذا تحدد الإكسسوارات أكثر من مجرد ملابسك؟','اكتشف كيف يمكن للتفاصيل الصغيرة مثل المجوهرات والحقائب أن تغير مظهرك بالكامل.','<p>Statement earrings, a sculptural necklace, a single perfectly chosen ring — accessories carry an outsized share of the styling work. The same black slip dress reads boho with hammered gold hoops, dressed-up with diamond studs, or downtown-cool with a stack of silver cuffs.</p><p>Build a small collection of pieces in different metals and silhouettes, and you have ten outfits in three.</p>'),('ar',4,'من العمل إلى عطلة نهاية الأسبوع: الملابس التي تفي بكل شيء','ابحث عن مظاهر متعددة الاستخدامات تنتقل بسلاسة من ساعات العمل إلى متعة ما بعد ساعات العمل.','<p>The most useful pieces in any wardrobe are those that travel between contexts without missing a beat. A linen overshirt in a warm earth tone reads polished over a tee for a midweek meeting, then loosens up perfectly for Friday evening drinks.</p><p>Look for relaxed tailoring, natural fibers, and colors slightly off the corporate-blue defaults.</p>'),('ar',5,'سر الأناقة السهلة في كل موسم','اكتشف تقنيات الطبقات الرئيسية وخيارات الأقمشة التي تبقيك أنيقًا طوال العام.','<p>Effortless elegance comes from a small set of decisions, not a large wardrobe. Choose pieces in natural fibers — cashmere, mohair, real fur or its high-quality alternatives — and let texture do the visual heavy lifting.</p><p>A cropped fur jacket layered over a fine ribbed knit is the kind of pairing that looks composed in any season, in almost any city.</p>'),('ar',6,'خيارات الأزياء المستدامة التي لا تخرج عن الموضة أبدًا','تعلم كيفية التسوق بشكل أكثر ذكاءً باستخدام قطع صديقة للبيئة تبدو جيدة ومنتجة جيدًا.','<p>Sustainable fashion is no longer about compromise. Linen-blend utility dresses, recycled-leather belt details, and plant-dyed fabrics offer the kind of considered style that improves with each wear and washes cleanly into your existing wardrobe.</p><p>Buy fewer pieces, choose better fibers, and let your closet quietly outlast every micro-trend.</p>'),('ar',7,'أساسيات خزانة الملابس التي يجب اقتناؤها لكل موسم','الأساسيات العشرة التي تحتاجها كل خزانة ملابس - وكيفية ارتداء كل واحدة منها بشكل يتجاوز ما هو واضح.','<p>A ribbed sage tank, a perfect white tee, a tonal slip dress — staples are the connective tissue of a wardrobe. Choose them in colors slightly off white and slightly off black: sage, ecru, charcoal, oat. They photograph better, they age better, and they layer better.</p>'),('ar',8,'قواعد التصميم الأساسية التي يجب أن تعرفها كل امرأة','النسبة واللوحة وتعديلات الخياطة الصغيرة التي تجعل الملابس الجاهزة تبدو مخصصة.','<p>The two rules that quietly do the most work: balance volume with structure, and keep your color story under three shades. A boxy waistcoat over a column skirt is a master class in proportion. Tonal dressing in warm sand and chocolate reads more expensive than any logo ever could.</p>'),('ar',9,'إتقان لوحات الألوان لخزانة الملابس الحديثة','فهم كيفية مزج النغمات والأنسجة للتعبير عن شخصيتك من خلال الموضة.','<p>The best dressers know their palette. Stick to a tight family of warm whites, creams, and bone tones and you will rarely make a wrong choice. Add a single statement color twice a year — a clay red, a deep olive — and let everything else relate to your base.</p><p>Texture, not contrast, is what keeps a tonal outfit from going flat.</p>'),('ar',10,'إكسسوارات حديثة ترتقي بمظهرك على الفور','وشاح عند الرقبة، وحزام منظم، وحلقة واحدة جريئة - قطع صغيرة، وتأثير كبير.','<p>The fastest wardrobe upgrade is rarely a new dress. A pussy-bow blouse in burnished copper, a silk scarf knotted just so, or a slim-belted waist over wide trousers can shift an outfit from forgettable to photographed.</p><p>Build a small toolkit of statement accessories and rotate them — your wardrobe will feel three times its size.</p>'),('fr',1,'Comment créer une garde-robe capsule adaptée à votre style de vie','Apprenez l\'art de mélanger des basiques intemporels avec des pièces tendance pour un style quotidien sans effort.','<p>A capsule wardrobe is built on a tight palette of pieces that play well together. Start with a statement outerwear piece — a rich fur or wool coat — and let it anchor a season of looks. From there, layer in neutral knits, tailored trousers, and a single pair of go-everywhere boots.</p><p>The trick is choosing items that serve at least three different occasions. A great coat earns its keep on commutes, dinners, and lazy Sunday walks alike.</p>'),('fr',2,'Le sac d’investissement : pourquoi un sac à main de qualité est rentable','Une plongée profonde dans le cuir tressé, les silhouettes structurées et les sacs pour lesquels il vaut la peine d\'économiser.','<p>A well-made handbag is one of the rare fashion purchases that genuinely improves with age. Hand-woven full-grain leather develops a patina you simply cannot fake, and the structured silhouette holds its shape through decades of use.</p><p>Cost per wear on a quality bag, calculated across ten years of daily carry, almost always beats fast fashion alternatives.</p>'),('fr',3,'Pourquoi les accessoires définissent plus que votre tenue','Découvrez comment les petits détails comme les bijoux et les sacs peuvent transformer votre look.','<p>Statement earrings, a sculptural necklace, a single perfectly chosen ring — accessories carry an outsized share of the styling work. The same black slip dress reads boho with hammered gold hoops, dressed-up with diamond studs, or downtown-cool with a stack of silver cuffs.</p><p>Build a small collection of pieces in different metals and silhouettes, and you have ten outfits in three.</p>'),('fr',4,'From Work to Weekend: Outfits That Do It All','Trouvez des looks polyvalents qui passent facilement des heures de bureau aux loisirs en dehors des heures normales.','<p>The most useful pieces in any wardrobe are those that travel between contexts without missing a beat. A linen overshirt in a warm earth tone reads polished over a tee for a midweek meeting, then loosens up perfectly for Friday evening drinks.</p><p>Look for relaxed tailoring, natural fibers, and colors slightly off the corporate-blue defaults.</p>'),('fr',5,'Le secret d’une élégance sans effort à chaque saison','Découvrez les principales techniques de superposition et les choix de tissus qui vous garderont chic toute l\'année.','<p>Effortless elegance comes from a small set of decisions, not a large wardrobe. Choose pieces in natural fibers — cashmere, mohair, real fur or its high-quality alternatives — and let texture do the visual heavy lifting.</p><p>A cropped fur jacket layered over a fine ribbed knit is the kind of pairing that looks composed in any season, in almost any city.</p>'),('fr',6,'Des choix de mode durables qui ne se démodent jamais','Apprenez à magasiner plus intelligemment avec des pièces écologiques qui ont fière allure et qui font du bien.','<p>Sustainable fashion is no longer about compromise. Linen-blend utility dresses, recycled-leather belt details, and plant-dyed fabrics offer the kind of considered style that improves with each wear and washes cleanly into your existing wardrobe.</p><p>Buy fewer pieces, choose better fibers, and let your closet quietly outlast every micro-trend.</p>'),('fr',7,'Des incontournables de la garde-robe pour chaque saison','Les 10 basiques intemporels dont chaque garde-robe a besoin – et comment porter chacun d\'entre eux au-delà de l\'évidence.','<p>A ribbed sage tank, a perfect white tee, a tonal slip dress — staples are the connective tissue of a wardrobe. Choose them in colors slightly off white and slightly off black: sage, ecru, charcoal, oat. They photograph better, they age better, and they layer better.</p>'),('fr',8,'Règles de style essentielles que chaque femme devrait connaître','Proportion, palette et petits ajustements de couture qui donnent au prêt-à-porter un aspect personnalisé.','<p>The two rules that quietly do the most work: balance volume with structure, and keep your color story under three shades. A boxy waistcoat over a column skirt is a master class in proportion. Tonal dressing in warm sand and chocolate reads more expensive than any logo ever could.</p>'),('fr',9,'Maîtriser les palettes de couleurs pour une garde-robe moderne','Comprenez comment mélanger les tons et les textures pour exprimer votre personnalité à travers la mode.','<p>The best dressers know their palette. Stick to a tight family of warm whites, creams, and bone tones and you will rarely make a wrong choice. Add a single statement color twice a year — a clay red, a deep olive — and let everything else relate to your base.</p><p>Texture, not contrast, is what keeps a tonal outfit from going flat.</p>'),('fr',10,'Modern Accessories That Instantly Elevate Your Look','Un foulard au cou, une ceinture structurée, un seul anneau audacieux : de petites pièces, un grand impact.','<p>The fastest wardrobe upgrade is rarely a new dress. A pussy-bow blouse in burnished copper, a silk scarf knotted just so, or a slim-belted waist over wide trousers can shift an outfit from forgettable to photographed.</p><p>Build a small toolkit of statement accessories and rotate them — your wardrobe will feel three times its size.</p>'),('id',1,'Cara Membuat Lemari Pakaian Kapsul yang Sesuai dengan Gaya Hidup Anda','Pelajari seni memadukan dasar-dasar abadi dengan potongan pernyataan untuk gaya sehari-hari yang mudah.','<p>A capsule wardrobe is built on a tight palette of pieces that play well together. Start with a statement outerwear piece — a rich fur or wool coat — and let it anchor a season of looks. From there, layer in neutral knits, tailored trousers, and a single pair of go-everywhere boots.</p><p>The trick is choosing items that serve at least three different occasions. A great coat earns its keep on commutes, dinners, and lazy Sunday walks alike.</p>'),('id',2,'Tas Investasi: Mengapa Tas Tangan Berkualitas Membayarnya Sendiri','Pelajari lebih dalam tentang bahan kulit tenun, siluet terstruktur, dan tas yang layak untuk disimpan.','<p>A well-made handbag is one of the rare fashion purchases that genuinely improves with age. Hand-woven full-grain leather develops a patina you simply cannot fake, and the structured silhouette holds its shape through decades of use.</p><p>Cost per wear on a quality bag, calculated across ten years of daily carry, almost always beats fast fashion alternatives.</p>'),('id',3,'Mengapa Aksesori Mendefinisikan Lebih dari Sekadar Pakaian Anda','Jelajahi bagaimana detail kecil seperti perhiasan dan tas dapat mengubah keseluruhan penampilan Anda.','<p>Statement earrings, a sculptural necklace, a single perfectly chosen ring — accessories carry an outsized share of the styling work. The same black slip dress reads boho with hammered gold hoops, dressed-up with diamond studs, or downtown-cool with a stack of silver cuffs.</p><p>Build a small collection of pieces in different metals and silhouettes, and you have ten outfits in three.</p>'),('id',4,'Dari Pekerjaan hingga Akhir Pekan: Pakaian yang Melakukan Segalanya','Temukan penampilan serbaguna yang bertransisi dengan mulus dari jam kerja ke kesenangan di luar jam kerja.','<p>The most useful pieces in any wardrobe are those that travel between contexts without missing a beat. A linen overshirt in a warm earth tone reads polished over a tee for a midweek meeting, then loosens up perfectly for Friday evening drinks.</p><p>Look for relaxed tailoring, natural fibers, and colors slightly off the corporate-blue defaults.</p>'),('id',5,'Rahasia Keanggunan yang Mudah di Setiap Musim','Temukan teknik pelapisan utama dan pilihan bahan yang membuat Anda tetap cantik sepanjang tahun.','<p>Effortless elegance comes from a small set of decisions, not a large wardrobe. Choose pieces in natural fibers — cashmere, mohair, real fur or its high-quality alternatives — and let texture do the visual heavy lifting.</p><p>A cropped fur jacket layered over a fine ribbed knit is the kind of pairing that looks composed in any season, in almost any city.</p>'),('id',6,'Pilihan Fesyen Berkelanjutan yang Tidak Pernah Ketinggalan Zaman','Pelajari cara berbelanja lebih cerdas dengan barang-barang ramah lingkungan yang terlihat bagus dan bermanfaat.','<p>Sustainable fashion is no longer about compromise. Linen-blend utility dresses, recycled-leather belt details, and plant-dyed fabrics offer the kind of considered style that improves with each wear and washes cleanly into your existing wardrobe.</p><p>Buy fewer pieces, choose better fibers, and let your closet quietly outlast every micro-trend.</p>'),('id',7,'Perlengkapan Lemari Pakaian yang Wajib Dimiliki untuk Setiap Musim','10 perlengkapan dasar abadi yang dibutuhkan setiap lemari pakaian — dan cara memakai masing-masing lemari pakaian yang sudah jelas.','<p>A ribbed sage tank, a perfect white tee, a tonal slip dress — staples are the connective tissue of a wardrobe. Choose them in colors slightly off white and slightly off black: sage, ecru, charcoal, oat. They photograph better, they age better, and they layer better.</p>'),('id',8,'Aturan Penataan Penting yang Harus Diketahui Setiap Wanita','Proporsi, palet, dan penyesuaian kecil pada penjahitan yang membuat pakaian siap pakai terlihat sesuai pesanan.','<p>The two rules that quietly do the most work: balance volume with structure, and keep your color story under three shades. A boxy waistcoat over a column skirt is a master class in proportion. Tonal dressing in warm sand and chocolate reads more expensive than any logo ever could.</p>'),('id',9,'Menguasai Palet Warna untuk Lemari Pakaian Modern','Pahami cara memadukan corak dan tekstur untuk mengekspresikan kepribadian Anda melalui mode.','<p>The best dressers know their palette. Stick to a tight family of warm whites, creams, and bone tones and you will rarely make a wrong choice. Add a single statement color twice a year — a clay red, a deep olive — and let everything else relate to your base.</p><p>Texture, not contrast, is what keeps a tonal outfit from going flat.</p>'),('id',10,'Aksesori Modern yang Meninggikan Penampilan Anda Secara Instan','Syal di leher, ikat pinggang terstruktur, satu cincin tebal — potongan kecil, berdampak besar.','<p>The fastest wardrobe upgrade is rarely a new dress. A pussy-bow blouse in burnished copper, a silk scarf knotted just so, or a slim-belted waist over wide trousers can shift an outfit from forgettable to photographed.</p><p>Build a small toolkit of statement accessories and rotate them — your wardrobe will feel three times its size.</p>'),('tr',1,'Yaşam Tarzınıza Uygun Bir Kapsül Gardırop Nasıl Yapılır?','Zahmetsiz, günlük tarz için zamansız temel parçaları iddialı parçalarla birleştirme sanatını öğrenin.','<p>A capsule wardrobe is built on a tight palette of pieces that play well together. Start with a statement outerwear piece — a rich fur or wool coat — and let it anchor a season of looks. From there, layer in neutral knits, tailored trousers, and a single pair of go-everywhere boots.</p><p>The trick is choosing items that serve at least three different occasions. A great coat earns its keep on commutes, dinners, and lazy Sunday walks alike.</p>'),('tr',2,'Yatırım Çantası: Kaliteli Bir Çanta Neden Parasını Öder?','Dokuma deriye, yapılandırılmış silüetlere ve tasarruf etmeye değer çantalara derinlemesine bir bakış.','<p>A well-made handbag is one of the rare fashion purchases that genuinely improves with age. Hand-woven full-grain leather develops a patina you simply cannot fake, and the structured silhouette holds its shape through decades of use.</p><p>Cost per wear on a quality bag, calculated across ten years of daily carry, almost always beats fast fashion alternatives.</p>'),('tr',3,'Aksesuarlar Neden Kıyafetinizden Daha Fazlasını Tanımlıyor?','Takı ve çanta gibi küçük detayların tüm görünümünüzü nasıl değiştirebileceğini keşfedin.','<p>Statement earrings, a sculptural necklace, a single perfectly chosen ring — accessories carry an outsized share of the styling work. The same black slip dress reads boho with hammered gold hoops, dressed-up with diamond studs, or downtown-cool with a stack of silver cuffs.</p><p>Build a small collection of pieces in different metals and silhouettes, and you have ten outfits in three.</p>'),('tr',4,'İşten Hafta Sonuna: Her Şeyi Yapan Kıyafetler','Ofis saatlerinden mesai sonrası eğlenceye sorunsuz bir şekilde geçiş yapan çok yönlü görünümleri bulun.','<p>The most useful pieces in any wardrobe are those that travel between contexts without missing a beat. A linen overshirt in a warm earth tone reads polished over a tee for a midweek meeting, then loosens up perfectly for Friday evening drinks.</p><p>Look for relaxed tailoring, natural fibers, and colors slightly off the corporate-blue defaults.</p>'),('tr',5,'Her Mevsim Zahmetsiz Şıklığın Sırrı','Yıl boyunca şık kalmanızı sağlayacak temel katmanlama tekniklerini ve kumaş seçimlerini keşfedin.','<p>Effortless elegance comes from a small set of decisions, not a large wardrobe. Choose pieces in natural fibers — cashmere, mohair, real fur or its high-quality alternatives — and let texture do the visual heavy lifting.</p><p>A cropped fur jacket layered over a fine ribbed knit is the kind of pairing that looks composed in any season, in almost any city.</p>'),('tr',6,'Modası Asla Geçmeyen Sürdürülebilir Moda Seçimleri','İyi görünen ve işe yarayan çevre dostu parçalarla nasıl daha akıllı alışveriş yapacağınızı öğrenin.','<p>Sustainable fashion is no longer about compromise. Linen-blend utility dresses, recycled-leather belt details, and plant-dyed fabrics offer the kind of considered style that improves with each wear and washes cleanly into your existing wardrobe.</p><p>Buy fewer pieces, choose better fibers, and let your closet quietly outlast every micro-trend.</p>'),('tr',7,'Her Mevsim Gardırobunuzun Olması Gereken Eşyaları','Her dolabın ihtiyaç duyduğu 10 zamansız temel parça ve her birinin bariz olanın ötesinde nasıl giyileceği.','<p>A ribbed sage tank, a perfect white tee, a tonal slip dress — staples are the connective tissue of a wardrobe. Choose them in colors slightly off white and slightly off black: sage, ecru, charcoal, oat. They photograph better, they age better, and they layer better.</p>'),('tr',8,'Her Kadının Bilmesi Gereken Temel Şekillendirme Kuralları','Oran, palet ve hazır giyimin özel görünmesini sağlayan küçük terzilik ayarlamaları.','<p>The two rules that quietly do the most work: balance volume with structure, and keep your color story under three shades. A boxy waistcoat over a column skirt is a master class in proportion. Tonal dressing in warm sand and chocolate reads more expensive than any logo ever could.</p>'),('tr',9,'Modern Bir Gardırop İçin Renk Paletlerinde Uzmanlaşmak','Kişiliğinizi moda yoluyla ifade etmek için tonları ve dokuları nasıl harmanlayacağınızı öğrenin.','<p>The best dressers know their palette. Stick to a tight family of warm whites, creams, and bone tones and you will rarely make a wrong choice. Add a single statement color twice a year — a clay red, a deep olive — and let everything else relate to your base.</p><p>Texture, not contrast, is what keeps a tonal outfit from going flat.</p>'),('tr',10,'Görünümünüzü Anında Yükselten Modern Aksesuarlar','Boyunda bir atkı, yapılandırılmış bir kemer, tek ve kalın bir yüzük; küçük parçalar, büyük etki.','<p>The fastest wardrobe upgrade is rarely a new dress. A pussy-bow blouse in burnished copper, a silk scarf knotted just so, or a slim-belted waist over wide trousers can shift an outfit from forgettable to photographed.</p><p>Build a small toolkit of statement accessories and rotate them — your wardrobe will feel three times its size.</p>'),('vi',1,'Cách xây dựng tủ quần áo dạng con nhộng phù hợp với phong cách sống của bạn','Tìm hiểu nghệ thuật kết hợp những điều cơ bản vượt thời gian với những món đồ nổi bật để tạo nên phong cách hàng ngày dễ dàng.','<p>A capsule wardrobe is built on a tight palette of pieces that play well together. Start with a statement outerwear piece — a rich fur or wool coat — and let it anchor a season of looks. From there, layer in neutral knits, tailored trousers, and a single pair of go-everywhere boots.</p><p>The trick is choosing items that serve at least three different occasions. A great coat earns its keep on commutes, dinners, and lazy Sunday walks alike.</p>'),('vi',2,'Túi đầu tư: Tại sao một chiếc túi xách chất lượng lại đáng giá','Đi sâu vào da dệt, kiểu dáng có cấu trúc và những chiếc túi đáng để tiết kiệm.','<p>A well-made handbag is one of the rare fashion purchases that genuinely improves with age. Hand-woven full-grain leather develops a patina you simply cannot fake, and the structured silhouette holds its shape through decades of use.</p><p>Cost per wear on a quality bag, calculated across ten years of daily carry, almost always beats fast fashion alternatives.</p>'),('vi',3,'Tại sao phụ kiện lại không chỉ định nghĩa trang phục của bạn','Khám phá xem những chi tiết nhỏ như đồ trang sức và túi xách có thể biến đổi toàn bộ diện mạo của bạn như thế nào.','<p>Statement earrings, a sculptural necklace, a single perfectly chosen ring — accessories carry an outsized share of the styling work. The same black slip dress reads boho with hammered gold hoops, dressed-up with diamond studs, or downtown-cool with a stack of silver cuffs.</p><p>Build a small collection of pieces in different metals and silhouettes, and you have ten outfits in three.</p>'),('vi',4,'Từ nơi làm việc đến cuối tuần: Trang phục làm được tất cả','Tìm những kiểu dáng linh hoạt có thể chuyển đổi liền mạch từ giờ làm việc sang cuộc vui ngoài giờ.','<p>The most useful pieces in any wardrobe are those that travel between contexts without missing a beat. A linen overshirt in a warm earth tone reads polished over a tee for a midweek meeting, then loosens up perfectly for Friday evening drinks.</p><p>Look for relaxed tailoring, natural fibers, and colors slightly off the corporate-blue defaults.</p>'),('vi',5,'Bí quyết để thanh lịch dễ dàng trong mọi mùa','Khám phá các kỹ thuật phối lớp và lựa chọn vải quan trọng giúp bạn luôn sang trọng quanh năm.','<p>Effortless elegance comes from a small set of decisions, not a large wardrobe. Choose pieces in natural fibers — cashmere, mohair, real fur or its high-quality alternatives — and let texture do the visual heavy lifting.</p><p>A cropped fur jacket layered over a fine ribbed knit is the kind of pairing that looks composed in any season, in almost any city.</p>'),('vi',6,'Những lựa chọn thời trang bền vững không bao giờ lỗi mốt','Tìm hiểu cách mua sắm thông minh hơn với những sản phẩm thân thiện với môi trường, trông đẹp mắt và hoạt động tốt.','<p>Sustainable fashion is no longer about compromise. Linen-blend utility dresses, recycled-leather belt details, and plant-dyed fabrics offer the kind of considered style that improves with each wear and washes cleanly into your existing wardrobe.</p><p>Buy fewer pieces, choose better fibers, and let your closet quietly outlast every micro-trend.</p>'),('vi',7,'Những món đồ ghim trong tủ quần áo phải có cho mọi mùa','10 điều cơ bản vượt thời gian mà tủ đồ nào cũng cần có - và cách mặc từng món đồ một cách vượt trội.','<p>A ribbed sage tank, a perfect white tee, a tonal slip dress — staples are the connective tissue of a wardrobe. Choose them in colors slightly off white and slightly off black: sage, ecru, charcoal, oat. They photograph better, they age better, and they layer better.</p>'),('vi',8,'Những quy tắc tạo kiểu thiết yếu mọi phụ nữ nên biết','Tỷ lệ, bảng màu và những chỉnh sửa nhỏ về đường may giúp trang phục may sẵn trông có vẻ tùy chỉnh.','<p>The two rules that quietly do the most work: balance volume with structure, and keep your color story under three shades. A boxy waistcoat over a column skirt is a master class in proportion. Tonal dressing in warm sand and chocolate reads more expensive than any logo ever could.</p>'),('vi',9,'Làm Chủ Bảng Màu Cho Tủ Quần Áo Hiện Đại','Hiểu cách pha trộn tông màu và họa tiết để thể hiện cá tính thông qua thời trang.','<p>The best dressers know their palette. Stick to a tight family of warm whites, creams, and bone tones and you will rarely make a wrong choice. Add a single statement color twice a year — a clay red, a deep olive — and let everything else relate to your base.</p><p>Texture, not contrast, is what keeps a tonal outfit from going flat.</p>'),('vi',10,'Phụ kiện hiện đại nâng tầm diện mạo của bạn ngay lập tức','Một chiếc khăn quàng cổ, một chiếc thắt lưng có cấu trúc, một chiếc nhẫn đơn đậm nét - những món đồ nhỏ, tác động lớn.','<p>The fastest wardrobe upgrade is rarely a new dress. A pussy-bow blouse in burnished copper, a silk scarf knotted just so, or a slim-belted waist over wide trousers can shift an outfit from forgettable to photographed.</p><p>Build a small toolkit of statement accessories and rotate them — your wardrobe will feel three times its size.</p>');
+/*!40000 ALTER TABLE `posts_translations` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `push_notification_recipients`
+--
+
+DROP TABLE IF EXISTS `push_notification_recipients`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `push_notification_recipients` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `push_notification_id` bigint unsigned NOT NULL,
+  `user_type` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `user_id` bigint unsigned NOT NULL,
+  `device_token` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `platform` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `status` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'sent',
+  `sent_at` timestamp NULL DEFAULT NULL,
+  `delivered_at` timestamp NULL DEFAULT NULL,
+  `read_at` timestamp NULL DEFAULT NULL,
+  `clicked_at` timestamp NULL DEFAULT NULL,
+  `fcm_response` json DEFAULT NULL,
+  `error_message` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `pnr_notification_user_index` (`push_notification_id`,`user_type`,`user_id`),
+  KEY `pnr_user_status_index` (`user_type`,`user_id`,`status`),
+  KEY `pnr_user_read_index` (`user_type`,`user_id`,`read_at`),
+  KEY `pnr_status_index` (`status`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `push_notification_recipients`
+--
+
+LOCK TABLES `push_notification_recipients` WRITE;
+/*!40000 ALTER TABLE `push_notification_recipients` DISABLE KEYS */;
+/*!40000 ALTER TABLE `push_notification_recipients` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `push_notifications`
+--
+
+DROP TABLE IF EXISTS `push_notifications`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `push_notifications` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `message` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `type` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'general',
+  `target_type` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `target_value` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `action_url` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `image_url` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `data` json DEFAULT NULL,
+  `status` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'sent',
+  `sent_count` int NOT NULL DEFAULT '0',
+  `failed_count` int NOT NULL DEFAULT '0',
+  `delivered_count` int NOT NULL DEFAULT '0',
+  `read_count` int NOT NULL DEFAULT '0',
+  `scheduled_at` timestamp NULL DEFAULT NULL,
+  `sent_at` timestamp NULL DEFAULT NULL,
+  `created_by` bigint unsigned DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `push_notifications_type_created_at_index` (`type`,`created_at`),
+  KEY `push_notifications_status_scheduled_at_index` (`status`,`scheduled_at`),
+  KEY `push_notifications_created_by_index` (`created_by`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `push_notifications`
+--
+
+LOCK TABLES `push_notifications` WRITE;
+/*!40000 ALTER TABLE `push_notifications` DISABLE KEYS */;
+/*!40000 ALTER TABLE `push_notifications` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `request_logs`
+--
+
+DROP TABLE IF EXISTS `request_logs`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `request_logs` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `status_code` int DEFAULT NULL,
+  `url` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `count` int unsigned NOT NULL DEFAULT '0',
+  `user_id` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `referrer` text COLLATE utf8mb4_unicode_ci,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `request_logs`
+--
+
+LOCK TABLES `request_logs` WRITE;
+/*!40000 ALTER TABLE `request_logs` DISABLE KEYS */;
+/*!40000 ALTER TABLE `request_logs` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `revisions`
+--
+
+DROP TABLE IF EXISTS `revisions`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `revisions` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `revisionable_type` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `revisionable_id` bigint unsigned NOT NULL,
+  `user_id` bigint unsigned DEFAULT NULL,
+  `key` varchar(120) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `old_value` text COLLATE utf8mb4_unicode_ci,
+  `new_value` text COLLATE utf8mb4_unicode_ci,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `revisions_revisionable_id_revisionable_type_index` (`revisionable_id`,`revisionable_type`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `revisions`
+--
+
+LOCK TABLES `revisions` WRITE;
+/*!40000 ALTER TABLE `revisions` DISABLE KEYS */;
+/*!40000 ALTER TABLE `revisions` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `role_users`
+--
+
+DROP TABLE IF EXISTS `role_users`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `role_users` (
+  `user_id` bigint unsigned NOT NULL,
+  `role_id` bigint unsigned NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`user_id`,`role_id`),
+  KEY `role_users_user_id_index` (`user_id`),
+  KEY `role_users_role_id_index` (`role_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `role_users`
+--
+
+LOCK TABLES `role_users` WRITE;
+/*!40000 ALTER TABLE `role_users` DISABLE KEYS */;
+/*!40000 ALTER TABLE `role_users` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `roles`
+--
+
+DROP TABLE IF EXISTS `roles`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `roles` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `slug` varchar(120) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `name` varchar(120) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `permissions` text COLLATE utf8mb4_unicode_ci,
+  `description` varchar(400) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `is_default` tinyint unsigned NOT NULL DEFAULT '0',
+  `created_by` bigint unsigned NOT NULL,
+  `updated_by` bigint unsigned NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `roles_slug_unique` (`slug`),
+  KEY `roles_created_by_index` (`created_by`),
+  KEY `roles_updated_by_index` (`updated_by`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `roles`
+--
+
+LOCK TABLES `roles` WRITE;
+/*!40000 ALTER TABLE `roles` DISABLE KEYS */;
+INSERT INTO `roles` VALUES (1,'admin','Admin','{\"users.index\":true,\"users.create\":true,\"users.edit\":true,\"users.destroy\":true,\"roles.index\":true,\"roles.create\":true,\"roles.edit\":true,\"roles.destroy\":true,\"core.system\":true,\"core.cms\":true,\"core.manage.license\":true,\"systems.cronjob\":true,\"core.tools\":true,\"tools.data-synchronize\":true,\"media.index\":true,\"files.index\":true,\"files.create\":true,\"files.edit\":true,\"files.trash\":true,\"files.destroy\":true,\"folders.index\":true,\"folders.create\":true,\"folders.edit\":true,\"folders.trash\":true,\"folders.destroy\":true,\"settings.index\":true,\"settings.common\":true,\"settings.options\":true,\"settings.email\":true,\"settings.media\":true,\"settings.admin-appearance\":true,\"settings.cache\":true,\"settings.datatables\":true,\"settings.email.rules\":true,\"settings.phone-number\":true,\"settings.others\":true,\"menus.index\":true,\"menus.create\":true,\"menus.edit\":true,\"menus.destroy\":true,\"optimize.settings\":true,\"pages.index\":true,\"pages.create\":true,\"pages.edit\":true,\"pages.destroy\":true,\"pages.export\":true,\"pages.import\":true,\"plugins.index\":true,\"plugins.edit\":true,\"plugins.remove\":true,\"plugins.marketplace\":true,\"sitemap.settings\":true,\"core.appearance\":true,\"theme.index\":true,\"theme.activate\":true,\"theme.remove\":true,\"theme.options\":true,\"theme.custom-css\":true,\"theme.custom-js\":true,\"theme.custom-html\":true,\"theme.robots-txt\":true,\"settings.website-tracking\":true,\"widgets.index\":true,\"ads.index\":true,\"ads.create\":true,\"ads.edit\":true,\"ads.destroy\":true,\"ads.settings\":true,\"analytics.general\":true,\"analytics.page\":true,\"analytics.browser\":true,\"analytics.referrer\":true,\"analytics.settings\":true,\"announcements.index\":true,\"announcements.create\":true,\"announcements.edit\":true,\"announcements.destroy\":true,\"announcements.settings\":true,\"audit-log.index\":true,\"audit-log.destroy\":true,\"backups.index\":true,\"backups.create\":true,\"backups.restore\":true,\"backups.destroy\":true,\"plugins.blog\":true,\"posts.index\":true,\"posts.create\":true,\"posts.edit\":true,\"posts.destroy\":true,\"categories.index\":true,\"categories.create\":true,\"categories.edit\":true,\"categories.destroy\":true,\"tags.index\":true,\"blog.reports\":true,\"tags.create\":true,\"tags.edit\":true,\"tags.destroy\":true,\"blog.settings\":true,\"posts.export\":true,\"posts.import\":true,\"captcha.settings\":true,\"contacts.index\":true,\"contacts.edit\":true,\"contacts.destroy\":true,\"contact.custom-fields\":true,\"contact.settings\":true,\"plugins.ecommerce\":true,\"ecommerce.report.index\":true,\"products.index\":true,\"products.create\":true,\"products.edit\":true,\"products.destroy\":true,\"products.duplicate\":true,\"ecommerce.product-prices.index\":true,\"ecommerce.product-prices.edit\":true,\"ecommerce.product-inventory.index\":true,\"ecommerce.product-inventory.edit\":true,\"product-categories.index\":true,\"product-categories.create\":true,\"product-categories.edit\":true,\"product-categories.destroy\":true,\"product-tag.index\":true,\"product-tag.create\":true,\"product-tag.edit\":true,\"product-tag.destroy\":true,\"brands.index\":true,\"brands.create\":true,\"brands.edit\":true,\"brands.destroy\":true,\"product-collections.index\":true,\"product-collections.create\":true,\"product-collections.edit\":true,\"product-collections.destroy\":true,\"product-attribute-sets.index\":true,\"product-attribute-sets.create\":true,\"product-attribute-sets.edit\":true,\"product-attribute-sets.destroy\":true,\"product-attributes.index\":true,\"product-attributes.create\":true,\"product-attributes.edit\":true,\"product-attributes.destroy\":true,\"tax.index\":true,\"tax.create\":true,\"tax.edit\":true,\"tax.destroy\":true,\"reviews.index\":true,\"reviews.create\":true,\"reviews.destroy\":true,\"reviews.publish\":true,\"reviews.reply\":true,\"ecommerce.shipments.index\":true,\"ecommerce.shipments.create\":true,\"ecommerce.shipments.edit\":true,\"ecommerce.shipments.destroy\":true,\"orders.index\":true,\"orders.create\":true,\"orders.edit\":true,\"orders.destroy\":true,\"discounts.index\":true,\"discounts.create\":true,\"discounts.edit\":true,\"discounts.destroy\":true,\"customers.index\":true,\"customers.create\":true,\"customers.edit\":true,\"customers.destroy\":true,\"ecommerce.customers.import\":true,\"ecommerce.customers.export\":true,\"ecommerce.customer-carts.index\":true,\"ecommerce.customer-carts.destroy\":true,\"flash-sale.index\":true,\"flash-sale.create\":true,\"flash-sale.edit\":true,\"flash-sale.destroy\":true,\"product-label.index\":true,\"product-label.create\":true,\"product-label.edit\":true,\"product-label.destroy\":true,\"ecommerce.import.products.index\":true,\"ecommerce.export.products.index\":true,\"order_returns.index\":true,\"order_returns.edit\":true,\"order_returns.destroy\":true,\"global-option.index\":true,\"global-option.create\":true,\"global-option.edit\":true,\"global-option.destroy\":true,\"ecommerce.invoice.index\":true,\"ecommerce.invoice.edit\":true,\"ecommerce.invoice.destroy\":true,\"ecommerce.settings\":true,\"ecommerce.settings.general\":true,\"ecommerce.invoice-template.index\":true,\"ecommerce.settings.currencies\":true,\"ecommerce.settings.products\":true,\"ecommerce.settings.product-search\":true,\"ecommerce.settings.digital-products\":true,\"ecommerce.settings.store-locators\":true,\"ecommerce.settings.invoices\":true,\"ecommerce.settings.product-reviews\":true,\"ecommerce.settings.customers\":true,\"ecommerce.settings.shopping\":true,\"ecommerce.settings.taxes\":true,\"ecommerce.settings.shipping\":true,\"ecommerce.shipping-rule-items.index\":true,\"ecommerce.shipping-rule-items.create\":true,\"ecommerce.shipping-rule-items.edit\":true,\"ecommerce.shipping-rule-items.destroy\":true,\"ecommerce.shipping-rule-items.bulk-import\":true,\"ecommerce.settings.tracking\":true,\"ecommerce.settings.standard-and-format\":true,\"ecommerce.settings.checkout\":true,\"ecommerce.settings.return\":true,\"ecommerce.settings.flash-sale\":true,\"ecommerce.settings.pending-orders\":true,\"ecommerce.settings.product-specification\":true,\"product-categories.export\":true,\"product-categories.import\":true,\"product-license-codes.import\":true,\"orders.export\":true,\"ecommerce.product-specification.index\":true,\"ecommerce.specification-groups.index\":true,\"ecommerce.specification-groups.create\":true,\"ecommerce.specification-groups.edit\":true,\"ecommerce.specification-groups.destroy\":true,\"ecommerce.specification-attributes.index\":true,\"ecommerce.specification-attributes.create\":true,\"ecommerce.specification-attributes.edit\":true,\"ecommerce.specification-attributes.destroy\":true,\"ecommerce.specification-tables.index\":true,\"ecommerce.specification-tables.create\":true,\"ecommerce.specification-tables.edit\":true,\"ecommerce.specification-tables.destroy\":true,\"ecommerce.product-specifications.import\":true,\"ecommerce.product-specifications.export\":true,\"plugin.faq\":true,\"faq.index\":true,\"faq.create\":true,\"faq.edit\":true,\"faq.destroy\":true,\"faq_category.index\":true,\"faq_category.create\":true,\"faq_category.edit\":true,\"faq_category.destroy\":true,\"faqs.settings\":true,\"product-size-guide.index\":true,\"product-size-guide.create\":true,\"product-size-guide.edit\":true,\"product-size-guide.destroy\":true,\"size-guide-headers.index\":true,\"size-guide-headers.create\":true,\"size-guide-headers.edit\":true,\"size-guide-headers.destroy\":true,\"product-size-guide.settings\":true,\"galleries.index\":true,\"galleries.create\":true,\"galleries.edit\":true,\"galleries.destroy\":true,\"languages.index\":true,\"languages.create\":true,\"languages.edit\":true,\"languages.destroy\":true,\"translations.import\":true,\"translations.export\":true,\"property-translations.import\":true,\"property-translations.export\":true,\"page-translations.export\":true,\"page-translations.import\":true,\"plugin.location\":true,\"country.index\":true,\"country.create\":true,\"country.edit\":true,\"country.destroy\":true,\"state.index\":true,\"state.create\":true,\"state.edit\":true,\"state.destroy\":true,\"city.index\":true,\"city.create\":true,\"city.edit\":true,\"city.destroy\":true,\"marketplace.index\":true,\"marketplace.store.index\":true,\"marketplace.store.create\":true,\"marketplace.store.edit\":true,\"marketplace.store.destroy\":true,\"marketplace.store.view\":true,\"marketplace.store.revenue.create\":true,\"marketplace.withdrawal.index\":true,\"marketplace.withdrawal.edit\":true,\"marketplace.withdrawal.destroy\":true,\"marketplace.withdrawal.invoice\":true,\"marketplace.vendors.index\":true,\"marketplace.unverified-vendors.index\":true,\"marketplace.vendors.control\":true,\"marketplace.unverified-vendors.edit\":true,\"marketplace.reports\":true,\"marketplace.settings\":true,\"marketplace.messages.index\":true,\"marketplace.messages.edit\":true,\"marketplace.messages.destroy\":true,\"newsletter.index\":true,\"newsletter.destroy\":true,\"newsletter.settings\":true,\"payment.index\":true,\"payments.settings\":true,\"payment.destroy\":true,\"payments.logs\":true,\"payments.logs.show\":true,\"payments.logs.destroy\":true,\"request-log.index\":true,\"request-log.destroy\":true,\"sale-popup.settings\":true,\"simple-slider.index\":true,\"simple-slider.create\":true,\"simple-slider.edit\":true,\"simple-slider.destroy\":true,\"simple-slider-item.index\":true,\"simple-slider-item.create\":true,\"simple-slider-item.edit\":true,\"simple-slider-item.destroy\":true,\"social-login.settings\":true,\"testimonial.index\":true,\"testimonial.create\":true,\"testimonial.edit\":true,\"testimonial.destroy\":true,\"plugins.translation\":true,\"translations.locales\":true,\"translations.theme-translations\":true,\"translations.index\":true,\"theme-translations.export\":true,\"other-translations.export\":true,\"theme-translations.import\":true,\"other-translations.import\":true,\"api.settings\":true,\"api.sanctum-token.index\":true,\"api.sanctum-token.create\":true,\"api.sanctum-token.destroy\":true}','Admin users role',1,1,1,'2026-05-28 18:57:44','2026-05-28 18:57:44');
+/*!40000 ALTER TABLE `roles` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `sessions`
+--
+
+DROP TABLE IF EXISTS `sessions`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `sessions` (
+  `id` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `user_id` bigint unsigned DEFAULT NULL,
+  `ip_address` varchar(45) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `user_agent` text COLLATE utf8mb4_unicode_ci,
+  `payload` longtext COLLATE utf8mb4_unicode_ci NOT NULL,
+  `last_activity` int NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `sessions_user_id_index` (`user_id`),
+  KEY `sessions_last_activity_index` (`last_activity`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `sessions`
+--
+
+LOCK TABLES `sessions` WRITE;
+/*!40000 ALTER TABLE `sessions` DISABLE KEYS */;
+/*!40000 ALTER TABLE `sessions` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `settings`
+--
+
+DROP TABLE IF EXISTS `settings`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `settings` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `key` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `value` text COLLATE utf8mb4_unicode_ci,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `settings_key_unique` (`key`)
+) ENGINE=InnoDB AUTO_INCREMENT=189 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `settings`
+--
+
+LOCK TABLES `settings` WRITE;
+/*!40000 ALTER TABLE `settings` DISABLE KEYS */;
+INSERT INTO `settings` VALUES (2,'api_enabled','0',NULL,'2026-05-28 18:58:17'),(3,'activated_plugins','[\"language\",\"language-advanced\",\"ads\",\"analytics\",\"announcement\",\"audit-log\",\"backup\",\"blog\",\"captcha\",\"contact\",\"cookie-consent\",\"ecommerce\",\"faq\",\"fob-product-size-guide\",\"gallery\",\"location\",\"marketplace\",\"mollie\",\"newsletter\",\"payment\",\"paypal\",\"paypal-payout\",\"paystack\",\"razorpay\",\"request-log\",\"sale-popup\",\"shippo\",\"simple-slider\",\"social-login\",\"sslcommerz\",\"stripe\",\"stripe-connect\",\"testimonial\",\"translation\"]',NULL,'2026-05-28 18:58:17'),(8,'media_random_hash','7753e5f08b3d87fa7c9498c421a97495',NULL,'2026-05-28 18:58:17'),(9,'theme','amerce',NULL,'2026-05-28 18:58:17'),(10,'show_admin_bar','1',NULL,'2026-05-28 18:58:17'),(11,'admin_email.0','support@amerce.test',NULL,'2026-05-28 18:58:17'),(12,'admin_logo',NULL,NULL,'2026-05-28 18:58:17'),(13,'admin_favicon',NULL,NULL,'2026-05-28 18:58:17'),(14,'admin_title','Amerce',NULL,'2026-05-28 18:58:17'),(15,'enable_change_admin_theme','1',NULL,'2026-05-28 18:58:17'),(16,'language_hide_default','1',NULL,'2026-05-28 18:58:17'),(17,'language_switcher_display','dropdown',NULL,'2026-05-28 18:58:17'),(18,'language_display','all',NULL,'2026-05-28 18:58:17'),(19,'language_hide_languages','[]',NULL,'2026-05-28 18:58:17'),(20,'locale','en',NULL,'2026-05-28 18:58:17'),(21,'locale_direction','ltr',NULL,'2026-05-28 18:58:17'),(22,'enable_send_error_reporting_via_email','0',NULL,'2026-05-28 18:58:17'),(23,'enable_https','0',NULL,'2026-05-28 18:58:17'),(24,'enable_cache','0',NULL,'2026-05-28 18:58:17'),(25,'cache_admin_menu_enable','1',NULL,'2026-05-28 18:58:17'),(26,'cache_time_site_map','3600',NULL,'2026-05-28 18:58:17'),(27,'enable_send_mail_when_new_user_registered','0',NULL,'2026-05-28 18:58:17'),(28,'enable_send_mail_user_registered_to_admin','0',NULL,'2026-05-28 18:58:17'),(29,'enable_change_password','1',NULL,'2026-05-28 18:58:17'),(30,'enable_register','1',NULL,'2026-05-28 18:58:17'),(31,'enable_recaptcha','0',NULL,'2026-05-28 18:58:17'),(32,'enable_captcha','0',NULL,'2026-05-28 18:58:17'),(33,'show_site_name_when_logged_in','1',NULL,'2026-05-28 18:58:17'),(34,'time_zone','UTC',NULL,'2026-05-28 18:58:17'),(35,'enable_multi_language_in_admin','0',NULL,'2026-05-28 18:58:17'),(36,'media_chunk_enabled','0',NULL,'2026-05-28 18:58:17'),(37,'media_chunk_size','1048576',NULL,'2026-05-28 18:58:17'),(38,'media_max_upload_filesize',NULL,NULL,'2026-05-28 18:58:17'),(39,'media_aws_use_signed_urls','0',NULL,'2026-05-28 18:58:17'),(40,'media_aws_signed_url_expiry','60',NULL,'2026-05-28 18:58:17'),(41,'enable_geo_ip','0',NULL,'2026-05-28 18:58:17'),(42,'enable_audit_log','1',NULL,'2026-05-28 18:58:17'),(43,'payment_cod_status','1',NULL,'2026-05-28 18:58:17'),(44,'payment_bank_transfer_status','1',NULL,'2026-05-28 18:58:17'),(45,'payment_cod_description','Please pay money directly to the postman, if you choose cash on delivery method (COD).',NULL,'2026-05-28 18:58:17'),(46,'payment_bank_transfer_description','Please send money to our bank account: AMERCE - 0123 4567 8901.',NULL,'2026-05-28 18:58:17'),(47,'payment_stripe_payment_type','stripe_checkout',NULL,'2026-05-28 18:58:17'),(48,'plugins_ecommerce_customer_new_order_status','0',NULL,'2026-05-28 18:58:17'),(49,'plugins_ecommerce_admin_new_order_status','0',NULL,'2026-05-28 18:58:17'),(50,'ecommerce_is_enabled_support_digital_products','1',NULL,'2026-05-28 18:58:17'),(51,'ecommerce_enable_license_codes_for_digital_products','1',NULL,'2026-05-28 18:58:17'),(52,'ecommerce_auto_complete_digital_orders_after_payment','1',NULL,'2026-05-28 18:58:17'),(53,'ecommerce_load_countries_states_cities_from_location_plugin','0',NULL,'2026-05-28 18:58:17'),(54,'ecommerce_product_sku_format','AM-%s%s%s%s',NULL,'2026-05-28 18:58:17'),(55,'ecommerce_store_order_prefix','AM',NULL,'2026-05-28 18:58:17'),(56,'ecommerce_enable_product_specification','1',NULL,'2026-05-28 18:58:17'),(57,'payment_bank_transfer_display_bank_info_at_the_checkout_success_page','1',NULL,'2026-05-28 18:58:17'),(58,'payment_cod_logo','payments/cod.png',NULL,'2026-05-28 18:58:17'),(59,'payment_bank_transfer_logo','payments/bank-transfer.png',NULL,'2026-05-28 18:58:17'),(60,'payment_stripe_logo','payments/stripe.webp',NULL,'2026-05-28 18:58:17'),(61,'payment_paypal_logo','payments/paypal.png',NULL,'2026-05-28 18:58:17'),(62,'payment_mollie_logo','payments/mollie.png',NULL,'2026-05-28 18:58:17'),(63,'payment_paystack_logo','payments/paystack.png',NULL,'2026-05-28 18:58:17'),(64,'payment_razorpay_logo','payments/razorpay.png',NULL,'2026-05-28 18:58:17'),(65,'payment_sslcommerz_logo','payments/sslcommerz.png',NULL,'2026-05-28 18:58:17'),(66,'product_size_guide_display_mode','popup',NULL,'2026-05-28 18:58:17'),(67,'show_on_front','12',NULL,'2026-05-28 18:58:17'),(68,'blog_page_id','9',NULL,'2026-05-28 18:58:17'),(69,'theme-amerce-homepage_id','12',NULL,'2026-05-28 18:58:17'),(70,'theme-amerce-blog_page_id','9',NULL,'2026-05-28 18:58:17'),(71,'theme-amerce-logo','general/logo.png',NULL,'2026-05-28 18:58:17'),(72,'theme-amerce-logo_dark','general/logo-white.png',NULL,'2026-05-28 18:58:17'),(73,'theme-amerce-logo_text','Amerce',NULL,'2026-05-28 18:58:17'),(74,'theme-amerce-favicon','general/favicon.png',NULL,'2026-05-28 18:58:17'),(75,'theme-amerce-default_theme_mode','light',NULL,'2026-05-28 18:58:17'),(76,'theme-amerce-header_style','style-3',NULL,'2026-05-28 18:58:17'),(77,'theme-amerce-show_topbar','1',NULL,'2026-05-28 18:58:17'),(78,'theme-amerce-contact_phone','(+01) 1234 8888',NULL,'2026-05-28 18:58:17'),(79,'theme-amerce-topbar_slides','Midseason Sale: 20% Off - Auto Applied at Checkout - Limited Time Only\n20% Off - Auto Applied at Checkout - Limited Time Only',NULL,'2026-05-28 18:58:17'),(80,'theme-amerce-sticky_header','1',NULL,'2026-05-28 18:58:17'),(81,'theme-amerce-header_transparent_on_homepage','0',NULL,'2026-05-28 18:58:17'),(82,'theme-amerce-header_top_background_color','#010F1C',NULL,'2026-05-28 18:58:17'),(83,'theme-amerce-header_top_text_color','#FFFFFF',NULL,'2026-05-28 18:58:17'),(84,'theme-amerce-header_main_background_color','#FFFFFF',NULL,'2026-05-28 18:58:17'),(85,'theme-amerce-header_main_text_color','#1E1E1E',NULL,'2026-05-28 18:58:17'),(86,'theme-amerce-primary_color','#DC4646',NULL,'2026-05-28 18:58:17'),(87,'theme-amerce-secondary_color','#70857A',NULL,'2026-05-28 18:58:17'),(88,'theme-amerce-heading_color','#101010',NULL,'2026-05-28 18:58:17'),(89,'theme-amerce-body_text_color','#696E73',NULL,'2026-05-28 18:58:17'),(90,'theme-amerce-link_color','#DC4646',NULL,'2026-05-28 18:58:17'),(91,'theme-amerce-link_hover_color','#B83838',NULL,'2026-05-28 18:58:17'),(92,'theme-amerce-border_color','#E9E9E9',NULL,'2026-05-28 18:58:17'),(93,'theme-amerce-success_color','#3DAB25',NULL,'2026-05-28 18:58:17'),(94,'theme-amerce-danger_color','#F03E3E',NULL,'2026-05-28 18:58:17'),(95,'theme-amerce-footer_style','style-1',NULL,'2026-05-28 18:58:17'),(96,'theme-amerce-footer_payment_icons','payment/visa.png,payment/master-card.png,payment/amex.png,payment/paypal.png,payment/water.png,payment/discover.png',NULL,'2026-05-28 18:58:17'),(97,'theme-amerce-footer_address','600 N Michigan Ave, Chicago, IL 60611, USA',NULL,'2026-05-28 18:58:17'),(98,'theme-amerce-footer_email','hi.amere@gmail.com',NULL,'2026-05-28 18:58:17'),(99,'theme-amerce-footer_phone','315-666-6688',NULL,'2026-05-28 18:58:17'),(100,'theme-amerce-facebook_url','https://facebook.com',NULL,'2026-05-28 18:58:17'),(101,'theme-amerce-twitter_url','https://x.com',NULL,'2026-05-28 18:58:17'),(102,'theme-amerce-instagram_url','https://instagram.com',NULL,'2026-05-28 18:58:17'),(103,'theme-amerce-tiktok_url','https://tiktok.com',NULL,'2026-05-28 18:58:17'),(104,'theme-amerce-snapchat_url','https://snapchat.com',NULL,'2026-05-28 18:58:17'),(105,'theme-amerce-product_card_default_style','style-1',NULL,'2026-05-28 18:58:17'),(106,'theme-amerce-product_card_hover_style','hover-01',NULL,'2026-05-28 18:58:17'),(107,'theme-amerce-product_card_show_color_swatches','1',NULL,'2026-05-28 18:58:17'),(108,'theme-amerce-default_filter_position','sidebar',NULL,'2026-05-28 18:58:17'),(109,'theme-amerce-default_pagination_style','numbered',NULL,'2026-05-28 18:58:17'),(110,'theme-amerce-ecommerce_product_item_layout','grid',NULL,'2026-05-28 18:58:17'),(111,'theme-amerce-ecommerce_products_per_row','4',NULL,'2026-05-28 18:58:17'),(112,'theme-amerce-ecommerce_products_per_row_tablet','3',NULL,'2026-05-28 18:58:17'),(113,'theme-amerce-ecommerce_products_per_row_mobile','2',NULL,'2026-05-28 18:58:17'),(114,'theme-amerce-enable_quick_view','1',NULL,'2026-05-28 18:58:17'),(115,'theme-amerce-enable_quick_shop','1',NULL,'2026-05-28 18:58:17'),(116,'theme-amerce-preloader_enabled','1',NULL,'2026-05-28 18:58:17'),(117,'theme-amerce-scroll_to_top_enabled','1',NULL,'2026-05-28 18:58:17'),(118,'theme-amerce-homepage_body_class','home-fashion',NULL,'2026-05-28 18:58:17'),(119,'theme-amerce-site_title','Amerce',NULL,'2026-05-28 18:58:17'),(120,'theme-amerce-seo_title','Amerce — Multi-Purpose eCommerce Theme',NULL,'2026-05-28 18:58:17'),(121,'theme-amerce-seo_description','Amerce is a multi-purpose eCommerce and marketplace theme for Botble CMS — 21 niche presets, sustainable shopping, and fast checkout.',NULL,'2026-05-28 18:58:17'),(122,'theme-amerce-copyright','©2026 Amerce. All Rights Reserved.',NULL,'2026-05-28 18:58:17'),(123,'theme-amerce-newsletter_popup_enable','1',NULL,'2026-05-28 18:58:17'),(124,'theme-amerce-newsletter_popup_image','section/banner-newsletter.jpg',NULL,'2026-05-28 18:58:17'),(125,'theme-amerce-newsletter_popup_subtitle','Subscribe & Enjoy',NULL,'2026-05-28 18:58:17'),(126,'theme-amerce-newsletter_popup_title','10% OFF',NULL,'2026-05-28 18:58:17'),(127,'theme-amerce-newsletter_popup_description','Join our email list & be first to Receive 10% OFF your next order, exclusive offers & more!',NULL,'2026-05-28 18:58:17'),(128,'theme-amerce-newsletter_popup_delay','5',NULL,'2026-05-28 18:58:17'),(129,'theme-amerce-newsletter_popup_display_pages','[\"public.index\"]',NULL,'2026-05-28 18:58:17'),(130,'theme-amerce-store_phone','+1 666 234 8888',NULL,'2026-05-28 18:58:17'),(131,'theme-amerce-store_email','hi.amere@gmail.com',NULL,'2026-05-28 18:58:17'),(132,'theme-amerce-store_address','2163 Phillips Gap Rd, West Jefferson, North Carolina, United States',NULL,'2026-05-28 18:58:17'),(133,'theme-amerce-store_business_hours_weekday','Mon - Sat: 7:30am - 8:00pm PST',NULL,'2026-05-28 18:58:17'),(134,'theme-amerce-store_business_hours_weekend','Sunday: 9:00am - 5:00pm PST',NULL,'2026-05-28 18:58:17'),(135,'theme-amerce-store_map_address','2163 Phillips Gap Rd, West Jefferson, NC',NULL,'2026-05-28 18:58:17'),(136,'theme-amerce-store_locations','[{\"name\":\"New York Office\",\"image\":\"section\\/store-1.jpg\",\"address\":\"900 Ocean Dr, Miami Beach, FL 33139, US\",\"phone\":\"+1 305 555 2468\",\"email\":\"hi.amerce@gmail.com\"},{\"name\":\"Los Angeles Store\",\"image\":\"section\\/store-2.jpg\",\"address\":\"8723 Melrose Avenue, CA 90069, USA\",\"phone\":\"+1 305 555 2468\",\"email\":\"hi.amerce@gmail.com\"},{\"name\":\"Chicago Boutique\",\"image\":\"section\\/store-3.jpg\",\"address\":\"415 North Clark Street, Chicago, IL 60654, USA\",\"phone\":\"+1 305 555 2468\",\"email\":\"hi.amerce@gmail.com\"},{\"name\":\"Miami Showroom\",\"image\":\"section\\/store-4.jpg\",\"address\":\"1101 Brickell Avenue, Miami, FL 33131, USA\",\"phone\":\"+1 305 555 2468\",\"email\":\"hi.amerce@gmail.com\"},{\"name\":\"London Flagship Store\",\"image\":\"section\\/store-5.jpg\",\"address\":\"152 Regent Street, London W1B 5TF, UK\",\"phone\":\"+44 20 555 2468\",\"email\":\"hi.amerce@gmail.com\"},{\"name\":\"Paris Atelier\",\"image\":\"section\\/store-6.jpg\",\"address\":\"18 Rue du Faubourg Saint-Honor\\u00e9, Paris, France\",\"phone\":\"+33 1 555 2468\",\"email\":\"hi.amerce@gmail.com\"}]',NULL,'2026-05-28 18:58:17'),(137,'theme-amerce-vi-topbar_text','Miễn phí vận chuyển cho đơn hàng trên 99$',NULL,'2026-05-28 18:58:17'),(138,'theme-amerce-vi-site_title','Amerce',NULL,'2026-05-28 18:58:17'),(139,'theme-amerce-vi-seo_title','Amerce — Theme Thương mại điện tử Đa năng',NULL,'2026-05-28 18:58:17'),(140,'theme-amerce-vi-seo_description','Amerce là theme thương mại điện tử và marketplace đa năng dành cho Botble CMS — 21 preset theo từng ngách, mua sắm bền vững và thanh toán nhanh.',NULL,'2026-05-28 18:58:17'),(141,'theme-amerce-vi-copyright','© 2026 Amerce. Bảo lưu mọi quyền.',NULL,'2026-05-28 18:58:17'),(142,'theme-amerce-vi-header_account_label','Đăng nhập/Đăng ký',NULL,'2026-05-28 18:58:17'),(143,'theme-amerce-vi-header_bottom_offer_text','Ưu Đãi Đặc Biệt!',NULL,'2026-05-28 18:58:17'),(144,'theme-amerce-vi-footer_marquee_text','AMERCE THƯƠNG MẠI ĐIỆN TỬ ĐA NĂNG',NULL,'2026-05-28 18:58:17'),(145,'theme-amerce-vi-header_announcement_slides','Khuyến Mãi Giữa Mùa: Giảm 20% - Tự Động Áp Dụng Khi Thanh Toán - Số Lượng Có Hạn\nGiảm 20% - Tự Động Áp Dụng Khi Thanh Toán - Số Lượng Có Hạn',NULL,'2026-05-28 18:58:17'),(146,'theme-amerce-vi-topbar_slides','Khuyến Mãi Giữa Mùa: Giảm 20% - Tự Động Áp Dụng Khi Thanh Toán - Chỉ Trong Thời Gian Giới Hạn\nGiảm 20% - Tự Động Áp Dụng Khi Thanh Toán - Chỉ Trong Thời Gian Giới Hạn',NULL,'2026-05-28 18:58:17'),(147,'theme-amerce-ar-topbar_text','شحن مجاني للطلبات التي تزيد عن 99 دولارًا',NULL,'2026-05-28 18:58:17'),(148,'theme-amerce-ar-site_title','أميرس',NULL,'2026-05-28 18:58:17'),(149,'theme-amerce-ar-seo_title','Amerce — موضوع التجارة الإلكترونية متعدد الأغراض',NULL,'2026-05-28 18:58:17'),(150,'theme-amerce-ar-seo_description','Amerce هو موضوع متعدد الأغراض للتجارة الإلكترونية والسوق لـ Botble CMS - 21 إعدادًا مسبقًا متخصصًا وتسوقًا مستدامًا وسداد سريع.',NULL,'2026-05-28 18:58:17'),(151,'theme-amerce-ar-copyright','© 2026 أمريكا. جميع الحقوق محفوظة.',NULL,'2026-05-28 18:58:17'),(152,'theme-amerce-ar-header_account_label','تسجيل الدخول / التسجيل',NULL,'2026-05-28 18:58:17'),(153,'theme-amerce-ar-header_bottom_offer_text','عرض خاص!',NULL,'2026-05-28 18:58:17'),(154,'theme-amerce-ar-footer_marquee_text','AMERCE التجارة الإلكترونية متعددة الوظائف',NULL,'2026-05-28 18:58:17'),(155,'theme-amerce-ar-header_announcement_slides','عرض منتصف الموسم: خصم 20% - يتم تطبيقه تلقائيًا عند الدفع - الكمية محدودة\nخصم 20% - يتم تطبيقه تلقائيًا عند الدفع - الكمية محدودة',NULL,'2026-05-28 18:58:17'),(156,'theme-amerce-ar-topbar_slides','عرض منتصف الموسم: خصم 20% - يُطبق تلقائيًا عند الدفع - لفترة محدودة فقط\nخصم 20% - يُطبق تلقائيًا عند الدفع - لفترة محدودة فقط',NULL,'2026-05-28 18:58:17'),(157,'theme-amerce-fr-topbar_text','Livraison gratuite pour les commandes de plus de 99 $',NULL,'2026-05-28 18:58:17'),(158,'theme-amerce-fr-site_title','Amérique',NULL,'2026-05-28 18:58:17'),(159,'theme-amerce-fr-seo_title','Amerce — Thème de commerce électronique polyvalent',NULL,'2026-05-28 18:58:17'),(160,'theme-amerce-fr-seo_description','Amerce est un thème polyvalent de commerce électronique et de marché pour Botble CMS : 21 préréglages de niche, achats durables et paiement rapide.',NULL,'2026-05-28 18:58:17'),(161,'theme-amerce-fr-copyright','© 2026 Amérique. Tous droits réservés.',NULL,'2026-05-28 18:58:17'),(162,'theme-amerce-fr-header_account_label','Connexion/Inscription',NULL,'2026-05-28 18:58:17'),(163,'theme-amerce-fr-header_bottom_offer_text','Offre spéciale!',NULL,'2026-05-28 18:58:17'),(164,'theme-amerce-fr-footer_marquee_text','COMMERCE ÉLECTRONIQUE MULTIFONCTIONNEL AMERCE',NULL,'2026-05-28 18:58:17'),(165,'theme-amerce-fr-header_announcement_slides','Promotion mi-saison : 20 % de réduction - Appliquée automatiquement à la caisse - Quantité limitée\n20 % de réduction - Appliqué automatiquement à la caisse - Quantité limitée',NULL,'2026-05-28 18:58:17'),(166,'theme-amerce-fr-topbar_slides','Promotion de mi-saison : 20 % de réduction - Appliquée automatiquement à la caisse - Durée limitée seulement\n20 % de réduction - Appliqué automatiquement à la caisse - Durée limitée uniquement',NULL,'2026-05-28 18:58:17'),(167,'theme-amerce-id-topbar_text','Pengiriman gratis untuk pesanan di atas $99',NULL,'2026-05-28 18:58:17'),(168,'theme-amerce-id-site_title','Mendenda',NULL,'2026-05-28 18:58:17'),(169,'theme-amerce-id-seo_title','Amerce — Tema eCommerce Serbaguna',NULL,'2026-05-28 18:58:17'),(170,'theme-amerce-id-seo_description','Amerce adalah tema e-niaga dan pasar multiguna untuk Botble CMS — 21 preset khusus, belanja berkelanjutan, dan pembayaran cepat.',NULL,'2026-05-28 18:58:17'),(171,'theme-amerce-id-copyright','© 2026 Amerika. Semua hak dilindungi undang-undang.',NULL,'2026-05-28 18:58:17'),(172,'theme-amerce-id-header_account_label','Masuk/Daftar',NULL,'2026-05-28 18:58:17'),(173,'theme-amerce-id-header_bottom_offer_text','Penawaran khusus!',NULL,'2026-05-28 18:58:17'),(174,'theme-amerce-id-footer_marquee_text','E-COMMERCE MULTI-FUNGSIONAL AMERCE',NULL,'2026-05-28 18:58:17'),(175,'theme-amerce-id-header_announcement_slides','Promosi Pertengahan Musim: Diskon 20% - Otomatis diterapkan saat checkout - Jumlah terbatas\nDiskon 20% - Diterapkan Secara Otomatis Saat Checkout - Jumlah Terbatas',NULL,'2026-05-28 18:58:17'),(176,'theme-amerce-id-topbar_slides','Promosi Pertengahan Musim: Diskon 20% - Berlaku Otomatis saat Checkout - Hanya Waktu Terbatas\nDiskon 20% - Berlaku Otomatis saat Checkout - Hanya Waktu Terbatas',NULL,'2026-05-28 18:58:17'),(177,'theme-amerce-tr-topbar_text','99$ üzeri siparişlerde ücretsiz gönderim',NULL,'2026-05-28 18:58:17'),(178,'theme-amerce-tr-site_title','Amerce',NULL,'2026-05-28 18:58:17'),(179,'theme-amerce-tr-seo_title','Amerce — Çok Amaçlı e-Ticaret Teması',NULL,'2026-05-28 18:58:17'),(180,'theme-amerce-tr-seo_description','Amerce, Botble CMS için çok amaçlı bir e-ticaret ve pazar yeri temasıdır - 21 niş ön ayar, sürdürülebilir alışveriş ve hızlı ödeme.',NULL,'2026-05-28 18:58:17'),(181,'theme-amerce-tr-copyright','© 2026 Amerika. Her hakkı saklıdır.',NULL,'2026-05-28 18:58:17'),(182,'theme-amerce-tr-header_account_label','Giriş yap/Kayıt ol',NULL,'2026-05-28 18:58:17'),(183,'theme-amerce-tr-header_bottom_offer_text','Özel Teklif!',NULL,'2026-05-28 18:58:17'),(184,'theme-amerce-tr-footer_marquee_text','AMERCE ÇOK FONKSİYONLU E-TİCARET',NULL,'2026-05-28 18:58:17'),(185,'theme-amerce-tr-header_announcement_slides','Sezon Ortası Promosyonu: %20 indirim - Ödeme sırasında otomatik olarak uygulanır - Sınırlı miktar\n%20 İndirim - Ödeme Sırasında Otomatik Olarak Uygulanır - Sınırlı Adet',NULL,'2026-05-28 18:58:17'),(186,'theme-amerce-tr-topbar_slides','Sezon Ortası Promosyonu: %20 İndirim - Ödeme Sırasında Otomatik Olarak Uygulanır - Yalnızca Sınırlı Süre için\n%20 İndirim - Ödeme Sırasında Otomatik Olarak Uygulanır - Yalnızca Sınırlı Süre için',NULL,'2026-05-28 18:58:17'),(187,'media_sizes_hero-sm_height','0',NULL,'2026-05-28 18:58:17'),(188,'media_sizes_hero-md_height','0',NULL,NULL);
+/*!40000 ALTER TABLE `settings` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `simple_slider_items`
+--
+
+DROP TABLE IF EXISTS `simple_slider_items`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `simple_slider_items` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `simple_slider_id` bigint unsigned NOT NULL,
+  `title` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `image` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `link` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `description` text COLLATE utf8mb4_unicode_ci,
+  `order` int unsigned NOT NULL DEFAULT '0',
+  `status` varchar(60) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'published',
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `simple_slider_items`
+--
+
+LOCK TABLES `simple_slider_items` WRITE;
+/*!40000 ALTER TABLE `simple_slider_items` DISABLE KEYS */;
+INSERT INTO `simple_slider_items` VALUES (1,1,'Unlock your strength\nand go beyond limits.','slider/slider-22.jpg','/products','',0,'published','2026-05-28 18:57:45','2026-05-28 18:57:45'),(2,1,'Activewear that\nsupports every move.','slider/slider-23.jpg','/products','',1,'published','2026-05-28 18:57:45','2026-05-28 18:57:45'),(3,1,'Premium sportswear built\nto power every move.','slider/slider-24.jpg','/products','',2,'published','2026-05-28 18:57:45','2026-05-28 18:57:45');
+/*!40000 ALTER TABLE `simple_slider_items` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `simple_sliders`
+--
+
+DROP TABLE IF EXISTS `simple_sliders`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `simple_sliders` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(120) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `key` varchar(120) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `description` varchar(400) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `status` varchar(60) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'published',
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `simple_sliders`
+--
+
+LOCK TABLES `simple_sliders` WRITE;
+/*!40000 ALTER TABLE `simple_sliders` DISABLE KEYS */;
+INSERT INTO `simple_sliders` VALUES (1,'Homepage Hero','home-hero','Primary hero slider used on the Main homepage.','published','2026-05-28 18:57:45','2026-05-28 18:57:45');
+/*!40000 ALTER TABLE `simple_sliders` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `slugs`
+--
+
+DROP TABLE IF EXISTS `slugs`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `slugs` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `key` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `reference_id` bigint unsigned NOT NULL,
+  `reference_type` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `prefix` varchar(120) COLLATE utf8mb4_unicode_ci DEFAULT '',
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `slugs_reference_id_index` (`reference_id`),
+  KEY `slugs_key_index` (`key`),
+  KEY `slugs_prefix_index` (`prefix`),
+  KEY `slugs_reference_index` (`reference_id`,`reference_type`),
+  KEY `idx_key_prefix` (`key`,`prefix`),
+  KEY `idx_slugs_reference` (`reference_type`,`reference_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=143 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `slugs`
+--
+
+LOCK TABLES `slugs` WRITE;
+/*!40000 ALTER TABLE `slugs` DISABLE KEYS */;
+INSERT INTO `slugs` VALUES (1,'style-guides',1,'Botble\\Blog\\Models\\Category','','2026-05-28 18:57:44','2026-05-28 18:57:44'),(2,'product-spotlights',2,'Botble\\Blog\\Models\\Category','','2026-05-28 18:57:44','2026-05-28 18:57:44'),(3,'how-to-care',3,'Botble\\Blog\\Models\\Category','','2026-05-28 18:57:44','2026-05-28 18:57:44'),(4,'sustainability',4,'Botble\\Blog\\Models\\Category','','2026-05-28 18:57:44','2026-05-28 18:57:44'),(5,'buying-guides',5,'Botble\\Blog\\Models\\Category','','2026-05-28 18:57:44','2026-05-28 18:57:44'),(6,'inside-amerce',6,'Botble\\Blog\\Models\\Category','','2026-05-28 18:57:44','2026-05-28 18:57:44'),(7,'trends',1,'Botble\\Blog\\Models\\Tag','tag','2026-05-28 18:57:44','2026-05-28 18:57:44'),(8,'styling-tips',2,'Botble\\Blog\\Models\\Tag','tag','2026-05-28 18:57:44','2026-05-28 18:57:44'),(9,'sustainable',3,'Botble\\Blog\\Models\\Tag','tag','2026-05-28 18:57:45','2026-05-28 18:57:45'),(10,'new-arrivals',4,'Botble\\Blog\\Models\\Tag','tag','2026-05-28 18:57:45','2026-05-28 18:57:45'),(11,'limited-edition',5,'Botble\\Blog\\Models\\Tag','tag','2026-05-28 18:57:45','2026-05-28 18:57:45'),(12,'behind-the-scenes',6,'Botble\\Blog\\Models\\Tag','tag','2026-05-28 18:57:45','2026-05-28 18:57:45'),(13,'buyer-guide',7,'Botble\\Blog\\Models\\Tag','tag','2026-05-28 18:57:45','2026-05-28 18:57:45'),(14,'care-tips',8,'Botble\\Blog\\Models\\Tag','tag','2026-05-28 18:57:45','2026-05-28 18:57:45'),(15,'capsule-wardrobe',9,'Botble\\Blog\\Models\\Tag','tag','2026-05-28 18:57:45','2026-05-28 18:57:45'),(16,'material-stories',10,'Botble\\Blog\\Models\\Tag','tag','2026-05-28 18:57:45','2026-05-28 18:57:45'),(17,'holiday-gifting',11,'Botble\\Blog\\Models\\Tag','tag','2026-05-28 18:57:45','2026-05-28 18:57:45'),(18,'editor-picks',12,'Botble\\Blog\\Models\\Tag','tag','2026-05-28 18:57:45','2026-05-28 18:57:45'),(19,'how-to-build-a-capsule-wardrobe-that-fits-your-lifestyle',1,'Botble\\Blog\\Models\\Post','','2026-05-28 18:57:45','2026-05-28 18:57:45'),(20,'the-investment-bag-why-a-quality-handbag-pays-for-itself',2,'Botble\\Blog\\Models\\Post','','2026-05-28 18:57:45','2026-05-28 18:57:45'),(21,'why-accessories-define-more-than-just-your-outfit',3,'Botble\\Blog\\Models\\Post','','2026-05-28 18:57:45','2026-05-28 18:57:45'),(22,'from-work-to-weekend-outfits-that-do-it-all',4,'Botble\\Blog\\Models\\Post','','2026-05-28 18:57:45','2026-05-28 18:57:45'),(23,'the-secret-to-effortless-elegance-in-every-season',5,'Botble\\Blog\\Models\\Post','','2026-05-28 18:57:45','2026-05-28 18:57:45'),(24,'sustainable-fashion-choices-that-never-go-out-of-style',6,'Botble\\Blog\\Models\\Post','','2026-05-28 18:57:45','2026-05-28 18:57:45'),(25,'must-have-wardrobe-staples-for-every-season',7,'Botble\\Blog\\Models\\Post','','2026-05-28 18:57:45','2026-05-28 18:57:45'),(26,'essential-styling-rules-every-woman-should-know',8,'Botble\\Blog\\Models\\Post','','2026-05-28 18:57:45','2026-05-28 18:57:45'),(27,'mastering-color-palettes-for-a-modern-wardrobe',9,'Botble\\Blog\\Models\\Post','','2026-05-28 18:57:45','2026-05-28 18:57:45'),(28,'modern-accessories-that-instantly-elevate-your-look',10,'Botble\\Blog\\Models\\Post','','2026-05-28 18:57:45','2026-05-28 18:57:45'),(29,'yoga',1,'Botble\\Ecommerce\\Models\\ProductCategory','product-categories','2026-05-28 18:57:45','2026-05-28 18:57:45'),(30,'leggings',2,'Botble\\Ecommerce\\Models\\ProductCategory','product-categories','2026-05-28 18:57:45','2026-05-28 18:57:45'),(31,'tennis',3,'Botble\\Ecommerce\\Models\\ProductCategory','product-categories','2026-05-28 18:57:45','2026-05-28 18:57:45'),(32,'gym',4,'Botble\\Ecommerce\\Models\\ProductCategory','product-categories','2026-05-28 18:57:45','2026-05-28 18:57:45'),(33,'running',5,'Botble\\Ecommerce\\Models\\ProductCategory','product-categories','2026-05-28 18:57:45','2026-05-28 18:57:45'),(34,'outerwear',6,'Botble\\Ecommerce\\Models\\ProductCategory','product-categories','2026-05-28 18:57:45','2026-05-28 18:57:45'),(35,'tops-shirts',7,'Botble\\Ecommerce\\Models\\ProductCategory','product-categories','2026-05-28 18:57:45','2026-05-28 18:57:45'),(36,'bottoms',8,'Botble\\Ecommerce\\Models\\ProductCategory','product-categories','2026-05-28 18:57:45','2026-05-28 18:57:45'),(37,'dresses',9,'Botble\\Ecommerce\\Models\\ProductCategory','product-categories','2026-05-28 18:57:45','2026-05-28 18:57:45'),(38,'footwear',10,'Botble\\Ecommerce\\Models\\ProductCategory','product-categories','2026-05-28 18:57:45','2026-05-28 18:57:45'),(39,'accessories',11,'Botble\\Ecommerce\\Models\\ProductCategory','product-categories','2026-05-28 18:57:45','2026-05-28 18:57:45'),(40,'beauty-cosmetics',12,'Botble\\Ecommerce\\Models\\ProductCategory','product-categories','2026-05-28 18:57:45','2026-05-28 18:57:45'),(41,'electronics',13,'Botble\\Ecommerce\\Models\\ProductCategory','product-categories','2026-05-28 18:57:45','2026-05-28 18:57:45'),(42,'home-furniture',14,'Botble\\Ecommerce\\Models\\ProductCategory','product-categories','2026-05-28 18:57:45','2026-05-28 18:57:45'),(43,'sports-fitness',15,'Botble\\Ecommerce\\Models\\ProductCategory','product-categories','2026-05-28 18:57:45','2026-05-28 18:57:45'),(44,'jewelry-watches',16,'Botble\\Ecommerce\\Models\\ProductCategory','product-categories','2026-05-28 18:57:45','2026-05-28 18:57:45'),(45,'lyocell-wrap-top',1,'Botble\\Ecommerce\\Models\\Product','products','2026-05-28 18:57:52','2026-05-28 18:57:52'),(46,'wool-midi-coat',2,'Botble\\Ecommerce\\Models\\Product','products','2026-05-28 18:57:52','2026-05-28 18:57:52'),(47,'buttons-cotton-top',3,'Botble\\Ecommerce\\Models\\Product','products','2026-05-28 18:57:52','2026-05-28 18:57:52'),(48,'linen-slim-fit-shirt',4,'Botble\\Ecommerce\\Models\\Product','products','2026-05-28 18:57:52','2026-05-28 18:57:52'),(49,'high-neck-midi-wool-coat',5,'Botble\\Ecommerce\\Models\\Product','products','2026-05-28 18:57:52','2026-05-28 18:57:52'),(50,'square-metallic-frame-sunglasses',6,'Botble\\Ecommerce\\Models\\Product','products','2026-05-28 18:57:52','2026-05-28 18:57:52'),(51,'leather-shopper-bag-with-stitching',7,'Botble\\Ecommerce\\Models\\Product','products','2026-05-28 18:57:52','2026-05-28 18:57:52'),(52,'leather-shopper-bag-with-stitching',8,'Botble\\Ecommerce\\Models\\Product','products','2026-05-28 18:57:52','2026-05-28 18:57:52'),(53,'oval-shoulder-bag',9,'Botble\\Ecommerce\\Models\\Product','products','2026-05-28 18:57:52','2026-05-28 18:57:52'),(54,'oval-shoulder-bag',10,'Botble\\Ecommerce\\Models\\Product','products','2026-05-28 18:57:53','2026-05-28 18:57:53'),(55,'oval-shoulder-bag',11,'Botble\\Ecommerce\\Models\\Product','products','2026-05-28 18:57:53','2026-05-28 18:57:53'),(56,'oversized-poplin-button-up-shirt',12,'Botble\\Ecommerce\\Models\\Product','products','2026-05-28 18:57:53','2026-05-28 18:57:53'),(57,'ribbed-halter-cami-top',13,'Botble\\Ecommerce\\Models\\Product','products','2026-05-28 18:57:53','2026-05-28 18:57:53'),(58,'cropped-wool-blend-knit-sweater',14,'Botble\\Ecommerce\\Models\\Product','products','2026-05-28 18:57:53','2026-05-28 18:57:53'),(59,'garment-washed-linen-overshirt',15,'Botble\\Ecommerce\\Models\\Product','products','2026-05-28 18:57:53','2026-05-28 18:57:53'),(60,'funnel-neck-wool-jacket',16,'Botble\\Ecommerce\\Models\\Product','products','2026-05-28 18:57:53','2026-05-28 18:57:53'),(61,'train-free-sports-bra',17,'Botble\\Ecommerce\\Models\\Product','products','2026-05-28 18:57:53','2026-05-28 18:57:53'),(62,'nkd-high-waisted-shorts',18,'Botble\\Ecommerce\\Models\\Product','products','2026-05-28 18:57:53','2026-05-28 18:57:53'),(63,'anthro-studio',1,'Botble\\Marketplace\\Models\\Store','stores','2026-05-28 18:58:02','2026-05-28 18:58:02'),(64,'crate-furniture-co',2,'Botble\\Marketplace\\Models\\Store','stores','2026-05-28 18:58:02','2026-05-28 18:58:02'),(65,'findr-audio',3,'Botble\\Marketplace\\Models\\Store','stores','2026-05-28 18:58:02','2026-05-28 18:58:02'),(66,'bohome-living',4,'Botble\\Marketplace\\Models\\Store','stores','2026-05-28 18:58:02','2026-05-28 18:58:02'),(67,'about',1,'Botble\\Page\\Models\\Page','','2026-05-28 18:58:02','2026-05-28 18:58:02'),(68,'contact',2,'Botble\\Page\\Models\\Page','','2026-05-28 18:58:02','2026-05-28 18:58:02'),(69,'faq',3,'Botble\\Page\\Models\\Page','','2026-05-28 18:58:02','2026-05-28 18:58:02'),(70,'privacy-policy',4,'Botble\\Page\\Models\\Page','','2026-05-28 18:58:02','2026-05-28 18:58:02'),(71,'terms-conditions',5,'Botble\\Page\\Models\\Page','','2026-05-28 18:58:02','2026-05-28 18:58:02'),(72,'returns-refunds',6,'Botble\\Page\\Models\\Page','','2026-05-28 18:58:02','2026-05-28 18:58:02'),(73,'shipping',7,'Botble\\Page\\Models\\Page','','2026-05-28 18:58:02','2026-05-28 18:58:02'),(74,'our-stores',8,'Botble\\Page\\Models\\Page','','2026-05-28 18:58:02','2026-05-28 18:58:02'),(75,'blog',9,'Botble\\Page\\Models\\Page','','2026-05-28 18:58:02','2026-05-28 18:58:02'),(76,'careers',10,'Botble\\Page\\Models\\Page','','2026-05-28 18:58:02','2026-05-28 18:58:02'),(77,'sustainability',11,'Botble\\Page\\Models\\Page','','2026-05-28 18:58:02','2026-05-28 18:58:02'),(78,'homepage',12,'Botble\\Page\\Models\\Page','','2026-05-28 18:58:02','2026-05-28 18:58:02'),(79,'leather-shopper-bag-with-stitching',21,'Botble\\Ecommerce\\Models\\Product','products','2026-05-28 18:58:16','2026-05-28 18:58:16'),(80,'leather-shopper-bag-with-stitching',22,'Botble\\Ecommerce\\Models\\Product','products','2026-05-28 18:58:16','2026-05-28 18:58:16'),(81,'leather-shopper-bag-with-stitching',23,'Botble\\Ecommerce\\Models\\Product','products','2026-05-28 18:58:16','2026-05-28 18:58:16'),(82,'leather-shopper-bag-with-stitching',24,'Botble\\Ecommerce\\Models\\Product','products','2026-05-28 18:58:16','2026-05-28 18:58:16'),(83,'oval-shoulder-bag',25,'Botble\\Ecommerce\\Models\\Product','products','2026-05-28 18:58:16','2026-05-28 18:58:16'),(84,'oval-shoulder-bag',26,'Botble\\Ecommerce\\Models\\Product','products','2026-05-28 18:58:16','2026-05-28 18:58:16'),(85,'oval-shoulder-bag',27,'Botble\\Ecommerce\\Models\\Product','products','2026-05-28 18:58:16','2026-05-28 18:58:16'),(86,'garment-washed-linen-overshirt',28,'Botble\\Ecommerce\\Models\\Product','products','2026-05-28 18:58:16','2026-05-28 18:58:16'),(87,'garment-washed-linen-overshirt',29,'Botble\\Ecommerce\\Models\\Product','products','2026-05-28 18:58:16','2026-05-28 18:58:16'),(88,'garment-washed-linen-overshirt',30,'Botble\\Ecommerce\\Models\\Product','products','2026-05-28 18:58:16','2026-05-28 18:58:16'),(89,'garment-washed-linen-overshirt',31,'Botble\\Ecommerce\\Models\\Product','products','2026-05-28 18:58:16','2026-05-28 18:58:16'),(90,'train-free-sports-bra',32,'Botble\\Ecommerce\\Models\\Product','products','2026-05-28 18:58:16','2026-05-28 18:58:16'),(91,'train-free-sports-bra',33,'Botble\\Ecommerce\\Models\\Product','products','2026-05-28 18:58:16','2026-05-28 18:58:16'),(92,'train-free-sports-bra',34,'Botble\\Ecommerce\\Models\\Product','products','2026-05-28 18:58:16','2026-05-28 18:58:16'),(93,'train-free-sports-bra',35,'Botble\\Ecommerce\\Models\\Product','products','2026-05-28 18:58:16','2026-05-28 18:58:16'),(94,'train-free-sports-bra',36,'Botble\\Ecommerce\\Models\\Product','products','2026-05-28 18:58:16','2026-05-28 18:58:16'),(95,'nkd-high-waisted-shorts',37,'Botble\\Ecommerce\\Models\\Product','products','2026-05-28 18:58:16','2026-05-28 18:58:16'),(96,'nkd-high-waisted-shorts',38,'Botble\\Ecommerce\\Models\\Product','products','2026-05-28 18:58:16','2026-05-28 18:58:16'),(97,'lyocell-wrap-top',39,'Botble\\Ecommerce\\Models\\Product','products','2026-05-28 18:58:16','2026-05-28 18:58:16'),(98,'lyocell-wrap-top',40,'Botble\\Ecommerce\\Models\\Product','products','2026-05-28 18:58:16','2026-05-28 18:58:16'),(99,'lyocell-wrap-top',41,'Botble\\Ecommerce\\Models\\Product','products','2026-05-28 18:58:16','2026-05-28 18:58:16'),(100,'wool-midi-coat',42,'Botble\\Ecommerce\\Models\\Product','products','2026-05-28 18:58:16','2026-05-28 18:58:16'),(101,'wool-midi-coat',43,'Botble\\Ecommerce\\Models\\Product','products','2026-05-28 18:58:16','2026-05-28 18:58:16'),(102,'wool-midi-coat',44,'Botble\\Ecommerce\\Models\\Product','products','2026-05-28 18:58:16','2026-05-28 18:58:16'),(103,'buttons-cotton-top',45,'Botble\\Ecommerce\\Models\\Product','products','2026-05-28 18:58:16','2026-05-28 18:58:16'),(104,'buttons-cotton-top',46,'Botble\\Ecommerce\\Models\\Product','products','2026-05-28 18:58:16','2026-05-28 18:58:16'),(105,'linen-slim-fit-shirt',47,'Botble\\Ecommerce\\Models\\Product','products','2026-05-28 18:58:16','2026-05-28 18:58:16'),(106,'linen-slim-fit-shirt',48,'Botble\\Ecommerce\\Models\\Product','products','2026-05-28 18:58:16','2026-05-28 18:58:16'),(107,'anthro',1,'Botble\\Ecommerce\\Models\\Brand','brands','2026-05-28 18:58:16','2026-05-28 18:58:16'),(108,'anvouge',2,'Botble\\Ecommerce\\Models\\Brand','brands','2026-05-28 18:58:16','2026-05-28 18:58:16'),(109,'bohome',3,'Botble\\Ecommerce\\Models\\Brand','brands','2026-05-28 18:58:16','2026-05-28 18:58:16'),(110,'carolin',4,'Botble\\Ecommerce\\Models\\Brand','brands','2026-05-28 18:58:16','2026-05-28 18:58:16'),(111,'cheryl',5,'Botble\\Ecommerce\\Models\\Brand','brands','2026-05-28 18:58:16','2026-05-28 18:58:16'),(112,'crate',6,'Botble\\Ecommerce\\Models\\Brand','brands','2026-05-28 18:58:16','2026-05-28 18:58:16'),(113,'findr',7,'Botble\\Ecommerce\\Models\\Brand','brands','2026-05-28 18:58:16','2026-05-28 18:58:16'),(114,'intdeco',8,'Botble\\Ecommerce\\Models\\Brand','brands','2026-05-28 18:58:16','2026-05-28 18:58:16'),(115,'modave',9,'Botble\\Ecommerce\\Models\\Brand','brands','2026-05-28 18:58:16','2026-05-28 18:58:16'),(116,'panadoxn',10,'Botble\\Ecommerce\\Models\\Brand','brands','2026-05-28 18:58:16','2026-05-28 18:58:16'),(117,'shangxi',11,'Botble\\Ecommerce\\Models\\Brand','brands','2026-05-28 18:58:16','2026-05-28 18:58:16'),(118,'sopify',12,'Botble\\Ecommerce\\Models\\Brand','brands','2026-05-28 18:58:16','2026-05-28 18:58:16'),(119,'cotton',1,'Botble\\Ecommerce\\Models\\ProductTag','product-tags','2026-05-28 18:58:16','2026-05-28 18:58:16'),(120,'linen',2,'Botble\\Ecommerce\\Models\\ProductTag','product-tags','2026-05-28 18:58:16','2026-05-28 18:58:16'),(121,'wool',3,'Botble\\Ecommerce\\Models\\ProductTag','product-tags','2026-05-28 18:58:16','2026-05-28 18:58:16'),(122,'leather',4,'Botble\\Ecommerce\\Models\\ProductTag','product-tags','2026-05-28 18:58:16','2026-05-28 18:58:16'),(123,'tencel',5,'Botble\\Ecommerce\\Models\\ProductTag','product-tags','2026-05-28 18:58:16','2026-05-28 18:58:16'),(124,'recycled',6,'Botble\\Ecommerce\\Models\\ProductTag','product-tags','2026-05-28 18:58:16','2026-05-28 18:58:16'),(125,'made-in-portugal',7,'Botble\\Ecommerce\\Models\\ProductTag','product-tags','2026-05-28 18:58:16','2026-05-28 18:58:16'),(126,'made-in-italy',8,'Botble\\Ecommerce\\Models\\ProductTag','product-tags','2026-05-28 18:58:16','2026-05-28 18:58:16'),(127,'hand-crafted',9,'Botble\\Ecommerce\\Models\\ProductTag','product-tags','2026-05-28 18:58:16','2026-05-28 18:58:16'),(128,'vegan',10,'Botble\\Ecommerce\\Models\\ProductTag','product-tags','2026-05-28 18:58:16','2026-05-28 18:58:16'),(129,'limited-run',11,'Botble\\Ecommerce\\Models\\ProductTag','product-tags','2026-05-28 18:58:16','2026-05-28 18:58:16'),(130,'best-seller',12,'Botble\\Ecommerce\\Models\\ProductTag','product-tags','2026-05-28 18:58:16','2026-05-28 18:58:16'),(131,'new-arrival',13,'Botble\\Ecommerce\\Models\\ProductTag','product-tags','2026-05-28 18:58:16','2026-05-28 18:58:16'),(132,'editor-pick',14,'Botble\\Ecommerce\\Models\\ProductTag','product-tags','2026-05-28 18:58:16','2026-05-28 18:58:16'),(133,'eco-friendly',15,'Botble\\Ecommerce\\Models\\ProductTag','product-tags','2026-05-28 18:58:16','2026-05-28 18:58:16'),(134,'spring-essentials',1,'Botble\\Ecommerce\\Models\\ProductCollection','collections','2026-05-28 18:58:16','2026-05-28 18:58:16'),(135,'limited-edition',2,'Botble\\Ecommerce\\Models\\ProductCollection','collections','2026-05-28 18:58:16','2026-05-28 18:58:16'),(136,'best-sellers',3,'Botble\\Ecommerce\\Models\\ProductCollection','collections','2026-05-28 18:58:16','2026-05-28 18:58:16'),(137,'sustainable-picks',4,'Botble\\Ecommerce\\Models\\ProductCollection','collections','2026-05-28 18:58:16','2026-05-28 18:58:16'),(138,'workwear',5,'Botble\\Ecommerce\\Models\\ProductCollection','collections','2026-05-28 18:58:16','2026-05-28 18:58:16'),(139,'weekend',6,'Botble\\Ecommerce\\Models\\ProductCollection','collections','2026-05-28 18:58:16','2026-05-28 18:58:16'),(140,'shop-women',7,'Botble\\Ecommerce\\Models\\ProductCollection','collections','2026-05-28 18:58:16','2026-05-28 18:58:16'),(141,'shop-men',8,'Botble\\Ecommerce\\Models\\ProductCollection','collections','2026-05-28 18:58:16','2026-05-28 18:58:16'),(142,'shop-essentials',9,'Botble\\Ecommerce\\Models\\ProductCollection','collections','2026-05-28 18:58:16','2026-05-28 18:58:16');
+/*!40000 ALTER TABLE `slugs` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `slugs_translations`
+--
+
+DROP TABLE IF EXISTS `slugs_translations`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `slugs_translations` (
+  `lang_code` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `slugs_id` bigint unsigned NOT NULL,
+  `key` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `prefix` varchar(120) COLLATE utf8mb4_unicode_ci DEFAULT '',
+  PRIMARY KEY (`lang_code`,`slugs_id`),
+  KEY `idx_slugid_key_prefix` (`slugs_id`,`key`,`prefix`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `slugs_translations`
+--
+
+LOCK TABLES `slugs_translations` WRITE;
+/*!40000 ALTER TABLE `slugs_translations` DISABLE KEYS */;
+INSERT INTO `slugs_translations` VALUES ('ar',1,'adl-alnmt',''),('fr',1,'guides-de-style',''),('vi',1,'huong-dan-phoi-do',''),('id',1,'panduan-gaya',''),('tr',1,'stil-kilavuzlari',''),('ar',2,'adoaaa-kashf-aal-almntg',''),('vi',2,'diem-nhan-san-pham',''),('fr',2,'produits-phares',''),('id',2,'sorotan-produk',''),('tr',2,'urun-spotlari',''),('ar',3,'how-to-amp-care',''),('fr',3,'how-to-amp-care',''),('id',3,'how-to-amp-care',''),('tr',3,'how-to-amp-care',''),('vi',3,'how-to-amp-care',''),('ar',4,'alastdam',''),('fr',4,'durabilite',''),('id',4,'keberlanjutan',''),('vi',4,'phat-trien-ben-vung',''),('tr',4,'surdurulebilirlik',''),('ar',5,'adl-alshraaa',''),('fr',5,'guides-dachat',''),('vi',5,'huong-dan-mua-sam',''),('id',5,'panduan-membeli',''),('tr',5,'satin-alma-kilavuzlari',''),('fr',6,'a-linterieur-de-lamerique',''),('tr',6,'amerikanin-icinde',''),('vi',6,'ben-trong-amerce',''),('ar',6,'dakhl-amrykas',''),('id',6,'di-dalam-amerika',''),('ar',7,'alatgahat','tag'),('fr',7,'tendances','tag'),('id',7,'tren','tag'),('tr',7,'trends','tag'),('vi',7,'xu-huong','tag'),('fr',8,'conseils-de-style','tag'),('vi',8,'meo-phoi-do','tag'),('ar',8,'nsayh-altsmym','tag'),('tr',8,'styling-tips','tag'),('id',8,'tip-penataan-gaya','tag'),('vi',9,'ben-vung','tag'),('id',9,'berkelanjutan','tag'),('fr',9,'durable','tag'),('ar',9,'mstmr','tag'),('tr',9,'sustainable','tag'),('ar',10,'aloafdon-algdd','tag'),('vi',10,'hang-moi-ve','tag'),('tr',10,'new-arrivals','tag'),('fr',10,'nouveautes','tag'),('id',10,'pendatang-baru','tag'),('id',11,'edisi-terbatas','tag'),('fr',11,'edition-limitee','tag'),('tr',11,'limited-edition','tag'),('vi',11,'phien-ban-gioi-han','tag'),('ar',11,'tbaa-mhdod','tag'),('tr',12,'behind-the-scenes','tag'),('fr',12,'dans-les-coulisses','tag'),('id',12,'di-belakang-layar','tag'),('vi',12,'hau-truong','tag'),('ar',12,'khlf-alkoalys','tag'),('tr',13,'buyer-guide','tag'),('vi',13,'cam-nang-mua-sam','tag'),('ar',13,'dlyl-almshtry','tag'),('fr',13,'guide-de-lacheteur','tag'),('id',13,'panduan-pembeli','tag'),('tr',14,'care-tips','tag'),('fr',14,'conseils-dentretien','tag'),('vi',14,'meo-bao-quan','tag'),('ar',14,'nsayh-alaanay','tag'),('id',14,'tip-perawatan','tag'),('fr',15,'armoire-capsule','tag'),('tr',15,'capsule-wardrobe','tag'),('ar',15,'khzan-kbsol','tag'),('id',15,'lemari-kapsul','tag'),('vi',15,'tu-do-capsule','tag'),('id',16,'cerita-materi','tag'),('vi',16,'chuyen-vat-lieu','tag'),('fr',16,'histoires-materielles','tag'),('ar',16,'kss-mady','tag'),('tr',16,'material-stories','tag'),('fr',17,'cadeaux-de-vacances','tag'),('id',17,'hadiah-liburan','tag'),('ar',17,'hdaya-alaayd','tag'),('tr',17,'holiday-gifting','tag'),('vi',17,'qua-tang-dip-le','tag'),('ar',18,'akhtyarat-almhrr','tag'),('vi',18,'bien-tap-vien-chon','tag'),('fr',18,'choix-de-lediteur','tag'),('tr',18,'editor-picks','tag'),('id',18,'pilihan-editor','tag'),('vi',19,'cach-xay-dung-tu-quan-ao-dang-con-nhong-phu-hop-voi-phong-cach-song-cua-ban',''),('id',19,'cara-membuat-lemari-pakaian-kapsul-yang-sesuai-dengan-gaya-hidup-anda',''),('fr',19,'comment-creer-une-garde-robe-capsule-adaptee-a-votre-style-de-vie',''),('ar',19,'kyfy-bnaaa-khzan-mlabs-tnasb-nmt-hyatk',''),('tr',19,'yasam-tarziniza-uygun-bir-kapsul-gardirop-nasil-yapilir',''),('ar',20,'hkyb-alastthmar-lmatha-tdfaa-hkyb-alyd-aaaly-algod-thmnha-bnfsha',''),('fr',20,'le-sac-dinvestissement-pourquoi-un-sac-a-main-de-qualite-est-rentable',''),('id',20,'tas-investasi-mengapa-tas-tangan-berkualitas-membayarnya-sendiri',''),('vi',20,'tui-dau-tu-tai-sao-mot-chiec-tui-xach-chat-luong-lai-dang-gia',''),('tr',20,'yatirim-cantasi-kaliteli-bir-canta-neden-parasini-oder',''),('tr',21,'aksesuarlar-neden-kiyafetinizden-daha-fazlasini-tanimliyor',''),('ar',21,'lmatha-thdd-alakssoarat-akthr-mn-mgrd-mlabsk',''),('id',21,'mengapa-aksesori-mendefinisikan-lebih-dari-sekadar-pakaian-anda',''),('fr',21,'pourquoi-les-accessoires-definissent-plus-que-votre-tenue',''),('vi',21,'tai-sao-phu-kien-lai-khong-chi-dinh-nghia-trang-phuc-cua-ban',''),('id',22,'dari-pekerjaan-hingga-akhir-pekan-pakaian-yang-melakukan-segalanya',''),('fr',22,'from-work-to-weekend-outfits-that-do-it-all',''),('tr',22,'isten-hafta-sonuna-her-seyi-yapan-kiyafetler',''),('ar',22,'mn-alaaml-al-aatl-nhay-alasboaa-almlabs-alty-tfy-bkl-shyaa',''),('vi',22,'tu-noi-lam-viec-den-cuoi-tuan-trang-phuc-lam-duoc-tat-ca',''),('vi',23,'bi-quyet-de-thanh-lich-de-dang-trong-moi-mua',''),('tr',23,'her-mevsim-zahmetsiz-sikligin-sirri',''),('fr',23,'le-secret-dune-elegance-sans-effort-a-chaque-saison',''),('id',23,'rahasia-keanggunan-yang-mudah-di-setiap-musim',''),('ar',23,'sr-alanak-alshl-fy-kl-mosm',''),('fr',24,'des-choix-de-mode-durables-qui-ne-se-demodent-jamais',''),('ar',24,'khyarat-alazyaaa-almstdam-alty-la-tkhrg-aan-almod-abda',''),('tr',24,'modasi-asla-gecmeyen-surdurulebilir-moda-secimleri',''),('vi',24,'nhung-lua-chon-thoi-trang-ben-vung-khong-bao-gio-loi-mot',''),('id',24,'pilihan-fesyen-berkelanjutan-yang-tidak-pernah-ketinggalan-zaman',''),('ar',25,'asasyat-khzan-almlabs-alty-ygb-aktnaoha-lkl-mosm',''),('fr',25,'des-incontournables-de-la-garde-robe-pour-chaque-saison',''),('tr',25,'her-mevsim-gardirobunuzun-olmasi-gereken-esyalari',''),('vi',25,'nhung-mon-do-ghim-trong-tu-quan-ao-phai-co-cho-moi-mua',''),('id',25,'perlengkapan-lemari-pakaian-yang-wajib-dimiliki-untuk-setiap-musim',''),('id',26,'aturan-penataan-penting-yang-harus-diketahui-setiap-wanita',''),('tr',26,'her-kadinin-bilmesi-gereken-temel-sekillendirme-kurallari',''),('ar',26,'koaaad-altsmym-alasasy-alty-ygb-an-taarfha-kl-amra',''),('vi',26,'nhung-quy-tac-tao-kieu-thiet-yeu-moi-phu-nu-nen-biet',''),('fr',26,'regles-de-style-essentielles-que-chaque-femme-devrait-connaitre',''),('ar',27,'atkan-lohat-alaloan-lkhzan-almlabs-alhdyth',''),('vi',27,'lam-chu-bang-mau-cho-tu-quan-ao-hien-dai',''),('fr',27,'maitriser-les-palettes-de-couleurs-pour-une-garde-robe-moderne',''),('id',27,'menguasai-palet-warna-untuk-lemari-pakaian-modern',''),('tr',27,'modern-bir-gardirop-icin-renk-paletlerinde-uzmanlasmak',''),('id',28,'aksesori-modern-yang-meninggikan-penampilan-anda-secara-instan',''),('ar',28,'akssoarat-hdyth-trtky-bmthhrk-aal-alfor',''),('tr',28,'gorunumunuzu-aninda-yukselten-modern-aksesuarlar',''),('fr',28,'modern-accessories-that-instantly-elevate-your-look',''),('vi',28,'phu-kien-hien-dai-nang-tam-dien-mao-cua-ban-ngay-lap-tuc',''),('ar',29,'alyogha','product-categories'),('fr',29,'yoga','product-categories'),('id',29,'yoga','product-categories'),('tr',29,'yoga','product-categories'),('vi',29,'yoga','product-categories'),('fr',30,'guetres','product-categories'),('id',30,'pembalut-kaki','product-categories'),('ar',30,'tmak','product-categories'),('tr',30,'tozluk','product-categories'),('vi',30,'xa-cap','product-categories'),('ar',31,'altns','product-categories'),('vi',31,'quan-vot','product-categories'),('id',31,'tenis','product-categories'),('tr',31,'tenis','product-categories'),('fr',31,'tennis','product-categories'),('id',32,'gimnasium','product-categories'),('ar',32,'nady-ryady','product-categories'),('vi',32,'phong-tap-the-duc','product-categories'),('fr',32,'salle-de-sport','product-categories'),('tr',32,'spor-salonu','product-categories'),('id',33,'berlari','product-categories'),('vi',33,'dang-chay','product-categories'),('fr',33,'en-cours-dexecution','product-categories'),('ar',33,'gry','product-categories'),('tr',33,'kosma','product-categories'),('vi',34,'ao-khoac','product-categories'),('tr',34,'dis-giyim','product-categories'),('ar',34,'mlabs-khargy','product-categories'),('id',34,'pakaian-luar','product-categories'),('fr',34,'vetements-dexterieur','product-categories'),('vi',35,'ao-so-mi','product-categories'),('id',35,'atasan-kemeja','product-categories'),('ar',35,'blayz-okmsan','product-categories'),('fr',35,'hauts-et-chemises','product-categories'),('tr',35,'ustler-ve-gomlekler','product-categories'),('fr',36,'bas','product-categories'),('id',36,'bawahan','product-categories'),('tr',36,'dipler','product-categories'),('ar',36,'kyaaan','product-categories'),('vi',36,'quan-vay','product-categories'),('vi',37,'dam','product-categories'),('tr',37,'elbiseler','product-categories'),('ar',37,'fsatyn','product-categories'),('id',37,'gaun','product-categories'),('fr',37,'robes','product-categories'),('ar',38,'alahthy','product-categories'),('id',38,'alas-kaki','product-categories'),('tr',38,'ayakkabi','product-categories'),('fr',38,'chaussure','product-categories'),('vi',38,'giay-dep','product-categories'),('fr',39,'accessoires','product-categories'),('id',39,'aksesoris','product-categories'),('tr',39,'aksesuarlar','product-categories'),('ar',39,'mkmlat','product-categories'),('vi',39,'phu-kien','product-categories'),('ar',40,'altgmyl-omsthdrat-altgmyl','product-categories'),('fr',40,'beaute-et-cosmetiques','product-categories'),('tr',40,'guzellik-ve-kozmetik','product-categories'),('id',40,'kecantikan-kosmetik','product-categories'),('vi',40,'lam-dep-my-pham','product-categories'),('ar',41,'alktronyat','product-categories'),('vi',41,'dien-tu','product-categories'),('fr',41,'electronique','product-categories'),('id',41,'elektronik','product-categories'),('tr',41,'elektronik','product-categories'),('ar',42,'almnzl-oalathath','product-categories'),('tr',42,'ev-ve-mobilya','product-categories'),('fr',42,'maison-et-meubles','product-categories'),('vi',42,'nha-noi-that','product-categories'),('id',42,'rumah-perabotan','product-categories'),('ar',43,'alryad-oallyak-albdny','product-categories'),('id',43,'olahraga-kebugaran','product-categories'),('tr',43,'spor-ve-fitness','product-categories'),('fr',43,'sports-et-remise-en-forme','product-categories'),('vi',43,'the-thao-the-hinh','product-categories'),('ar',44,'almgohrat-oalsaaaat','product-categories'),('fr',44,'bijoux-et-montres','product-categories'),('id',44,'perhiasan-jam-tangan','product-categories'),('tr',44,'taki-ve-saatler','product-categories'),('vi',44,'trang-suc-dong-ho','product-categories'),('vi',45,'ao-wrap-lyocell','products'),('fr',45,'haut-cache-coeur-en-lyocell','products'),('tr',45,'lyocell-anvelop-ust','products'),('id',45,'lyocell-bungkus-bagian-atas','products'),('ar',45,'tbk-aaloy-mlfof-mn-allayosl','products'),('vi',46,'ao-khoac-len-dang-midi','products'),('ar',46,'maatf-sof-mydy','products'),('fr',46,'manteau-mi-long-en-laine','products'),('id',46,'mantel-midi-wol','products'),('tr',46,'yun-midi-kaban','products'),('vi',47,'ao-cotton-cai-nut','products'),('id',47,'atasan-berbahan-katun-kancing','products'),('tr',47,'dugmeli-pamuklu-ust','products'),('ar',47,'tob-mn-alktn-bazrar','products'),('fr',47,'top-en-coton-a-boutons','products'),('vi',48,'ao-so-mi-linen-om-vua','products'),('fr',48,'chemise-slim-en-lin','products'),('id',48,'kemeja-linen-slimfit','products'),('tr',48,'keten-dar-kesim-gomlek','products'),('ar',48,'kmys-mn-alktan-bks-dyk','products'),('vi',49,'ao-khoac-len-co-cao-dang-midi','products'),('ar',49,'maatf-sof-mydy-byak-aaaly','products'),('fr',49,'manteau-midi-en-laine-a-col-montant','products'),('id',49,'mantel-wol-midi-leher-tinggi','products'),('tr',49,'yuksek-yaka-midi-yun-kaban','products'),('id',50,'kacamata-hitam-bingkai-metalik-persegi','products'),('tr',50,'kare-metalik-cerceveli-gunes-gozlugu','products'),('vi',50,'kinh-ram-gong-kim-loai-vuong','products'),('fr',50,'lunettes-de-soleil-a-monture-metallique-carree','products'),('ar',50,'nthar-shmsy-batar-maadny-mrbaa','products'),('tr',51,'dikisli-deri-alisveris-cantasi','products'),('ar',51,'hkyb-tsok-gldy-maa-khyat','products'),('fr',51,'sac-cabas-en-cuir-avec-surpiqures','products'),('id',51,'tas-pembelanja-kulit-dengan-jahitan','products'),('vi',51,'tui-shopper-da-khau-noi','products'),('tr',52,'dikisli-deri-alisveris-cantasi','products'),('ar',52,'hkyb-tsok-gldy-maa-khyat','products'),('fr',52,'sac-cabas-en-cuir-avec-surpiqures','products'),('id',52,'tas-pembelanja-kulit-dengan-jahitan','products'),('vi',52,'tui-shopper-da-khau-noi','products'),('ar',53,'hkyb-ktf-bydaoy','products'),('tr',53,'oval-omuz-cantasi','products'),('fr',53,'sac-bandouliere-ovale','products'),('id',53,'tas-bahu-berbentuk-oval','products'),('vi',53,'tui-deo-vai-oval','products'),('ar',54,'hkyb-ktf-bydaoy','products'),('tr',54,'oval-omuz-cantasi','products'),('fr',54,'sac-bandouliere-ovale','products'),('id',54,'tas-bahu-berbentuk-oval','products'),('vi',54,'tui-deo-vai-oval','products'),('ar',55,'hkyb-ktf-bydaoy','products'),('tr',55,'oval-omuz-cantasi','products'),('fr',55,'sac-bandouliere-ovale','products'),('id',55,'tas-bahu-berbentuk-oval','products'),('vi',55,'tui-deo-vai-oval','products'),('vi',56,'ao-so-mi-cai-cuc-co-lon-bang-vai-poplin','products'),('tr',56,'buyuk-beden-poplin-dugmeli-gomlek','products'),('fr',56,'chemise-boutonnee-oversize-en-popeline','products'),('id',56,'kemeja-berkancing-poplin-berukuran-besar','products'),('ar',56,'kmys-boblyn-kbyr-alhgm-bazrar','products'),('ar',57,'aaal-kamy-alrsn-mdlaa','products'),('vi',57,'ao-cami-day-co-gan','products'),('id',57,'atasan-cami-halter-berusuk','products'),('fr',57,'caraco-dos-nu-cotele','products'),('tr',57,'fitilli-askili-askili-ust','products'),('vi',58,'ao-len-det-kim-pha-tron-len','products'),('fr',58,'pull-raccourci-en-maille-de-laine-melangee','products'),('ar',58,'str-ksyr-mnsog-mn-mzyg-alsof','products'),('id',58,'sweater-rajut-berbahan-campuran-wol','products'),('tr',58,'yun-karisimli-kisa-orgu-kazak','products'),('vi',59,'ao-khoac-ngoai-bang-vai-lanh-da-giat','products'),('id',59,'kemeja-linen-yang-sudah-dicuci-dengan-pakaian','products'),('ar',59,'kmys-mn-alktan-mghsol-balmlabs','products'),('fr',59,'surchemise-en-lin-lave-en-piece','products'),('tr',59,'yikanmis-keten-ince-gomlek','products'),('vi',60,'ao-khoac-len-co-pheu','products'),('tr',60,'huni-yakali-yun-ceket','products'),('id',60,'jaket-wol-leher-corong','products'),('ar',60,'str-mn-alsof-bfth-rkb-aal-shkl-kmaa','products'),('fr',60,'veste-en-laine-a-col-cheminee','products'),('vi',61,'ao-nguc-the-thao-mien-phi','products'),('id',61,'latih-bra-olahraga-gratis','products'),('fr',61,'soutien-gorge-de-sport-sans-entrainement','products'),('ar',61,'tdryb-hmal-sdr-ryady-mgany','products'),('tr',61,'trensiz-spor-sutyeni','products'),('id',62,'celana-pendek-pinggang-tinggi-nkd','products'),('ar',62,'nkd-short-aaaly-alkhsr','products'),('tr',62,'nkd-yuksek-bel-sort','products'),('vi',62,'quan-short-cap-cao-nkd','products'),('fr',62,'short-taille-haute-nkd','products'),('fr',67,'a-propos',''),('ar',67,'aan',''),('vi',67,'gioi-thieu',''),('tr',67,'hakkinda',''),('id',67,'tentang',''),('ar',68,'atsal',''),('fr',68,'contact',''),('id',68,'kontak',''),('vi',68,'lien-he',''),('tr',68,'temas-etmek',''),('vi',69,'cau-hoi-thuong-gap',''),('ar',69,'faq',''),('fr',69,'faq',''),('id',69,'faq',''),('tr',69,'faq',''),('vi',70,'chinh-sach-bao-mat',''),('tr',70,'gizlilik-politikasi',''),('id',70,'kebijakan-privasi',''),('fr',70,'politique-de-confidentialite',''),('ar',70,'syas-alkhsosy',''),('ar',71,'alshrot-oalahkam',''),('fr',71,'conditions-generales',''),('vi',71,'dieu-khoan-dieu-kien',''),('tr',71,'sartlar-ve-kosullar',''),('id',71,'syarat-ketentuan',''),('ar',72,'alaaoayd-oalmbalgh-almstrd',''),('vi',72,'doi-tra-hoan-tien',''),('tr',72,'iade-ve-para-iadeleri',''),('id',72,'pengembalian-pengembalian-dana',''),('fr',72,'retours-et-remboursements',''),('fr',73,'expedition',''),('tr',73,'nakliye',''),('id',73,'pengiriman',''),('ar',73,'shhn',''),('vi',73,'van-chuyen',''),('vi',74,'he-thong-cua-hang',''),('tr',74,'magazalarimiz',''),('ar',74,'mtagrna',''),('fr',74,'nos-magasins',''),('id',74,'toko-kami',''),('ar',75,'blog',''),('fr',75,'blog',''),('id',75,'blog',''),('tr',75,'blog',''),('vi',75,'tap-chi',''),('fr',76,'carrieres',''),('id',76,'karir',''),('tr',76,'kariyer',''),('ar',76,'othayf',''),('vi',76,'tuyen-dung',''),('ar',77,'sustainability',''),('fr',77,'sustainability',''),('id',77,'sustainability',''),('tr',77,'sustainability',''),('vi',77,'sustainability',''),('ar',78,'alsfh-alryysy',''),('tr',78,'ana-sayfa',''),('id',78,'beranda',''),('fr',78,'page-daccueil',''),('vi',78,'trang-chu','');
+/*!40000 ALTER TABLE `slugs_translations` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `social_logins`
+--
+
+DROP TABLE IF EXISTS `social_logins`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `social_logins` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `user_type` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `user_id` bigint unsigned NOT NULL,
+  `provider` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `provider_id` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `token` text COLLATE utf8mb4_unicode_ci,
+  `refresh_token` text COLLATE utf8mb4_unicode_ci,
+  `token_expires_at` timestamp NULL DEFAULT NULL,
+  `provider_data` json DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `social_logins_provider_provider_id_unique` (`provider`,`provider_id`),
+  KEY `social_logins_user_type_user_id_index` (`user_type`,`user_id`),
+  KEY `social_logins_user_id_user_type_index` (`user_id`,`user_type`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `social_logins`
+--
+
+LOCK TABLES `social_logins` WRITE;
+/*!40000 ALTER TABLE `social_logins` DISABLE KEYS */;
+/*!40000 ALTER TABLE `social_logins` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `states`
+--
+
+DROP TABLE IF EXISTS `states`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `states` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(120) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `slug` varchar(120) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `abbreviation` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `country_id` bigint unsigned DEFAULT NULL,
+  `order` tinyint NOT NULL DEFAULT '0',
+  `image` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `is_default` tinyint unsigned NOT NULL DEFAULT '0',
+  `status` varchar(60) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'published',
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `states_slug_unique` (`slug`),
+  KEY `idx_states_name` (`name`),
+  KEY `idx_states_status` (`status`),
+  KEY `idx_states_country_id` (`country_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `states`
+--
+
+LOCK TABLES `states` WRITE;
+/*!40000 ALTER TABLE `states` DISABLE KEYS */;
+/*!40000 ALTER TABLE `states` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `states_translations`
+--
+
+DROP TABLE IF EXISTS `states_translations`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `states_translations` (
+  `lang_code` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `states_id` bigint unsigned NOT NULL,
+  `name` varchar(120) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `slug` varchar(120) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `abbreviation` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`lang_code`,`states_id`),
+  KEY `idx_states_trans_state_lang` (`states_id`,`lang_code`),
+  KEY `idx_states_trans_name` (`name`),
+  KEY `idx_states_trans_states_id` (`states_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `states_translations`
+--
+
+LOCK TABLES `states_translations` WRITE;
+/*!40000 ALTER TABLE `states_translations` DISABLE KEYS */;
+/*!40000 ALTER TABLE `states_translations` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tags`
+--
+
+DROP TABLE IF EXISTS `tags`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `tags` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(120) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `author_id` bigint unsigned DEFAULT NULL,
+  `author_type` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `description` text COLLATE utf8mb4_unicode_ci,
+  `status` varchar(60) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'published',
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tags`
+--
+
+LOCK TABLES `tags` WRITE;
+/*!40000 ALTER TABLE `tags` DISABLE KEYS */;
+INSERT INTO `tags` VALUES (1,'Trends',1,'Botble\\ACL\\Models\\User','Articles tagged with Trends.','published','2026-05-28 18:57:44','2026-05-28 18:57:44'),(2,'Styling Tips',1,'Botble\\ACL\\Models\\User','Articles tagged with Styling Tips.','published','2026-05-28 18:57:44','2026-05-28 18:57:44'),(3,'Sustainable',1,'Botble\\ACL\\Models\\User','Articles tagged with Sustainable.','published','2026-05-28 18:57:45','2026-05-28 18:57:45'),(4,'New Arrivals',1,'Botble\\ACL\\Models\\User','Articles tagged with New Arrivals.','published','2026-05-28 18:57:45','2026-05-28 18:57:45'),(5,'Limited Edition',1,'Botble\\ACL\\Models\\User','Articles tagged with Limited Edition.','published','2026-05-28 18:57:45','2026-05-28 18:57:45'),(6,'Behind the Scenes',1,'Botble\\ACL\\Models\\User','Articles tagged with Behind the Scenes.','published','2026-05-28 18:57:45','2026-05-28 18:57:45'),(7,'Buyer Guide',1,'Botble\\ACL\\Models\\User','Articles tagged with Buyer Guide.','published','2026-05-28 18:57:45','2026-05-28 18:57:45'),(8,'Care Tips',1,'Botble\\ACL\\Models\\User','Articles tagged with Care Tips.','published','2026-05-28 18:57:45','2026-05-28 18:57:45'),(9,'Capsule Wardrobe',1,'Botble\\ACL\\Models\\User','Articles tagged with Capsule Wardrobe.','published','2026-05-28 18:57:45','2026-05-28 18:57:45'),(10,'Material Stories',1,'Botble\\ACL\\Models\\User','Articles tagged with Material Stories.','published','2026-05-28 18:57:45','2026-05-28 18:57:45'),(11,'Holiday Gifting',1,'Botble\\ACL\\Models\\User','Articles tagged with Holiday Gifting.','published','2026-05-28 18:57:45','2026-05-28 18:57:45'),(12,'Editor Picks',1,'Botble\\ACL\\Models\\User','Articles tagged with Editor Picks.','published','2026-05-28 18:57:45','2026-05-28 18:57:45');
+/*!40000 ALTER TABLE `tags` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tags_translations`
+--
+
+DROP TABLE IF EXISTS `tags_translations`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `tags_translations` (
+  `lang_code` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `tags_id` bigint unsigned NOT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `description` text COLLATE utf8mb4_unicode_ci,
+  PRIMARY KEY (`lang_code`,`tags_id`),
+  KEY `idx_tags_trans_tags_id` (`tags_id`),
+  KEY `idx_tags_trans_tag_lang` (`tags_id`,`lang_code`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tags_translations`
+--
+
+LOCK TABLES `tags_translations` WRITE;
+/*!40000 ALTER TABLE `tags_translations` DISABLE KEYS */;
+INSERT INTO `tags_translations` VALUES ('ar',1,'الاتجاهات','المقالات الموسومة مع الاتجاهات.'),('ar',2,'نصائح التصميم','المقالات الموسومة: نصائح لتنسيق الملابس.'),('ar',3,'مستمر','المشاركات الموسومة الاستدامة.'),('ar',4,'الوافدون الجدد','المشاركات الموسومة الوافدون الجدد.'),('ar',5,'طبعة محدودة','المشاركات الموسومة طبعة محدودة.'),('ar',6,'خلف الكواليس','المشاركات الموسومة خلف الكواليس.'),('ar',7,'دليل المشتري','المقالات الموسومة دليل التسوق.'),('ar',8,'نصائح العناية','المقالات الموسومة بنصائح التخزين.'),('ar',9,'خزانة كبسولة','المقالات الموسومة خزانة الكبسولة.'),('ar',10,'قصص مادية','المقالات الموسومة قصص مادية.'),('ar',11,'هدايا العيد','المشاركات الموسومة هدايا العيد.'),('ar',12,'اختيارات المحرر','المشاركات الموسومة اختيار المحرر.'),('fr',1,'Tendances','Articles taggés avec Tendances.'),('fr',2,'Conseils de style','Articles taggés : Conseils pour coordonner les tenues.'),('fr',3,'Durable','Articles étiquetés Durabilité.'),('fr',4,'Nouveautés','Articles tagués Nouveautés.'),('fr',5,'Édition limitée','Articles tagués Édition Limitée.'),('fr',6,'Dans les coulisses','Articles marqués dans les coulisses.'),('fr',7,'Guide de l\'acheteur','Articles tagués Guide d\'achat.'),('fr',8,'Conseils d\'entretien','Articles taggés avec Conseils de stockage.'),('fr',9,'Armoire Capsule','Articles taggés Armoire capsule.'),('fr',10,'Histoires matérielles','Articles tagués Histoires matérielles.'),('fr',11,'Cadeaux de vacances','Articles tagués Cadeaux de Noël.'),('fr',12,'Choix de l\'éditeur','Articles marqués Choix de l\'éditeur.'),('id',1,'Tren','Artikel yang diberi tag Tren.'),('id',2,'Tip Penataan Gaya','Artikel yang diberi tag: Tips mengoordinasikan pakaian.'),('id',3,'Berkelanjutan','Postingan dengan tag Keberlanjutan.'),('id',4,'Pendatang Baru','Postingan dengan tag Pendatang baru.'),('id',5,'Edisi Terbatas','Postingan dengan tag Edisi Terbatas.'),('id',6,'Di belakang layar','Postingan dengan tag Di balik layar.'),('id',7,'Panduan Pembeli','Artikel dengan tag Panduan belanja.'),('id',8,'Tip Perawatan','Artikel yang diberi tag Tips Penyimpanan.'),('id',9,'Lemari Kapsul','Artikel dengan tag Lemari pakaian kapsul.'),('id',10,'Cerita Materi','Artikel dengan tag Cerita material.'),('id',11,'Hadiah Liburan','Postingan dengan tag hadiah liburan.'),('id',12,'Pilihan Editor','Postingan dengan tag Pilihan Editor.'),('tr',1,'Trends','Trendler ile etiketlenen makaleler.'),('tr',2,'Styling Tips','Etiketlenen makaleler: Kıyafetleri koordine etmek için ipuçları.'),('tr',3,'Sustainable','Sürdürülebilirlik etiketli gönderiler.'),('tr',4,'New Arrivals','Yeni gelenler etiketli gönderiler.'),('tr',5,'Limited Edition','Sınırlı Üretim etiketli gönderiler.'),('tr',6,'Behind the Scenes','Kamera Arkası etiketli gönderiler'),('tr',7,'Buyer Guide','Alışveriş rehberi etiketli makaleler.'),('tr',8,'Care Tips','Depolama İpuçları ile etiketlenen makaleler.'),('tr',9,'Capsule Wardrobe','Kapsül gardırop etiketli makaleler.'),('tr',10,'Material Stories','Malzeme hikayeleri etiketli makaleler.'),('tr',11,'Holiday Gifting','Tatil hediyeleri etiketli gönderiler.'),('tr',12,'Editor Picks','Editörün Seçimi etiketli yazılar.'),('vi',1,'Xu hướng','Bài viết gắn thẻ Xu hướng.'),('vi',2,'Mẹo phối đồ','Bài viết gắn thẻ Mẹo phối đồ.'),('vi',3,'Bền vững','Bài viết gắn thẻ Bền vững.'),('vi',4,'Hàng mới về','Bài viết gắn thẻ Hàng mới về.'),('vi',5,'Phiên bản giới hạn','Bài viết gắn thẻ Phiên bản giới hạn.'),('vi',6,'Hậu trường','Bài viết gắn thẻ Hậu trường.'),('vi',7,'Cẩm nang mua sắm','Bài viết gắn thẻ Cẩm nang mua sắm.'),('vi',8,'Mẹo bảo quản','Bài viết gắn thẻ Mẹo bảo quản.'),('vi',9,'Tủ đồ capsule','Bài viết gắn thẻ Tủ đồ capsule.'),('vi',10,'Chuyện vật liệu','Bài viết gắn thẻ Chuyện vật liệu.'),('vi',11,'Quà tặng dịp lễ','Bài viết gắn thẻ Quà tặng dịp lễ.'),('vi',12,'Biên tập viên chọn','Bài viết gắn thẻ Biên tập viên chọn.');
+/*!40000 ALTER TABLE `tags_translations` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `testimonials`
+--
+
+DROP TABLE IF EXISTS `testimonials`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `testimonials` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(120) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `content` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `image` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `company` varchar(120) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `status` varchar(60) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'published',
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `testimonials`
+--
+
+LOCK TABLES `testimonials` WRITE;
+/*!40000 ALTER TABLE `testimonials` DISABLE KEYS */;
+INSERT INTO `testimonials` VALUES (1,'Olivia Carter','The walnut side table has lived in my apartment for three years and looks better than the day it arrived. The construction quality is genuinely heirloom level.','testimonials/avatar-1.jpg','Editor — Modern Living Magazine','published','2026-05-28 18:57:45','2026-05-28 18:57:45'),(2,'James Whitfield','I have ordered three pairs of the linen trousers across two seasons. The fit is consistent, the fabric breathes beautifully, and the customer service is unmatched.','testimonials/avatar-2.jpg','Founder — Fieldnotes Studio','published','2026-05-28 18:57:45','2026-05-28 18:57:45'),(3,'Priya Khurana','Amerce is my first stop for thoughtful gifting. The packaging makes every order feel like an occasion and the curation never disappoints.','testimonials/avatar-3.jpg','Lead Designer — Studio Eight','published','2026-05-28 18:57:45','2026-05-28 18:57:45'),(4,'Daniel Reyes','Quick shipping, immaculate packaging, and the headphones are easily the best I have owned. Their support team helped me pair them with my mixer in under five minutes.','testimonials/avatar-4.jpg','Photographer','published','2026-05-28 18:57:45','2026-05-28 18:57:45'),(5,'Hannah Lindstrom','The activewear pieces hold up to every class without losing shape. I have washed them seventy times and the fabric still looks brand new.','testimonials/avatar-5.jpg','Yoga Instructor','published','2026-05-28 18:57:45','2026-05-28 18:57:45'),(6,'Kenji Sato','I shipped a coffee table to Tokyo and it arrived perfectly packed with full insurance documentation. International logistics handled flawlessly.','testimonials/avatar-6.jpg','Architect — Tokyo','published','2026-05-28 18:57:45','2026-05-28 18:57:45');
+/*!40000 ALTER TABLE `testimonials` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `testimonials_translations`
+--
+
+DROP TABLE IF EXISTS `testimonials_translations`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `testimonials_translations` (
+  `lang_code` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `testimonials_id` bigint unsigned NOT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `content` text COLLATE utf8mb4_unicode_ci,
+  `company` varchar(120) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`lang_code`,`testimonials_id`),
+  KEY `idx_testimonials_trans_testimonials_id` (`testimonials_id`),
+  KEY `idx_testimonials_trans_testimonial_lang` (`testimonials_id`,`lang_code`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `testimonials_translations`
+--
+
+LOCK TABLES `testimonials_translations` WRITE;
+/*!40000 ALTER TABLE `testimonials_translations` DISABLE KEYS */;
+INSERT INTO `testimonials_translations` VALUES ('ar',1,'أوليفيا كارتر','الطاولة الجانبية المصنوعة من خشب الجوز موجودة في شقتي منذ ثلاث سنوات وهي أجمل من اليوم الذي حصلت عليها فيه. جودة الصناعة اليدوية هي حقًا على مستوى الإرث.','محرر – مجلة الحياة الحديثة'),('ar',2,'جيمس ويتفيلد','لقد طلبت ثلاثة أزواج من السراويل الكتانية خلال موسمين. مقاس عادي، نسيج رائع مسامي وخدمة عملاء لا مثيل لها.','مؤسس — استوديو Fieldnotes'),('ar',3,'بريا كورانا','Amerce هي وجهتي المفضلة للحصول على الهدايا الرائعة. تجعل العبوة كل طلب يبدو وكأنه مناسبة خاصة ولا يخيب الاختيار أبدًا.','قائد فريق التصميم – ستوديو ثمانية'),('ar',4,'دانييل رييس','الشحن السريع والتعبئة المثالية وسماعات الرأس هي بالتأكيد أفضل ما امتلكته على الإطلاق. ساعدني فريق الدعم في إقرانه بالخلاط في أقل من خمس دقائق.','مصور'),('ar',5,'هانا ليندستروم','يمكن لملابس التمرين أن تصمد أمام كل فئة دون أن تفقد شكلها. لقد غسلته سبعين مرة وما زال القماش كأنه جديد.','مدرب اليوغا'),('ar',6,'كينجي ساتو','لقد أرسلت طاولة قهوة إلى طوكيو ووصلت مغلفة بشكل مثالي ومؤمنة بالكامل. تم التعامل مع الشحن الدولي بشكل مثالي.','مهندس معماري – طوكيو'),('fr',1,'Olivia Carter','La table d\'appoint en noyer est dans mon appartement depuis trois ans et est encore plus belle que le jour où je l\'ai achetée. La qualité de l\'artisanat est véritablement au niveau de l\'héritage.','Rédacteur — Magazine Vie Moderne'),('fr',2,'James Whitfield','J\'ai commandé trois pantalons en lin sur deux saisons. Coupe régulière, tissu respirant et service client inégalé.','Fondateur — Studio Fieldnotes'),('fr',3,'Priya Khurana','Amerce est ma destination incontournable pour des cadeaux exquis. L\'emballage donne à chaque commande l\'impression d\'être une occasion spéciale et la sélection ne déçoit jamais.','Chef d\'équipe de conception — Studio Eight'),('fr',4,'Daniel Reyes','Expédition rapide, emballage parfait et les écouteurs sont définitivement les meilleurs que j\'ai jamais possédés. L\'équipe d\'assistance m\'a aidé à l\'associer au mixeur en moins de cinq minutes.','Photographe'),('fr',5,'Hannah Lindström','Les vêtements de sport peuvent résister à tous les cours sans perdre leur forme. Je l\'ai lavé soixante-dix fois et le tissu est toujours comme neuf.','Instructeur de yoga'),('fr',6,'Kenji Sato','J\'ai envoyé une table basse à Tokyo et elle est arrivée parfaitement emballée et entièrement assurée. Expédition internationale parfaitement gérée.','Architecte — Tokyo'),('id',1,'Olivia Carter','Meja samping kenari telah ada di apartemen saya selama tiga tahun dan bahkan lebih indah daripada saat saya mendapatkannya. Kualitas pengerjaannya benar-benar berada pada level pusaka.','Editor - Majalah Hidup Modern'),('id',2,'James Whitfield','Saya memesan tiga pasang celana linen selama dua musim. Regular fit, kain bernapas yang bagus, dan layanan pelanggan yang tak tertandingi.','Pendiri — Studio Catatan Lapangan'),('id',3,'Priya Khurana','Amerce adalah tujuan utama saya untuk mendapatkan hadiah istimewa. Kemasannya membuat setiap pesanan terasa seperti acara spesial dan pilihannya tidak pernah mengecewakan.','Pemimpin tim desain — Studio Delapan'),('id',4,'Daniel Reyes','Pengiriman cepat, pengemasan sempurna, dan headphone ini jelas merupakan yang terbaik yang pernah saya miliki. Tim dukungan membantu saya memasangkannya dengan mixer dalam waktu kurang dari lima menit.','Fotografer'),('id',5,'Hannah Lindstrom','Pakaian olahraga dapat bertahan di setiap kelas tanpa kehilangan bentuknya. Saya sudah mencucinya tujuh puluh kali dan kainnya masih seperti baru.','Instruktur Yoga'),('id',6,'Kenji Sato','Saya mengirim meja kopi ke Tokyo dan tiba dengan kemasan sempurna dan diasuransikan sepenuhnya. Pengiriman internasional ditangani dengan sempurna.','Arsitek — Tokyo'),('tr',1,'Olivia Carter','Ceviz sehpa üç yıldır dairemde duruyor ve aldığım günden daha da güzel. İşçiliğin kalitesi gerçekten yadigâr düzeyindedir.','Editör — Modern Yaşam Dergisi'),('tr',2,'James Whitfield','İki sezon boyunca üç çift keten pantolon sipariş ettim. Normal kesim, mükemmel nefes alabilen kumaş ve eşsiz müşteri hizmetleri.','Kurucu — Fieldnotes Studio'),('tr',3,'Priya Khurana','Amerce, enfes hediyeler için gideceğim yer. Ambalaj, her siparişin özel bir durum gibi hissettirmesini sağlar ve seçim asla hayal kırıklığına uğratmaz.','Tasarım ekibi lideri — Studio Sekiz'),('tr',4,'Daniel Reyes','Hızlı kargo, mükemmel paketleme ve kulaklıklar kesinlikle sahip olduklarımın en iyisi. Destek ekibi beş dakikadan kısa bir sürede cihazı mikserle eşleştirmeme yardımcı oldu.','Fotoğrafçı'),('tr',5,'Hannah Lindstrom','Egzersiz kıyafetleri formunu kaybetmeden her derse dayanabilir. Yetmiş kere yıkadım, kumaşı hâlâ yeni gibi.','Yoga eğitmeni'),('tr',6,'Kenji Sato','Tokyo\'ya bir sehpa gönderdim ve mükemmel bir şekilde paketlenmiş ve tamamen sigortalı olarak elime ulaştı. Uluslararası nakliye mükemmel bir şekilde ele alındı.','Mimar – Tokyo'),('vi',1,'Olivia Carter','Chiếc bàn phụ gỗ óc chó đã ở trong căn hộ của tôi ba năm và còn đẹp hơn cả ngày mới nhận. Chất lượng chế tác thực sự ở đẳng cấp gia truyền.','Biên tập viên — Tạp chí Modern Living'),('vi',2,'James Whitfield','Tôi đã đặt ba chiếc quần linen qua hai mùa. Form đều đặn, vải thoáng mát tuyệt vời và dịch vụ khách hàng không nơi nào sánh được.','Người sáng lập — Fieldnotes Studio'),('vi',3,'Priya Khurana','Amerce là điểm đến đầu tiên của tôi cho những món quà tinh tế. Cách đóng gói khiến mỗi đơn hàng cảm giác như một dịp đặc biệt và sự tuyển chọn không bao giờ làm tôi thất vọng.','Trưởng nhóm thiết kế — Studio Eight'),('vi',4,'Daniel Reyes','Vận chuyển nhanh, đóng gói hoàn hảo và đôi tai nghe chắc chắn là tốt nhất tôi từng sở hữu. Đội hỗ trợ giúp tôi ghép nối với mixer trong chưa đến năm phút.','Nhiếp ảnh gia'),('vi',5,'Hannah Lindstrom','Đồ tập chịu được mọi buổi học mà không mất form. Tôi đã giặt bảy mươi lần và vải vẫn như mới.','Huấn luyện viên Yoga'),('vi',6,'Kenji Sato','Tôi gửi một chiếc bàn cà phê đến Tokyo và nó đến nơi được đóng gói hoàn hảo cùng đầy đủ giấy tờ bảo hiểm. Vận chuyển quốc tế xử lý hoàn hảo.','Kiến trúc sư — Tokyo');
+/*!40000 ALTER TABLE `testimonials_translations` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `user_meta`
+--
+
+DROP TABLE IF EXISTS `user_meta`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `user_meta` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `key` varchar(120) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `value` text COLLATE utf8mb4_unicode_ci,
+  `user_id` bigint unsigned NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `user_meta_user_id_index` (`user_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `user_meta`
+--
+
+LOCK TABLES `user_meta` WRITE;
+/*!40000 ALTER TABLE `user_meta` DISABLE KEYS */;
+/*!40000 ALTER TABLE `user_meta` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `user_settings`
+--
+
+DROP TABLE IF EXISTS `user_settings`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `user_settings` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `user_type` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `user_id` bigint unsigned NOT NULL,
+  `key` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `value` json NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `user_settings_user_type_user_id_key_unique` (`user_type`,`user_id`,`key`),
+  KEY `user_settings_user_type_user_id_index` (`user_type`,`user_id`),
+  KEY `user_settings_key_index` (`key`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `user_settings`
+--
+
+LOCK TABLES `user_settings` WRITE;
+/*!40000 ALTER TABLE `user_settings` DISABLE KEYS */;
+/*!40000 ALTER TABLE `user_settings` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `users`
+--
+
+DROP TABLE IF EXISTS `users`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `users` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `email` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `phone` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `email_verified_at` timestamp NULL DEFAULT NULL,
+  `password` varchar(120) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `remember_token` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `first_name` varchar(120) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `last_name` varchar(120) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `username` varchar(60) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `avatar_id` bigint unsigned DEFAULT NULL,
+  `super_user` tinyint(1) NOT NULL DEFAULT '0',
+  `manage_supers` tinyint(1) NOT NULL DEFAULT '0',
+  `permissions` text COLLATE utf8mb4_unicode_ci,
+  `last_login` timestamp NULL DEFAULT NULL,
+  `sessions_invalidated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `users_email_unique` (`email`),
+  UNIQUE KEY `users_username_unique` (`username`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `users`
+--
+
+LOCK TABLES `users` WRITE;
+/*!40000 ALTER TABLE `users` DISABLE KEYS */;
+INSERT INTO `users` VALUES (1,'admin@company.com',NULL,NULL,'$2y$12$bFAJqyb1A6ShlJdGtGAuJOgONNOC9WUC75OU9L6X5YBR7Xev4eyry',NULL,'2026-05-28 18:57:44','2026-05-28 18:57:44','System','Admin','admin',NULL,1,1,NULL,NULL,NULL);
+/*!40000 ALTER TABLE `users` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `widgets`
+--
+
+DROP TABLE IF EXISTS `widgets`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `widgets` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `widget_id` varchar(120) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `sidebar_id` varchar(120) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `theme` varchar(120) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `position` tinyint unsigned NOT NULL DEFAULT '0',
+  `data` text COLLATE utf8mb4_unicode_ci,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `widgets_unique_index` (`theme`,`sidebar_id`,`widget_id`,`position`)
+) ENGINE=InnoDB AUTO_INCREMENT=55 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `widgets`
+--
+
+LOCK TABLES `widgets` WRITE;
+/*!40000 ALTER TABLE `widgets` DISABLE KEYS */;
+INSERT INTO `widgets` VALUES (1,'Theme\\Amerce\\Widgets\\FooterMenuWidget','footer_company_sidebar','amerce',0,'{\"name\":\"Company\",\"menu_id\":\"footer-company\"}','2026-05-28 18:58:03','2026-05-28 18:58:03'),(2,'Theme\\Amerce\\Widgets\\FooterMenuWidget','footer_customer_sidebar','amerce',0,'{\"name\":\"Customer\",\"menu_id\":\"footer-help\"}','2026-05-28 18:58:03','2026-05-28 18:58:03'),(3,'Theme\\Amerce\\Widgets\\BlogAboutMeWidget','blog_sidebar','amerce',0,'{\"name\":\"Amerce Editorial\",\"title\":\"About Me\",\"image\":null,\"bio\":\"Style notes, product spotlights, and how we curate the catalog \\u2014 written by the Amerce team.\",\"social_links\":[{\"platform\":\"facebook\",\"url\":\"https:\\/\\/facebook.com\"},{\"platform\":\"instagram\",\"url\":\"https:\\/\\/instagram.com\"},{\"platform\":\"tiktok\",\"url\":\"https:\\/\\/tiktok.com\"}]}','2026-05-28 18:58:03','2026-05-28 18:58:03'),(4,'Theme\\Amerce\\Widgets\\BlogSearchWidget','blog_sidebar','amerce',1,'{\"name\":\"Search\",\"placeholder\":\"Search...\"}','2026-05-28 18:58:03','2026-05-28 18:58:03'),(5,'Theme\\Amerce\\Widgets\\BlogCategoriesWidget','blog_sidebar','amerce',2,'{\"name\":\"Categories\",\"title\":\"Categories\",\"display_posts_count\":\"yes\",\"category_ids\":[]}','2026-05-28 18:58:03','2026-05-28 18:58:03'),(6,'Theme\\Amerce\\Widgets\\BlogPostsWidget','blog_sidebar','amerce',3,'{\"name\":\"Recent Posts\",\"title\":\"Recent Posts\",\"type\":\"recent\",\"number_display\":4}','2026-05-28 18:58:03','2026-05-28 18:58:03'),(7,'Theme\\Amerce\\Widgets\\BlogTagsWidget','blog_sidebar','amerce',4,'{\"name\":\"Tags\",\"title\":\"Popular Tags\",\"number_display\":11}','2026-05-28 18:58:03','2026-05-28 18:58:03'),(8,'Theme\\Amerce\\Widgets\\ProductDeliveryInfoWidget','product_details_sidebar','amerce',0,'{\"name\":\"Product Delivery & Return\",\"estimated_intl\":\"12-26 Days\",\"estimated_intl_label\":\"International\",\"estimated_local\":\"3-6 Days\",\"estimated_local_label\":\"United States\",\"return_within\":\"45 Days\",\"return_text\":\"of purchase. Duties & taxes are non-refundable.\"}','2026-05-28 18:58:03','2026-05-28 18:58:03'),(9,'Theme\\Amerce\\Widgets\\PaymentMethodsWidget','product_details_sidebar','amerce',1,'{\"name\":\"Payment Methods\",\"title\":\"Guaranteed Safe Checkout:\",\"images\":[]}','2026-05-28 18:58:03','2026-05-28 18:58:03'),(10,'Theme\\Amerce\\Widgets\\FooterMenuWidget','footer_company_sidebar','amerce-vi',0,'{\"name\":\"C\\u00f4ng ty\",\"menu_id\":\"footer-company-vi\"}','2026-05-28 18:58:03','2026-05-28 18:58:03'),(11,'Theme\\Amerce\\Widgets\\FooterMenuWidget','footer_customer_sidebar','amerce-vi',0,'{\"name\":\"Kh\\u00e1ch h\\u00e0ng\",\"menu_id\":\"footer-help-vi\"}','2026-05-28 18:58:03','2026-05-28 18:58:03'),(12,'Theme\\Amerce\\Widgets\\BlogAboutMeWidget','blog_sidebar','amerce-vi',0,'{\"name\":\"Bi\\u00ean t\\u1eadp c\\u1ee7a America\",\"title\":\"Gi\\u1edbi thi\\u1ec7u v\\u1ec1 t\\u00f4i\",\"image\":null,\"bio\":\"Style notes, product spotlights, and how we curate the catalog \\u2014 written by the Amerce team.\",\"social_links\":[{\"platform\":\"facebook\",\"url\":\"https:\\/\\/facebook.com\"},{\"platform\":\"instagram\",\"url\":\"https:\\/\\/instagram.com\"},{\"platform\":\"tiktok\",\"url\":\"https:\\/\\/tiktok.com\"}]}','2026-05-28 18:58:03','2026-05-28 18:58:03'),(13,'Theme\\Amerce\\Widgets\\BlogSearchWidget','blog_sidebar','amerce-vi',1,'{\"name\":\"T\\u00ecm ki\\u1ebfm\",\"placeholder\":\"Search...\"}','2026-05-28 18:58:03','2026-05-28 18:58:03'),(14,'Theme\\Amerce\\Widgets\\BlogCategoriesWidget','blog_sidebar','amerce-vi',2,'{\"name\":\"Danh m\\u1ee5c\",\"title\":\"Danh m\\u1ee5c\",\"display_posts_count\":\"yes\",\"category_ids\":[]}','2026-05-28 18:58:03','2026-05-28 18:58:03'),(15,'Theme\\Amerce\\Widgets\\BlogPostsWidget','blog_sidebar','amerce-vi',3,'{\"name\":\"B\\u00e0i vi\\u1ebft m\\u1edbi\",\"title\":\"B\\u00e0i vi\\u1ebft m\\u1edbi\",\"type\":\"recent\",\"number_display\":4}','2026-05-28 18:58:03','2026-05-28 18:58:03'),(16,'Theme\\Amerce\\Widgets\\BlogTagsWidget','blog_sidebar','amerce-vi',4,'{\"name\":\"Th\\u1ebb\",\"title\":\"Th\\u1ebb ph\\u1ed5 bi\\u1ebfn\",\"number_display\":11}','2026-05-28 18:58:03','2026-05-28 18:58:03'),(17,'Theme\\Amerce\\Widgets\\ProductDeliveryInfoWidget','product_details_sidebar','amerce-vi',0,'{\"name\":\"Giao h\\u00e0ng v\\u00e0 tr\\u1ea3 l\\u1ea1i s\\u1ea3n ph\\u1ea9m\",\"estimated_intl\":\"12-26 Days\",\"estimated_intl_label\":\"International\",\"estimated_local\":\"3-6 Days\",\"estimated_local_label\":\"United States\",\"return_within\":\"45 Days\",\"return_text\":\"of purchase. Duties & taxes are non-refundable.\"}','2026-05-28 18:58:03','2026-05-28 18:58:03'),(18,'Theme\\Amerce\\Widgets\\PaymentMethodsWidget','product_details_sidebar','amerce-vi',1,'{\"name\":\"Ph\\u01b0\\u01a1ng th\\u1ee9c thanh to\\u00e1n\",\"title\":\"\\u0110\\u1ea3m b\\u1ea3o thanh to\\u00e1n an to\\u00e0n:\",\"images\":[]}','2026-05-28 18:58:03','2026-05-28 18:58:03'),(19,'Theme\\Amerce\\Widgets\\FooterMenuWidget','footer_company_sidebar','amerce-ar',0,'{\"name\":\"\\u0634\\u0631\\u0643\\u0629\",\"menu_id\":\"footer-company-ar\"}','2026-05-28 18:58:03','2026-05-28 18:58:03'),(20,'Theme\\Amerce\\Widgets\\FooterMenuWidget','footer_customer_sidebar','amerce-ar',0,'{\"name\":\"\\u0639\\u0645\\u064a\\u0644\",\"menu_id\":\"footer-help-ar\"}','2026-05-28 18:58:03','2026-05-28 18:58:03'),(21,'Theme\\Amerce\\Widgets\\BlogAboutMeWidget','blog_sidebar','amerce-ar',0,'{\"name\":\"\\u0627\\u0641\\u062a\\u062a\\u0627\\u062d\\u064a\\u0629 \\u0623\\u0645\\u064a\\u0631\\u0633\",\"title\":\"\\u0652\\u0639\\u064e\\u0646\\u0651\\u0650\\u064a\",\"image\":null,\"bio\":\"Style notes, product spotlights, and how we curate the catalog \\u2014 written by the Amerce team.\",\"social_links\":[{\"platform\":\"facebook\",\"url\":\"https:\\/\\/facebook.com\"},{\"platform\":\"instagram\",\"url\":\"https:\\/\\/instagram.com\"},{\"platform\":\"tiktok\",\"url\":\"https:\\/\\/tiktok.com\"}]}','2026-05-28 18:58:03','2026-05-28 18:58:03'),(22,'Theme\\Amerce\\Widgets\\BlogSearchWidget','blog_sidebar','amerce-ar',1,'{\"name\":\"\\u064a\\u0628\\u062d\\u062b\",\"placeholder\":\"Search...\"}','2026-05-28 18:58:03','2026-05-28 18:58:03'),(23,'Theme\\Amerce\\Widgets\\BlogCategoriesWidget','blog_sidebar','amerce-ar',2,'{\"name\":\"\\u0641\\u0626\\u0629\",\"title\":\"\\u0641\\u0626\\u0629\",\"display_posts_count\":\"yes\",\"category_ids\":[]}','2026-05-28 18:58:03','2026-05-28 18:58:03'),(24,'Theme\\Amerce\\Widgets\\BlogPostsWidget','blog_sidebar','amerce-ar',3,'{\"name\":\"\\u0645\\u0642\\u0627\\u0644\\u0629 \\u062c\\u062f\\u064a\\u062f\\u0629\",\"title\":\"\\u0645\\u0642\\u0627\\u0644\\u0629 \\u062c\\u062f\\u064a\\u062f\\u0629\",\"type\":\"recent\",\"number_display\":4}','2026-05-28 18:58:03','2026-05-28 18:58:03'),(25,'Theme\\Amerce\\Widgets\\BlogTagsWidget','blog_sidebar','amerce-ar',4,'{\"name\":\"\\u0628\\u0637\\u0627\\u0642\\u0629\",\"title\":\"\\u0627\\u0644\\u0639\\u0644\\u0627\\u0645\\u0627\\u062a \\u0627\\u0644\\u0634\\u0639\\u0628\\u064a\\u0629\",\"number_display\":11}','2026-05-28 18:58:03','2026-05-28 18:58:03'),(26,'Theme\\Amerce\\Widgets\\ProductDeliveryInfoWidget','product_details_sidebar','amerce-ar',0,'{\"name\":\"\\u062a\\u0633\\u0644\\u064a\\u0645 \\u0627\\u0644\\u0645\\u0646\\u062a\\u062c \\u0648\\u0625\\u0639\\u0627\\u062f\\u062a\\u0647\",\"estimated_intl\":\"12-26 Days\",\"estimated_intl_label\":\"International\",\"estimated_local\":\"3-6 Days\",\"estimated_local_label\":\"United States\",\"return_within\":\"45 Days\",\"return_text\":\"of purchase. Duties & taxes are non-refundable.\"}','2026-05-28 18:58:03','2026-05-28 18:58:03'),(27,'Theme\\Amerce\\Widgets\\PaymentMethodsWidget','product_details_sidebar','amerce-ar',1,'{\"name\":\"\\u0637\\u0631\\u064a\\u0642\\u0629 \\u0627\\u0644\\u062f\\u0641\\u0639\",\"title\":\"\\u0627\\u0644\\u062e\\u0631\\u0648\\u062c \\u0627\\u0644\\u0622\\u0645\\u0646 \\u0627\\u0644\\u0645\\u0636\\u0645\\u0648\\u0646:\",\"images\":[]}','2026-05-28 18:58:03','2026-05-28 18:58:03'),(28,'Theme\\Amerce\\Widgets\\FooterMenuWidget','footer_company_sidebar','amerce-fr',0,'{\"name\":\"Entreprise\",\"menu_id\":\"footer-company-fr\"}','2026-05-28 18:58:03','2026-05-28 18:58:03'),(29,'Theme\\Amerce\\Widgets\\FooterMenuWidget','footer_customer_sidebar','amerce-fr',0,'{\"name\":\"Client\",\"menu_id\":\"footer-help-fr\"}','2026-05-28 18:58:03','2026-05-28 18:58:03'),(30,'Theme\\Amerce\\Widgets\\BlogAboutMeWidget','blog_sidebar','amerce-fr',0,'{\"name\":\"\\u00c9ditorial am\\u00e9ricain\",\"title\":\"Sur moi\",\"image\":null,\"bio\":\"Style notes, product spotlights, and how we curate the catalog \\u2014 written by the Amerce team.\",\"social_links\":[{\"platform\":\"facebook\",\"url\":\"https:\\/\\/facebook.com\"},{\"platform\":\"instagram\",\"url\":\"https:\\/\\/instagram.com\"},{\"platform\":\"tiktok\",\"url\":\"https:\\/\\/tiktok.com\"}]}','2026-05-28 18:58:03','2026-05-28 18:58:03'),(31,'Theme\\Amerce\\Widgets\\BlogSearchWidget','blog_sidebar','amerce-fr',1,'{\"name\":\"Recherche\",\"placeholder\":\"Search...\"}','2026-05-28 18:58:03','2026-05-28 18:58:03'),(32,'Theme\\Amerce\\Widgets\\BlogCategoriesWidget','blog_sidebar','amerce-fr',2,'{\"name\":\"Cat\\u00e9gorie\",\"title\":\"Cat\\u00e9gorie\",\"display_posts_count\":\"yes\",\"category_ids\":[]}','2026-05-28 18:58:03','2026-05-28 18:58:03'),(33,'Theme\\Amerce\\Widgets\\BlogPostsWidget','blog_sidebar','amerce-fr',3,'{\"name\":\"Nouvel article\",\"title\":\"Nouvel article\",\"type\":\"recent\",\"number_display\":4}','2026-05-28 18:58:03','2026-05-28 18:58:03'),(34,'Theme\\Amerce\\Widgets\\BlogTagsWidget','blog_sidebar','amerce-fr',4,'{\"name\":\"Carte\",\"title\":\"Balises populaires\",\"number_display\":11}','2026-05-28 18:58:03','2026-05-28 18:58:03'),(35,'Theme\\Amerce\\Widgets\\ProductDeliveryInfoWidget','product_details_sidebar','amerce-fr',0,'{\"name\":\"Livraison et retour du produit\",\"estimated_intl\":\"12-26 Days\",\"estimated_intl_label\":\"International\",\"estimated_local\":\"3-6 Days\",\"estimated_local_label\":\"United States\",\"return_within\":\"45 Days\",\"return_text\":\"of purchase. Duties & taxes are non-refundable.\"}','2026-05-28 18:58:03','2026-05-28 18:58:03'),(36,'Theme\\Amerce\\Widgets\\PaymentMethodsWidget','product_details_sidebar','amerce-fr',1,'{\"name\":\"Mode de paiement\",\"title\":\"Paiement s\\u00e9curis\\u00e9 garanti\\u00a0:\",\"images\":[]}','2026-05-28 18:58:03','2026-05-28 18:58:03'),(37,'Theme\\Amerce\\Widgets\\FooterMenuWidget','footer_company_sidebar','amerce-id',0,'{\"name\":\"Perusahaan\",\"menu_id\":\"footer-company-id\"}','2026-05-28 18:58:03','2026-05-28 18:58:03'),(38,'Theme\\Amerce\\Widgets\\FooterMenuWidget','footer_customer_sidebar','amerce-id',0,'{\"name\":\"Pelanggan\",\"menu_id\":\"footer-help-id\"}','2026-05-28 18:58:03','2026-05-28 18:58:03'),(39,'Theme\\Amerce\\Widgets\\BlogAboutMeWidget','blog_sidebar','amerce-id',0,'{\"name\":\"Editorial Amerika\",\"title\":\"Tentang Saya\",\"image\":null,\"bio\":\"Style notes, product spotlights, and how we curate the catalog \\u2014 written by the Amerce team.\",\"social_links\":[{\"platform\":\"facebook\",\"url\":\"https:\\/\\/facebook.com\"},{\"platform\":\"instagram\",\"url\":\"https:\\/\\/instagram.com\"},{\"platform\":\"tiktok\",\"url\":\"https:\\/\\/tiktok.com\"}]}','2026-05-28 18:58:03','2026-05-28 18:58:03'),(40,'Theme\\Amerce\\Widgets\\BlogSearchWidget','blog_sidebar','amerce-id',1,'{\"name\":\"Mencari\",\"placeholder\":\"Search...\"}','2026-05-28 18:58:03','2026-05-28 18:58:03'),(41,'Theme\\Amerce\\Widgets\\BlogCategoriesWidget','blog_sidebar','amerce-id',2,'{\"name\":\"Kategori\",\"title\":\"Kategori\",\"display_posts_count\":\"yes\",\"category_ids\":[]}','2026-05-28 18:58:03','2026-05-28 18:58:03'),(42,'Theme\\Amerce\\Widgets\\BlogPostsWidget','blog_sidebar','amerce-id',3,'{\"name\":\"Artikel baru\",\"title\":\"Artikel baru\",\"type\":\"recent\",\"number_display\":4}','2026-05-28 18:58:03','2026-05-28 18:58:03'),(43,'Theme\\Amerce\\Widgets\\BlogTagsWidget','blog_sidebar','amerce-id',4,'{\"name\":\"Kartu\",\"title\":\"Tag populer\",\"number_display\":11}','2026-05-28 18:58:03','2026-05-28 18:58:03'),(44,'Theme\\Amerce\\Widgets\\ProductDeliveryInfoWidget','product_details_sidebar','amerce-id',0,'{\"name\":\"Pengiriman & Pengembalian Produk\",\"estimated_intl\":\"12-26 Days\",\"estimated_intl_label\":\"International\",\"estimated_local\":\"3-6 Days\",\"estimated_local_label\":\"United States\",\"return_within\":\"45 Days\",\"return_text\":\"of purchase. Duties & taxes are non-refundable.\"}','2026-05-28 18:58:03','2026-05-28 18:58:03'),(45,'Theme\\Amerce\\Widgets\\PaymentMethodsWidget','product_details_sidebar','amerce-id',1,'{\"name\":\"Metode pembayaran\",\"title\":\"Checkout Aman Terjamin:\",\"images\":[]}','2026-05-28 18:58:03','2026-05-28 18:58:03'),(46,'Theme\\Amerce\\Widgets\\FooterMenuWidget','footer_company_sidebar','amerce-tr',0,'{\"name\":\"\\u015eirket\",\"menu_id\":\"footer-company-tr\"}','2026-05-28 18:58:03','2026-05-28 18:58:03'),(47,'Theme\\Amerce\\Widgets\\FooterMenuWidget','footer_customer_sidebar','amerce-tr',0,'{\"name\":\"M\\u00fc\\u015fteri\",\"menu_id\":\"footer-help-tr\"}','2026-05-28 18:58:03','2026-05-28 18:58:03'),(48,'Theme\\Amerce\\Widgets\\BlogAboutMeWidget','blog_sidebar','amerce-tr',0,'{\"name\":\"Amerce Editoryal\",\"title\":\"Hakk\\u0131mda\",\"image\":null,\"bio\":\"Style notes, product spotlights, and how we curate the catalog \\u2014 written by the Amerce team.\",\"social_links\":[{\"platform\":\"facebook\",\"url\":\"https:\\/\\/facebook.com\"},{\"platform\":\"instagram\",\"url\":\"https:\\/\\/instagram.com\"},{\"platform\":\"tiktok\",\"url\":\"https:\\/\\/tiktok.com\"}]}','2026-05-28 18:58:03','2026-05-28 18:58:03'),(49,'Theme\\Amerce\\Widgets\\BlogSearchWidget','blog_sidebar','amerce-tr',1,'{\"name\":\"Aramak\",\"placeholder\":\"Search...\"}','2026-05-28 18:58:03','2026-05-28 18:58:03'),(50,'Theme\\Amerce\\Widgets\\BlogCategoriesWidget','blog_sidebar','amerce-tr',2,'{\"name\":\"Kategori\",\"title\":\"Kategori\",\"display_posts_count\":\"yes\",\"category_ids\":[]}','2026-05-28 18:58:03','2026-05-28 18:58:03'),(51,'Theme\\Amerce\\Widgets\\BlogPostsWidget','blog_sidebar','amerce-tr',3,'{\"name\":\"Yeni makale\",\"title\":\"Yeni makale\",\"type\":\"recent\",\"number_display\":4}','2026-05-28 18:58:03','2026-05-28 18:58:03'),(52,'Theme\\Amerce\\Widgets\\BlogTagsWidget','blog_sidebar','amerce-tr',4,'{\"name\":\"Kart\",\"title\":\"Pop\\u00fcler etiketler\",\"number_display\":11}','2026-05-28 18:58:03','2026-05-28 18:58:03'),(53,'Theme\\Amerce\\Widgets\\ProductDeliveryInfoWidget','product_details_sidebar','amerce-tr',0,'{\"name\":\"\\u00dcr\\u00fcn Teslimat\\u0131 & \\u0130ade\",\"estimated_intl\":\"12-26 Days\",\"estimated_intl_label\":\"International\",\"estimated_local\":\"3-6 Days\",\"estimated_local_label\":\"United States\",\"return_within\":\"45 Days\",\"return_text\":\"of purchase. Duties & taxes are non-refundable.\"}','2026-05-28 18:58:03','2026-05-28 18:58:03'),(54,'Theme\\Amerce\\Widgets\\PaymentMethodsWidget','product_details_sidebar','amerce-tr',1,'{\"name\":\"\\u00d6deme y\\u00f6ntemi\",\"title\":\"Garantili G\\u00fcvenli \\u00d6deme:\",\"images\":[]}','2026-05-28 18:58:03','2026-05-28 18:58:03');
+/*!40000 ALTER TABLE `widgets` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2026-05-29  8:58:18

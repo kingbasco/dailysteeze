@@ -1,0 +1,78 @@
+{
+    "Anthro": {
+        "name": "Anthro",
+        "description": "Trang phục và đồ gia dụng đa phong cách lấy cảm hứng từ truyền thống thủ công toàn cầu."
+    },
+    "Anvouge": {
+        "name": "Anvouge",
+        "description": "Đồ thời trang thiết yếu hiện đại được cắt may từ sợi bền vững."
+    },
+    "Bohome": {
+        "name": "Bohome",
+        "description": "Đồ gia dụng và dệt may cảm hứng bohemian cho ngôi nhà hiện đại thư thái."
+    },
+    "Carolin": {
+        "name": "Carolin",
+        "description": "Trang sức demi-fine làm thủ công tại các xưởng nhỏ ở Ý."
+    },
+    "Cheryl": {
+        "name": "Cheryl",
+        "description": "Họa tiết và phom dáng nổi bật dành cho phụ nữ hiện đại."
+    },
+    "Crate": {
+        "name": "Crate",
+        "description": "Nội thất cảm hứng mid-century được chế tác bền vững qua nhiều thế hệ."
+    },
+    "Findr": {
+        "name": "Findr",
+        "description": "Thiết bị âm thanh thiết kế cho độ rõ chuẩn studio trong môi trường thường ngày."
+    },
+    "Intdeco": {
+        "name": "Intdeco",
+        "description": "Điểm nhấn nội thất kết hợp giữa tối giản và ấm cúng."
+    },
+    "Modave": {
+        "name": "Modave",
+        "description": "Đồ tập hiệu năng cao làm từ vải thun co giãn tái chế."
+    },
+    "Panadoxn": {
+        "name": "Panadoxn",
+        "description": "Mỹ phẩm thiên nhiên được nghiên cứu bởi các chuyên gia thảo dược lâm sàng."
+    },
+    "Shangxi": {
+        "name": "Shangxi",
+        "description": "Trà di sản, gốm sứ và phụ kiện thiền."
+    },
+    "Sopify": {
+        "name": "Sopify",
+        "description": "Thiết bị nhà thông minh thiết kế dành cho người thuê nhà và du khách."
+    },
+    "Textitles": {
+        "name": "Textitles",
+        "description": "Da lộn mềm mại và vải dệt cho các dáng túi hobo và túi đeo vai thường ngày."
+    },
+    "Vanfaba": {
+        "name": "Vanfaba",
+        "description": "Trang sức tạo điểm nhấn, thắt lưng và đồ da nhỏ hoàn thiện diện mạo của bạn."
+    },
+    "Living": {
+        "name": "Living",
+        "description": "Đồ bảo hộ và trang bị bảo hộ cá nhân đạt những tiêu chuẩn nơi làm việc khắt khe nhất."
+    },
+    "West Elm": {
+        "name": "West Elm",
+        "description": "Những vật dụng xưởng làm việc bền bỉ được tuyển chọn cho các nhà xây dựng hiện đại."
+    },
+    "Stanza": {
+        "name": "Stanza",
+        "description": "Thiết bị đo đạc chính xác dành cho nhà xây dựng và nhà thầu."
+    },
+    "Urban": {
+        "name": "Urban",
+        "description": "Vật tư tiêu hao cho cắt và khoan được tuyển chọn cho độ tin cậy trong ngành."
+    },
+    "Vanfava": {
+        "name": "Vanfava",
+        "description": "Siêu thực phẩm từ thực vật và những vật dụng dinh dưỡng sạch thiết yếu."
+    }
+}

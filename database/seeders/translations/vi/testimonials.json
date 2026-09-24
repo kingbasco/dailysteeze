@@ -1,0 +1,112 @@
+{
+    "Cara Wang": {
+        "name": "Cara Wang",
+        "company": "Khách Hàng Đã Xác Thực",
+        "content": "\"Tôi thật sự ấn tượng với chiếc áo khoác này. Chất liệu tuyệt vời — cảm giác bền và chất lượng cao, lớp vỏ ngoài chống gió và chống nước nhẹ rất tốt, hoàn hảo cho quãng đường đi làm buổi sáng của tôi.\""
+    },
+    "Daniel": {
+        "name": "Daniel",
+        "company": "Người mua đã xác minh",
+        "content": "\"Giao hàng nhanh, bao bì thân thiện với môi trường, và mọi thứ có vị như vừa được hái thẳng từ nông trại.\""
+    },
+    "Daniel K.": {
+        "name": "Daniel K.",
+        "company": "Khách Hàng Đã Xác Thực",
+        "content": "Nó làm bàn làm việc của tôi bừng sáng và khiến cả căn phòng cảm giác tươi mới hơn. Tôi chắc chắn sẽ mua thêm sớm thôi!"
+    },
+    "Daniel Parker": {
+        "name": "Daniel Parker",
+        "company": "Khách Hàng Đã Xác Thực",
+        "content": "Món đồ chơi cho mèo này thật sự gây sốt! Cô mèo của tôi chơi không ngừng nghỉ — chạy nhảy, vồ chụp và vui đùa cực kỳ. Nó giữ cho cô bé năng động và vui vẻ suốt cả ngày!"
+    },
+    "Daniel Reyes": {
+        "name": "Daniel Reyes",
+        "company": "Nhiếp ảnh gia",
+        "content": "Vận chuyển nhanh, đóng gói hoàn hảo và đôi tai nghe chắc chắn là tốt nhất tôi từng sở hữu. Đội hỗ trợ giúp tôi ghép nối với mixer trong chưa đến năm phút."
+    },
+    "Daniel Walker": {
+        "name": "Daniel Walker",
+        "company": "Người Mua Đã Xác Thực",
+        "content": "\"Giao hàng nhanh chóng, đóng gói cực kỳ đáng yêu, chất lượng sản phẩm thực sự tuyệt vời, từng chi tiết nhỏ đều cho thấy sự chăm chút chân thành.\""
+    },
+    "Emily R.": {
+        "name": "Emily R.",
+        "company": "Người mua đã xác minh",
+        "content": "\"Rau củ luôn tươi và đậm đà hương vị. Bạn thực sự cảm nhận được sự khác biệt so với rau ở siêu thị!\""
+    },
+    "Emma Collins": {
+        "name": "Emma Collins",
+        "company": "Người Mua Đã Xác Thực",
+        "content": "\"Những bộ bodysuit cho bé cực kỳ mềm mại, siêu ấm áp và dịu nhẹ với làn da non nớt — bé sơ sinh nhà tôi giờ ngủ ngon lành đến vậy!\""
+    },
+    "Emma Roberts": {
+        "name": "Emma Roberts",
+        "company": "",
+        "content": "\"Nhẹ, êm ái và bám tốt. Hoàn hảo cho cả buổi tập gym lẫn chạy bộ. Hoàn toàn xứng đáng!\""
+    },
+    "Evelyn Taylor": {
+        "name": "Evelyn Taylor",
+        "company": "Khách Hàng Đã Xác Thực",
+        "content": "\"Form dáng tuyệt vời — tôi đặt cỡ thường mặc của mình (Small) và nó vừa đúng độ dài, ôm vừa vặn mà không quá chật. Đường viền cổ và nách áo được cắt kín đáo, đó là một điểm cộng lớn. Tôi cực kỳ hài lòng.\""
+    },
+    "Hannah Lindstrom": {
+        "name": "Hannah Lindstrom",
+        "company": "Huấn luyện viên Yoga",
+        "content": "Đồ tập chịu được mọi buổi học mà không mất form. Tôi đã giặt bảy mươi lần và vải vẫn như mới."
+    },
+    "James Whitfield": {
+        "name": "James Whitfield",
+        "company": "Người sáng lập — Fieldnotes Studio",
+        "content": "Tôi đã đặt ba chiếc quần linen qua hai mùa. Form đều đặn, vải thoáng mát tuyệt vời và dịch vụ khách hàng không nơi nào sánh được."
+    },
+    "Kenji Sato": {
+        "name": "Kenji Sato",
+        "company": "Kiến trúc sư — Tokyo",
+        "content": "Tôi gửi một chiếc bàn cà phê đến Tokyo và nó đến nơi được đóng gói hoàn hảo cùng đầy đủ giấy tờ bảo hiểm. Vận chuyển quốc tế xử lý hoàn hảo."
+    },
+    "Marcus R.": {
+        "name": "Marcus R.",
+        "company": "Khách Hàng Đã Xác Thực",
+        "content": "Tôi thật sự ấn tượng với cửa hàng này. Đóng gói chắc chắn, cây trông hoàn hảo."
+    },
+    "Martin Culhane": {
+        "name": "Martin Culhane",
+        "company": "Người mua đã được xác minh",
+        "content": "\"Chiếc ghế công thái học đã thay đổi hoàn toàn cách tôi làm việc. Tư thế của tôi tốt hơn và tôi có thể ngồi thoải mái cả ngày mà không bị đau lưng.\""
+    },
+    "Michael Carter": {
+        "name": "Michael Carter",
+        "company": "Người Mua Đã Xác Thực",
+        "content": "\"Cuối cùng cũng tìm được loại bình sữa không rò rỉ, dễ vệ sinh, tiết kiệm thời gian và giúp việc cho bé ăn đơn giản hơn nhiều. Vị cứu tinh thực sự cho những bậc cha mẹ bận rộn!\""
+    },
+    "Olivia Brooks": {
+        "name": "Olivia Brooks",
+        "company": "Người Mua Đã Xác Thực",
+        "content": "\"Mọi thứ đều được thiết kế tỉ mỉ, chế tác đẹp đẽ và tràn đầy sự quan tâm chân thành. Bạn có thể cảm nhận được những bậc cha mẹ đã xây dựng thương hiệu này bằng cả trái tim.\""
+    },
+    "Olivia Carter": {
+        "name": "Olivia Carter",
+        "company": "Biên tập viên — Tạp chí Modern Living",
+        "content": "Chiếc bàn phụ gỗ óc chó đã ở trong căn hộ của tôi ba năm và còn đẹp hơn cả ngày mới nhận. Chất lượng chế tác thực sự ở đẳng cấp gia truyền."
+    },
+    "Priya Khurana": {
+        "name": "Priya Khurana",
+        "company": "Trưởng nhóm thiết kế — Studio Eight",
+        "content": "Amerce là điểm đến đầu tiên của tôi cho những món quà tinh tế. Cách đóng gói khiến mỗi đơn hàng cảm giác như một dịp đặc biệt và sự tuyển chọn không bao giờ làm tôi thất vọng."
+    },
+    "Sarah": {
+        "name": "Sarah",
+        "company": "Người mua đã xác minh",
+        "content": "\"Tôi an tâm khi biết gia đình mình đang ăn thực phẩm sạch, không thuốc trừ sâu. Chất lượng và độ tươi chưa bao giờ làm tôi thất vọng.\""
+    },
+    "Sophia Ramirez": {
+        "name": "Sophia Ramirez",
+        "company": "Người Mua Đã Xác Thực",
+        "content": "\"Làn da tôi chưa bao giờ trông đều màu đến thế. Mới hai tuần mà độ rạng rỡ thấy rõ — bạn bè cứ hỏi tôi đã thay đổi điều gì trong quy trình của mình.\""
+    },
+    "Talan Baptista": {
+        "name": "Talan Baptista",
+        "company": "Người mua đã được xác minh",
+        "content": "\"Chất lượng và thiết kế tuyệt vời. Bàn làm việc có kiểu dáng đẹp, chắc chắn và giúp tôi tập trung trong nhiều giờ.\""
+    }
+}

@@ -1,0 +1,50 @@
+{
+    "Trends": {
+        "name": "الاتجاهات",
+        "description": "المقالات الموسومة مع الاتجاهات."
+    },
+    "Styling Tips": {
+        "name": "نصائح التصميم",
+        "description": "المقالات الموسومة: نصائح لتنسيق الملابس."
+    },
+    "Sustainable": {
+        "name": "مستمر",
+        "description": "المشاركات الموسومة الاستدامة."
+    },
+    "New Arrivals": {
+        "name": "الوافدون الجدد",
+        "description": "المشاركات الموسومة الوافدون الجدد."
+    },
+    "Limited Edition": {
+        "name": "طبعة محدودة",
+        "description": "المشاركات الموسومة طبعة محدودة."
+    },
+    "Behind the Scenes": {
+        "name": "خلف الكواليس",
+        "description": "المشاركات الموسومة خلف الكواليس."
+    },
+    "Buyer Guide": {
+        "name": "دليل المشتري",
+        "description": "المقالات الموسومة دليل التسوق."
+    },
+    "Care Tips": {
+        "name": "نصائح العناية",
+        "description": "المقالات الموسومة بنصائح التخزين."
+    },
+    "Capsule Wardrobe": {
+        "name": "خزانة كبسولة",
+        "description": "المقالات الموسومة خزانة الكبسولة."
+    },
+    "Material Stories": {
+        "name": "قصص مادية",
+        "description": "المقالات الموسومة قصص مادية."
+    },
+    "Holiday Gifting": {
+        "name": "هدايا العيد",
+        "description": "المشاركات الموسومة هدايا العيد."
+    },
+    "Editor Picks": {
+        "name": "اختيارات المحرر",
+        "description": "المشاركات الموسومة اختيار المحرر."
+    }
+}

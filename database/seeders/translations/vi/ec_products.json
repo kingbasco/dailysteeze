@@ -1,0 +1,945 @@
+{
+    "20L Sports Bag - Gray": {
+        "name": "Túi Thể Thao 20L - Màu Xám",
+        "description": "Túi tập gym 20L nhỏ gọn màu xám với ngăn để giày thoáng khí và quai đeo được gia cố.",
+        "content": "<p>Đựng được trọn bộ đồ tập gym kèm giày. Túi bên có khóa kéo, đáy túi chống nước và quai đeo vai có đệm.</p>"
+    },
+    "4mm Ultra Grip Yoga Mat - Blue Grip": {
+        "name": "Thảm Yoga Siêu Bám 4mm - Blue Grip",
+        "description": "Thảm yoga cao su tự nhiên thân thiện môi trường với bề mặt chống trượt màu xanh dịu mắt.",
+        "content": "<p>Dày 4mm đệm cho khớp mà không mất cảm giác sàn. Không PVC, không latex và phân hủy sinh học. Kèm theo dây đeo mang theo.</p>"
+    },
+    "Action Camera 4K": {
+        "name": "Action Camera 4K",
+        "description": "Camera hành trình 4K60 bỏ túi với chống rung HyperSmooth và thân máy chống nước.",
+        "content": "<p>Ghi vào thẻ microSD đến 512GB. Phát trực tiếp, điều khiển bằng giọng nói và màn hình trước 2 inch.</p>"
+    },
+    "Airy Pro Ergonomic Chair": {
+        "name": "Ghế công thái học Airy Pro",
+        "description": "Ghế công thái học lưng lưới với tựa lưng thích ứng, tay vịn 4D và bảo hành 12 năm.",
+        "content": "<p>Lưới dệt thoáng khí, cơ chế ngả đồng bộ và độ sâu mặt ghế điều chỉnh được. Phù hợp với người dùng cao từ 1m52 đến 1m93.</p>"
+    },
+    "Allergy Relief Drops": {
+        "name": "Dung Dịch Nhỏ Giảm Dị Ứng",
+        "description": "Dung dịch nhỏ giọt do bác sĩ thú y bào chế, chứa omega-3 và quercetin cho thú cưng bị ngứa và nhạy cảm.",
+        "content": "<p>Ống nhỏ giọt dễ định liều. Thêm vào thức ăn hoặc nước uống. Phù hợp cho chó mèo trên 6 tháng tuổi. Chai 60ml.</p>"
+    },
+    "Alloy Sport Wheel": {
+        "name": "Mâm Hợp Kim Thể Thao",
+        "description": "Mâm hợp kim 18 inch nhẹ với lớp hoàn thiện màu xám than và cấu tạo rèn.",
+        "content": "<p>Giảm 22 phần trăm khối lượng không được giảm chấn so với mâm zin. Thiết kế định tâm moay-ơ, kèm theo nắp chụp trung tâm và van.</p>"
+    },
+    "Angle Grinder Pro": {
+        "name": "Máy Mài Góc Pro",
+        "description": "Máy mài góc 7 inch công suất lớn với công tắc dạng cò và điều chỉnh nắp bảo vệ không cần dụng cụ.",
+        "content": "<p>Mô-tơ 15 ampe cho tốc độ 8.500 vòng/phút khi có tải. Tay cầm chống rung và bảo vệ quá tải giúp kéo dài tuổi thọ máy trong những công việc khắc nghiệt.</p>"
+    },
+    "Anthurium Hybrid": {
+        "name": "Hồng Môn Lai",
+        "description": "Lá bóng hình trái tim và mo hoa đỏ rực — cây để bàn ra hoa lâu được ưa chuộng.",
+        "content": "<p>Giao trong chậu ươm 14cm. Ánh sáng gián tiếp mạnh, độ ẩm cao. Tưới khi lớp đất mặt một inch đã khô.</p>"
+    },
+    "Apple Watch S10": {
+        "name": "Apple Watch S10",
+        "description": "Màn hình retina luôn bật với các cảm biến tiên tiến nhất cho thể chất và sức khỏe.",
+        "content": "<p>Đo điện tâm đồ, nồng độ oxy trong máu và theo dõi giấc ngủ. Vỏ nhôm, tùy chọn 41mm và 45mm, pin 18 giờ.</p>"
+    },
+    "Aromatherapy Diffuser": {
+        "name": "Máy khuếch tán tinh dầu",
+        "description": "Máy khuếch tán gốm siêu âm với đèn nền bảy màu và thời gian hoạt động bốn giờ.",
+        "content": "<p>Hoạt động êm như thì thầm. Tự động ngắt. Bình chứa 200ml phủ phòng tới 30m². Kèm hỗn hợp tinh dầu thư giãn dùng thử.</p>"
+    },
+    "Astronaut Phone Case": {
+        "name": "Ốp Lưng Điện Thoại Phi Hành Gia",
+        "description": "Ốp lưng điện thoại mỏng đã qua kiểm định chống rơi, in hình phi hành gia tùy chỉnh kèm tên của bạn.",
+        "content": "<p>Vỏ polycarbonate với viền TPU. Tương thích sạc không dây. Có sẵn cho các dòng iPhone và Pixel.</p>"
+    },
+    "Audiophile Open-Back": {
+        "name": "Tai nghe mở dành cho audiophile",
+        "description": "Tai nghe planar magnetic kiểu mở cho không gian âm thanh rộng rãi và trải nghiệm nghe chi tiết tại nhà.",
+        "content": "<p>Dây tháo rời cắm hai đầu. Đệm tai nhung. Kèm bộ chuyển 1/4\" và 3.5mm.</p>"
+    },
+    "Baby Glass Bottle Set 4oz with Latex Nipple – Blush Pink for Little Moments": {
+        "name": "Bộ Bình Sữa Thủy Tinh 4oz Với Núm Latex – Hồng Phấn Cho Những Khoảnh Khắc Nhỏ Xinh",
+        "description": "Bộ đôi bình sữa thủy tinh borosilicate với núm ti silicone chống đầy hơi.",
+        "content": "<p>Thủy tinh chịu sốc nhiệt với lớp vỏ silicone mềm. Thiết kế cổ rộng dễ vệ sinh. Dung tích 240ml.</p>"
+    },
+    "Blueberry Granola": {
+        "name": "Granola việt quất",
+        "description": "Granola yến mạch nướng chậm với việt quất rừng, hạnh nhân và si-rô phong nguyên chất.",
+        "content": "<p>Làm theo lô nhỏ. Không đường tinh luyện, dầu cọ hay chất bảo quản. Túi 500g tái chế được.</p>"
+    },
+    "Bookshelf Tall": {
+        "name": "Kệ Sách Cao",
+        "description": "Kệ sách từ sàn tới trần bằng gỗ óc chó nguyên khối với các tầng kệ điều chỉnh được.",
+        "content": "<p>Tám tầng kệ điều chỉnh được và các điểm neo gia cố. Mỗi tầng kệ chịu được đến 50 pound sách và đồ vật.</p>"
+    },
+    "Botanical Body Oil": {
+        "name": "Dầu dưỡng thể thực vật",
+        "description": "Dầu jojoba và squalane ép lạnh thấm tinh chất oải hương và cam bergamot — làm dịu làn da và giác quan.",
+        "content": "<p>Chai thủy tinh mờ 100ml. Thoa sau khi tắm để có làn da mềm mại, ẩm mượt và hương thơm thư thái. Không thử nghiệm trên động vật.</p>"
+    },
+    "Brake Disc Vented": {
+        "name": "Đĩa Phanh Thông Gió",
+        "description": "Đĩa phanh thông gió khoan lỗ và xẻ rãnh cho khả năng phanh mát hơn, ổn định hơn.",
+        "content": "<p>Lớp phủ kẽm chống ăn mòn và cấu tạo cân bằng. Giao hàng dạng đĩa đơn; đặt theo cặp khi bảo dưỡng cả cầu xe.</p>"
+    },
+    "Brake Pad Set Premium": {
+        "name": "Bộ Má Phanh Cao Cấp",
+        "description": "Má phanh gốm ít bụi với miếng đệm inox cho khả năng dừng êm ái và chắc chắn.",
+        "content": "<p>Bộ má phanh trước được thiết kế cho việc lái xe hằng ngày và vận hành mạnh mẽ. Giảm tới 80 phần trăm bụi phanh so với má phanh OE.</p>"
+    },
+    "Bukowski Lounge Chair": {
+        "name": "Ghế Thư Giãn Bukowski",
+        "description": "Ghế thư giãn dạng công xôn bọc da yên ngựa trên khung thép không gỉ.",
+        "content": "<p>Lấy cảm hứng từ những biểu tượng giữa thế kỷ, đường viền khâu tay và da Ý nguyên tấm biến chiếc ghế này thành vật gia truyền tương lai.</p>"
+    },
+    "Buttons cotton top": {
+        "name": "Áo cotton cài nút",
+        "description": "Áo cotton cài nút phía trước với form rộng rãi và nút xà cừ tinh tế.",
+        "content": "<p>Vải cotton poplin trọng lượng vừa 180 GSM giữ form tốt suốt cả ngày. Nút xà cừ. Gấu áo hơi cropped phối đẹp với quần jean lưng cao.</p>"
+    },
+    "Cabin Air Filter": {
+        "name": "Lọc Gió Điều Hòa",
+        "description": "Lọc gió cabin than hoạt tính giữ lại phấn hoa, bụi và mùi khí thải.",
+        "content": "<p>Lọc ba lớp giữ lại các hạt nhỏ tới 0,3 micron. Khuyến nghị thay thế sau mỗi 15.000 dặm.</p>"
+    },
+    "Calathea Orbifolia": {
+        "name": "Cây Đuôi Công Orbifolia",
+        "description": "Lá tròn sọc bạc cụp lại vào ban đêm — một cây đuôi công được ưa chuộng thực thụ.",
+        "content": "<p>Giao trong chậu ươm 14cm. Ánh sáng gián tiếp vừa, độ ẩm cao. Dùng nước cất hoặc nước mưa để có kết quả tốt nhất.</p>"
+    },
+    "Calm Mind Adaptogen Capsules": {
+        "name": "Viên adaptogen An tâm trí",
+        "description": "Hỗn hợp ashwagandha và L-theanine được bào chế để giảm căng thẳng và hỗ trợ tập trung rõ ràng.",
+        "content": "<p>Viên thuần chay kết hợp 600mg ashwagandha KSM-66 với rhodiola và theanine. Uống hai viên mỗi ngày cùng bữa ăn.</p>"
+    },
+    "Calming Treats": {
+        "name": "Bánh Thưởng Làm Dịu",
+        "description": "Bánh thưởng nhai mềm với hoa cúc và L-theanine dành cho những tình huống căng thẳng.",
+        "content": "<p>Công thức không chứa thuốc. 60 viên mỗi túi. Dùng khi đi du lịch, có bão hoặc đến phòng khám thú y. Phù hợp cho chó trên 12 tuần tuổi.</p>"
+    },
+    "Cashmere Cardigan": {
+        "name": "Áo Cardigan Cashmere",
+        "description": "Áo cardigan cashmere mở trước với vai trễ và phom dáng thoải mái.",
+        "content": "<p>100% cashmere Mông Cổ. Hai túi ốp. Khoác ngoài áo thun hoặc trong áo khoác cho thời tiết giao mùa.</p>"
+    },
+    "Cashmere Mittens": {
+        "name": "Găng Tay Bao Cashmere",
+        "description": "Găng tay bao lót cashmere với lòng bàn tay bằng da và cổ tay co giãn cho những ngày lạnh giá.",
+        "content": "<p>Lớp lót 100% cashmere Mông Cổ. Lòng bàn tay da cừu cho độ bám và độ bền. Kích cỡ unisex.</p>"
+    },
+    "Cat Scratching Post": {
+        "name": "Cột Cào Móng Cho Mèo",
+        "description": "Cột cào móng bằng dây sisal có đế chắc, kích thước phù hợp để mèo cào duỗi người thoải mái.",
+        "content": "<p>Cao 70cm với đế MDF có trọng lượng để ổn định. Cột sisal có thể thay thế. Kèm theo một món đồ chơi lông vũ treo.</p>"
+    },
+    "Circular Saw Cordless": {
+        "name": "Máy Cưa Đĩa Dùng Pin",
+        "description": "Máy cưa đĩa không chổi than 7-1/4 inch với đế bằng magie và móc treo xà gồ.",
+        "content": "<p>Cắt xẻ vật liệu 2x ở góc vát tối đa. Phanh điện dừng lưỡi cưa trong chưa đầy hai giây. Pin bán riêng.</p>"
+    },
+    "Coffee Mug Custom": {
+        "name": "Cốc Cà Phê Tùy Chỉnh",
+        "description": "Cá nhân hóa chiếc cốc cà phê 15oz với bức ảnh, câu nói hoặc tên viết tắt yêu thích của bạn.",
+        "content": "<p>Sứ cao cấp. An toàn với máy rửa chén và lò vi sóng. In màu phủ kín toàn bộ bề mặt.</p>"
+    },
+    "Cold-Pressed Olive Oil": {
+        "name": "Dầu ô liu ép lạnh",
+        "description": "Dầu ô liu nguyên chất từ một trang trại đơn lẻ với hậu vị cay nồng và hương cỏ tươi.",
+        "content": "<p>Ghi rõ ngày thu hoạch. Ô liu Picual hữu cơ. Bảo quản trong chai thủy tinh tối màu để giữ polyphenol. Chai 500ml.</p>"
+    },
+    "Cotton Tee": {
+        "name": "Áo Thun Cotton",
+        "description": "Áo thun cotton chải mềm mại với phom dáng thoải mái và viền cổ gia cố.",
+        "content": "<p>100% cotton hữu cơ, giặt sẵn cho cảm giác mềm mại như đã mặc lâu. Có các màu đen, ngà và xám đá. Nhuộm thành phẩm bằng thuốc nhuộm ít tác động.</p>"
+    },
+    "Cozy Bunny Hooded Towel for Newborns and Toddlers": {
+        "name": "Khăn Tắm Có Mũ Hình Thỏ Ấm Áp Cho Trẻ Sơ Sinh Và Trẻ Tập Đi",
+        "description": "Khăn tắm có mũ bằng cotton pha tre mềm mịn giúp bé ấm áp sau mỗi lần tắm.",
+        "content": "<p>Khăn bông cotton pha tre 500gsm. Kích thước rộng rãi 90x90cm. Mũ mềm với chi tiết tai thêu. Không gây dị ứng và không chứa clo.</p>"
+    },
+    "Cozy Dog Bed": {
+        "name": "Đệm Nằm Êm Ái Cho Chó",
+        "description": "Đệm nằm chỉnh hình bằng mút hoạt tính với lớp vỏ có thể tháo rời và giặt máy.",
+        "content": "<p>Mút mật độ cao nâng đỡ khớp của thú cưng lớn tuổi. Vỏ bọc lông cừu Sherpa. Có cỡ M-XL. Đế chống trượt.</p>"
+    },
+    "Cropped wool-blend knit sweater": {
+        "name": "Áo len dệt kim pha trộn len",
+        "description": "Một chiếc áo len cổ tròn cắt ngắn bằng hỗn hợp len ấm áp - ôm sát cơ thể với viền và cổ tay áo có gân."
+    },
+    "Custom Tee Premium": {
+        "name": "Áo Thun Tùy Chỉnh Cao Cấp",
+        "description": "Áo thun 100% cotton dày dặn in hình ảnh, tranh vẽ hoặc thông điệp của bạn.",
+        "content": "<p>Cotton sợi xoắn đã làm co trước. Có cỡ XS-3XL. In trực tiếp lên vải chống phai màu qua nhiều lần giặt.</p>"
+    },
+    "Cylinder Head Gasket": {
+        "name": "Gioăng Mặt Máy",
+        "description": "Gioăng mặt máy bằng thép đa lớp được thiết kế cho động cơ tỷ số nén cao.",
+        "content": "<p>Cấu tạo MLS chuẩn OE chịu được chu kỳ nhiệt và áp suất buồng đốt. Kèm theo hướng dẫn trình tự siết lực.</p>"
+    },
+    "Daily Greens Powder": {
+        "name": "Bột rau xanh hằng ngày",
+        "description": "Hỗn hợp siêu rau xanh hữu cơ với tảo spirulina, chlorella và adaptogen cho sức sống mỗi ngày.",
+        "content": "<p>Thuần thực vật, không đường và chứa 24 loại thực phẩm toàn phần giàu dưỡng chất. Pha một muỗng vào nước hoặc sinh tố yêu thích của bạn mỗi sáng.</p>"
+    },
+    "Daily Sunscreen Light": {
+        "name": "Kem Chống Nắng Hằng Ngày Light",
+        "description": "Kem chống nắng vật lý SPF 50 cho lớp hoàn thiện vô hình dưới lớp trang điểm hoặc dùng riêng.",
+        "content": "<p>Không gây bít tắc lỗ chân lông. Kẽm oxit an toàn cho rạn san hô. Tuýp 50ml. Thoa lại sau mỗi hai giờ tiếp xúc với nắng.</p>"
+    },
+    "Daily Wireless Earbuds": {
+        "name": "Tai nghe nhét tai không dây dùng hằng ngày",
+        "description": "Tai nghe true wireless với chống ồn thích ứng, kháng mồ hôi IPX5 và tổng 30 giờ pin.",
+        "content": "<p>Sáu micro cho cuộc gọi rõ ràng, ghép nối đa điểm và hộp sạc không dây. Kèm ba kích cỡ nút tai.</p>"
+    },
+    "Dark Choc Almonds": {
+        "name": "Hạnh nhân phủ socola đen",
+        "description": "Hạnh nhân giòn bọc trong lớp socola đen 70% nguồn gốc đơn lẻ.",
+        "content": "<p>Hữu cơ, được chứng nhận thương mại công bằng. Tự nhiên không chứa gluten. Túi 200g đóng kín lại được.</p>"
+    },
+    "Dash Camera Pro": {
+        "name": "Camera Hành Trình Pro",
+        "description": "Camera hành trình trước + sau độ phân giải 1440p, có chế độ đỗ xe và ghi nhật ký GPS tích hợp.",
+        "content": "<p>Ghi lại mọi hành trình với độ nét 1440p sắc bén nhờ cảm biến nhìn đêm ở cả trước và sau. Bao gồm giám sát khi đỗ xe 24 giờ và kết nối ứng dụng qua Wi-Fi.</p>"
+    },
+    "Denim Jacket": {
+        "name": "Áo Khoác Denim",
+        "description": "Áo khoác denim kiểu trucker cổ điển với màu xanh thô vintage.",
+        "content": "<p>Denim Nhật 14oz. Đường may trong selvedge. Mềm dần theo thời gian mặc và phai màu tự nhiên.</p>"
+    },
+    "Diamond Pendant": {
+        "name": "Mặt dây kim cương",
+        "description": "Mặt dây kim cương tròn brilliant 0,25ct ốp viền trên dây chuyền vàng mảnh.",
+        "content": "<p>Viên đá đạt chứng nhận GIA G/SI1. Viền vàng vàng 14k đặc và dây hộp 16 inch với vòng điều chỉnh tới 18 inch.</p>"
+    },
+    "Dining Table Oak": {
+        "name": "Bàn Ăn Gỗ Sồi",
+        "description": "Bàn ăn mở rộng bằng gỗ sồi trắng nguyên khối, ngồi được sáu đến mười người với phần lá mở rộng ở giữa.",
+        "content": "<p>Chân kiểu giá đỡ tạo nhiều khoảng để chân thoải mái. Bề mặt hoàn thiện thủ công được xử lý bằng dầu tự nhiên — dễ làm mới qua từng năm.</p>"
+    },
+    "Dinosaur Theme Mug": {
+        "name": "Cốc Sứ Họa Tiết Khủng Long",
+        "description": "Cốc sứ bóng in hình khủng long ngộ nghĩnh kèm tên tùy chỉnh.",
+        "content": "<p>Dung tích 11oz. An toàn với lò vi sóng và máy rửa chén. In chất lượng ảnh bền bỉ qua sử dụng hàng ngày.</p>"
+    },
+    "Dog Chew Toy": {
+        "name": "Đồ Chơi Gặm Cho Chó",
+        "description": "Đồ gặm cao su siêu bền có thể nảy, nổi trên nước và chịu được những chú chó gặm mạnh.",
+        "content": "<p>Cao su tự nhiên không độc hại. An toàn khi rửa bằng máy. Lõi rỗng có thể nhồi đồ ăn vặt hoặc bơ đậu phộng. Có các cỡ từ nhỏ đến XL.</p>"
+    },
+    "Dog Harness": {
+        "name": "Đai Yếm Cho Chó",
+        "description": "Đai yếm chống giật có đệm với viền phản quang và hai điểm gắn dây dắt.",
+        "content": "<p>Đệm lưới thoáng khí. Điều chỉnh năm điểm vừa vặn. Có cỡ XS-XL. Giặt tay với nước lạnh.</p>"
+    },
+    "Dragon Fruit": {
+        "name": "Thanh long",
+        "description": "Thanh long ruột hồng rực rỡ với vị ngọt thanh nhẹ và độ giòn sần sật.",
+        "content": "<p>Được hái thủ công ở độ chín hoàn hảo từ các nhà vườn hữu cơ được chứng nhận. Giàu vitamin C và chất chống oxy hóa. Bán theo quả.</p>"
+    },
+    "DS02 Monitor Stand": {
+        "name": "Đế nâng màn hình DS02",
+        "description": "Đế nâng màn hình bằng nhôm với hub USB-C tích hợp và bàn sạc không dây.",
+        "content": "<p>Nâng màn hình cao 12cm khỏi mặt bàn. Ba cổng USB-A, một cổng USB-C PD và mặt sạc không dây Qi 15W.</p>"
+    },
+    "Egg-Crate Wall Art": {
+        "name": "Tranh Treo Tường Họa Tiết Khay Trứng",
+        "description": "Tranh treo tường ấn tượng với họa tiết khay trứng vui nhộn trên giấy mờ chất lượng lưu trữ.",
+        "content": "<p>Mực in chất lượng lưu trữ. Có sẵn các kích thước 12x18 và 18x24. Giấy chứng nhận FSC. Khung bán riêng.</p>"
+    },
+    "Element Nightstand": {
+        "name": "Tủ Đầu Giường Element",
+        "description": "Tủ đầu giường gỗ óc chó hai ngăn kéo với ray trượt êm và tay nắm đồng thau.",
+        "content": "<p>Gỗ óc chó nguyên khối toàn bộ, hoàn thiện chà tay và ngăn kéo ghép mộng đuôi én. Được thiết kế để lên màu đậm đà hơn qua nhiều thập kỷ.</p>"
+    },
+    "Elsa Drop Earrings": {
+        "name": "Hoa tai giọt nước Elsa",
+        "description": "Hoa tai giọt nước điêu khắc bằng vàng 14k với dáng cong bóng cao.",
+        "content": "<p>Chốt cài không gây dị ứng. Giọt dài 1 inch. Đủ nhẹ để đeo hằng ngày. Thiết kế bởi xưởng chế tác nội bộ tại Florence.</p>"
+    },
+    "Embossed Wallet": {
+        "name": "Ví Dập Nổi",
+        "description": "Ví da gập đôi với họa tiết monogram dập nổi tinh tế, sáu ngăn đựng thẻ và một ngăn đựng tiền xu.",
+        "content": "<p>Da thuộc thực vật. Lớp lót chống đọc trộm RFID. Cạnh sơn thủ công và các điểm chịu lực được may gia cố.</p>"
+    },
+    "Engraved Coaster Set": {
+        "name": "Bộ Lót Ly Khắc Tên",
+        "description": "Bộ bốn lót ly bằng tre được khắc laser tên, ngày tháng hoặc tranh vẽ tùy chỉnh.",
+        "content": "<p>Tre đạt chứng nhận FSC. Đế bần bảo vệ bề mặt. Đựng trong hộp quà giấy kraft sẵn sàng để tặng.</p>"
+    },
+    "Epipremnum Aureum": {
+        "name": "Trầu Bà Vàng",
+        "description": "Trầu bà vàng leo rủ — dễ chăm, chịu được ánh sáng yếu và bao dung với lịch trình bận rộn.",
+        "content": "<p>Giao trong chậu ươm 14cm. Ưa ánh sáng gián tiếp mạnh. Tưới khi lớp đất mặt 2cm đã khô.</p>"
+    },
+    "Ergonomic Mouse Pro": {
+        "name": "Chuột công thái học Pro",
+        "description": "Chuột công thái học dạng đứng với DPI điều chỉnh được và nhấp chuột êm — thoải mái cho những phiên làm việc dài.",
+        "content": "<p>Không dây USB-C 2.4GHz và Bluetooth. Pin 70 ngày. Sạc lại được, thoải mái cả ngày.</p>"
+    },
+    "Eternity Band": {
+        "name": "Nhẫn vĩnh cửu",
+        "description": "Nhẫn vĩnh cửu cài rãnh kim cương với tổng trọng lượng 1,0ct bằng vàng vàng 14k.",
+        "content": "<p>Kim cương tròn brilliant gắn liên tục quanh thân nhẫn. Màu F/G, độ tinh khiết VS. Bản rộng 2,5mm. Chỉnh kích cỡ theo đơn đặt.</p>"
+    },
+    "Expose Side Table": {
+        "name": "Bàn Phụ Expose",
+        "description": "Bàn phụ tạo hình điêu khắc với mặt đá travertine và chân thép sơn tĩnh điện.",
+        "content": "<p>Mỗi tấm đá travertine là độc nhất — vân đá tự nhiên và những biến đổi sắc độ tinh tế là dấu ấn đặc trưng của sản phẩm.</p>"
+    },
+    "Family Tote Bag": {
+        "name": "Túi Tote Gia Đình",
+        "description": "Túi tote cotton 12oz siêu bền in tên viết tắt hoặc ảnh gia đình tùy chỉnh.",
+        "content": "<p>Quai túi được gia cố, giặt máy được. Tuyệt vời cho túi đi biển, túi đi chợ hoặc túi dùng hàng ngày.</p>"
+    },
+    "Fiddle Leaf Fig": {
+        "name": "Cây Bàng Singapore",
+        "description": "Cây bàng Singapore dáng điêu khắc với lá rộng hình đàn violin — một cây tạo điểm nhấn thực thụ.",
+        "content": "<p>Giao trong chậu ươm 24cm. Ưa ánh sáng gián tiếp mạnh ổn định. Tránh gió lùa và tưới quá nhiều.</p>"
+    },
+    "Foam Roller Pro": {
+        "name": "Con Lăn Mút Pro",
+        "description": "Con lăn mút mật độ cao dài 24 inch với bề mặt nhám cho bài tập mô sâu.",
+        "content": "<p>Cấu trúc EVA giữ form qua nhiều lần sử dụng nặng lặp lại. Tác động vào cơ đùi trước, cơ mông, dải IT và phần lưng trên.</p>"
+    },
+    "Footrest Adjustable": {
+        "name": "Footrest Adjustable",
+        "description": "Kê chân công thái học có thể nghiêng với bề mặt chống trượt và mười nấc điều chỉnh độ cao.",
+        "content": "<p>Giảm áp lực lên vùng lưng dưới ở bất kỳ bàn làm việc nào. Cất gọn khi không sử dụng. Hỗ trợ tư thế tự nhiên trong những ca làm việc dài.</p>"
+    },
+    "Frigg Moon Natural Rubber Baby Pacifier Gentle Comfort": {
+        "name": "Ti Giả Cao Su Tự Nhiên Frigg Moon Êm Dịu Nhẹ Nhàng",
+        "description": "Lotion không hương liệu với chiết xuất yến mạch và bơ hạt mỡ cho làn da nhạy cảm của bé.",
+        "content": "<p>Đã được kiểm nghiệm da liễu. Không chứa paraben, sulphate hay hương liệu tổng hợp. Chai bơm 200ml.</p>"
+    },
+    "Funnel-neck wool jacket": {
+        "name": "Áo khoác len cổ phễu",
+        "description": "Một chiếc áo khoác len ngắn có cổ phễu dựng đứng, túi cài khuy và khóa kéo toàn phần."
+    },
+    "Garment-washed linen overshirt": {
+        "name": "Áo khoác ngoài bằng vải lanh đã giặt",
+        "description": "Một chiếc áo khoác ngoài bằng vải lanh vừa vặn thoải mái với cổ áo xòe sạch sẽ và hàng cúc vỏ - có kích thước để mặc bên ngoài áo phông."
+    },
+    "Gold Tennis Bracelet": {
+        "name": "Vòng tay tennis vàng",
+        "description": "Vòng tay tennis cổ điển với kim cương cài chấu tổng trọng lượng 1,5ct bằng vàng trắng 14k.",
+        "content": "<p>Kim cương tròn brilliant cài tay, màu F/G, độ tinh khiết VS. Khóa an toàn khóa kép. Kích cỡ 7 inch, có dịch vụ chỉnh kích cỡ.</p>"
+    },
+    "Hammer Drill 18V": {
+        "name": "Máy Khoan Búa 18V",
+        "description": "Máy khoan búa không chổi than dùng pin với bộ chọn ba chế độ và đèn LED soi sáng.",
+        "content": "<p>Bắt vít, khoan và khoan búa bê tông tới 1/2 inch. Kèm theo hai pin 4Ah, sạc nhanh và hộp đựng chuyên dụng cho nhà thầu.</p>"
+    },
+    "Hammock Cat Tower Grey": {
+        "name": "Trụ Leo Cho Mèo Kiểu Võng Màu Xám",
+        "description": "Trụ leo ba tầng cho mèo với cột cào bằng dây sisal và hốc nghỉ êm ái bằng vải nhung. Làm từ gỗ thông đặc với võng nhung mềm mại và đệm có thể tháo rời.",
+        "content": "<p>Lõi ván dăm bọc vải nhung mềm. Cao 110cm với cột sisal có thể thay thế. Lắp ráp dễ dàng với dụng cụ kèm theo.</p>"
+    },
+    "Heart Photo Frame": {
+        "name": "Khung Ảnh Trái Tim",
+        "description": "Khung ảnh gỗ hình trái tim với bức ảnh đôi yêu thích của bạn in dạng mờ dịu.",
+        "content": "<p>Gỗ sồi đạt chứng nhận FSC. Có thể đặt đứng hoặc treo tường. Vùng in ảnh 5x5.</p>"
+    },
+    "Herbal Recovery Tea": {
+        "name": "Trà thảo mộc Phục hồi",
+        "description": "Hoa cúc, nữ lang và tía tô đất dạng lá rời — một tách trà mỗi đêm để thư giãn trước khi ngủ.",
+        "content": "<p>Trồng hữu cơ và pha trộn thủ công. Hộp thiếc 50g đóng kín lại được cho 25 khẩu phần. Tự nhiên không chứa caffeine.</p>"
+    },
+    "High neck midi wool coat": {
+        "name": "Áo khoác len cổ cao dáng midi",
+        "description": "Áo khoác len cổ cao tông camel mềm — cổ funnel có thể kéo khóa kín cho những hành trình gió lạnh.",
+        "content": "<p>Vải melton len chải mềm với lớp lót polyester tái chế. Khóa hai chiều ẩn. Túi welt đầy đủ tại hông.</p>"
+    },
+    "Hoya Carnosa": {
+        "name": "Cẩm Cù",
+        "description": "Cây cẩm cù lá sáp leo rủ, tưởng thưởng người chăm sóc kiên nhẫn bằng những chùm hoa thơm dịu.",
+        "content": "<p>Giao trong chậu ươm 12cm. Ánh sáng mạnh, chậu vừa khít, tưới ít. Để khô giữa các lần tưới.</p>"
+    },
+    "Hydrating Serum": {
+        "name": "Serum Cấp Ẩm",
+        "description": "Serum axit hyaluronic giúp làm căng, cấp ẩm và làm mờ nếp nhăn li ti ngay khi tiếp xúc.",
+        "content": "<p>Năm trọng lượng phân tử axit hyaluronic. Không hương liệu. Chai 30ml với vòi bơm chân không.</p>"
+    },
+    "HyperOne Gen 3 Keyboard": {
+        "name": "Bàn phím HyperOne Gen 3",
+        "description": "Bàn phím cơ 75% có thể thay nóng switch với keycap PBT và switch linear tactile.",
+        "content": "<p>USB-C và Bluetooth đa điểm. RGB từng phím. Tấm nền nhôm. Layout cho Mac và Windows.</p>"
+    },
+    "Imola Armchair": {
+        "name": "Ghế Bành Imola",
+        "description": "Ghế bành thư giãn tạo hình điêu khắc bọc vải bouclé với chân gỗ sồi nguyên khối.",
+        "content": "<p>Khung gỗ sồi đạt chứng nhận FSC với mút đàn hồi cao và đệm cao su tự nhiên. Thiết kế cho những phòng khách khiến người ta phải ngoái nhìn lần thứ hai.</p>"
+    },
+    "Impact Driver Set": {
+        "name": "Bộ Máy Vặn Vít Va Đập",
+        "description": "Máy vặn vít va đập 18V nhỏ gọn với điều khiển ba tốc độ và bộ 30 mũi vặn.",
+        "content": "<p>Mô-men xoắn 1.800 in-lb bắt được bu lông và vít lớn mà không cần khoan mồi. Bao gồm đầu kẹp lục giác 1/4 inch và móc thắt lưng.</p>"
+    },
+    "iPhone 17 Pro Max": {
+        "name": "iPhone 17 Pro Max",
+        "description": "Điện thoại thông minh cao cấp với khung titan, màn hình ProMotion và cụm ba camera chuyên nghiệp.",
+        "content": "<p>Màn hình Super Retina XDR 6.9\", chip A19 Pro và zoom quang học 5x. Được thiết kế để chụp, chỉnh sửa và phát trực tiếp từ bất cứ đâu.</p>"
+    },
+    "King Platform Bed": {
+        "name": "Giường Bệ King",
+        "description": "Giường bệ thấp với đầu giường bọc vải lanh và khung gỗ sồi.",
+        "content": "<p>Nền dát giường nâng đỡ mọi loại nệm mà không cần khung lò xo. Lớp vỏ vải lanh tháo rời để vệ sinh.</p>"
+    },
+    "Laser Level": {
+        "name": "Máy Cân Mực Laser",
+        "description": "Máy cân mực laser chữ thập tự cân bằng với tầm hoạt động 100 foot và giá đỡ nam châm.",
+        "content": "<p>Laser cấp II với đi-ốt xanh lá để dễ nhìn dưới ánh sáng ban ngày. Đạt chuẩn IP54, chạy mười tiếng với pin AA.</p>"
+    },
+    "Leather Boots": {
+        "name": "Bốt Da",
+        "description": "Bốt cổ thấp mũi nhọn vừa trên đế gót vuông xếp tầng với khóa kéo bên hông.",
+        "content": "<p>Thân da bê mịn, lót đế da và đế cao su Vibram chống trơn trượt. Hoàn thiện thủ công tại Bồ Đào Nha.</p>"
+    },
+    "Leather Crossbody Bag": {
+        "name": "Túi Đeo Chéo Da",
+        "description": "Túi đeo chéo da mịn với dây điều chỉnh được, khóa kim loại màu vàng và ba ngăn đựng thẻ.",
+        "content": "<p>Da nguyên tấm của Ý. Cạnh túi sơn thủ công. Phù hợp với cả phong cách hằng ngày lẫn trang trọng.</p>"
+    },
+    "Leather shopper bag with stitching": {
+        "name": "Túi shopper da khâu nổi",
+        "description": "Túi shopper da rộng rãi với đường khâu yên ngựa tương phản và góc gia cố.",
+        "content": "<p>Da nguyên tấm thuộc thực vật phát triển lớp patina ấm áp theo thời gian. Miệng mở với khóa nam châm. Lòng túi lót da lộn với hai túi phụ và một túi khóa kéo.</p>"
+    },
+    "LED Desk Lamp Smart": {
+        "name": "Đèn bàn LED thông minh",
+        "description": "Đèn bàn LED dịu mắt với điều chỉnh màu theo nhịp sinh học, điều khiển qua ứng dụng và đế sạc không dây.",
+        "content": "<p>Điều chỉnh 2700K-6500K. 1500 lux ở độ cao mặt bàn. Sạc không dây Qi 10W tích hợp trong đế.</p>"
+    },
+    "LED Headlight Bulb": {
+        "name": "Bóng Đèn Pha LED",
+        "description": "Cặp bóng đèn LED chuyển đổi 10.000 lumen với quạt làm mát êm ái.",
+        "content": "<p>Nhiệt độ màu ánh sáng ban ngày 6500K, lắp đặt cắm-là-chạy, tương thích CANBus trên hầu hết các xe. Tuổi thọ 50.000 giờ.</p>"
+    },
+    "Light Therapy Lamp": {
+        "name": "Đèn trị liệu ánh sáng",
+        "description": "Đèn bàn quang phổ đầy đủ 10.000 lux với độ ấm điều chỉnh được và bộ hẹn giờ 30 phút tích hợp.",
+        "content": "<p>Giúp điều hòa nhịp sinh học trong những tháng thiếu sáng. Đã lọc tia UV. Chân đế nhỏ gọn và điều chỉnh được góc nghiêng.</p>"
+    },
+    "linen slim-fit shirt": {
+        "name": "Áo sơ mi linen ôm vừa",
+        "description": "Áo sơ mi linen wash garment dáng slim với gấu bo tròn — hợp cả công sở lẫn cuối tuần.",
+        "content": "<p>Linen châu Âu được dệt và hoàn thiện tại Bồ Đào Nha. Nút đá. Ôm body vừa phải mà không bó cử động.</p>"
+    },
+    "Link Necklace Gold": {
+        "name": "Dây chuyền mắt xích vàng",
+        "description": "Dây chuyền mắt xích kiểu kẹp giấy đánh bóng bằng vàng vàng 14k, dài 18 inch.",
+        "content": "<p>Mắt xích vàng 14k đặc, khóa móc tôm. Đeo lớp đẹp với mặt dây ngắn hơn hoặc đeo riêng trên cổ áo hở.</p>"
+    },
+    "Little Dine Wooden High Chair Elegant Comfort for Tiny Foodies": {
+        "name": "Ghế Ăn Dặm Bằng Gỗ Little Dine Tinh Tế Thoải Mái Cho Những Thực Khách Nhí",
+        "description": "Thú bông cotton hữu cơ đan tay với kích thước hoàn hảo cho vòng tay nhỏ bé.",
+        "content": "<p>Ruột tái chế chống dị ứng. Chi tiết khuôn mặt được thêu — không có chi tiết nhỏ. Có thể lau bề mặt.</p>"
+    },
+    "Long Leaf Shaped Earrings": {
+        "name": "Bông Tai Hình Chiếc Lá Dài",
+        "description": "Bông tai thả hình chiếc lá được tạo hình điêu khắc với lớp hoàn thiện vàng bóng.",
+        "content": "<p>Đồng đúc nhẹ với chốt cài chống dị ứng. Hoàn thiện thủ công. Kèm theo túi nhung.</p>"
+    },
+    "Lumbar Support Cushion": {
+        "name": "Lumbar Support Cushion",
+        "description": "Gối tựa thắt lưng bằng mút hoạt tính với vỏ lưới thoáng khí và dây đai điều chỉnh.",
+        "content": "<p>Khuyến khích cột sống thẳng tự nhiên trên mọi loại ghế. Vỏ tháo rời giặt máy bằng nước lạnh. Phù hợp với mọi văn phòng, xe hơi hay ghế sofa.</p>"
+    },
+    "Lyocell wrap top": {
+        "name": "Áo wrap lyocell",
+        "description": "Áo wrap lyocell mát tay với độ rủ mềm và thắt eo tự nhiên — linh hoạt từ công sở đến tiệc tối.",
+        "content": "<p>Cắt may từ 100% lyocell TENCEL™, áo wrap có độ thoáng như linen và rủ mềm như lụa. Cổ chữ V sâu cùng dây buộc bên hông dễ dàng điều chỉnh theo mọi vòng eo.</p>"
+    },
+    "Madrid": {
+        "name": "Madrid",
+        "description": "Bàn nâng hạ điện êm ái với động cơ ba tầng và các thiết lập độ cao ghi nhớ.",
+        "content": "<p>Cảm biến chống va chạm và bốn thiết lập độ cao có thể lập trình. Mặt bàn tre nguyên khối, 60 x 30 inch. Nâng được tải đến 220 pound.</p>"
+    },
+    "Magnetic Phone Stand": {
+        "name": "Magnetic Phone Stand",
+        "description": "Giá đỡ nhôm tương thích MagSafe với đế nặng và điều chỉnh góc nghiêng.",
+        "content": "<p>Giữ điện thoại ở góc hoàn hảo cho FaceTime, xem công thức nấu ăn hoặc sạc. Chất liệu nhôm và silicon.</p>"
+    },
+    "Manuka Honey": {
+        "name": "Mật ong Manuka",
+        "description": "Mật ong Manuka thô, chưa tiệt trùng, được phân hạng theo hoạt tính enzyme tự nhiên.",
+        "content": "<p>Khai thác từ các trại ong xa xôi ở New Zealand. Chứng nhận UMF 10+. Lọ thủy tinh 250g.</p>"
+    },
+    "Men Casual Shoes with PU Upper": {
+        "name": "Giày Casual Nam Thân PU",
+        "description": "Giày court lấy cảm hứng từ tennis với hỗ trợ ngang, phần giữa bàn chân có đệm và đế ngoài họa tiết xương cá.",
+        "content": "<p>Thân da tổng hợp với lớp phủ TPU. Đế giữa bao quanh giúp ổn định qua những pha di chuyển ngang nhanh. Đế ngoài đa sân.</p>"
+    },
+    "Men Duramo": {
+        "name": "Giày Chạy Nam Duramo",
+        "description": "Dáng giày chạy cổ điển với thân da lộn pha lưới và gót giày có đệm mút.",
+        "content": "<p>Lớp phủ da lộn trên nền lưới thoáng khí. Đế giữa EVA với khoang khí lộ ở gót. Đôi giày phong cách sống cổ điển khởi đầu mọi thứ.</p>"
+    },
+    "Men Flat Low": {
+        "name": "Giày Đế Bằng Cổ Thấp Nam",
+        "description": "Giày sneaker đi bộ bằng da với lót đế êm ái và đế ngoài cao su linh hoạt.",
+        "content": "<p>Thân da mềm với các mảng co giãn ở cổ chân. Lót đế có thể tháo rời để dùng đế chỉnh hình. Đôi giày đi làm cả ngày.</p>"
+    },
+    "Men Flat Sneakers": {
+        "name": "Giày Sneaker Đế Bằng Nam",
+        "description": "Giày tập đa năng với thân dệt kim, đế giữa bằng mút và thiết kế xỏ chân.",
+        "content": "<p>Thân dệt kim co giãn ôm chân như tất. Đế giữa EVA ép khuôn. Đôi giày cho ngày di chuyển — dễ dàng qua cửa an ninh và phù hợp đi bộ đường dài.</p>"
+    },
+    "Men Panelled Athleisure Shoes": {
+        "name": "Giày Athleisure Nam Phối Mảng",
+        "description": "Dáng giày court cổ thấp cổ điển bằng da trắng với đường chỉ may đồng màu.",
+        "content": "<p>Thân da trơn, cổ giày có đệm và đế ngoài cao su họa tiết xương cá. Đôi giày trắng tối giản phối được với mọi thứ.</p>"
+    },
+    "Men Sports Shoes with Mesh upper": {
+        "name": "Giày Thể Thao Nam Thân Lưới",
+        "description": "Giày tập thân lưới thoáng khí với đế giữa êm ái và đế ngoài cao su bền bỉ.",
+        "content": "<p>Thân lưới kỹ thuật, đế giữa EVA và đế ngoài chống mài mòn cao. Kích cỡ chuẩn form. Phù hợp cho tập luyện hàng ngày và chạy trên máy.</p>"
+    },
+    "Men's Running JF190.1 Grip White": {
+        "name": "Giày Chạy Bộ Nam JF190.1 Grip White",
+        "description": "Giày tập trung tính nhẹ nhàng với đế giữa bằng mút đàn hồi và thân lưới thoáng khí màu trắng sạch sẽ.",
+        "content": "<p>Được thiết kế cho quãng đường chạy hàng ngày, JF190.1 cân bằng giữa độ êm và hoàn trả năng lượng. Thân làm từ nhựa tái chế, độ chênh 8mm, phù hợp cho đường nhựa và đường mòn phẳng.</p>"
+    },
+    "Men's Sports T-Shirt - Dry Brown": {
+        "name": "Áo Thun Thể Thao Nam - Dry Brown",
+        "description": "Áo thun thể thao thấm hút mồ hôi màu nâu khô — vải dệt nhanh khô với các mảng lưới hai bên hông.",
+        "content": "<p>Chất liệu pha polyester nhẹ giữ bạn mát mẻ qua những hiệp tập dài. Đường may flatlock giảm cọ xát và phần gấu áo dài giữ nguyên qua mọi lần lặp lại động tác.</p>"
+    },
+    "Merino Wool Knit Booties with Drawstring – Snug Comfort for Newborns": {
+        "name": "Giày Len Merino Đan Có Dây Rút – Ấm Áp Êm Ái Cho Trẻ Sơ Sinh",
+        "description": "Giày len merino mềm mại giữ ấm đôi chân nhỏ xíu mà không gây nóng bức.",
+        "content": "<p>Lớp lót len merino thoáng khí tự nhiên với cổ giày co giãn. Giặt máy được ở chế độ nhẹ. Kích cỡ 0-12 tháng.</p>"
+    },
+    "MG20 Wireless Gaming": {
+        "name": "Tai nghe gaming không dây MG20",
+        "description": "Tai nghe gaming không dây độ trễ thấp với khả năng trộn hai nguồn âm và micro cần tháo rời được.",
+        "content": "<p>Đầu thu USB 2.4GHz cùng Bluetooth đa điểm. Âm thanh không gian THX Spatial Audio. Pin 22 giờ, sạc nhanh USB-C.</p>"
+    },
+    "MH40 Wireless Over-Ear": {
+        "name": "Tai nghe trùm tai không dây MH40",
+        "description": "Tai nghe trùm tai không dây phong cách cổ điển với da khâu tay thủ công và 30 giờ pin.",
+        "content": "<p>Màng loa Beryllium 40mm, sạc nhanh USB-C và gọng nhôm. Một chiếc tai nghe cao cấp dùng hằng ngày, được thiết kế để bền lâu.</p>"
+    },
+    "Mindfulness Journal": {
+        "name": "Nhật ký chánh niệm",
+        "description": "Nhật ký có hướng dẫn 12 tuần với các gợi ý hằng ngày về lòng biết ơn, sự suy ngẫm và đặt ý định.",
+        "content": "<p>Giấy đạt chứng nhận FSC. Bìa cứng bọc vải lanh. Kèm bảng theo dõi thói quen, bài tập thở và phần ôn tập hằng tuần.</p>"
+    },
+    "Mini Crossbody": {
+        "name": "Túi Đeo Chéo Mini",
+        "description": "Túi đeo chéo da nhỏ với dây đeo xích và khóa kim loại tông vàng.",
+        "content": "<p>Đựng được điện thoại, thẻ và son. Dây đeo điều chỉnh từ 22 đến 24 inch. Lớp lót vải drill cotton.</p>"
+    },
+    "Mini Sue Crossbody Bag": {
+        "name": "Túi Đeo Chéo Mini Sue",
+        "description": "Túi đeo chéo da mịn với dây điều chỉnh được, khóa kim loại màu vàng và ba ngăn đựng thẻ.",
+        "content": "<p>Da nguyên tấm của Ý. Cạnh túi sơn thủ công. Phù hợp với cả phong cách hằng ngày lẫn trang trọng.</p>"
+    },
+    "Modular Storage Cube": {
+        "name": "Khối Lưu Trữ Module",
+        "description": "Khối lưu trữ xếp chồng được bằng gỗ tần bì nguyên khối với cửa lật tùy chọn.",
+        "content": "<p>Cấu hình thành một khối đơn lẻ hoặc xếp chồng thành kệ — phần ghép nối dạng module cho phép hệ thống mở rộng theo không gian của bạn.</p>"
+    },
+    "Monstera Deliciosa": {
+        "name": "Trầu Bà Nam Mỹ",
+        "description": "Cây trầu bà Nam Mỹ với lá xẻ thùy biểu tượng, tạo điểm nhấn ấn tượng cho mọi căn phòng.",
+        "content": "<p>Giao trong chậu ươm 17cm. Ánh sáng gián tiếp mạnh. Tưới đẫm khi đất khô, sau đó để ráo hoàn toàn.</p>"
+    },
+    "Mood Support Mushroom Blend": {
+        "name": "Hỗn hợp nấm Hỗ trợ tâm trạng",
+        "description": "Phức hợp nấm chức năng — bờm sư tử, linh chi và đông trùng hạ thảo — hỗ trợ nhận thức.",
+        "content": "<p>Chiết xuất kép từ thể quả hữu cơ. 1500mg mỗi khẩu phần. Pha vào cà phê, trà hoặc sinh tố.</p>"
+    },
+    "MUSHIE Frigg Baby's First Pacifier Floral Heart | Kido Bebe": {
+        "name": "Ti Giả Đầu Đời MUSHIE Frigg Họa Tiết Hoa Trái Tim | Kido Bebe",
+        "description": "Ti giả silicone y tế nguyên khối được tạo hình để hỗ trợ khớp ngậm tự nhiên.",
+        "content": "<p>Không chứa BPA, BPS, PVC và phthalate. Hình dáng nha khoa đối xứng. Có thể tiệt trùng bằng cách đun sôi và rửa được trong máy rửa bát.</p>"
+    },
+    "MW75 Active Noise Cancelling": {
+        "name": "Tai nghe chống ồn chủ động MW75",
+        "description": "Chống ồn chủ động thích ứng thông minh với bốn micro và tự động tạm dừng khi nhận diện đầu, lý tưởng cho di chuyển và tập trung.",
+        "content": "<p>Đệm tai da cừu, mặt cảm ứng kính sapphire và hỗ trợ aptX Adaptive độ phân giải cao.</p>"
+    },
+    "NKD High Waisted Shorts": {
+        "name": "Quần Short Cạp Cao NKD",
+        "description": "Được thiết kế cho tốc độ, sự thoải mái và chuyển động hàng ngày."
+    },
+    "Organic Turmeric Powder": {
+        "name": "Bột nghệ hữu cơ",
+        "description": "Nghệ Ấn Độ phơi nắng được nghiền thành bột mịn, sắc tố đậm sâu.",
+        "content": "<p>Giàu curcumin. Kết hợp với tiêu đen để tăng hấp thụ. Lọ thủy tinh 100g kèm muỗng định lượng.</p>"
+    },
+    "Origins": {
+        "name": "Origins",
+        "description": "Sữa tắm và rửa tay Origins Ginger Burst với chiết xuất thực vật tiếp thêm năng lượng.",
+        "content": "<p>Công thức không chứa sulfate với gừng, vỏ cam quýt và lô hội. Chai bơm 250ml. Phù hợp dùng hằng ngày.</p>"
+    },
+    "Oval shoulder bag": {
+        "name": "Túi đeo vai oval",
+        "description": "Túi đeo vai oval nhỏ gọn với quai da mỏng — vừa điện thoại, ví và vật dụng cá nhân.",
+        "content": "<p>Da nappa mịn với khóa kim loại tông vàng đánh bóng. Quai điều chỉnh được. Lòng túi lót vi da lộn với một khe thẻ.</p>"
+    },
+    "Oversized poplin button-up shirt": {
+        "name": "Áo sơ mi cài cúc cỡ lớn bằng vải poplin",
+        "description": "Áo sơ mi vải poplin màu hồng mềm mại vừa vặn, đường may trễ vai và viền cong."
+    },
+    "Paris": {
+        "name": "Paris",
+        "description": "Ghế làm việc công thái học lưng lưới với tựa lưng thắt lưng điều chỉnh được và tay vịn 4D.",
+        "content": "<p>Cơ chế ngả đồng bộ, lưng lưới thoáng khí và bảy điểm điều chỉnh. Chịu tải đến 300 pound và được giao hàng đã lắp ráp hoàn chỉnh.</p>"
+    },
+    "Pearl Drop Earrings": {
+        "name": "Hoa tai giọt ngọc trai",
+        "description": "Hoa tai giọt ngọc trai nước ngọt cài tay với chốt mạ vàng 14k và mắt nối linh hoạt.",
+        "content": "<p>Ngọc trai 8-9mm hạng AA. Giọt dài 1,5 inch. Hợp với cả phong cách hằng ngày lẫn trang trọng. Kèm túi nhung và khăn lau.</p>"
+    },
+    "Pearl Necklace": {
+        "name": "Vòng Cổ Ngọc Trai",
+        "description": "Vòng cổ ngọc trai nước ngọt với khóa mạ vàng 14k và độ dài 18 inch.",
+        "content": "<p>Thắt nút thủ công giữa mỗi viên ngọc. Ngọc trai kích thước trung bình 7-8mm. Đi kèm túi nhung và thẻ hướng dẫn bảo quản.</p>"
+    },
+    "Performance Oil Filter": {
+        "name": "Lọc Dầu Hiệu Năng Cao",
+        "description": "Lọc dầu lõi tổng hợp lưu lượng cao, phù hợp cho chu kỳ thay dầu kéo dài.",
+        "content": "<p>Van chống chảy ngược và gioăng silicone đảm bảo bảo vệ khi khởi động nguội. Tương thích với dầu tổng hợp và dầu thường.</p>"
+    },
+    "Personalized Pillow": {
+        "name": "Gối Tựa Cá Nhân Hóa",
+        "description": "Gối tựa êm ái in hình ảnh hoặc thiết kế của bạn — mềm mại cả hai mặt.",
+        "content": "<p>Vỏ polyester 16x16 với ruột pha lông vũ. Có thể tháo rời và giặt máy.</p>"
+    },
+    "Pet Portrait Print": {
+        "name": "Tranh In Chân Dung Thú Cưng",
+        "description": "Bức chân dung thú cưng của bạn được vẽ tay, in trên giấy mờ chất lượng lưu trữ.",
+        "content": "<p>Gửi bất kỳ bức ảnh nào và các họa sĩ của chúng tôi sẽ biến nó thành bức chân dung cách điệu. Có kích thước 8x10 và 16x20.</p>"
+    },
+    "Pet Shampoo": {
+        "name": "Sữa Tắm Cho Thú Cưng",
+        "description": "Sữa tắm yến mạch và nha đam làm sạch mà không lấy đi lớp dầu tự nhiên.",
+        "content": "<p>Cân bằng độ pH cho chó và mèo. Không chứa xà phòng. Chất hoạt động bề mặt chiết xuất từ dừa. Chai 500ml. Không thử nghiệm trên động vật.</p>"
+    },
+    "Photo Book Mini": {
+        "name": "Album Ảnh Mini",
+        "description": "Album ảnh bìa cứng 5x7 nhỏ gọn — lý tưởng cho những chuyến đi, đám cưới hoặc kỷ niệm tổng kết năm.",
+        "content": "<p>Tùy chọn 20-100 trang. Giấy lụa cao cấp. Đóng gáy phẳng cho những trang ảnh trải dài không méo mó.</p>"
+    },
+    "Photo Candle": {
+        "name": "Nến In Hình",
+        "description": "Nến pha sáp đậu nành trong lọ thủy tinh mờ bọc bức ảnh yêu thích của bạn.",
+        "content": "<p>Thời gian cháy 40 giờ. Có tùy chọn hương nhẹ hoặc không hương. Món quà hoàn hảo cho dịp kỷ niệm hoặc tưởng nhớ.</p>"
+    },
+    "Pickleball Racket - Kuikma Open Blue": {
+        "name": "Vợt Pickleball - Kuikma Open Blue",
+        "description": "Vợt pickleball sẵn sàng thi đấu với mặt graphite và lõi polymer tổ ong.",
+        "content": "<p>Được USAPA chứng nhận, trọng lượng chơi 8oz, tay cầm đệm đục lỗ cho điều kiện ra mồ hôi. Tuyệt vời cho lối chơi kiểm soát và tinh tế.</p>"
+    },
+    "Pillow talk plump effect lip": {
+        "name": "Son Hiệu Ứng Căng Mọng Pillow Talk",
+        "description": "Son lì hoàn thiện mịn mượt với tông hồng nude tôn da phù hợp với mọi sắc độ da.",
+        "content": "<p>Công thức lâu trôi, dưỡng ẩm với vitamin E và bơ hạt mỡ. Thỏi son có thể thay lõi. Không thử nghiệm trên động vật và thuần chay.</p>"
+    },
+    "Poppy with Tablet": {
+        "name": "Poppy with Tablet",
+        "description": "Ghế đào tạo di động tích hợp tay bàn viết và đệm ngồi công thái học định hình.",
+        "content": "<p>Bàn viết xoay gắn liền, tựa lưng định hình có đệm và bánh xe đôi. Thiết kế xếp chồng giúp tiết kiệm không gian lưu trữ trong lớp học và văn phòng chung.</p>"
+    },
+    "Pothos Marble Queen": {
+        "name": "Trầu Bà Sữa Marble Queen",
+        "description": "Trầu bà sữa marble queen lá loang — lá trắng kem và xanh làm bừng sáng mọi kệ trưng bày.",
+        "content": "<p>Giao trong chậu ươm 12cm. Ánh sáng gián tiếp mạnh giữ cho lá loang đậm màu. Tưới khi lớp đất mặt một inch đã khô.</p>"
+    },
+    "Power Steering Pump": {
+        "name": "Bơm Trợ Lực Lái",
+        "description": "Bơm trợ lực lái tái chế được kiểm tra theo tiêu chuẩn OE.",
+        "content": "<p>Bao gồm bình chứa, puli và bộ phớt mới. Bảo hành 2 năm không giới hạn số dặm.</p>"
+    },
+    "Premium Cat Food": {
+        "name": "Thức Ăn Cao Cấp Cho Mèo",
+        "description": "Thức ăn khô không ngũ cốc với cá hồi thật là thành phần đầu tiên và bổ sung taurine.",
+        "content": "<p>Công thức dành cho mèo trưởng thành nuôi trong nhà. Đạm thô tối thiểu 38%. Túi 2,5kg có khóa zip tiện lợi. Không phẩm màu hay chất bảo quản nhân tạo.</p>"
+    },
+    "Pro Earbuds Gen 4": {
+        "name": "Pro Earbuds Gen 4",
+        "description": "Chống ồn chủ động thích ứng, âm thanh không gian và tổng thời lượng phát 30 giờ cùng hộp sạc đi kèm.",
+        "content": "<p>Kháng mồ hôi chuẩn IPX4. Micro kép giảm tiếng ồn cho cuộc gọi rõ hơn. Sạc qua USB-C và không dây.</p>"
+    },
+    "Projector Headlights": {
+        "name": "Đèn Pha Projector",
+        "description": "Cặp đèn pha LED projector cắm-là-chạy với đèn xi-nhan dạng quét tuần tự.",
+        "content": "<p>Cụm đèn LED projector đạt chuẩn DOT với vòng đèn chạy ban ngày. Thay thế lắp vừa trực tiếp, không cần chỉnh sửa dây điện.</p>"
+    },
+    "Quinoa Tri-Color": {
+        "name": "Quinoa ba màu",
+        "description": "Hỗn hợp quinoa ba màu đã rửa sạch và sẵn sàng nấu — một loại hạt thay thế tơi xốp, giàu đạm.",
+        "content": "<p>Quinoa trắng, đỏ và đen từ các hợp tác xã vùng Andes. Gói 500g. Nấu chín trong 15 phút.</p>"
+    },
+    "RED TAPE Men Flat Sneakers": {
+        "name": "Giày Sneaker Đế Bằng Nam RED TAPE",
+        "description": "Giày sneaker phong cách sống đế bằng với thân da mềm và dáng giày thấp gọn.",
+        "content": "<p>Da hạt nổi, miếng vá gót bằng da lộn và đế cao su bằng. Phù hợp với quần jeans, quần chinos và quần tây.</p>"
+    },
+    "Resistance Bands Set": {
+        "name": "Bộ Dây Kháng Lực",
+        "description": "Bộ năm dây kháng lực xếp chồng được với tay cầm, đai cổ chân và móc neo cửa.",
+        "content": "<p>Kết hợp các dây để đạt kháng lực lên đến 150lb. Kèm theo túi đựng và hướng dẫn bài tập được in sẵn.</p>"
+    },
+    "Ribbed halter cami top": {
+        "name": "Áo cami dây có gân",
+        "description": "Áo yếm dây cotton có gân với dây đeo vai có thể điều chỉnh và viền cắt vừa vặn."
+    },
+    "Safety Helmet": {
+        "name": "Mũ Bảo Hộ",
+        "description": "Mũ cứng đạt chuẩn ANSI Z89 với hệ thống treo điều chỉnh bằng núm vặn và quai cằm.",
+        "content": "<p>Vỏ HDPE ổn định trước tia UV, đạt chuẩn chống va đập Loại 1 Cấp C và nguy cơ điện. Kèm theo miếng đệm trán thấm mồ hôi.</p>"
+    },
+    "Set Of 2 3kg Hand Weights": {
+        "name": "Bộ 2 Tạ Tay 3kg",
+        "description": "Cặp tạ đơn 3kg phủ vinyl với đầu tạ lục giác chống lăn. Bán theo bộ hai chiếc đồng bộ.",
+        "content": "<p>Tay cầm ôm sát thoải mái, lý tưởng cho HIIT, tạo dáng cơ và bài tập phục hồi. Đầu tạ lục giác giữ tạ ổn định trên mọi bề mặt phẳng.</p>"
+    },
+    "Shearling-Suede Tote Bag": {
+        "name": "Túi Tote Da Lộn Viền Lông Cừu",
+        "description": "Túi tote da lộn viền lông cừu mềm mại với cặp quai trên và lòng túi rộng rãi.",
+        "content": "<p>Thân túi da lộn mềm mại với cổ túi lông cừu ấm áp. Khóa nút bấm nam châm. Đựng vừa laptop 13 inch và các vật dụng hằng ngày.</p>"
+    },
+    "Shopping Bag": {
+        "name": "Túi Mua Sắm",
+        "description": "Túi mua sắm da định hình với quai cầm đôi trên đỉnh và lòng túi không lót.",
+        "content": "<p>Da Ý nguyên tấm. Đựng được laptop 13 inch, bình nước và vật dụng hằng ngày. Khóa kim loại đồng thau lên màu theo thời gian.</p>"
+    },
+    "Shoulder Bag": {
+        "name": "Túi Đeo Vai",
+        "description": "Túi đeo vai mềm rủ bằng da hột với khóa nam châm.",
+        "content": "<p>Dây đeo điều chỉnh được với hai cách đeo. Ngăn khóa kéo bên trong và hai ngăn phụ. Sản xuất tại Tây Ban Nha.</p>"
+    },
+    "Shredded Coconut": {
+        "name": "Dừa nạo sợi",
+        "description": "Dừa nạo sợi mịn không đường từ những cây dừa trồng hữu cơ.",
+        "content": "<p>Không sulphite hay đường bổ sung. Hoàn hảo cho granola, làm bánh và viên năng lượng. Túi 250g đóng kín lại được.</p>"
+    },
+    "Silicone Fork and Spoon Set – Perfect for Self-Feeding Babies": {
+        "name": "Bộ Nĩa Và Thìa Silicone – Hoàn Hảo Cho Bé Tập Tự Ăn",
+        "description": "Túi ngủ cotton hữu cơ với chỉ số TOG 2.5 cho những đêm se lạnh.",
+        "content": "<p>Lớp ngoài đạt chứng nhận GOTS với ruột chống dị ứng. Khóa kéo hai chiều giúp dễ thay tã. Kích cỡ 0-6, 6-18 và 18-36 tháng.</p>"
+    },
+    "Silk Scarf": {
+        "name": "Khăn Lụa",
+        "description": "Khăn lụa tơ tằm viền cuốn tay với họa tiết thực vật in.",
+        "content": "<p>Lụa twill 90x90cm. In máy bằng thuốc nhuộm ít tác động. Kèm theo bao giấy tái chế làm quà tặng.</p>"
+    },
+    "Sleep Restore Magnesium Drink": {
+        "name": "Thức uống magie Phục hồi giấc ngủ",
+        "description": "Magie glycinate với hoa cúc và quả anh đào chua — một nghi thức nhẹ nhàng mỗi đêm.",
+        "content": "<p>Pha vào nước ấm 30 phút trước khi ngủ. 200mg magie dễ hấp thụ mỗi khẩu phần. Không caffeine, không gây nghiện.</p>"
+    },
+    "Small Nappa Leather Pouch With Button": {
+        "name": "Túi Da Nappa Nhỏ Có Nút",
+        "description": "Túi da nappa nhỏ gọn với khóa nút nam châm và các ngăn đựng thẻ mỏng.",
+        "content": "<p>Da nappa mềm mại. Cạnh khâu tay. Đựng được thẻ, tiền mặt và điện thoại.</p>"
+    },
+    "Smart Lamp WiFi": {
+        "name": "Smart Lamp WiFi",
+        "description": "Đèn thông minh Wi-Fi điều chỉnh độ sáng với 16 triệu màu và hẹn giờ qua ứng dụng đi kèm.",
+        "content": "<p>Hoạt động với Alexa và Google Assistant. Điều khiển bằng giọng nói và ứng dụng. Đèn LED tiết kiệm năng lượng.</p>"
+    },
+    "Smart Speaker Mini": {
+        "name": "Smart Speaker Mini",
+        "description": "Loa thông minh nhỏ gọn với âm thanh 360 độ và trợ lý ảo tích hợp.",
+        "content": "<p>Âm thanh đa phòng qua Wi-Fi và Bluetooth. Hỗ trợ Alexa, Google và AirPlay 2. Ghép nối chạm để kết nối.</p>"
+    },
+    "Snake Plant": {
+        "name": "Cây Lưỡi Hổ",
+        "description": "Cây lưỡi hổ dáng kiến trúc sống tốt dù bị bỏ bê — hoàn hảo cho những góc thiếu sáng.",
+        "content": "<p>Giao trong chậu ươm 14cm. Chịu được ánh sáng yếu. Tưới ít — mỗi 3-4 tuần là đủ.</p>"
+    },
+    "Sneakersy Niskie": {
+        "name": "Giày Sneaker Cổ Thấp",
+        "description": "Giày sneaker cổ thấp với thân da sạch sẽ, cổ giày có đệm và logo tối giản.",
+        "content": "<p>Da nguyên tấm, lưỡi gà có đệm mút và đế ngoài cao su lưu hóa. Đôi giày phong cách sống cho mỗi ngày — một đôi bạn có thể phối lịch sự hay năng động.</p>"
+    },
+    "Soft Cotton Dribble Bibs 3 Pack – Gentle Protection for Little Messes": {
+        "name": "Bộ 3 Yếm Cotton Mềm Thấm Dãi – Bảo Vệ Nhẹ Nhàng Cho Những Lúc Lấm Lem",
+        "description": "Bộ ba chiếc yếm thấm dãi bằng cotton hữu cơ với nút bấm không chứa niken có thể điều chỉnh.",
+        "content": "<p>Lõi thấm hút ba lớp với lớp lót trong chống thấm nước. Họa tiết đạt chứng nhận OEKO-TEX. Phù hợp 3-24 tháng.</p>"
+    },
+    "Solitaire Ring": {
+        "name": "Nhẫn kim cương đơn",
+        "description": "Nhẫn kim cương đơn tròn brilliant 0,5ct sáu chấu bằng vàng trắng 18k với thân nhẫn cạnh dao.",
+        "content": "<p>Kim cương đạt chứng nhận GIA F/VS2. Gắn kiểu nhà thờ trên vàng trắng 18k đặc. Có kích cỡ 4-9 với dịch vụ chỉnh size miễn phí.</p>"
+    },
+    "Spider Plant": {
+        "name": "Cây Lan Chi",
+        "description": "Cây lan chi vui tươi với lá cong vòng, mọc ra những cây con dọc theo thân rủ.",
+        "content": "<p>Giao trong chậu ươm 12cm. Ánh sáng gián tiếp mạnh. Giữ ẩm đều; chịu được những đợt khô thỉnh thoảng.</p>"
+    },
+    "Spirulina Tablets": {
+        "name": "Viên tảo spirulina",
+        "description": "Tảo lam được ép thành viên không chất kết dính — một nguồn đạm thực vật bổ sung mỗi ngày.",
+        "content": "<p>Được kiểm nghiệm trong phòng thí nghiệm về kim loại nặng. 180 viên mỗi lọ. Uống 4-6 viên với nước trước bữa ăn.</p>"
+    },
+    "Square metallic frame sunglasses": {
+        "name": "Kính râm gọng kim loại vuông",
+        "description": "Kính râm gọng kim loại vuông với càng acetate đánh bóng tay và tròng CR-39.",
+        "content": "<p>Phần mặt thép không gỉ nhẹ. Tròng CR-39 phân cực chặn 100% UVA/UVB. Đệm mũi điều chỉnh được. Kèm hộp cứng và túi vi sợi.</p>"
+    },
+    "Steel Toe Boots": {
+        "name": "Giày Bảo Hộ Mũi Thép",
+        "description": "Giày bảo hộ da chống nước với mũi composite và đế chống trơn trượt.",
+        "content": "<p>Đạt chuẩn ASTM F2413. Lót giày êm ái tháo rời được và phần cổ chân gia cố cho ca làm việc mười tiếng.</p>"
+    },
+    "Stockholm Pendant": {
+        "name": "Đèn Thả Stockholm",
+        "description": "Đèn thả tạo hình điêu khắc bằng thủy tinh hổ phách thổi tay và khóa kim loại đen nhám.",
+        "content": "<p>Lắp đặt nối dây trực tiếp, điều chỉnh độ sáng được, và đẹp tuyệt khi dùng đơn lẻ hoặc theo cụm phía trên bàn ăn.</p>"
+    },
+    "Studio Reference Pro": {
+        "name": "Tai nghe phòng thu Studio Reference Pro",
+        "description": "Tai nghe phòng thu có dây kiểu kín được tinh chỉnh cho việc phối khí và thu âm chính xác.",
+        "content": "<p>Dây và đệm tai thay thế được. Đáp tuyến tần số phẳng xuống tới 8Hz. Gập gọn để mang theo.</p>"
+    },
+    "Suede Bowling Bag": {
+        "name": "Túi Bowling Da Lộn",
+        "description": "Dáng túi bowling mềm mại bằng da lộn sần với khóa kéo trên và quai cầm hai bên.",
+        "content": "<p>Lòng túi rộng rãi với một ngăn khóa kéo và hai ngăn lồng. Đựng được máy tính bảng, sổ kế hoạch và vật dụng qua đêm.</p>"
+    },
+    "Suede Mini Bag": {
+        "name": "Túi Mini Da Lộn",
+        "description": "Túi đeo vai da lộn nhỏ nhắn với dây xích và nắp gập cùng tông màu.",
+        "content": "<p>Đựng được điện thoại, thẻ và son môi. Dây xích điều chỉnh từ 22 đến 24 inch. Lót vải cotton drill.</p>"
+    },
+    "Suede Tote Bag": {
+        "name": "Túi Tote Da Lộn",
+        "description": "Túi tote da lộn cỡ lớn với cặp quai trên, nút bấm nam châm và lòng túi không lót.",
+        "content": "<p>Da lộn chải màu nâu espresso. Đựng được laptop 15 inch, bìa kẹp tài liệu và bình nước. Đế chân đồng bảo vệ đáy túi khỏi mài mòn.</p>"
+    },
+    "Supremya Baume": {
+        "name": "Supremya Baume",
+        "description": "Sáp dưỡng ban đêm giàu dưỡng chất được điều chế để nuôi dưỡng và tái tạo khi bạn ngủ.",
+        "content": "<p>Squalane, ceramide và phức hợp peptide. Hũ thủy tinh 50ml với que lấy bằng tre. Mát-xa theo chuyển động tròn trước khi đi ngủ.</p>"
+    },
+    "T9 Pro II Dual Monitor Arm": {
+        "name": "Tay đỡ màn hình T9 Pro II",
+        "description": "Tay đỡ một màn hình với điều chỉnh toàn chuyển động, quản lý dây tích hợp và đế kẹp bàn.",
+        "content": "<p>Hỗ trợ màn hình 17-32 inch nặng tới 9kg. Tương thích VESA 75/100. Điều chỉnh độ cao không cần dụng cụ.</p>"
+    },
+    "Tablet Pro 11": {
+        "name": "Tablet Pro 11",
+        "description": "Máy tính bảng Liquid Retina 11 inch với chip dòng M — lý tưởng để vẽ phác thảo, ghi chú và xem phim.",
+        "content": "<p>Tương thích với Apple Pencil và Magic Keyboard. Dung lượng 128GB-2TB. Pin cả ngày và Touch ID.</p>"
+    },
+    "Tape Measure 25ft": {
+        "name": "Thước Cuộn 25ft",
+        "description": "Thước cuộn 25 foot công suất lớn với móc nam châm và vỏ bọc cao su.",
+        "content": "<p>Móc ba đinh tán chịu được va đập rơi nhiều lần. Vươn thẳng tới 11 foot, có cả vạch chia mét và inch.</p>"
+    },
+    "Teal Blue 5 Pack Baby Bodysuits – 100% Cotton for Everyday Comfort": {
+        "name": "Bộ 5 Bodysuit Cho Bé Màu Xanh Mòng Két – 100% Cotton Cho Sự Thoải Mái Mỗi Ngày",
+        "description": "Bodysuit cotton hữu cơ đạt chứng nhận GOTS với vai dạng phong bì giúp mặc dễ dàng.",
+        "content": "<p>Vải dệt kim đơn mềm mại. Nút bấm không chứa niken. Giặt máy được. Có sẵn từ size sơ sinh đến 18 tháng.</p>"
+    },
+    "Tennis Ball With Elastic String": {
+        "name": "Bóng Tennis Có Dây Thun",
+        "description": "Bóng tennis tập luyện cá nhân được buộc với dây thun — luyện cú đánh ở bất cứ đâu.",
+        "content": "<p>Bóng phủ nỉ với dây thun đàn hồi căng cao. Tuyệt vời để luyện cú thuận tay, trái tay và giao bóng mà không cần bạn tập hay sân.</p>"
+    },
+    "Tiffany Lock Bangle": {
+        "name": "Vòng tay khóa Tiffany Lock",
+        "description": "Vòng tay khóa ổ kiểu di sản bằng vàng vàng 18k với khớp mở bản lề.",
+        "content": "<p>Vàng 18k hoàn thiện thủ công. Cơ chế khóa mở-đóng bằng bản lề. Có kích cỡ 60mm và 65mm. Kèm túi đựng trang sức dập nổi thủ công.</p>"
+    },
+    "Tool Belt Heavy": {
+        "name": "Thắt Lưng Đồ Nghề Hạng Nặng",
+        "description": "Thắt lưng thợ khung da nguyên tấm với 16 ngăn và đường may đôi gia cố.",
+        "content": "<p>Dây đai vai có đệm điều chỉnh được giúp phân bổ trọng lượng đều lên vai. Được chế tạo để bền hàng thập kỷ trên công trường.</p>"
+    },
+    "Train Free Sports Bra": {
+        "name": "Áo ngực thể thao miễn phí",
+        "description": "Được thiết kế cho tốc độ, sự thoải mái và chuyển động hàng ngày."
+    },
+    "Travel ANC Headphone": {
+        "name": "Tai nghe chống ồn dành cho du lịch",
+        "description": "Tai nghe chống ồn gập gọn được tinh chỉnh cho các chuyến bay dài và quãng đường đi làm ồn ào.",
+        "content": "<p>Pin lên tới 50 giờ, sạc nhanh USB-C và kèm hộp cứng để mang theo.</p>"
+    },
+    "Turtleneck Knit": {
+        "name": "Áo Len Cổ Lọ",
+        "description": "Áo len cổ lọ merino dệt mịn với phom dáng thoải mái và viền bo gân.",
+        "content": "<p>Len merino siêu mịn, giặt máy được ở chế độ len. Có các màu nâu espresso, màu yến mạch và xám bão.</p>"
+    },
+    "Ultimashow 2.0 Mer Lace-Up Sneakers": {
+        "name": "Giày Sneaker Buộc Dây Ultimashow 2.0",
+        "description": "Giày chạy địa hình mạnh mẽ với gai đế 4mm, tấm chống đá và mũi giày được gia cố.",
+        "content": "<p>Đế ngoài Vibram Megagrip, đế giữa EVA và tấm chống đá TPU. Chinh phục những đoạn xuống dốc lầy lội, leo dốc đá và địa hình kỹ thuật.</p>"
+    },
+    "Up Casual Shoes with Rubber Sole": {
+        "name": "Giày Casual Đế Cao Su",
+        "description": "Giày chạy đua có tấm carbon với đế giữa bằng mút PEBA và thiết kế cong kiểu rocker.",
+        "content": "<p>Tấm carbon dài toàn bộ. Mút pha PEBA hoàn trả hơn 80% năng lượng. Thiết kế cho những ngày đua từ bán marathon đến marathon.</p>"
+    },
+    "USB-C Cable Pro": {
+        "name": "USB-C Cable Pro",
+        "description": "Cáp USB-C sang USB-C 100W bọc dù, chịu được hơn 30.000 lần gập.",
+        "content": "<p>Hỗ trợ sạc nhanh PD và truyền dữ liệu 10Gbps. Có sẵn các độ dài 1m và 2m.</p>"
+    },
+    "Vanish Airbrush Pressed Powder": {
+        "name": "Phấn Phủ Nén Vanish Airbrush",
+        "description": "Phấn phủ nén siêu nhẹ giúp che mờ lỗ chân lông và giữ lớp trang điểm cố định với lớp hoàn thiện mịn như phun.",
+        "content": "<p>Không chứa talc, được nghiền mịn. Tám tông màu cho lớp hoàn thiện tự nhiên có thể tăng độ che phủ. Kèm theo bông kabuki thuần chay.</p>"
+    },
+    "Velvet Sofa 3-Seater": {
+        "name": "Ghế Sofa Nhung 3 Chỗ",
+        "description": "Ghế sofa ba chỗ may đo bằng nhung xanh ngọc lục bảo đậm với chân thon đồng thau.",
+        "content": "<p>Khung gỗ cứng sấy lò, hệ lò xo uốn lượn và đệm bọc lông vũ. Bao gồm dịch vụ giao hàng găng tay trắng.</p>"
+    },
+    "Very Conference": {
+        "name": "Very Conference",
+        "description": "Ghế tiếp khách bọc da tổng hợp với chân thép không gỉ và đệm ngồi định hình.",
+        "content": "<p>Khung nhôm đánh bóng và cơ chế ngả đàn hồi mang lại chuyển động ngồi tự nhiên. Thiết kế xếp chồng giúp tiết kiệm không gian lưu trữ.</p>"
+    },
+    "Vitality Supplements": {
+        "name": "Viên Bổ Sung Tăng Sức Sống",
+        "description": "Viên nhai đa vitamin hàng ngày với glucosamine, omega-3 và lợi khuẩn cho những chú chó năng động.",
+        "content": "<p>Viên nhai mềm vị bò. 90 viên mỗi hộp. Hỗ trợ khớp, lông và tiêu hóa. Sản xuất tại cơ sở được bác sĩ thú y kiểm định.</p>"
+    },
+    "Wet/Dry Vacuum": {
+        "name": "Máy Hút Bụi Khô/Ướt",
+        "description": "Máy hút bụi khô/ướt 12 gallon dành cho nhà thầu với bộ lọc HEPA và xe đẩy giữ ống.",
+        "content": "<p>Mô-tơ công suất đỉnh 6,5 HP và bình chứa bằng thép không gỉ. Ổ cắm tự khởi động khi kích hoạt dụng cụ và ống dài 25 foot đi kèm.</p>"
+    },
+    "White Delicate Double Pom Baby Hat – Soft & Cozy Warmth for Little Heads": {
+        "name": "Mũ Cho Bé Hai Cục Bông Trắng Tinh Tế – Ấm Áp Êm Ái Cho Đầu Bé",
+        "description": "Vòng ngậm nướu bằng gỗ sồi hoàn thiện với sáp ong đạt chuẩn thực phẩm, vừa với bàn tay nhỏ xíu.",
+        "content": "<p>Gỗ sồi châu Âu được thu hoạch bền vững. Kháng khuẩn tự nhiên. Kết hợp với kẹp silicone để giữ vòng ngậm gần bé.</p>"
+    },
+    "Wireless Charging Pad": {
+        "name": "Wireless Charging Pad",
+        "description": "Sạc không dây nhanh 15W đạt chuẩn Qi với bề mặt silicon chống trượt.",
+        "content": "<p>Tương thích với iPhone, AirPods và điện thoại Android. Cổng vào USB-C. Thân nhôm mỏng.</p>"
+    },
+    "Women's Thin and Light Sports Shorts Black": {
+        "name": "Quần Short Thể Thao Nữ Mỏng Nhẹ Màu Đen",
+        "description": "Quần short chạy bộ siêu nhẹ với lớp lót tích hợp và túi khóa kéo đựng chìa khóa.",
+        "content": "<p>Vải co giãn 4 chiều, lớp lót lưới thoáng khí bên trong và các chi tiết phản quang giúp dễ thấy trong điều kiện thiếu sáng. Form cắt cho sải chân tự nhiên và tốc độ nhanh.</p>"
+    },
+    "Wool Coat": {
+        "name": "Áo Khoác Len",
+        "description": "Áo khoác len hai hàng khuy với ve áo khía và túi viền.",
+        "content": "<p>80% len, 20% cashmere. Lớp lót cupro. Phom may ôm vừa ở vai với khoảng rộng để mặc lớp lót bên trong.</p>"
+    },
+    "Wool Midi Coat": {
+        "name": "Áo khoác len dáng midi",
+        "description": "Áo khoác len midi với túi welt và cổ ve gọn — biểu tượng outerwear hiện đại.",
+        "content": "<p>Vải melton pha len Ý với lớp lót sa tanh mềm. Một hàng nút với khóa hai nút. Dài qua đầu gối, che kín cho những ngày lạnh.</p>"
+    },
+    "Wunder Chaga Powder": {
+        "name": "Bột nấm chaga Wunder",
+        "description": "Nấm chaga Siberia thu hái tự nhiên, chiết xuất kép để giữ beta-glucan và triterpene.",
+        "content": "<p>Vị mượt mà, hơi đắng nhẹ. Pha vào cà phê, nước hầm hoặc sinh tố. Lọ thủy tinh 100g.</p>"
+    },
+    "ZZ Plant": {
+        "name": "Cây Kim Tiền",
+        "description": "Cây kim tiền lá bóng chịu được khô hạn, phòng tối và lịch trình đi xa một cách dễ dàng.",
+        "content": "<p>Giao trong chậu ươm 14cm. Chịu được ánh sáng yếu. Chỉ tưới khi đất đã khô hoàn toàn.</p>"
+    }
+}

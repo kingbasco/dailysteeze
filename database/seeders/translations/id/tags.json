@@ -1,0 +1,50 @@
+{
+    "Trends": {
+        "name": "Tren",
+        "description": "Artikel yang diberi tag Tren."
+    },
+    "Styling Tips": {
+        "name": "Tip Penataan Gaya",
+        "description": "Artikel yang diberi tag: Tips mengoordinasikan pakaian."
+    },
+    "Sustainable": {
+        "name": "Berkelanjutan",
+        "description": "Postingan dengan tag Keberlanjutan."
+    },
+    "New Arrivals": {
+        "name": "Pendatang Baru",
+        "description": "Postingan dengan tag Pendatang baru."
+    },
+    "Limited Edition": {
+        "name": "Edisi Terbatas",
+        "description": "Postingan dengan tag Edisi Terbatas."
+    },
+    "Behind the Scenes": {
+        "name": "Di belakang layar",
+        "description": "Postingan dengan tag Di balik layar."
+    },
+    "Buyer Guide": {
+        "name": "Panduan Pembeli",
+        "description": "Artikel dengan tag Panduan belanja."
+    },
+    "Care Tips": {
+        "name": "Tip Perawatan",
+        "description": "Artikel yang diberi tag Tips Penyimpanan."
+    },
+    "Capsule Wardrobe": {
+        "name": "Lemari Kapsul",
+        "description": "Artikel dengan tag Lemari pakaian kapsul."
+    },
+    "Material Stories": {
+        "name": "Cerita Materi",
+        "description": "Artikel dengan tag Cerita material."
+    },
+    "Holiday Gifting": {
+        "name": "Hadiah Liburan",
+        "description": "Postingan dengan tag hadiah liburan."
+    },
+    "Editor Picks": {
+        "name": "Pilihan Editor",
+        "description": "Postingan dengan tag Pilihan Editor."
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "Cotton": {"name": "Cotton"},
+    "Linen": {"name": "Linen"},
+    "Wool": {"name": "Len"},
+    "Leather": {"name": "Da"},
+    "Tencel": {"name": "Tencel"},
+    "Recycled": {"name": "Tái chế"},
+    "Made in Portugal": {"name": "Sản xuất tại Bồ Đào Nha"},
+    "Made in Italy": {"name": "Sản xuất tại Ý"},
+    "Hand-Crafted": {"name": "Thủ công"},
+    "Vegan": {"name": "Thuần chay"},
+    "Limited Run": {"name": "Lô giới hạn"},
+    "Best Seller": {"name": "Bán chạy nhất"},
+    "New Arrival": {"name": "Hàng mới về"},
+    "Editor Pick": {"name": "Biên tập viên chọn"},
+    "Eco-Friendly": {"name": "Thân thiện môi trường"}
+}

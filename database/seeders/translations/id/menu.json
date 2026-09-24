@@ -1,0 +1,39 @@
+{
+    "main-menu": {
+        "name": "menu utama",
+        "home": "Halaman rumah",
+        "shop": "Belanja",
+        "new_arrivals": "Pendatang baru",
+        "best_sellers": "Penjual terbaik",
+        "sale": "Diskon",
+        "all_products": "Semua produk",
+        "categories": "Kategori",
+        "outerwear": "Jaket",
+        "tops_shirts": "Kemeja",
+        "bottoms": "Celana & Rok",
+        "dresses": "Gaun",
+        "footwear": "Sepatu",
+        "accessories": "Aksesori",
+        "brands": "Merek dagang",
+        "journal": "Majalah",
+        "about": "Memperkenalkan",
+        "contact": "Kontak"
+    },
+    "footer-help": {
+        "name": "bantuan footer",
+        "contact_us": "Hubungi kami",
+        "faq": "Pertanyaan yang sering diajukan",
+        "shipping": "Mengangkut",
+        "returns_refunds": "Pengembalian & Pengembalian Dana",
+        "order_tracking": "Pelacakan pesanan"
+    },
+    "footer-company": {
+        "name": "perusahaan footer",
+        "about": "Memperkenalkan",
+        "our_stores": "Toko",
+        "sustainability": "Pembangunan berkelanjutan",
+        "careers": "Rekrutmen",
+        "privacy_policy": "Kebijakan privasi",
+        "terms_conditions": "Syarat & Ketentuan"
+    }
+}

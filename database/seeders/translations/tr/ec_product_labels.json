@@ -1,0 +1,20 @@
+{
+    "Hot": {
+        "name": "Sıcak"
+    },
+    "New": {
+        "name": "Yeni"
+    },
+    "Sale": {
+        "name": "Satış"
+    },
+    "Best Seller": {
+        "name": "En çok satan kitap"
+    },
+    "Limited": {
+        "name": "Sınırlı"
+    },
+    "Eco": {
+        "name": "Eko"
+    }
+}

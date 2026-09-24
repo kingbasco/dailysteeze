@@ -1,0 +1,156 @@
+// ============================================================
+// Amerce theme — Ecommerce shortcode styles
+// Owned by phase-10a. Imported by assets/sass/ecommerce.scss.
+// Uses CSS variables registered in phase-09.
+// ============================================================
+
+.ecommerce-products {
+    &__grid,
+    &__list,
+    &__slider,
+    &__featured {
+        position: relative;
+    }
+
+    &__list-item {
+        background-color: var(--bs-body-bg);
+        transition: box-shadow 0.2s ease;
+
+        &:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+        }
+    }
+
+    &__featured-hero {
+        min-height: 320px;
+        overflow: hidden;
+    }
+
+    &__featured-overlay {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.55) 100%);
+        color: var(--bs-white, #fff);
+    }
+
+    &__view-all .btn {
+        min-width: 180px;
+    }
+}
+
+.ecommerce-categories {
+    &__card {
+        transition: transform 0.2s ease;
+
+        &:hover {
+            transform: translateY(-4px);
+        }
+    }
+
+    &__thumb {
+        aspect-ratio: 1 / 1;
+        background-color: var(--bs-light, #f8f9fa);
+
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__list-item .badge {
+        font-weight: 500;
+    }
+}
+
+.ecommerce-brands {
+    &__logo {
+        opacity: 0.7;
+        transition: opacity 0.2s ease;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+
+.ecommerce-flash-sale {
+    &__banner {
+        background-color: var(--ecommerce-flash-sale-bg, #1a1a1a);
+        background-blend-mode: multiply;
+    }
+
+    &__countdown {
+        --countdown-block-bg: var(--ecommerce-countdown-bg, #000);
+    }
+
+    &__countdown-block {
+        min-width: 64px;
+    }
+}
+
+.ecommerce-product-groups {
+    &__tab-nav .nav-link {
+        font-weight: 500;
+    }
+
+    &__column-item {
+        border-bottom: 1px solid var(--bs-border-color, #e5e5e5);
+        padding-bottom: 0.75rem;
+
+        &:last-child {
+            border-bottom: 0;
+            padding-bottom: 0;
+        }
+    }
+
+    &__bundle-plus {
+        color: var(--bs-secondary, #6c757d);
+    }
+
+    &__bundle-total {
+        color: var(--bs-primary, #1a1a1a);
+    }
+}
+
+.ecommerce-coupons {
+    &__card {
+        transition: box-shadow 0.2s ease;
+
+        &:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+    }
+
+    &__value {
+        min-width: 84px;
+    }
+}
+
+.ecommerce-collections {
+    &__card {
+        transition: transform 0.25s ease;
+
+        &:hover {
+            transform: translateY(-4px);
+        }
+    }
+
+    &__thumb img {
+        width: 100%;
+        height: auto;
+        transition: transform 0.4s ease;
+    }
+
+    &__card:hover &__thumb img {
+        transform: scale(1.05);
+    }
+
+    &__overlay {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%);
+    }
+}
+
+.recently-viewed-products {
+    &__slider {
+        position: relative;
+    }
+}

@@ -1,0 +1,7 @@
+// Marketplace-only styles (loaded conditionally when marketplace plugin active).
+// Filled by phase-10f (_marketplace.scss).
+
+@use 'component/marketplace';
+@use 'component/marketplace-card-store-name';
+@use 'component/marketplace-stores-listing';
+@use 'component/marketplace-store-detail';

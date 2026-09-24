@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 280" aria-hidden="true">
+  <!-- Soft grey women's t-shirt silhouette -->
+  <g fill="#e9e9e9" stroke="none">
+    <!-- Body of the tee with a curved hem -->
+    <path d="M52 78 L94 60 Q98 70 120 70 Q142 70 146 60 L188 78 L210 100 L196 116 L184 108 L184 250 Q184 264 170 268 L70 268 Q56 264 56 250 L56 108 L44 116 L30 100 Z" />
+    <!-- Neckline highlight to make the V more readable -->
+    <path d="M98 60 Q120 92 142 60" fill="#ffffff" />
+  </g>
+
+  <!-- Measurement guides -->
+  <g fill="none" stroke="#101010" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Bust -->
+    <path d="M70 130 Q120 142 170 130" />
+    <polyline points="166,124 174,130 166,136" stroke-width="1.5" fill="none" />
+    <!-- Waist -->
+    <path d="M76 168 Q120 178 164 168" />
+    <polyline points="160,162 168,168 160,174" stroke-width="1.5" fill="none" />
+    <!-- Low hip -->
+    <path d="M68 212 Q120 224 172 212" />
+    <polyline points="168,206 176,212 168,218" stroke-width="1.5" fill="none" />
+  </g>
+
+  <!-- Labels -->
+  <g font-family="Inter, system-ui, sans-serif" font-size="11" fill="#101010">
+    <text x="184" y="133">bust</text>
+    <text x="178" y="171">waist</text>
+    <text x="186" y="215">low-hips</text>
+  </g>
+</svg>

@@ -1,0 +1,318 @@
+{
+    "Style Guides": {
+        "name": "Stil Kılavuzları",
+        "description": "Kıyafet fikirleri, kapsül gardırop ve sezonluk trend raporları Amerce editör ekibi tarafından küratörlüğünü yapıyor."
+    },
+    "Product Spotlights": {
+        "name": "Ürün Spotları",
+        "description": "En son koleksiyonların arkasındaki malzemelerin, işçiliğin ve hikayelerin derinlemesine analizi."
+    },
+    "How-To & Care": {
+        "name": "Nasıl Yapılır ve Bakım",
+        "description": "Satın aldığınız ürünün bakımıyla ilgili pratik bir kılavuz: kumaş bakımı, deri bakımı ve ekipman kurulumu."
+    },
+    "Sustainability": {
+        "name": "Sürdürülebilirlik",
+        "description": "Döngüsel moda, etik kaynak kullanımı ve sektörü yönlendiren markalar hakkında makaleler."
+    },
+    "Buying Guides": {
+        "name": "Satın Alma Kılavuzları",
+        "description": "Bağımsız karşılaştırma kılavuzu ihtiyaçlarınıza ve bütçenize uygun doğru ürünü seçmenize yardımcı olur."
+    },
+    "Inside Amerce": {
+        "name": "Amerika'nın İçinde",
+        "description": "Amerce ekibinden perde arkası haberler, tedarikçi ziyaretleri ve güncellemeler."
+    },
+    "Maintenance": {
+        "name": "Bakım",
+        "description": "Düzenli bakım, çözümler ve bakım programları arabanızın iyi çalışmasına yardımcı olur."
+    },
+    "Performance": {
+        "name": "Performans",
+        "description": "Güç yükseltmeleri, ayarlamalar ve veriye dayalı sürüş iyileştirmeleri."
+    },
+    "DIY Repair": {
+        "name": "Kendin Yap Onarımı",
+        "description": "Ev onarımları ve hafta sonu projeleri için adım adım talimatlar."
+    },
+    "Detailing": {
+        "name": "Detaylandırma",
+        "description": "Yıkayın, cilalayın ve koruyun; arabanızın fabrikadan yeni çıkmış gibi görünmesini sağlayın."
+    },
+    "New Parents": {
+        "name": "Yeni Ebeveynler",
+        "description": "Yeni doğmuş bebeğinizle ilk haftalar ve aylar için rehberlik ve güvence."
+    },
+    "Baby Care": {
+        "name": "Bebek Bakımı",
+        "description": "Sağlıklı bir bebeği destekleyen günlük bakım, nazik ürünler ve alışkanlıklar."
+    },
+    "Sleep & Routines": {
+        "name": "Uyku ve Rutinler",
+        "description": "Daha huzurlu geceler için sakinleştirici ritüeller, uyku programları ve araçlar."
+    },
+    "Nutrition": {
+        "name": "Beslenme",
+        "description": "Büyüyen bebekler için yemek yeme, sütten kesme ve sağlıklı beslenme kilometre taşları."
+    },
+    "Safety": {
+        "name": "Emniyet",
+        "description": "Pratik güvenlik tavsiyeleri, vites kontrolleri ve gönül rahatlığıyla ilgili temel bilgiler."
+    },
+    "Style Edit": {
+        "name": "Stil Düzenle",
+        "description": "İş, seyahat ve hafta sonları gibi her duruma uygun çanta ve aksesuar seçenekleri."
+    },
+    "Bag Care": {
+        "name": "Çanta Bakımı",
+        "description": "Değerli eşyalarınızın ömrünü uzatmak için temizlik, muhafaza ve bakım ritüelleri."
+    },
+    "Material Guides": {
+        "name": "Malzeme Kılavuzları",
+        "description": "Süet, sırçalı deri ve birinci sınıf malzemeler — ne satın alınır ve bunların bakımı nasıl yapılır."
+    },
+    "Trends": {
+        "name": "Trendler",
+        "description": "Metal tokalar, stiller ve renk hikayeleri her aksesuar sezonunu tanımlar."
+    },
+    "Behind the Brand": {
+        "name": "Markanın Arkasında",
+        "description": "Distribütörlüğünü yaptığımız markaların atölyeleri, zanaatkarları ve köken hikayeleri."
+    },
+    "Tools & Equipment": {
+        "name": "Araçlar ve Ekipmanlar",
+        "description": "Her gün güvendiğiniz araçlar için ayrıntılı incelemeler ve bakım kılavuzları."
+    },
+    "Techniques": {
+        "name": "Teknikler",
+        "description": "Kesme, delme, vidalama ve bitirme için endüstride kanıtlanmış yöntemler."
+    },
+    "Project Guides": {
+        "name": "Proje Kılavuzları",
+        "description": "Ortak inşaat ve yenileme projeleri için adım adım talimatlar."
+    },
+    "Trade News": {
+        "name": "Ticaret Haberleri",
+        "description": "Endüstri güncellemeleri, değişen standartlar ve endüstriler için malzeme trendleri."
+    },
+    "Skincare": {
+        "name": "Cilt Bakımı",
+        "description": "Daha sağlıklı, daha ışıltılı bir cilt için ritüellerin süreçleri, içerikleri ve derinlemesine analizi."
+    },
+    "Makeup": {
+        "name": "Makyaj yapmak",
+        "description": "Uygulama teknikleri, renk paleti seçimi ve iyi huylu pigmentlerle ürün seçimleri."
+    },
+    "Fragrance": {
+        "name": "Koku",
+        "description": "Koku notalarının analizi, katmanlama ipuçları ve imza kokunun nasıl bulunacağı."
+    },
+    "Beauty Tips": {
+        "name": "Güzellik İpuçları",
+        "description": "Günlük güzellik rutinleri, araçlar ve küçük iyileştirmeler, sürecin bir sonraki aşamaya taşınmasına yardımcı olur."
+    },
+    "Ergonomics": {
+        "name": "Ergonomi",
+        "description": "Duruş, eklem desteği ve ağrısız masa başı çalışmanın bilimi."
+    },
+    "Workspace Design": {
+        "name": "Çalışma Alanı Tasarımı",
+        "description": "İlham veren ve işlevsel ofisler için düzenler, aydınlatma ve kaplamalar."
+    },
+    "Wellness at Work": {
+        "name": "İşyerinde Sağlık",
+        "description": "Egzersiz molaları, göz yorgunluğu ve uzun vadeli sağlığı koruma alışkanlıkları."
+    },
+    "Productivity": {
+        "name": "Verimlilik",
+        "description": "Süreçler ve alışkanlıklar derinlemesine odaklanmanıza ve işinizi iyi yapmanıza yardımcı olur."
+    },
+    "New Releases": {
+        "name": "Yeni Çıkanlar",
+        "description": "İlk uygulamalı deneyimi edinin ve en yeni gadget ve cihazların kapsamını başlatın."
+    },
+    "Tech Reviews": {
+        "name": "Teknik İncelemeler",
+        "description": "Telefonlar, ses cihazları, giyilebilir cihazlar ve içerik oluşturucu donanımları hakkında derinlemesine, abartılı olmayan incelemeler."
+    },
+    "Smart Home": {
+        "name": "Akıllı Ev",
+        "description": "Daha akıllı, daha güvenli bir ev inşa etmek ve otomatikleştirmek için pratik bir kılavuz."
+    },
+    "Lifestyle": {
+        "name": "Yaşam Tarzı",
+        "description": "Teknolojiyi her gün bilinçli olarak kullanmaya yönelik ipuçları ve alışkanlıklar."
+    },
+    "Trend Watch": {
+        "name": "Trend İzleme",
+        "description": "Bu sezon podyumlarda ortaya çıkan ve gündelik gardıroplara sızan şeyler."
+    },
+    "Wardrobe Building": {
+        "name": "Gardırop Binası",
+        "description": "Minimalist gardırop stratejileri, yatırım yapmaya değer öğeler ve küçük bir gardırobun nasıl daha etkili hale getirilebileceği."
+    },
+    "Care & Maintenance": {
+        "name": "Bakım ve Onarım",
+        "description": "Yün, deri ve ipeğin yıkanması, saklanması ve ömrünün uzatılması."
+    },
+    "Editor Picks": {
+        "name": "Editörün Seçimleri",
+        "description": "Seçilmiş buluntular, her bir öğenin arkasındaki hikaye ve ekibin el sanatına ilişkin notları."
+    },
+    "Style Inspiration": {
+        "name": "Stil İlhamı",
+        "description": "Neyin mümkün olduğunu gösteren ilham panoları, renk paleti hikayeleri ve odalar."
+    },
+    "Behind the Craft": {
+        "name": "Zanaatın Arkasında",
+        "description": "Atölye ziyaretleri, zanaatkar portreleri ve en sevdiğiniz eşyaların arkasındaki insanlar."
+    },
+    "Spaces": {
+        "name": "Alanlar",
+        "description": "Gerçek evler, gerçek daireler; hemen uygulayabileceğiniz tasarım fikirleri."
+    },
+    "Plant Care": {
+        "name": "Bitki Bakımı",
+        "description": "Büyüyen ev bitkileri için sulama, aydınlatma ve mevsimsel bakım hakkında notlar."
+    },
+    "Indoor Gardening": {
+        "name": "Kapalı Bahçecilik",
+        "description": "Kent bahçeleri, balkonlarda yemyeşil ormanlar, küçük alanlarda huzurlu yeşil köşeler inşa edin."
+    },
+    "Plant Health": {
+        "name": "Bitki Sağlığı",
+        "description": "Yaygın sorunları, zararlıları ve kök sorunlarını yayılmadan önce teşhis edin."
+    },
+    "Decor with Plants": {
+        "name": "Bitkilerle Dekor",
+        "description": "Kıyafetleri koordine etmek, bitkileri saksıya koymak ve bitkileri tasarım ifadelerine dönüştürmek için ipuçları."
+    },
+    "Audio Tech": {
+        "name": "Ses Teknolojisi",
+        "description": "Sürücüler, kodlayıcılar ve günümüzün kulaklıklarının gerçekte nasıl ses ürettiğinin arkasındaki mühendislik."
+    },
+    "Listening Tips": {
+        "name": "Dinleme İpuçları",
+        "description": "Daha güvenli, daha uzun ve daha keyifli müzik dinleme seansları için pratik ipuçları."
+    },
+    "Reviews": {
+        "name": "Yorumlar",
+        "description": "Fiyat segmentleri ve dinleme tarzları arasında uzun vadeli incelemeler ve karşılaştırmalar."
+    },
+    "Music Culture": {
+        "name": "Müzik Kültürü",
+        "description": "Ekipmanı sevdiği kadar müziği de sevenler için röportajlar ve yazılar."
+    },
+    "Care & Cleaning": {
+        "name": "Bakım ve Temizlik",
+        "description": "Parlatma, koruma ve ev içi alışkanlıklar altın, gümüş ve elmasları en iyi durumda tutar."
+    },
+    "Investment Pieces": {
+        "name": "Yatırım Parçaları",
+        "description": "Her trend döngüsünü atlatmak için yaratılmış miras motifleri, sertifikalı pırlantalar ve mücevherler."
+    },
+    "Buyer Guides": {
+        "name": "Alıcı Kılavuzları",
+        "description": "Karat, kesim, renk ve berraklık — önemli mücevher alımları için pratik bir rehber."
+    },
+    "Mindful Living": {
+        "name": "Farkında Yaşamak",
+        "description": "Günlük uygulamalar, nefes egzersizleri ve alışkanlıklar her an huzuru bulmanıza yardımcı olur."
+    },
+    "Sleep & Recovery": {
+        "name": "Uyku ve Dinlenme",
+        "description": "Daha iyi uyku, derin dinlenme ve stresten kurtulmaya yönelik kanıta dayalı kılavuzlar."
+    },
+    "Nutrition & Supplements": {
+        "name": "Beslenme ve Takviyeler",
+        "description": "Temiz beslenme, adaptojenler ve gıdanın ruh halini nasıl etkilediğine dair bilim."
+    },
+    "Movement & Breath": {
+        "name": "Hareket ve Nefes",
+        "description": "Hafif yoga, yürüyüş meditasyonu ve huzur için nefes egzersizleri bedeni birbirine bağlar."
+    },
+    "Stress Management": {
+        "name": "Stres Yönetimi",
+        "description": "Modern stresin niyet ve kararlılıkla üstesinden gelmek için araçlar ve referans çerçeveleri."
+    },
+    "Whole Foods": {
+        "name": "Bütün Gıdalar",
+        "description": "Vücudu besleyen minimum düzeyde işlenmiş gıdaları pişirin, kaynaklayın ve saklayın."
+    },
+    "Superfoods": {
+        "name": "Süper gıdalar",
+        "description": "Spirulina, chaga mantarları ve diğer bitkiler olağanüstü besin yoğunluğuna sahiptir."
+    },
+    "Organic Living": {
+        "name": "Organik Yaşam",
+        "description": "Pestisitleri azaltın, yenileyici bahçıvanları destekleyin ve her gün küçük değişiklikler yapın."
+    },
+    "Recipes": {
+        "name": "Tarifler",
+        "description": "Bitki bazlı formüller mevsimsel, sertifikalı organik içeriklere dayanmaktadır."
+    },
+    "Nutrition Science": {
+        "name": "Beslenme Bilimi",
+        "description": "Kanıta dayalı beslenme abartılı bir şey değil; mevcut araştırmalar da bunu gösteriyor."
+    },
+    "Pet Health": {
+        "name": "Evcil Hayvan Sağlığı",
+        "description": "Yaşamın her aşamasında dikkat edilmesi gereken önleyici bakım, takviyeler ve işaretler."
+    },
+    "Training": {
+        "name": "Eğitim",
+        "description": "Yavru köpekler, yavru kediler ve yetişkin evcil hayvanlar için olumlu takviye eğitimi ipuçları."
+    },
+    "Pet Lifestyle": {
+        "name": "Evcil Hayvan Yaşam Tarzı",
+        "description": "Seyahat etmek, oynamak, bakım yapmak ve dört ayaklı bir arkadaşla yaşamanın küçük zevkleri."
+    },
+    "Vet Tips": {
+        "name": "Veteriner İpuçları",
+        "description": "Veteriner uzmanlarından sık sorulan sorular ve endişelere ilişkin pratik tavsiyeler."
+    },
+    "Gift Ideas": {
+        "name": "Hediye Fikirleri",
+        "description": "Doğum günleri, düğünler, yıldönümleri ve her dönüm noktası için seçilmiş hediye ilhamı."
+    },
+    "Customization Tips": {
+        "name": "Özelleştirme İpuçları",
+        "description": "Gerçekten seveceğiniz kişiselleştirilmiş bir ürünü nasıl tasarlayabilir, fotoğraflayabilir ve prototipini oluşturabilirsiniz."
+    },
+    "Occasions": {
+        "name": "Günler",
+        "description": "Her tatil ve her dönüm noktası için sofistike bir hediye rehberi."
+    },
+    "Personalization Trends": {
+        "name": "Kişiselleştirme Trendleri",
+        "description": "Talep üzerine baskıdaki yenilikler — tipografi, illüstrasyon ve tasarımdaki trendler."
+    },
+    "Behind the Print": {
+        "name": "Baskının Arkasında",
+        "description": "Baskı sürecimize, malzemelerimize ve kalite standartlarımıza içeriden bir bakış."
+    },
+    "Style": {
+        "name": "Stil",
+        "description": "Lifestyle ayakkabı tasarımları, renk hikayeleri ve spor ayakkabıları günlük kıyafetlerle kombinlemek için öneriler."
+    },
+    "Care Guide": {
+        "name": "Bakım Kılavuzu",
+        "description": "Temizleme, koku giderme ve saklama ipuçları, her çift ayakkabının yeni gibi görünmesini sağlar."
+    },
+    "Athletic Tech": {
+        "name": "Atletik Teknoloji",
+        "description": "Köpük bileşikleri, taban plakası sertliği ve modern performans ayakkabılarının arkasındaki mühendislik."
+    },
+    "Recovery": {
+        "name": "İyileşmek",
+        "description": "Uyku, hareketlilik ve aktif dinlenme yöntemleri sizi oyunda tutar."
+    },
+    "Gear Reviews": {
+        "name": "Dişli İncelemeleri",
+        "description": "Yük altında test edilen ayakkabılar, giysiler ve egzersiz ekipmanlarıyla ilgili dürüst incelemeler."
+    },
+    "Sports News": {
+        "name": "Spor Haberleri",
+        "description": "Koşu, raket sporları ve yeni ortaya çıkan fitness hareketleri dünyasından güncel kalın."
+    }
+}

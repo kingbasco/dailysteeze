@@ -1,0 +1,647 @@
+{
+    "A Beginners Guide to Indoor Plants That Actually Survive": {
+        "name": "Un guide du débutant sur les plantes d'intérieur qui survivent réellement",
+        "description": "Six plantes d'intérieur nécessitant peu d'entretien et les conditions dont elles ont besoin pour prospérer.",
+        "content": "<p>La noix de bétel pardonne presque toutes les négligences. La langue du tigre peut résister même aux coins les plus sombres. Les plantes monétaires ne doivent être arrosées qu’une fois par mois. Avec la bonne lumière, l'eau et la patience, vous passerez de la destruction des plantes succulentes à l'élevage de plantes à feuilles de violon fig.</p>"
+    },
+    "A Practical Guide to Investment Jewelry": {
+        "name": "Un guide pratique des bijoux d’investissement",
+        "description": "Ce qui a vraiment de la valeur au fil des décennies, au-delà du langage marketing et des logos de luxe.",
+        "content": "<p>Les bijoux d'investissement partagent trois caractéristiques communes : des pierres précieuses certifiées, des créateurs établis et un look intemporel. Les bracelets de tennis Heritage, les bagues classiques à diamant unique et les bracelets d'amour Cartier conservent mieux leur valeur que les articles tendance.</p><p>Achetez la qualité d'abord, nommez plus tard, jamais les tendances.</p>"
+    },
+    "ANC Tech Explained: How Modern Headphones Cancel the World": {
+        "name": "ANC Tech expliqué : Comment les écouteurs modernes annulent le monde",
+        "description": "Feedforward, feedback et ANC hybride : ce que chacun signifie et où il brille vraiment.",
+        "content": "<p>La suppression active du bruit fonctionne en créant une onde sonore à phase inversée en temps réel. L'ANC hybride utilise des microphones internes et externes, améliorant ainsi les performances sur davantage de bandes de fréquences.</p><p>Choisissez l'ANC adaptatif si vous alternez entre les déplacements domicile-travail, le bureau et les vols : l'ANC fixe s'annule trop dans les pièces calmes et crée une sensation de compression dans vos oreilles.</p>"
+    },
+    "Anti-Aging Essentials": {
+        "name": "Les essentiels anti-âge",
+        "description": "Rétinoïdes, peptides et crème solaire – les trois ingrédients actifs bénéficiant des preuves scientifiques les plus solides.",
+        "content": "<p>Les rétinoïdes restent la référence. Les peptides soutiennent la synthèse du collagène. La crème solaire quotidienne à large spectre surpasse les deux : les rayons UV sont le plus grand facteur exogène du vieillissement cutané.</p><p>Le marketing est variable ; la liste des ingrédients actifs ne l'est pas.</p>"
+    },
+    "Bath Time Made Easy": {
+        "name": "L’heure du bain simplifiée",
+        "description": "La bonne température de l’eau, des produits doux et des moyens de rendre le bain court et agréable.",
+        "content": "<p>L'eau du bain doit être tiède mais pas chaude – environ 37 degrés Celsius. Évitez le savon jusqu'à ce que votre bébé puisse ramper et se salir ; De l’eau propre et une serviette douce suffisent. Enveloppez immédiatement votre bébé dans une serviette à capuche pour une transition en douceur.</p><p>Gardez l'heure du bain en dessous de dix minutes ; La peau de bébé sèche très rapidement.</p>"
+    },
+    "Battery Life Tips That Actually Extend Listening Hours": {
+        "name": "Conseils sur la durée de vie de la batterie qui prolongent réellement les heures d'écoute",
+        "description": "Le volume, le codec et les habitudes d’entretien doublent la durée de vie réelle de n’importe quel casque sans fil.",
+        "content": "<p>L'écoute à 60 % du volume au lieu de 80 % peut prolonger la durée de vie de la batterie de 30 à 40 %. Stocker les écouteurs à 50 % de charge permet de prolonger la durée de vie de la batterie. Désactivez LDAC et aptX HD lorsque vous êtes en ligne ou que vous écoutez un podcast.</p><p>Considérez le boîtier de chargement comme une batterie de rechange, pas comme un boîtier : branchez-le tous les soirs.</p>"
+    },
+    "Best Wireless Headphones of 2026: Independent Buying Guide": {
+        "name": "Meilleurs écouteurs sans fil de 2026 : guide d’achat indépendant",
+        "description": "Suppression active du bruit, batterie qui dure toute la journée et son équilibré : les modèles arrivent en tête de liste dans les tests aveugles.",
+        "content": "<p>Nous avons testé douze modèles phares sur les critères suivants : performances de réduction du bruit, autonomie de la batterie, confort de port de six heures et précision audio. La liste restreinte nous a surpris : trois concurrents à moins de 300 $ ont battu les modèles haut de gamme de l'année dernière sur tous les critères objectifs.</p>"
+    },
+    "Bonding Through Daily Care": {
+        "name": "Créer des liens grâce aux soins quotidiens",
+        "description": "L’heure du bain, les tétées et les massages doux : les petits moments qui créent un lien sécurisé.",
+        "content": "<p>La cohésion ne nécessite pas d'activités particulières. Ce qui compte vraiment se passe au quotidien : le contact visuel pendant les tétées, le séchage lent de bébé après le bain, une voix apaisante lors du changement de couche.</p><p>Choisissez la présence plutôt que l'expression. Les enfants ne sont pas notés.</p>"
+    },
+    "Box Breathing: The Calm-Down Tool That Actually Works": {
+        "name": "Box Breathing : l’outil de calme qui fonctionne réellement",
+        "description": "Inspirez pendant quatre secondes, maintenez pendant quatre secondes, expirez pendant quatre secondes, maintenez pendant quatre secondes. Un exercice privilégié par les Navy SEAL, expliqué sans exagération.",
+        "content": "La respiration <p>Box active le système nerveux parasympathique pendant quatre-vingt-dix secondes. Le mécanisme est mécanique : l'allongement de l'expiration et la pause augmentent le tonus du nerf vague, contribuant ainsi à réduire la fréquence cardiaque.</p><p>Utilisez-le avant une conversation difficile, lors d'un trajet stressant ou pour vous détendre avant de vous coucher.</p>"
+    },
+    "Brewing the Perfect Pour-Over: Equipment and Technique": {
+        "name": "Préparer le versement parfait : équipement et technique",
+        "description": "Un guide testé par les baristas pour obtenir la meilleure extraction de café d'origine unique à la maison.",
+        "content": "<p>Pour-over est un rituel de lenteur. La température de l'eau doit être comprise entre 92 et 96 degrés Celsius. La phase de floraison réveille le marc de café. Un jet d'eau en spirale constant assure une extraction uniforme. Sautez n'importe quelle étape, la tasse à café se reflétera immédiatement.</p>"
+    },
+    "Build a Routine That Sticks": {
+        "name": "Créez une routine qui colle",
+        "description": "Oubliez la motivation. Les athlètes qui maintiennent sont ceux qui ont éliminé tous les obstacles.",
+        "content": "<p>Préparez les vêtements la veille. Attachez votre séance d'entraînement à un signal fixe (après votre café du matin, avant le déjeuner). Suivez visuellement la séquence de dates. Récompensez la régularité, pas l'intensité.</p><p>Les nouvelles habitudes ennuyeuses sont celles qui s'accumulent avec le temps.</p>"
+    },
+    "Build Your Workspace on a Budget Without Cutting Corners": {
+        "name": "Construisez votre espace de travail avec un budget limité sans lésiner sur les raccourcis",
+        "description": "Où dépenser, où économiser et des articles exactement identiques à moitié prix.",
+        "content": "<p>Dépensez pour une chaise et un clavier : vous apprécierez les deux pendant des années. Économisez sur les bras d'écran, les sous-mains et les lampes, là où les marques à bas prix ont fait leur chemin.</p><p>Achetez un bureau d'occasion. Leur prix de revente est bas et le savoir-faire est excellent.</p>"
+    },
+    "Building a Capsule Wardrobe That Actually Works": {
+        "name": "Construire une armoire capsule qui fonctionne réellement",
+        "description": "Une garde-robe minimaliste est un système, pas un numéro. Voici comment construire une garde-robe qui survit à la saison.",
+        "content": "<p>Ne comptez pas les cintres. Comptons les tenues. Une garde-robe minimaliste efficace crée 15 à 20 looks à partir de 25 à 30 articles — chaque article doit être associé à au moins trois autres articles. Si un article ne convient qu'à une seule tenue, c'est un costume, pas un article de garde-robe.</p><p>Choisissez en fonction de la fonction, pas des rêves.</p>"
+    },
+    "Cable Management Tips That Actually Hold Up Long-Term": {
+        "name": "Conseils de gestion des câbles qui durent réellement à long terme",
+        "description": "Des solutions réutilisables qui survivent aux déménagements, aux changements de matériel et aux nettoyages trimestriels.",
+        "content": "<p>Regroupez les fils par fonction et non par couleur. Utilisez des sangles velcro (pas des cordons) pour pouvoir réacheminer la ligne. Installez un chemin de câbles sous votre bureau et étiquetez chaque port USB que vous touchez chaque mois.</p><p>Faites-le bien, vous n'aurez plus besoin de le faire avant des années.</p>"
+    },
+    "Cable Management Tips That Last": {
+        "name": "Conseils de gestion des câbles qui durent",
+        "description": "Un bureau soigné est un bureau paisible. Peu de règles survivent à la réalité.",
+        "content": "<p>Acheminez les câbles d'alimentation et de données le long de l'arrière du bureau dans une seule goulotte. Utilisez des attaches Velcro – jamais de cordons en plastique – pour les câbles que vous changez souvent. Étiquetez les deux extrémités. Fixez un parasurtenseur sous la table pour raccourcir le cordon.</p><p>Passez une heure à la fois et les cinq prochaines années seront beaucoup plus faciles.</p>"
+    },
+    "Calm Green Spaces": {
+        "name": "Espaces Verts Calmes",
+        "description": "Aménager un petit jardin intérieur permet de faire baisser votre rythme cardiaque dès votre entrée.",
+        "content": "<p>Regroupez les plantes en fonction des besoins en humidité et en lumière : les paons, les fougères et les plantes de prière poussent bien ensemble. Ajoutez une petite pièce d’eau ou un tapis texturé. La douce couleur verte au niveau des yeux et les arbres suspendus au-dessus.</p><p>L'espace paisible est conçu et non créé par hasard.</p>"
+    },
+    "Calm Spaces with Natural Materials": {
+        "name": "Des espaces calmes avec des matériaux naturels",
+        "description": "Bois, lin, pierre, laine : la palette intemporelle à laquelle votre système nerveux fait déjà confiance.",
+        "content": "<p>La finition synthétique a l'air bien sur les photos mais ne semble pas bonne en personne. Le matériau naturel offre des imperfections, une texture et une chaleur qu’aucun autre stratifié ne peut égaler. Mélangez le bois et le lin, la pierre et la laine : la pièce pousse un soupir de soulagement.</p><p>Les espaces intérieurs les plus intemporels sont souvent les plus honnêtes en termes de matériaux.</p>"
+    },
+    "Caring for Knitwear So It Lasts More Than One Winter": {
+        "name": "Prendre soin des tricots pour qu’ils durent plus d’un hiver",
+        "description": "De l'eau froide, ne vous précipitez pas, et une astuce en blocs de cèdre qui coûte moins cher qu'une tasse de café.",
+        "content": "<p>Lavez les vêtements en laine à l’envers sur le programme laine, suspendez-les pour les faire sécher et ne les suspendez jamais sur vos épaules – la gravité détruit leur forme. Conserver avec des blocs de cèdre dans un sac en coton respirant. L'utilisation d'un outil anti-ébouriffage sur les poignets et les coudes une fois par mois permettra au tissu de conserver son aspect neuf pendant de nombreuses années.</p><p>De bonnes habitudes d'entretien de la laine aideront à durer de nombreuses saisons d'utilisation.</p>"
+    },
+    "Caring for Wood Furniture": {
+        "name": "Prendre soin des meubles en bois",
+        "description": "Le dépoussiérage, le conditionnement du bois et les erreurs fatales détruisent les meubles en bois massif.",
+        "content": "<p>Dépoussiérer chaque semaine avec un chiffon doux. Conditionnez la finition huilée une fois par saison avec de l’huile d’abrasin pure ou de l’huile de cire dure. Gardez le bois à l'abri de la lumière directe du soleil et des bouches d'aération - les deux plus grands ennemis d'une beauté durable.</p><p>Évitez les vernis à base de silicone ; Ils s'accumulent et entravent la restauration future.</p>"
+    },
+    "Choosing Babys First Shoes": {
+        "name": "Choisir les premières chaussures de bébé",
+        "description": "La semelle est douce, suffisamment d'espace pour que les orteils puissent bouger, et la raison pour laquelle la chaussure a une construction rigide peut attendre plus tard.",
+        "content": "<p>Les bébés qui ne savent pas encore marcher n'ont pas besoin de chaussures rigides. La semelle souple et flexible permet aux petits pieds de sentir le sol et de développer une force naturelle de la voûte plantaire. Recherchez du cuir ou de la laine respirant avec un talon bien ajusté et un bout spacieux.</p><p>Épargnez des baskets robustes pour les enfants qui marchent déjà bien.</p>"
+    },
+    "Choosing Foundation for Your Tone": {
+        "name": "Choisir un fond de teint pour votre ton",
+        "description": "Le test du ton de base, le contraste de la mâchoire et la raison pour laquelle l'éclairage du magasin trompe la plupart des gens.",
+        "content": "<p>Essayez le fond de teint le long de la mâchoire, jamais sur le poignet ou le dos de la main. Sortez pour évaluer. Choisissez une teinte qui disparaît sur la peau, pas une qui est belle dans une bouteille.</p><p>Le fond de teint est plus important que la teinte : chaud, frais ou neutre, puis teinte.</p>"
+    },
+    "Choosing Quality Leather: A Beginners Guide": {
+        "name": "Choisir un cuir de qualité : un guide du débutant",
+        "description": "Cuir pleine fleur, cuir pleine fleur et cuir pressé : ce que chaque étiquette signifie réellement avant d'acheter.",
+        "content": "<p>Le cuir pleine fleur est le plus durable, le plus cher et possède la plus belle couleur patinée. Le cuir de première qualité est poncé en douceur, mais il perd son caractère avec le temps. Le cuir véritable est la qualité la plus basse et le cuir pressé est essentiellement de la poussière de cuir collée ensemble.</p><p>Si le prix semble trop bon, le matériau n'est probablement pas ce que prétend l'étiquette.</p>"
+    },
+    "Choosing the Right Earbuds for Your Ears (and Your Day)": {
+        "name": "Choisir les bons écouteurs pour vos oreilles (et votre journée)",
+        "description": "Suppression active du bruit, mode diaphonie, prise en charge des codecs : ce qui est important et ce qui ne l'est pas.",
+        "content": "<p>Fit est plus important que les spécifications. Si l'étanchéité n'est pas correcte, toutes les autres fonctionnalités échouent. Essayez les tailles d'embouts incluses pendant une journée complète avant de juger. Le mode diaphonie est plus utile que la suppression active du bruit pour la plupart des auditeurs basés au bureau.</p><p>Les chiffres d'autonomie de la batterie supposent un volume moyen : l'utilisation réelle n'atteint généralement que 70 à 80 % du temps publié.</p>"
+    },
+    "Choosing The Right Food For Your Active, Growing Dog": {
+        "name": "Choisir la bonne nourriture pour votre chien actif et en pleine croissance",
+        "description": "Le guide complet sur une alimentation équilibrée, le contrôle des portions, les préférences gustatives et le soutien énergétique.",
+        "content": "<p>Les chiens actifs ont besoin de repas équilibrés avec des quantités appropriées de protéines, de graisses et de portions. Surveillez les niveaux d'énergie, le poids et la digestion pour ajuster les choix alimentaires à mesure qu'ils grandissent.</p>"
+    },
+    "Choosing the Right Photo for Your Custom Product": {
+        "name": "Choisir la bonne photo pour votre produit personnalisé",
+        "description": "La haute résolution l’emporte toujours sur la finesse. Voici ce qu'il faut rechercher dans l'image source.",
+        "content": "<p>Les meilleures photos sources sont nettes, bien éclairées et présentent un contraste élevé. Les photos prises avec un téléphone au cours des deux dernières années sont presque toujours utilisables. Évitez les photos avec trop de filtres et de captures d'écran.</p><p>Pour les peintures sur toile et les affiches, privilégiez l'orientation horizontale de l'image avec un espace pour le texte.</p>"
+    },
+    "Choosing the Right Running Shoe for Your Gait": {
+        "name": "Choisir la bonne chaussure de course pour votre démarche",
+        "description": "Neutre, stable, contrôle des mouvements : les bases pour choisir des chaussures adaptées à votre foulée.",
+        "content": "<p>Chaque personne a un type de pronation différent. Le test d'empreinte humide sur carton vous indique l'essentiel de ce que vous devez savoir en moins de trente secondes. Une fois que vous savez si vous faites une pronation excessive, une supination ou un terrain neutre, la liste de chaussures passera de centaines à une liste restreinte.</p>"
+    },
+    "Choosing the Right Shoes for All-Day Comfort": {
+        "name": "Choisir les bonnes chaussures pour un confort toute la journée",
+        "description": "Forme de la chaussure, densité de la mousse et soutien de la voûte plantaire : trois facteurs qui déterminent la portabilité toute la journée.",
+        "content": "<p>Le confort ne réside pas dans une mousse plus épaisse. Une mauvaise forme de chaussure fera mal à vos pieds plus rapidement qu'un amorti dur. Mesurez les deux pieds à la fin de la journée, prenez la taille en fonction du pied le plus grand et donnez la priorité à la forme de la chaussure plutôt qu'à la fidélité à la marque.</p><p>Si une chaussure a besoin de temps pour se déformer, ce n'est pas la bonne chaussure.</p>"
+    },
+    "Clean Beauty Explained": {
+        "name": "La beauté propre expliquée",
+        "description": "« Bénin » n'est pas officiellement réglementé, mais voici trois questions à poser avant d'acheter.",
+        "content": "<p>La marque est-elle transparente sur tous les ingrédients ? Le fabricant est-il audité ? Les affirmations sont-elles étayées par des données et non par des émotions ? Trois nouvelles réponses « oui » dignes d'une place sur l'étagère.</p><p>Bénign ne signifie pas meilleur, cela signifie responsable.</p>"
+    },
+    "Codec Wars: aptX vs LDAC vs AAC, Decoded": {
+        "name": "Codec Wars : aptX vs LDAC vs AAC, décodé",
+        "description": "Peut-être que vous n'avez pas besoin du sans perte. C’est ce que fait réellement chaque codec en interne.",
+        "content": "<p>AAC est le codec natif de l'iPhone et est excellent. LDAC prend en charge jusqu'à 990 kbps mais peut facilement perdre la connexion lorsque la distance ou les interférences sont faibles. aptX Adaptive est le meilleur équilibre pour les utilisateurs d'Android.</p><p>La qualité d'enregistrement de la source est bien plus importante que le codec.</p>"
+    },
+    "Cooking with Superfoods": {
+        "name": "Cuisiner avec des superaliments",
+        "description": "Pourquoi la plupart des superaliments ont leur place dans la cuisine de tous les jours, et non dans le tiroir à suppléments.",
+        "content": "<p>Spiruline dissoute dans du pesto. Le curcuma réchauffe un bol de soupe. Cacao en couches d'avoine. Considérez les superaliments comme des ingrédients, pas comme des pilules, et vous obtiendrez une vraie saveur et une vraie nutrition.</p><p>Si une poudre finit dans un smoothie, elle finit généralement à la poubelle.</p>"
+    },
+    "Cozy Morning Routine": {
+        "name": "Routine matinale douillette",
+        "description": "Des réveils en douceur, des signaux de faim et des vêtements confortables : créez un démarrage lent que les bébés adorent.",
+        "content": "<p>Les bébés se régulent par la répétition. Une matinée prévisible – changements de couches, tétées, nouveaux vêtements, lumière du jour – façonnera le reste de la journée. Ajoutez une chanson apaisante que vous chantez uniquement le matin pour signaler la transition.</p><p>Le but n'est pas de se réveiller tôt ; mais pas pressé.</p>"
+    },
+    "Curated Bag Edit: Six Silhouettes for Every Day": {
+        "name": "Édition de sac organisée : six silhouettes pour chaque jour",
+        "description": "Une collection épurée de sacs à bandoulière, fourre-tout et pochettes pour le travail, les voyages et les soirées.",
+        "content": "<p>Six sacs répondent à 95 % des besoins de transport. Un fourre-tout structuré pour le travail. Un clochard tout doux pour le week-end. Un petit sac à bandoulière pour faire les courses les mains libres. Un sac de week-end pour les courts voyages. Une pochette pour le soir. Un sac à dos pour les jours de voyage.</p><p>Évitez les articles tendance jusqu'à ce que la collection principale soit complète.</p>"
+    },
+    "Custom Print Tips: Six Habits That Make Designs Look Professional": {
+        "name": "Conseils pour l'impression personnalisée : six habitudes qui donnent aux créations un aspect professionnel",
+        "description": "Résolution, zone de fond perdu et police : les petits détails qui séparent l'amateur du professionnel.",
+        "content": "<p>Toujours télécharger à 300 dpi ou plus. Utilisez un motif à fond perdu et gardez le lettrage à 1/4 de pouce de chaque bord du papier. Évitez les polices protégées par le droit d'auteur pour lesquelles vous n'avez pas acheté les droits d'utilisation commerciale.</p><p>Imprimez une copie d'épreuve avant la production en série.</p>"
+    },
+    "Daily Rituals That Calm an Anxious Mind": {
+        "name": "Des rituels quotidiens qui calment un esprit anxieux",
+        "description": "Cinq petites habitudes – lumière du soleil le matin, exercices de respiration, journalisation – contribuent à une paix mesurable.",
+        "content": "<p>Le système nerveux aime la prévisibilité. Un rituel matinal signale la sécurité à votre corps avant que la boîte de réception n'arrive. Commencez par deux minutes de respiration lente par le nez, deux pages d'écriture quoi qu'il arrive et dix minutes de lumière naturelle. Répétez pendant trois semaines avant d'évaluer l'efficacité.</p><p>La clé n'est pas d'optimiser le rituel, mais de le rendre automatique.</p>"
+    },
+    "Daily Tech Rituals: Five Habits That Keep You Out of Notification Hell": {
+        "name": "Rituels technologiques quotidiens : cinq habitudes qui vous évitent l'enfer des notifications",
+        "description": "De petits ajustements aux paramètres de votre téléphone, de votre horloge et de votre maison vous font gagner des heures chaque semaine.",
+        "content": "<p>La plupart des surcharges numériques proviennent des paramètres par défaut. Désactiver les notifications par groupe (et non par application), collecter des e-mails deux fois par jour et garder votre téléphone hors de la chambre sont les trois changements les plus efficaces.</p><p>L'objectif est de faire des distractions l'exception et non la règle.</p>"
+    },
+    "Detailing Tips for Resale Value": {
+        "name": "Conseils détaillés pour la valeur de revente",
+        "description": "Vingt dollars de fournitures et un samedi peuvent ajouter des centaines de dollars à votre prix d'échange.",
+        "content": "<p>Ignorez le programme d'entretien détaillé du concessionnaire. Une barre d'argile, une solution de polissage et un spray de revêtement céramique restaureront la plupart des peintures en quelques heures seulement. Nettoyez les tapis à la vapeur, conditionnez le cuir et remplacez le filtre à air de l'habitacle pour un intérieur comme neuf.</p><p>Les acheteurs sont prêts à payer plus pour une voiture qui sent et se sent soignée, même si le kilométrage est le même.</p>"
+    },
+    "Diagnose Engine Issues at Home": {
+        "name": "Diagnostiquer les problèmes de moteur à la maison",
+        "description": "Un simple lecteur OBD-II et trois contrôles détectent 80 % des problèmes.",
+        "content": "<p>Un lecteur de défauts Bluetooth OBD-II à 25 $ combiné à une application téléphonique gratuite affiche les codes d'erreur stockés et les données du capteur en direct. Combinez cela avec la vérification visuelle des fuites, l'écoute des bruits inhabituels au ralenti et la vérification des niveaux de liquide, et vous avez détecté la plupart des problèmes avant qu'ils ne deviennent coûteux.</p>"
+    },
+    "Diamonds for Everyday Wear": {
+        "name": "Des diamants à porter au quotidien",
+        "description": "Le sertissage clos, le corps mince et la taille durable : des choix intelligents pour les diamants de tous les jours.",
+        "content": "<p>Le style de fixation de la lunette et de la rainure pour protéger la pierre pour un usage quotidien. Les coupes rondes et princesse sont les plus durables. Évitez les bagues pavées sur les doigts de la salle de sport : les petites pierres se desserreront avec le temps.</p><p>Le meilleur diamant de tous les jours est celui que vous oubliez que vous portez.</p>"
+    },
+    "Engagement Ring Buying Tips": {
+        "name": "Conseils pour l’achat d’une bague de fiançailles",
+        "description": "Le carat est surestimé, la taille est sous-estimée et la certification n'est pas négociable. Un cadre de référence pratique pour les acheteurs.",
+        "content": "<p>La qualité de coupe détermine l’éclat visible bien plus que le poids en carats. Une pierre de 1,0 ct bien taillée surpasse une pierre de 1,5 ct mal taillée dans des conditions d'éclairage quotidiennes. Demandez la certification GIA ou AGS. Évitez les évaluations en magasin.</p><p>Établissez un budget avant de vous lancer et n'oubliez pas : une bague est un achat, mais le mariage est un voyage.</p>"
+    },
+    "Essential Styling Rules Every Woman Should Know": {
+        "name": "Règles de style essentielles que chaque femme devrait connaître",
+        "description": "Proportion, palette et petits ajustements de couture qui donnent au prêt-à-porter un aspect personnalisé."
+    },
+    "Fermented Foods Benefits": {
+        "name": "Avantages des aliments fermentés",
+        "description": "Choucroute, kéfir et miso – un guide rapide pour choisir des aliments crus fermentés plutôt que des faux vieillis.",
+        "content": "<p>Aliments vivants fermentés situés dans des zones froides. S'il se trouve sur une étagère ordinaire, il est pasteurisé, ce qui signifie que les probiotiques ont disparu. Recherchez une saumure trouble, des bulles pétillantes et des étiquettes « crues » ou « non pasteurisées ».</p><p>Une cuillerée par jour suffit pour commencer.</p>"
+    },
+    "Five Chair Buying Mistakes": {
+        "name": "Cinq erreurs d’achat de chaise",
+        "description": "Une erreur de 200 $ se transforme en douleur au cou – et comment l’éviter.",
+        "content": "<p>Les acheteurs se concentrent sur l'esthétique, ignorent la possibilité de régler le dossier et oublient de vérifier la profondeur du siège. Essayez toujours la chaise pendant trente minutes. Confirmez que la tension d'inclinaison est adaptée à votre poids. Bénéficiez d'une garantie de plusieurs années sur les cylindres et les roues.</p><p>Un siège bon marché que vous continuez à remplacer coûte plus cher que le bon siège en premier lieu.</p>"
+    },
+    "Five Productivity Must-Haves for the Modern Home Office": {
+        "name": "Cinq incontournables en matière de productivité pour le bureau à domicile moderne",
+        "description": "Une courte liste de mises à niveau qui rentabilisent votre investissement en quelques semaines seulement.",
+        "content": "<p>Les cinq améliorations ayant le plus grand impact, dans l'ordre : une chaise confortable, un moniteur à la hauteur des yeux, un deuxième écran, un clavier tactile et le silence derrière une porte fermée.</p><p>Tout le reste vient après ces cinq.</p>"
+    },
+    "Five Skincare Mistakes Even Beauty Editors Make": {
+        "name": "Cinq erreurs de soin de la peau que même les rédacteurs beauté commettent",
+        "description": "Les dermatologues soulignent les mauvaises étapes qui pourraient saboter votre peau éclatante.",
+        "content": "<p>Superposer des ingrédients actifs dans le mauvais ordre, exfolier trop vigoureusement, dormir sur des taies d'oreiller en coton : même les routines les plus expérimentées comportent des pièges familiers. Nos dermatologues vous montrent cinq ajustements que vous pouvez effectuer ce soir.</p>"
+    },
+    "From Work to Weekend: Outfits That Do It All": {
+        "name": "From Work to Weekend: Outfits That Do It All",
+        "description": "Trouvez des looks polyvalents qui passent facilement des heures de bureau aux loisirs en dehors des heures normales."
+    },
+    "Gentle Mornings: Building a Wake-Up Routine That Sticks": {
+        "name": "Matins doux : créer une routine de réveil qui dure",
+        "description": "Un démarrage plus lent vaut mieux qu’un réveil plus bruyant. Voici comment repenser les 60 premières minutes de votre journée.",
+        "content": "<p>L'anxiété matinale culmine souvent au cours de la première heure. La solution n'est pas la motivation, mais la réduction des obstacles. Le téléphone est dans une autre pièce. Eau placée à côté du lit. Réglez une minuterie à café la veille. Marchez avant de faire défiler votre téléphone.</p><p>L'effet cumulatif de petits choix à partir de la base est ce que la plupart des gens attribuent à la discipline.</p>"
+    },
+    "Glow Edit for Radiant Skin": {
+        "name": "Glow Edit pour une peau radieuse",
+        "description": "L'hydratation, l'exfoliation et une routine de protection solaire offrent plus d'éclat que n'importe quel surligneur.",
+        "content": "<p>Le véritable éclat vient d'une peau saine, pas d'un surligneur. Le trio donne des résultats : sérum hydratant, exfoliation douce hebdomadaire et crème solaire quotidienne. Sautez le reste jusqu'à ce que ces trois deviennent un incontournable.</p><p>Le surligneur sur la peau déshydratée semble grasse et non lumineuse.</p>"
+    },
+    "Goodbye Back Pain: A Practical Ergonomics Reset": {
+        "name": "Adieu les maux de dos : une réinitialisation ergonomique pratique",
+        "description": "La hauteur du siège, la hauteur de l'écran et la règle 20-8-2 vous aident à rester actif toutes les heures.",
+        "content": "<p>Réglez la hauteur de la chaise de manière à ce que les genoux soient légèrement plus bas que les hanches. Placez le bord supérieur de l'écran au niveau des yeux. Levez-vous toutes les 20 minutes et marchez deux minutes toutes les heures.</p><p>Aucun de tout cela n'est négociable si vous avez déjà mal au dos.</p>"
+    },
+    "Grooming at Home": {
+        "name": "Toilettage à la maison",
+        "description": "Un toilettage régulier, la coupe des ongles et la vérification des oreilles contribuent à réduire les factures mensuelles.",
+        "content": "<p>Le brossage hebdomadaire prévient 80 % des problèmes d'entretien du pelage. Combinez cela avec une vérification rapide des pattes et des oreilles lorsque votre animal est détendu. Avec la coupe des ongles, limez un peu et souvent au lieu de longues séances une fois par mois.</p><p>Tournez les friandises pendant le toilettage pour transformer la tolérance en anticipation.</p>"
+    },
+    "Happier Mind Habits": {
+        "name": "Des habitudes d’esprit plus heureuses",
+        "description": "Pourquoi prendre soin des plantes est l’un des moyens les plus fiables pour améliorer l’humeur que la recherche ait mesuré.",
+        "content": "<p>Les études sur la thérapie horticole montrent des réductions constantes des niveaux de cortisol et des améliorations de l'humeur même après de brèves interactions avec les plantes. Le mécanisme est simple : prendre soin d'un être vivant détourne l'attention de votre tête.</p><p>Une plante sur votre bureau est une petite intervention d'une efficacité surprenante.</p>"
+    },
+    "Hardware Trends 2026: What to Buy Now": {
+        "name": "Tendances matérielles 2026 : quoi acheter maintenant",
+        "description": "Le bronze brossé, l'argent oxydé et le retour des logos raffinés définissent la nouvelle saison d'accessoires.",
+        "content": "<p>L'or brillant cède la place au bronze brossé plus chaud. L’argent a tendance à être oxydé au lieu de ressembler à un miroir. Le logo est plus petit, embossé ou caché à l'intérieur de la doublure.</p><p>Si vous n'achetez qu'une seule pièce neuve, choisissez un modèle doté d'une boucle classique en métal brossé : il s'adapte à toutes les saisons et à toutes les finitions.</p>"
+    },
+    "Holiday Gift Guide: Thoughtful Picks Under $100": {
+        "name": "Guide cadeaux des fêtes : choix judicieux à moins de 100 $",
+        "description": "Des idées de cadeaux sélectionnées pour ceux qui figurent sur votre liste : pas de gadgets, tous valent la peine d'être conservés.",
+        "content": "<p>D'une tasse en céramique fermée à la main à un porte-cartes en cuir en passant par un chapeau en cachemire, le guide de cette année se penche sur les cadeaux que le destinataire utilisera pendant des années, et non des jours. Chaque sélection provient d'un artisan avec lequel nous avons travaillé directement.</p>"
+    },
+    "Home Automation 101: Routines That Actually Run": {
+        "name": "Domotique 101 : des routines qui fonctionnent réellement",
+        "description": "Un guide de démarrage sur les tâches automatisées que chaque famille utilisera d'ici une semaine.",
+        "content": "<p>Commencez avec trois actions : une action de bonne nuit qui éteint les lumières et ajuste la température, une action matinale liée à l'heure du lever du soleil et une action de départ qui se déclenche lorsque votre téléphone quitte la portée Wi-Fi.</p><p>Ajoutez une action automatique uniquement lorsque vous répétez la même action tap-tap-tap deux fois par jour.</p>"
+    },
+    "How Furniture Shapes Living": {
+        "name": "Comment les meubles façonnent la vie",
+        "description": "Quelques éléments bien choisis font plus pour une maison qu’une pièce pleine de compromis.",
+        "content": "<p>Les choses avec lesquelles vous vivez façonnent votre humeur, vos rituels et vos habitudes. Une table à manger robuste ramène les repas au même endroit. Une chaise de lecture près de la fenêtre crée une heure de calme. Un lit vraiment confortable change votre façon de vous réveiller.</p><p>Achetez lentement. Achetez une fois. Vivez bien.</p>"
+    },
+    "How to Build a Capsule Wardrobe That Fits Your Lifestyle": {
+        "name": "Comment créer une garde-robe capsule adaptée à votre style de vie",
+        "description": "Apprenez l'art de mélanger des basiques intemporels avec des pièces tendance pour un style quotidien sans effort."
+    },
+    "How to Care for Your Leather Goods, According to a Master Cobbler": {
+        "name": "Comment entretenir votre maroquinerie, selon un maître cordonnier",
+        "description": "Nourrit, polit et protège le cuir pleine fleur toute une vie.",
+        "content": "<p>Un entretien approprié prolonge la durée de vie d'un sac ou d'une paire de bottes en cuir de qualité de cinq à trente ans. Commencez avec une brosse en crin de cheval, conditionnez avec une crème neutre tous les six mois et ne rangez jamais le cuir dans un sac en plastique.</p>"
+    },
+    "How to Choose the Right Brake Pads": {
+        "name": "Comment choisir les bonnes plaquettes de frein",
+        "description": "Céramique, semi-métallique ou organique : choisissez un matériau adapté à votre façon de conduire.",
+        "content": "<p>Les plaquettes de frein en céramique sont lisses et sans poussière, idéales pour les déplacements quotidiens. Les plaquettes semi-métalliques offrent une force de freinage initiale plus forte et sont résistantes à la chaleur. Choisissez-les lorsque vous remorquez ou conduisez vigoureusement. Les plaquettes organiques sont plus douces pour les disques de frein mais s'usent plus rapidement.</p><p>Quel que soit votre choix, remplacez les plaquettes de frein par paires sur le même essieu et suivez finalement le processus 30-30-30 pour des performances maximales.</p>"
+    },
+    "How to Clean White Sneakers Without Damaging Them": {
+        "name": "Comment nettoyer des baskets blanches sans les abîmer",
+        "description": "Serviettes en microfibre, savons doux et brosses douces : une routine ennuyeuse bat n'importe quel produit miracle.",
+        "content": "<p>Évitez l'eau de Javel. Mélangez une cuillère à café de détergent doux dans de l'eau tiède, frottez doucement avec une brosse douce, puis essuyez avec une serviette en microfibre propre. En cas de taches tenaces sur la toile, une pâte à base de bicarbonate de soude et d'eau peut éliminer la plupart des taches.</p><p>Sécher à l'abri de la lumière directe du soleil. Remplissez du papier pour conserver le formulaire.</p>"
+    },
+    "How to Keep Your Jewellery Sparkling": {
+        "name": "Comment garder vos bijoux étincelants",
+        "description": "Un processus simple à domicile pour nettoyer les objets en or, en argent et en diamant entre les services professionnels.",
+        "content": "<p>La plupart des bijoux haut de gamme ne nécessitent que de l'eau tiède, une goutte de savon doux et une brosse à dents souple. Rincez abondamment et séchez avec une serviette en microfibre. Évitez d'utiliser un nettoyeur à ultrasons sur les émeraudes, les opales et les perles.</p><p>Avec les diamants et autres pierres dures, un trempage mensuel permet de maintenir la brillance entre les inspections professionnelles annuelles.</p>"
+    },
+    "How To Keep Your Pet Calm And Happy At Home": {
+        "name": "Comment garder votre animal calme et heureux à la maison",
+        "description": "Des routines quotidiennes simples aident à soulager l’anxiété, à renforcer la confiance et à créer un lien paisible entre vous et votre animal.",
+        "content": "<p>Des routines simples, des heures d'alimentation prévisibles et un coin de repos tranquille aident les animaux à se sentir en sécurité à la maison. Les jeux légers et les encouragements positifs renforcent la confiance tout en réduisant le stress quotidien.</p>"
+    },
+    "How to Mix Vintage with Modern Without Looking Costumed": {
+        "name": "Comment mélanger le vintage avec le moderne sans avoir l'air costumé",
+        "description": "Un article vintage par tenue. Forme moderne. Deux règles gardent le look intentionnel.",
+        "content": "<p>Le secret pour mélanger vêtements vintage et modernes est de s'engager sur une période pour chaque tenue. Un chemisier des années 70 se combine parfaitement avec un pantalon contemporain ; Associez-le à un pantalon évasé des années 70 et il deviendra un costume. Laissez le vintage être la voix la plus importante dans la pièce.</p><p>Gardez un look moderne. L'histoire réside dans le matériau du tissu.</p>"
+    },
+    "How to Pick the Right Yoga Mat": {
+        "name": "Comment choisir le bon tapis de yoga",
+        "description": "Épaisseur, adhérence et matériau : ce qui doit être optimal dépend de la façon dont vous vous entraînez.",
+        "content": "<p>Le Vinyasa et le Power Flow bénéficient de tapis plus adhérents de 3 à 5 mm d'épaisseur. Les séances de récupération et de yin sont plus confortables avec un amorti de 6 à 8 mm. Le caoutchouc naturel adhère mieux lorsqu'il est mouillé, mais il est plus lourd ; Le PU et le TPE sont plus légers à transporter.</p><p>Achetez-en un pour votre pratique principale, puis ajoutez un tapis de voyage si nécessaire.</p>"
+    },
+    "Hydration During Workouts": {
+        "name": "Hydratation pendant les entraînements",
+        "description": "L'eau filtrée suffit pour une heure. Les électrolytes commencent alors à devenir importants.",
+        "content": "<p>Pour les séances d'exercice de moins de 60 minutes, buvez de l'eau au besoin. Pendant 60 minutes, surtout par temps chaud, remplacez le sodium et le potassium par un mélange d'électrolytes ou une collation riche en sel.</p><p>La plupart des crampes sont un problème de sodium et non de magnésium.</p>"
+    },
+    "Indoor Plant Light Guide": {
+        "name": "Guide d'éclairage des plantes d'intérieur",
+        "description": "Forte lumière indirecte, faible luminosité et lumière directe du soleil : ce que signifie réellement chaque étiquette.",
+        "content": "<p>Forte lumière indirecte = à moins d'un mètre d'une fenêtre ensoleillée mais pas aux rayons du soleil. Moyen = à travers la pièce depuis cette fenêtre. Faible = à quelques mètres de toute fenêtre ou contre un mur orienté au nord. Soleil direct = lumière du soleil non filtrée pendant 4 heures ou plus.</p><p>Choisissez les plantes en fonction de la lumière, et non l'inverse.</p>"
+    },
+    "Inside Modern Athletic Shoe Tech": {
+        "name": "À l’intérieur de la technologie des chaussures de sport modernes",
+        "description": "Mousse PEBA, plaque de carbone et conception du rocker : ce qui crée réellement des améliorations de vitesse.",
+        "content": "<p>La « super chaussure » fonctionne grâce à trois mécanismes : une couche de mousse hautement élastique qui restitue plus d'énergie à chaque foulée, une plaque de carbone qui rigidifie la semelle intermédiaire et une conception à bascule pour des mouvements plus fluides. Supprimez l'un de ces facteurs et les avantages diminuent.</p><p>Pour la plupart des coureurs, un entraîneur quotidien avec l'un de ces trois facteurs suffira. Combinez simplement les trois pour le jour de la course.</p>"
+    },
+    "Inside the Workshop: How a Mid-Century Side Table Comes to Life": {
+        "name": "À l'intérieur de l'atelier : comment une table d'appoint du milieu du siècle prend vie",
+        "description": "L'essai photo suit un artiste de meubles à travers un processus de fabrication de six semaines.",
+        "content": "<p>Le bois de noyer est sélectionné dans des forêts gérées durablement dans le Vermont. Les pièces sont assemblées avec des tenons – pas de clous, pas de vis, pas de compromis. L'huile danoise frottée à la main emprisonne le grain du bois et fait ressortir une profondeur de couleur que la finition à la machine ne peut égaler.</p>"
+    },
+    "Investing in Heirloom Pieces": {
+        "name": "Investir dans des pièces d'héritage",
+        "description": "Quand les meubles bon marché coûtent-ils plus cher – et comment savoir pourquoi il vaut la peine d’économiser.",
+        "content": "<p>Achetez des objets de famille pour les objets qui ancrent une pièce : table à manger, lit, canapé, éclairage. Économisez de l'argent sur les objets décoratifs, les objets plus petits et les articles faciles à changer lors de la redécoration. Les bois durs massifs, les tenons visibles et les fibres naturelles sont les caractéristiques des pièces conçues pour durer des décennies.</p><p>Les mathématiques favorisent toujours la qualité une fois que vous prenez en compte les cycles de remplacement.</p>"
+    },
+    "Investment Pieces: What Is Actually Worth It": {
+        "name": "Pièces d'investissement : ce qui en vaut réellement la peine",
+        "description": "Où dépenser votre argent, où économiser et quatre pièces qui valent le coût par usure.",
+        "content": "<p>Dépensez pour ce qui touche votre peau au quotidien et ce qui maintient une tenue en forme : une veste ajustée, des chaussures en cuir, un sac de qualité et un jean parfaitement ajusté. Économisez sur les superpositions tendance, les accessoires à faible mélange et tout ce qui est photographié pour un seul événement.</p><p>Le coût par tenue est le seul calcul honnête.</p>"
+    },
+    "Jewelry Layering: A Practical Guide": {
+        "name": "Superposition de bijoux : un guide pratique",
+        "description": "Trois longueurs, deux métaux, un accent. Le calcul derrière le look superposé qui dure toute la journée.",
+        "content": "<p>Gardez les trois longueurs de collier à au moins deux pouces l'une de l'autre. Mélangez délibérément l’or et l’argent – ​​gardez un ton dominant (60 % métallique) et laissez l’autre ton être le point culminant. Assortissez les boucles métalliques du sac et de la ceinture dans l'une de ces couleurs.</p><p>L'objectif est d'être sélectionné, pas encombré.</p>"
+    },
+    "Keep Pet Calm at the Vet": {
+        "name": "Gardez votre animal calme chez le vétérinaire",
+        "description": "Parfums familiers, balades lentes et exposition basée sur les récompenses : les clés de visites moins stressantes.",
+        "content": "<p>La tension à la clinique vétérinaire monte bien avant le rendez-vous. Apportez une serviette familière qui sent la maison, sautez le petit-déjeuner pour rendre les friandises irrésistibles et arrivez quelques minutes plus tôt pour vous installer sur le parking. Récompensez les friandises de grande valeur lorsque votre animal renifle calmement.</p><p>Les chats bénéficient le plus d'être présentés à un sac de transport - laissez-le de côté comme un meuble, pas comme un signe de punition.</p>"
+    },
+    "Lacing Techniques for a Better Fit": {
+        "name": "Techniques de laçage pour un meilleur ajustement",
+        "description": "Verrouillage du talon, boucles de coureur et laçage par intervalles : de petits ajustements résolvent les gros problèmes d'ajustement.",
+        "content": "<p>L'anneau du coureur corrige le glissement du talon en quelques secondes — la plupart des chaussures modernes ont un œillet supplémentaire. Attachez les lacets à intervalles réguliers pour réduire la pression sur les voûtes hautes. Le laçage de la fenêtre crée de l'espace pour une zone d'orteil large.</p><p>Passez dix minutes à vous ajuster avant de rendre une paire de chaussures. La plupart des plaintes concernant l'ajustement concernent des problèmes de laçage.</p>"
+    },
+    "Lighting Your Workspace": {
+        "name": "Éclairer votre espace de travail",
+        "description": "La fatigue oculaire est en grande partie un problème d’éclairage et non un problème d’écran.",
+        "content": "<p>Éclairage ambiant combiné de 300 lux avec une lampe de travail ciblée de 500 lux sur le dessus de table. Évitez de placer l'écran directement devant une fenêtre lumineuse. Ajustez la température de couleur en fonction de l'heure de la journée : plus chaude le soir, plus fraîche pendant la journée.</p><p>Vos yeux s'adaptent à l'équilibre et non à la luminosité. Visez un éclairage uniforme et non éblouissant.</p>"
+    },
+    "Magnesium, Glycinate vs Citrate: A Practical Guide": {
+        "name": "Magnésium, Glycinate vs Citrate : Un guide pratique",
+        "description": "Deux formes, deux finalités. Le bon type dépend si vous souhaitez un bon sommeil, une digestion régulière ou les deux.",
+        "content": "<p>Le glycinate de magnésium est plus doux pour les intestins et favorise la relaxation et le sommeil. Le citrate a un léger effet laxatif et favorise une digestion régulière. L'oxyde est mal absorbé et est largement gaspillé en dehors de l'utilisation clinique.</p><p>La plupart des adultes bénéficient de 200 à 400 mg de glycinate pris le soir.</p>"
+    },
+    "Maintenance Schedule Made Simple": {
+        "name": "Programme de maintenance simplifié",
+        "description": "Répartition facile à comprendre des éléments d'entretien tous les 5 000, 30 000 et 60 000 miles.",
+        "content": "<p>Les manuels d'utilisation peuvent être accablants. Voici la version courte : changez l'huile et permutez les pneus tous les 5 000 milles, changez le filtre à air d'habitacle et le filtre à air moteur tous les 15 000 à 30 000 milles, rincez le liquide de refroidissement et le liquide de frein tous les 30 000 milles, vérifiez la courroie de distribution et la courroie principale tous les 60 000 milles.</p><p>Suivez ce programme et la plupart des voitures modernes fonctionneront de manière fiable. Passé la barre des 200 000 milles.</p>"
+    },
+    "Makeup Made Easy": {
+        "name": "Le maquillage simplifié",
+        "description": "La routine de cinq produits flatte tous les visages – et cela prend moins de trois minutes.",
+        "content": "<p>Crème teintée, blush crème, gel sourcils, mascara, baume à lèvres. Le visage des cinq produits ignore le tapage et reste beau quelle que soit la lumière. Appliquer avec les doigts ; La chaleur mélange mieux les pigments que n'importe quel pinceau.</p><p>Le maquillage le plus flatteur est souvent celui qui est le moins appliqué.</p>"
+    },
+    "Mastering Color Palettes for a Modern Wardrobe": {
+        "name": "Maîtriser les palettes de couleurs pour une garde-robe moderne",
+        "description": "Comprenez comment mélanger les tons et les textures pour exprimer votre personnalité à travers la mode."
+    },
+    "Memorable Anniversaries: Gift Ideas By Year": {
+        "name": "Anniversaires mémorables : idées cadeaux par année",
+        "description": "Une approche moderne des thèmes d’anniversaire traditionnels – pas de clichés.",
+        "content": "<p>Première année : papier. Une affiche personnalisée imprimée avec la playlist du mariage. Cinquième année : bois. Une planche à découper gravée de la date. Dixième année : étain. Une impression photo en métal de votre voyage préféré.</p><p>L'histoire est plus importante que le prix.</p>"
+    },
+    "Mindfulness With Plants": {
+        "name": "Pleine conscience avec les plantes",
+        "description": "Arroser comme un rituel, essuyer les feuilles comme une méditation – une façon plus lente de vivre avec les plantes.",
+        "content": "<p>Prendre soin des plantes récompense l'attention. Un enregistrement hebdomadaire – humidité du sol, couleur des feuilles, nouvelle croissance – est également un enregistrement avec vous-même. Cinq minutes d'observation lente valent mieux qu'une heure d'intervention hâtive.</p><p>Les plantes prospèrent grâce à la cohérence. Il en va de même pour la plupart des choses qui valent la peine d'être prises en compte.</p>"
+    },
+    "Mixing Metals Tastefully": {
+        "name": "Mélanger les métaux avec goût",
+        "description": "L’or jaune avec l’argent, l’or rose avec le platine – des combinaisons qui semblent délibérées et non chaotiques.",
+        "content": "<p>Le secret est la répétition. Si vous associez de l'or et de l'argent dans des boucles d'oreilles, répétez le mélange dans une bague empilée ou un collier superposé. Les pièces bicolores, comme une montre avec un boîtier en acier et des maillons dorés, ancrent le contraste.</p><p>Ignorez les « règles » mais limitez la palette de couleurs à un maximum de deux métaux.</p>"
+    },
+    "Mixing Textures Like a Pro": {
+        "name": "Mélanger des textures comme un pro",
+        "description": "Du daim avec du cuir lisse, du rush avec du tweed : des combinaisons qui semblent intentionnelles et non chaotiques.",
+        "content": "<p>Le secret est le contraste combiné à la modération. Associez un sac lisse et structuré à une tenue plus douce et plus texturée. Ou ancrez un motif coloré avec un accessoire en cuir discret. Limité à deux matériaux opposés dans un seul ensemble.</p><p>La finition des boucles métalliques doit être uniforme dans toute une tenue — évitez de mélanger l'or et l'argent dans le même ensemble.</p>"
+    },
+    "Modern Accessories That Instantly Elevate Your Look": {
+        "name": "Modern Accessories That Instantly Elevate Your Look",
+        "description": "Un foulard au cou, une ceinture structurée, un seul anneau audacieux : de petites pièces, un grand impact."
+    },
+    "Must-Have Wardrobe Staples for Every Season": {
+        "name": "Des incontournables de la garde-robe pour chaque saison",
+        "description": "Les 10 basiques intemporels dont chaque garde-robe a besoin – et comment porter chacun d'entre eux au-delà de l'évidence."
+    },
+    "OEM vs Aftermarket Parts: When Each Wins": {
+        "name": "Pièces OEM vs pièces de rechange : quand chacune gagne",
+        "description": "Le compromis est le coût, l’ajustement et la garantie des pièces que vous remplacez réellement.",
+        "content": "Les pièces <p>OEM prévalent avec un ajustement garanti et une assistance sous garantie du revendeur. Les marques de rechange réputées surpassent souvent les équipementiers, et dans les catégories de performances telles que les freins et la suspension, elles surpassent souvent les stocks.</p><p>Règle générale : choisissez l'OEM pour les composants électriques et fluides liés à la sécurité, choisissez le marché secondaire pour les pièces d'usure et les améliorations de performances.</p>"
+    },
+    "Open-Back vs Closed-Back: Which Is Right For You?": {
+        "name": "Dos ouvert ou dos fermé : lequel vous convient le mieux ?",
+        "description": "Espace acoustique, insonorisation et utilisation prévue : choisissez celui qui convient à votre pièce et à vos habitudes.",
+        "content": "<p>Les écouteurs ouvrent l'espace sonore et le sustain naturel mais fuient le son dans les deux sens. Les écouteurs fermés sont parfaits pour les voyages, les espaces partagés et les sessions d'enregistrement.</p><p>Si vous n'en achetez qu'un, les écouteurs fermés sont un choix plus pratique.</p>"
+    },
+    "Organic vs Natural": {
+        "name": "Biologique vs Naturel",
+        "description": "« Naturel » est un mot marketing. « Bio » est une norme réglementée. Voici comment les distinguer.",
+        "content": "<p>Certifié biologique signifie que le sol est inspecté, exempt de pesticides synthétiques et que la chaîne d'approvisionnement est traçable. « Naturel » peut signifier tout ce que la marque veut dire. Recherchez le sceau officiel – et non la description sur le devant de l’emballage.</p><p>La liste des ingrédients au dos de l’emballage est l’endroit où se trouve la vérité.</p>"
+    },
+    "Pantry Reset Made Simple": {
+        "name": "La réinitialisation du garde-manger simplifiée",
+        "description": "Les bocaux en verre, les étiquettes et une cadence d'un trimestre gardent les produits secs frais et visibles.",
+        "content": "<p>Transférez les céréales, les farines et les graines dans des bocaux en verre transparent avec la date d'achat écrite au crayon. Tournez le vieux plat vers l’avant. Jetez tout ce qui a plus d'un an : les vieilles huiles s'oxydent, les vieilles céréales ont un goût fade.</p><p>Un inventaire visible conduit à de meilleurs repas.</p>"
+    },
+    "Personalized Gifting Made Easy: A Step-by-Step Playbook": {
+        "name": "Les cadeaux personnalisés simplifiés : un guide étape par étape",
+        "description": "Cinq étapes rapides de l'idée à la commande, sans trop penser au design.",
+        "content": "<p>Choisissez d'abord le destinataire, ensuite le produit et le design final. Commencez par une photo ou un souvenir que le destinataire aime déjà. Gardez le texte facile à lire ; Maximum une police, deux tailles de police.</p><p>Commandez un échantillon pour les produits que vous envisagez de refaire (cadeaux d'affaires, cadeaux de mariage).</p>"
+    },
+    "Pest-Free Houseplants": {
+        "name": "Plantes d'intérieur sans parasites",
+        "description": "Acariens, cochenilles et moucherons fongiques : comment les détecter tôt et empêcher leur propagation.",
+        "content": "<p>Vérifiez le dessous des feuilles d'une nouvelle plante avant de la ramener à la maison. Quarantaine pendant deux semaines. Dès qu'il y a des signes de parasites, séparez, coupez les feuilles affectées et traitez avec de l'huile de neem ou du savon insecticide chaque semaine jusqu'à ce qu'elles soient propres.</p><p>Les plantes saines résistent aux parasites ; Les plantes stressées les invitent.</p>"
+    },
+    "Phone Photography Tips That Beat the Default Camera App": {
+        "name": "Conseils de photographie sur téléphone qui surpassent l'application d'appareil photo par défaut",
+        "description": "Trois réglages, deux routines et un accessoire améliorent silencieusement chaque photo que vous prenez.",
+        "content": "<p>Verrouillez l'exposition sur le visage du sujet, photographiez dans le format de la plus haute qualité de l'application et utilisez le bouton de volume comme déclencheur pour maintenir le téléphone stable. Un petit trépied magnétique s'occupe du reste.</p><p>La plus grande amélioration réside dans l'édition : dix secondes seulement de contraste et de recadrage transforment une photo.</p>"
+    },
+    "Pickleball for Beginners": {
+        "name": "Pickleball pour les débutants",
+        "description": "Choisissez votre raquette, apprenez les règles de la cuisine et évitez les erreurs les plus courantes.",
+        "content": "<p>Commencez avec une raquette composite de poids moyen (7,5-8,0 oz). Apprenez d'abord la règle de la zone de non-volée (galère) : elle modifie le mouvement et la sélection des tirs. Entraînez-vous à dink avant de courir après les retours offensifs.</p><p>Le chemin le plus rapide vers un meilleur jeu consiste à moins de coups puissants et plus de putts.</p>"
+    },
+    "Playful Cat Fun": {
+        "name": "Amusement de chat ludique",
+        "description": "Des jouets de canne à pêche, des puzzles alimentaires et la séquence de chasse de cinq minutes dont votre chat a besoin chaque jour.",
+        "content": "<p>Les chats chassent par courtes rafales – cinq à dix minutes de traque, de bondissement et de capture. Recréez cela avec une canne à pêche qui bouge comme une proie. Terminez chaque séance de jeu avec une « proie » que le chat peut attraper, puis donnez-lui un petit repas, fermant ainsi le cycle naturel de chasse.</p><p>Un chat qui s'ennuie deviendra un chat anxieux. Le jeu quotidien empêche de « redécorer » les meubles.</p>"
+    },
+    "Posture Throughout the Day": {
+        "name": "Posture tout au long de la journée",
+        "description": "L'immobilité est l'ennemi. La meilleure position est votre prochaine position.",
+        "content": "<p>Rester assis est plus nocif pour le corps que se déplacer dans de nombreuses positions différentes. Alternez assis et debout toutes les 30 à 45 minutes. Marchez deux minutes toutes les heures. Faites des étirements entre les réunions.</p><p>L'objectif n'est pas une posture parfaite, il s'agit de bouger assez souvent pour qu'aucune position ne dure assez longtemps pour provoquer des tensions.</p>"
+    },
+    "Print-on-Demand Quality: How We Test Every Product": {
+        "name": "Qualité d'impression à la demande : comment nous testons chaque produit",
+        "description": "Encres, tissus et finitions : ce que nous mesurons avant qu'un produit n'arrive dans les rayons.",
+        "content": "<p>Chaque nouveau produit est testé pour la précision des couleurs, la résistance au lavage et l'intégrité de l'emballage. Nous utilisons des encres de correspondance de couleurs Pantone, des pigments grand teint et des emballages renforcés pour la verrerie.</p><p>Si un produit échoue au test de durabilité après six mois, il ne sera pas inclus dans le catalogue.</p>"
+    },
+    "Recognizing Pet Stress Signs": {
+        "name": "Reconnaître les signes de stress des animaux de compagnie",
+        "description": "Signaux subtils du langage corporel et que faire avant que le stress ne se transforme en comportement.",
+        "content": "<p>Lécher les lèvres, bâiller, montrer le blanc des yeux et la queue tombante sont les premiers signes de stress, bien avant de grogner ou de siffler. Supprimez le facteur de stress, donnez de l'espace à votre animal et récompensez-le lorsqu'il se calme. Le stress chronique entraîne des problèmes de peau, des troubles digestifs et un comportement agressif.</p><p>Les animaux calmes ne sont pas seulement obéissants ; ils sont également physiquement plus forts.</p>"
+    },
+    "Recovery Routines That Actually Work": {
+        "name": "Des routines de récupération qui fonctionnent réellement",
+        "description": "Les douches froides sont à la mode, mais le sommeil et la flexibilité font le travail important.",
+        "content": "<p>La science est ennuyeuse mais définitive : sept à neuf heures de sommeil, cinq minutes de mouvement dynamique par jour et un à deux repas riches en protéines les jours d'entraînement assurent 80 % de la récupération pour la plupart des athlètes.</p><p>Conservez l'équipement jusqu'à ce que les bases soient devenues indispensables.</p>"
+    },
+    "Repotting 101": {
+        "name": "Rempotage 101",
+        "description": "Quand rempoter, comment augmenter la taille et une nouvelle routine de changement de sol pour relancer la croissance chaque année.",
+        "content": "<p>Repotez lorsque les racines s'enroulent autour du fond du pot ou sortent du trou de drainage. Augmentez la taille du pot – un pot trop grand retient l’humidité. Rafraîchissez le sol chaque année même si le pot reste intact.</p><p>Le printemps est la période la plus facile. L'arbre entre dans une période de forte croissance et de récupération la plus rapide.</p>"
+    },
+    "Right Food for Active Dogs": {
+        "name": "La bonne nourriture pour les chiens actifs",
+        "description": "Densité calorique, qualité des protéines et comment lire les étiquettes sans se laisser emporter par le battage médiatique.",
+        "content": "<p>Les chiens qui travaillent et qui sont actifs ont besoin de 1,5 à 2 fois plus de calories que les chiens qui restent à la maison. Recherchez-en un avec au moins 25 % de protéines provenant de sources animales étiquetées, des matières grasses modérées et des glucides contrôlés. Évitez les termes génériques tels que « farine de viande » sans préciser l'espèce.</p><p>Ajustez votre alimentation en fonction de votre condition physique, et non selon les instructions figurant sur l'emballage.</p>"
+    },
+    "Safe Sleep Guidelines": {
+        "name": "Directives pour un sommeil sécuritaire",
+        "description": "Dormez sur le dos, avec un matelas plat et ferme, sans literie lâche – une critique qui mérite d'être relue.",
+        "content": "<p>Principes de base pour un sommeil sécuritaire : dormir seul, sur le dos, dans un berceau. Évitez les peluches, les couvertures et les pare-chocs pendant la première année. Un sac de couchage bien ajusté remplacera toutes les couvertures lâches et maintiendra la température stable.</p><p>Si quelque chose dans le berceau peut bouger, il ne devrait pas être là.</p>"
+    },
+    "Seasonal Eating Guide": {
+        "name": "Guide alimentaire saisonnier",
+        "description": "Mangez selon votre horaire : meilleur goût, prix inférieur et empreinte environnementale réduite.",
+        "content": "<p>Les produits de saison bougent moins, sont cueillis à parfaite maturité et ont des prix plus bas en raison d'une offre abondante. Construisez votre cuisine hebdomadaire autour de deux ou trois ingrédients de saison et alternez-les au fur et à mesure que les saisons changent.</p><p>Les meilleurs ingrédients sont ceux qui poussent le plus près de chez vous cette semaine.</p>"
+    },
+    "Skincare Layering Order": {
+        "name": "Ordre de superposition des soins de la peau",
+        "description": "Du plus fin au plus épais, l’eau avant l’huile – un guide rapide pour maximiser l’efficacité du produit.",
+        "content": "<p>L'ordre est important. Nettoyant, tonique, sérum, crème pour les yeux, crème hydratante, huile, crème solaire. Attendez 30 à 60 secondes entre les couches pour que chaque couche soit absorbée. La crème solaire est toujours la dernière étape du matin.</p><p>Appliquer la bonne couche est la différence entre un produit efficace et un produit grumeleux.</p>"
+    },
+    "Small Space Solutions": {
+        "name": "Solutions pour petits espaces",
+        "description": "Les studios et les T2 peuvent être spacieux – avec les bonnes règles.",
+        "content": "<p>Choisissez des meubles dignes de doubler l'espace : tabouret avec rangement, table pliante, canapé lit. Améliorez votre look avec des articles à talons hauts. Réfléchissez la lumière avec un miroir en face de la fenêtre. Gardez une palette de couleurs serrée pour garder le regard en mouvement.</p><p>Les petits espaces échouent lorsqu'ils sont remplis de trop de meubles, pas lorsqu'ils manquent de décoration.</p>"
+    },
+    "Soothe Baby Before Sleep": {
+        "name": "Apaiser bébé avant de dormir",
+        "description": "Des signaux prévisibles, des lumières douces et des voix apaisantes : les éléments de base pour une heure de coucher plus facile.",
+        "content": "<p>La plupart des bébés s'endorment plus rapidement lorsque la relaxation commence vingt minutes avant le premier bâillement. Des lumières tamisées, des voix apaisantes et une routine cohérente (bain, lotion, sac de couchage, histoire) entraîneront le système nerveux à s'attendre au repos.</p><p>Restez à l'écart des écrans. Remplacez-les par un contact cutané et un bruit blanc qui simule l'environnement dans l'utérus.</p>"
+    },
+    "Standing Desk Adoption Without Burnout": {
+        "name": "Adoption du bureau debout sans épuisement professionnel",
+        "description": "La plupart des gens restent trop debout la première semaine et abandonnent dès la troisième semaine. Voici la feuille de route.",
+        "content": "<p>Commencez par 15 minutes debout pour chaque heure assise. Ajoutez cinq minutes chaque semaine. Au bout de six semaines vous serez à l’aise en alternance 30/30. Utilisez une planche d'équilibre ou un tapis anti-fatigue pour déplacer continuellement votre poids.</p><p>Considérez la position debout comme un nouvel exercice : augmentez progressivement la charge, et non l'effort maximal.</p>"
+    },
+    "Standing Desk Adoption: From Day One to Habit": {
+        "name": "Adoption du bureau debout : du premier jour à l'habitude",
+        "description": "Comment augmenter progressivement votre temps debout sans vous épuiser ni développer de nouvelles douleurs.",
+        "content": "<p>Commencez par 15 minutes debout toutes les heures pendant la première semaine. Ajoutez cinq minutes chaque semaine. Au bout d’un mois, visez un ratio 50/50. Les tapis anti-fatigue aident plus que les gens ne le pensent.</p><p>Changez de position tout au long de la journée. La meilleure position est votre prochaine position.</p>"
+    },
+    "Strength Training Basics": {
+        "name": "Bases de l’entraînement en force",
+        "description": "Cinq levées, trois séries, deux fois par semaine – et vous avez couvert les bases.",
+        "content": "<p>Squat, flexion de la hanche, pousser, tirer, porter. Construisez votre programme autour de ces schémas de mouvement et ajustez votre charge mois par mois, et non semaine par semaine. N'ajoutez des exercices de soutien qu'une fois que les bases sont solides.</p><p>Plus le programme est simple, plus vous pouvez le faire régulièrement.</p>"
+    },
+    "Studio vs Audiophile: Two Different Goals, Two Different Tunings": {
+        "name": "Studio vs Audiophile : deux objectifs différents, deux réglages différents",
+        "description": "Un son de référence plat n’est pas la même chose qu’un son agréable, et c’est l’intention de conception.",
+        "content": "Les écouteurs <p>Studio sont une question de précision : ils devraient rendre le son d'un mauvais enregistrement médiocre. Le réglage audiophile améliore l'expérience d'écoute avec des basses profondes, des aigus aérés et une scène plus large.</p><p>Choisissez un réglage qui correspond à ce que vous faites réellement à chaque heure de la semaine.</p>"
+    },
+    "Sustainable Accessories: The Brands We Trust": {
+        "name": "Accessoires durables : les marques auxquelles nous faisons confiance",
+        "description": "Teintures végétales, stock de cuir et produits en petits lots – pas de greenwashing.",
+        "content": "<p>Regardez au-delà des tactiques de marketing. Les signaux dignes de confiance sont les tanneries certifiées LWG, les pages d'origine transparentes et les marques qui divulguent publiquement l'emplacement de leurs usines. Le cuir tanné végétal, les tissus d'origine et les boucles en métal recyclé sont tous importants, mais le plus important est une marque prête à être transparente sur son processus.</p><p>Acheter moins et choisir avec soin l'emporte toujours sur toutes les références.</p>"
+    },
+    "Sustainable Fabrics, Explained: Tencel, Linen, and Recycled Cotton": {
+        "name": "Tissus durables expliqués : Tencel, lin et coton recyclé",
+        "description": "Un guide d'achat sur les tissus écologiques qui changent notre façon d'acheter.",
+        "content": "<p>Tencel offre le drapé soyeux de la viscose avec une fraction de l'empreinte chimique. Le lin reste frais tout l’été et dure des décennies s’il est bien entretenu. Le coton recyclé évite des millions de vêtements des décharges chaque année.</p><p>Comprendre les étiquettes des tissus est la première étape pour faire des achats conscients.</p>"
+    },
+    "Sustainable Fashion Choices That Never Go Out of Style": {
+        "name": "Des choix de mode durables qui ne se démodent jamais",
+        "description": "Apprenez à magasiner plus intelligemment avec des pièces écologiques qui ont fière allure et qui font du bien."
+    },
+    "The Complete Ergonomic Setup Guide": {
+        "name": "Le guide complet de configuration ergonomique",
+        "description": "Un guide étape par étape pour s'asseoir, se tenir debout et placer l'écran.",
+        "content": "<p>Asseyez-vous avec les pieds à plat. Coudes à un angle de 90 à 100 degrés. Les poignets sont neutres sur le clavier. Le niveau des yeux se trouve dans le quadrant supérieur de l’écran. Utilisez un repose-pieds si vos pieds ne touchent pas le sol.</p><p>Revérifiez votre configuration tous les trimestres. Tout va mal plus vite que vous ne le pensez.</p>"
+    },
+    "The Definitive Bag Care Guide": {
+        "name": "Le guide définitif d’entretien des sacs",
+        "description": "Des conseils pour un nettoyage régulier, des soins intensifs de la peau et une utilisation rotative aident à protéger vos articles préférés.",
+        "content": "<p>Essuyer avec une serviette douce en microfibre après chaque utilisation. Conditionnez votre peau toutes les six à huit semaines avec une crème équilibrant le pH. Remplissez le sac de papier de soie sans acide lors du stockage et faites pivoter le sac chaque semaine pour donner du repos à la peau.</p><p>Le plus grand ennemi d'un bon sac est l'humidité. Conservez les sachets de déshydratant de silice dans des sacs en tissu et évitez de les stocker dans des récipients en plastique.</p>"
+    },
+    "The Ergonomic Setup Guide That Actually Works": {
+        "name": "Le guide de configuration ergonomique qui fonctionne réellement",
+        "description": "Yeux, coudes, hanches et pieds : quatre repères pour un bureau sans douleur.",
+        "content": "<p>Placez le bord supérieur de l'écran au niveau des yeux ou légèrement en dessous, à bout de bras. Les coudes sont à un angle de 90 degrés, les poignets sont en position neutre. Les hanches sont légèrement plus hautes que les genoux. Pieds posés à plat au sol ou sur repose-pieds. Ajustez-le une fois, puis laissez-le tranquille.</p><p>La plupart des douleurs liées au travail de bureau sont le résultat cumulatif de petits écarts : corrigez la géométrie et le corps se détendra.</p>"
+    },
+    "The Investment Bag: Why a Quality Handbag Pays for Itself": {
+        "name": "Le sac d’investissement : pourquoi un sac à main de qualité est rentable",
+        "description": "Une plongée profonde dans le cuir tressé, les silhouettes structurées et les sacs pour lesquels il vaut la peine d'économiser."
+    },
+    "The Mid-Century Modern Edit": {
+        "name": "La modification moderne du milieu du siècle",
+        "description": "Des lignes épurées, des courbes organiques et un mouvement de design qui refuse de vieillir.",
+        "content": "<p>Le style du milieu du siècle réussit parce qu'il résout des problèmes qui méritent encore d'être résolus : petits espaces, fonctions mixtes, production de masse avec un esprit artisanal. Recherchez des pieds effilés, des tons noyer et teck et des lignes douces sans être fragiles.</p><p>Associez une pièce du milieu du siècle qui accentue l'environnement moderne plus discret - c'est là que ce style brille.</p>"
+    },
+    "The Quiet Power of Adaptogens": {
+        "name": "Le pouvoir silencieux des adaptogènes",
+        "description": "Ashwagandha, rhodiola et herbes que votre grand-mère connaît probablement depuis longtemps.",
+        "content": "<p>Les adaptogènes n’atténuent pas le stress – ils aident le corps à gérer le stress. Ashwagandha (KSM-66) présente les données de réduction de cortisol les plus fortes dans les essais modernes. La Rhodiola soutient l'endurance en cas de fatigue. Le champignon crinière de lion présente des avantages cognitifs qui font l'objet de recherches.</p><p>Aucun de ceux-ci ne remplace le sommeil, la lumière du soleil ou l'exercice. Ils prennent en charge une plateforme existante.</p>"
+    },
+    "The Secret to Effortless Elegance in Every Season": {
+        "name": "Le secret d’une élégance sans effort à chaque saison",
+        "description": "Découvrez les principales techniques de superposition et les choix de tissus qui vous garderont chic toute l'année."
+    },
+    "The Smart Home Edit: What Actually Pays Off in 2026": {
+        "name": "L'édition Smart Home : ce qui est réellement payant en 2026",
+        "description": "Ignorez le battage médiatique. Ces quatre groupes – éclairage, verrouillage, hub et caméra – valent le coût.",
+        "content": "<p>Les ampoules intelligentes et l'automatisation des serrures de porte permettent de gagner le plus de temps. Ajoutez un hub avant d’acheter un cinquième appareil, sinon les problèmes de temps de réponse s’accumuleront. Évitez les appareils de cuisine de dernière génération à moins qu'ils ne survivent au test de l'îlot de cuisine d'un mois.</p><p>Achetez lentement. Standardiser l'ensemble d'un écosystème lorsque cela est possible.</p>"
+    },
+    "The Spring 2026 Capsule: Ten Pieces, Endless Outfits": {
+        "name": "La capsule printemps 2026 : dix pièces, des tenues infinies",
+        "description": "Un guide minimaliste pour construire une garde-robe printanière polyvalente avec seulement dix pièces essentielles.",
+        "content": "<p>La garde-robe capsule vit d'une conservation minutieuse. Cette saison, nous nous concentrons sur dix pièces de base : un blazer élégant, un haut oversize en coton, deux paires de jeans, une robe midi fluide et des accessoires dignes de plusieurs looks.</p><p>Chaque article de la capsule a été choisi pour sa polyvalence, son style et sa longévité. Tenez-vous-en à une palette de couleurs étroite et vous pourrez facilement alterner entre vingt tenues différentes.</p>"
+    },
+    "The Style Edit: Fall Essentials": {
+        "name": "L'édition de style : les essentiels de l'automne",
+        "description": "Six pièces qui ancrent votre garde-robe d’automne sans se dominer.",
+        "content": "<p>Les tenues d'automne récompensent la modération. Commencez avec un manteau en laine qui s'adapte à vos épaules, une paire de bottes en cuir qui s'améliorent avec l'usure et un pull que vous sortez et portez deux fois par semaine. Ajoutez un pantalon plissé, un sac fourre-tout galbé et un foulard en soie : c'est toute la collection.</p><p>La tendance est à la location. Les éléments ci-dessus sont la propriété.</p>"
+    },
+    "Tire Rotation 101": {
+        "name": "Permutation des pneus 101",
+        "description": "Diagramme, fréquence et raison pour laquelle la rotation de quatre pneus contribue à une usure uniforme de la bande de roulement des pneus.",
+        "content": "<p>Les pneus avant s'usent plus rapidement sur la plupart des véhicules en raison des forces de direction et de freinage. La rotation des pneus tous les 5 000 milles en diagonale vers l'avant ou vers l'arrière égalisera l'usure et peut prolonger la durée de vie des pneus jusqu'à 25 pour cent.</p><p>Vérifiez toujours la pression des pneus après la rotation et resserrez les écrous de roue après les 50 premiers milles.</p>"
+    },
+    "Top Gold Pieces for 2026": {
+        "name": "Meilleures pièces d’or pour 2026",
+        "description": "Bracelets sculpturaux, colliers trombones et chevalières définissent la nouvelle saison de haute joaillerie.",
+        "content": "<p>L'or jaune continue de dominer l'or blanc et le platine. Recherchez des bracelets sculptés, des liens trombones asymétriques et des chevalières gravées. Les combinaisons de métaux mixtes associent l'or brossé mat à l'argent brillant : c'est le contraste qui est la star.</p><p>Si vous n'achetez qu'une seule pièce, choisissez un bracelet texturé. Il convient du bureau au dîner et dégage un look coûteux.</p>"
+    },
+    "Traction & Cushioning: A Practical Buyers Guide": {
+        "name": "Traction et amorti : un guide d'achat pratique",
+        "description": "Modèle de semelle extérieure, décalage talon-pointe et épaisseur de la semelle : ce que la fiche technique vous dit vraiment.",
+        "content": "<p>Pour les chaussées mouillées, recherchez du caoutchouc rainuré et une semelle extérieure sans couture. Pour le terrain, vérifiez la profondeur de la bande de roulement : 3 à 4 mm devraient convenir à la plupart des sentiers. Le décalage talon-pointe affecte la mécanique de la foulée : un faible décalage favorise l'atterrissage sur les orteils, un décalage élevé amortit ceux qui atterrissent sur leurs talons.</p><p>L'épaisseur de la semelle à elle seule est un mauvais indicateur. Le composé de mousse est plus important.</p>"
+    },
+    "Trail vs Road Running Shoes: Which to Buy First": {
+        "name": "Chaussures de course sur sentier ou sur route : lesquelles acheter en premier",
+        "description": "Adhérence de la semelle extérieure, panneaux de protection et durabilité supérieure : raisons d'en posséder un ou les deux.",
+        "content": "Les chaussures de ville <p>Trail s'usent rapidement et glissent sur les terrains techniques. Les chaussures tout-terrain sur la chaussée sont rigides et ont un retour d'énergie réduit. Si vous partagez la distance 70/30 entre deux surfaces, possédez-en une paire de chacune. Pour moins de 70 % des déplacements hors route, une paire de chaussures hybrides « porte à sentier » suffira.</p><p>Choisissez en fonction de l'utilisation réelle et non du kilométrage rêvé.</p>"
+    },
+    "Travel Tips for Pets": {
+        "name": "Conseils de voyage pour les animaux de compagnie",
+        "description": "Familiarisez-vous avec votre sac de transport, vos points d'eau et les documents dont vous aurez besoin avant de partir.",
+        "content": "<p>Pour les chiens, prévoyez de vous arrêter toutes les deux heures pour boire de l'eau et renifler. Pour les chats, fixez le sac de transport avec une ceinture de sécurité et recouvrez-le d'une couverture familière. Ayez toujours sur vous votre carnet de vaccination et une photo récente au cas où vous vous perdriez.</p><p>Les informations de la micropuce doivent être à jour — un voyage n'est pas le moment de découvrir un ancien numéro de téléphone.</p>"
+    },
+    "Wedding Gift Ideas That Couples Actually Display": {
+        "name": "Idées de cadeaux de mariage que les couples affichent réellement",
+        "description": "Impressions personnalisées, souvenirs gravés et cadeaux qui durent jusqu'au nettoyage d'une nouvelle maison.",
+        "content": "<p>Les cadeaux affichés dans les salles communes durent le plus longtemps. Des albums photo, des impressions encadrées de lieux significatifs et des kits de mixage gravés sont souvent conservés.</p><p>En cas de doute, envoyez une carte-cadeau numérique avec un ensemble d'options parmi lesquelles choisir.</p>"
+    },
+    "Whole Food Edit": {
+        "name": "Aliments complets Modifier",
+        "description": "Rationalisez vos armoires de cuisine avec des aliments entiers à ingrédient unique – une semaine de réinitialisation pour une cuisine plus claire.",
+        "content": "<p>Jetez tous les articles emballés contenant plus de cinq ingrédients. Faites le plein de céréales, de légumineuses, d’huiles, d’herbes et d’une poignée d’aliments de base que vous utilisez réellement. Les factures d'achats sont réduites ; mieux cuisiner.</p><p>Cuisiner avec des aliments complets n'est pas une question d'abstinence mais de réduction des décisions.</p>"
+    },
+    "Why Accessories Define More Than Just Your Outfit": {
+        "name": "Pourquoi les accessoires définissent plus que votre tenue",
+        "description": "Découvrez comment les petits détails comme les bijoux et les sacs peuvent transformer votre look."
+    },
+    "Why Your Playful Cat Needs More Fun Every Day": {
+        "name": "Pourquoi votre chat joueur a besoin de plus de plaisir chaque jour",
+        "description": "Découvrez comment le jeu régulier améliore la santé, renforce les liens et maintient la curiosité de votre chat.",
+        "content": "<p>De courtes séances de jeu aident à aiguiser les instincts, à prévenir l'ennui et à favoriser des mouvements sains. Changez souvent de jouet et terminez chaque séance de jeu avec une douce affection.</p>"
+    },
+    "Why Your Sleep Score Lies (And What to Trust Instead)": {
+        "name": "Pourquoi votre score de sommeil ment (et à quoi faire confiance à la place)",
+        "description": "La bague intelligente surcompte le sommeil profond. C’est quelque chose qui est en corrélation avec l’énergie matinale.",
+        "content": "<p>Les phases de sommeil sur les appareils portables sont des estimations et non des mesures. L'indice prédit toujours ce que vous ressentez : la durée totale du sommeil et la régularité de l'heure du coucher dans une fenêtre de 30 minutes.</p><p>Optimisez pour l'ennui avant d'optimiser pour le glamour.</p>"
+    },
+    "Wireless Charging Demystified: Wattage, Coils, and Real Speeds": {
+        "name": "La recharge sans fil démystifiée : puissance en watts, bobines et vitesses réelles",
+        "description": "Pourquoi une station de chargement de 15 W produit rarement 15 W et comment en choisir une qui fonctionne comme annoncé.",
+        "content": "<p>La vitesse de chargement sans fil dépend de l'alignement, du matériau du boîtier et de la capacité de dissipation thermique. L'alignement magnétique de style MagSafe offre des vitesses nettement plus constantes par rapport à une station d'accueil composée uniquement d'une bobine de charge.</p><p>Si la vitesse de charge est importante, branchez le cordon. La recharge sans fil gagne en commodité et non en puissance brute.</p>"
+    },
+    "Wireless Earbuds Buying Guide for 2026": {
+        "name": "Guide d’achat d’écouteurs sans fil pour 2026",
+        "description": "Ajustement, codec, qualité du microphone et batterie : une liste de contrôle sans battage publicitaire pour les acheteurs.",
+        "content": "<p>Achetez pour l'ajustement en premier, le son en second, le codec en troisième. Essayez chaque taille de bouchon d'oreille incluse pendant une journée complète. Testez l'appel dans une pièce bruyante avant de décider de le conserver.</p><p>Si vous basculez souvent entre iPhone et Mac, le couplage multipoint est plus important que la prise en charge des codecs.</p>"
+    }
+}

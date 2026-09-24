@@ -1,0 +1,47 @@
+{
+    "Cotton": {
+        "name": "قطن"
+    },
+    "Linen": {
+        "name": "الكتان"
+    },
+    "Wool": {
+        "name": "صوف"
+    },
+    "Leather": {
+        "name": "جلد"
+    },
+    "Tencel": {
+        "name": "ايوسل"
+    },
+    "Recycled": {
+        "name": "المعاد تدويرها"
+    },
+    "Made in Portugal": {
+        "name": "صنع في البرتغال"
+    },
+    "Made in Italy": {
+        "name": "صنع في إيطاليا"
+    },
+    "Hand-Crafted": {
+        "name": "مصنوع يدويًا"
+    },
+    "Vegan": {
+        "name": "نباتي"
+    },
+    "Limited Run": {
+        "name": "تشغيل محدود"
+    },
+    "Best Seller": {
+        "name": "الأكثر مبيعًا"
+    },
+    "New Arrival": {
+        "name": "وصول جديد"
+    },
+    "Editor Pick": {
+        "name": "اختيار المحرر"
+    },
+    "Eco-Friendly": {
+        "name": "صديقة للبيئة"
+    }
+}

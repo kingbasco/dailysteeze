@@ -1,0 +1,686 @@
+{
+    "Accessories": {
+        "name": "Aksesuarlar",
+        "description": "Her türlü kıyafeti tamamlayacak çantalar, cüzdanlar, kemerler ve takılar."
+    },
+    "Activity Gyms": {
+        "name": "Aktivite Spor Salonları",
+        "description": ""
+    },
+    "Air Filters": {
+        "name": "Hava Filtreleri",
+        "description": "Daha temiz ve daha ekonomik emme havası akışı için yüksek performanslı motor hava filtresi ve OEM standartları."
+    },
+    "ANC Headphones": {
+        "name": "ANC Kulaklıklar",
+        "description": "Seyahat, odaklanma ve daha sessiz yolculuklar için aktif gürültü önleyici kulaklıklar."
+    },
+    "Apparel": {
+        "name": "Giyim",
+        "description": "Kolayca üşüyen evcil hayvanlar için yumuşak kazaklar, yağmurluklar ve sıcak tutan katmanlar."
+    },
+    "Aromatherapy Oils": {
+        "name": "Aromaterapi Yağları",
+        "description": ""
+    },
+    "Baby Room": {
+        "name": "Bebek Odası",
+        "description": "Beşikler, askılar, uyku tulumları ve diğer bebek odası malzemeleri rahatlatıcı bir alan yaratır."
+    },
+    "Baby Wear": {
+        "name": "Bebek Giyim",
+        "description": "Bebeğinizin hassas cildine uygun, yumuşak pamuklu tulum, ayakkabı ve günlük kıyafetler."
+    },
+    "Bags": {
+        "name": "Çantalar",
+        "description": "Yumuşak süet ve sırçalı deriden bez çantalar, hobo çantalar, çapraz çantalar ve el çantaları."
+    },
+    "Bath Care": {
+        "name": "Banyo Bakımı",
+        "description": "Kapüşonlu havlular, losyon ve temel banyo malzemeleri bebeğin cildinin yumuşak ve yumuşak kalmasına yardımcı olur."
+    },
+    "Bath Tubs & Seats": {
+        "name": "Banyo Küvetleri ve Koltuklar",
+        "description": ""
+    },
+    "Beanie": {
+        "name": "Bere",
+        "description": "Klasik nervürlü desenli, rahat, bol kesimli, yün ve kaşmir şapka."
+    },
+    "Beauty & Cosmetics": {
+        "name": "Güzellik ve Kozmetik",
+        "description": "Favori markalardan cilt bakımı, parfüm ve makyaj."
+    },
+    "Beds": {
+        "name": "Yataklar",
+        "description": "Platform yataklar, döşemeli yatak başlıkları ve yatak odası dayanakları."
+    },
+    "Belts": {
+        "name": "Kemerler",
+        "description": "Klasik gümüş ve fırçalanmış bronz tokalarla vurgulanan ince ve süslü kemerler."
+    },
+    "Bibs & Burp Cloths": {
+        "name": "Önlükler ve Geğirme Bezleri",
+        "description": ""
+    },
+    "Body Care": {
+        "name": "Vücut Bakımı",
+        "description": "Tepeden tırnağa yumuşak, ışıltılı bir cilt için vücut losyonları, peelingler ve banyo ritüelleri."
+    },
+    "Bodysuits & Onesies": {
+        "name": "Bodysuits ve Onesies",
+        "description": ""
+    },
+    "Booties & Socks": {
+        "name": "Patik ve Çorap",
+        "description": ""
+    },
+    "Bottles & Teats": {
+        "name": "Şişeler ve Emzikler",
+        "description": ""
+    },
+    "Bottoms": {
+        "name": "Dipler",
+        "description": "Modern şekillere sahip pantolonlar, kot pantolonlar, etekler ve şortlar."
+    },
+    "Bracelets": {
+        "name": "Bilezikler",
+        "description": "Katmanlı veya tek başına takılabilen tenis bileklikleri, sağlam bileklikler ve bağlantılar."
+    },
+    "Brake Hydraulics": {
+        "name": "Fren Hidroliği",
+        "description": "Servo direksiyon pompası, ana silindir ve hidrolik bileşenler uzun süre dayanacak şekilde üretilmiştir."
+    },
+    "Brake Pads": {
+        "name": "Fren Balataları",
+        "description": "Birinci sınıf seramik ve yarı metalik fren balataları güçlü, güvenli frenleme gücü sağlar."
+    },
+    "Brake Rotors": {
+        "name": "Fren Rotorları",
+        "description": "Havalandırmalı ve oluklu fren diskleri ısıyı dağıtacak ve dayanıklı olacak şekilde tasarlanmıştır."
+    },
+    "Break Scheduling": {
+        "name": "Mola Planlaması",
+        "description": ""
+    },
+    "Cable": {
+        "name": "Kablo",
+        "description": "USB-C, Lightning ve korumalı şarj kabloları uzun süre dayanacak şekilde tasarlanmıştır."
+    },
+    "Calming Sounds": {
+        "name": "Sakinleştirici Sesler",
+        "description": ""
+    },
+    "Calming Supplements": {
+        "name": "Sakinleştirici Takviyeler",
+        "description": ""
+    },
+    "Chairs": {
+        "name": "Sandalyeler",
+        "description": "Dinlenme sandalyeleri, vurgulu sandalyeler ve yemek sandalyeleri zanaatkârlar arasından seçilmektedir."
+    },
+    "Clothing": {
+        "name": "Giyim",
+        "description": "Modern gardırop için pamuklu tişörtler, kazaklar, ceketler ve mevsimsel temeller."
+    },
+    "Coping Methods": {
+        "name": "Başa Çıkma Yöntemleri",
+        "description": ""
+    },
+    "Cribs & Bassinets": {
+        "name": "Beşikler ve Beşikler",
+        "description": ""
+    },
+    "Custom T-Shirts": {
+        "name": "Özel Tişörtler",
+        "description": "Fotoğraf, isim ve en sevdiğiniz anıların canlı renkte basıldığı kişiye özel pamuklu tişört."
+    },
+    "Cutting Tools": {
+        "name": "Kesici Aletler",
+        "description": "Testere bıçakları, makaslar ve kesme aletleri temiz kesimler için tasarlanmıştır."
+    },
+    "Daily Stress Log": {
+        "name": "Günlük Stres Günlüğü",
+        "description": ""
+    },
+    "Deep Breathing": {
+        "name": "Derin Nefes Alma",
+        "description": ""
+    },
+    "Desks": {
+        "name": "Masalar",
+        "description": "Kompakt ayakta duran masalar, yazı masaları ve ev ofis masaları uzun süre dayanacak şekilde üretilmiştir."
+    },
+    "Diamonds": {
+        "name": "Elmaslar",
+        "description": "GIA sertifikalı gevşek taşlar ve klasik şekiller koleksiyonerlerin beğenisine sunuluyor."
+    },
+    "Digital Detox": {
+        "name": "Dijital Detoks",
+        "description": ""
+    },
+    "Dresses": {
+        "name": "Elbiseler",
+        "description": "Her duruma uygun mini, midi ve maxi elbiseler."
+    },
+    "Drilling Tools": {
+        "name": "Sondaj Araçları",
+        "description": "Her türlü malzeme için matkaplar, darbeli matkaplar ve darbeli tornavidalar."
+    },
+    "EarPhone": {
+        "name": "Kulaklık",
+        "description": "Zengin ses ve uzun pil ömrüne sahip gerçek kablosuz ve kulak içi kulaklıklar."
+    },
+    "Earrings": {
+        "name": "Küpeler",
+        "description": "Pırlanta, inci ve değerli taşlarla hazırlanmış tomurcuk, damla ve halka küpeler."
+    },
+    "Electrical Tools": {
+        "name": "Elektrikli Aletler",
+        "description": "Düzgün elektrik işleri için multimetre, kablo sıyırma aletleri ve test ekipmanı."
+    },
+    "Electronics": {
+        "name": "Elektronik",
+        "description": "Kulaklıklar, akıllı ev cihazları ve kişisel teknolojiler sahip olmaya değer."
+    },
+    "Emotional Awareness": {
+        "name": "Duygusal Farkındalık",
+        "description": ""
+    },
+    "Emotional Support Tips": {
+        "name": "Duygusal Destek İpuçları",
+        "description": ""
+    },
+    "Ergonomic Chairs": {
+        "name": "Ergonomik Sandalyeler",
+        "description": "Ergonomik sandalye, uzun saatler boyunca odaklanmış çalışma için tasarlanmış duruşu destekler."
+    },
+    "Fastening Tools": {
+        "name": "Çakma Aletleri",
+        "description": "Hızlı ve düzgün montaj için çivi tabancası, zımba ve darbeli tornavida."
+    },
+    "Feeding Gear": {
+        "name": "Besleme Dişlisi",
+        "description": "Biberonlar, önlükler ve diğer beslenme malzemeleri yemek zamanlarını güvenli ve kolay hale getirmek için tasarlanmıştır."
+    },
+    "Feeding Sets & Utensils": {
+        "name": "Besleme Setleri ve Gereçleri",
+        "description": ""
+    },
+    "Footwear": {
+        "name": "Ayakkabı",
+        "description": "Önde gelen bağımsız üreticilerden spor ayakkabılar, botlar, topuklu ayakkabılar ve düz ayakkabılar."
+    },
+    "Fragrance": {
+        "name": "Koku",
+        "description": "Parfümler, vücut spreyleri ve uzay kokuları hassas malzemelerden üretilmiştir."
+    },
+    "Fresh From Nature": {
+        "name": "Doğadan Taze",
+        "description": "Mevsimlik meyveler, sebzeler ve fermente ürünler sertifikalı organik çiftliklerden hasat edilmektedir."
+    },
+    "Gaming Ergonomics": {
+        "name": "Oyun Ergonomisi",
+        "description": "Uzun oyun seansları için tasarlanmış ergonomik oyun koltuğu ve aksesuarları."
+    },
+    "Gaming Headsets": {
+        "name": "Oyun Kulaklıkları",
+        "description": "Rekabetçi ve sürükleyici bir oyun deneyimi için ince ayarlı, düşük gecikme süreli kablolu ve kablosuz kulaklıklar."
+    },
+    "Gifts & Occasions": {
+        "name": "Hediyeler ve Özel Günler",
+        "description": "Doğum günleri, düğünler, yıldönümleri ve diğer tüm dönüm noktaları için özenle seçilmiş hediye setleri."
+    },
+    "Grains & Superfoods": {
+        "name": "Tahıllar ve Süper Gıdalar",
+        "description": "Sentetik olmadan yetiştirilen eski tahıllar, filizlenmiş tohumlar ve süper gıdalar."
+    },
+    "Grooming": {
+        "name": "bakım",
+        "description": "Şampuanlar, fırçalar ve aletler tüyleri temiz ve cildi sağlıklı tutar."
+    },
+    "Grounding Practices": {
+        "name": "Topraklama Uygulamaları",
+        "description": ""
+    },
+    "Guided Meditation": {
+        "name": "Rehberli Meditasyon",
+        "description": ""
+    },
+    "Gym": {
+        "name": "Spor salonu",
+        "description": "Ağırlık salonları ve yüksek tekrarlı devreler için tasarlanmış kuvvet antrenmanı ekipmanı."
+    },
+    "Gym Shoes": {
+        "name": "Spor Ayakkabı",
+        "description": "Sağlam tabanlı ve yanal destekli, çok amaçlı spor ayakkabı ve halter ayakkabıları."
+    },
+    "Haircare": {
+        "name": "Saç Bakımı",
+        "description": "Şampuanlar, maskeler ve şekillendirme araçları parlaklığı geri kazanmaya ve saç derisi sağlığına saygı göstermeye yardımcı olur."
+    },
+    "Hand Tools": {
+        "name": "El Aletleri",
+        "description": "Çekiçler, anahtarlar, tornavidalar ve her alet kemerinin olmazsa olmazları."
+    },
+    "Hand Weights": {
+        "name": "El Ağırlıkları",
+        "description": "Evde kuvvet antrenmanı için dambıllar, kettlebell'ler ve tutması kolay dambıllar."
+    },
+    "Hats & Mittens": {
+        "name": "Şapkalar ve Eldivenler",
+        "description": ""
+    },
+    "Headphone": {
+        "name": "Kulaklık",
+        "description": "Günlük müzik dinleme ve stüdyo için aktif gürültü engelleme özelliğine sahip kulak üstü kulaklıklar."
+    },
+    "Health & Wellness": {
+        "name": "Sağlık ve Sağlıklı Yaşam",
+        "description": "Diyet takviyeleri, ağız bakımı ve yatıştırıcı ürünler veteriner araştırmalarıyla desteklenmektedir."
+    },
+    "Health Devices": {
+        "name": "Sağlık Cihazları",
+        "description": "Rutininize uyum sağlayan akıllı takip cihazları, ışık terapisi lambaları ve sağlıklı yaşam cihazları."
+    },
+    "Herbal Teas": {
+        "name": "Bitki Çayları",
+        "description": ""
+    },
+    "Herbs & Spices": {
+        "name": "Otlar ve Baharatlar",
+        "description": "Tek kökenli bitki ve baharatlar, aromatik yağlarını korumak için hafifçe kurutulur."
+    },
+    "Home & Furniture": {
+        "name": "Ev ve Mobilya",
+        "description": "Sürdürülebilir kaynaklardan oturma odası, yatak odası ve yemek odası mobilyaları."
+    },
+    "Home Decor": {
+        "name": "Ev Dekorasyonu",
+        "description": "Bitkilerden ilham alan dekor — resim çerçeveleri, vazolar ve detaylar doğayı evinize taşıyor."
+    },
+    "Home Office Setup": {
+        "name": "Ev Ofis Kurulumu",
+        "description": "Mobilya ve aydınlatma, modern uzak çalışma alanı için seçilmiştir."
+    },
+    "Hooded Towels": {
+        "name": "Kapşonlu Havlular",
+        "description": ""
+    },
+    "In-Ear Monitors": {
+        "name": "Kulak İçi Monitörler",
+        "description": "Sahne performansı ve müzik tutkunları için dinleme için dengeli armatür ve dinamik sürücülere sahip IEM kulaklıklar."
+    },
+    "Jewelry": {
+        "name": "Takı",
+        "description": "Her mevsime uygun vurgulu küpeler, katmanlı kolyeler ve katmanlı yüzükler."
+    },
+    "Jewelry & Watches": {
+        "name": "Takı ve Saatler",
+        "description": "Üst düzey mücevherler, yarı kaliteli ve mekanik saatler."
+    },
+    "Keyboard": {
+        "name": "Klavye",
+        "description": "Yaratıcının masası için klavye aksesuarları ve temel öğeler."
+    },
+    "Keyboards": {
+        "name": "Klavyeler",
+        "description": "Mekanik ve ince klavyeler yazma rahatlığı ve üretkenliği için tasarlanmıştır."
+    },
+    "Learn More": {
+        "name": "Daha fazla bilgi edin",
+        "description": "Öne çıkan elektronik seçimi — en yeni cihazları, aksesuarları ve gadget'ları keşfedin."
+    },
+    "Leggings": {
+        "name": "Tozluk",
+        "description": "Dört yöne esneyen ve çömelmeye dayanıklı kumaştan üretilmiş, yüksek belli kompresyon taytları."
+    },
+    "Lifestyle Adjustments": {
+        "name": "Yaşam Tarzı Düzenlemeleri",
+        "description": ""
+    },
+    "Lifestyle Shoes": {
+        "name": "Yaşam Tarzı Ayakkabı",
+        "description": "Klasik ayakkabı silüetleri ve modern kort ayakkabıları günlük kıyafetlerle uyumludur."
+    },
+    "Lifting Gear": {
+        "name": "Kaldırma Dişlisi",
+        "description": "Ağır yüklerin güvenli bir şekilde taşınması için vinçler, halatlar ve bağlama aksesuarları."
+    },
+    "Lighting": {
+        "name": "Aydınlatma",
+        "description": "Görünürlük ve stil için LED ampuller, projektör farları ve aksesuar ışıkları."
+    },
+    "Lotions & Oils": {
+        "name": "Losyonlar ve Yağlar",
+        "description": ""
+    },
+    "Makeup": {
+        "name": "Makyaj yapmak",
+        "description": "İyi huylu pigmentasyon ve oluşturulabilir kapatıcılık ile dudaklar, gözler ve cilt için temel ürünler."
+    },
+    "Measuring Tools": {
+        "name": "Ölçme Aletleri",
+        "description": "İş sahasında doğruluk için şerit metre, lazer terazisi ve kare ölçü."
+    },
+    "Mind Balance": {
+        "name": "Zihin Dengesi",
+        "description": "İç denge için günlükler, nefes egzersizleri ve farkındalık uygulamaları."
+    },
+    "Mittens": {
+        "name": "Eldivenler",
+        "description": "Soğuk günlerde sıcaklık için kaşmir astarlı eldivenler ve eldivenler."
+    },
+    "Mobiles & Night Lights": {
+        "name": "Cep Telefonları ve Gece Işıkları",
+        "description": ""
+    },
+    "Monitor Arms": {
+        "name": "Monitör Kolları",
+        "description": "Bir ve iki monitör kolu, masa alanından tasarruf etmenize ve monitörleri göz hizasında hizalamanıza yardımcı olur."
+    },
+    "Mood Tracker": {
+        "name": "Ruh Hali Takibi",
+        "description": ""
+    },
+    "Mouse": {
+        "name": "Fare",
+        "description": "Günlük çalışma alanı için bilgisayar fareleri ve işaretçi aksesuarları."
+    },
+    "Mousepad": {
+        "name": "Fare Altlığı",
+        "description": "Masa paspasları, şarj istasyonları ve çalışma yüzeyleri."
+    },
+    "Mouses": {
+        "name": "Fareler",
+        "description": "Sorunsuz imleç kontrolü için isteğe bağlı düğmelere ve yüksek DPI sensörüne sahip ergonomik yumuşak geçişli fare."
+    },
+    "Mugs & Drinkware": {
+        "name": "Kupalar ve Bardak Takımları",
+        "description": "Resimler ve benzersiz tasarımlarla basılmış özel kupalar, termoslar ve su şişeleri."
+    },
+    "Natural Remedies": {
+        "name": "Doğal Çözümler",
+        "description": ""
+    },
+    "Necklaces": {
+        "name": "Kolyeler",
+        "description": "14k ve 18k altın kolye uçları, bağlantılı kolyeler ve vurgulu kolyeler."
+    },
+    "Networking": {
+        "name": "Ağ oluşturma",
+        "description": "Akıllı ev aksesuarları ve bağlı ağlar."
+    },
+    "New Arrivals": {
+        "name": "Yeni Gelenler",
+        "description": "Tasarımcı ekibimizin en yeni modelleri; yeni şekiller ve yüzeyler."
+    },
+    "Nursery Decor": {
+        "name": "Kreş Dekoru",
+        "description": ""
+    },
+    "Nutrition": {
+        "name": "Beslenme",
+        "description": "Birinci sınıf granüller, ıslak gıdalar ve ikramlar her yaşam aşaması için formüle edilmiştir."
+    },
+    "Oil Filters": {
+        "name": "Yağ Filtreleri",
+        "description": "Yüksek akışlı yağ filtresi, motor ömrünün uzatılmasına ve optimum performansın elde edilmesine yardımcı olur."
+    },
+    "Outdoor Shoes": {
+        "name": "Açık Hava Ayakkabıları",
+        "description": "Patika koşusu ve yürüyüş ayakkabıları kavrama, denge ve engebeli arazi için tasarlanmıştır."
+    },
+    "Outerwear": {
+        "name": "Dış giyim",
+        "description": "Her mevsime uygun montlar, ceketler ve kabanlar."
+    },
+    "Pacifiers & Soothers": {
+        "name": "Emzikler ve Emzikler",
+        "description": ""
+    },
+    "Pantry Essentials": {
+        "name": "Kiler Temelleri",
+        "description": "Her gün temiz yemek pişirmek için organik un, tatlandırıcılar ve temel gıdalar."
+    },
+    "Personalized Decor": {
+        "name": "Kişiselleştirilmiş Dekor",
+        "description": "Oymalı bardak altlıkları, hatıra kutuları ve dekoratif öğeler her odayı daha tanıdık hale getirir."
+    },
+    "Phone Cases": {
+        "name": "Telefon Kılıfları",
+        "description": "Tüm yeni modeller için özel grafik veya tasarımlara sahip ince, düşmeye karşı test edilmiş telefon kılıfları."
+    },
+    "Photo Books": {
+        "name": "Fotoğraf Kitapları",
+        "description": "Düğünler, geziler ve kağıt üzerinde kaydedilmeye değer anlar için birinci sınıf ciltli fotoğraf albümleri."
+    },
+    "Pickleball": {
+        "name": "Turşu topu",
+        "description": "En hızlı büyüyen spor için turşu raketleri, topları ve ekipmanları."
+    },
+    "Pillows": {
+        "name": "Yastıklar",
+        "description": "Özel baskılı kırlentler, kanepenizi veya yatak odanızı kişisel bir sergi salonuna dönüştürür."
+    },
+    "Plant Care & Nutrients": {
+        "name": "Bitki Bakımı ve Besinler",
+        "description": "İstikrarlı, sağlıklı büyüme için gübreler, toprak iyileştiriciler ve bitki takviyeleri."
+    },
+    "Plant Tools": {
+        "name": "Bitki Araçları",
+        "description": "Budama makası, sulama kutuları ve bahçe malaları günlük bitki bakımı için tasarlanmıştır."
+    },
+    "Planters & Pots": {
+        "name": "Saksılar ve Saksılar",
+        "description": "Seramik, pişmiş toprak ve dokuma kaplar her türlü iç mekanın güzelleştirilmesine yardımcı olur."
+    },
+    "Plants & Garden": {
+        "name": "Bitkiler ve Bahçe",
+        "description": "İç ve dış mekan bitkileri bir sonraki evlerine gitmeye hazır."
+    },
+    "Play Time": {
+        "name": "Oyun Zamanı",
+        "description": "Erken gelişim için ahşap dişlikler, doldurulmuş hayvanlar ve yumuşak oyuncak arkadaşlar."
+    },
+    "Plush Toys": {
+        "name": "Peluş Oyuncaklar",
+        "description": ""
+    },
+    "Power Tools": {
+        "name": "Elektrikli El Aletleri",
+        "description": "Akülü matkaplar, taşlayıcılar ve testereler şantiyede güvenilirlik sağlayacak şekilde üretilmiştir."
+    },
+    "Progressive Relaxation": {
+        "name": "Aşamalı Gevşeme",
+        "description": ""
+    },
+    "Pure Organic Oils": {
+        "name": "Saf Organik Yağlar",
+        "description": "Soğuk preslenmiş yağlar, sirkeler ve soslar, sabırlı ve düşük ısılı bir yöntem kullanılarak çıkarılır."
+    },
+    "Relaxation": {
+        "name": "Gevşeme",
+        "description": "Aromaterapi, meditasyon araçları ve günlük rahatlama için stres giderici öğeler."
+    },
+    "Reset Routines": {
+        "name": "Rutinleri Sıfırla",
+        "description": ""
+    },
+    "Rings": {
+        "name": "Yüzükler",
+        "description": "Hem gündelik anlar hem de dönüm noktaları için tek pırlanta yüzükler, sonsuzluk yüzükleri ve mühür yüzükleri."
+    },
+    "Road Shoes": {
+        "name": "Yol Ayakkabıları",
+        "description": "Günlük spor ayakkabı, yastıklı orta tabanı ve dayanıklı dış tabanıyla yola uygun olarak tasarlandı."
+    },
+    "Running": {
+        "name": "Koşma",
+        "description": "Reflektörlü şeritlere ve ter tutmayan örgülere sahip hafif koşu kıyafeti."
+    },
+    "Running Shoes": {
+        "name": "Koşu Ayakkabısı",
+        "description": "Tüm mesafeler için yastıklamalı spor ayakkabılar ve hafif yarış ayakkabıları."
+    },
+    "Safety Gear": {
+        "name": "Güvenlik Donanımı",
+        "description": "Yansıtıcı kasklar, ayakkabılar ve giysiler OSHA standartlarına uygundur."
+    },
+    "Shoes": {
+        "name": "Ayakkabı",
+        "description": "Deri çizme, loafer ve dekolte ayakkabı modelleri her mevsime uygundur."
+    },
+    "Site Equipment": {
+        "name": "Saha Ekipmanları",
+        "description": "Jeneratörler, mikserler ve şantiye ekipmanları şantiyenin çalışır durumda kalmasını sağlar."
+    },
+    "Skincare": {
+        "name": "Cilt Bakımı",
+        "description": "Temizleyiciler, serumlar ve kremler her cilt sorunu ve durumu için formüle edilmiştir."
+    },
+    "Sleep & Recovery": {
+        "name": "Uyku ve Dinlenme",
+        "description": ""
+    },
+    "Sleep Hygiene": {
+        "name": "Uyku Hijyeni",
+        "description": ""
+    },
+    "Sleep-Friendly Herbs": {
+        "name": "Uyku Dostu Bitkiler",
+        "description": ""
+    },
+    "Sleeping Bags": {
+        "name": "Sleeping Bags",
+        "description": ""
+    },
+    "Sleepwear": {
+        "name": "pijama",
+        "description": ""
+    },
+    "Smart Lamp": {
+        "name": "Akıllı Lamba",
+        "description": "Ayarlanabilir sıcaklığa, renge ve entegre sanal asistana sahip Wi-Fi akıllı lamba."
+    },
+    "Smart Lights": {
+        "name": "Akıllı Işıklar",
+        "description": "Sirkadiyen ritim tonlarına ve dahili kablosuz şarj özelliğine sahip, gözlerinizi dinlendiren LED masa lambası."
+    },
+    "Smart Watches": {
+        "name": "Akıllı Saatler",
+        "description": "Fitness bantları, akıllı saatler ve giyilebilir cihazlar günlük rutininize bağlanır."
+    },
+    "Sofas": {
+        "name": "Kanepeler",
+        "description": "İkili ve üçlü kanepeler, modüler köşe kanepeler ve çift vurgulu sandalyeler."
+    },
+    "Speaker": {
+        "name": "Hoparlör",
+        "description": "Her yerde odayı dolduran ses için taşınabilir Bluetooth hoparlör ve ev ses sistemi."
+    },
+    "Speed Shoes": {
+        "name": "Hız Ayakkabıları",
+        "description": "Karbon kaplamalı yarış ayakkabıları ve tempolu koşu ayakkabıları kişisel rekorlar ve pist günleri için tasarlandı."
+    },
+    "Sports & Fitness": {
+        "name": "Spor ve Fitness",
+        "description": "Temel egzersiz ekipmanı, yoga ekipmanı ve dinlenme aksesuarları."
+    },
+    "Sports Apparel": {
+        "name": "Spor Giyim",
+        "description": "Hareket için tasarlanmış yüksek performanslı şortlar, üstler ve üstler."
+    },
+    "Standing Desks": {
+        "name": "Ayaklı Masalar",
+        "description": "Yüksekliği ayarlanabilen kaldırma masası her gün sorunsuz çalışacak şekilde tasarlanmıştır."
+    },
+    "Storage": {
+        "name": "Depolamak",
+        "description": "Raflar, büfeler ve alçak dolaplar güzelce düzenlenmek üzere tasarlandı."
+    },
+    "Storages": {
+        "name": "Depolar",
+        "description": "Dosya dolapları, çekmeceler ve modüler raflar çalışma alanınızı temiz ve düzenli tutar."
+    },
+    "Stress Management Tools": {
+        "name": "Stres Yönetimi Araçları",
+        "description": ""
+    },
+    "Stress-Level Quiz": {
+        "name": "Stres Seviyesi Testi",
+        "description": ""
+    },
+    "Supplements": {
+        "name": "Takviyeler",
+        "description": "Temiz malzemelerden hazırlanmış günlük yeşillikler, adaptojenler ve ruh halini destekleyen takviyeler."
+    },
+    "Tables": {
+        "name": "Tablolar",
+        "description": "Yemek masaları, çay masaları ve yan sehpalar ahşap, taş ve çelikten yapılmıştır."
+    },
+    "Teethers": {
+        "name": "Diş kaşıyıcılar",
+        "description": ""
+    },
+    "Tennis": {
+        "name": "Tenis",
+        "description": "Sahaya hazır tenis kıyafetleri - pilili etekler, polo elbiseler, performans şortları."
+    },
+    "Tops & Shirts": {
+        "name": "Üstler ve Gömlekler",
+        "description": "Tişörtler, düğmeler, örgüler ve bluzlar gündelik günlere göre tasarlandı."
+    },
+    "Tote Bags": {
+        "name": "Bez Çantalar",
+        "description": "Resimler, baş harfler veya orijinal resimlerle basılmış, ultra dayanıklı pamuklu bez çantalar."
+    },
+    "Toys": {
+        "name": "Oyuncaklar",
+        "description": "Çiğnemeler, doldurulmuş oyuncaklar ve bulmacalar oyun süresini daha anlamlı hale getirir."
+    },
+    "Travel": {
+        "name": "Seyahat",
+        "description": "Stressiz yolculuklar için taşıma çantaları, koşum takımları ve seyahat malzemeleri."
+    },
+    "Wall Art": {
+        "name": "Duvar Sanatı",
+        "description": "Fotoğraf baskıları, posterler ve kanvas tablolar, en sevdiğiniz anları çarpıcı çalışmalara dönüştürüyor."
+    },
+    "Wallets": {
+        "name": "Cüzdanlar",
+        "description": "Sofistike günlük taşıma için kabartmalı cüzdanlar, kart sahipleri ve madeni para sahipleri."
+    },
+    "Washcloths & Sponges": {
+        "name": "Keseler ve Süngerler",
+        "description": ""
+    },
+    "Wired Studio": {
+        "name": "Kablolu Stüdyo",
+        "description": "Miksleme, mastering ve analitik dinleme için referans standart kablolu stüdyo kulaklıkları."
+    },
+    "Wireless Over-Ear": {
+        "name": "Kablosuz Kulak Üstü",
+        "description": "Zengin ses, tam frekans aralığı ve gün boyu konfor sunan birinci sınıf kulak üstü kulaklıklar."
+    },
+    "Wooden Toys": {
+        "name": "Ahşap Oyuncaklar",
+        "description": ""
+    },
+    "Work Essentials": {
+        "name": "Çalışma Esasları",
+        "description": "Monitör standları, klavye tepsileri ve aksesuarlar sağlıklı bir çalışma alanını tamamlar."
+    },
+    "Workload Balancing": {
+        "name": "İş Yükü Dengeleme",
+        "description": ""
+    },
+    "Yoga": {
+        "name": "Yoga",
+        "description": "Nefes, denge ve akış için tasarlanmış yoga kıyafetleri ve aksesuarları."
+    },
+    "Yoga Mats": {
+        "name": "Yoga Matları",
+        "description": "Stüdyo ve ev uygulamaları için yüksek tutuşlu yoga ve pilates matları."
+    }
+}

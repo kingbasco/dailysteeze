@@ -1,0 +1,46 @@
+{
+    "Homepage": {
+        "name": "Beranda",
+        "description": "Amerce — rumah bagi pengalaman e-commerce yang serbaguna."
+    },
+    "About": {
+        "name": "Tentang",
+        "description": "Memperkenalkan Amerce — kisah merek, standar pasokan, dan tim di balik setiap produk."
+    },
+    "Contact": {
+        "name": "Kontak",
+        "description": "Hubungi tim layanan pelanggan dan kerja sama Amerce."
+    },
+    "FAQ": {
+        "name": "FAQ",
+        "description": "Pertanyaan yang sering diajukan tentang pesanan, pengiriman, pengembalian, dan manajemen akun."
+    },
+    "Privacy Policy": {
+        "name": "Kebijakan Privasi",
+        "description": "Bagaimana Amerce mengumpulkan, menggunakan dan melindungi informasi pribadi Anda."
+    },
+    "Terms & Conditions": {
+        "name": "Syarat & Ketentuan",
+        "description": "Ketentuan hukum berlaku saat Anda menggunakan toko Amerce."
+    },
+    "Returns & Refunds": {
+        "name": "Pengembalian & Pengembalian Dana",
+        "description": "Kebijakan pengembalian 30 hari kami dan proses pengembalian langkah demi langkah."
+    },
+    "Shipping": {
+        "name": "Pengiriman",
+        "description": "Metode pengiriman domestik dan internasional, waktu dan biaya."
+    },
+    "Our Stores": {
+        "name": "Toko kami",
+        "description": "Kunjungi Amerce secara langsung — toko utama dan mitra di seluruh dunia."
+    },
+    "Blog": {
+        "name": "Blog",
+        "description": "Instruksi pakaian, cerita merek, dan konten di balik layar dari tim editorial Amerce."
+    },
+    "Careers": {
+        "name": "Karir",
+        "description": "Bergabunglah dengan Amerce — posisi terbuka, nilai budaya, dan keuntungan tim."
+    }
+}

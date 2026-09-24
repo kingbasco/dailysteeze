@@ -1,0 +1,50 @@
+{
+    "Trends": {
+        "name": "Trends",
+        "description": "Trendler ile etiketlenen makaleler."
+    },
+    "Styling Tips": {
+        "name": "Styling Tips",
+        "description": "Etiketlenen makaleler: Kıyafetleri koordine etmek için ipuçları."
+    },
+    "Sustainable": {
+        "name": "Sustainable",
+        "description": "Sürdürülebilirlik etiketli gönderiler."
+    },
+    "New Arrivals": {
+        "name": "New Arrivals",
+        "description": "Yeni gelenler etiketli gönderiler."
+    },
+    "Limited Edition": {
+        "name": "Limited Edition",
+        "description": "Sınırlı Üretim etiketli gönderiler."
+    },
+    "Behind the Scenes": {
+        "name": "Behind the Scenes",
+        "description": "Kamera Arkası etiketli gönderiler"
+    },
+    "Buyer Guide": {
+        "name": "Buyer Guide",
+        "description": "Alışveriş rehberi etiketli makaleler."
+    },
+    "Care Tips": {
+        "name": "Care Tips",
+        "description": "Depolama İpuçları ile etiketlenen makaleler."
+    },
+    "Capsule Wardrobe": {
+        "name": "Capsule Wardrobe",
+        "description": "Kapsül gardırop etiketli makaleler."
+    },
+    "Material Stories": {
+        "name": "Material Stories",
+        "description": "Malzeme hikayeleri etiketli makaleler."
+    },
+    "Holiday Gifting": {
+        "name": "Holiday Gifting",
+        "description": "Tatil hediyeleri etiketli gönderiler."
+    },
+    "Editor Picks": {
+        "name": "Editor Picks",
+        "description": "Editörün Seçimi etiketli yazılar."
+    }
+}

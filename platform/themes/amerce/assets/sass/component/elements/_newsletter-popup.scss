@@ -1,0 +1,318 @@
+@use "../../abstracts/index" as *;
+
+// Newsletter popup — restyle the plugins/newsletter stock modal so it
+// matches the Amerce HTML demo (image left, copy + pill input/button right).
+//
+// Specificity note: the plugin's newsletter.css is injected via a <link> tag
+// inside the AJAX-loaded popup HTML, so it loads AFTER theme.css. To beat
+// rules like `.newsletter-popup .modal-dialog .modal-content form button`
+// (specificity 0,4,1), we anchor every selector with `.newsletter-popup.modal`
+// (always 0,3,0+) and use `!important` on the load-bearing layout properties
+// (max-width, width, position, border-radius) that the plugin also forces.
+.newsletter-popup.modal {
+    .modal-dialog {
+        max-width: 870px !important;
+        margin: 1.75rem auto;
+        background: #fff;
+        border-radius: 16px !important;
+        overflow: hidden !important;
+    }
+
+    .modal-content {
+        border: 0 !important;
+        border-radius: 16px !important;
+        overflow: hidden !important;
+        background: #fff;
+
+        @media (min-width: 768px) {
+            flex-direction: row !important;
+        }
+    }
+
+    // Image side
+    .newsletter-popup-bg {
+        background-color: #f7f7f7;
+        padding: 0 !important;
+        line-height: 0;
+
+        picture,
+        img,
+        .newsletter-popup-image {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        @media (min-width: 768px) {
+            flex: 0 0 auto !important;
+            width: 50% !important;
+            max-width: 430px !important;
+            height: auto !important;
+        }
+
+        @media (max-width: 767.98px) {
+            width: 100% !important;
+            height: auto !important;
+            max-height: 260px;
+
+            img,
+            .newsletter-popup-image {
+                max-height: 260px;
+                object-position: top;
+            }
+        }
+    }
+
+    // Close (X) button — round, soft grey, top-right
+    .btn-close {
+        position: absolute !important;
+        top: 16px !important;
+        right: 16px !important;
+        inset-inline-end: 16px !important;
+        width: 36px !important;
+        height: 36px !important;
+        margin: 0;
+        padding: 0;
+        border-radius: 50% !important;
+        background-color: rgba(0, 0, 0, 0.06);
+        opacity: 1;
+        z-index: 5;
+        transition: background-color 0.2s ease;
+
+        &:hover,
+        &:focus {
+            background-color: rgba(0, 0, 0, 0.12);
+            opacity: 1;
+            box-shadow: none;
+        }
+    }
+
+    // Copy + form side
+    .modal-content .newsletter-popup-content {
+        padding: 32px 28px !important;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 0 !important;
+
+        @media (min-width: 768px) {
+            padding: 48px 40px !important;
+        }
+
+        @media (min-width: 1200px) {
+            padding: 56px 48px !important;
+        }
+    }
+
+    .modal-header {
+        margin-bottom: 24px;
+
+        @media (min-width: 1200px) {
+            margin-bottom: 32px;
+        }
+    }
+
+    .modal-content .modal-subtitle {
+        font-family: $font-main;
+        font-size: 16px !important;
+        font-weight: 500;
+        line-height: 1.4;
+        letter-spacing: 0 !important;
+        color: var(--text);
+        margin-bottom: 12px;
+        text-transform: none;
+    }
+
+    .modal-content .modal-title {
+        font-family: $font-main;
+        font-size: clamp(40px, 5vw, 56px) !important;
+        line-height: 1;
+        font-weight: 700;
+        color: var(--primary);
+        margin: 0 0 16px;
+        letter-spacing: -0.5px;
+    }
+
+    .modal-content .modal-text {
+        font-size: 16px !important;
+        line-height: 1.55;
+        color: var(--text);
+        margin: 0;
+    }
+
+    // Form: pill input with embedded dark "Subscribe" button
+    .bb-newsletter-popup-form {
+        position: relative;
+
+        // Hide the "Email Address *" label - placeholder-only design.
+        // Excludes .form-check so the "Don't show this popup again" checkbox
+        // label (a direct-child <label class="form-check">) stays visible.
+        > label:not(.form-check),
+        > div > label.required:not(.form-check),
+        .form-group > label:not(.form-check),
+        .input-group > label:not(.form-check) {
+            position: absolute !important;
+            width: 1px !important;
+            height: 1px !important;
+            padding: 0 !important;
+            margin: -1px !important;
+            overflow: hidden !important;
+            clip: rect(0, 0, 0, 0) !important;
+            white-space: nowrap !important;
+            border: 0 !important;
+        }
+
+        .form-group,
+        .input-group {
+            margin: 0 !important;
+            padding: 0;
+            display: block !important;
+        }
+
+        // Email input — pill, room on the right for the button
+        input[type="email"] {
+            width: 100% !important;
+            height: 56px !important;
+            border: 1px solid var(--line) !important;
+            border-radius: 999px !important;
+            background-color: #fff !important;
+            padding: 0 160px 0 24px !important;
+            font-size: 15px !important;
+            color: var(--text);
+            box-shadow: none !important;
+            transition: border-color 0.2s ease;
+
+            &::placeholder {
+                color: #9b9b9b;
+            }
+
+            &:focus {
+                border-color: var(--text) !important;
+                outline: 0;
+                box-shadow: none !important;
+            }
+        }
+    }
+
+    // Submit button — dark pill, anchored inside the input.
+    // Selector chain matches plugin's `.newsletter-popup .modal-dialog .modal-content form button` to win.
+    .modal-dialog .modal-content .bb-newsletter-popup-form button[type="submit"],
+    .modal-dialog .modal-content .bb-newsletter-popup-form .btn-primary {
+        position: absolute !important;
+        top: 6px !important;
+        right: 6px !important;
+        bottom: 6px !important;
+        left: auto !important;
+        width: auto !important;
+        min-width: 130px !important;
+        height: auto !important;
+        padding: 0 28px !important;
+        margin: 0 !important;
+        border: 0 !important;
+        border-radius: 999px !important;
+        background-color: var(--text) !important;
+        color: #fff !important;
+        font-size: 15px !important;
+        font-weight: 600 !important;
+        line-height: 1 !important;
+        cursor: pointer;
+        transition: background-color 0.2s ease;
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        box-shadow: none !important;
+
+        &:hover,
+        &:focus,
+        &:active {
+            background-color: #000 !important;
+            color: #fff !important;
+            box-shadow: none !important;
+        }
+
+        &.button-loading {
+            color: transparent !important;
+        }
+    }
+
+    // "Don't show this popup again" checkbox - render inline with the email field.
+    // The plugin adds the field via PublicController::ajaxLoadPopup
+    // (label = "form-check"). Bootstrap 5's .form-check .form-check-input has
+    // `float: left; margin-left: -1.5em` which breaks flex layouts - we unfloat
+    // it here so the checkbox and label text sit on the same row with proper gap.
+    .bb-newsletter-popup-form .form-check {
+        display: flex !important;
+        align-items: center;
+        gap: 8px;
+        margin: 16px 0 0 !important;
+        padding-left: 0 !important;
+        min-height: 0;
+        font-size: 13px;
+        color: var(--text-2);
+        cursor: pointer;
+    }
+
+    .bb-newsletter-popup-form .form-check .form-check-input {
+        float: none !important;
+        flex: 0 0 auto;
+        width: 16px;
+        height: 16px;
+        margin: 0 !important;
+        cursor: pointer;
+    }
+
+    .bb-newsletter-popup-form .form-check .form-check-label,
+    .bb-newsletter-popup-form .form-check span {
+        flex: 1 1 auto;
+        cursor: pointer;
+    }
+
+    // Demo caption "Don't worry, we hate spam as much as you do"
+    .newsletter-popup-caption {
+        margin: 18px 0 0 !important;
+        font-size: 13px;
+        line-height: 1.4;
+        color: var(--text-2);
+    }
+
+    .bb-newsletter-popup-form .newsletter-message {
+        margin: 16px 0 0 !important;
+        padding: 12px 16px !important;
+        font-size: 13px;
+        border-radius: 8px;
+        border-left-width: 4px;
+    }
+
+    // Mobile: stack image above, button drops below input full-width
+    @media (max-width: 767.98px) {
+        .modal-dialog {
+            max-width: calc(100% - 24px) !important;
+            margin: 1rem auto;
+        }
+
+        .modal-content .newsletter-popup-content {
+            padding: 24px 20px 28px !important;
+        }
+
+        .modal-content .modal-title {
+            font-size: 38px !important;
+        }
+
+        .bb-newsletter-popup-form {
+            input[type="email"] {
+                height: 50px !important;
+                padding: 0 20px !important;
+            }
+        }
+
+        .modal-dialog .modal-content .bb-newsletter-popup-form button[type="submit"],
+        .modal-dialog .modal-content .bb-newsletter-popup-form .btn-primary {
+            position: static !important;
+            width: 100% !important;
+            margin-top: 12px !important;
+            height: 48px !important;
+        }
+    }
+}

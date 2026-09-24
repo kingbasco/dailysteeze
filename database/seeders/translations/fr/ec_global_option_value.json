@@ -1,0 +1,23 @@
+{
+    "No gift wrap": {
+        "option_value": "Pas d'emballage cadeau"
+    },
+    "Standard kraft wrap": {
+        "option_value": "Emballage en papier kraft standard"
+    },
+    "Premium silk-ribbon wrap": {
+        "option_value": "Paquet de rubans de soie haut de gamme"
+    },
+    "Up to 20 characters": {
+        "option_value": "20 caractères maximum"
+    },
+    "Standard 1-year warranty": {
+        "option_value": "Garantie standard 1 an"
+    },
+    "2-year extended warranty": {
+        "option_value": "Garantie prolongée de 2 ans"
+    },
+    "3-year premium care": {
+        "option_value": "Soins premium pendant 3 ans"
+    }
+}

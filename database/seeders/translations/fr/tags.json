@@ -1,0 +1,50 @@
+{
+    "Trends": {
+        "name": "Tendances",
+        "description": "Articles taggés avec Tendances."
+    },
+    "Styling Tips": {
+        "name": "Conseils de style",
+        "description": "Articles taggés : Conseils pour coordonner les tenues."
+    },
+    "Sustainable": {
+        "name": "Durable",
+        "description": "Articles étiquetés Durabilité."
+    },
+    "New Arrivals": {
+        "name": "Nouveautés",
+        "description": "Articles tagués Nouveautés."
+    },
+    "Limited Edition": {
+        "name": "Édition limitée",
+        "description": "Articles tagués Édition Limitée."
+    },
+    "Behind the Scenes": {
+        "name": "Dans les coulisses",
+        "description": "Articles marqués dans les coulisses."
+    },
+    "Buyer Guide": {
+        "name": "Guide de l'acheteur",
+        "description": "Articles tagués Guide d'achat."
+    },
+    "Care Tips": {
+        "name": "Conseils d'entretien",
+        "description": "Articles taggés avec Conseils de stockage."
+    },
+    "Capsule Wardrobe": {
+        "name": "Armoire Capsule",
+        "description": "Articles taggés Armoire capsule."
+    },
+    "Material Stories": {
+        "name": "Histoires matérielles",
+        "description": "Articles tagués Histoires matérielles."
+    },
+    "Holiday Gifting": {
+        "name": "Cadeaux de vacances",
+        "description": "Articles tagués Cadeaux de Noël."
+    },
+    "Editor Picks": {
+        "name": "Choix de l'éditeur",
+        "description": "Articles marqués Choix de l'éditeur."
+    }
+}

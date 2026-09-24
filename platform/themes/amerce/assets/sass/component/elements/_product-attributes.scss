@@ -1,0 +1,373 @@
+@use "../../abstracts/index" as *;
+
+// Theme styling for the ecommerce plugin's variant swatch markup.
+//
+// Plugin emits classes like .bb-product-attribute-swatch-title /
+// .bb-product-attribute-swatch-list / .bb-product-attribute-text-display.
+// The theme's existing .variant-picker-* CSS (in _product.scss) targets a
+// different markup shape from the html demo, so we style the plugin's
+// real output here to match the demo (Colors / Size / Material picker
+// layout: label inline + tile-style swatch buttons).
+//
+// Also polishes the "X people are viewing this right now" eye badge so it
+// has a black rounded-square wrapper matching the demo asset.
+
+.bb-product-detail {
+    .bb-product-attribute-swatch {
+        display: grid;
+        gap: 12px;
+        margin-bottom: 16px;
+
+        &-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--text);
+            margin: 0;
+            line-height: 1.4;
+
+            &::after { content: ''; }
+        }
+
+        &-list {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 12px;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        &-item {
+            position: relative;
+            cursor: pointer;
+            transition: all 0.2s ease;
+
+            > label {
+                cursor: pointer;
+                margin: 0;
+            }
+
+            input[type="radio"] {
+                position: absolute;
+                opacity: 0;
+                inset: 0;
+                margin: 0;
+                cursor: pointer;
+                z-index: 1;
+            }
+
+            &.disabled {
+                opacity: 0.4;
+                cursor: not-allowed;
+
+                > label,
+                input { cursor: not-allowed; }
+            }
+        }
+    }
+
+    // Text-style swatch (Size / Material) — square 44×44 tile, dark active
+    .bb-product-attribute-swatch.text-swatches-wrapper {
+        .bb-product-attribute-text-display {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 44px;
+            height: 44px;
+            padding: 0 14px;
+            border: 1px solid var(--line);
+            border-radius: 4px;
+            background: var(--white);
+            color: var(--text);
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 1;
+            transition: all 0.2s ease;
+            user-select: none;
+        }
+
+        .bb-product-attribute-swatch-item {
+            &:hover:not(.disabled) .bb-product-attribute-text-display {
+                border-color: var(--text);
+            }
+
+            input[type="radio"]:checked + .bb-product-attribute-text-display,
+            &.active .bb-product-attribute-text-display {
+                background: var(--text);
+                border-color: var(--text);
+                color: var(--white);
+            }
+
+            &.disabled .bb-product-attribute-text-display {
+                text-decoration: line-through;
+            }
+        }
+    }
+
+    // Visual swatch (Colors) — image / color tile, black border on active.
+    //
+    // The plugin's front-ecommerce.scss applies `border-radius:50%` +
+    // `transform: scale(0.8)` on hover (circular avatar look). We override with
+    // higher specificity to keep square tiles + replace the hover scale-down
+    // with a clean black border, matching the html/product-countdown-timer demo.
+    .bb-product-attribute-swatch.visual-swatches-wrapper {
+        .bb-product-attribute-swatch-list {
+            // Defeat plugin's `&.color-swatch .bb-product-attribute-swatch-display`
+            // absolute centering — we want the tile to flow as a normal block.
+            &.color-swatch .bb-product-attribute-swatch-display {
+                position: static;
+                transform: none;
+                background-color: var(--bg);
+            }
+        }
+
+        .bb-product-attribute-swatch-item {
+            // Override plugin's circular pill + drop-shadow.
+            border-radius: 6px;
+            box-shadow: none;
+
+            // Plugin sets scale(0.8) + translate on hover/active. Reset both.
+            &:hover .bb-product-attribute-swatch-display,
+            &.active .bb-product-attribute-swatch-display,
+            input[type="radio"]:checked ~ .bb-product-attribute-swatch-display {
+                transform: none;
+                -webkit-transform: none;
+            }
+
+            // Plugin draws a circular ::before ring on the checked state. Make
+            // it square + match the theme outline.
+            input[type="radio"]:checked ~ .bb-product-attribute-swatch-display::before,
+            input[type="checkbox"]:checked ~ .bb-product-attribute-swatch-display::before {
+                border-radius: 6px;
+                border-color: var(--text);
+            }
+        }
+
+        .bb-product-attribute-swatch-display {
+            display: block;
+            width: 60px;
+            height: 60px;
+            border-radius: 6px;
+            border: 1px solid var(--line);
+            background-color: var(--bg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            transition: border-color 0.2s ease, outline-color 0.2s ease;
+        }
+
+        .bb-product-attribute-swatch-item {
+            &:hover:not(.disabled) .bb-product-attribute-swatch-display {
+                border-color: var(--text);
+            }
+
+            input[type="radio"]:checked + .bb-product-attribute-swatch-display,
+            input[type="radio"]:checked ~ .bb-product-attribute-swatch-display,
+            &.active .bb-product-attribute-swatch-display {
+                outline: 2px solid var(--text);
+                outline-offset: 2px;
+                border-color: var(--text);
+            }
+        }
+
+        .bb-product-attribute-swatch-item-tooltip {
+            position: absolute;
+            bottom: calc(100% + 6px);
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 4px 8px;
+            background: var(--text);
+            color: var(--white);
+            font-size: 12px;
+            border-radius: 4px;
+            white-space: nowrap;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.15s ease;
+            z-index: 5;
+        }
+
+        .bb-product-attribute-swatch-item:hover .bb-product-attribute-swatch-item-tooltip {
+            opacity: 1;
+        }
+    }
+}
+
+// Theme override layouts (visual.blade.php / text.blade.php) wrap each
+// swatch in a <label> with a radio input inside (for plugin JS state).
+// Hide the radio — the label is the whole click target, and the demo
+// markup has no visible input.
+//
+// Also mirrors the .variant-color/.variant-size swatch styling from
+// .tf-product-info-wrap so the active/disabled state renders inside any
+// .bb-product-detail context (e.g. the quick-shop modal wraps the override
+// layouts but doesn't use .tf-product-info-wrap, so without these rules the
+// selected swatch had no visible border).
+.bb-product-detail {
+    .variant-picker-item {
+        margin-bottom: 12px;
+
+        .variant-picker-label {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 12px;
+        }
+
+        .variant-picker-values {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+    }
+
+    .variant-color .color-btn,
+    .variant-size .size-btn {
+        > input[type="radio"] {
+            position: absolute;
+            opacity: 0;
+            inset: 0;
+            margin: 0;
+            pointer-events: none;
+        }
+    }
+
+    .variant-color {
+        .variant-picker-values {
+            gap: 12px;
+        }
+
+        .color-btn {
+            &:not(.select-item) {
+                position: relative;
+                width: 40px;
+                height: 40px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+                text-align: center;
+                border: 1px solid var(--line);
+                cursor: pointer;
+                border-radius: 50%;
+                transition: all 0.2s ease;
+
+                .check-color {
+                    width: 32px;
+                    height: 32px;
+                    display: flex;
+                    flex-shrink: 0;
+                    border-radius: 50%;
+                    border: 1px solid #dcdcdc;
+                    transition: all 0.2s ease;
+                }
+
+                &.active {
+                    border-color: var(--text);
+                }
+
+                &.disabled {
+                    opacity: 0.3;
+                    pointer-events: none;
+                }
+            }
+
+            &.style-image {
+                width: 60px;
+                height: 60px;
+                border-radius: 4px;
+                border: 1px solid transparent;
+                overflow: hidden;
+
+                .img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 4px;
+                    overflow: hidden;
+                    display: flex;
+                    aspect-ratio: 1;
+
+                    img {
+                        object-fit: cover;
+                        aspect-ratio: 1;
+                    }
+                }
+
+                // .active beats .style-image specificity (3 vs 2 classes),
+                // so this outline renders for the selected image swatch.
+                &.active {
+                    outline: 2px solid var(--text);
+                    outline-offset: 2px;
+                    border-color: var(--text);
+                }
+            }
+        }
+    }
+
+    .variant-size {
+        .size-btn:not(.select-item) {
+            position: relative;
+            min-width: 44px;
+            height: 44px;
+            padding: 0 12px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid var(--line);
+            cursor: pointer;
+            border-radius: 4px;
+            background: var(--white);
+            color: var(--text);
+            transition: all 0.2s ease;
+
+            &:hover {
+                border-color: var(--text);
+            }
+
+            &.active {
+                background: var(--text);
+                color: var(--white);
+                border-color: var(--text);
+            }
+
+            &.disabled {
+                opacity: 0.3;
+                pointer-events: none;
+            }
+        }
+    }
+}
+
+// "X people are viewing this right now" — black rounded-square eye badge
+// (replaces the bare eye glyph that was rendering before).
+.product-infor-reality {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .ic {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 24px;
+        height: 24px;
+        border-radius: 4px;
+        background: var(--text);
+        color: var(--white);
+        flex-shrink: 0;
+
+        .icon,
+        i,
+        svg {
+            color: var(--white);
+            font-size: 14px;
+            line-height: 1;
+        }
+    }
+
+    .text-caption-01 {
+        color: var(--text);
+    }
+}

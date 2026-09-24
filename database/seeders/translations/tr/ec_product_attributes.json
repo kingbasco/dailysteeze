@@ -1,0 +1,44 @@
+{
+    "Black": {
+        "title": "Siyah"
+    },
+    "White": {
+        "title": "Beyaz"
+    },
+    "Beige": {
+        "title": "Bej"
+    },
+    "Olive": {
+        "title": "Zeytin"
+    },
+    "Navy": {
+        "title": "Donanma"
+    },
+    "Burgundy": {
+        "title": "Bordo"
+    },
+    "Charcoal": {
+        "title": "Kömür"
+    },
+    "Cream": {
+        "title": "Krem"
+    },
+    "Cotton": {
+        "title": "Pamuk"
+    },
+    "Linen": {
+        "title": "Keten"
+    },
+    "Wool": {
+        "title": "Yün"
+    },
+    "Tencel": {
+        "title": "Tencel"
+    },
+    "Recycled Polyester": {
+        "title": "Geri Dönüştürülmüş Polyester"
+    },
+    "Full-Grain Leather": {
+        "title": "Tam Sırçalı Deri"
+    }
+}

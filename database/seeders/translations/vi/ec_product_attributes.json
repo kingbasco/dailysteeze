@@ -1,0 +1,16 @@
+{
+    "Black": {"title": "Đen"},
+    "White": {"title": "Trắng"},
+    "Beige": {"title": "Be"},
+    "Olive": {"title": "Ô-liu"},
+    "Navy": {"title": "Xanh navy"},
+    "Burgundy": {"title": "Đỏ burgundy"},
+    "Charcoal": {"title": "Xám than"},
+    "Cream": {"title": "Kem"},
+    "Cotton": {"title": "Cotton"},
+    "Linen": {"title": "Linen"},
+    "Wool": {"title": "Len"},
+    "Tencel": {"title": "Tencel"},
+    "Recycled Polyester": {"title": "Polyester tái chế"},
+    "Full-Grain Leather": {"title": "Da nguyên tấm"}
+}

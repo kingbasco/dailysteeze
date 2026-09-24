@@ -1,0 +1,20 @@
+{
+    "Hot": {
+        "name": "Chaud"
+    },
+    "New": {
+        "name": "Nouveau"
+    },
+    "Sale": {
+        "name": "Vente"
+    },
+    "Best Seller": {
+        "name": "Meilleur vendeur"
+    },
+    "Limited": {
+        "name": "Limité"
+    },
+    "Eco": {
+        "name": "Écologique"
+    }
+}

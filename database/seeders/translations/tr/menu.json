@@ -1,0 +1,39 @@
+{
+    "main-menu": {
+        "name": "ana menü",
+        "home": "Ana sayfa",
+        "shop": "Alışveriş",
+        "new_arrivals": "Yeni gelenler",
+        "best_sellers": "En çok satan kitap",
+        "sale": "İndirim",
+        "all_products": "Tüm ürünler",
+        "categories": "Kategori",
+        "outerwear": "Ceket",
+        "tops_shirts": "Gömlek",
+        "bottoms": "Pantolon ve Etekler",
+        "dresses": "Elbise",
+        "footwear": "Ayakkabı",
+        "accessories": "Aksesuar",
+        "brands": "Ticari marka",
+        "journal": "Dergi",
+        "about": "Tanıtmak",
+        "contact": "Temas etmek"
+    },
+    "footer-help": {
+        "name": "alt bilgi yardımı",
+        "contact_us": "Bize Ulaşın",
+        "faq": "Sık sorulan sorular",
+        "shipping": "Taşıma",
+        "returns_refunds": "İade ve Para İadeleri",
+        "order_tracking": "Sipariş takibi"
+    },
+    "footer-company": {
+        "name": "alt bilgi şirketi",
+        "about": "Tanıtmak",
+        "our_stores": "Mağaza",
+        "sustainability": "Sürdürülebilir kalkınma",
+        "careers": "işe alım",
+        "privacy_policy": "Gizlilik politikası",
+        "terms_conditions": "Şartlar ve Koşullar"
+    }
+}

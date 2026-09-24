@@ -1,0 +1,189 @@
+@use "../../abstracts/index" as *;
+
+// Quick-view modal — restyle the AJAX-injected product preview so the
+// gallery and copy lay out side-by-side with a scrollable content panel,
+// matching the Shofy two-column 50/50 pattern. Targets the empty shell in
+// views/ecommerce/includes/quick-view-modal.blade.php and the inner content
+// rendered by views/ecommerce/includes/quick-view.blade.php.
+//
+// Without this, the gallery's thumbs stack underneath the main image and
+// the content panel grows unbounded — taking the modal to full viewport
+// height. Constraining max-height and routing overflow to the content
+// column gives the user a compact, focused preview.
+.tf-product-modal {
+    .modal-dialog {
+        max-width: min(1140px, calc(100% - 32px));
+        margin: 1.75rem auto;
+    }
+
+    .modal-content {
+        border: 0;
+        border-radius: 16px;
+        overflow: hidden;
+        background: #fff;
+    }
+
+    .tf-product-modal-content {
+        // Mobile: modal-dialog-scrollable forces overflow:hidden on
+        // .modal-content but there's no .modal-body inside this AJAX shell,
+        // so the panel freezes — nothing scrolls. Make the whole content
+        // scrollable on mobile and let momentum scroll feel native.
+        @media (max-width: 767.98px) {
+            // 100vh fallback first for browsers without dvh support (<iOS 15.4),
+            // then dvh override to track the dynamic toolbar on modern Safari/Chrome.
+            max-height: calc(100vh - 3.5rem);
+            max-height: calc(100dvh - 3.5rem);
+            overflow-y: auto;
+            overflow-x: hidden;
+            -webkit-overflow-scrolling: touch;
+            overscroll-behavior: contain;
+        }
+
+        @media (min-width: 768px) {
+            max-height: min(40rem, calc(100vh - 4rem));
+            overflow: hidden;
+        }
+    }
+
+    // Close (X) — round soft-grey, pinned to the top-right of `.modal-content`.
+    // The button is a SIBLING of `.tf-product-modal-content` (not nested) so
+    // mobile scroll inside the inner panel doesn't carry the button away.
+    .tf-product-modal-close-btn {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        inset-inline-end: 16px;
+        width: 36px;
+        height: 36px;
+        margin: 0;
+        padding: 0;
+        border-radius: 50%;
+        background-color: rgba(0, 0, 0, 0.06);
+        opacity: 1;
+        z-index: 5;
+        transition: background-color 0.2s ease;
+
+        &:hover,
+        &:focus {
+            background-color: rgba(0, 0, 0, 0.12);
+            box-shadow: none;
+        }
+    }
+
+    // Gallery — main image stays fixed-height, thumbs sit on top-left as
+    // an overlay strip that scrolls horizontally if too many images.
+    .quick-view-gallery {
+        position: relative;
+        background-color: var(--bg);
+
+        @media (min-width: 768px) {
+            height: min(40rem, calc(100vh - 4rem));
+        }
+
+        &__main {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: opacity 0.2s ease;
+            }
+        }
+
+        &__thumbs {
+            position: absolute;
+            inset-inline-start: 16px;
+            bottom: 16px;
+            display: flex;
+            flex-wrap: nowrap;
+            gap: 8px;
+            padding: 8px !important;
+            margin: 0;
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(6px);
+            border-radius: 12px;
+            overflow-x: auto;
+            max-width: calc(100% - 32px);
+
+            @media (max-width: 767.98px) {
+                position: static;
+                background: transparent;
+                backdrop-filter: none;
+                padding: 12px !important;
+            }
+
+            // Hide native scrollbar, keep functionality
+            &::-webkit-scrollbar { display: none; }
+            scrollbar-width: none;
+        }
+
+        &__thumb {
+            flex: 0 0 auto;
+            width: 56px;
+            height: 56px;
+            padding: 0;
+            border: 2px solid transparent;
+            border-radius: 8px;
+            background: #fff;
+            overflow: hidden;
+            cursor: pointer;
+            transition: border-color 0.2s ease, transform 0.15s ease;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block;
+            }
+
+            &:hover {
+                transform: translateY(-1px);
+            }
+
+            &.is-active {
+                border-color: var(--primary);
+            }
+        }
+    }
+
+    // Right column scrolls so the modal stays compact even when the
+    // product description / size guide / spec list is long.
+    .quick-view-content {
+        @media (min-width: 768px) {
+            max-height: min(40rem, calc(100vh - 4rem));
+            overflow-y: auto;
+        }
+    }
+
+    // Inline share row — replaces the legacy modal-trigger Share button so
+    // the quick-view stays a single-modal experience (Bootstrap doesn't
+    // stack reliably). Theme::renderSocialSharing emits a `<style>` block
+    // and a flex row of <a> buttons; we just align the label and let the
+    // package's own styles handle the icons.
+    .quick-view-share {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 12px;
+        padding-top: 16px;
+        border-top: 1px solid var(--line);
+
+        &__label {
+            font-weight: 500;
+            color: var(--text);
+        }
+
+        &__buttons {
+            display: inline-flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+    }
+}

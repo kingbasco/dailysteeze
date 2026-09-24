@@ -1,0 +1,408 @@
+@use "../../abstracts/index"as *;
+
+// Theme overrides for ecommerce login / register / forgot password / reset password
+// pages. Scoped to body#page-auth so we don't leak into other pages that may
+// reuse the same `.form-control`, `.form-label`, etc. classes.
+
+body#page-auth {
+    background-color: var(--bg);
+
+    // Neutralise the plugin-shipped `auth-card` Bootstrap-card chrome so theme
+    // values can take over.
+    .auth-card {
+        background: transparent !important;
+        border: 0 !important;
+        box-shadow: none !important;
+
+        .card-header {
+            background: transparent !important;
+        }
+    }
+}
+
+body#page-auth .amerce-auth-card {
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 30px 60px -32px rgba(16, 16, 16, 0.08);
+
+    &__media {
+        position: relative;
+        overflow: hidden;
+        background: var(--bg-2);
+    }
+
+    &__banner {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    // Vertical banner — sits above the form
+    &:not(.amerce-auth-card--horizontal) {
+        .amerce-auth-card__media {
+            max-height: 220px;
+        }
+
+        .amerce-auth-card__banner {
+            aspect-ratio: 16 / 5;
+            max-height: 220px;
+        }
+    }
+
+    &__header {
+        padding: 40px 40px 0;
+        text-align: center;
+        display: grid;
+        gap: 8px;
+        justify-items: center;
+
+        @include res(md) {
+            padding: 28px 24px 0;
+        }
+    }
+
+    &__icon {
+        width: 56px;
+        height: 56px;
+        border-radius: 16px;
+        background: rgba(220, 70, 70, 0.08);
+        color: var(--primary);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 8px;
+
+        .icon,
+        svg {
+            width: 26px;
+            height: 26px;
+            stroke-width: 1.6;
+        }
+    }
+
+    &__title {
+        font-family: $font-main;
+        font-size: 28px;
+        line-height: 36px;
+        font-weight: 700;
+        color: var(--text);
+        margin: 0;
+
+        @include res(md) {
+            font-size: 22px;
+            line-height: 30px;
+        }
+    }
+
+    &__description {
+        max-width: 480px;
+        margin: 0 auto;
+    }
+
+    &__body {
+        padding: 28px 40px 40px;
+
+        @include res(md) {
+            padding: 24px 24px 32px;
+        }
+    }
+
+    // Horizontal split layout
+    &--horizontal {
+        .amerce-auth-card__media {
+            min-height: 100%;
+        }
+
+        .amerce-auth-card__banner {
+            aspect-ratio: auto;
+            height: 100%;
+            min-height: 420px;
+        }
+
+        .amerce-auth-card__content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .amerce-auth-card__header {
+            padding-top: 40px;
+        }
+
+        @include res(md) {
+            .amerce-auth-card__media {
+                display: none;
+            }
+        }
+    }
+
+    // ---- Field styling — overrides Bootstrap markup emitted by the form
+    // builder so it matches the theme's native fieldset/input style.
+
+    .mb-3,
+    .form-group {
+        margin-bottom: 16px !important;
+    }
+
+    .form-label {
+        font-family: $font-main;
+        font-size: 14px;
+        line-height: 22px;
+        font-weight: 500;
+        color: var(--text);
+        margin-bottom: 6px;
+    }
+
+    .form-label.required::after,
+    .required > .form-label::after {
+        content: "*";
+        color: var(--primary);
+        margin-inline-start: 4px;
+    }
+
+    .form-control,
+    .form-select {
+        background: var(--white);
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 11px 15px;
+        height: auto;
+        min-height: 48px;
+        font-size: 15px;
+        line-height: 24px;
+        color: var(--text);
+        box-shadow: none;
+        transition: border-color 0.25s ease, box-shadow 0.25s ease;
+
+        &::placeholder {
+            color: var(--text-3);
+        }
+
+        &:focus {
+            border-color: var(--text);
+            box-shadow: 0 0 0 3px rgba(16, 16, 16, 0.06);
+        }
+
+        &.is-invalid {
+            border-color: var(--critical);
+        }
+
+        &.is-valid {
+            border-color: var(--success);
+        }
+    }
+
+    // Icon-prefixed inputs — match theme typography offsets.
+    //
+    // The wrapper `.position-relative` contains the icon, the input (or an
+    // `.input-group` wrapping the input + password toggle), AND the
+    // `.invalid-feedback` div. When validation fails the wrapper grows taller,
+    // so `top: 50%` would re-center the icon in (input + error) and push it
+    // below the input. Anchor the icon's center to `top: 24px` instead — half
+    // of the input's `min-height: 48px` — so it stays on the input regardless
+    // of how much the wrapper grows below.
+    .auth-input-icon {
+        position: absolute;
+        top: 24px;
+        transform: translateY(-50%);
+        inset-inline-start: 6px;
+        background: transparent;
+        border: 0;
+        color: var(--text-2);
+        z-index: 99;
+        padding: 0 10px;
+        line-height: 1;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        pointer-events: none;
+
+        svg {
+            width: 20px;
+            height: 20px;
+            stroke-width: 1.6;
+        }
+    }
+
+    .form-control.ps-5,
+    input.ps-5 {
+        padding-inline-start: 44px !important;
+    }
+
+    .input-password-toggle {
+        color: var(--text-2);
+        padding: 10px 14px;
+
+        svg {
+            width: 20px;
+            height: 20px;
+            stroke-width: 1.6;
+        }
+
+        &:hover {
+            color: var(--text);
+        }
+    }
+
+    // Phone number country selector — keep dropdown aligned with input
+    .iti,
+    .iti--allow-dropdown {
+        width: 100%;
+    }
+
+    // Remember-me + forgot link row
+    .form-check {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding-inline-start: 0;
+        margin-bottom: 0;
+
+        .form-check-input {
+            width: 18px;
+            height: 18px;
+            border-radius: 4px;
+            border: 1px solid var(--text-3);
+            margin: 0;
+            cursor: pointer;
+            float: none;
+
+            &:checked {
+                background-color: var(--text);
+                border-color: var(--text);
+            }
+
+            &:focus {
+                box-shadow: 0 0 0 3px rgba(16, 16, 16, 0.08);
+                border-color: var(--text);
+            }
+        }
+
+        .form-check-label {
+            margin-bottom: 0;
+            font-size: 14px;
+            color: var(--text-2);
+            cursor: pointer;
+        }
+    }
+
+    .text-decoration-underline {
+        color: var(--text);
+        text-decoration: underline !important;
+
+        &:hover {
+            color: var(--primary);
+        }
+    }
+
+    .row.g-0,
+    .row {
+        align-items: center;
+    }
+
+    // Submit button — restyle the form-builder submit to match theme tf-btn
+    .btn-auth-submit {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        width: 100%;
+        height: 52px;
+        margin-top: 40px;
+        padding: 0 24px;
+        border: 0;
+        border-radius: 60px;
+        background: var(--text);
+        color: var(--white);
+        font-family: $font-main;
+        font-weight: 600;
+        font-size: 15px;
+        position: relative;
+        overflow: hidden;
+        transition: background 0.25s ease, color 0.25s ease, transform 0.2s ease;
+
+        &:hover,
+        &:focus {
+            background: var(--primary);
+            color: var(--white);
+
+            &::after {
+                animation: shine-reverse 1.5s forwards;
+            }
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-image: linear-gradient(120deg,
+                rgba(255, 255, 255, 0) 30%,
+                rgba(255, 255, 255, 0.5),
+                rgba(255, 255, 255, 0) 70%);
+            top: 0;
+            left: -100%;
+            opacity: 0.6;
+            pointer-events: none;
+        }
+
+        svg {
+            width: 18px;
+            height: 18px;
+            stroke-width: 1.6;
+        }
+    }
+
+    .d-grid {
+        display: grid;
+        gap: 12px;
+        margin-top: 8px;
+    }
+
+    // Alerts use theme corners
+    .alert {
+        border-radius: 10px;
+        font-size: 14px;
+        padding: 12px 16px;
+        margin-bottom: 16px;
+    }
+
+    // Footer link row ("Don't have an account? Register now" / vice versa)
+    .mt-3.text-center {
+        margin-top: 20px !important;
+        font-size: 14px;
+        color: var(--text-2);
+
+        a {
+            color: var(--text);
+            font-weight: 600;
+
+            &:hover {
+                color: var(--primary);
+            }
+        }
+    }
+
+    // Validation messages
+    .invalid-feedback,
+    .text-danger {
+        font-size: 13px;
+        color: var(--critical) !important;
+        margin-top: 6px;
+    }
+}
+
+// RTL — mirror the input padding override
+body#page-auth[dir="rtl"] .amerce-auth-card {
+    .auth-input-icon {
+        left: auto;
+        right: 6px;
+    }
+
+    .form-control.ps-5 {
+        padding-inline-start: 15px !important;
+        padding-inline-end: 44px !important;
+    }
+}

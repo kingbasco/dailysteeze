@@ -1,0 +1,8 @@
+{
+    "Hot": {"name": "Hot"},
+    "New": {"name": "Mới"},
+    "Sale": {"name": "Giảm giá"},
+    "Best Seller": {"name": "Bán chạy nhất"},
+    "Limited": {"name": "Giới hạn"},
+    "Eco": {"name": "Eco"}
+}

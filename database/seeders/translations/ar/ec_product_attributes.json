@@ -1,0 +1,44 @@
+{
+    "Black": {
+        "title": "أسود"
+    },
+    "White": {
+        "title": "أبيض"
+    },
+    "Beige": {
+        "title": "البيج"
+    },
+    "Olive": {
+        "title": "زيتون"
+    },
+    "Navy": {
+        "title": "البحرية"
+    },
+    "Burgundy": {
+        "title": "بورجوندي"
+    },
+    "Charcoal": {
+        "title": "فحم"
+    },
+    "Cream": {
+        "title": "كريم"
+    },
+    "Cotton": {
+        "title": "قطن"
+    },
+    "Linen": {
+        "title": "الكتان"
+    },
+    "Wool": {
+        "title": "صوف"
+    },
+    "Tencel": {
+        "title": "ايوسل"
+    },
+    "Recycled Polyester": {
+        "title": "البوليستر المعاد تدويره"
+    },
+    "Full-Grain Leather": {
+        "title": "جلد محبب بالكامل"
+    }
+}

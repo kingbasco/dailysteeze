@@ -1,0 +1,318 @@
+{
+    "Style Guides": {
+        "name": "Guides de style",
+        "description": "Les idées de tenues, la garde-robe capsule et les rapports sur les tendances saisonnières sont sélectionnés par l'équipe éditoriale d'Amerce."
+    },
+    "Product Spotlights": {
+        "name": "Produits phares",
+        "description": "Une analyse approfondie des matériaux, du savoir-faire et des histoires derrière les dernières collections."
+    },
+    "How-To & Care": {
+        "name": "Comment faire et entretenir",
+        "description": "Un guide pratique pour prendre soin de votre achat : entretien des tissus, entretien du cuir et configuration de l'équipement."
+    },
+    "Sustainability": {
+        "name": "Durabilité",
+        "description": "Articles sur la mode circulaire, l'approvisionnement éthique et les marques qui animent l'industrie."
+    },
+    "Buying Guides": {
+        "name": "Guides d'achat",
+        "description": "Un guide de comparaison indépendant vous aide à choisir le produit adapté à vos besoins et à votre budget."
+    },
+    "Inside Amerce": {
+        "name": "À l'intérieur de l'Amérique",
+        "description": "Actualités des coulisses, visites de fournisseurs et mises à jour de l'équipe Amerce."
+    },
+    "Maintenance": {
+        "name": "Entretien",
+        "description": "Un entretien régulier, des solutions et des programmes d'entretien contribuent au bon fonctionnement de votre voiture."
+    },
+    "Performance": {
+        "name": "Performance",
+        "description": "Mises à niveau de puissance, réglages et améliorations de la conduite basées sur les données."
+    },
+    "DIY Repair": {
+        "name": "Réparation DIY",
+        "description": "Instructions étape par étape pour les réparations à domicile et les projets du week-end."
+    },
+    "Detailing": {
+        "name": "Détails",
+        "description": "Lavez, polissez et protégez – gardez votre voiture comme neuve dès sa sortie d’usine."
+    },
+    "New Parents": {
+        "name": "Nouveaux parents",
+        "description": "Conseils et réconfort pendant les premières semaines et mois avec votre nouveau-né."
+    },
+    "Baby Care": {
+        "name": "Soins de bébé",
+        "description": "Des soins quotidiens, des produits doux et des habitudes qui favorisent un bébé en bonne santé."
+    },
+    "Sleep & Routines": {
+        "name": "Sommeil et routines",
+        "description": "Rituels apaisants, horaires de sieste et outils pour des nuits plus paisibles."
+    },
+    "Nutrition": {
+        "name": "Nutrition",
+        "description": "Étapes d’alimentation, de sevrage et de nutrition saine pour les bébés en pleine croissance."
+    },
+    "Safety": {
+        "name": "Sécurité",
+        "description": "Conseils pratiques de sécurité, contrôle du matériel et essentiels pour la tranquillité d'esprit."
+    },
+    "Style Edit": {
+        "name": "Modifier le style",
+        "description": "Une sélection de sacs à main et d'accessoires pour toutes les occasions : travail, voyages et week-end."
+    },
+    "Bag Care": {
+        "name": "Entretien des sacs",
+        "description": "Des rituels de nettoyage, de conservation et de conditionnement pour prolonger la durée de vie de vos objets de valeur."
+    },
+    "Material Guides": {
+        "name": "Guides des matériaux",
+        "description": "Daim, cuir pleine fleur et matériaux haut de gamme : quoi acheter et comment en prendre soin."
+    },
+    "Trends": {
+        "name": "Tendances",
+        "description": "Les boucles métalliques, les styles et les histoires de couleurs définissent chaque saison d'accessoires."
+    },
+    "Behind the Brand": {
+        "name": "Derrière la marque",
+        "description": "Ateliers, artisans et histoires d'origine des marques que nous distribuons."
+    },
+    "Tools & Equipment": {
+        "name": "Outils et équipement",
+        "description": "Des examens approfondis et des guides de maintenance pour les outils sur lesquels vous comptez au quotidien."
+    },
+    "Techniques": {
+        "name": "Techniques",
+        "description": "Méthodes éprouvées dans l’industrie pour couper, percer, visser et finir."
+    },
+    "Project Guides": {
+        "name": "Guides de projet",
+        "description": "Instructions étape par étape pour les projets courants de construction et de rénovation."
+    },
+    "Trade News": {
+        "name": "Actualités commerciales",
+        "description": "Mises à jour de l'industrie, changements de normes et tendances matérielles pour les industries."
+    },
+    "Skincare": {
+        "name": "Soins de la peau",
+        "description": "Processus, ingrédients et analyse approfondie des rituels pour une peau plus saine et plus éclatante."
+    },
+    "Makeup": {
+        "name": "Se maquiller",
+        "description": "Techniques d'application, sélection de palettes de couleurs et choix de produits avec des pigments inoffensifs."
+    },
+    "Fragrance": {
+        "name": "Parfum",
+        "description": "Analyse des notes parfumées, conseils de superposition et comment trouver un parfum signature."
+    },
+    "Beauty Tips": {
+        "name": "Conseils beauté",
+        "description": "Des routines de beauté quotidiennes, des outils et de petites améliorations aident à faire passer le processus au niveau supérieur."
+    },
+    "Ergonomics": {
+        "name": "Ergonomie",
+        "description": "Posture, soutien des articulations et science du travail de bureau sans douleur."
+    },
+    "Workspace Design": {
+        "name": "Conception de l'espace de travail",
+        "description": "Aménagements, éclairages et finitions pour des bureaux inspirants et fonctionnels."
+    },
+    "Wellness at Work": {
+        "name": "Bien-être au travail",
+        "description": "Pauses d'exercice, fatigue oculaire et habitudes de protection de la santé à long terme."
+    },
+    "Productivity": {
+        "name": "Productivité",
+        "description": "Les processus et les habitudes vous aident à vous concentrer profondément et à bien faire votre travail."
+    },
+    "New Releases": {
+        "name": "Nouveautés",
+        "description": "Obtenez une première expérience pratique et lancez une couverture des derniers gadgets et appareils."
+    },
+    "Tech Reviews": {
+        "name": "Avis techniques",
+        "description": "Examens approfondis et sans battage médiatique des téléphones, des systèmes audio, des appareils portables et du matériel de création."
+    },
+    "Smart Home": {
+        "name": "Maison intelligente",
+        "description": "Un guide pratique pour construire et automatiser une maison plus intelligente et plus sûre."
+    },
+    "Lifestyle": {
+        "name": "Mode de vie",
+        "description": "Conseils et habitudes pour utiliser la technologie intentionnellement au quotidien."
+    },
+    "Trend Watch": {
+        "name": "Surveillance des tendances",
+        "description": "Ce qui émerge sur les podiums et s'insinue dans les garde-robes de tous les jours cette saison."
+    },
+    "Wardrobe Building": {
+        "name": "Bâtiment de garde-robe",
+        "description": "Stratégies de garde-robe minimalistes, articles dans lesquels il vaut la peine d'investir et comment rendre une petite garde-robe plus efficace."
+    },
+    "Care & Maintenance": {
+        "name": "Entretien et maintenance",
+        "description": "Comment laver, conserver et prolonger la durée de vie de la laine, du cuir et de la soie."
+    },
+    "Editor Picks": {
+        "name": "Choix de l'éditeur",
+        "description": "Des trouvailles organisées, l'histoire derrière chaque objet et des notes sur le métier de l'équipe."
+    },
+    "Style Inspiration": {
+        "name": "Inspirations de style",
+        "description": "Des tableaux d'inspiration, des histoires de palettes de couleurs et des pièces qui montrent ce qui est possible."
+    },
+    "Behind the Craft": {
+        "name": "Derrière le métier",
+        "description": "Visites d'ateliers, portraits d'artisans et personnes derrière vos objets préférés."
+    },
+    "Spaces": {
+        "name": "Espaces",
+        "description": "De vraies maisons, de vrais appartements : des idées de design que vous pouvez appliquer immédiatement."
+    },
+    "Plant Care": {
+        "name": "Entretien des plantes",
+        "description": "Notes sur l'arrosage, l'éclairage et l'entretien saisonnier des plantes d'intérieur prospères."
+    },
+    "Indoor Gardening": {
+        "name": "Jardinage intérieur",
+        "description": "Construisez des jardins urbains, des forêts vertes sur les balcons et des coins verts paisibles dans les petits espaces."
+    },
+    "Plant Health": {
+        "name": "Santé des plantes",
+        "description": "Diagnostiquez les problèmes courants, les parasites et les problèmes de racines avant qu'ils ne se propagent."
+    },
+    "Decor with Plants": {
+        "name": "Décor avec des plantes",
+        "description": "Conseils pour coordonner les tenues, mettre des plantes en pot et transformer les plantes en éléments de design."
+    },
+    "Audio Tech": {
+        "name": "Technologie audio",
+        "description": "Pilotes, codecs et ingénierie derrière la façon dont les écouteurs d'aujourd'hui produisent réellement du son."
+    },
+    "Listening Tips": {
+        "name": "Conseils d'écoute",
+        "description": "Conseils pratiques pour des séances d’écoute musicale plus sûres, plus longues et plus agréables."
+    },
+    "Reviews": {
+        "name": "Avis",
+        "description": "Examens et comparaisons à long terme entre les segments de prix et les styles d'écoute."
+    },
+    "Music Culture": {
+        "name": "Culture musicale",
+        "description": "Interviews et articles pour ceux qui aiment la musique autant que le matériel."
+    },
+    "Care & Cleaning": {
+        "name": "Entretien et nettoyage",
+        "description": "Le polissage, la préservation et les habitudes domestiques maintiennent l’or, l’argent et les diamants en parfait état."
+    },
+    "Investment Pieces": {
+        "name": "Pièces d'investissement",
+        "description": "Motifs patrimoniaux, diamants certifiés et bijoux créés pour résister à tous les cycles de tendances."
+    },
+    "Buyer Guides": {
+        "name": "Guides d'achat",
+        "description": "Carat, taille, couleur et clarté — un guide pratique pour les achats importants de bijoux."
+    },
+    "Mindful Living": {
+        "name": "Vivre en pleine conscience",
+        "description": "Les pratiques quotidiennes, les exercices de respiration et les habitudes vous aident à trouver la paix à chaque instant."
+    },
+    "Sleep & Recovery": {
+        "name": "Sommeil et récupération",
+        "description": "Guides fondés sur des preuves pour un meilleur sommeil, un repos profond et une récupération du stress."
+    },
+    "Nutrition & Supplements": {
+        "name": "Nutrition et suppléments",
+        "description": "Alimentation propre, adaptogènes et science de la façon dont la nourriture affecte l'humeur."
+    },
+    "Movement & Breath": {
+        "name": "Mouvement et respiration",
+        "description": "Le yoga doux, la marche méditative et les exercices de respiration pour la paix connectent le corps."
+    },
+    "Stress Management": {
+        "name": "Gestion du stress",
+        "description": "Outils et cadres de référence pour surmonter le stress moderne avec intention et persévérance."
+    },
+    "Whole Foods": {
+        "name": "Aliments entiers",
+        "description": "Cuisinez, recherchez et conservez des aliments peu transformés qui nourrissent le corps."
+    },
+    "Superfoods": {
+        "name": "Superaliments",
+        "description": "La spiruline, les champignons chaga et autres plantes ont une densité nutritionnelle exceptionnelle."
+    },
+    "Organic Living": {
+        "name": "Vie biologique",
+        "description": "Réduisez les pesticides, soutenez les jardiniers régénérateurs et apportez de petits changements chaque jour."
+    },
+    "Recipes": {
+        "name": "Recettes",
+        "description": "Les formules à base de plantes sont construites autour d'ingrédients de saison certifiés biologiques."
+    },
+    "Nutrition Science": {
+        "name": "Sciences de la nutrition",
+        "description": "La nutrition fondée sur des données probantes n’est pas une mode, comme le montrent les recherches actuelles."
+    },
+    "Pet Health": {
+        "name": "Santé des animaux",
+        "description": "Soins préventifs, suppléments et signes à surveiller à chaque étape de la vie."
+    },
+    "Training": {
+        "name": "Entraînement",
+        "description": "Conseils de formation au renforcement positif pour les chiots, les chatons et les animaux adultes."
+    },
+    "Pet Lifestyle": {
+        "name": "Mode de vie des animaux de compagnie",
+        "description": "Voyager, jouer, faire sa toilette et les petits bonheurs de vivre avec un compagnon à quatre pattes."
+    },
+    "Vet Tips": {
+        "name": "Conseils vétérinaires",
+        "description": "Conseils pratiques d'experts vétérinaires sur les questions et préoccupations fréquemment posées."
+    },
+    "Gift Ideas": {
+        "name": "Idées cadeaux",
+        "description": "Inspiration de cadeaux sélectionnés pour les anniversaires, les mariages, les anniversaires et chaque étape importante."
+    },
+    "Customization Tips": {
+        "name": "Conseils de personnalisation",
+        "description": "Comment concevoir, photographier et prototyper un produit personnalisé que vous adorerez vraiment."
+    },
+    "Occasions": {
+        "name": "Occasions",
+        "description": "Un guide de cadeaux sophistiqué pour chaque fête et chaque étape importante."
+    },
+    "Personalization Trends": {
+        "name": "Tendances de personnalisation",
+        "description": "Quoi de neuf en matière d'impression à la demande : tendances en matière de typographie, d'illustration et de design."
+    },
+    "Behind the Print": {
+        "name": "Derrière l'impression",
+        "description": "Un aperçu de notre processus d’impression, de nos matériaux et de nos normes de qualité."
+    },
+    "Style": {
+        "name": "Style",
+        "description": "Des modèles de chaussures lifestyle, des histoires de couleurs et des suggestions pour associer des baskets avec des tenues de tous les jours."
+    },
+    "Care Guide": {
+        "name": "Guide d'entretien",
+        "description": "Les conseils de nettoyage, de désodorisation et de rangement permettent à chaque paire de chaussures de conserver son aspect neuf."
+    },
+    "Athletic Tech": {
+        "name": "Technologie athlétique",
+        "description": "Composés de mousse, rigidité de la semelle et ingénierie derrière les chaussures de performance modernes."
+    },
+    "Recovery": {
+        "name": "Récupération",
+        "description": "Les méthodes de sommeil, de mobilité et de récupération active vous maintiennent dans le jeu."
+    },
+    "Gear Reviews": {
+        "name": "Avis sur les équipements",
+        "description": "Commentaires honnêtes sur les chaussures, les vêtements et les équipements d'entraînement – ​​testés sous charge."
+    },
+    "Sports News": {
+        "name": "Actualités sportives",
+        "description": "Restez informé du monde de la course à pied, des sports de raquette et des mouvements de fitness émergents."
+    }
+}

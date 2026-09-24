@@ -1,0 +1,534 @@
+{
+    "Accessories": {
+        "name": "Accessoires",
+        "description": "Sacs, foulards et finitions."
+    },
+    "Active Life": {
+        "name": "Vie active",
+        "description": "Écouteurs résistants à la transpiration et casques supra-auriculaires conçus pour le mouvement."
+    },
+    "Audio": {
+        "name": "Audio",
+        "description": "Casque, microphone et haut-parleur pour des appels clairs et une concentration optimale."
+    },
+    "Backpacks": {
+        "name": "Sacs à dos",
+        "description": "Les sacs à dos de travail quotidiens et les sacs de week-end sont conçus pour durer."
+    },
+    "Bedroom": {
+        "name": "Chambre à coucher",
+        "description": "Des lits, des commodes et des tables de nuit moelleux et douillets pour des coins de repos tranquilles."
+    },
+    "Belts": {
+        "name": "Ceintures",
+        "description": "Ceintures formelles classiques et ceintures décontractées pour chaque garde-robe."
+    },
+    "Best Sellers": {
+        "name": "Meilleures ventes",
+        "description": "Des produits auxquels les clients font confiance et qui les commandent chaque saison."
+    },
+    "BIG SEASON SALE": {
+        "name": "GRANDE VENTE DE SAISON",
+        "description": "JUSQU'À 50 % DE RÉDUCTION — Pour une durée limitée uniquement sur les chaussures les plus performantes."
+    },
+    "Body & Exterior": {
+        "name": "Carrosserie et extérieur",
+        "description": "Spoiler, pare-chocs et film protecteur pour un extérieur prêt pour la piste."
+    },
+    "Bottoms": {
+        "name": "Bas",
+        "description": "Jeans, pantalons et jupes à porter au quotidien."
+    },
+    "Calm Bedroom": {
+        "name": "Chambre Calme",
+        "description": "Les lits, les tables de nuit et les armoires de rangement sont conçus pour un sommeil réparateur et des matinées tranquilles."
+    },
+    "Cat Feast": {
+        "name": "Fête du chat",
+        "description": "Repas sains et délicieux pour chats."
+    },
+    "Chic Silver Designs": {
+        "name": "Dessins argentés chics",
+        "description": "De l'argent pur avec une touche moderne : maillons minimalistes, grands bracelets et bagues sculptées."
+    },
+    "Clean & Mindful": {
+        "name": "Propre et attentif",
+        "description": "Produits aux origines propres prouvées : tests indépendants, chaîne d'approvisionnement transparente et à faible impact."
+    },
+    "Clean Beauty": {
+        "name": "Beauté propre",
+        "description": "Formule végétalienne et sans animaux avec des ingrédients actifs testés cliniquement."
+    },
+    "Conference Gear": {
+        "name": "Équipement de conférence",
+        "description": "Webcam, caméra de conférence et haut-parleur pour groupes de travail combinés."
+    },
+    "Court Sports Game Gear": {
+        "name": "Équipement de jeu de sports de terrain",
+        "description": "Jouez, rivalisez, profitez-en."
+    },
+    "Custom Gifts": {
+        "name": "Cadeaux personnalisés",
+        "description": "Les cadeaux personnalisés rendent chaque étape mémorable."
+    },
+    "Custom T-Shirts": {
+        "name": "T-shirts personnalisés",
+        "description": "Personnalisez des t-shirts en coton avec votre photo, votre nom et votre histoire."
+    },
+    "Cutting & Drilling": {
+        "name": "Découpe et perçage",
+        "description": "Les lames de scie, les forets et les abrasifs sont conçus pour durer."
+    },
+    "Daily Wellness": {
+        "name": "Bien-être au quotidien",
+        "description": "Des essentiels du quotidien pour le corps et l'esprit : suppléments, thés relaxants et outils de pleine conscience."
+    },
+    "Desks": {
+        "name": "Bureaux",
+        "description": "Bureaux surélevés et bureaux traditionnels pour des journées productives."
+    },
+    "Desktop Sound": {
+        "name": "Son du bureau",
+        "description": "Jusqu'à 50% de réduction sur les produits les plus vendus."
+    },
+    "Dining": {
+        "name": "À manger",
+        "description": "Table à manger et chaises pour rassembler tout le monde autour d'un repas."
+    },
+    "Elegant Gold Essentials": {
+        "name": "Essentiels dorés élégants",
+        "description": "Les pièces intemporelles en or 14 carats et 18 carats constituent la base de toute armoire à bijoux."
+    },
+    "Engine & Drivetrain": {
+        "name": "Moteur et transmission",
+        "description": "Pistons, courroies et joints : pièces OEM essentielles pour chaque transmission."
+    },
+    "Everything Your Pet Deserves": {
+        "name": "Tout ce que votre animal mérite",
+        "description": "Découvrez un véritable son sans fil avec des basses profondes et une clarté époustouflante."
+    },
+    "Explore Your Sound World": {
+        "name": "Explorez votre monde sonore",
+        "description": "Les écouteurs sont présents à chaque instant de votre vie."
+    },
+    "Featured": {
+        "name": "En vedette",
+        "description": "Des baskets incontournables sélectionnées par notre équipe et portées en ce moment."
+    },
+    "Find Your Calm <br> Space": {
+        "name": "Trouvez votre espace calme <br>",
+        "description": "Les objets de pleine conscience apportent la relaxation <br> au quotidien."
+    },
+    "Fluids & Maintenance": {
+        "name": "Fluides et entretien",
+        "description": "Les lubrifiants, filtres et additifs haut de gamme maintiennent votre moteur en parfait état."
+    },
+    "Footwear": {
+        "name": "Chaussure",
+        "description": "Des bottes, des baskets et des talons pour compléter le look."
+    },
+    "Free Gift With Purchase": {
+        "name": "Cadeau gratuit avec achat"
+    },
+    "Free Shipping On All Orders": {
+        "name": "Livraison gratuite sur toutes les commandes"
+    },
+    "Fresh Sparkle New Arrivals": {
+        "name": "Nouveautés Fresh Sparkle",
+        "description": "Les dernières créations de nos artisans, créées pour un usage quotidien."
+    },
+    "Game Mode": {
+        "name": "Mode de jeu",
+        "description": "Casque de jeu à faible latence, optimisé pour un gameplay compétitif et immersif."
+    },
+    "Garden Decor": {
+        "name": "Décor de jardin",
+        "description": "Statues, lanternes et ornements pour personnaliser le jardin."
+    },
+    "Garden Tools": {
+        "name": "Outils de jardin",
+        "description": "Sécateur, pelle et truelle pour le jardinage direct."
+    },
+    "Gemstone Statement Pieces": {
+        "name": "Pièces de déclaration de pierres précieuses",
+        "description": "Les pierres précieuses aux couleurs vives présentes dans les bagues de cocktail, les boucles d'oreilles pendantes et les colliers à pendentif sont prêtes à faire impression."
+    },
+    "Glow Essentials": {
+        "name": "Les essentiels de l'éclat",
+        "description": "Sérum et tonique éclaircissant pour un teint éclatant et uniforme."
+    },
+    "Greenhouses": {
+        "name": "Serres",
+        "description": "Mini serres et kits de culture pour les producteurs sérieux."
+    },
+    "Grooming & Care": {
+        "name": "Toilettage et soins",
+        "description": "Le gel douche, le peigne et le coupe-ongles facilitent les soins à domicile."
+    },
+    "Hand Tools": {
+        "name": "Outils à main",
+        "description": "Les marteaux, clés et pinces sont conçus pour durer, quel que soit le projet."
+    },
+    "Handbags": {
+        "name": "Sacs à main",
+        "description": "Sacs à bandoulière, fourre-tout et sacs à bandoulière pour chaque saison."
+    },
+    "Hardware & Fasteners": {
+        "name": "Quincaillerie et attaches",
+        "description": "Les boulons, clous, vis et supports sont sélectionnés pour leur fiabilité industrielle."
+    },
+    "Hats & Scarves": {
+        "name": "Chapeaux et écharpes",
+        "description": "Des accessoires saisonniers complètent votre look."
+    },
+    "Hear Every Detail": {
+        "name": "Écoutez chaque détail",
+        "description": "Puissant, confortable, clair."
+    },
+    "Hear True Freedom in <br> Every Beat": {
+        "name": "Écoutez la vraie liberté dans <br> Every Beat",
+        "description": "Découvrez un véritable son sans fil avec des basses profondes, une clarté et une connectivité transparente pour votre musique."
+    },
+    "Hydration Heroes": {
+        "name": "Héros de l'hydratation",
+        "description": "Les crèmes hydratantes et les soins conservent un confort durable."
+    },
+    "Interior & Comfort": {
+        "name": "Intérieur & Confort",
+        "description": "Les housses de siège, les tapis et les accessoires contribuent à peaufiner chaque kilomètre de l'habitacle."
+    },
+    "Jewelry": {
+        "name": "Bijoux",
+        "description": "Colliers, bagues et boucles d'oreilles pour s'adapter à toutes les tenues."
+    },
+    "Keyboards & Mice": {
+        "name": "Claviers et souris",
+        "description": "Clavier et souris mécaniques de précision pour les créateurs."
+    },
+    "Knitwear": {
+        "name": "Tricots",
+        "description": "Pulls et cardigans doux pour les journées froides."
+    },
+    "Lawn Care": {
+        "name": "Entretien de la pelouse",
+        "description": "Tondeuses à gazon, coupe-bordures et engrais pour garder votre pelouse en bonne santé."
+    },
+    "Lighting": {
+        "name": "Éclairage",
+        "description": "Lampes de table, appliques et suspensions pour créer l’ambiance parfaite."
+    },
+    "Lighting & Electrical": {
+        "name": "Éclairage et électricité",
+        "description": "Phares à LED, kits d'antibrouillards et câblage pour la visibilité et la fiabilité."
+    },
+    "Limited Edition": {
+        "name": "Édition limitée",
+        "description": "Expéditions exclusives de fabricants indépendants. S'il est épuisé, il est parti."
+    },
+    "Limited Time Offer": {
+        "name": "Offre à durée limitée"
+    },
+    "Lip & Color": {
+        "name": "Lèvres et couleur",
+        "description": "Masques à lèvres repulpés, finitions brillantes et tons signature."
+    },
+    "Living Room": {
+        "name": "Salon",
+        "description": "Canapés, tables basses et accessoires pour renouveler le cœur de la maison."
+    },
+    "Luxury Gems Big Sale": {
+        "name": "Grande vente de pierres précieuses de luxe",
+        "description": "Offre à durée limitée sur les pierres précieuses rares et les montures d'accent."
+    },
+    "Measuring": {
+        "name": "Mesurer",
+        "description": "Les niveaux, les rubans à mesurer et les lasers assurent une précision à tout moment."
+    },
+    "Modern Living Room": {
+        "name": "Salon moderne",
+        "description": "Les canapés, les chaises d'appoint et les tables sont adaptés à votre façon de vivre d'aujourd'hui."
+    },
+    "Monitors": {
+        "name": "Moniteurs",
+        "description": "Écran 4K, ultra-large et incurvé pour une productivité optimale."
+    },
+    "Mugs & Drinkware": {
+        "name": "Tasses et verres",
+        "description": "Tasses thermos et mugs personnalisés imprimés avec vos designs préférés."
+    },
+    "New Arrivals": {
+        "name": "Nouveautés",
+        "description": "De nouveaux modèles sont sélectionnés chaque semaine."
+    },
+    "Noise Off": {
+        "name": "Bruit désactivé",
+        "description": "Casque à réduction de bruit active pour les voyages, la concentration et les déplacements silencieux."
+    },
+    "Nourish From <br> Within": {
+        "name": "Nourrir à partir de <br> à l’intérieur",
+        "description": "Des essentiels du quotidien pour soutenir l'énergie et l'équilibre de <br>."
+    },
+    "Office Chairs": {
+        "name": "Chaises de bureau",
+        "description": "Les chaises ergonomiques s’adaptent à tout type de journée de travail."
+    },
+    "Outdoor & Garden": {
+        "name": "Extérieur et jardin",
+        "description": "Sièges extérieurs et accents de jardin pour porches et terrasses."
+    },
+    "Outdoor Active Protection Gear": {
+        "name": "Équipement de protection active extérieure",
+        "description": "Déplacez-vous à l’extérieur en toute sécurité."
+    },
+    "Outdoor Furniture": {
+        "name": "Mobilier d'extérieur",
+        "description": "Chaises, tables et bancs de jardin pour les rassemblements par temps chaud."
+    },
+    "Outerwear": {
+        "name": "Vêtements d'extérieur",
+        "description": "Trenchs, vestes et pièces superposées essentielles pour chaque saison."
+    },
+    "Peak Performance": {
+        "name": "Performances maximales",
+        "description": "Équipement de qualité professionnelle pour les athlètes qui recherchent leurs meilleures performances."
+    },
+    "Performance": {
+        "name": "Performance",
+        "description": "Conçu pour les entraînements quotidiens : évacuant la transpiration, offrant un bon maintien et durable."
+    },
+    "Performance Parts": {
+        "name": "Pièces de performance",
+        "description": "Des améliorations hautes performances conçues pour la puissance et la précision sur la route."
+    },
+    "Personalized Apparel": {
+        "name": "Vêtements personnalisés",
+        "description": "Les T-shirts, sweats à capuche et sacs fourre-tout deviennent uniques grâce à votre design."
+    },
+    "Personalized Decor": {
+        "name": "Décor personnalisé",
+        "description": "Dessous de verre, des cadres photo gravés et des décorations pour chaque pièce de la maison."
+    },
+    "Pet Fashion": {
+        "name": "Mode pour animaux de compagnie",
+        "description": "Des tenues adorables pour chaque animal de compagnie."
+    },
+    "Pet Health Hub": {
+        "name": "Centre de santé des animaux de compagnie",
+        "description": "Vitamines, soins dentaires et produits de bien-être vous sont recommandés par votre vétérinaire."
+    },
+    "Pet Portraits": {
+        "name": "Portraits d'animaux de compagnie",
+        "description": "Vos portraits d’animaux de compagnie sont peints à la main sur du papier de qualité archivistique."
+    },
+    "Phone Cases": {
+        "name": "Coques de téléphone",
+        "description": "Coque de téléphone fine et résistante aux chutes, imprimée avec vos photos et dessins."
+    },
+    "Photo Memories": {
+        "name": "Souvenirs photographiques",
+        "description": "Les albums photo et les tirages encadrés gardent toujours de précieux souvenirs avec vous."
+    },
+    "Plants & Trees": {
+        "name": "Plantes et arbres",
+        "description": "Plantes d'intérieur, plantes ligneuses d'extérieur et plants pour démarrer votre jardin."
+    },
+    "Pots & Planters": {
+        "name": "Pots et jardinières",
+        "description": "Pots en céramique, terre cuite et modernes pour tous types de plantes."
+    },
+    "Power Tools": {
+        "name": "Outils électriques",
+        "description": "Les perceuses, scies et meuleuses sont conçues pour un usage quotidien sur le chantier."
+    },
+    "Precision Gear": {
+        "name": "Équipement de précision",
+        "description": "Un équipement haute performance conçu pour votre jeu ultime."
+    },
+    "Rest Better, Live <br> Brighter": {
+        "name": "Reposez-vous mieux, vivez <br> plus lumineux",
+        "description": "Découvrez des produits apaisants pour un sommeil <br> profond et paisible."
+    },
+    "Routine Builders": {
+        "name": "Générateurs de routines",
+        "description": "Des articles essentiels prêts à être combinés pour les rituels du matin et la détente du soir."
+    },
+    "Rugs": {
+        "name": "Tapis",
+        "description": "Les tapis et tapis doux donnent le ton à n’importe quelle pièce."
+    },
+    "Safety Gear": {
+        "name": "Équipement de sécurité",
+        "description": "Les casques, gants et équipements de protection individuelle répondent aux normes les plus strictes."
+    },
+    "Sale": {
+        "name": "Vente",
+        "description": "Prix ​​de fin de saison pour les produits que les clients adorent."
+    },
+    "SALE OFF UP TO 50%": {
+        "name": "VENTE JUSQU'À 50%",
+        "description": "Fête des soldes saisonnières - possédez les derniers modèles de baskets à des prix imbattables."
+    },
+    "Save 25% Today": {
+        "name": "Économisez 25 % aujourd'hui",
+        "description": "T-shirts, sweats à capuche et plus"
+    },
+    "Seeds": {
+        "name": "Graines",
+        "description": "Graines anciennes, biologiques et rares à cultiver chez soi."
+    },
+    "Shine Jewellery Collection": {
+        "name": "Collection de bijoux brillants",
+        "description": "Les vernis sont conçus pour capturer la lumière sous tous les angles."
+    },
+    "Shop Essentials": {
+        "name": "Achetez les essentiels",
+        "description": "Les clients commandent des pièces du quotidien : jeans, tricots et manteaux intemporels."
+    },
+    "Shop Men": {
+        "name": "Acheter des hommes",
+        "description": "Des essentiels sophistiqués et des basiques modernes – qui durent au-delà des cycles de la mode."
+    },
+    "Shop Women": {
+        "name": "Magasinez les femmes",
+        "description": "Une garde-robe organisée pour chaque saison : robes, superpositions et essentiels du week-end."
+    },
+    "Site Equipment": {
+        "name": "Équipement de chantier",
+        "description": "Des générateurs, des échelles et des échafaudages font avancer les travaux."
+    },
+    "Small Pets & Birds": {
+        "name": "Petits animaux et oiseaux",
+        "description": "Cages confortables et nutritives pour hamsters, lapins, oiseaux et plus encore."
+    },
+    "Smart Watch": {
+        "name": "Montre intelligente",
+        "description": "Jusqu'à 25 % de réduction sur les produits les plus vendus."
+    },
+    "Spa Rituals": {
+        "name": "Rituels Spa",
+        "description": "Fournitures de spa à domicile pour des moments de détente et de soins personnels."
+    },
+    "Sparkling Diamond Favorites": {
+        "name": "Favoris de diamants étincelants",
+        "description": "Les diamants éblouissants capturent magnifiquement la lumière, apportant une élégance intemporelle à une occasion spéciale ou à un style sophistiqué de tous les jours."
+    },
+    "Spring Essentials": {
+        "name": "Les essentiels du printemps",
+        "description": "Des tenues légères, des coupes amples et des couleurs vives sont en tête du mood board cette saison."
+    },
+    "Storage": {
+        "name": "Stockage",
+        "description": "Armoires, étagères et outils d'organisation pour un espace de travail soigné."
+    },
+    "Storage & Organization": {
+        "name": "Stockage et organisation",
+        "description": "Les étagères et les armoires de rangement sont à la fois une solution et une déclaration de design."
+    },
+    "Strength Training Essentials": {
+        "name": "Les essentiels de l’entraînement en force",
+        "description": "Développez la force et le contrôle."
+    },
+    "Sunglasses": {
+        "name": "Lunettes de soleil",
+        "description": "Des lunettes tendance et des lunettes de soleil aviateur intemporelles pour toutes les formes de visage."
+    },
+    "Suspension & Brakes": {
+        "name": "Suspensions et freins",
+        "description": "Les amortisseurs, les fourches, les disques de frein et les plaquettes de frein rendent chaque trajet fluide et sûr."
+    },
+    "Sustainable Picks": {
+        "name": "Choix durables",
+        "description": "Des produits avec des histoires de durabilité éprouvées : matériaux recyclés, colorants à faible impact ou fabriqués avec des salaires équitables."
+    },
+    "Table Lamp Sale": {
+        "name": "Vente de lampes de table",
+        "description": "Jusqu'à 50% de réduction sur les produits les plus vendus."
+    },
+    "Tables & Surfaces": {
+        "name": "Tables et Surfaces",
+        "description": "Tables basses, tables d'appoint et surfaces planes pour chaque pièce."
+    },
+    "Tableware": {
+        "name": "Vaisselle",
+        "description": "Assiettes, verres et récipients pour un usage quotidien et pour recevoir des invités."
+    },
+    "Tech Accessories": {
+        "name": "Accessoires techniques",
+        "description": "Des hubs, supports et câbles complètent votre ensemble."
+    },
+    "Throws & Cushions": {
+        "name": "Plaids et coussins",
+        "description": "Superposez les textures et les couleurs avec des couvertures et des coussins sélectionnés."
+    },
+    "Tires & Wheels": {
+        "name": "Pneus et roues",
+        "description": "Les pneus et les jantes en alliage testés sur piste sont conçus pour offrir une adhérence, un équilibre et une belle apparence."
+    },
+    "Tool Storage": {
+        "name": "Rangement des outils",
+        "description": "Coffres à outils, armoires et coffres pour organisation professionnelle."
+    },
+    "Tools & Garage": {
+        "name": "Outils et garage",
+        "description": "Kits de réparation, ascenseurs et kits d'outils pour chaque journée de réparation automobile dans votre garage."
+    },
+    "Top Sale": {
+        "name": "Meilleure vente",
+        "description": "L'équipement audio le plus vendu que nos auditeurs réapprovisionnent saison après saison."
+    },
+    "Toy & Playtime": {
+        "name": "Jouet et récréation",
+        "description": "Les jouets durables sont conçus pour toutes sortes de tir à la corde, de lancer et de saisie, dans toutes les tailles."
+    },
+    "Travel & On-the-Go": {
+        "name": "Voyages et déplacements",
+        "description": "Produits de bien-être compacts pour le décalage horaire, les longs vols et les semaines chargées."
+    },
+    "Travel & Outdoor": {
+        "name": "Voyages et plein air",
+        "description": "Sacs de transport, harnais et harnais pour les aventures grandes et petites."
+    },
+    "Travel Bags": {
+        "name": "Sacs de voyage",
+        "description": "Sacs de week-end, fourre-tout et valises pour chaque voyage."
+    },
+    "Treats & Snacks": {
+        "name": "Friandises et collations",
+        "description": "Des friandises décentes incitent votre animal à s'asseoir, à rester immobile et à mendier."
+    },
+    "Up To 35% Off": {
+        "name": "Jusqu'à 35% de réduction"
+    },
+    "Wall Art & Decor": {
+        "name": "Art mural et décoration",
+        "description": "Des tableaux, des miroirs et des décorations murales complètent l'espace."
+    },
+    "Wall Art Print": {
+        "name": "Impression d’art mural",
+        "description": "Les tirages photo et les affiches transforment ces moments en œuvres impressionnantes."
+    },
+    "Wallets": {
+        "name": "Portefeuilles",
+        "description": "Portefeuille fin pour cartes et portefeuille à deux volets en cuir de première qualité."
+    },
+    "Watches": {
+        "name": "Montres",
+        "description": "Montres à quartz, automatiques et intelligentes aux finitions exquises."
+    },
+    "Watering & Hoses": {
+        "name": "Arrosage et tuyaux",
+        "description": "Tuyaux d'arrosage, arroseurs et arrosoirs pour chaque routine d'entretien des plantes."
+    },
+    "Weekend": {
+        "name": "Fin de semaine",
+        "description": "Les essentiels décontractés rehaussent les ensembles jeans et t-shirts les plus simples."
+    },
+    "Workspace Essentials": {
+        "name": "Les essentiels de l'espace de travail",
+        "description": "Bureau, éclairage et sièges pour un bureau à domicile ciblé et inspiré du design."
+    },
+    "Workwear": {
+        "name": "Vêtements de travail",
+        "description": "Les basiques sophistiqués sont prêts pour le bureau, le studio et partout ailleurs."
+    }
+}

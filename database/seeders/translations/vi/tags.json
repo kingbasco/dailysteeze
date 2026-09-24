@@ -1,0 +1,14 @@
+{
+    "Trends": {"name": "Xu hướng", "description": "Bài viết gắn thẻ Xu hướng."},
+    "Styling Tips": {"name": "Mẹo phối đồ", "description": "Bài viết gắn thẻ Mẹo phối đồ."},
+    "Sustainable": {"name": "Bền vững", "description": "Bài viết gắn thẻ Bền vững."},
+    "New Arrivals": {"name": "Hàng mới về", "description": "Bài viết gắn thẻ Hàng mới về."},
+    "Limited Edition": {"name": "Phiên bản giới hạn", "description": "Bài viết gắn thẻ Phiên bản giới hạn."},
+    "Behind the Scenes": {"name": "Hậu trường", "description": "Bài viết gắn thẻ Hậu trường."},
+    "Buyer Guide": {"name": "Cẩm nang mua sắm", "description": "Bài viết gắn thẻ Cẩm nang mua sắm."},
+    "Care Tips": {"name": "Mẹo bảo quản", "description": "Bài viết gắn thẻ Mẹo bảo quản."},
+    "Capsule Wardrobe": {"name": "Tủ đồ capsule", "description": "Bài viết gắn thẻ Tủ đồ capsule."},
+    "Material Stories": {"name": "Chuyện vật liệu", "description": "Bài viết gắn thẻ Chuyện vật liệu."},
+    "Holiday Gifting": {"name": "Quà tặng dịp lễ", "description": "Bài viết gắn thẻ Quà tặng dịp lễ."},
+    "Editor Picks": {"name": "Biên tập viên chọn", "description": "Bài viết gắn thẻ Biên tập viên chọn."}
+}

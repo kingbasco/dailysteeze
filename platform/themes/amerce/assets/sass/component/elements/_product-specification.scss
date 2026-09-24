@@ -1,0 +1,115 @@
+@use "../../abstracts/index" as *;
+
+// Product specification tab — clean clothing-style spec sheet.
+//
+// Goals (per the UI/UX guidelines for fashion / lifestyle products):
+//   - Clear label/value separation (definition list pattern)
+//   - Group headings with subtle bottom border for hierarchy
+//   - Two columns desktop / single column mobile
+//   - Tabular figures for any numbers (composition %)
+//   - Polished checkbox badges (matches theme primary, not default Bootstrap)
+//
+// Class names are theme-scoped (.bb-product-specs__*) to avoid colliding with
+// the plugin's default .product-specification-table flat layout.
+
+.bb-product-specs {
+    padding: 8px 0 4px;
+
+    &__section {
+        margin-bottom: 32px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__group-title {
+        font-size: 18px;
+        font-weight: 600;
+        color: var(--text);
+        margin: 0 0 12px;
+        padding-bottom: 12px;
+        border-bottom: 1px solid var(--line);
+        letter-spacing: 0.01em;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        column-gap: 48px;
+        row-gap: 0;
+        margin: 0;
+
+        @include res(md) {
+            grid-template-columns: 1fr;
+            column-gap: 0;
+        }
+    }
+
+    &__row {
+        display: grid;
+        grid-template-columns: minmax(120px, 0.45fr) minmax(0, 1fr);
+        column-gap: 24px;
+        align-items: baseline;
+        padding: 14px 0;
+        border-bottom: 1px dashed var(--line);
+
+        &:last-child {
+            border-bottom: 0;
+        }
+
+        @include res(sm) {
+            grid-template-columns: 1fr;
+            row-gap: 4px;
+            padding: 12px 0;
+        }
+    }
+
+    &__label {
+        font-size: 14px;
+        font-weight: 500;
+        color: var(--text-2);
+        margin: 0;
+        line-height: 1.5;
+    }
+
+    &__value {
+        font-size: 14px;
+        font-weight: 500;
+        color: var(--text);
+        margin: 0;
+        line-height: 1.5;
+        font-variant-numeric: tabular-nums;
+        word-break: break-word;
+    }
+
+    &__badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 4px 12px;
+        border-radius: 999px;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 1.4;
+
+        .ti,
+        i,
+        svg {
+            font-size: 14px;
+            width: 14px;
+            height: 14px;
+            flex-shrink: 0;
+        }
+
+        &--yes {
+            background: rgba(61, 171, 37, 0.1); // var(--success) at 10%
+            color: var(--success);
+        }
+
+        &--no {
+            background: rgba(240, 62, 62, 0.1); // var(--critical) at 10%
+            color: var(--critical);
+        }
+    }
+}

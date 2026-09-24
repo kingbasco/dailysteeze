@@ -1,0 +1,23 @@
+{
+    "No gift wrap": {
+        "option_value": "Hediye paketi yok"
+    },
+    "Standard kraft wrap": {
+        "option_value": "Standart kraft kağıt paketi"
+    },
+    "Premium silk-ribbon wrap": {
+        "option_value": "Premium ipek kurdele paketi"
+    },
+    "Up to 20 characters": {
+        "option_value": "Maksimum 20 karakter"
+    },
+    "Standard 1-year warranty": {
+        "option_value": "Standart 1 yıl garanti"
+    },
+    "2-year extended warranty": {
+        "option_value": "2 yıl uzatılmış garanti"
+    },
+    "3-year premium care": {
+        "option_value": "3 yıl boyunca premium bakım"
+    }
+}

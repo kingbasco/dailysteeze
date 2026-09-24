@@ -1,0 +1,39 @@
+{
+    "main-menu": {
+        "name": "menu principal",
+        "home": "Page d'accueil",
+        "shop": "Achats",
+        "new_arrivals": "Nouveautés",
+        "best_sellers": "Meilleur vendeur",
+        "sale": "Rabais",
+        "all_products": "Tous les produits",
+        "categories": "Catégorie",
+        "outerwear": "Veste",
+        "tops_shirts": "Chemise",
+        "bottoms": "Pantalons et jupes",
+        "dresses": "Robe",
+        "footwear": "Chaussures",
+        "accessories": "Accessoire",
+        "brands": "Marque déposée",
+        "journal": "Revue",
+        "about": "Introduire",
+        "contact": "Contact"
+    },
+    "footer-help": {
+        "name": "aide-pied de page",
+        "contact_us": "Contactez-nous",
+        "faq": "Questions fréquemment posées",
+        "shipping": "Transport",
+        "returns_refunds": "Retours et remboursements",
+        "order_tracking": "Suivi des commandes"
+    },
+    "footer-company": {
+        "name": "société de pied de page",
+        "about": "Introduire",
+        "our_stores": "Boutique",
+        "sustainability": "Développement durable",
+        "careers": "Recrutement",
+        "privacy_policy": "Politique de confidentialité",
+        "terms_conditions": "Conditions générales"
+    }
+}

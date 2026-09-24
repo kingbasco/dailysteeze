@@ -1,0 +1,14 @@
+{
+    "Orders & Shipping": {
+        "name": "Siparişler ve Gönderim"
+    },
+    "Returns & Refunds": {
+        "name": "İade ve Para İadeleri"
+    },
+    "Products & Stock": {
+        "name": "Ürünler ve Stok"
+    },
+    "Account & Payment": {
+        "name": "Hesap ve Ödeme"
+    }
+}

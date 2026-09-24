@@ -1,0 +1,945 @@
+{
+    "20L Sports Bag - Gray": {
+        "name": "20L Spor Çanta - Gri",
+        "description": "Nefes alabilen ayakkabı bölmeli ve güçlendirilmiş askılı, kompakt 20L gri spor çantası.",
+        "content": "<p>Tam bir spor kıyafeti ve ayakkabı setini tutabilir. Fermuarlı yan cepler, su geçirmez alt kısım ve dolgulu omuz askıları.</p>"
+    },
+    "4mm Ultra Grip Yoga Mat - Blue Grip": {
+        "name": "4mm Ultra Grip Yoga Minderi - Mavi Grip",
+        "description": "Göz alıcı mavi kaymaz yüzeye sahip çevre dostu doğal kauçuk yoga matı.",
+        "content": "<p>4mm kalınlığındaki yastık bağlantıları, zemin hissini kaybetmez. PVC içermez, lateks içermez ve biyolojik olarak parçalanabilir. Taşıma askısıyla birlikte gelir.</p>"
+    },
+    "Action Camera 4K": {
+        "name": "Aksiyon Kamerası 4K",
+        "description": "HyperSmooth sabitleme ve su geçirmez gövdeye sahip cep 4K60 araç kamerası.",
+        "content": "<p>512 GB'a kadar microSD karta kayıt yapın. Canlı yayın, ses kontrolü ve 2 inç ön ekran.</p>"
+    },
+    "Airy Pro Ergonomic Chair": {
+        "name": "Airy Pro Ergonomik Sandalye",
+        "description": "Uyarlanabilir sırt dayanağı, 4D kol dayama yeri ve 12 yıl garantili file sırtlı ergonomik sandalye.",
+        "content": "<p>Nefes alabilen dokuma file, senkronize yatma mekanizması ve ayarlanabilir oturma derinliği. Boyu 1m52'den 1m93'e kadar olan kullanıcılar için uygundur.</p>"
+    },
+    "Allergy Relief Drops": {
+        "name": "Alerji Giderici Damlalar",
+        "description": "Kaşıntılı ve hassas evcil hayvanlar için omega-3 ve quercetin içeren veteriner formüllü damlalar.",
+        "content": "<p>Kolay dozaj damlalığı. Yiyecek veya içeceklere ekleyin. 6 aydan büyük köpek ve kediler için uygundur. 60 ml'lik şişe.</p>"
+    },
+    "Alloy Sport Wheel": {
+        "name": "Alaşım Spor Jant",
+        "description": "Kömür grisi kaplamalı ve dövme yapılı hafif 18 inç alaşım jantlar.",
+        "content": "<p>Çinko jantlara kıyasla sönümsüz kütleyi yüzde 22 azaltır. Göbek merkezleme tasarımı, göbek kapağı ve valfle tamamlanmıştır.</p>"
+    },
+    "Angle Grinder Pro": {
+        "name": "Açılı Taşlama Pro",
+        "description": "Tetik anahtarlı ve aletsiz koruyucu kapak ayarına sahip, ağır hizmet tipi 7 inç açılı taşlama makinesi.",
+        "content": "Yük altında 8.500 rpm için <p>15 amper motor. Titreşim önleyici tutamak ve aşırı yük koruması, zorlu işlerde makine ömrünün uzatılmasına yardımcı olur.</p>"
+    },
+    "Anthurium Hybrid": {
+        "name": "Antoryum Hibrit",
+        "description": "Parlak, kalp şeklinde yapraklar ve parlak kırmızı çiçekler, popüler uzun çiçekli sofra bitkileridir.",
+        "content": "<p>14 cm'lik fidanlık saksısında teslim edilir. Güçlü dolaylı ışık, yüksek nem. Toprağın üst kısmı kuruduğunda sulayın.</p>"
+    },
+    "Apple Watch S10": {
+        "name": "Apple Watch S10",
+        "description": "Fitness ve sağlık için en gelişmiş sensörlere sahip, her zaman açık retina ekran.",
+        "content": "<p>Elektrokardiyogramı, kandaki oksijen seviyelerini ölçün ve uykuyu izleyin. Alüminyum kasa, 41mm ve 45mm seçenekleri, 18 saat pil ömrü.</p>"
+    },
+    "Aromatherapy Diffuser": {
+        "name": "Aromaterapi Difüzör",
+        "description": "Yedi renkli arka aydınlatmaya ve dört saatlik çalışma süresine sahip ultrasonik seramik difüzör.",
+        "content": "<p>Fısıltı kadar sessiz çalışır. Otomatik kapanma. 200 ml'lik kap 30 m²'ye kadar alanı kaplar. Deneyebileceğiniz rahatlatıcı bir esansiyel yağ karışımıyla birlikte gelir.</p>"
+    },
+    "Astronaut Phone Case": {
+        "name": "Astronot Telefon Kılıfı",
+        "description": "Özel astronot baskısı ve adınızın yer aldığı ince, düşmeye karşı test edilmiş telefon kılıfı.",
+        "content": "<p>TPU çerçeveli polikarbon kasa. Kablosuz şarj uyumlu. iPhone ve Pixel modellerinde mevcuttur.</p>"
+    },
+    "Audiophile Open-Back": {
+        "name": "Odyofil Açık Arka",
+        "description": "Evde geniş ses alanı ve ayrıntılı dinleme deneyimi için açık tarz düzlemsel manyetik kulaklıklar.",
+        "content": "<p>İki uçlu çıkarılabilir kablo. Kadife kulak yastıkları. 1/4\" ve 3,5 mm adaptör dahildir.</p>"
+    },
+    "Baby Glass Bottle Set 4oz with Latex Nipple – Blush Pink for Little Moments": {
+        "name": "Bebek Cam Biberon Seti 4oz Lateks Emzikli – Küçük Anlar için Allık Pembe",
+        "description": "Antikolik silikon emzikli borosilikat cam biberon ikilisi.",
+        "content": "<p>Yumuşak silikon kabuklu, termal şoklara dayanıklı cam. Kolay temizlik için geniş boyun tasarımı. Kapasite 240ml.</p>"
+    },
+    "Blueberry Granola": {
+        "name": "Yaban Mersinli Granola",
+        "description": "Yaban mersini, badem ve saf akçaağaç şurubu ile yavaş kavrulmuş yulaf ezmesi granola.",
+        "content": "<p>Küçük gruplar halinde üretin. Rafine şeker, palm yağı veya koruyucu madde içermez. 500 gr geri dönüştürülebilir torba.</p>"
+    },
+    "Bookshelf Tall": {
+        "name": "Kitaplık Uzun",
+        "description": "Ayarlanabilir raflı, masif cevizden tavana kadar kitaplık.",
+        "content": "<p>Sekiz seviyeli ayarlanabilir raflar ve güçlendirilmiş bağlantı noktaları. Her raf seviyesine 50 pound'a kadar kitap ve nesne yerleştirilebilir.</p>"
+    },
+    "Botanical Body Oil": {
+        "name": "Botanik Vücut Yağı",
+        "description": "Lavanta ve bergamot ile zenginleştirilmiş soğuk preslenmiş jojoba ve skualen yağları cildi ve duyuları rahatlatır.",
+        "content": "<p>100ml buzlu cam şişe. Yumuşak, nemli bir cilt ve rahatlatıcı bir koku için banyodan sonra uygulayın. Hayvanlar üzerinde test edilmemiştir.</p>"
+    },
+    "Brake Disc Vented": {
+        "name": "Fren Diski Havalandırmalı",
+        "description": "Delikli ve oluklu havalandırmalı fren diskleri daha serin ve daha dengeli frenleme sağlar.",
+        "content": "<p>Korozyona dayanıklı çinko kaplama ve dengeli yapı. Tek teslimat; Aksın tamamına servis yapılırken çift olarak sipariş verin.</p>"
+    },
+    "Brake Pad Set Premium": {
+        "name": "Fren Balatası Seti Premium",
+        "description": "Paslanmaz çelik balatalı, az tozlu seramik fren balataları yumuşak ve emin duruş sağlar.",
+        "content": "<p>Ön fren balataları günlük sürüş ve güçlü performans için tasarlanmıştır. Orijinal ekipman fren balatalarına kıyasla fren tozunu yüzde 80'e kadar azaltır.</p>"
+    },
+    "Bukowski Lounge Chair": {
+        "name": "Bukowski Şezlong",
+        "description": "Paslanmaz çelik çerçeve üzerine eyer deri döşemeli, konsollu dinlenme koltuğu.",
+        "content": "<p>Yüzyılın ikonlarından ilham alan, elle dikilmiş kaplamalar ve sırçalı İtalyan derisi bu sandalyeyi fütüristik bir yadigâra dönüştürüyor.</p>"
+    },
+    "Buttons cotton top": {
+        "name": "Düğmeli pamuklu üst",
+        "description": "Bol kesimli, narin sedef düğmeli, önü düğmeli pamuklu gömlek.",
+        "content": "<p>180 GSM orta gramajlı pamuklu poplin kumaş gün boyu şeklini iyi korur. Sedef düğmeler. Hafifçe kısaltılmış etek kısmı, yüksek belli kot pantolonlarla güzel bir şekilde uyum sağlar.</p>"
+    },
+    "Cabin Air Filter": {
+        "name": "Kabin Hava Filtresi",
+        "description": "Aktif karbon kabin hava filtresi polen, toz ve egzoz kokularını yakalar.",
+        "content": "<p>Üç katmanlı filtreleme, 0,3 mikrona kadar küçük parçacıkları tutar. Her 15.000 milde bir değiştirilmesi önerilir.</p>"
+    },
+    "Calathea Orbifolia": {
+        "name": "Calathea Orbifolia",
+        "description": "Yuvarlak, gümüş çizgili yapraklar geceleri kıvrılıyor - gerçek bir favori.",
+        "content": "<p>14 cm'lik fidanlık saksısında teslim edilir. Orta derecede dolaylı ışık, yüksek nem. En iyi sonuçları elde etmek için damıtılmış su veya yağmur suyu kullanın.</p>"
+    },
+    "Calm Mind Adaptogen Capsules": {
+        "name": "Sakin Zihin Adaptojen Kapsülleri",
+        "description": "Ashwagandha ve L-theanine karışımı, stresi azaltmak ve net odaklanmayı desteklemek için formüle edilmiştir.",
+        "content": "<p>Vegan kapsülleri 600 mg ashwagandha KSM-66'yı rhodiola ve theanine ile birleştirir. Yemeklerle birlikte günde iki tablet alın.</p>"
+    },
+    "Calming Treats": {
+        "name": "Sakinleştirici İkramlar",
+        "description": "Stresli durumlar için papatya ve L-theanine ile yumuşak çiğneme tedavisi.",
+        "content": "<p>Formül ilaç içermez. Torba başına 60 tablet. Seyahat ederken, fırtınalarda veya veteriner kliniğine giderken kullanın. 12 haftalıktan büyük köpekler için uygundur.</p>"
+    },
+    "Cashmere Cardigan": {
+        "name": "Kaşmir Hırka",
+        "description": "Düşük omuzlu, rahat kesimli, önü açık kaşmir hırka.",
+        "content": "<p>100% Moğol kaşmiri. İki kapak cepli. Mevsim şartlarına göre tişörtün üzerine veya ceketin altına giyin.</p>"
+    },
+    "Cashmere Mittens": {
+        "name": "Kaşmir Eldivenler",
+        "description": "Soğuk günler için avuç içi deri ve elastik manşetli, kaşmir astarlı eldiven.",
+        "content": "<p>100% Moğol kaşmir astarı. Kavrama ve dayanıklılık için kuzu derisi avuç içi. Üniseks beden.</p>"
+    },
+    "Cat Scratching Post": {
+        "name": "Kedi Tırmalama Direği",
+        "description": "Sisal tel tırmalama direği sağlam bir tabana sahiptir ve kedilerin rahatça tırmalaması için doğru boyuttadır.",
+        "content": "<p>70cm yüksekliğinde, stabilite için ağırlıklı MDF tabanı. Değiştirilebilir sisal sütunu. Asılı tüylü bir oyuncakla birlikte gelir.</p>"
+    },
+    "Circular Saw Cordless": {
+        "name": "Akülü Daire Testere",
+        "description": "Magnezyum tabanlı ve aşık askılı 7-1/4 inç fırçasız daire testere.",
+        "content": "<p>Malzemeyi maksimum eğim açısında 2x kesin. Elektrikli fren testere bıçağını iki saniyeden kısa sürede durdurur. Piller ayrı satılır.</p>"
+    },
+    "Coffee Mug Custom": {
+        "name": "Kahve Kupa Özel",
+        "description": "15 oz kahve kupanızı en sevdiğiniz fotoğraf, alıntı veya baş harfle kişiselleştirin.",
+        "content": "<p>Yüksek kaliteli porselen. Bulaşık makinesi ve mikrodalga fırına uygundur. Renkli baskı tüm yüzeyi kaplar.</p>"
+    },
+    "Cold-Pressed Olive Oil": {
+        "name": "Soğuk Sıkım Zeytinyağı",
+        "description": "Baharatlı bir bitişe ve taze çimen notalarına sahip, tek bir çiftlikten elde edilen sızma zeytinyağı.",
+        "content": "<p>Hasat tarihini belirtin. Organik Picual Zeytinler. Polifenolleri korumak için koyu renkli bir cam şişede saklayın. 500 ml'lik şişe.</p>"
+    },
+    "Cotton Tee": {
+        "name": "Pamuklu Tişört",
+        "description": "Rahat kesimli, güçlendirilmiş yakalı, yumuşak fırçalanmış pamuklu tişört.",
+        "content": "<p>%100 organik pamuk, uzun süre giyilmiş gibi yumuşak bir his için önceden yıkanmış. Siyah, fildişi ve barut grisi renkleri mevcuttur. Bitmiş ürünü düşük etkili boyalarla boyayın.</p>"
+    },
+    "Cozy Bunny Hooded Towel for Newborns and Toddlers": {
+        "name": "Yeni Doğanlar ve Küçük Çocuklar için Cosy Bunny Kapşonlu Havlu",
+        "description": "Banyo havlusu, bebeğinizi her banyodan sonra sıcak tutmak için yumuşak pamuklu bambu kapüşonludur.",
+        "content": "<p>500gsm pamuk karışımlı bambu havlu. 90x90cm geniş ebatlıdır. İşlemeli kulak detaylı yumuşak şapka. Hipoalerjenik ve klor içermez.</p>"
+    },
+    "Cozy Dog Bed": {
+        "name": "Rahat Köpek Yatağı",
+        "description": "Çıkarılabilir ve makinede yıkanabilir kapaklı hafızalı köpük ortopedik yatak.",
+        "content": "<p>Yüksek yoğunluklu köpük yaşlı evcil hayvanların eklemlerini destekler. Sherpa polar kılıf. M-XL bedenleri mevcuttur. Kaymaz taban.</p>"
+    },
+    "Cropped wool-blend knit sweater": {
+        "name": "Yün karışımlı kısa örgü kazak",
+        "description": "Sıcak tutan yün karışımından, kısa, bisiklet yakalı, vücudu saran, etek kısmı ve manşetleri ribanalı bir kazak."
+    },
+    "Custom Tee Premium": {
+        "name": "Özel Tişört Premium",
+        "description": "Resimlerinizin, çizimlerinizin veya mesajlarınızın basıldığı %100 pamuklu kalın tişörtler.",
+        "content": "<p>Önceden çektirilmiş bükümlü pamuk ipliği. XS-3XL bedenleri mevcuttur. Birçok yıkamada solmayı önlemek için doğrudan kumaş üzerine baskı yapın.</p>"
+    },
+    "Cylinder Head Gasket": {
+        "name": "Silindir Kapak Contası",
+        "description": "Çok katmanlı çelik motor yüzey contaları, yüksek sıkıştırma oranlı motorlar için tasarlanmıştır.",
+        "content": "<p>OE standart MLS yapısı ısı çevrimlerine ve yanma odası basıncına dayanıklıdır. Ekte sıkma prosedürlerine ilişkin talimatlar bulunmaktadır.</p>"
+    },
+    "Daily Greens Powder": {
+        "name": "Günlük Yeşillik Tozu",
+        "description": "Organik süper yeşillikler, her gün canlılık için spirulina, chlorella ve adaptogen ile harmanlanır.",
+        "content": "<p>Bitki bazlı, şekersiz ve besin açısından zengin 24 tam gıda içerir. Her sabah bir ölçek suya veya en sevdiğiniz smoothie'ye karıştırın.</p>"
+    },
+    "Daily Sunscreen Light": {
+        "name": "Günlük Güneş Koruyucu Işık",
+        "description": "Makyaj altında veya tek başına kullanıldığında görünmez bir görünüm için SPF 50 fiziksel güneş koruyucu.",
+        "content": "<p>Gözenekleri tıkamaz. Çinko oksit mercan resifleri için güvenlidir. 50 ml'lik tüp. Güneşe maruz kaldığınızda her iki saatte bir yeniden uygulayın.</p>"
+    },
+    "Daily Wireless Earbuds": {
+        "name": "Günlük Kablosuz Kulaklıklar",
+        "description": "Uyarlanabilir gürültü engelleme, IPX5 ter direnci ve 30 saatlik toplam pil ömrüne sahip gerçek kablosuz kulaklıklar.",
+        "content": "<p>Net aramalar için altı mikrofon, çok noktalı eşleştirme ve kablosuz şarj kutusu. Üç boyutta kulak tıkacı içerir.</p>"
+    },
+    "Dark Choc Almonds": {
+        "name": "Bitter Çikolata Badem",
+        "description": "Tek kökenli %70 bitter çikolatayla kaplanmış çıtır badem.",
+        "content": "<p>Organik, sertifikalı adil ticaret. Doğal olarak glutensiz. 200g açılıp kapanabilir torba.</p>"
+    },
+    "Dash Camera Pro": {
+        "name": "Araç İçi Kamera Pro",
+        "description": "1440p çözünürlüğe, park moduna ve dahili GPS kaydına sahip ön + arka araç kamerası.",
+        "content": "<p>Ön ve arka gece görüş sensörleriyle her yolculuğu son derece keskin 1440p netlikte yakalayın. 24 saat park izleme ve Wi-Fi uygulaması bağlantısı içerir.</p>"
+    },
+    "Denim Jacket": {
+        "name": "Kot Ceket",
+        "description": "Vintage ham mavi renkte klasik kamyon şoförü tarzı denim ceket.",
+        "content": "<p>Japon kotu 14oz. Kenardaki dikişler. Zamanla yavaş yavaş yumuşar ve doğal olarak solar.</p>"
+    },
+    "Diamond Pendant": {
+        "name": "Pırlanta Kolye",
+        "description": "İnce altın zincir üzerinde 0,25 karat parlak yuvarlak pırlanta kolye seti.",
+        "content": "<p>Taş GIA G/SI1 sertifikalıdır. Sağlam 14 ayar sarı altın çerçeve ve 18 inç'e kadar ayarlanabilir halkalı 16 inç kutu kayış.</p>"
+    },
+    "Dining Table Oak": {
+        "name": "Yemek Masası Meşe",
+        "description": "Genişletilmiş yemek masası masif beyaz meşeden yapılmış olup, ortasında uzatılmış bir yaprak bulunan, altı ila on kişi kapasitelidir.",
+        "content": "<p>Beşik tarzı bacaklar bol miktarda rahat bacak alanı sağlar. Elle cilalanan yüzey doğal yağlarla işlenmiştir; her yıl yenilenmesi kolaydır.</p>"
+    },
+    "Dinosaur Theme Mug": {
+        "name": "Dinozor Temalı Kupa",
+        "description": "Komik bir dinozor görseli ve kişiselleştirilmiş ismin basıldığı parlak seramik kupa.",
+        "content": "<p>Kapasite 11 ons. Mikrodalga fırınlar ve bulaşık makineleri için güvenlidir. Günlük kullanıma dayanacak fotoğraf kalitesine sahip baskılar alın.</p>"
+    },
+    "Dog Chew Toy": {
+        "name": "Köpek Çiğneme Oyuncak",
+        "description": "Süper dayanıklı kauçuk çiğneme parçaları sıçrayabilir, suda yüzebilir ve köpeklerin güçlü çiğnemelerine dayanabilir.",
+        "content": "<p>Doğal kauçuk toksik değildir. Makinede yıkamak güvenlidir. İçi boş çekirdek atıştırmalıklar veya fıstık ezmesi ile doldurulabilir. Küçükten XL'ye kadar bedenleri mevcuttur.</p>"
+    },
+    "Dog Harness": {
+        "name": "Köpek Koşum Takımı",
+        "description": "Yansıtıcı süslemeli ve iki kayış bağlantı noktasına sahip, yastıklı geri tepme önleyici koşum takımı.",
+        "content": "<p>Nefes alabilen file yastık. Rahat bir uyum için beş noktalı ayar. XS-XL bedenleri mevcuttur. Soğuk suyla elde yıkayın.</p>"
+    },
+    "Dragon Fruit": {
+        "name": "Ejderha Meyvesi",
+        "description": "Hafif bir tatlılığa ve gevrek bir dokuya sahip parlak pembe ejderha meyvesi.",
+        "content": "<p>Sertifikalı organik yetiştiricilerden mükemmel olgunlukta elle seçilmiştir. C vitamini ve antioksidanlar açısından zengindir. Meyve ile satılır.</p>"
+    },
+    "DS02 Monitor Stand": {
+        "name": "DS02 Monitör Standı",
+        "description": "Entegre USB-C hub'ı ve kablosuz şarj pedi bulunan alüminyum ekran standı.",
+        "content": "<p>Ekranı masadan 12 cm yukarı kaldırın. Üç adet USB-A bağlantı noktası, bir adet USB-C PD bağlantı noktası ve 15W Qi kablosuz şarj yüzeyi.</p>"
+    },
+    "Egg-Crate Wall Art": {
+        "name": "Yumurta Sandığı Duvar Sanatı",
+        "description": "Arşiv kalitesinde mat kağıt üzerine eğlenceli yumurta tepsisi motifli göz alıcı duvar sanatı.",
+        "content": "<p>Arşiv kalitesinde mürekkep. 12x18 ve 18x24 ebatlarında mevcuttur. FSC sertifikası. Çerçeve ayrı satılır.</p>"
+    },
+    "Element Nightstand": {
+        "name": "Eleman Komidin",
+        "description": "Pürüzsüz sürgülü raylı ve pirinç kulplu, iki çekmeceli ceviz komodin.",
+        "content": "<p>Tam masif ceviz ağacı, elle ovulmuş yüzey ve geçmeli çekmeceler. Onlarca yıl boyunca rengi derinleştirmek için tasarlandı.</p>"
+    },
+    "Elsa Drop Earrings": {
+        "name": "Elsa Damla Küpe",
+        "description": "Çok parlak kıvrımlı, oymalı 14 ayar altın damla küpe.",
+        "content": "<p>Toka hipoalerjeniktir. Damlalar 1 inç uzunluğundadır. Her gün giyilebilecek kadar hafif. Floransa'daki şirket içi atölye tarafından tasarlandı.</p>"
+    },
+    "Embossed Wallet": {
+        "name": "Kabartmalı Cüzdan",
+        "description": "Narin kabartmalı monogram desenli, altı kart bölmeli ve bir bozuk para bölmeli, ikiye katlanmış deri cüzdan.",
+        "content": "<p>Bitkisel deri. RFID hırsızlığa karşı astar. Elle boyanmış kenarlar ve güçlendirilmiş baskı noktaları.</p>"
+    },
+    "Engraved Coaster Set": {
+        "name": "İşlemeli Bardak Altlığı Seti",
+        "description": "İsimler, tarihler veya özel çizimlerle lazerle kazınmış dört bambu bardak altlığı seti.",
+        "content": "<p>Bambu FSC sertifikalıdır. Mantar taban yüzeyi korur. Hediyeye hazır kraft kağıt hediye kutusunda paketlenmiştir.</p>"
+    },
+    "Epipremnum Aureum": {
+        "name": "Epipremnum Aureum",
+        "description": "Tırmanan sarı betel cevizi — bakımı kolay, düşük ışığa ve yoğun programlara karşı toleranslıdır.",
+        "content": "<p>14 cm'lik fidanlık saksısında teslim edilir. Güçlü dolaylı ışığı tercih eder. Toprağın üstteki 2 cm'lik tabakası kuruyunca sulayın.</p>"
+    },
+    "Ergonomic Mouse Pro": {
+        "name": "Ergonomik Fare Pro",
+        "description": "Ayarlanabilir DPI ve sessiz tıklama özelliğine sahip ergonomik dikey fare — uzun çalışma seansları için rahat.",
+        "content": "<p>USB-C 2,4 GHz kablosuz ve Bluetooth. Pil 70 gün. Şarj edilebilir, gün boyu rahat.</p>"
+    },
+    "Eternity Band": {
+        "name": "Sonsuzluk Bandı",
+        "description": "14 ayar sarı altından toplam ağırlığı 1,0 karat olan pırlantalı yivli sonsuzluk yüzüğü.",
+        "content": "<p>Yüzüğün gövdesinin etrafına sürekli olarak parlak yuvarlak elmaslar monte edilmiştir. Renk F/G, saflık VS. 2,5 mm genişliğinde versiyon. Boyutu siparişe göre ayarlayın.</p>"
+    },
+    "Expose Side Table": {
+        "name": "Yan Sehpayı Açığa Çıkarın",
+        "description": "Traverten üstlü ve toz boyalı çelik ayaklı, heykelsi yan sehpa.",
+        "content": "<p>Her traverten levha benzersizdir — doğal taş dokusu ve hafif renk farklılıkları ürünün ayırt edici özelliğidir.</p>"
+    },
+    "Family Tote Bag": {
+        "name": "Aile Çantası",
+        "description": "Baş harfleri veya özel aile fotoğrafı baskılı, dayanıklı 12 ons pamuklu çanta.",
+        "content": "<p>Çanta askısı güçlendirilmiştir ve makinede yıkanabilir. Plaj çantaları, alışveriş çantaları veya günlük çantalar için idealdir.</p>"
+    },
+    "Fiddle Leaf Fig": {
+        "name": "Keman Yaprağı İncir",
+        "description": "Geniş, keman şeklindeki yapraklarıyla heykelsi Singapur badem ağacı - gerçek bir vurgu ağacı.",
+        "content": "<p>24 cm'lik fidanlık saksısında teslim edilir. Güçlü, sabit dolaylı ışığı tercih eder. Taslaklardan ve aşırı sulamadan kaçının.</p>"
+    },
+    "Foam Roller Pro": {
+        "name": "Köpük Rulo Pro",
+        "description": "Derin doku çalışmaları için pürüzlü yüzeye sahip 24 inç uzunluğunda yüksek yoğunluklu köpük rulo.",
+        "content": "<p>EVA yapısı defalarca yoğun kullanımla formunu korur. Dörtlü kasları, kalça kaslarını, IT bandını ve sırtın üst kısmını çalıştırır.</p>"
+    },
+    "Footrest Adjustable": {
+        "name": "Ayaklık Ayarlanabilir",
+        "description": "Kaymayı önleyici yüzeye ve on yükseklik ayarına sahip, ergonomik, eğilebilir ayak dayanağı.",
+        "content": "<p>Herhangi bir masada sırtın alt kısmına uygulanan baskıyı azaltın. Kullanılmadığı zaman düzgün bir şekilde saklayın. Uzun çalışma vardiyaları sırasında doğal duruşu destekler.</p>"
+    },
+    "Frigg Moon Natural Rubber Baby Pacifier Gentle Comfort": {
+        "name": "Frigg Moon Doğal Kauçuk Bebek Emziği Nazik Konfor",
+        "description": "Bebeğinizin hassas cildi için yulaf özü ve shea yağı içeren kokusuz losyon.",
+        "content": "<p>Dermatolojik olarak test edilmiştir. Paraben, sülfat veya sentetik koku içermez. Pompalı şişe 200ml.</p>"
+    },
+    "Funnel-neck wool jacket": {
+        "name": "Huni yakalı yün ceket",
+        "description": "Dik yakalı, çıtçıtlı patletli, tam fermuarlı kısa yün ceket."
+    },
+    "Garment-washed linen overshirt": {
+        "name": "Yıkanmış keten ince gömlek",
+        "description": "Temiz yakalı ve deniz kabuğu düğmeli, tişört üzerine giyilebilecek boyutta, rahat kesim keten bir ceket."
+    },
+    "Gold Tennis Bracelet": {
+        "name": "Altın Tenis Bilekliği",
+        "description": "14 ayar beyaz altın, 1,5 karat pırlantalı klasik tenis bilekliği.",
+        "content": "<p>Parlak elle ayarlanmış yuvarlak elmas, F/G rengi, VS berraklığı. Çift kilitleme emniyet kilidi. Boyut 7 inç, yeniden boyutlandırma hizmeti mevcut.</p>"
+    },
+    "Hammer Drill 18V": {
+        "name": "Darbeli Matkap 18V",
+        "description": "Üç mod seçicili ve LED aydınlatmalı akülü fırçasız darbeli matkap.",
+        "content": "<p>1/2 inç'e kadar betonu vidalayın, delin ve darbeli delin. İki adet 4Ah akü, hızlı şarj cihazı ve yükleniciler için özel taşıma çantasıyla birlikte gelir.</p>"
+    },
+    "Hammock Cat Tower Grey": {
+        "name": "Hamak Kedi Kulesi Gri",
+        "description": "Sisal halatlı tırmalama direği ve konforlu dinlenme alanı bulunan üç katmanlı kedi tırmanma direği. Yumuşak kadife hamak ve çıkarılabilir minder ile masif çamdan yapılmıştır.",
+        "content": "<p>Yumuşak kadife kumaşla kaplanmış yonga levha göbeği. Değiştirilebilir sisal sütunlu 110 cm yüksekliğinde. Birlikte verilen aletlerle kolay montaj.</p>"
+    },
+    "Heart Photo Frame": {
+        "name": "Kalp Fotoğraf Çerçevesi",
+        "description": "En sevdiğiniz çift fotoğrafının yumuşak mat yüzeye basıldığı kalp şeklinde ahşap fotoğraf çerçevesi.",
+        "content": "<p>Meşe ağacı FSC sertifikalıdır. Ayakta yerleştirilebilir veya duvara monte edilebilir. Fotoğraf baskı alanı 5x5.</p>"
+    },
+    "Herbal Recovery Tea": {
+        "name": "Bitkisel İyileştirme Çayı",
+        "description": "Gevşek yaprak formundaki papatya, kediotu ve melisa – yatmadan önce rahatlamak için her gece bir fincan çay.",
+        "content": "<p>Organik olarak yetiştirilmiş ve elle karıştırılmıştır. 50 g'lık yeniden kapatılabilir tenekeden 25 porsiyon elde edilir. Doğal olarak kafeinsizdir.</p>"
+    },
+    "High neck midi wool coat": {
+        "name": "Yüksek yaka midi yün kaban",
+        "description": "Yumuşak deve rengi yüksek yakalı yün palto — huni yaka, soğuk ve rüzgarlı yolculuklar için fermuarla kapatılabilir.",
+        "content": "<p>Geri dönüştürülmüş polyester astarlı yumuşak fırçalanmış yün melton kumaş. Gizli iki yönlü kilit. Kalçada tam şerit cepler.</p>"
+    },
+    "Hoya Carnosa": {
+        "name": "Hoya Karnosa",
+        "description": "Mumsu yapraklı selvi ağacı tırmanıyor ve hasta bakıcılarını hoş kokulu çiçek salkımlarıyla ödüllendiriyor.",
+        "content": "<p>12 cm'lik fidanlık saksısında teslim edilir. Parlak ışık, dar saksı, az sulama. Sulamalar arasında kurumasını bekleyin.</p>"
+    },
+    "Hydrating Serum": {
+        "name": "Nemlendirici Serum",
+        "description": "Hyaluronik asit serumu, temas halinde ince kırışıklıkların dolgunlaştırılmasına, nemlendirilmesine ve yumuşatılmasına yardımcı olur.",
+        "content": "<p>Beş molekül ağırlıklı hyaluronik asit. Tatlandırıcı yok. 30 ml'lik vakum pompalı şişe.</p>"
+    },
+    "HyperOne Gen 3 Keyboard": {
+        "name": "HyperOne 3. Nesil Klavye",
+        "description": "Mekanik klavyenin %75'i, PBT tuş başlıklarına sahip çalışırken değiştirilebilir anahtarlara ve doğrusal dokunsal anahtarlara sahip olabilir.",
+        "content": "<p>USB-C ve çok noktalı Bluetooth. Anahtar başına RGB. Alüminyum taban plakası. Mac ve Windows için Düzen.</p>"
+    },
+    "Imola Armchair": {
+        "name": "Imola Koltuk",
+        "description": "Masif meşe ayaklı, buklet kumaşla kaplı, heykelsi dinlenme koltuğu.",
+        "content": "<p>FSC sertifikalı, yüksek elastik süngerli ve doğal kauçuk yastıklı meşe çerçeve. İnsanların iki kez bakmasını sağlayacak oturma odaları tasarımı.</p>"
+    },
+    "Impact Driver Set": {
+        "name": "Darbe Sürücü Seti",
+        "description": "Üç hız kontrollü ve 30 bit setli kompakt 18V darbeli tornavida.",
+        "content": "<p>1.800 inç-lb tork, ön delmeye gerek kalmadan büyük cıvataları ve vidaları yakalar. 1/4 inç altıgen klips ve kemer kancası içerir.</p>"
+    },
+    "iPhone 17 Pro Max": {
+        "name": "iPhone 17 Pro Max",
+        "description": "Titanyum çerçeveye, ProMotion ekrana ve profesyonel üçlü kamera kümesine sahip birinci sınıf akıllı telefon.",
+        "content": "<p>6,9\" Super Retina XDR ekran, A19 Pro çip ve 5x optik yakınlaştırma. Her yerden çekim yapmak, düzenlemek ve yayın yapmak için tasarlandı.</p>"
+    },
+    "King Platform Bed": {
+        "name": "Kral Platform Yatağı",
+        "description": "Keten başlıklı ve meşe çerçeveli alçak platform yatak.",
+        "content": "<p>Kakma yatak platformu, yaylı çerçeveye ihtiyaç duymadan her türlü yatağı destekler. Temizlik için çıkarılabilir nevresim.</p>"
+    },
+    "Laser Level": {
+        "name": "Lazer Seviyesi",
+        "description": "30 metre menzilli ve manyetik montajlı çapraz seviyeli lazer tesviye cihazı.",
+        "content": "<p>Gün ışığında kolay görüntüleme için yeşil diyotlu Sınıf II lazer. IP54 standardını karşılar, AA pillerle on saat çalışır.</p>"
+    },
+    "Leather Boots": {
+        "name": "Deri Çizme",
+        "description": "Yandan fermuarlı, katlı blok topuklu, orta sivri burunlu alçak bot.",
+        "content": "<p>Pürüzsüz dana derisi gövde, deri iç taban ve kaymaz Vibram kauçuk taban. Portekiz'de elle tamamlandı.</p>"
+    },
+    "Leather Crossbody Bag": {
+        "name": "Deri Çapraz Çanta",
+        "description": "Ayarlanabilir askılı, altın rengi metal tokalı, üç kart bölmeli, pürüzsüz deri çapraz askılı çanta.",
+        "content": "<p>İtalyan sırçalı deri. Elle boyanmış çantanın kenarı. Hem gündelik hem de resmi tarzlara uygundur.</p>"
+    },
+    "Leather shopper bag with stitching": {
+        "name": "Dikişli deri alışveriş çantası",
+        "description": "Kontrast dikişli ve güçlendirilmiş köşeli, geniş deri alışveriş çantası.",
+        "content": "<p>Bitkisel tabaklanmış sırçalı deri zamanla sıcak bir patina geliştirir. Ağız mıknatıslı kapama ile açılır. Çantanın iç kısmı süet astarlı olup iki yan cepli ve bir fermuarlı ceplidir.</p>"
+    },
+    "LED Desk Lamp Smart": {
+        "name": "LED Masa Lambası Akıllı",
+        "description": "Sirkadiyen ritim renk ayarı, uygulama kontrolü ve kablosuz şarj yuvasıyla gözlerinizi rahatlatan LED masa lambası.",
+        "content": "<p>2700K-6500K'yı ayarlayın. Masa üstü yüksekliğinde 1500 lüks. Tabanda yerleşik 10W Qi kablosuz şarj.</p>"
+    },
+    "LED Headlight Bulb": {
+        "name": "LED Far Ampulü",
+        "description": "Sessiz soğutma fanına sahip 10.000 lümenlik dönüştürülebilir LED ampul çifti.",
+        "content": "<p>Gün ışığı renk sıcaklığı 6500K, tak ve çalıştır kurulumu, çoğu araçta CANBus uyumludur. Ömrü 50.000 saat.</p>"
+    },
+    "Light Therapy Lamp": {
+        "name": "Işık Terapi Lambası",
+        "description": "Ayarlanabilir sıcaklığa ve dahili 30 dakikalık zamanlayıcıya sahip 10.000 lüks tam spektrumlu masa lambası.",
+        "content": "<p>Işığın az olduğu aylarda sirkadiyen ritmi düzenlemeye yardımcı olur. Filtrelenmiş UV ışınları. Kompakt stand ve ayarlanabilir eğim açısı.</p>"
+    },
+    "linen slim-fit shirt": {
+        "name": "keten dar kesim gömlek",
+        "description": "Hem ofis hem de hafta sonu için uygun, yuvarlak kenarlı, yıkanmış ince keten gömlek.",
+        "content": "<p>Avrupa keteni Portekiz'de dokunur ve tamamlanır. Taş düğmesi. Hareketi kısıtlamadan vücuda orta derecede sarılmak.</p>"
+    },
+    "Link Necklace Gold": {
+        "name": "Bağlantılı Kolye Altın",
+        "description": "14 ayar sarı altın cilalı ataç stili bağlantı kolye, 18 inç uzunluğunda.",
+        "content": "<p>Som 14 ayar altın zincir, karides asma kilit. Daha kısa bir kolye ucuyla güzel bir şekilde katmanlı olarak giyin veya açık bir yakanın üzerine tek başına giyin.</p>"
+    },
+    "Little Dine Wooden High Chair Elegant Comfort for Tiny Foodies": {
+        "name": "Little Dine Ahşap Mama Sandalyesi Minik Yemek Meraklıları için Zarif Konfor",
+        "description": "Küçük kollar için mükemmel boyutta, el örgüsü organik pamuktan doldurulmuş hayvan.",
+        "content": "<p>Geri dönüştürülmüş anti-alerjik bağırsak. İşlemeli yüz detayı — küçük detaylar yok. Yüzey silinebilir.</p>"
+    },
+    "Long Leaf Shaped Earrings": {
+        "name": "Uzun Yaprak Şekilli Küpe",
+        "description": "Yaprak şeklindeki damla küpeler parlak altın kaplamayla şekillendirilmiştir.",
+        "content": "<p>Anti-alerji tokalı hafif döküm bronz. El işi bitirme. Kadife çantasıyla birlikte gelir.</p>"
+    },
+    "Lumbar Support Cushion": {
+        "name": "Bel Desteği Yastığı",
+        "description": "Nefes alabilen file kapaklı ve ayarlanabilir askılı, hafızalı köpüklü bel destek yastığı.",
+        "content": "<p>Tüm sandalye türlerinde doğal olarak düz bir omurgayı teşvik eder. Çıkarılabilir kapak makinede soğuk suda yıkanabilir. Her türlü ofis, araba veya kanepeye uygundur.</p>"
+    },
+    "Lyocell wrap top": {
+        "name": "Lyocell anvelop üst",
+        "description": "Yumuşak dökümlü ve doğal bel bantlı, havalı liyosel anvelop üst - ofisten akşam yemeği partisine kadar çok yönlü.",
+        "content": "<p>%100 liyosel TENCEL™'den kesilip dikilen anvelop gömlek, keten kadar havadar ve ipek kadar yumuşak perdelere sahip. Derin V yaka ve yan kravat her bele kolayca uyum sağlar.</p>"
+    },
+    "Madrid": {
+        "name": "Madrid",
+        "description": "Üç kademeli motora ve hafızalı yükseklik ayarlarına sahip pürüzsüz elektrikli kaldırma masası.",
+        "content": "<p>Çarpışma önleme sensörü ve dört programlanabilir yükseklik ayarı. Masif bambu masa tablası, 60 x 30 inç. 220 pound'a kadar yükleri kaldırabilir.</p>"
+    },
+    "Magnetic Phone Stand": {
+        "name": "Manyetik Telefon Standı",
+        "description": "Ağır hizmet tipi tabana ve eğim açısı ayarına sahip MagSafe uyumlu alüminyum montaj parçası.",
+        "content": "<p>FaceTime, tarifleri görüntülemek veya şarj etmek için telefonunuzu mükemmel açıda tutar. Malzeme alüminyum ve silikon.</p>"
+    },
+    "Manuka Honey": {
+        "name": "Manuka Balı",
+        "description": "Ham, pastörize edilmemiş Manuka balı, doğal enzim aktivitesine göre derecelendirilir.",
+        "content": "<p>Yeni Zelanda'daki uzak arı çiftliklerinden yararlanıldı. UMF 10+ sertifikalı. Cam kavanoz 250g.</p>"
+    },
+    "Men Casual Shoes with PU Upper": {
+        "name": "PU Üstlü Erkek Günlük Ayakkabı",
+        "description": "Yanal destekli, yastıklı orta ayaklı ve balıksırtı dış tabanlı, tenisten ilham alan kort ayakkabısı.",
+        "content": "<p>TPU kaplamalı sentetik deri gövde. Çevreleyen orta taban, hızlı yanal hareketlerle stabilite sağlar. Çok adımlı dış taban.</p>"
+    },
+    "Men Duramo": {
+        "name": "Erkekler Duramo",
+        "description": "File süet sayalı ve yastıklı topuklu klasik koşu ayakkabısı silueti.",
+        "content": "<p>Nefes alabilen file taban üzerinde süet katmanlar. Açık topuk hava bölmesine sahip EVA orta taban. Her şeyi başlatan klasik yaşam tarzı ayakkabısı.</p>"
+    },
+    "Men Flat Low": {
+        "name": "Erkekler Düz Düşük",
+        "description": "Yastıklı iç tabanlı ve esnek kauçuk dış tabanlı, deri yürüyüş ayakkabısı.",
+        "content": "<p>Bileklerde elastik yamalar bulunan yumuşak deri gövde. Ortotik kullanım için çıkarılabilir iç taban. Bütün gün çalışmaya uygun ayakkabılar.</p>"
+    },
+    "Men Flat Sneakers": {
+        "name": "Erkek Düz Spor Ayakkabı",
+        "description": "Örme sayalı, köpük orta tabanlı ve bağcıksız tasarımlı çok yönlü spor ayakkabı.",
+        "content": "<p>Elastik örgü gövde ayağı çorap gibi sarar. Kalıplanmış EVA orta taban. Seyahat günleri için ayakkabılar — güvenliği aşması kolay ve yürüyüş için harika.</p>"
+    },
+    "Men Panelled Athleisure Shoes": {
+        "name": "Erkek Panelli Spor Ayakkabı",
+        "description": "Uyumlu dikişlere sahip, beyaz deriden yapılmış, klasik dekolteli kort ayakkabısı.",
+        "content": "<p>Pürüzsüz deri saya, dolgulu yaka ve balıksırtı kauçuk dış taban. Her şeye uyum sağlayan minimalist beyaz ayakkabılar.</p>"
+    },
+    "Men Sports Shoes with Mesh upper": {
+        "name": "File sayalı Erkek Spor Ayakkabı",
+        "description": "Yastıklı orta tabanlı ve dayanıklı kauçuk dış tabanlı, nefes alabilen file spor ayakkabı.",
+        "content": "<p>Teknik file saya, EVA orta taban ve aşınmaya karşı son derece dayanıklı dış taban. Standart ölçü formu. Günlük egzersizler ve makinede koşmak için uygundur.</p>"
+    },
+    "Men's Running JF190.1 Grip White": {
+        "name": "Erkek Koşu JF190.1 Grip Beyaz",
+        "description": "Ayakkabı, dayanıklı köpük orta tabanı ve temiz beyaz, nefes alabilen file üst kısmıyla hafifliğe odaklanıyor.",
+        "content": "<p>Günlük sürüş için tasarlanan JF190.1, konfor ve enerji geri dönüşünü dengeler. Geri dönüştürülmüş plastikten yapılmış gövde, 8mm ofset, asfalt yollara ve düz yollara uygun.</p>"
+    },
+    "Men's Sports T-Shirt - Dry Brown": {
+        "name": "Erkek Spor Tişört - Kuru Kahverengi",
+        "description": "Ter tutmayan kuru kahverengi spor tişört - yanları file panelli, çabuk kuruyan dokuma kumaş.",
+        "content": "<p>Hafif polyester karışımı, uzun setlerde serin kalmanızı sağlar. Yassı dikişler sürtünmeyi azaltır ve ao dai'nin etek kısmı her tekrarda aynı kalır.</p>"
+    },
+    "Merino Wool Knit Booties with Drawstring – Snug Comfort for Newborns": {
+        "name": "Merinos Yünü Büzgülü Örgü Patik – Yeni Doğanlar İçin Rahat Rahatlık",
+        "description": "Yumuşak merinos yünü ayakkabılar minik ayakları ısıya neden olmadan sıcak tutar.",
+        "content": "<p>Elastik yakalı doğal nefes alabilen merinos yünü astar. Makinede hassas programda yıkanabilir. 0-12 ay arası bedenler.</p>"
+    },
+    "MG20 Wireless Gaming": {
+        "name": "MG20 Kablosuz Oyun",
+        "description": "İki ses kaynağını karıştırma özelliğine ve çıkarılabilir bir mikrofona sahip, düşük gecikmeli kablosuz oyun kulaklığı.",
+        "content": "<p>2.4GHz Çok noktalı Bluetooth'lu USB alıcısı. THX Uzaysal Ses. 22 saat pil ömrü, USB-C hızlı şarj.</p>"
+    },
+    "MH40 Wireless Over-Ear": {
+        "name": "MH40 Kablosuz Kulak Üstü",
+        "description": "Elle dikilmiş deriye ve 30 saatlik pil ömrüne sahip klasik tarzda kablosuz kulak üstü kulaklıklar.",
+        "content": "<p>40mm Berilyum hoparlör, USB-C hızlı şarj ve alüminyum çerçeve. Uzun süre dayanacak şekilde tasarlanmış, günlük kullanıma yönelik birinci sınıf bir kulaklık.</p>"
+    },
+    "Mindfulness Journal": {
+        "name": "Farkındalık Günlüğü",
+        "description": "Dergide şükran, derinlemesine düşünme ve niyet belirlemeye yönelik günlük öneriler içeren 12 haftalık bir rehber bulunmaktadır.",
+        "content": "<p>FSC sertifikasyon sertifikası. Keten kaplı ciltli. Alışkanlık izleme tablosu, nefes egzersizleri ve haftalık incelemeyi içerir.</p>"
+    },
+    "Mini Crossbody": {
+        "name": "Mini Çapraz Askı",
+        "description": "Zincir askılı, altın rengi metal tokalı küçük deri çapraz askılı çanta.",
+        "content": "<p>Telefonu, kartları ve ruju tutabilir. Kayış 22 ila 24 inç arasında ayarlanır. Pamuklu kumaş astarı delin.</p>"
+    },
+    "Mini Sue Crossbody Bag": {
+        "name": "Mini Sue Çapraz Çanta",
+        "description": "Ayarlanabilir askılı, altın rengi metal tokalı, üç kart bölmeli, pürüzsüz deri çapraz askılı çanta.",
+        "content": "<p>İtalyan sırçalı deri. Elle boyanmış çantanın kenarı. Hem gündelik hem de resmi tarzlara uygundur.</p>"
+    },
+    "Modular Storage Cube": {
+        "name": "Modüler Depolama Küpü",
+        "description": "İsteğe bağlı açılır kapılı, masif dişbudak ağacından istiflenebilir depolama küpü.",
+        "content": "<p>Tek bir ünite olarak veya raflara istiflenerek yapılandırın — modüler montaj, sistemin alanınıza göre genişlemesine olanak tanır.</p>"
+    },
+    "Monstera Deliciosa": {
+        "name": "Monstera Deliciosa",
+        "description": "İkonik loblu yapraklarıyla Güney Amerika betel ağacı her oda için etkileyici bir vurgu yaratır.",
+        "content": "<p>17 cm'lik fidanlık saksısında teslim edilir. Güçlü dolaylı ışık. Toprak kuruyunca iyice sulayın, ardından tamamen boşaltın.</p>"
+    },
+    "Mood Support Mushroom Blend": {
+        "name": "Ruh Hali Destekleyici Mantar Karışımı",
+        "description": "Fonksiyonel mantar kompleksi (aslan yelesi, reishi ve kordiseps) bilişi destekler.",
+        "content": "<p>Organik meyve gövdelerinden çift ekstrakt. Porsiyon başına 1500 mg. Kahve, çay veya smoothie'lere karıştırın.</p>"
+    },
+    "MUSHIE Frigg Baby's First Pacifier Floral Heart | Kido Bebe": {
+        "name": "MUSHIE Frigg Bebeğin İlk Emziği Çiçekli Kalp | Kido Bebe",
+        "description": "Katı tıbbi sınıf silikon emzikler, doğal bir mandalı destekleyecek şekilde şekillendirilmiştir.",
+        "content": "<p>BPA, BPS, PVC ve ftalat içermez. Simetrik diş şekli. Kaynatılarak sterilize edilebilir ve bulaşık makinesinde yıkanabilir.</p>"
+    },
+    "MW75 Active Noise Cancelling": {
+        "name": "MW75 Aktif Gürültü Engelleme",
+        "description": "Aktif gürültü engelleme, dört mikrofonla akıllıca uyum sağlar ve kafayı algıladığında otomatik olarak duraklar; hareket etme ve odaklanma için idealdir.",
+        "content": "<p>Koyun derisi kulak yastıkları, safir cam dokunmatik panel ve yüksek çözünürlüklü aptX Uyarlanabilir desteği.</p>"
+    },
+    "NKD High Waisted Shorts": {
+        "name": "NKD Yüksek Bel Şort",
+        "description": "Hız, konfor ve günlük hareket için tasarlandı."
+    },
+    "Organic Turmeric Powder": {
+        "name": "Organik Zerdeçal Tozu",
+        "description": "Güneşte kurutulmuş Hint zerdeçal, ince, derin pigmentli bir toz haline getirilir.",
+        "content": "<p>Kurkumin açısından zengindir. Emilimi arttırmak için karabiber ile birleştirin. 100 gr cam kavanoz ve ölçü kaşığı.</p>"
+    },
+    "Origins": {
+        "name": "Kökenler",
+        "description": "Origins Ginger Burst enerji verici botaniklerle duş ve el yıkama.",
+        "content": "<p>Zencefil, narenciye kabuğu ve aloe vera içeren sülfat içermeyen formül. 250ml pompalı şişe. Günlük kullanıma uygundur.</p>"
+    },
+    "Oval shoulder bag": {
+        "name": "Oval omuz çantası",
+        "description": "İnce deri askılı kompakt oval omuz çantası; telefon, cüzdan ve kişisel eşyalar için uygundur.",
+        "content": "<p>Pürüzsüz Nappa deri ve parlak altın tonunda metal toka. Ayarlanabilir kayış. Cep, kart yuvası bulunan mikro süet ile kaplıdır.</p>"
+    },
+    "Oversized poplin button-up shirt": {
+        "name": "Büyük beden poplin düğmeli gömlek",
+        "description": "Oversize kesimli, düşük omuz dikişli, etek ucu kıvrımlı yumuşak pembe poplin gömlek."
+    },
+    "Paris": {
+        "name": "Paris",
+        "description": "Ayarlanabilir bel desteği ve 4D kol dayanağı bulunan, file arkalıklı ergonomik ergonomik sandalye.",
+        "content": "<p>Senkronik yatma mekanizması, nefes alabilen file sırt ve yedi ayar noktası. 300 pound'a kadar taşıyabilir ve tamamen monte edilmiş olarak gönderilir.</p>"
+    },
+    "Pearl Drop Earrings": {
+        "name": "İnci Damla Küpe",
+        "description": "14k altın kaplama pimli ve esnek bağlantılı, elle takılan tatlı su incisi damla küpe.",
+        "content": "<p>8-9mm AA sınıfı inci. 1,5 inç uzunluğunda damlacık. Hem günlük hem de resmi tarzlara uygundur. Kadife çantası ve temizleme beziyle birlikte gelir.</p>"
+    },
+    "Pearl Necklace": {
+        "name": "İnci Kolye",
+        "description": "14 ayar altın kaplama tokalı ve 18 inç uzunluğunda tatlı su incisi kolye.",
+        "content": "<p>Her incinin arasına elle bir düğüm atın. İncilerin ortalama boyutu 7-8 mm'dir. Kadife çanta ve bakım talimatları kartıyla birlikte gelir.</p>"
+    },
+    "Performance Oil Filter": {
+        "name": "Performans Yağ Filtresi",
+        "description": "Uzun yağ değişim aralıklarına uygun, yüksek akışlı sentetik çekirdek yağ filtresi.",
+        "content": "<p>Geri akış önleyici valf ve silikon conta, soğuk çalıştırma sırasında koruma sağlar. Sentetik ve konvansiyonel yağlarla uyumludur.</p>"
+    },
+    "Personalized Pillow": {
+        "name": "Kişiye Özel Yastık",
+        "description": "Her iki tarafı da yumuşak olan, görselinizin veya tasarımınızın basıldığı konforlu kırlentler.",
+        "content": "<p>16x16 içi tüy dolgulu polyester kabuk. Çıkarılabilir ve makinede yıkanabilir.</p>"
+    },
+    "Pet Portrait Print": {
+        "name": "Evcil Hayvan Portresi Baskısı",
+        "description": "Evcil hayvanınızın portresi elle çizilmiş, arşiv kalitesinde mat kağıda basılmıştır.",
+        "content": "<p>Herhangi bir fotoğrafı gönderin, sanatçılarımız bunu stilize edilmiş bir portreye dönüştürsün. 8x10 ve 16x20 ebatlarında mevcuttur.</p>"
+    },
+    "Pet Shampoo": {
+        "name": "Evcil Hayvan Şampuanı",
+        "description": "Yulaf ezmesi ve aloe vera duş jeli, doğal yağları soymadan temizler.",
+        "content": "<p>Köpekler ve kediler için pH'ı dengeler. Sabun içermez. Hindistan cevizinden elde edilen yüzey aktif madde. 500 ml'lik şişe. Hayvanlar üzerinde test edilmemiştir.</p>"
+    },
+    "Photo Book Mini": {
+        "name": "Fotoğraf Kitabı Mini",
+        "description": "Kompakt 5x7 ciltli fotoğraf albümü — geziler, düğünler veya yıl sonu kutlamaları için idealdir.",
+        "content": "<p>İsteğe bağlı 20-100 sayfa. Yüksek kaliteli kağıt mendil. Uzun, bozulmasız fotoğraf sayfaları için düz ciltleme.</p>"
+    },
+    "Photo Candle": {
+        "name": "Fotoğraf Mumu",
+        "description": "En sevdiğiniz fotoğrafla sarılmış buzlu cam kavanozlarda soya mumu içeren mumlar.",
+        "content": "<p>Yanma süresi 40 saat. Hafif veya kokusuz koku seçenekleri mevcuttur. Bir yıldönümü veya anma için mükemmel bir hediye.</p>"
+    },
+    "Pickleball Racket - Kuikma Open Blue": {
+        "name": "Pickleball Raketi - Kuikma Açık Mavi",
+        "description": "Grafit yüzeyli ve petek polimer çekirdekli, yarışmaya hazır turşu raketi.",
+        "content": "<p>USAPA onaylı, 8 oz oyun ağırlığı, terli koşullar için delikli yastıklı sap. Kontrollü ve gelişmiş oyun için harika.</p>"
+    },
+    "Pillow talk plump effect lip": {
+        "name": "Yastık konuşması dolgun efektli dudak",
+        "description": "Mat ruj, tüm cilt tonlarına uygun, hoş bir nude pembe tonuyla pürüzsüz bir yüzeye sahiptir.",
+        "content": "<p>E vitamini ve shea yağı içeren uzun ömürlü, nemlendirici formül. Ruj çekirdeği değiştirilebilir. Hayvanlar üzerinde test edilmemiştir ve vegandır.</p>"
+    },
+    "Poppy with Tablet": {
+        "name": "Tabletli Haşhaş",
+        "description": "Entegre yazı masası koluna ve şekillendirilmiş ergonomik koltuk minderine sahip taşınabilir eğitim koltuğu.",
+        "content": "<p>Gömme döner yazı masası, minderli ve çift tekerlekli şekilli sırtlık. İstifleme tasarımı, sınıflarda ve genel ofislerde depolama alanından tasarruf sağlar.</p>"
+    },
+    "Pothos Marble Queen": {
+        "name": "Pothos Mermer Kraliçesi",
+        "description": "Rengarenk yaprakları olan mermer kraliçe betel - kremsi beyaz ve yeşil yapraklar her vitrin rafını aydınlatır.",
+        "content": "<p>12 cm'lik fidanlık saksısında teslim edilir. Güçlü dolaylı ışık yaprakların karanlık kalmasını sağlar. Toprağın üst kısmı kuruduğunda sulayın.</p>"
+    },
+    "Power Steering Pump": {
+        "name": "Servo Direksiyon Pompası",
+        "description": "Yeniden üretilen hidrolik direksiyon pompaları OE standartlarına göre test edilir.",
+        "content": "<p>Yeni tank, kasnak ve conta setini içerir. 2 yıl sınırsız kilometre garantisi.</p>"
+    },
+    "Premium Cat Food": {
+        "name": "Premium Kedi Maması",
+        "description": "İlk maddesi gerçek somon olan ve taurin eklenmiş tahılsız kuru mama.",
+        "content": "<p>Yetişkin ev kedileri için formül. Minimum ham protein %38. Kullanışlı fermuarlı 2,5 kg'lık çanta. Yapay renklendirici veya koruyucu madde yok.</p>"
+    },
+    "Pro Earbuds Gen 4": {
+        "name": "Profesyonel Kulaklıklar 4. Nesil",
+        "description": "Uyarlanabilir aktif gürültü engelleme, uzamsal ses ve birlikte verilen şarj kutusuyla birlikte 30 saatlik toplam çalma süresi.",
+        "content": "<p>IPX4 standart ter direnci. Çift mikrofon, daha net aramalar için gürültüyü azaltır. USB-C ile ve kablosuz olarak şarj edin.</p>"
+    },
+    "Projector Headlights": {
+        "name": "Projektör Farları",
+        "description": "Sıralı tarama dönüş sinyallerine sahip bir çift tak ve çalıştır LED projektör farları.",
+        "content": "<p>LED projektör ışık kümesi, gündüz yanan ışık halkasıyla DOT standartlarını karşılar. Doğrudan takılan değiştirme, kabloyu değiştirmeye gerek yok.</p>"
+    },
+    "Quinoa Tri-Color": {
+        "name": "Kinoa Üç Renkli",
+        "description": "Üç renkli kinoa karışımı yıkanır ve pişirmeye hazır hale gelir; pul pul, protein açısından zengin bir alternatif.",
+        "content": "<p>And kooperatiflerinden beyaz, kırmızı ve siyah kinoa. 500 gr'lık paket. 15 dakika pişirin.</p>"
+    },
+    "RED TAPE Men Flat Sneakers": {
+        "name": "RED BANT Erkek Düz Spor Ayakkabı",
+        "description": "Yumuşak deri sayalı ve düşük kesimli, düz tabanlı yaşam tarzı spor ayakkabı.",
+        "content": "<p>Kabartmalı deri, süet topuk yaması ve düz kauçuk taban. Kot pantolon, chino ve pantolonlara uygundur.</p>"
+    },
+    "Resistance Bands Set": {
+        "name": "Direnç Bantları Seti",
+        "description": "Tutma yerleri, ayak bileği kayışları ve kapı ankrajlarından oluşan beş adet istiflenebilir direnç bandı seti.",
+        "content": "<p>150 lb'ye kadar direnç elde etmek için bantları birleştirin. Taşıma çantası ve basılı egzersiz talimatlarıyla birlikte gelir.</p>"
+    },
+    "Ribbed halter cami top": {
+        "name": "Fitilli askılı askılı üst",
+        "description": "Ayarlanabilir omuz askılı, kısaltılmış, bedene oturan etek kısmı olan, fitilli pamuklu askılı atlet."
+    },
+    "Safety Helmet": {
+        "name": "Emniyet Kaskı",
+        "description": "Baret, topuzlu ve çene kayışlı ayarlanabilir askı sistemiyle ANSI Z89 standardına uygundur.",
+        "content": "<p>HDPE kabuk UV ışınlarına karşı dayanıklı olup Sınıf 1 Sınıf C darbe dayanımı standartlarını ve elektrik tehlikelerini karşılar. Ter emici bir alın pediyle birlikte gelir.</p>"
+    },
+    "Set Of 2 3kg Hand Weights": {
+        "name": "2'li 3kg El Ağırlığı Seti",
+        "description": "Yuvarlanmayı önleyen altıgen ağırlıklara sahip 3 kg'lık vinil kaplı dambıl çifti. İki eşleşen parçadan oluşan setler halinde satılır.",
+        "content": "<p>Rahat kavrama sapı, HIIT, şekillendirme ve toparlanma egzersizleri için idealdir. Altıgen dambıl başlığı, ağırlığı her türlü düz yüzeyde sabit tutar.</p>"
+    },
+    "Shearling-Suede Tote Bag": {
+        "name": "Kürk-Süet Tote Çanta",
+        "description": "Üstten saplı, geniş cepli, polar şeritli, yumuşak süet tote çanta.",
+        "content": "<p>Sıcak tutan polar yakalı, yumuşak süet çanta gövdesi. Manyetik düğme kilidi. 13 inçlik bir dizüstü bilgisayara ve günlük eşyalara uygundur.</p>"
+    },
+    "Shopping Bag": {
+        "name": "Alışveriş Çantası",
+        "description": "Üstten çift saplı, astarsız, şekilli deri alışveriş çantası.",
+        "content": "<p>Tam sırçalı İtalyan derisi. 13 inçlik bir dizüstü bilgisayar, su şişesi ve günlük eşyaları barındırabilir. Pirinç metal tokalar zamanla renklenir.</p>"
+    },
+    "Shoulder Bag": {
+        "name": "Omuz çantası",
+        "description": "Sırça deriden, mıknatıs kapamalı, yumuşak dökümlü omuz çantası.",
+        "content": "<p>İki şekilde takılabilen ayarlanabilir askı. İç fermuarlı bölme ve iki ek bölme. İspanya'da üretilmiştir.</p>"
+    },
+    "Shredded Coconut": {
+        "name": "Rendelenmiş Hindistan Cevizi",
+        "description": "Organik olarak yetiştirilen hindistancevizi ağaçlarından elde edilen, şekersiz, ince kıyılmış hindistan cevizi.",
+        "content": "<p>Sülfit veya ilave şeker içermez. Granola, fırınlama ve enerji topları için mükemmeldir. 250g açılıp kapanabilir torba.</p>"
+    },
+    "Silicone Fork and Spoon Set – Perfect for Self-Feeding Babies": {
+        "name": "Silikon Çatal ve Kaşık Seti – Kendi Kendine Beslenen Bebekler için Mükemmel",
+        "description": "Serin geceler için TOG 2,5'lu organik pamuklu uyku tulumu.",
+        "content": "<p>Dış katman GOTS sertifikalıdır ve anti-alerjik iç kısıma sahiptir. İki yönlü fermuar, bebek bezi değişikliklerini kolaylaştırır. 0-6, 6-18 ve 18-36 ay bedenleri.</p>"
+    },
+    "Silk Scarf": {
+        "name": "İpek Eşarp",
+        "description": "Baskılı botanik motifli, elle kıvrılmış ipek eşarp.",
+        "content": "<p>İpek dimi 90x90cm. Düşük etkili boyalarla makinede basılmıştır. Hediye olarak geri dönüştürülmüş kağıt torbayla birlikte gelir.</p>"
+    },
+    "Sleep Restore Magnesium Drink": {
+        "name": "Uyku Yenileyici Magnezyum İçeceği",
+        "description": "Papatya ve vişneli magnezyum glisinat; rahatlatıcı bir gece ritüeli.",
+        "content": "<p>Yatmadan 30 dakika önce ılık suya karıştırın. Porsiyon başına 200 mg kolayca emilebilen magnezyum. Kafein yok, bağımlılık yok.</p>"
+    },
+    "Small Nappa Leather Pouch With Button": {
+        "name": "Düğmeli Küçük Nappa Deri Kese",
+        "description": "Manyetik düğme kapatmalı ve ince kart yuvalı kompakt Nappa deri çanta.",
+        "content": "<p>Yumuşak nappa deri. Elle dikilmiş kenarlar. Kartları, nakit parayı ve telefonu tutabilir.</p>"
+    },
+    "Smart Lamp WiFi": {
+        "name": "Akıllı Lamba WiFi",
+        "description": "Wi-Fi akıllı ışık, 16 milyon renkle parlaklığı ayarlar ve beraberindeki uygulama aracılığıyla bir zamanlayıcı ayarlar.",
+        "content": "<p>Alexa ve Google Asistan ile çalışır. Ses ve uygulama kontrolü. Enerji tasarruflu LED ışıklar.</p>"
+    },
+    "Smart Speaker Mini": {
+        "name": "Akıllı Hoparlör Mini",
+        "description": "360 derece ses ve yerleşik sanal asistana sahip kompakt akıllı hoparlör.",
+        "content": "<p>Wi-Fi ve Bluetooth üzerinden çok odalı ses. Alexa, Google ve AirPlay 2'yi destekler. Dokunarak bağlanma eşleştirmesi.</p>"
+    },
+    "Snake Plant": {
+        "name": "Yılan Bitkisi",
+        "description": "Mimari yılan bitkisi ihmale rağmen iyi bir şekilde hayatta kalıyor; loş köşeler için mükemmel.",
+        "content": "<p>14 cm'lik fidanlık saksısında teslim edilir. Düşük ışığı tolere eder. Az miktarda sulayın — her 3-4 haftada bir yeterlidir.</p>"
+    },
+    "Sneakersy Niskie": {
+        "name": "Spor Ayakkabı Niskie",
+        "description": "Temiz deri sayalı, dolgulu yakalı ve minimal logolu düşük bilekli spor ayakkabı.",
+        "content": "<p>Sırçalı deri, köpük dil ve vulkanize kauçuk dış taban. Her güne uygun yaşam tarzı ayakkabılar — hem şık hem de sade giyinebileceğiniz bir çift.</p>"
+    },
+    "Soft Cotton Dribble Bibs 3 Pack – Gentle Protection for Little Messes": {
+        "name": "Yumuşak Pamuklu Dribble Önlükler 3'lü Paket - Küçük Sorunlar için Nazik Koruma",
+        "description": "Ayarlanabilir nikel içermeyen çıtçıtlı, üç adet organik pamuklu salya önlüğü seti.",
+        "content": "<p>Su geçirmez iç astarlı üç katmanlı emici çekirdek. Desenler OEKO-TEX sertifikalıdır. 3-24 ay arası uygundur.</p>"
+    },
+    "Solitaire Ring": {
+        "name": "Tektaş Yüzük",
+        "description": "Bıçak kenarlı saplı, 18 ayar beyaz altın, parlak 0,5 karat altı uçlu tek yuvarlak pırlanta yüzük.",
+        "content": "<p>GIA F/VS2 sertifikalı elmaslar. Sağlam 18 ayar beyaz altın üzerine monte edilmiş katedral stili. Ücretsiz yeniden boyutlandırma hizmetiyle 4-9 bedenleri mevcuttur.</p>"
+    },
+    "Spider Plant": {
+        "name": "Örümcek Bitkisi",
+        "description": "Orkide ağacı kıvrık yapraklarıyla, sarkık gövdesi boyunca büyüyen fidanlarıyla neşelidir.",
+        "content": "<p>12 cm'lik fidanlık saksısında teslim edilir. Güçlü dolaylı ışık. Eşit şekilde nemlendirir; ara sıra yaşanan kuraklık dönemlerine dayanıklıdır.</p>"
+    },
+    "Spirulina Tablets": {
+        "name": "Spirulina Tabletleri",
+        "description": "Mavi-yeşil algler, her gün mükemmel bir bitki bazlı protein kaynağı olan bağlayıcı içermeyen peletler halinde preslenir.",
+        "content": "<p>Laboratuvarda ağır metaller açısından test edilmiştir. Şişe başına 180 tablet. Yemeklerden önce 4-6 tablet su ile alınır.</p>"
+    },
+    "Square metallic frame sunglasses": {
+        "name": "Kare metalik çerçeveli güneş gözlüğü",
+        "description": "Elle parlatılmış asetat saplı, CR-39 lensli, kare metal çerçeveli güneş gözlüğü.",
+        "content": "<p>Hafif paslanmaz çelik yüzey. Polarize CR-39 lensler %100 UVA/UVB'yi engeller. Ayarlanabilir burun yastığı. Sert kılıf ve mikrofiber çantayla birlikte gelir.</p>"
+    },
+    "Steel Toe Boots": {
+        "name": "Çelik Burunlu Çizme",
+        "description": "Kompozit burunlu ve kaymaz tabanlı, su geçirmez deri güvenlik ayakkabıları.",
+        "content": "<p>ASTM F2413 standardını karşılar. On saatlik vardiyalar için konforlu çıkarılabilir taban astarı ve güçlendirilmiş ayak bileği.</p>"
+    },
+    "Stockholm Pendant": {
+        "name": "Stokholm Kolye",
+        "description": "El üfleme amber rengi camdan ve mat siyah metal tokadan yapılmış heykelsi sarkıt lamba.",
+        "content": "<p>Doğrudan kablolu kurulum, ayarlanabilir parlaklık ve tek başına veya yemek masasının üzerinde kümeler halinde kullanıldığında harika görünür.</p>"
+    },
+    "Studio Reference Pro": {
+        "name": "Stüdyo Referans Pro",
+        "description": "Hassas miksaj ve kayıt için ince ayarlı kapalı tarz kablolu stüdyo kulaklıkları.",
+        "content": "<p>Değiştirilebilir tel ve kulak yastıkları. 8Hz'e kadar düz frekans tepkisi. Taşımak için kompakt bir şekilde katlanır.</p>"
+    },
+    "Suede Bowling Bag": {
+        "name": "Süet Bowling Çantası",
+        "description": "Damarlı süetten, üstten fermuarlı ve yan saplı yumuşak bowling çantası silueti.",
+        "content": "<p>Çanta bir fermuarlı bölmesi ve iki kafes bölmesiyle oldukça geniştir. Tabletleri, planlayıcıları ve gecelik malzemeleri barındırır.</p>"
+    },
+    "Suede Mini Bag": {
+        "name": "Süet Mini Çanta",
+        "description": "Zincirli ve renkli kapaklı küçük süet omuz çantası.",
+        "content": "<p>Telefonu, kartları ve ruju tutabilir. Zincir 22 ila 24 inç arasında ayarlanır. Pamuklu kumaş astarı delin.</p>"
+    },
+    "Suede Tote Bag": {
+        "name": "Süet Kadın Çantası",
+        "description": "Üstten saplı, mıknatıslı kapamalı ve astarsız cepli büyük süet tote çanta.",
+        "content": "<p>Espresso kahverengi fırçalanmış süet. 15 inçlik bir dizüstü bilgisayarı, klasörü ve su şişesini tutabilir. Bakır ayak tabanı çanta tabanını aşınmaya karşı korur.</p>"
+    },
+    "Supremya Baume": {
+        "name": "Supremya Baume",
+        "description": "Siz uyurken beslenmek ve yenilenmek üzere formüle edilmiş zengin bir gece balsamı.",
+        "content": "<p>Squalane, seramid ve peptid kompleksi. Bambu kepçeli 50ml cam kavanoz. Yatmadan önce dairesel hareketlerle masaj yapın.</p>"
+    },
+    "T9 Pro II Dual Monitor Arm": {
+        "name": "T9 Pro II Çift Monitör Kolu",
+        "description": "Tam hareket ayarlı, entegre kablo yönetimine ve masa kelepçesine sahip tek monitör kolu.",
+        "content": "<p>9 kg'a kadar 17-32 inç ekranları destekler. VESA 75/100 uyumludur. Aletsiz yükseklik ayarı.</p>"
+    },
+    "Tablet Pro 11": {
+        "name": "Tablet Pro11",
+        "description": "M serisi çipli 11 inç Liquid Retina tablet; çizim yapmak, not almak ve film izlemek için idealdir.",
+        "content": "<p>Apple Pencil ve Magic Keyboard ile uyumludur. Kapasite 128GB-2TB. Tüm gün dayanan pil ve Touch ID.</p>"
+    },
+    "Tape Measure 25ft": {
+        "name": "Mezura 25ft",
+        "description": "Manyetik kancalı ve kauçuk kapaklı, ağır hizmet tipi 25 metrelik şerit metre.",
+        "content": "<p>Üç perçinli kanca birden fazla düşmeye ve darbeye dayanabilir. Hem metre hem de inç dereceleriyle 11 feet'e kadar ulaşır.</p>"
+    },
+    "Teal Blue 5 Pack Baby Bodysuits – 100% Cotton for Everyday Comfort": {
+        "name": "Teal Blue 5'li Bebek Tulumu – Günlük Konfor için %100 Pamuk",
+        "description": "GOTS sertifikalı, organik pamuklu, omuzları kolay giyilebilen body.",
+        "content": "<p>Yumuşak tek örgü kumaş. Düğmeler nikel içermez. Makinede yıkanabilir. Yenidoğandan 18 aya kadar bedenleri mevcuttur.</p>"
+    },
+    "Tennis Ball With Elastic String": {
+        "name": "Elastik İpli Tenis Topu",
+        "description": "Kişisel antrenman tenis topları elastik bantlarla bağlanmıştır; vuruşunuzu istediğiniz yerde yapın.",
+        "content": "<p>Yüksek esneme elastik bantlı, keçe kaplı top. Partneriniz veya kortunuz olmadan forehand, backhand ve servis antrenmanı yapmak için idealdir.</p>"
+    },
+    "Tiffany Lock Bangle": {
+        "name": "Tiffany Kilit Bileklik",
+        "description": "18 ayar sarı altın, menteşeli açıklıklı, miras tarzı asma kilit bileklik.",
+        "content": "<p>18k altın el yapımı. Menteşeli açma-kapama kilitleme mekanizması. 60mm ve 65mm ebatlarında mevcuttur. El kabartmalı mücevher çantasıyla birlikte gelir.</p>"
+    },
+    "Tool Belt Heavy": {
+        "name": "Alet Kemeri Ağır",
+        "description": "16 bölmeli ve güçlendirilmiş çift dikişli, sırçalı deri çerçeveli işçi kemeri.",
+        "content": "<p>Ayarlanabilir yastıklı omuz askıları, ağırlığın omuzlara eşit şekilde dağıtılmasına yardımcı olur. Şantiyede onlarca yıl dayanacak şekilde üretildi.</p>"
+    },
+    "Train Free Sports Bra": {
+        "name": "Trensiz Spor Sütyeni",
+        "description": "Hız, konfor ve günlük hareket için tasarlandı."
+    },
+    "Travel ANC Headphone": {
+        "name": "Seyahat ANC Kulaklık",
+        "description": "Katlanabilir gürültü önleyici kulaklıklar, uzun uçuşlar ve gürültülü yolculuklar için hassas şekilde ayarlanmıştır.",
+        "content": "<p>50 saate kadar pil ömrü, USB-C hızlı şarj ve taşıması zor bir çantayla birlikte gelir.</p>"
+    },
+    "Turtleneck Knit": {
+        "name": "Balıkçı Yaka Örgü",
+        "description": "Rahat kesimli, etek kısmı ribanalı, pürüzsüz dokuma merinos balıkçı yaka kazak.",
+        "content": "<p>Süper ince merinos yünü, yün modunda makinede yıkanabilir. Espresso kahvesi, yulaf ezmesi ve fırtına grisi renkleri mevcuttur.</p>"
+    },
+    "Ultimashow 2.0 Mer Lace-Up Sneakers": {
+        "name": "Ultimashow 2.0 Mer Bağcıklı Spor Ayakkabı",
+        "description": "4 mm lastik sırtı, tekme önleyici plaka ve güçlendirilmiş burun kısmıyla sağlam arazi koşu ayakkabısı.",
+        "content": "<p>Vibram Megagrip dış taban, EVA orta taban ve TPU darbe önleyici plaka. Çamurlu yokuşları, kayalık tırmanışları ve teknik arazileri fethedin.</p>"
+    },
+    "Up Casual Shoes with Rubber Sole": {
+        "name": "Kauçuk Tabanlı Up Casual Ayakkabı",
+        "description": "Yarış ayakkabısı, PEBA köpük orta tabanlı ve kavisli rocker tasarımına sahip bir karbon plakaya sahiptir.",
+        "content": "<p>Tam uzunlukta karbon plaka. PEBA köpüğü %80'den fazla enerji geri kazandırır. Yarı maratondan maratona kadar yarış günleri için tasarlandı.</p>"
+    },
+    "USB-C Cable Pro": {
+        "name": "USB-C Kablo Pro",
+        "description": "Paraşüt kapaklı 100 W USB-C'den USB-C'ye kablo, 30.000'den fazla katlanmaya dayanıklıdır.",
+        "content": "<p>PD hızlı şarjı ve 10 Gbps veri iletimini destekler. 1m ve 2m uzunluklarda mevcuttur.</p>"
+    },
+    "Vanish Airbrush Pressed Powder": {
+        "name": "Vanish Airbrush Preslenmiş Toz",
+        "description": "Gözenekleri bulanıklaştıran ve pürüzsüz, sprey benzeri bir yüzeyle makyajı yerinde tutan ultra hafif sıkıştırılmış pudra.",
+        "content": "<p>Talk içermez, ince öğütülmüş. Kapsamı artırabilecek doğal bir görünüm için sekiz ton. Vegan kabuki pamuğuyla birlikte gelir.</p>"
+    },
+    "Velvet Sofa 3-Seater": {
+        "name": "Kadife Kanepe 3'lü",
+        "description": "Koyu zümrüt yeşili kadifeden, konik pirinç ayaklı, üç kişilik özel yapım kanepe.",
+        "content": "<p>Fırınlanmış parke gövde, kavisli yay sistemi ve kuş tüyü yatak. Beyaz eldiven dağıtım hizmeti dahildir.</p>"
+    },
+    "Very Conference": {
+        "name": "Çok Konferans",
+        "description": "Paslanmaz çelik ayaklı ve şekilli oturma minderli sentetik deri şezlong.",
+        "content": "<p>Cilalı alüminyum çerçeve ve elastik yatma mekanizması doğal bir oturma hareketi sağlar. İstifleme tasarımı depolama alanından tasarruf sağlar.</p>"
+    },
+    "Vitality Supplements": {
+        "name": "Canlılık Takviyeleri",
+        "description": "Aktif köpekler için glukozamin, omega-3 ve probiyotikler içeren günlük multivitamin çiğnemeleri.",
+        "content": "<p>Sığır eti aromalı yumuşak çiğneme tabletleri. Kutu başına 90 hap. Eklemleri, saçları ve sindirimi destekler. Veteriner tarafından denetlenen bir tesiste üretilmiştir.</p>"
+    },
+    "Wet/Dry Vacuum": {
+        "name": "Islak/Kuru Vakum",
+        "description": "Yüklenicinin HEPA filtreli ve hortum arabalı 12 galonluk ıslak/kuru elektrikli süpürgesi.",
+        "content": "<p>6.5 HP tepe motoru ve paslanmaz çelik tank. Alet ve birlikte verilen 25 metrelik hortum etkinleştirildiğinde çıkış otomatik olarak etkinleşir.</p>"
+    },
+    "White Delicate Double Pom Baby Hat – Soft & Cozy Warmth for Little Heads": {
+        "name": "Beyaz Narin Çift Pom Bebek Şapkası – Küçük Kafalar için Yumuşak ve Rahat Sıcaklık",
+        "description": "Sakız halkası meşe ağacından yapılmıştır, gıdaya uygun balmumu ile kaplanmıştır ve küçük ellere uygundur.",
+        "content": "<p>Sürdürülebilir şekilde hasat edilmiş Avrupa meşesi. Doğal antibakteriyel. Yüzüğü bebeğinize yakın tutmak için silikon klipsle birleştirilmiştir.</p>"
+    },
+    "Wireless Charging Pad": {
+        "name": "Kablosuz Şarj Pedi",
+        "description": "15W hızlı kablosuz şarj, kaymayı önleyen silikon yüzeyiyle Qi standardını karşılar.",
+        "content": "<p>iPhone, AirPods ve Android telefonlarla uyumludur. USB-C giriş bağlantı noktası. İnce alüminyum gövde.</p>"
+    },
+    "Women's Thin and Light Sports Shorts Black": {
+        "name": "Kadın İnce ve Hafif Spor Şort Siyah",
+        "description": "Entegre astarlı ve fermuarlı anahtar cepli, ultra hafif koşu şortu.",
+        "content": "<p>4 yönlü streç kumaş, nefes alabilen file iç astar ve düşük ışık koşullarında görünürlük için yansıtıcı ayrıntılar. Doğal adım ve yüksek hız için kesilmiş form.</p>"
+    },
+    "Wool Coat": {
+        "name": "Yün Ceket",
+        "description": "Yakası çentikli, püsküllü cepli kruvaze yün kaban.",
+        "content": "<p>%80 yün, %20 kaşmir. Cupro astarı. Kesim omuzlara tam oturur ve iç astar giymek için yer sağlar.</p>"
+    },
+    "Wool Midi Coat": {
+        "name": "Yün Midi Kaban",
+        "description": "Şerit cepli ve zarif yaka yakalı midi yün ceket - modern bir dış giyim simgesi.",
+        "content": "<p>Yumuşak saten astarlı, İtalyan yün karışımlı melton kumaş. İki düğmeli tokalı tek sıra düğmeler. Soğuk günlere karşı diz boyu.</p>"
+    },
+    "Wunder Chaga Powder": {
+        "name": "Wunder Chaga Tozu",
+        "description": "Vahşice hasat edilmiş Sibirya chaga mantarı, beta-glukan ve triterpeni korumak için iki kez ekstrakte edildi.",
+        "content": "<p>Pürüzsüz tadı, hafif acı. Kahveye, et suyuna veya smoothielere karıştırın. Cam kavanoz 100g.</p>"
+    },
+    "ZZ Plant": {
+        "name": "ZZ Fabrikası",
+        "description": "Parlak yapraklı para ağacı kuraklığa, karanlık odalara ve uzun seyahat programlarına kolaylıkla tolerans gösterir.",
+        "content": "<p>14 cm'lik fidanlık saksısında teslim edilir. Düşük ışığı tolere eder. Sadece toprak tamamen kuruduğunda su verin.</p>"
+    }
+}

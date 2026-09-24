@@ -1,0 +1,14 @@
+{
+    "Orders & Shipping": {
+        "name": "Commandes et expédition"
+    },
+    "Returns & Refunds": {
+        "name": "Retours et remboursements"
+    },
+    "Products & Stock": {
+        "name": "Produits et stocks"
+    },
+    "Account & Payment": {
+        "name": "Compte et paiement"
+    }
+}

@@ -1,0 +1,318 @@
+{
+    "Style Guides": {
+        "name": "Panduan Gaya",
+        "description": "Ide pakaian, lemari pakaian kapsul, dan laporan tren musiman dikurasi oleh tim editorial Amerce."
+    },
+    "Product Spotlights": {
+        "name": "Sorotan Produk",
+        "description": "Analisis mendalam tentang bahan, pengerjaan, dan kisah di balik koleksi terbaru."
+    },
+    "How-To & Care": {
+        "name": "Cara & Perawatan",
+        "description": "Panduan praktis untuk merawat pembelian Anda — perawatan kain, perawatan kulit, dan pengaturan peralatan."
+    },
+    "Sustainability": {
+        "name": "Keberlanjutan",
+        "description": "Artikel tentang mode sirkular, sumber etis, dan merek yang menggerakkan industri ini."
+    },
+    "Buying Guides": {
+        "name": "Panduan Membeli",
+        "description": "Panduan perbandingan independen membantu Anda memilih produk yang tepat sesuai kebutuhan dan anggaran Anda."
+    },
+    "Inside Amerce": {
+        "name": "Di dalam Amerika",
+        "description": "Berita di balik layar, kunjungan pemasok, dan kabar terbaru dari tim Amerce."
+    },
+    "Maintenance": {
+        "name": "Pemeliharaan",
+        "description": "Perawatan rutin, solusi dan jadwal perawatan membantu menjaga mobil Anda tetap berjalan dengan baik."
+    },
+    "Performance": {
+        "name": "Pertunjukan",
+        "description": "Peningkatan daya, penyetelan, dan peningkatan berkendara berbasis data."
+    },
+    "DIY Repair": {
+        "name": "Perbaikan DIY",
+        "description": "Petunjuk langkah demi langkah untuk perbaikan rumah dan proyek akhir pekan."
+    },
+    "Detailing": {
+        "name": "Merinci",
+        "description": "Cuci, poles, dan lindungi — jaga mobil Anda tampak seperti baru dari pabrik."
+    },
+    "New Parents": {
+        "name": "Orang Tua Baru",
+        "description": "Bimbingan dan kepastian untuk minggu dan bulan pertama bersama bayi baru lahir Anda."
+    },
+    "Baby Care": {
+        "name": "Perawatan Bayi",
+        "description": "Perawatan sehari-hari, produk lembut dan kebiasaan yang mendukung bayi sehat."
+    },
+    "Sleep & Routines": {
+        "name": "Tidur & Rutinitas",
+        "description": "Ritual yang menenangkan, jadwal tidur siang, dan alat untuk malam yang lebih damai."
+    },
+    "Nutrition": {
+        "name": "Nutrisi",
+        "description": "Pola makan, penyapihan, dan nutrisi yang sehat merupakan tonggak sejarah bagi pertumbuhan bayi."
+    },
+    "Safety": {
+        "name": "Keamanan",
+        "description": "Saran keselamatan praktis, pemeriksaan perlengkapan, dan hal-hal penting yang menenangkan pikiran."
+    },
+    "Style Edit": {
+        "name": "Pengeditan Gaya",
+        "description": "Pilihan tas dan aksesori untuk setiap kesempatan — kerja, perjalanan, dan akhir pekan."
+    },
+    "Bag Care": {
+        "name": "Perawatan Tas",
+        "description": "Ritual pembersihan, pelestarian, dan pengkondisian untuk memperpanjang umur barang berharga Anda."
+    },
+    "Material Guides": {
+        "name": "Panduan Materi",
+        "description": "Suede, kulit gandum utuh, dan bahan premium — apa yang harus dibeli dan cara merawatnya."
+    },
+    "Trends": {
+        "name": "Tren",
+        "description": "Gesper logam, gaya, dan kisah warna menentukan setiap musim aksesori."
+    },
+    "Behind the Brand": {
+        "name": "Dibalik Merek",
+        "description": "Lokakarya, pengrajin, dan kisah asal usul merek yang kami distribusikan."
+    },
+    "Tools & Equipment": {
+        "name": "Alat & Perlengkapan",
+        "description": "Tinjauan mendalam dan panduan pemeliharaan untuk alat yang Anda andalkan setiap hari."
+    },
+    "Techniques": {
+        "name": "Teknik",
+        "description": "Metode yang telah terbukti di industri untuk pemotongan, pengeboran, penyekrupan, dan penyelesaian akhir."
+    },
+    "Project Guides": {
+        "name": "Panduan Proyek",
+        "description": "Petunjuk langkah demi langkah untuk proyek konstruksi dan renovasi umum."
+    },
+    "Trade News": {
+        "name": "Berita Perdagangan",
+        "description": "Pembaruan industri, perubahan standar dan tren material untuk industri."
+    },
+    "Skincare": {
+        "name": "Perawatan Kulit",
+        "description": "Proses, bahan-bahan, dan analisis mendalam tentang ritual untuk kulit yang lebih sehat dan bercahaya."
+    },
+    "Makeup": {
+        "name": "Rias",
+        "description": "Teknik pengaplikasian, pemilihan palet warna dan pemilihan produk dengan pigmen yang jinak."
+    },
+    "Fragrance": {
+        "name": "Parfum",
+        "description": "Analisis aroma aroma, tips layering dan cara menemukan aroma khas."
+    },
+    "Beauty Tips": {
+        "name": "Tip Kecantikan",
+        "description": "Rutinitas kecantikan harian, peralatan, dan peningkatan kecil membantu membawa proses ke tingkat berikutnya."
+    },
+    "Ergonomics": {
+        "name": "Ergonomi",
+        "description": "Postur tubuh, dukungan sendi, dan ilmu kerja meja tanpa rasa sakit."
+    },
+    "Workspace Design": {
+        "name": "Desain Ruang Kerja",
+        "description": "Tata letak, pencahayaan, dan penyelesaian akhir untuk kantor yang inspiratif dan fungsional."
+    },
+    "Wellness at Work": {
+        "name": "Kesehatan di Tempat Kerja",
+        "description": "Istirahat olahraga, ketegangan mata, dan kebiasaan perlindungan kesehatan jangka panjang."
+    },
+    "Productivity": {
+        "name": "Produktivitas",
+        "description": "Proses dan kebiasaan membantu Anda fokus secara mendalam dan menyelesaikan pekerjaan Anda dengan baik."
+    },
+    "New Releases": {
+        "name": "Rilis Baru",
+        "description": "Dapatkan pengalaman langsung pertama dan luncurkan liputan gadget dan perangkat terbaru."
+    },
+    "Tech Reviews": {
+        "name": "Ulasan Teknologi",
+        "description": "Ulasan mendalam dan tanpa sensasi tentang ponsel, audio, perangkat yang dapat dikenakan, dan perlengkapan pembuat konten."
+    },
+    "Smart Home": {
+        "name": "Rumah Pintar",
+        "description": "Panduan praktis untuk membangun dan mengotomatisasi rumah yang lebih cerdas dan aman."
+    },
+    "Lifestyle": {
+        "name": "Gaya hidup",
+        "description": "Tips dan kebiasaan memanfaatkan teknologi dengan sengaja setiap hari."
+    },
+    "Trend Watch": {
+        "name": "Tontonan Tren",
+        "description": "Apa yang muncul di runway dan memasuki lemari pakaian sehari-hari musim ini."
+    },
+    "Wardrobe Building": {
+        "name": "Gedung Lemari Pakaian",
+        "description": "Strategi lemari pakaian minimalis, barang-barang yang layak untuk diinvestasikan, dan cara membuat lemari pakaian kecil lebih efektif."
+    },
+    "Care & Maintenance": {
+        "name": "Perawatan & Pemeliharaan",
+        "description": "Cara mencuci, menyimpan dan memperpanjang umur wol, kulit dan sutra."
+    },
+    "Editor Picks": {
+        "name": "Pilihan Editor",
+        "description": "Temuan yang dikurasi, kisah di balik setiap item, dan catatan kerajinan dari tim."
+    },
+    "Style Inspiration": {
+        "name": "Inspirasi Gaya",
+        "description": "Papan inspirasi, cerita palet warna, dan ruangan yang menunjukkan apa yang mungkin."
+    },
+    "Behind the Craft": {
+        "name": "Dibalik Kerajinan itu",
+        "description": "Kunjungan lokakarya, potret pengrajin, dan orang-orang di balik barang favorit Anda."
+    },
+    "Spaces": {
+        "name": "Spasi",
+        "description": "Rumah sungguhan, apartemen sungguhan — ide desain yang dapat Anda terapkan segera."
+    },
+    "Plant Care": {
+        "name": "Perawatan Tanaman",
+        "description": "Catatan tentang penyiraman, penerangan, dan perawatan musiman untuk tanaman hias yang tumbuh subur."
+    },
+    "Indoor Gardening": {
+        "name": "Berkebun dalam Ruangan",
+        "description": "Bangun taman kota, hutan hijau di balkon, dan sudut hijau yang damai di ruang kecil."
+    },
+    "Plant Health": {
+        "name": "Kesehatan Tanaman",
+        "description": "Diagnosis masalah umum, hama, dan akar masalah sebelum menyebar."
+    },
+    "Decor with Plants": {
+        "name": "Dekorasi dengan Tanaman",
+        "description": "Kiat untuk mengoordinasikan pakaian, menanam tanaman, dan mengubah tanaman menjadi pernyataan desain."
+    },
+    "Audio Tech": {
+        "name": "Teknologi Audio",
+        "description": "Driver, codec, dan rekayasa di balik bagaimana headphone masa kini menghasilkan suara."
+    },
+    "Listening Tips": {
+        "name": "Tip Mendengarkan",
+        "description": "Kiat praktis untuk sesi mendengarkan musik yang lebih aman, lebih lama, dan menyenangkan."
+    },
+    "Reviews": {
+        "name": "Ulasan",
+        "description": "Ulasan dan perbandingan jangka panjang di seluruh segmen harga dan gaya mendengarkan."
+    },
+    "Music Culture": {
+        "name": "Budaya Musik",
+        "description": "Wawancara dan artikel untuk mereka yang menyukai musik sama seperti mereka menyukai perlengkapan."
+    },
+    "Care & Cleaning": {
+        "name": "Perawatan & Pembersihan",
+        "description": "Pemolesan, pengawetan, dan kebiasaan di rumah menjaga emas, perak, dan berlian tetap dalam kondisi prima."
+    },
+    "Investment Pieces": {
+        "name": "Potongan Investasi",
+        "description": "Motif warisan, berlian bersertifikat, dan perhiasan diciptakan untuk menghadapi setiap siklus tren."
+    },
+    "Buyer Guides": {
+        "name": "Panduan Pembeli",
+        "description": "Karat, potongan, warna, dan kejernihan — panduan praktis untuk pembelian perhiasan penting."
+    },
+    "Mindful Living": {
+        "name": "Hidup Penuh Perhatian",
+        "description": "Latihan harian, latihan pernapasan, dan kebiasaan membantu Anda menemukan kedamaian setiap saat."
+    },
+    "Sleep & Recovery": {
+        "name": "Tidur & Pemulihan",
+        "description": "Panduan berbasis bukti untuk tidur lebih nyenyak, istirahat nyenyak, dan pemulihan dari stres."
+    },
+    "Nutrition & Supplements": {
+        "name": "Nutrisi & Suplemen",
+        "description": "Nutrisi bersih, adaptogen, dan ilmu tentang bagaimana makanan memengaruhi suasana hati."
+    },
+    "Movement & Breath": {
+        "name": "Gerakan & Nafas",
+        "description": "Yoga lembut, meditasi jalan, dan latihan pernapasan untuk kedamaian menghubungkan tubuh."
+    },
+    "Stress Management": {
+        "name": "Manajemen Stres",
+        "description": "Alat dan kerangka acuan untuk mengatasi stres modern dengan niat dan ketekunan."
+    },
+    "Whole Foods": {
+        "name": "Makanan Utuh",
+        "description": "Masak, sumber, dan lestarikan makanan olahan minimal yang menyehatkan tubuh."
+    },
+    "Superfoods": {
+        "name": "Makanan super",
+        "description": "Spirulina, jamur chaga dan tanaman lainnya memiliki kepadatan nutrisi yang luar biasa."
+    },
+    "Organic Living": {
+        "name": "Hidup Organik",
+        "description": "Kurangi pestisida, dukung tukang kebun regeneratif, dan lakukan perubahan kecil setiap hari."
+    },
+    "Recipes": {
+        "name": "Resep",
+        "description": "Formula nabati dibuat berdasarkan bahan-bahan organik musiman dan bersertifikat."
+    },
+    "Nutrition Science": {
+        "name": "Ilmu Gizi",
+        "description": "Nutrisi berbasis bukti bukanlah hal yang berlebihan – seperti yang ditunjukkan oleh penelitian saat ini."
+    },
+    "Pet Health": {
+        "name": "Kesehatan Hewan Peliharaan",
+        "description": "Perawatan pencegahan, suplemen, dan tanda-tanda yang harus diperhatikan pada setiap tahap kehidupan."
+    },
+    "Training": {
+        "name": "Pelatihan",
+        "description": "Kiat pelatihan penguatan positif untuk anak anjing, anak kucing, dan hewan peliharaan dewasa."
+    },
+    "Pet Lifestyle": {
+        "name": "Gaya Hidup Hewan Peliharaan",
+        "description": "Bepergian, bermain, berdandan, dan sedikit kegembiraan hidup bersama teman berkaki empat."
+    },
+    "Vet Tips": {
+        "name": "Tip Dokter Hewan",
+        "description": "Nasihat praktis dari para ahli kedokteran hewan mengenai pertanyaan dan kekhawatiran yang sering diajukan."
+    },
+    "Gift Ideas": {
+        "name": "Ide Hadiah",
+        "description": "Inspirasi hadiah yang dikurasi untuk ulang tahun, pernikahan, hari jadi, dan setiap pencapaian."
+    },
+    "Customization Tips": {
+        "name": "Tip Kustomisasi",
+        "description": "Cara mendesain, memotret, dan membuat prototipe produk hasil personalisasi yang pasti Anda sukai."
+    },
+    "Occasions": {
+        "name": "Kesempatan",
+        "description": "Panduan hadiah canggih untuk setiap liburan dan setiap pencapaian."
+    },
+    "Personalization Trends": {
+        "name": "Tren Personalisasi",
+        "description": "Apa yang baru dalam print-on-demand — tren tipografi, ilustrasi, dan desain."
+    },
+    "Behind the Print": {
+        "name": "Di Balik Cetakan",
+        "description": "Pandangan mendalam tentang proses pencetakan, bahan, dan standar kualitas kami."
+    },
+    "Style": {
+        "name": "Gaya",
+        "description": "Desain sepatu gaya hidup, cerita warna, dan saran untuk memadukan sepatu kets dengan pakaian sehari-hari."
+    },
+    "Care Guide": {
+        "name": "Panduan Perawatan",
+        "description": "Tips membersihkan, menghilangkan bau, dan menyimpan sepatu membuat setiap pasang sepatu tampak seperti baru."
+    },
+    "Athletic Tech": {
+        "name": "Teknologi Atletik",
+        "description": "Senyawa busa, kekakuan pelat sol, dan rekayasa di balik sepatu performa modern."
+    },
+    "Recovery": {
+        "name": "Pemulihan",
+        "description": "Metode tidur, mobilitas, dan pemulihan aktif membuat Anda tetap bisa bermain."
+    },
+    "Gear Reviews": {
+        "name": "Ulasan Perlengkapan",
+        "description": "Ulasan jujur ​​tentang sepatu, pakaian, dan peralatan olahraga — diuji di bawah beban."
+    },
+    "Sports News": {
+        "name": "Berita Olahraga",
+        "description": "Ikuti perkembangan terkini dari dunia lari, olahraga raket, dan gerakan kebugaran yang sedang berkembang."
+    }
+}

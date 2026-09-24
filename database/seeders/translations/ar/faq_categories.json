@@ -1,0 +1,14 @@
+{
+    "Orders & Shipping": {
+        "name": "الطلبات والشحن"
+    },
+    "Returns & Refunds": {
+        "name": "العوائد والمبالغ المستردة"
+    },
+    "Products & Stock": {
+        "name": "المنتجات والمخزون"
+    },
+    "Account & Payment": {
+        "name": "الحساب والدفع"
+    }
+}

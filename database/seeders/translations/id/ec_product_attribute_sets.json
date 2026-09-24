@@ -1,0 +1,14 @@
+{
+    "Color": {
+        "title": "Warna"
+    },
+    "Size": {
+        "title": "Ukuran"
+    },
+    "Material": {
+        "title": "Bahan"
+    },
+    "Storage": {
+        "title": "Penyimpanan"
+    }
+}

@@ -1,0 +1,534 @@
+{
+    "Accessories": {
+        "name": "Phụ Kiện",
+        "description": "Túi xách, khăn quàng và những chi tiết hoàn thiện."
+    },
+    "Active Life": {
+        "name": "Cuộc sống năng động",
+        "description": "Tai nghe nhét tai và trùm tai kháng mồ hôi, được tạo ra cho sự vận động."
+    },
+    "Audio": {
+        "name": "Âm thanh",
+        "description": "Tai nghe, micro và loa cho những cuộc gọi rõ ràng và sự tập trung."
+    },
+    "Backpacks": {
+        "name": "Balo",
+        "description": "Balo đi làm hằng ngày và túi xách cuối tuần được chế tạo để bền lâu."
+    },
+    "Bedroom": {
+        "name": "Phòng Ngủ",
+        "description": "Giường, tủ ngăn kéo và tủ đầu giường êm dịu, ấm cúng cho những góc nghỉ ngơi yên tĩnh."
+    },
+    "Belts": {
+        "name": "Thắt Lưng",
+        "description": "Thắt lưng trang trọng cổ điển và thắt lưng thường ngày cho mọi tủ đồ."
+    },
+    "Best Sellers": {
+        "name": "Bán chạy nhất",
+        "description": "Những sản phẩm được khách hàng tin dùng và đặt lại qua từng mùa."
+    },
+    "BIG SEASON SALE": {
+        "name": "ĐẠI TIỆC SALE MÙA",
+        "description": "GIẢM GIÁ ĐẾN 50% — Chỉ trong thời gian có hạn cho các mẫu giày hiệu năng cao nhất."
+    },
+    "Body & Exterior": {
+        "name": "Thân & Ngoại Thất",
+        "description": "Cánh gió, cản xe và phim bảo vệ cho ngoại thất sẵn sàng cho đường đua."
+    },
+    "Bottoms": {
+        "name": "Trang Phục Phần Dưới",
+        "description": "Quần jeans, quần âu và chân váy cho mặc hằng ngày."
+    },
+    "Calm Bedroom": {
+        "name": "Phòng Ngủ An Yên",
+        "description": "Giường, tủ đầu giường và tủ lưu trữ được tạo nên cho giấc ngủ thư thái và những buổi sáng tĩnh lặng."
+    },
+    "Cat Feast": {
+        "name": "Bữa Tiệc Cho Mèo",
+        "description": "Những bữa ăn lành mạnh, ngon miệng dành cho mèo."
+    },
+    "Chic Silver Designs": {
+        "name": "Thiết kế bạc Sành điệu",
+        "description": "Bạc nguyên chất với nét hiện đại — mắt xích tối giản, vòng tay bản lớn và nhẫn điêu khắc."
+    },
+    "Clean & Mindful": {
+        "name": "Sạch & chánh niệm",
+        "description": "Những sản phẩm có nguồn gốc sạch đã được kiểm chứng — kiểm nghiệm độc lập, ít tác động, chuỗi cung ứng minh bạch."
+    },
+    "Clean Beauty": {
+        "name": "Làm Đẹp Lành Tính",
+        "description": "Công thức thuần chay, không thử nghiệm trên động vật với các hoạt chất đã được kiểm nghiệm lâm sàng."
+    },
+    "Conference Gear": {
+        "name": "Thiết bị hội nghị",
+        "description": "Webcam, camera hội nghị và loa thoại cho các nhóm làm việc kết hợp."
+    },
+    "Court Sports Game Gear": {
+        "name": "Dụng Cụ Thi Đấu Thể Thao Sân",
+        "description": "Chơi, thi đấu, tận hưởng."
+    },
+    "Custom Gifts": {
+        "name": "Quà Tặng Tùy Chỉnh",
+        "description": "Những món quà cá nhân hóa khiến mọi cột mốc trở nên đáng nhớ."
+    },
+    "Custom T-Shirts": {
+        "name": "Áo Thun Tùy Chỉnh",
+        "description": "Cá nhân hóa áo thun cotton với hình ảnh, tên và câu chuyện của bạn."
+    },
+    "Cutting & Drilling": {
+        "name": "Cắt & Khoan",
+        "description": "Lưỡi cưa, mũi khoan và vật liệu mài được chế tạo để bền lâu."
+    },
+    "Daily Wellness": {
+        "name": "Sức khỏe hằng ngày",
+        "description": "Những vật dụng thiết yếu mỗi ngày cho cơ thể và tâm trí — thực phẩm bổ sung, trà thư giãn và dụng cụ chánh niệm."
+    },
+    "Desks": {
+        "name": "Bàn làm việc",
+        "description": "Bàn nâng hạ và bàn truyền thống cho những ngày làm việc năng suất."
+    },
+    "Desktop Sound": {
+        "name": "Âm Thanh Để Bàn",
+        "description": "Giảm giá đến 50% các sản phẩm bán chạy."
+    },
+    "Dining": {
+        "name": "Phòng Ăn",
+        "description": "Bàn ăn và ghế để quây quần mọi người bên bữa cơm."
+    },
+    "Elegant Gold Essentials": {
+        "name": "Bộ vàng thiết yếu Thanh lịch",
+        "description": "Những món vàng 14k và 18k vượt thời gian, làm nền tảng cho mọi tủ trang sức."
+    },
+    "Engine & Drivetrain": {
+        "name": "Động Cơ & Hệ Truyền Động",
+        "description": "Piston, dây curoa và gioăng — những bộ phận thiết yếu chuẩn OEM cho mọi hệ truyền động."
+    },
+    "Everything Your Pet Deserves": {
+        "name": "Tất Cả Những Gì Thú Cưng Của Bạn Xứng Đáng",
+        "description": "Trải nghiệm âm thanh không dây thực thụ với âm trầm sâu lắng và độ trong trẻo tuyệt vời."
+    },
+    "Explore Your Sound World": {
+        "name": "Khám phá thế giới âm thanh của bạn",
+        "description": "Tai nghe hiện diện trong từng khoảnh khắc của hành trình cuộc sống bạn."
+    },
+    "Featured": {
+        "name": "Nổi Bật",
+        "description": "Những đôi sneaker thiết yếu được đội ngũ của chúng tôi tuyển chọn và đang mang ngay lúc này."
+    },
+    "Find Your Calm <br> Space": {
+        "name": "Tìm không gian <br> bình yên của bạn",
+        "description": "Những món đồ chánh niệm mang lại sự thư thái <br> cho mỗi ngày."
+    },
+    "Fluids & Maintenance": {
+        "name": "Dung Dịch & Bảo Dưỡng",
+        "description": "Dầu nhớt, lọc và phụ gia cao cấp giữ động cơ luôn ở trạng thái tốt nhất."
+    },
+    "Footwear": {
+        "name": "Giày Dép",
+        "description": "Bốt, giày sneaker và giày cao gót để hoàn thiện diện mạo."
+    },
+    "Free Gift With Purchase": {
+        "name": "Quà tặng miễn phí khi mua hàng"
+    },
+    "Free Shipping On All Orders": {
+        "name": "Miễn phí vận chuyển cho tất cả các đơn hàng"
+    },
+    "Fresh Sparkle New Arrivals": {
+        "name": "Hàng mới về Lấp lánh tươi mới",
+        "description": "Những thiết kế mới nhất từ các nghệ nhân của chúng tôi — được tạo ra để đeo hằng ngày."
+    },
+    "Game Mode": {
+        "name": "Chế độ Game",
+        "description": "Tai nghe gaming độ trễ thấp được tinh chỉnh cho lối chơi cạnh tranh và đắm chìm."
+    },
+    "Garden Decor": {
+        "name": "Trang Trí Sân Vườn",
+        "description": "Tượng, đèn lồng và đồ trang trí để cá nhân hóa khu vườn."
+    },
+    "Garden Tools": {
+        "name": "Dụng Cụ Làm Vườn",
+        "description": "Kéo cắt tỉa, xẻng và bay cho việc làm vườn trực tiếp."
+    },
+    "Gemstone Statement Pieces": {
+        "name": "Những món đá quý tạo điểm nhấn",
+        "description": "Đá quý màu sắc đậm trong nhẫn cocktail, hoa tai giọt nước và dây chuyền mặt dây sẵn sàng tạo ấn tượng."
+    },
+    "Glow Essentials": {
+        "name": "Tinh Túy Rạng Rỡ",
+        "description": "Serum và toner làm sáng cho làn da rạng rỡ, đều màu."
+    },
+    "Greenhouses": {
+        "name": "Nhà Kính",
+        "description": "Nhà kính mini và bộ trồng cây cho những người trồng trọt nghiêm túc."
+    },
+    "Grooming & Care": {
+        "name": "Chăm Sóc & Vệ Sinh",
+        "description": "Sữa tắm, lược chải và bộ cắt móng giúp việc chăm sóc tại nhà trở nên dễ dàng."
+    },
+    "Hand Tools": {
+        "name": "Dụng Cụ Cầm Tay",
+        "description": "Búa, cờ lê và kìm được chế tạo bền bỉ cho mọi công trình."
+    },
+    "Handbags": {
+        "name": "Túi Xách Tay",
+        "description": "Túi đeo chéo, túi tote và túi đeo vai cho mọi mùa."
+    },
+    "Hardware & Fasteners": {
+        "name": "Phụ Kiện & Vật Liệu Liên Kết",
+        "description": "Bu lông, đinh, vít và giá đỡ được tuyển chọn cho độ tin cậy trong ngành."
+    },
+    "Hats & Scarves": {
+        "name": "Mũ & Khăn Choàng",
+        "description": "Phụ kiện theo mùa hoàn thiện diện mạo của bạn."
+    },
+    "Hear Every Detail": {
+        "name": "Nghe Trọn Từng Chi Tiết",
+        "description": "Mạnh mẽ, thoải mái, rõ ràng."
+    },
+    "Hear True Freedom in <br> Every Beat": {
+        "name": "Cảm Nhận Tự Do Đích Thực Trong <br> Từng Nhịp Điệu",
+        "description": "Trải nghiệm âm thanh true wireless với âm trầm sâu, độ trong vắt và kết nối liền mạch dành cho âm nhạc."
+    },
+    "Hydration Heroes": {
+        "name": "Bộ Đôi Cấp Ẩm",
+        "description": "Kem dưỡng ẩm và liệu pháp giữ lại sự thoải mái lâu dài."
+    },
+    "Interior & Comfort": {
+        "name": "Nội Thất & Tiện Nghi",
+        "description": "Bọc ghế, thảm lót và phụ kiện giúp tinh tế hóa mọi dặm đường trong cabin."
+    },
+    "Jewelry": {
+        "name": "Trang Sức",
+        "description": "Vòng cổ, nhẫn và bông tai để phối cùng mọi bộ trang phục."
+    },
+    "Keyboards & Mice": {
+        "name": "Bàn phím & chuột",
+        "description": "Bàn phím cơ và chuột chính xác dành cho người sáng tạo."
+    },
+    "Knitwear": {
+        "name": "Đồ Len",
+        "description": "Áo len và áo cardigan mềm mại cho những ngày se lạnh."
+    },
+    "Lawn Care": {
+        "name": "Chăm Sóc Bãi Cỏ",
+        "description": "Máy cắt cỏ, máy xén viền và phân bón để giữ bãi cỏ của bạn luôn khỏe mạnh."
+    },
+    "Lighting": {
+        "name": "Chiếu Sáng",
+        "description": "Đèn bàn, đèn tường và đèn thả để tạo nên không khí hoàn hảo."
+    },
+    "Lighting & Electrical": {
+        "name": "Đèn & Điện",
+        "description": "Đèn pha LED, bộ đèn sương mù và dây điện cho tầm nhìn và độ tin cậy."
+    },
+    "Limited Edition": {
+        "name": "Phiên bản giới hạn",
+        "description": "Những lô hàng duy nhất từ các nhà sản xuất độc lập. Bán hết là không còn nữa."
+    },
+    "Limited Time Offer": {
+        "name": "Ưu đãi trong thời gian có hạn"
+    },
+    "Lip & Color": {
+        "name": "Môi & Màu Sắc",
+        "description": "Mặt nạ môi căng mọng, lớp hoàn thiện bóng và những tông màu đặc trưng."
+    },
+    "Living Room": {
+        "name": "Phòng Khách",
+        "description": "Ghế sofa, bàn trà và điểm nhấn để làm mới trái tim của ngôi nhà."
+    },
+    "Luxury Gems Big Sale": {
+        "name": "Đại tiệc giảm giá đá quý cao cấp",
+        "description": "Ưu đãi có thời hạn cho các loại đá quý hiếm và kiểu gắn tạo điểm nhấn."
+    },
+    "Measuring": {
+        "name": "Đo Đạc",
+        "description": "Thước thủy, thước cuộn và máy laser cho độ chính xác mọi lúc."
+    },
+    "Modern Living Room": {
+        "name": "Phòng Khách Hiện Đại",
+        "description": "Ghế sofa, ghế tạo điểm nhấn và bàn được tuyển chọn theo cách bạn sống ngày nay."
+    },
+    "Monitors": {
+        "name": "Màn hình",
+        "description": "Màn hình 4K, siêu rộng và cong cho năng suất nghiêm túc."
+    },
+    "Mugs & Drinkware": {
+        "name": "Cốc & Ly Uống Nước",
+        "description": "Cốc và ly giữ nhiệt tùy chỉnh in những thiết kế yêu thích của bạn."
+    },
+    "New Arrivals": {
+        "name": "Hàng Mới Về",
+        "description": "Những mẫu mới được tuyển chọn mỗi tuần."
+    },
+    "Noise Off": {
+        "name": "Tắt tiếng ồn",
+        "description": "Tai nghe chống ồn chủ động cho du lịch, tập trung và những quãng đường đi làm yên tĩnh."
+    },
+    "Nourish From <br> Within": {
+        "name": "Nuôi dưỡng từ <br> bên trong",
+        "description": "Những vật dụng thiết yếu hằng ngày để hỗ trợ <br> năng lượng và cân bằng."
+    },
+    "Office Chairs": {
+        "name": "Ghế văn phòng",
+        "description": "Ghế công thái học hỗ trợ mọi kiểu ngày làm việc."
+    },
+    "Outdoor & Garden": {
+        "name": "Ngoài Trời & Sân Vườn",
+        "description": "Ghế ngồi ngoài trời và điểm nhấn sân vườn cho hiên nhà và sân thượng."
+    },
+    "Outdoor Active Protection Gear": {
+        "name": "Đồ Bảo Vệ Vận Động Ngoài Trời",
+        "description": "Di chuyển an toàn ngoài trời."
+    },
+    "Outdoor Furniture": {
+        "name": "Nội Thất Ngoài Trời",
+        "description": "Ghế, bàn và ghế dài sân vườn cho những buổi tụ họp thời tiết ấm áp."
+    },
+    "Outerwear": {
+        "name": "Đồ Khoác Ngoài",
+        "description": "Áo khoác dài, áo khoác và những món đồ lớp thiết yếu cho mọi mùa."
+    },
+    "Peak Performance": {
+        "name": "Hiệu Năng Đỉnh Cao",
+        "description": "Dụng cụ cấp độ chuyên nghiệp cho những vận động viên theo đuổi thành tích tốt nhất."
+    },
+    "Performance": {
+        "name": "Hiệu Năng",
+        "description": "Được làm cho tập luyện hàng ngày — thấm hút mồ hôi, hỗ trợ tốt, bền bỉ."
+    },
+    "Performance Parts": {
+        "name": "Phụ Tùng Hiệu Năng",
+        "description": "Nâng cấp hiệu năng cao được thiết kế cho sức mạnh và độ chính xác trên mọi cung đường."
+    },
+    "Personalized Apparel": {
+        "name": "Trang Phục Cá Nhân Hóa",
+        "description": "Áo thun, áo hoodie và túi tote trở nên độc đáo với thiết kế của bạn."
+    },
+    "Personalized Decor": {
+        "name": "Đồ Trang Trí Cá Nhân Hóa",
+        "description": "Lót ly, khung ảnh khắc tên và đồ trang trí cho mọi căn phòng trong nhà."
+    },
+    "Pet Fashion": {
+        "name": "Thời Trang Thú Cưng",
+        "description": "Những bộ trang phục đáng yêu cho mọi thú cưng."
+    },
+    "Pet Health Hub": {
+        "name": "Trung Tâm Sức Khỏe Thú Cưng",
+        "description": "Vitamin, chăm sóc răng miệng và các sản phẩm thể trạng được bác sĩ thú y khuyên dùng."
+    },
+    "Pet Portraits": {
+        "name": "Chân Dung Thú Cưng",
+        "description": "Những bức chân dung thú cưng của bạn được vẽ tay trên giấy chất lượng lưu trữ."
+    },
+    "Phone Cases": {
+        "name": "Ốp Lưng Điện Thoại",
+        "description": "Ốp lưng điện thoại mỏng đã kiểm định chống rơi in hình ảnh và tranh vẽ của bạn."
+    },
+    "Photo Memories": {
+        "name": "Kỷ Niệm Qua Ảnh",
+        "description": "Album ảnh và tranh in đóng khung lưu giữ những kỷ niệm quý giá luôn bên bạn."
+    },
+    "Plants & Trees": {
+        "name": "Cây & Cây Thân Gỗ",
+        "description": "Cây trong nhà, cây thân gỗ ngoài trời và cây giống để bắt đầu khu vườn của bạn."
+    },
+    "Pots & Planters": {
+        "name": "Chậu & Chậu Trồng Cây",
+        "description": "Chậu gốm, đất nung và chậu hiện đại cho mọi loại cây."
+    },
+    "Power Tools": {
+        "name": "Dụng Cụ Điện",
+        "description": "Máy khoan, máy cưa và máy mài được thiết kế cho việc sử dụng hằng ngày trên công trường."
+    },
+    "Precision Gear": {
+        "name": "Dụng Cụ Chính Xác",
+        "description": "Thiết bị hiệu năng cao được tinh chỉnh cho trận đấu đỉnh cao của bạn."
+    },
+    "Rest Better, Live <br> Brighter": {
+        "name": "Nghỉ ngơi tốt hơn, Sống <br> rạng rỡ hơn",
+        "description": "Khám phá những sản phẩm xoa dịu cho <br> giấc ngủ sâu và yên bình."
+    },
+    "Routine Builders": {
+        "name": "Xây dựng thói quen",
+        "description": "Những vật dụng thiết yếu sẵn sàng kết hợp cho nghi thức buổi sáng và thư giãn buổi tối."
+    },
+    "Rugs": {
+        "name": "Thảm",
+        "description": "Thảm và thảm chạy mềm mại tạo nền cho mọi căn phòng."
+    },
+    "Safety Gear": {
+        "name": "Đồ Bảo Hộ",
+        "description": "Mũ bảo hộ, găng tay và đồ bảo hộ cá nhân đạt những tiêu chuẩn khắt khe nhất."
+    },
+    "Sale": {
+        "name": "Khuyến Mãi",
+        "description": "Giá cuối mùa cho những sản phẩm khách hàng yêu thích."
+    },
+    "SALE OFF UP TO 50%": {
+        "name": "GIẢM GIÁ ĐẾN 50%",
+        "description": "Đại tiệc sale mùa — sở hữu những mẫu sneaker mới nhất với giá không thể tốt hơn."
+    },
+    "Save 25% Today": {
+        "name": "Tiết kiệm 25% ngay hôm nay",
+        "description": "Áo phông, áo hoodie và hơn thế nữa"
+    },
+    "Seeds": {
+        "name": "Hạt Giống",
+        "description": "Hạt giống gia truyền, hữu cơ và quý hiếm để trồng tại nhà."
+    },
+    "Shine Jewellery Collection": {
+        "name": "Bộ sưu tập trang sức Tỏa sáng",
+        "description": "Những món đồ đánh bóng được tuyển chọn để bắt sáng từ mọi góc độ."
+    },
+    "Shop Essentials": {
+        "name": "Mua đồ thiết yếu",
+        "description": "Những món đồ hàng ngày khách hàng đặt lại — denim, đồ dệt kim và áo khoác vượt thời gian."
+    },
+    "Shop Men": {
+        "name": "Mua đồ Nam",
+        "description": "Đồ thiết yếu tinh tế và đồ cơ bản hiện đại — bền vượt qua chu kỳ thời trang."
+    },
+    "Shop Women": {
+        "name": "Mua đồ Nữ",
+        "description": "Tủ đồ tuyển chọn cho mọi mùa — đầm, đồ layering và đồ thiết yếu cuối tuần."
+    },
+    "Site Equipment": {
+        "name": "Thiết Bị Công Trường",
+        "description": "Máy phát điện, thang và giàn giáo giúp công việc luôn tiến triển."
+    },
+    "Small Pets & Birds": {
+        "name": "Thú Cưng Nhỏ & Chim",
+        "description": "Chuồng nuôi ấm cúng và dinh dưỡng cho chuột hamster, thỏ, chim và nhiều hơn nữa."
+    },
+    "Smart Watch": {
+        "name": "Đồng Hồ Thông Minh",
+        "description": "Giảm giá đến 25% các sản phẩm bán chạy."
+    },
+    "Spa Rituals": {
+        "name": "Nghi Thức Spa",
+        "description": "Những vật dụng spa tại nhà cho khoảnh khắc chăm sóc bản thân thong thả."
+    },
+    "Sparkling Diamond Favorites": {
+        "name": "Những món kim cương lấp lánh yêu thích",
+        "description": "Những món kim cương rực rỡ bắt sáng tuyệt đẹp, mang lại vẻ thanh lịch vượt thời gian cho dịp đặc biệt hay phong cách tinh tế thường ngày."
+    },
+    "Spring Essentials": {
+        "name": "Thiết yếu mùa Xuân",
+        "description": "Lớp trang phục nhẹ, phom rộng rãi và những gam màu đang dẫn dắt mood board mùa này."
+    },
+    "Storage": {
+        "name": "Lưu trữ",
+        "description": "Tủ, kệ và dụng cụ sắp xếp cho không gian làm việc gọn gàng."
+    },
+    "Storage & Organization": {
+        "name": "Lưu Trữ & Sắp Xếp",
+        "description": "Kệ và tủ lưu trữ vừa là giải pháp vừa là tuyên ngôn thiết kế."
+    },
+    "Strength Training Essentials": {
+        "name": "Đồ Thiết Yếu Cho Tập Sức Mạnh",
+        "description": "Xây dựng sức mạnh và sự kiểm soát."
+    },
+    "Sunglasses": {
+        "name": "Kính Râm",
+        "description": "Kính thời thượng theo xu hướng và kính phi công vượt thời gian cho mọi dáng khuôn mặt."
+    },
+    "Suspension & Brakes": {
+        "name": "Hệ Treo & Phanh",
+        "description": "Giảm xóc, phuộc, đĩa phanh và má phanh giúp mọi hành trình êm ái và an toàn."
+    },
+    "Sustainable Picks": {
+        "name": "Lựa chọn bền vững",
+        "description": "Sản phẩm có câu chuyện bền vững được kiểm chứng — vật liệu tái chế, thuốc nhuộm ít tác động hoặc sản xuất với mức lương công bằng."
+    },
+    "Table Lamp Sale": {
+        "name": "Khuyến Mãi Đèn Bàn",
+        "description": "Giảm giá đến 50% các sản phẩm bán chạy."
+    },
+    "Tables & Surfaces": {
+        "name": "Bàn & Mặt Phẳng",
+        "description": "Bàn trà, bàn phụ và các mặt phẳng cho mọi căn phòng."
+    },
+    "Tableware": {
+        "name": "Đồ Dùng Bàn Ăn",
+        "description": "Đĩa, ly thủy tinh và đồ đựng phục vụ cho cả ngày thường lẫn khi tiếp khách."
+    },
+    "Tech Accessories": {
+        "name": "Phụ kiện công nghệ",
+        "description": "Hub, đế đỡ và dây cáp hoàn thiện cho bộ thiết bị của bạn."
+    },
+    "Throws & Cushions": {
+        "name": "Chăn Phủ & Gối Tựa",
+        "description": "Tạo lớp chất liệu và màu sắc với chăn phủ và gối tựa được tuyển chọn."
+    },
+    "Tires & Wheels": {
+        "name": "Lốp & Mâm Xe",
+        "description": "Lốp đã kiểm nghiệm trên đường đua và mâm hợp kim được chế tạo để bám đường, cân bằng và đẹp mắt."
+    },
+    "Tool Storage": {
+        "name": "Lưu Trữ Dụng Cụ",
+        "description": "Hộp đựng dụng cụ, tủ và rương cho việc sắp xếp chuyên nghiệp."
+    },
+    "Tools & Garage": {
+        "name": "Dụng Cụ & Gara",
+        "description": "Bộ sửa chữa, cầu nâng và bộ dụng cụ cho mọi ngày sửa xe trong gara của bạn."
+    },
+    "Top Sale": {
+        "name": "Bán chạy nhất",
+        "description": "Thiết bị âm thanh bán chạy nhất được người nghe của chúng tôi đặt lại mùa này qua mùa khác."
+    },
+    "Toy & Playtime": {
+        "name": "Đồ Chơi & Giờ Vui Đùa",
+        "description": "Đồ chơi bền bỉ được làm cho mọi trò kéo co, ném bắt và vồ chụp — với đủ mọi kích cỡ."
+    },
+    "Travel & On-the-Go": {
+        "name": "Du lịch & di chuyển",
+        "description": "Sản phẩm chăm sóc sức khỏe gọn nhẹ cho lệch múi giờ, các chuyến bay dài và những tuần bận rộn."
+    },
+    "Travel & Outdoor": {
+        "name": "Du Lịch & Ngoài Trời",
+        "description": "Túi vận chuyển, dây dắt và đai yếm cho những chuyến phiêu lưu lớn nhỏ."
+    },
+    "Travel Bags": {
+        "name": "Túi Du Lịch",
+        "description": "Túi cuối tuần, túi trống và vali cho mọi chuyến đi."
+    },
+    "Treats & Snacks": {
+        "name": "Bánh Thưởng & Đồ Ăn Vặt",
+        "description": "Những món thưởng xứng đáng khiến thú cưng của bạn ngồi xuống, đứng yên và nài nỉ."
+    },
+    "Up To 35% Off": {
+        "name": "Giảm giá tới 35%"
+    },
+    "Wall Art & Decor": {
+        "name": "Tranh Tường & Trang Trí",
+        "description": "Tranh in, gương và vật trang trí tường hoàn thiện không gian."
+    },
+    "Wall Art Print": {
+        "name": "Tranh In Treo Tường",
+        "description": "Tranh in ảnh và áp phích biến những khoảnh khắc thành tác phẩm ấn tượng."
+    },
+    "Wallets": {
+        "name": "Ví",
+        "description": "Ví đựng thẻ mỏng và ví gập đôi bằng da cao cấp."
+    },
+    "Watches": {
+        "name": "Đồng Hồ",
+        "description": "Đồng hồ quartz, cơ tự động và thông minh với lớp hoàn thiện tinh tế."
+    },
+    "Watering & Hoses": {
+        "name": "Tưới Nước & Vòi Tưới",
+        "description": "Vòi tưới, vòi phun và bình tưới cho mọi thói quen chăm cây."
+    },
+    "Weekend": {
+        "name": "Cuối tuần",
+        "description": "Đồ off-duty thiết yếu nâng tầm những bộ jeans-và-áo thun đơn giản nhất."
+    },
+    "Workspace Essentials": {
+        "name": "Vật Dụng Thiết Yếu Cho Không Gian Làm Việc",
+        "description": "Bàn làm việc, đèn chiếu sáng và ghế ngồi cho một văn phòng tại nhà tập trung, đậm chất thiết kế."
+    },
+    "Workwear": {
+        "name": "Trang phục công sở",
+        "description": "Đồ cơ bản tinh tế sẵn sàng cho văn phòng, studio và mọi nơi khác."
+    }
+}

@@ -1,0 +1,75 @@
+@use "../../abstracts/index" as *;
+
+// FOB Product Size Guide modal — markup mirrors html/product-open-lightbox.html
+// (#findSize) so the bulk of the modal styling comes from `.modal-find_size`
+// in `_pop-up.scss` (themed table + 8/4 grid for the tips section). This file
+// covers only the bits that aren't in the demo's static markup:
+//   - the "Size Guide" trigger row above the size swatches
+//   - the optional hero image above the table
+//   - normalizing the rich-text description so its <h6>/<p> tags render with
+//     the same visual rhythm as the demo's `.title.fw-medium` rows.
+
+.bb-size-guide-trigger-row {
+    display: flex;
+    justify-content: flex-end;
+    margin: 8px 0 4px;
+}
+
+.bb-size-guide-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--text);
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.4;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    transition: color 0.2s ease;
+
+    &:hover,
+    &:focus {
+        color: var(--primary);
+    }
+}
+
+.modal-find_size {
+    .bb-size-guide-hero {
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    // Description ships from the admin as <h6>Bust</h6><p>Measure…</p>; align
+    // it with the demo's `.title.fw-medium` + `<p class="mb-12">` pattern.
+    .bb-size-guide-tips {
+        h6 {
+            color: var(--text);
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 1.4;
+            margin: 0 0 4px;
+        }
+
+        p {
+            color: var(--text-2);
+            margin: 0 0 12px;
+
+            &:last-child { margin-bottom: 0; }
+        }
+    }
+
+    .bb-size-guide-figure {
+        display: flex;
+        justify-content: center;
+
+        img,
+        svg {
+            width: 100%;
+            max-width: 270px;
+            height: auto;
+            color: var(--text);
+        }
+    }
+}

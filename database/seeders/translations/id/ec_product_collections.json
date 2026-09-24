@@ -1,0 +1,534 @@
+{
+    "Accessories": {
+        "name": "Aksesoris",
+        "description": "Tas, syal dan sentuhan akhir."
+    },
+    "Active Life": {
+        "name": "Kehidupan Aktif",
+        "description": "Earbud tahan keringat dan headphone over-ear yang dibuat untuk pergerakan."
+    },
+    "Audio": {
+        "name": "Audio",
+        "description": "Headset, mikrofon, dan speaker untuk panggilan jernih dan fokus."
+    },
+    "Backpacks": {
+        "name": "ransel",
+        "description": "Ransel kerja sehari-hari dan tas akhir pekan dibuat agar tahan lama."
+    },
+    "Bedroom": {
+        "name": "Kamar tidur",
+        "description": "Tempat tidur empuk dan nyaman, lemari berlaci, dan meja samping tempat tidur untuk sudut istirahat yang tenang."
+    },
+    "Belts": {
+        "name": "ikat pinggang",
+        "description": "Ikat pinggang formal klasik dan ikat pinggang kasual untuk setiap lemari pakaian."
+    },
+    "Best Sellers": {
+        "name": "Terlaris",
+        "description": "Produk yang dipercaya dan dipesan ulang oleh pelanggan setiap musim."
+    },
+    "BIG SEASON SALE": {
+        "name": "PENJUALAN MUSIM BESAR",
+        "description": "DISKON HINGGA 50% — Untuk waktu terbatas hanya pada sepatu dengan performa tertinggi."
+    },
+    "Body & Exterior": {
+        "name": "Bodi & Eksterior",
+        "description": "Spoiler, bemper, dan lapisan pelindung untuk eksterior siap pakai."
+    },
+    "Bottoms": {
+        "name": "Bawahan",
+        "description": "Jeans, celana dan rok untuk dipakai sehari-hari."
+    },
+    "Calm Bedroom": {
+        "name": "Kamar Tidur yang Tenang",
+        "description": "Tempat tidur, meja samping tempat tidur, dan lemari penyimpanan dibuat untuk tidur nyenyak dan pagi yang tenang."
+    },
+    "Cat Feast": {
+        "name": "Pesta Kucing",
+        "description": "Makanan sehat dan lezat untuk kucing."
+    },
+    "Chic Silver Designs": {
+        "name": "Desain Perak yang Cantik",
+        "description": "Perak murni dengan sentuhan modern — tautan minimalis, gelang besar, dan cincin berukir."
+    },
+    "Clean & Mindful": {
+        "name": "Bersih & Penuh Perhatian",
+        "description": "Produk dengan asal usul yang terbukti bersih — pengujian independen, berdampak rendah, rantai pasokan transparan."
+    },
+    "Clean Beauty": {
+        "name": "Kecantikan Bersih",
+        "description": "Formula vegan bebas hewani dengan bahan aktif yang teruji secara klinis."
+    },
+    "Conference Gear": {
+        "name": "Perlengkapan Konferensi",
+        "description": "Webcam, kamera konferensi, dan speakerphone untuk kelompok kerja gabungan."
+    },
+    "Court Sports Game Gear": {
+        "name": "Perlengkapan Permainan Olahraga Lapangan",
+        "description": "Mainkan, berkompetisi, nikmati."
+    },
+    "Custom Gifts": {
+        "name": "Hadiah Khusus",
+        "description": "Hadiah yang dipersonalisasi membuat setiap pencapaian berkesan."
+    },
+    "Custom T-Shirts": {
+        "name": "Kaos Khusus",
+        "description": "Personalisasikan kaos katun dengan foto, nama, dan cerita Anda."
+    },
+    "Cutting & Drilling": {
+        "name": "Pemotongan & Pengeboran",
+        "description": "Mata gergaji, mata bor, dan bahan abrasif dibuat agar tahan lama."
+    },
+    "Daily Wellness": {
+        "name": "Kesehatan Harian",
+        "description": "Kebutuhan sehari-hari untuk tubuh dan pikiran — suplemen, teh relaksasi, dan alat mindfulness."
+    },
+    "Desks": {
+        "name": "Meja",
+        "description": "Meja yang ditinggikan dan meja tradisional untuk hari-hari produktif."
+    },
+    "Desktop Sound": {
+        "name": "Suara Desktop",
+        "description": "Diskon hingga 50% untuk produk terlaris."
+    },
+    "Dining": {
+        "name": "Makan",
+        "description": "Meja makan dan kursi untuk mengumpulkan semua orang untuk makan."
+    },
+    "Elegant Gold Essentials": {
+        "name": "Esensi Emas yang Elegan",
+        "description": "Kepingan emas 14k dan 18k yang abadi menjadi fondasi lemari perhiasan mana pun."
+    },
+    "Engine & Drivetrain": {
+        "name": "Mesin & Drivetrain",
+        "description": "Piston, ikat pinggang, dan gasket — komponen OEM penting untuk setiap transmisi."
+    },
+    "Everything Your Pet Deserves": {
+        "name": "Segala yang Layak untuk Hewan Peliharaan Anda",
+        "description": "Nikmati audio nirkabel sesungguhnya dengan bass yang dalam dan kejernihan menakjubkan."
+    },
+    "Explore Your Sound World": {
+        "name": "Jelajahi Dunia Suara Anda",
+        "description": "Headphone hadir di setiap momen perjalanan hidup Anda."
+    },
+    "Featured": {
+        "name": "Unggulan",
+        "description": "Sepatu kets esensial yang dipilih oleh tim kami dan sedang dipakai saat ini."
+    },
+    "Find Your Calm <br> Space": {
+        "name": "Temukan Ruang <br> Tenang Anda",
+        "description": "Item mindfulness menghadirkan relaksasi <br> setiap hari."
+    },
+    "Fluids & Maintenance": {
+        "name": "Cairan & Perawatan",
+        "description": "Pelumas, filter, dan aditif premium menjaga mesin Anda tetap dalam kondisi prima."
+    },
+    "Footwear": {
+        "name": "Alas kaki",
+        "description": "Sepatu bot, sepatu kets, dan sepatu hak untuk melengkapi tampilan."
+    },
+    "Free Gift With Purchase": {
+        "name": "Hadiah Gratis Dengan Pembelian"
+    },
+    "Free Shipping On All Orders": {
+        "name": "Pengiriman Gratis Untuk Semua Pesanan"
+    },
+    "Fresh Sparkle New Arrivals": {
+        "name": "Pendatang Baru Berkilau Segar",
+        "description": "Desain terbaru dari pengrajin kami — dibuat untuk dipakai sehari-hari."
+    },
+    "Game Mode": {
+        "name": "Modus Permainan",
+        "description": "Headset gaming latensi rendah disesuaikan untuk gameplay yang kompetitif dan imersif."
+    },
+    "Garden Decor": {
+        "name": "Dekorasi Taman",
+        "description": "Patung, lentera, dan ornamen untuk mempersonalisasi taman."
+    },
+    "Garden Tools": {
+        "name": "Peralatan Berkebun",
+        "description": "Gunting pangkas, sekop dan sekop untuk berkebun langsung."
+    },
+    "Gemstone Statement Pieces": {
+        "name": "Potongan Pernyataan Batu Permata",
+        "description": "Batu permata berwarna berani pada cincin koktail, anting-anting, dan kalung liontin siap memberikan kesan."
+    },
+    "Glow Essentials": {
+        "name": "Cahaya Penting",
+        "description": "Serum dan toner pencerah untuk warna kulit bercahaya dan merata."
+    },
+    "Greenhouses": {
+        "name": "Rumah kaca",
+        "description": "Rumah kaca mini dan perlengkapan menanam untuk petani serius."
+    },
+    "Grooming & Care": {
+        "name": "Perawatan & Perawatan",
+        "description": "Gel mandi, sisir, dan gunting kuku memudahkan perawatan di rumah."
+    },
+    "Hand Tools": {
+        "name": "Perkakas Tangan",
+        "description": "Palu, kunci pas, dan tang dibuat agar tahan lama untuk proyek apa pun."
+    },
+    "Handbags": {
+        "name": "tas tangan",
+        "description": "Tas selempang, tas jinjing, dan tas bahu untuk setiap musim."
+    },
+    "Hardware & Fasteners": {
+        "name": "Perangkat Keras & Pengencang",
+        "description": "Baut, paku, sekrup, dan braket dipilih untuk keandalan industri."
+    },
+    "Hats & Scarves": {
+        "name": "Topi & Syal",
+        "description": "Aksesori musiman melengkapi penampilan Anda."
+    },
+    "Hear Every Detail": {
+        "name": "Dengarkan Setiap Detailnya",
+        "description": "Kuat, nyaman, jernih."
+    },
+    "Hear True Freedom in <br> Every Beat": {
+        "name": "Dengarkan Kebebasan Sejati di <br> Setiap Detak",
+        "description": "Nikmati suara nirkabel sesungguhnya dengan bass yang dalam, jernih, dan konektivitas tanpa batas untuk musik Anda."
+    },
+    "Hydration Heroes": {
+        "name": "Pahlawan Hidrasi",
+        "description": "Pelembab dan perawatan mempertahankan kenyamanan abadi."
+    },
+    "Interior & Comfort": {
+        "name": "Interior & Kenyamanan",
+        "description": "Sarung jok, karpet, dan aksesori membantu menyempurnakan setiap mil kabin."
+    },
+    "Jewelry": {
+        "name": "Perhiasan",
+        "description": "Kalung, cincin, dan anting-anting yang cocok dipadukan dengan pakaian apa pun."
+    },
+    "Keyboards & Mice": {
+        "name": "Keyboard & Mouse",
+        "description": "Keyboard dan mouse mekanis yang presisi untuk para kreator."
+    },
+    "Knitwear": {
+        "name": "Pakaian rajut",
+        "description": "Sweater dan kardigan lembut untuk hari dingin."
+    },
+    "Lawn Care": {
+        "name": "Perawatan Rumput",
+        "description": "Mesin pemotong rumput, pemangkas tepi, dan pupuk untuk menjaga kesehatan halaman Anda."
+    },
+    "Lighting": {
+        "name": "Penerangan",
+        "description": "Lampu meja, lampu dinding, dan lampu gantung untuk menciptakan suasana sempurna."
+    },
+    "Lighting & Electrical": {
+        "name": "Penerangan & Listrik",
+        "description": "Lampu depan LED, kit lampu kabut, dan kabel untuk visibilitas dan keandalan."
+    },
+    "Limited Edition": {
+        "name": "Edisi Terbatas",
+        "description": "Pengiriman tunggal dari produsen independen. Kalau sudah terjual habis."
+    },
+    "Limited Time Offer": {
+        "name": "Penawaran Waktu Terbatas"
+    },
+    "Lip & Color": {
+        "name": "Bibir & Warna",
+        "description": "Masker bibir montok, hasil akhir mengkilap, dan warna khas."
+    },
+    "Living Room": {
+        "name": "Ruang tamu",
+        "description": "Sofa, meja teh, dan aksen untuk memperbarui jantung rumah."
+    },
+    "Luxury Gems Big Sale": {
+        "name": "Penjualan Besar Permata Mewah",
+        "description": "Penawaran waktu terbatas untuk batu permata langka dan pengaturan aksen."
+    },
+    "Measuring": {
+        "name": "Ukur",
+        "description": "Level, pita pengukur, dan laser memberikan akurasi setiap saat."
+    },
+    "Modern Living Room": {
+        "name": "Ruang Tamu Modern",
+        "description": "Sofa, kursi beraksen, dan meja disesuaikan dengan gaya hidup Anda saat ini."
+    },
+    "Monitors": {
+        "name": "Monitor",
+        "description": "Layar 4K, ultra lebar, dan melengkung untuk produktivitas serius."
+    },
+    "Mugs & Drinkware": {
+        "name": "Mug & Perlengkapan Minum",
+        "description": "Gelas dan mug termos custom yang dicetak dengan desain favorit Anda."
+    },
+    "New Arrivals": {
+        "name": "Pendatang Baru",
+        "description": "Model-model baru dipilih setiap minggu."
+    },
+    "Noise Off": {
+        "name": "Kebisingan Mati",
+        "description": "Headphone peredam bising aktif untuk perjalanan, fokus, dan perjalanan senyap."
+    },
+    "Nourish From <br> Within": {
+        "name": "Memelihara Dari <br> Dalam",
+        "description": "Kebutuhan sehari-hari untuk mendukung energi dan keseimbangan <br>."
+    },
+    "Office Chairs": {
+        "name": "Kursi Kantor",
+        "description": "Kursi ergonomis mendukung setiap jenis hari kerja."
+    },
+    "Outdoor & Garden": {
+        "name": "Luar Ruangan & Taman",
+        "description": "Tempat duduk outdoor dan aksen taman untuk beranda dan teras."
+    },
+    "Outdoor Active Protection Gear": {
+        "name": "Perlengkapan Perlindungan Aktif Luar Ruangan",
+        "description": "Bergerak dengan aman di luar ruangan."
+    },
+    "Outdoor Furniture": {
+        "name": "Perabotan Luar Ruangan",
+        "description": "Kursi taman, meja dan bangku untuk pertemuan cuaca hangat."
+    },
+    "Outerwear": {
+        "name": "Pakaian luar",
+        "description": "Jas hujan, jaket, dan pakaian pelapis penting untuk setiap musim."
+    },
+    "Peak Performance": {
+        "name": "Performa Puncak",
+        "description": "Perlengkapan kelas profesional untuk atlet yang mengejar performa terbaiknya."
+    },
+    "Performance": {
+        "name": "Pertunjukan",
+        "description": "Dibuat untuk olahraga sehari-hari — menyerap keringat, suportif, dan tahan lama."
+    },
+    "Performance Parts": {
+        "name": "Bagian Kinerja",
+        "description": "Peningkatan performa tinggi yang dirancang untuk menghasilkan tenaga dan presisi di jalan."
+    },
+    "Personalized Apparel": {
+        "name": "Pakaian yang Dipersonalisasi",
+        "description": "T-shirt, hoodies, dan tote bag menjadi unik dengan desain Anda."
+    },
+    "Personalized Decor": {
+        "name": "Dekorasi yang Dipersonalisasi",
+        "description": "Tatakan gelas, bingkai foto berukir, dan dekorasi untuk setiap ruangan di rumah."
+    },
+    "Pet Fashion": {
+        "name": "Mode Hewan Peliharaan",
+        "description": "Pakaian menggemaskan untuk setiap hewan peliharaan."
+    },
+    "Pet Health Hub": {
+        "name": "Pusat Kesehatan Hewan Peliharaan",
+        "description": "Vitamin, perawatan gigi, dan produk kesehatan direkomendasikan oleh dokter hewan Anda."
+    },
+    "Pet Portraits": {
+        "name": "Potret Hewan Peliharaan",
+        "description": "Potret hewan peliharaan Anda dilukis dengan tangan di atas kertas berkualitas arsip."
+    },
+    "Phone Cases": {
+        "name": "Kasus Telepon",
+        "description": "Casing ponsel ramping dan tahan jatuh yang dicetak dengan foto dan gambar Anda."
+    },
+    "Photo Memories": {
+        "name": "Kenangan Foto",
+        "description": "Album foto dan cetakan berbingkai selalu menyimpan kenangan berharga bersama Anda."
+    },
+    "Plants & Trees": {
+        "name": "Tanaman & Pohon",
+        "description": "Tanaman dalam ruangan, tanaman berkayu di luar ruangan, dan bibit untuk memulai taman Anda."
+    },
+    "Pots & Planters": {
+        "name": "Pot & Penanam",
+        "description": "Pot keramik, terakota dan modern untuk segala jenis tanaman."
+    },
+    "Power Tools": {
+        "name": "Perkakas Listrik",
+        "description": "Bor, gergaji, dan gerinda dirancang untuk penggunaan sehari-hari di lokasi kerja."
+    },
+    "Precision Gear": {
+        "name": "Perlengkapan Presisi",
+        "description": "Perlengkapan berperforma tinggi yang disesuaikan untuk permainan pamungkas Anda."
+    },
+    "Rest Better, Live <br> Brighter": {
+        "name": "Istirahat Lebih Baik, Hidup <br> Lebih Cerah",
+        "description": "Temukan produk yang menenangkan untuk <br> tidur nyenyak dan damai."
+    },
+    "Routine Builders": {
+        "name": "Pembangun Rutin",
+        "description": "Barang-barang penting siap dipadukan untuk ritual pagi dan relaksasi malam."
+    },
+    "Rugs": {
+        "name": "Permadani",
+        "description": "Permadani dan alas lembut mengatur suasana ruangan mana pun."
+    },
+    "Safety Gear": {
+        "name": "Perlengkapan Keamanan",
+        "description": "Helm, sarung tangan, dan alat pelindung diri memenuhi standar paling ketat."
+    },
+    "Sale": {
+        "name": "Penjualan",
+        "description": "Harga akhir musim untuk produk yang disukai pelanggan."
+    },
+    "SALE OFF UP TO 50%": {
+        "name": "PENJUALAN HINGGA 50%",
+        "description": "Pesta penjualan musiman - miliki model sepatu kets terbaru dengan harga yang tidak ada duanya."
+    },
+    "Save 25% Today": {
+        "name": "Hemat 25% Hari Ini",
+        "description": "T-Shirt, Hoodies & Lainnya"
+    },
+    "Seeds": {
+        "name": "Benih",
+        "description": "Pusaka, benih organik dan langka untuk ditanam di rumah."
+    },
+    "Shine Jewellery Collection": {
+        "name": "Koleksi Perhiasan Bersinar",
+        "description": "Poles dikurasi untuk menangkap cahaya dari setiap sudut."
+    },
+    "Shop Essentials": {
+        "name": "Belanja Penting",
+        "description": "Barang sehari-hari yang dipesan ulang oleh pelanggan — denim, rajutan, dan mantel yang tak lekang oleh waktu."
+    },
+    "Shop Men": {
+        "name": "Toko Pria",
+        "description": "Hal-hal penting yang canggih dan dasar-dasar modern — bertahan melampaui siklus mode."
+    },
+    "Shop Women": {
+        "name": "Belanja Wanita",
+        "description": "Lemari pakaian pilihan untuk setiap musim — gaun, pakaian berlapis, dan kebutuhan akhir pekan."
+    },
+    "Site Equipment": {
+        "name": "Peralatan Situs",
+        "description": "Generator, tangga, dan perancah membuat pekerjaan terus berjalan."
+    },
+    "Small Pets & Birds": {
+        "name": "Hewan Peliharaan & Burung Kecil",
+        "description": "Kandang yang nyaman dan bergizi untuk hamster, kelinci, burung, dan lainnya."
+    },
+    "Smart Watch": {
+        "name": "Jam Tangan Pintar",
+        "description": "Diskon hingga 25% untuk produk terlaris."
+    },
+    "Spa Rituals": {
+        "name": "Ritual Spa",
+        "description": "Persediaan spa di rumah untuk momen perawatan diri yang santai."
+    },
+    "Sparkling Diamond Favorites": {
+        "name": "Favorit Berlian Berkilau",
+        "description": "Berlian yang mempesona menangkap cahaya dengan indah, menghadirkan keanggunan abadi pada acara spesial atau gaya sehari-hari yang canggih."
+    },
+    "Spring Essentials": {
+        "name": "Hal Penting Musim Semi",
+        "description": "Pakaian ringan, pakaian longgar, dan warna-warna cerah memimpin mood board musim ini."
+    },
+    "Storage": {
+        "name": "Penyimpanan",
+        "description": "Lemari, rak dan alat pengorganisasian untuk ruang kerja yang rapi."
+    },
+    "Storage & Organization": {
+        "name": "Penyimpanan & Organisasi",
+        "description": "Rak dan lemari penyimpanan merupakan solusi sekaligus pernyataan desain."
+    },
+    "Strength Training Essentials": {
+        "name": "Esensi Pelatihan Kekuatan",
+        "description": "Bangun kekuatan dan kendali."
+    },
+    "Sunglasses": {
+        "name": "Kacamata hitam",
+        "description": "Kacamata trendi dan trendi serta kacamata penerbang abadi untuk setiap bentuk wajah."
+    },
+    "Suspension & Brakes": {
+        "name": "Suspensi & Rem",
+        "description": "Peredam kejut, garpu, rem cakram, dan bantalan rem membuat setiap perjalanan lancar dan aman."
+    },
+    "Sustainable Picks": {
+        "name": "Pilihan Berkelanjutan",
+        "description": "Produk dengan kisah keberlanjutan yang terbukti — bahan daur ulang, pewarna berdampak rendah, atau dibuat dengan upah yang wajar."
+    },
+    "Table Lamp Sale": {
+        "name": "Penjualan Lampu Meja",
+        "description": "Diskon hingga 50% untuk produk terlaris."
+    },
+    "Tables & Surfaces": {
+        "name": "Tabel & Permukaan",
+        "description": "Meja kopi, meja samping, dan permukaan datar untuk setiap ruangan."
+    },
+    "Tableware": {
+        "name": "Peralatan makan",
+        "description": "Piring, gelas dan wadah baik untuk keperluan sehari-hari maupun saat menerima tamu."
+    },
+    "Tech Accessories": {
+        "name": "Aksesori Teknologi",
+        "description": "Hub, dudukan, dan kabel melengkapi perangkat Anda."
+    },
+    "Throws & Cushions": {
+        "name": "Lempar & Bantal",
+        "description": "Lapisi tekstur dan warna dengan selimut dan bantal pilihan."
+    },
+    "Tires & Wheels": {
+        "name": "Ban & Roda",
+        "description": "Ban dan velg yang telah teruji di lintasan dibuat agar mampu mencengkeram, menyeimbangkan, dan terlihat bagus."
+    },
+    "Tool Storage": {
+        "name": "Penyimpanan Alat",
+        "description": "Kotak peralatan, lemari, dan peti untuk organisasi profesional."
+    },
+    "Tools & Garage": {
+        "name": "Peralatan & Garasi",
+        "description": "Perlengkapan perbaikan, lift, dan perlengkapan perkakas untuk setiap hari perbaikan mobil di garasi Anda."
+    },
+    "Top Sale": {
+        "name": "Penjualan Teratas",
+        "description": "Perlengkapan audio terlaris yang disusun ulang oleh pendengar kami dari musim ke musim."
+    },
+    "Toy & Playtime": {
+        "name": "Mainan & Waktu Bermain",
+        "description": "Mainan yang tahan lama dibuat untuk semua jenis tarik tambang, melempar dan meraih — dalam semua ukuran."
+    },
+    "Travel & On-the-Go": {
+        "name": "Perjalanan & Dalam Perjalanan",
+        "description": "Produk kesehatan ringkas untuk jet lag, penerbangan panjang, dan minggu-minggu sibuk."
+    },
+    "Travel & Outdoor": {
+        "name": "Perjalanan & Luar Ruangan",
+        "description": "Tas jinjing, tali pengaman, dan tali pengaman untuk petualangan besar dan kecil."
+    },
+    "Travel Bags": {
+        "name": "Tas Perjalanan",
+        "description": "Tas akhir pekan, tas jinjing dan koper untuk setiap perjalanan."
+    },
+    "Treats & Snacks": {
+        "name": "Camilan & Makanan Ringan",
+        "description": "Camilan yang layak membuat hewan peliharaan Anda duduk, diam, dan mengemis."
+    },
+    "Up To 35% Off": {
+        "name": "Diskon Hingga 35%."
+    },
+    "Wall Art & Decor": {
+        "name": "Seni & Dekorasi Dinding",
+        "description": "Cetakan, cermin, dan dekorasi dinding melengkapi ruangan."
+    },
+    "Wall Art Print": {
+        "name": "Cetak Seni Dinding",
+        "description": "Cetakan foto dan poster mengubah momen menjadi karya yang mengesankan."
+    },
+    "Wallets": {
+        "name": "Dompet",
+        "description": "Dompet kartu ramping dan dompet lipat dua terbuat dari kulit premium."
+    },
+    "Watches": {
+        "name": "Jam tangan",
+        "description": "Jam tangan kuarsa, otomatis, dan pintar dengan sentuhan akhir yang indah."
+    },
+    "Watering & Hoses": {
+        "name": "Penyiraman & Selang",
+        "description": "Selang penyiraman, alat penyiram, dan kaleng penyiram untuk setiap rutinitas perawatan tanaman."
+    },
+    "Weekend": {
+        "name": "Akhir pekan",
+        "description": "Barang-barang penting di luar tugas menonjolkan set jeans dan T-shirt paling sederhana."
+    },
+    "Workspace Essentials": {
+        "name": "Hal Penting Ruang Kerja",
+        "description": "Meja, pencahayaan, dan tempat duduk untuk kantor rumah yang fokus dan terinspirasi desain."
+    },
+    "Workwear": {
+        "name": "Pakaian kerja",
+        "description": "Perlengkapan dasar yang canggih siap digunakan di kantor, studio, dan di mana pun di antaranya."
+    }
+}

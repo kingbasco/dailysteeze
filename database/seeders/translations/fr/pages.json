@@ -1,0 +1,46 @@
+{
+    "Homepage": {
+        "name": "Page d'accueil",
+        "description": "Amerce – abrite une expérience de commerce électronique polyvalente."
+    },
+    "About": {
+        "name": "À propos",
+        "description": "Présentation d'Amerce - histoire de la marque, normes d'approvisionnement et équipe derrière chaque produit."
+    },
+    "Contact": {
+        "name": "Contact",
+        "description": "Contactez l'équipe de service client et de coopération d'Amerce."
+    },
+    "FAQ": {
+        "name": "FAQ",
+        "description": "Questions fréquemment posées sur les commandes, l'expédition, les retours et la gestion des comptes."
+    },
+    "Privacy Policy": {
+        "name": "politique de confidentialité",
+        "description": "Comment Amerce collecte, utilise et protège vos informations personnelles."
+    },
+    "Terms & Conditions": {
+        "name": "Conditions générales",
+        "description": "Les conditions légales s'appliquent lorsque vous utilisez la boutique Amerce."
+    },
+    "Returns & Refunds": {
+        "name": "Retours et remboursements",
+        "description": "Notre politique de retour de 30 jours et notre processus de retour étape par étape."
+    },
+    "Shipping": {
+        "name": "Expédition",
+        "description": "Méthodes, délais et frais d'expédition nationaux et internationaux."
+    },
+    "Our Stores": {
+        "name": "Nos magasins",
+        "description": "Visitez Amerce directement – ​​magasins phares et partenaires dans le monde entier."
+    },
+    "Blog": {
+        "name": "Blog",
+        "description": "Instructions de tenue, histoires de marque et contenu en coulisses de l'équipe éditoriale d'Amerce."
+    },
+    "Careers": {
+        "name": "Carrières",
+        "description": "Rejoignez Amerce - postes ouverts, valeurs culturelles et avantages d'équipe."
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "No gift wrap": {
+        "option_value": "لا يوجد تغليف هدايا"
+    },
+    "Standard kraft wrap": {
+        "option_value": "حزمة ورق الكرافت القياسية"
+    },
+    "Premium silk-ribbon wrap": {
+        "option_value": "حزمة الشريط الحريري الفاخر"
+    },
+    "Up to 20 characters": {
+        "option_value": "الحد الأقصى 20 حرفا"
+    },
+    "Standard 1-year warranty": {
+        "option_value": "ضمان قياسي لمدة سنة واحدة"
+    },
+    "2-year extended warranty": {
+        "option_value": "ضمان ممتد لمدة عامين"
+    },
+    "3-year premium care": {
+        "option_value": "رعاية متميزة لمدة 3 سنوات"
+    }
+}

@@ -1,0 +1,78 @@
+{
+    "Anthro": {
+        "name": "Anthro",
+        "description": "Vêtements et articles pour la maison multi-styles inspirés des traditions artisanales mondiales."
+    },
+    "Anvouge": {
+        "name": "Anvouge",
+        "description": "Des essentiels de la mode moderne coupés à partir de fibres durables."
+    },
+    "Bohome": {
+        "name": "Bohème",
+        "description": "Articles de maison et textiles d'inspiration bohème pour une maison moderne et décontractée."
+    },
+    "Carolin": {
+        "name": "Caroline",
+        "description": "Les bijoux demi-fins sont fabriqués à la main dans de petits ateliers en Italie."
+    },
+    "Cheryl": {
+        "name": "Cheryl",
+        "description": "Des motifs et des formes exceptionnels pour les femmes modernes."
+    },
+    "Crate": {
+        "name": "Caisse",
+        "description": "Les meubles inspirés du milieu du siècle sont conçus pour durer des générations."
+    },
+    "Findr": {
+        "name": "Trouver",
+        "description": "Équipement audio conçu pour une clarté de qualité studio dans les environnements quotidiens."
+    },
+    "Intdeco": {
+        "name": "Intdéco",
+        "description": "Les points forts de l'intérieur allient minimalisme et confort."
+    },
+    "Modave": {
+        "name": "Modave",
+        "description": "Équipement d'entraînement haute performance fabriqué à partir de tissu extensible recyclé."
+    },
+    "Panadoxn": {
+        "name": "Panadoxn",
+        "description": "Cosmétiques naturels recherchés par des experts cliniques en plantes médicinales."
+    },
+    "Shangxi": {
+        "name": "Shangxi",
+        "description": "Thé du patrimoine, céramiques et accessoires de méditation."
+    },
+    "Sopify": {
+        "name": "Sopifier",
+        "description": "Appareils domestiques intelligents conçus pour les locataires et les visiteurs."
+    },
+    "Textitles": {
+        "name": "Textes",
+        "description": "Daim doux et tissu tissé pour des silhouettes décontractées de hobo et de sac à bandoulière."
+    },
+    "Vanfaba": {
+        "name": "Vanfaba",
+        "description": "Bijoux décoratifs, ceintures et petite maroquinerie complètent votre look."
+    },
+    "Living": {
+        "name": "Vie",
+        "description": "Les équipements de protection et les équipements de protection individuelle répondent aux normes de travail les plus rigoureuses."
+    },
+    "West Elm": {
+        "name": "Orme Ouest",
+        "description": "Une sélection d'articles d'atelier durables pour le constructeur moderne."
+    },
+    "Stanza": {
+        "name": "Strophe",
+        "description": "Équipement de mesure de précision pour les constructeurs et les entrepreneurs."
+    },
+    "Urban": {
+        "name": "Urbain",
+        "description": "Consommables de coupe et de perçage sélectionnés pour leur fiabilité industrielle."
+    },
+    "Vanfava": {
+        "name": "Vanfava",
+        "description": "Superaliments à base de plantes et éléments nutritifs essentiels."
+    }
+}

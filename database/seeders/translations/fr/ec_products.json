@@ -1,0 +1,945 @@
+{
+    "20L Sports Bag - Gray": {
+        "name": "Sac de sport 20L - Gris",
+        "description": "Sac de sport gris compact 20 L avec compartiment à chaussures respirant et bretelles renforcées.",
+        "content": "<p>Peut contenir un ensemble complet de vêtements et de chaussures de sport. Poches latérales zippées, fond imperméable et bretelles rembourrées.</p>"
+    },
+    "4mm Ultra Grip Yoga Mat - Blue Grip": {
+        "name": "Tapis de yoga Ultra Grip 4 mm - Grip bleu",
+        "description": "Tapis de yoga en caoutchouc naturel respectueux de l'environnement avec une surface antidérapante bleue attrayante.",
+        "content": "<p>4 mm d'épaisseur amortit les joints sans perdre la sensation du sol. Sans PVC, sans latex et biodégradable. Livré avec une sangle de transport.</p>"
+    },
+    "Action Camera 4K": {
+        "name": "Caméra d'action 4K",
+        "description": "Caméra de tableau de bord Pocket 4K60 avec stabilisation HyperSmooth et corps étanche.",
+        "content": "<p>Enregistrez sur une carte microSD jusqu'à 512 Go. Diffusion en direct, commande vocale et écran avant de 2 pouces.</p>"
+    },
+    "Airy Pro Ergonomic Chair": {
+        "name": "Chaise ergonomique Airy Pro",
+        "description": "Chaise ergonomique avec dossier en résille avec dossier adaptatif, accoudoir 4D et garantie 12 ans.",
+        "content": "<p>Maille tissée respirante, mécanisme d'inclinaison synchronisé et profondeur d'assise réglable. Convient aux utilisateurs mesurant de 1m52 à 1m93.</p>"
+    },
+    "Allergy Relief Drops": {
+        "name": "Gouttes anti-allergies",
+        "description": "Gouttes formulées par un vétérinaire contenant des oméga-3 et de la quercétine pour les animaux sensibles et qui démangent.",
+        "content": "<p>Compte-gouttes à dosage facile. Ajouter à la nourriture ou à la boisson. Convient aux chiens et chats de plus de 6 mois. Flacon de 60 ml.</p>"
+    },
+    "Alloy Sport Wheel": {
+        "name": "Roue sport en alliage",
+        "description": "Jantes en alliage léger de 18 pouces avec finition gris anthracite et construction forgée.",
+        "content": "<p>Réduit la masse non amortie de 22 % par rapport aux jantes en zinc. Conception de centrage du moyeu, complète avec capuchon central et valve.</p>"
+    },
+    "Angle Grinder Pro": {
+        "name": "Meuleuse d'angle Pro",
+        "description": "Meuleuse d'angle robuste de 7 pouces avec interrupteur à gâchette et réglage du couvercle de protection sans outil.",
+        "content": "<p>Moteur de 15 ampères pour 8 500 tr/min sous charge. La poignée anti-vibration et la protection contre les surcharges aident à prolonger la durée de vie de la machine dans les travaux difficiles.</p>"
+    },
+    "Anthurium Hybrid": {
+        "name": "Anthurium hybride",
+        "description": "Feuilles brillantes en forme de cœur et fleurs rouge vif - plantes de table populaires à longue floraison.",
+        "content": "<p>Livré dans un pot de pépinière de 14 cm. Forte lumière indirecte, humidité élevée. Arrosez lorsque le premier pouce du sol est sec.</p>"
+    },
+    "Apple Watch S10": {
+        "name": "AppleWatch S10",
+        "description": "Écran Retina toujours actif avec les capteurs les plus avancés pour la forme physique et la santé.",
+        "content": "<p>Mesurez l'électrocardiogramme, les niveaux d'oxygène dans le sang et surveillez le sommeil. Boîtier en aluminium, options 41 mm et 45 mm, batterie de 18 heures.</p>"
+    },
+    "Aromatherapy Diffuser": {
+        "name": "Diffuseur d'aromathérapie",
+        "description": "Diffuseur en céramique à ultrasons avec rétroéclairage à sept couleurs et autonomie de quatre heures.",
+        "content": "<p>Fonctionne aussi silencieusement qu'un murmure. Arrêt automatique. Le récipient de 200 ml couvre jusqu'à 30 m² de pièce. Livré avec un mélange d'huiles essentielles relaxant à essayer.</p>"
+    },
+    "Astronaut Phone Case": {
+        "name": "Coque de téléphone astronaute",
+        "description": "Coque de téléphone fine et résistante aux chutes, avec imprimé astronaute personnalisé et votre nom.",
+        "content": "<p>Coque en polycarbonate avec bordure en TPU. Compatible chargement sans fil. Disponible pour les modèles iPhone et Pixel.</p>"
+    },
+    "Audiophile Open-Back": {
+        "name": "Audiophile à dos ouvert",
+        "description": "Casque magnétique planaire de style ouvert pour un espace sonore spacieux et une expérience d'écoute détaillée à la maison.",
+        "content": "<p>Cordon détachable à deux extrémités. Coussinets d'oreilles en velours. Adaptateur 1/4\" et 3,5 mm inclus.</p>"
+    },
+    "Baby Glass Bottle Set 4oz with Latex Nipple – Blush Pink for Little Moments": {
+        "name": "Ensemble de biberons en verre 4 oz avec tétine en latex – Rose blush pour les petits moments",
+        "description": "Duo de biberons en verre borosilicate avec tétine en silicone anti-colique.",
+        "content": "<p>Verre résistant aux chocs thermiques avec coque en silicone souple. Conception à col large pour un nettoyage facile. Capacité 240 ml.</p>"
+    },
+    "Blueberry Granola": {
+        "name": "Granola aux bleuets",
+        "description": "Granola à l'avoine rôti lentement avec bleuets sauvages, amandes et sirop d'érable pur.",
+        "content": "<p>Faire en petits lots. Sans sucre raffiné, sans huile de palme ni conservateur. Sachet recyclable de 500g.</p>"
+    },
+    "Bookshelf Tall": {
+        "name": "Bibliothèque haute",
+        "description": "Bibliothèque du sol au plafond en noyer massif avec étagères réglables.",
+        "content": "<p>Huit niveaux d'étagères réglables et points d'ancrage renforcés. Chaque niveau d'étagère peut contenir jusqu'à 50 livres de livres et d'objets.</p>"
+    },
+    "Botanical Body Oil": {
+        "name": "Huile corporelle botanique",
+        "description": "Les huiles de jojoba et de squalane pressées à froid, infusées de lavande et de bergamote, apaisent la peau et les sens.",
+        "content": "<p>Bouteille en verre dépoli de 100 ml. Appliquer après le bain pour une peau douce et hydratée et un parfum relaxant. Non testé sur les animaux.</p>"
+    },
+    "Brake Disc Vented": {
+        "name": "Disque de frein ventilé",
+        "description": "Les disques de frein ventilés perforés et fendus offrent un freinage plus frais et plus stable.",
+        "content": "<p>Revêtement de zinc résistant à la corrosion et structure équilibrée. Livraison unique ; Commandez par paires lors de l'entretien de l'essieu entier.</p>"
+    },
+    "Brake Pad Set Premium": {
+        "name": "Jeu de plaquettes de frein Premium",
+        "description": "Les plaquettes de frein en céramique à faible poussière avec plaquettes en acier inoxydable assurent un arrêt en douceur et sûr.",
+        "content": "<p>Les plaquettes de frein avant sont conçues pour la conduite quotidienne et des performances puissantes. Réduit la poussière de frein jusqu'à 80 % par rapport aux plaquettes de frein d'origine.</p>"
+    },
+    "Bukowski Lounge Chair": {
+        "name": "Chaise longue Bukowski",
+        "description": "Fauteuil de relaxation en porte-à-faux recouvert de cuir sellier sur une structure en acier inoxydable.",
+        "content": "<p>Inspiré des icônes du milieu du siècle, les garnitures cousues à la main et le cuir italien pleine fleur transforment cette chaise en un héritage futuriste.</p>"
+    },
+    "Buttons cotton top": {
+        "name": "Top en coton à boutons",
+        "description": "Chemise boutonnée en coton avec une coupe ample et de délicats boutons en nacre.",
+        "content": "Le tissu en popeline de coton de poids moyen <p>180 GSM conserve sa forme tout au long de la journée. Boutons en nacre. L'ourlet légèrement raccourci se coordonne à merveille avec un jean taille haute.</p>"
+    },
+    "Cabin Air Filter": {
+        "name": "Filtre à air d'habitacle",
+        "description": "Le filtre à air d'habitacle au charbon actif retient le pollen, la poussière et les odeurs d'échappement.",
+        "content": "<p>La filtration à trois couches retient les particules aussi petites que 0,3 microns. Remplacement recommandé tous les 15 000 miles.</p>"
+    },
+    "Calathea Orbifolia": {
+        "name": "Calathéa orbifolia",
+        "description": "Les feuilles rondes à rayures argentées s'enroulent la nuit – un véritable favori.",
+        "content": "<p>Livré dans un pot de pépinière de 14 cm. Lumière indirecte modérée, humidité élevée. Utilisez de l'eau distillée ou de l'eau de pluie pour de meilleurs résultats.</p>"
+    },
+    "Calm Mind Adaptogen Capsules": {
+        "name": "Capsules adaptogènes Calm Mind",
+        "description": "Le mélange d'ashwagandha et de L-théanine est formulé pour réduire le stress et favoriser une concentration claire.",
+        "content": "Les capsules <p>Vegan combinent 600 mg d'ashwagandha KSM-66 avec de la rhodiola et de la théanine. Prendre deux comprimés par jour avec les repas.</p>"
+    },
+    "Calming Treats": {
+        "name": "Gâteries apaisantes",
+        "description": "Gâterie douce à mâcher à la camomille et à la L-théanine pour les situations stressantes.",
+        "content": "<p>Formula ne contient pas de médicaments. 60 comprimés par sachet. À utiliser en voyage, en cas de tempête ou en allant à la clinique vétérinaire. Convient aux chiens de plus de 12 semaines.</p>"
+    },
+    "Cashmere Cardigan": {
+        "name": "Cardigan en Cachemire",
+        "description": "Cardigan ouvert en cachemire avec épaules tombantes et coupe décontractée.",
+        "content": "<p>100% cachemire mongol. Deux poches couvertes. À porter sur un t-shirt ou sous une veste selon la saison.</p>"
+    },
+    "Cashmere Mittens": {
+        "name": "Mitaines en Cachemire",
+        "description": "Gants doublés en cachemire avec paume en cuir et poignets élastiqués pour les journées froides.",
+        "content": "<p>Doublure 100% cachemire mongol. Paume en cuir d'agneau pour plus d'adhérence et de durabilité. Taille unisexe.</p>"
+    },
+    "Cat Scratching Post": {
+        "name": "Arbre à chat pour chat",
+        "description": "Le griffoir en fil de sisal a une base robuste et est de la bonne taille pour que les chats puissent gratter confortablement.",
+        "content": "<p>70 cm de haut avec base en MDF lesté pour plus de stabilité. Colonne en sisal remplaçable. Livré avec un jouet en plumes suspendu.</p>"
+    },
+    "Circular Saw Cordless": {
+        "name": "Scie circulaire sans fil",
+        "description": "Scie circulaire sans balais de 7-1/4 pouces avec base en magnésium et support de panne.",
+        "content": "<p>Coupez le matériau 2x à l'angle de biseau maximum. Le frein électrique arrête la lame de scie en moins de deux secondes. Piles vendues séparément.</p>"
+    },
+    "Coffee Mug Custom": {
+        "name": "Tasse à café personnalisée",
+        "description": "Personnalisez votre tasse à café de 15 oz avec votre photo, citation ou initiale préférée.",
+        "content": "<p>Porcelaine de haute qualité. Passe au lave-vaisselle et au micro-ondes. L'impression couleur couvre toute la surface.</p>"
+    },
+    "Cold-Pressed Olive Oil": {
+        "name": "Huile d'olive pressée à froid",
+        "description": "Huile d'olive extra vierge d'une seule ferme avec une finale épicée et des notes herbacées fraîches.",
+        "content": "<p>Précisez la date de récolte. Olives Picual biologiques. Conserver dans une bouteille en verre foncé pour préserver les polyphénols. Flacon de 500 ml.</p>"
+    },
+    "Cotton Tee": {
+        "name": "T-shirt en coton",
+        "description": "T-shirt en coton brossé doux avec une coupe décontractée et une encolure renforcée.",
+        "content": "<p>100% coton biologique, prélavé pour un toucher doux comme s'il avait été porté longtemps. Disponible en noir, ivoire et gris ardoise. Teindre le produit fini avec des colorants à faible impact.</p>"
+    },
+    "Cozy Bunny Hooded Towel for Newborns and Toddlers": {
+        "name": "Serviette à capuche Cozy Bunny pour nouveau-nés et tout-petits",
+        "description": "La serviette de bain est dotée d'une capuche douce en coton et bambou pour garder votre bébé au chaud après chaque bain.",
+        "content": "<p>Serviette en bambou mélangé de coton 500 g/m². Dimensions spacieuses 90x90cm. Chapeau doux avec détails d'oreilles brodés. Hypoallergénique et sans chlore.</p>"
+    },
+    "Cozy Dog Bed": {
+        "name": "Lit confortable pour chien",
+        "description": "Matelas orthopédique à mémoire de forme avec housse amovible et lavable en machine.",
+        "content": "<p>La mousse haute densité soutient les articulations des animaux plus âgés. Housse polaire Sherpa. Disponible dans les tailles M-XL. Semelle antidérapante.</p>"
+    },
+    "Cropped wool-blend knit sweater": {
+        "name": "Pull raccourci en maille de laine mélangée",
+        "description": "Un pull court à col rond en laine mélangée chaude — ample sur la longueur avec ourlet et poignets côtelés."
+    },
+    "Custom Tee Premium": {
+        "name": "T-shirt personnalisé Premium",
+        "description": "T-shirts épais 100% coton imprimés avec vos images, dessins ou messages.",
+        "content": "<p>Fil de coton torsadé pré-rétréci. Disponible dans les tailles XS-3XL. Imprimez directement sur le tissu pour éviter la décoloration après de nombreux lavages.</p>"
+    },
+    "Cylinder Head Gasket": {
+        "name": "Joint De Culasse",
+        "description": "Les joints de face moteur en acier multicouche sont conçus pour les moteurs à taux de compression élevé.",
+        "content": "La structure MLS standard <p>OE résiste aux cycles thermiques et à la pression de la chambre de combustion. Vous trouverez ci-joint des instructions sur les procédures de serrage.</p>"
+    },
+    "Daily Greens Powder": {
+        "name": "Poudre de légumes verts quotidiens",
+        "description": "Un mélange de super légumes verts biologiques avec de la spiruline, de la chlorelle et de l'adaptogène pour une vitalité quotidienne.",
+        "content": "<p>À base de plantes, sans sucre et contient 24 aliments entiers riches en nutriments. Mélangez une mesure dans de l'eau ou dans votre smoothie préféré chaque matin.</p>"
+    },
+    "Daily Sunscreen Light": {
+        "name": "Lumière de protection solaire quotidienne",
+        "description": "Crème solaire physique SPF 50 pour un fini invisible sous le maquillage ou portée seule.",
+        "content": "<p>N'obstrue pas les pores. L'oxyde de zinc est sans danger pour les récifs coralliens. Tube de 50 ml. Réappliquer toutes les deux heures d'exposition au soleil.</p>"
+    },
+    "Daily Wireless Earbuds": {
+        "name": "Écouteurs sans fil quotidiens",
+        "description": "Véritables écouteurs sans fil avec suppression adaptative du bruit, résistance à la transpiration IPX5 et 30 heures d'autonomie totale.",
+        "content": "<p>Six microphones pour des appels clairs, un couplage multipoint et un étui de chargement sans fil. Comprend trois tailles de bouchons d'oreilles.</p>"
+    },
+    "Dark Choc Almonds": {
+        "name": "Amandes au chocolat noir",
+        "description": "Amandes croustillantes enrobées de chocolat noir 70% mono origine.",
+        "content": "<p>Biologique, certifié commerce équitable. Naturellement sans gluten. Sachet refermable de 200g.</p>"
+    },
+    "Dash Camera Pro": {
+        "name": "Caméra de tableau de bord Pro",
+        "description": "Caméra de tableau de bord avant et arrière avec résolution 1440p, mode stationnement et enregistrement GPS intégré.",
+        "content": "<p>Capturez chaque voyage avec une clarté 1440p d'une netteté exceptionnelle grâce aux capteurs de vision nocturne avant et arrière. Comprend une surveillance du stationnement 24 heures sur 24 et une connectivité d'application Wi-Fi.</p>"
+    },
+    "Denim Jacket": {
+        "name": "Veste en jean",
+        "description": "Veste en jean de style camionneur classique en bleu brut vintage.",
+        "content": "<p>Denim japonais 14oz. Coutures en lisière. S'adoucit progressivement avec le temps et s'estompe naturellement.</p>"
+    },
+    "Diamond Pendant": {
+        "name": "Pendentif Diamant",
+        "description": "Pendentif diamant rond brillant de 0,25 ct monté sur une fine chaîne en or.",
+        "content": "<p>La pierre est certifiée GIA G/SI1. Lunette en or jaune massif 14 carats et bracelet boîte de 16 pouces avec anneau réglable jusqu'à 18 pouces.</p>"
+    },
+    "Dining Table Oak": {
+        "name": "Table à manger en chêne",
+        "description": "La table à manger allongée est en chêne blanc massif et peut accueillir six à dix personnes avec une rallonge au milieu.",
+        "content": "<p>Les pieds de style berceau offrent beaucoup d'espace confortable pour les jambes. La surface finie à la main est traitée avec des huiles naturelles — facile à renouveler année après année.</p>"
+    },
+    "Dinosaur Theme Mug": {
+        "name": "Tasse thème dinosaure",
+        "description": "Tasse en céramique brillante imprimée avec une image amusante de dinosaure et un nom personnalisé.",
+        "content": "<p>Capacité 11oz. Passe au micro-ondes et au lave-vaisselle. Imprimez une qualité photo qui dure lors d'une utilisation quotidienne.</p>"
+    },
+    "Dog Chew Toy": {
+        "name": "Jouet à mâcher pour chien",
+        "description": "Les produits à mâcher en caoutchouc super durables peuvent rebondir, flotter sur l'eau et résister aux fortes mastications des chiens.",
+        "content": "<p>Le caoutchouc naturel est non toxique. Lavable en machine en toute sécurité. Le noyau creux peut être farci de collations ou de beurre de cacahuète. Disponible dans les tailles allant du petit au XL.</p>"
+    },
+    "Dog Harness": {
+        "name": "Harnais pour chien",
+        "description": "Harnais anti-recul rembourré avec bordure réfléchissante et deux points d'attache de laisse.",
+        "content": "<p>Coussin en maille respirante. Réglage en cinq points pour un ajustement parfait. Disponible dans les tailles XS-XL. Lavage à la main à l'eau froide.</p>"
+    },
+    "Dragon Fruit": {
+        "name": "Fruit du dragon",
+        "description": "Fruit du dragon rose vif avec une légère douceur et une texture croquante.",
+        "content": "<p>Récoltées à la main à parfaite maturité auprès de producteurs certifiés biologiques. Riche en vitamine C et en antioxydants. Vendu par fruit.</p>"
+    },
+    "DS02 Monitor Stand": {
+        "name": "Support de moniteur DS02",
+        "description": "Présentoir en aluminium avec hub USB-C intégré et chargeur sans fil.",
+        "content": "<p>Soulever l'écran à 12 cm de la table. Trois ports USB-A, un port USB-C PD et une surface de chargement sans fil Qi 15 W.</p>"
+    },
+    "Egg-Crate Wall Art": {
+        "name": "Art mural en forme de caisse à œufs",
+        "description": "Superbe art mural avec un motif amusant de plateau à œufs sur du papier mat de qualité archivistique.",
+        "content": "<p>Encre de qualité archivistique. Disponible en tailles 12x18 et 18x24. Certificat FSC. Cadre vendu séparément.</p>"
+    },
+    "Element Nightstand": {
+        "name": "Table de chevet élément",
+        "description": "Table de chevet à deux tiroirs en noyer avec rails coulissants lisses et poignées en laiton.",
+        "content": "<p>Bois de noyer massif, finition frottée à la main et tiroirs à queue d'aronde. Conçu pour approfondir la couleur au fil des décennies.</p>"
+    },
+    "Elsa Drop Earrings": {
+        "name": "Boucles d'oreilles pendantes Elsa",
+        "description": "Boucles d'oreilles pendantes sculptées en or 14 carats avec une courbe très brillante.",
+        "content": "<p>Le fermoir est hypoallergénique. Les gouttes mesurent 1 pouce de long. Assez léger pour être porté tous les jours. Conçu par un atelier interne à Florence.</p>"
+    },
+    "Embossed Wallet": {
+        "name": "Portefeuille en relief",
+        "description": "Portefeuille en cuir à deux volets avec délicat motif monogramme en relief, six compartiments pour cartes et un compartiment pour la monnaie.",
+        "content": "<p>Cuir végétal. Doublure antivol RFID. Bords peints à la main et points de pression renforcés.</p>"
+    },
+    "Engraved Coaster Set": {
+        "name": "Ensemble de sous-verres gravés",
+        "description": "Ensemble de quatre sous-verres en bambou gravés au laser avec des noms, des dates ou des dessins personnalisés.",
+        "content": "<p>Bambou est certifié FSC. La semelle en liège protège la surface. Emballé dans une boîte cadeau en papier kraft prêt à offrir.</p>"
+    },
+    "Epipremnum Aureum": {
+        "name": "Épipremnum doré",
+        "description": "Noix de bétel jaune grimpante – facile à entretenir, tolérante à la faible luminosité et tolérante aux horaires chargés.",
+        "content": "<p>Livré dans un pot de pépinière de 14 cm. Préfère une forte lumière indirecte. Arrosez lorsque la couche supérieure de 2 cm du sol est sèche.</p>"
+    },
+    "Ergonomic Mouse Pro": {
+        "name": "Souris ergonomique Pro",
+        "description": "Souris verticale ergonomique avec DPI réglable et clic silencieux — confortable pour les longues sessions de travail.",
+        "content": "<p>USB-C 2,4 GHz sans fil et Bluetooth. Batterie 70 jours. Rechargeable, confortable toute la journée.</p>"
+    },
+    "Eternity Band": {
+        "name": "Bande d'éternité",
+        "description": "Bague d'éternité cannelée en diamant d'un poids total de 1,0 ct en or jaune 14 carats.",
+        "content": "<p>Des diamants ronds brillants sont montés en continu autour du corps de la bague. Couleur F/G, pureté VS. Version de 2,5 mm de large. Ajustez la taille en fonction de la commande.</p>"
+    },
+    "Expose Side Table": {
+        "name": "Exposer la table d'appoint",
+        "description": "Table d'appoint sculpturale avec plateau en travertin et pieds en acier thermolaqué.",
+        "content": "<p>Chaque dalle de travertin est unique — le grain de la pierre naturelle et les subtiles variations de couleurs sont la marque du produit.</p>"
+    },
+    "Family Tote Bag": {
+        "name": "Sac fourre-tout familial",
+        "description": "Sac fourre-tout en coton durable de 12 oz imprimé avec des initiales ou une photo de famille personnalisée.",
+        "content": "<p>La sangle du sac est renforcée et lavable en machine. Idéal pour les sacs de plage, les sacs de courses ou les sacs de tous les jours.</p>"
+    },
+    "Fiddle Leaf Fig": {
+        "name": "Figue Feuille De Violon",
+        "description": "Amandier de Singapour sculptural avec de larges feuilles en forme de violon - un véritable arbre d'accent.",
+        "content": "<p>Livré dans un pot de pépinière de 24 cm. Préfère une lumière indirecte forte et stable. Évitez les courants d'air et les arrosages excessifs.</p>"
+    },
+    "Foam Roller Pro": {
+        "name": "Rouleau en mousse Pro",
+        "description": "Rouleau en mousse haute densité de 24 pouces de long avec surface rugueuse pour le travail des tissus en profondeur.",
+        "content": "La construction <p>EVA conserve sa forme grâce à une utilisation intensive et répétée. Travaille les quadriceps, les fessiers, la bande informatique et le haut du dos.</p>"
+    },
+    "Footrest Adjustable": {
+        "name": "Repose-pieds réglable",
+        "description": "Repose-pieds ergonomique inclinable avec surface antidérapante et dix réglages de hauteur.",
+        "content": "<p>Réduisez la pression sur le bas du dos à n'importe quel bureau. Rangez-le soigneusement lorsqu’il n’est pas utilisé. Soutient une posture naturelle pendant les longs quarts de travail.</p>"
+    },
+    "Frigg Moon Natural Rubber Baby Pacifier Gentle Comfort": {
+        "name": "Sucette pour bébé en caoutchouc naturel Frigg Moon Confort doux",
+        "description": "Lotion sans parfum à l'extrait d'avoine et au beurre de karité pour la peau sensible de bébé.",
+        "content": "<p>Testé dermatologiquement. Ne contient pas de parabènes, de sulfates ou de parfums synthétiques. Flacon pompe 200ml.</p>"
+    },
+    "Funnel-neck wool jacket": {
+        "name": "Veste en laine à col cheminée",
+        "description": "Une veste courte en laine avec un col cheminée montant, une patte de boutonnage à boutons-pression et une fermeture zippée sur toute la longueur."
+    },
+    "Garment-washed linen overshirt": {
+        "name": "Surchemise en lin lavé en pièce",
+        "description": "Une surchemise en lin de coupe décontractée avec un col italien épuré et des boutons en coquillage — conçue pour être portée sur un t-shirt."
+    },
+    "Gold Tennis Bracelet": {
+        "name": "Bracelet Tennis Or",
+        "description": "Bracelet tennis classique avec diamants 1,5 ct en or blanc 14 carats.",
+        "content": "<p>Diamant rond brillant serti à la main, couleur F/G, pureté VS. Verrou de sécurité à double verrouillage. Taille 7 pouces, service de redimensionnement disponible.</p>"
+    },
+    "Hammer Drill 18V": {
+        "name": "Marteau perforateur 18V",
+        "description": "Marteau perforateur sans fil avec sélecteur à trois modes et éclairage LED.",
+        "content": "<p>Visser, percer et percer du béton jusqu'à 1/2 pouce. Livré avec deux batteries 4 Ah, un chargeur rapide et un étui de transport spécialisé pour les entrepreneurs.</p>"
+    },
+    "Hammock Cat Tower Grey": {
+        "name": "Hamac Tour à Chat Gris",
+        "description": "Poteau d'escalade pour chat à trois niveaux avec griffoir en corde de sisal et aire de repos en peluche. Fabriqué en pin massif avec un hamac en velours doux et un coussin amovible.",
+        "content": "<p>Âme en panneaux de particules recouverts d'un tissu velours doux. 110 cm de hauteur avec colonne en sisal remplaçable. Assemblage facile avec les outils inclus.</p>"
+    },
+    "Heart Photo Frame": {
+        "name": "Cadre photo coeur",
+        "description": "Cadre photo en bois en forme de cœur avec votre photo de couple préférée imprimée dans une finition mate douce.",
+        "content": "<p>Le bois de chêne est certifié FSC. Peut être placé debout ou fixé au mur. Zone d'impression photo 5x5.</p>"
+    },
+    "Herbal Recovery Tea": {
+        "name": "Thé de récupération à base de plantes",
+        "description": "Camomille, valériane et mélisse sous forme de feuilles mobiles – une tasse de thé tous les soirs pour se détendre avant de se coucher.",
+        "content": "<p>Cultivé biologiquement et mélangé à la main. La boîte refermable de 50 g donne 25 portions. Naturellement sans caféine.</p>"
+    },
+    "High neck midi wool coat": {
+        "name": "Manteau midi en laine à col montant",
+        "description": "Manteau en laine camel doux à col montant — le col cheminée peut être fermé par une fermeture éclair pour les voyages froids et venteux.",
+        "content": "<p>Tissu melton en laine brossée douce avec doublure en polyester recyclé. Serrure bidirectionnelle cachée. Poches passepoilées sur la hanche.</p>"
+    },
+    "Hoya Carnosa": {
+        "name": "Hoya Carnosa",
+        "description": "Le cyprès à feuilles cireuses grimpe et récompense les soignants avec des grappes de fleurs parfumées.",
+        "content": "<p>Livré dans un pot de pépinière de 12 cm. Lumière vive, pot bien ajusté, peu d'arrosage. Laisser sécher entre les arrosages.</p>"
+    },
+    "Hydrating Serum": {
+        "name": "Sérum Hydratant",
+        "description": "Le sérum à l'acide hyaluronique aide à repulper, hydrater et lisser les ridules au contact.",
+        "content": "<p>Acide hyaluronique à cinq poids moléculaires. Aucun arôme. Flacon de 30 ml avec pompe à vide.</p>"
+    },
+    "HyperOne Gen 3 Keyboard": {
+        "name": "Clavier HyperOne Gen 3",
+        "description": "Le clavier mécanique à 75 % peut avoir des commutateurs remplaçables à chaud avec des touches PBT et des commutateurs tactiles linéaires.",
+        "content": "<p>USB-C et Bluetooth multipoint. RVB par touche. Plaque de base en aluminium. Mise en page pour Mac et Windows.</p>"
+    },
+    "Imola Armchair": {
+        "name": "Fauteuil Imola",
+        "description": "Fauteuil de relaxation sculptural recouvert de tissu bouclé avec pieds en chêne massif.",
+        "content": "Structure en chêne certifié <p>FSC avec mousse hautement élastique et coussin en caoutchouc naturel. Conception pour des salons qui incitent les gens à y regarder à deux fois.</p>"
+    },
+    "Impact Driver Set": {
+        "name": "Ensemble de tournevis à percussion",
+        "description": "Tournevis à percussion compact 18 V avec commande à trois vitesses et jeu de 30 embouts.",
+        "content": "Le couple <p>1 800 po-lb capture les gros boulons et vis sans avoir besoin de pré-perçage. Comprend un clip hexagonal de 1/4 pouce et un crochet de ceinture.</p>"
+    },
+    "iPhone 17 Pro Max": {
+        "name": "iPhone 17 Pro Max",
+        "description": "Smartphone haut de gamme avec cadre en titane, écran ProMotion et triple caméra professionnelle.",
+        "content": "<p>Écran Super Retina XDR de 6,9 pouces, puce A19 Pro et zoom optique 5x. Conçu pour filmer, éditer et diffuser depuis n'importe où.</p>"
+    },
+    "King Platform Bed": {
+        "name": "Très grand lit plateforme",
+        "description": "Lit plateforme bas avec tête de lit en lin et structure en chêne.",
+        "content": "<p>La plateforme de lit incrustée supporte tous les types de matelas sans avoir besoin d'un cadre à ressorts. Housse en lin amovible pour le nettoyage.</p>"
+    },
+    "Laser Level": {
+        "name": "Niveau laser",
+        "description": "Niveleur laser en croix avec portée de 100 pieds et support magnétique.",
+        "content": "Laser <p>Class II avec diode verte pour une visualisation facile à la lumière du jour. Conforme à la norme IP54, fonctionne pendant dix heures avec des piles AA.</p>"
+    },
+    "Leather Boots": {
+        "name": "Bottes en cuir",
+        "description": "Bottines basses à bout pointu de taille moyenne sur un talon bloc étagé avec fermeture éclair latérale.",
+        "content": "<p>Corps en cuir de veau lisse, semelle intérieure en cuir et semelle antidérapante en caoutchouc Vibram. Fini à la main au Portugal.</p>"
+    },
+    "Leather Crossbody Bag": {
+        "name": "Sac bandoulière en cuir",
+        "description": "Sac bandoulière en cuir lisse avec bretelles réglables, boucle en métal doré et trois fentes pour cartes.",
+        "content": "<p>Cuir pleine fleur italien. Bord du sac peint à la main. Convient aux styles quotidiens et formels.</p>"
+    },
+    "Leather shopper bag with stitching": {
+        "name": "Sac cabas en cuir avec surpiqûres",
+        "description": "Sac cabas spacieux en cuir avec coutures sellier contrastées et coins renforcés.",
+        "content": "<p>Le cuir pleine fleur au tannage végétal développe une patine chaleureuse au fil du temps. La bouche s'ouvre avec une fermeture magnétique. L'intérieur du sac est doublé de daim avec deux poches latérales et une poche zippée.</p>"
+    },
+    "LED Desk Lamp Smart": {
+        "name": "Lampe de bureau LED intelligente",
+        "description": "Lampe de bureau LED apaisante pour les yeux avec réglage des couleurs du rythme circadien, contrôle par application et station de chargement sans fil.",
+        "content": "<p>Ajustez 2700K-6500K. 1500 lux à hauteur de table. Chargement sans fil Qi 10 W intégré à la base.</p>"
+    },
+    "LED Headlight Bulb": {
+        "name": "Ampoule de phare LED",
+        "description": "Paire d'ampoules LED convertibles de 10 000 lumens avec ventilateur de refroidissement silencieux.",
+        "content": "<p>Température de couleur lumière du jour 6 500 K, installation plug-and-play, compatible CANBus sur la plupart des véhicules. Durée de vie 50 000 heures.</p>"
+    },
+    "Light Therapy Lamp": {
+        "name": "Lampe de luminothérapie",
+        "description": "Lampe de bureau à spectre complet de 10 000 lux avec chaleur réglable et minuterie intégrée de 30 minutes.",
+        "content": "<p>Aide à réguler le rythme circadien pendant les mois de faible luminosité. Rayons UV filtrés. Support compact et angle d'inclinaison réglable.</p>"
+    },
+    "linen slim-fit shirt": {
+        "name": "chemise slim en lin",
+        "description": "Chemise slim en lin lavé avec ourlet arrondi — idéale aussi bien pour le bureau que pour le week-end.",
+        "content": "<p>Le lin européen est tissé et fini au Portugal. Bouton en pierre. Serrer le corps modérément sans restreindre les mouvements.</p>"
+    },
+    "Link Necklace Gold": {
+        "name": "Collier Lien Or",
+        "description": "Collier à maillons style trombone poli en or jaune 14 carats, 18 pouces de long.",
+        "content": "<p>Chaîne en or massif 14 carats, cadenas crevette. À porter joliment en superposition avec un pendentif plus court ou porté seul sur un col ouvert.</p>"
+    },
+    "Little Dine Wooden High Chair Elegant Comfort for Tiny Foodies": {
+        "name": "Chaise haute en bois Little Dine, confort élégant pour les petits gourmets",
+        "description": "Peluche en coton biologique tricotée à la main, parfaitement dimensionnée pour les petits bras.",
+        "content": "<p>Intestin anti-allergique recyclé. Détail du visage brodé – pas de petits détails. La surface peut être essuyée.</p>"
+    },
+    "Long Leaf Shaped Earrings": {
+        "name": "Boucles d'oreilles en forme de longue feuille",
+        "description": "Les boucles d'oreilles pendantes en forme de feuille sont sculptées avec une finition dorée brillante.",
+        "content": "<p>Bronze coulé léger avec fermoir anti-allergique. Finition artisanale. Livré avec un sac en velours.</p>"
+    },
+    "Lumbar Support Cushion": {
+        "name": "Coussin de soutien lombaire",
+        "description": "Oreiller de soutien lombaire en mousse à mémoire de forme avec housse en maille respirante et sangles réglables.",
+        "content": "<p>Encourage une colonne vertébrale naturellement droite dans tous les types de chaises. Housse amovible lavable en machine à l'eau froide. Convient à n'importe quel bureau, voiture ou canapé.</p>"
+    },
+    "Lyocell wrap top": {
+        "name": "Haut cache-cœur en lyocell",
+        "description": "Haut cache-cœur en lyocell cool avec drapé doux et ceinture naturelle — polyvalent du bureau à un dîner.",
+        "content": "<p>Coupée et cousue à partir de 100 % lyocell TENCEL™, la chemise portefeuille est aussi aérée que le lin et ses drapés sont aussi doux que la soie. Le col en V profond et le lien latéral s'ajustent facilement à n'importe quelle taille.</p>"
+    },
+    "Madrid": {
+        "name": "Madrid",
+        "description": "Table élévatrice électrique lisse avec moteur à trois étages et réglages de hauteur à mémoire.",
+        "content": "<p>Capteur anti-collision et quatre réglages de hauteur programmables. Plateau de table en bambou massif, 60 x 30 pouces. Peut soulever des charges jusqu'à 220 livres.</p>"
+    },
+    "Magnetic Phone Stand": {
+        "name": "Support de téléphone magnétique",
+        "description": "Support en aluminium compatible MagSafe avec base robuste et réglage de l'angle d'inclinaison.",
+        "content": "<p>Maintient votre téléphone à l'angle parfait pour FaceTime, consulter des recettes ou charger. Matériau aluminium et silicium.</p>"
+    },
+    "Manuka Honey": {
+        "name": "Miel de Manuka",
+        "description": "Le miel de Manuka brut et non pasteurisé est classé en fonction de son activité enzymatique naturelle.",
+        "content": "<p>Exploité dans des fermes apicoles isolées en Nouvelle-Zélande. Certifié UMF 10+. Pot en verre 250g.</p>"
+    },
+    "Men Casual Shoes with PU Upper": {
+        "name": "Chaussures décontractées pour hommes avec dessus en PU",
+        "description": "Chaussure de tennis inspirée du tennis avec maintien latéral, médio-pied rembourré et semelle extérieure à chevrons.",
+        "content": "<p>Corps en cuir synthétique avec revêtement TPU. La semelle intermédiaire enveloppante offre une stabilité grâce à des mouvements latéraux rapides. Semelle extérieure multi-pas.</p>"
+    },
+    "Men Duramo": {
+        "name": "Hommes Duramo",
+        "description": "Silhouette de chaussure de course classique avec tige en daim et talon coussiné.",
+        "content": "<p>Superpositions en daim sur une base en mesh respirant. Semelle intercalaire en EVA avec chambre à air exposée au talon. La chaussure lifestyle classique qui commence tout.</p>"
+    },
+    "Men Flat Low": {
+        "name": "Hommes Plat Bas",
+        "description": "Baskets de marche en cuir avec semelle intérieure coussinée et semelle extérieure en caoutchouc flexible.",
+        "content": "<p>Corps en cuir souple avec patchs élastiques aux chevilles. Semelle intérieure amovible pour utilisation d'orthèses. Des chaussures pour travailler toute la journée.</p>"
+    },
+    "Men Flat Sneakers": {
+        "name": "Baskets plates pour hommes",
+        "description": "Baskets polyvalentes avec tige en tricot, semelle intercalaire en mousse et design à enfiler.",
+        "content": "<p>Le corps tricoté élastique épouse le pied comme une chaussette. Semelle intercalaire moulée en EVA. Chaussures pour les jours de voyage : faciles à passer le contrôle de sécurité et idéales pour la randonnée.</p>"
+    },
+    "Men Panelled Athleisure Shoes": {
+        "name": "Chaussures de sport à empiècements pour hommes",
+        "description": "Escarpin classique bas en cuir blanc avec surpiqûres assorties.",
+        "content": "<p>Tige en cuir lisse, col rembourré et semelle extérieure en caoutchouc à chevrons. Des chaussures blanches minimalistes qui s'accordent avec tout.</p>"
+    },
+    "Men Sports Shoes with Mesh upper": {
+        "name": "Chaussures de sport pour hommes avec tige en mesh",
+        "description": "Baskets en mesh respirant avec semelle intercalaire coussinée et semelle extérieure en caoutchouc durable.",
+        "content": "<p>Tige en mesh technique, semelle intermédiaire en EVA et semelle extérieure hautement résistante à l'abrasion. Forme de taille standard. Convient aux entraînements quotidiens et à la course sur la machine.</p>"
+    },
+    "Men's Running JF190.1 Grip White": {
+        "name": "Homme Running JF190.1 Grip Blanc",
+        "description": "La chaussure met l'accent sur la légèreté avec une semelle intercalaire en mousse résistante et une tige en maille respirante blanche et propre.",
+        "content": "<p>Conçu pour la conduite quotidienne, le JF190.1 équilibre confort et retour d'énergie. Carrosserie en plastique recyclé, déport de 8 mm, adaptée aux routes asphaltées et aux sentiers plats.</p>"
+    },
+    "Men's Sports T-Shirt - Dry Brown": {
+        "name": "T-Shirt de Sport Homme - Marron Sec",
+        "description": "T-shirt de sport marron sec qui évacue la transpiration — tissu tissé à séchage rapide avec empiècements en mesh sur les côtés.",
+        "content": "<p>Un mélange de polyester léger vous garde au frais pendant les longues séries. Les coutures plates réduisent les frottements et l'ourlet de l'ao dai reste le même à chaque répétition.</p>"
+    },
+    "Merino Wool Knit Booties with Drawstring – Snug Comfort for Newborns": {
+        "name": "Chaussons tricotés en laine mérinos avec cordon de serrage – Confort douillet pour les nouveau-nés",
+        "description": "Les chaussures douces en laine mérinos gardent les petits pieds au chaud sans provoquer de chaleur.",
+        "content": "<p>Doublure en laine mérinos naturelle respirante avec col élastique. Lavable en machine sur cycle délicat. Tailles 0-12 mois.</p>"
+    },
+    "MG20 Wireless Gaming": {
+        "name": "Jeu sans fil MG20",
+        "description": "Casque de jeu sans fil à faible latence avec possibilité de mélanger deux sources audio et un microphone amovible.",
+        "content": "<p>Récepteur USB 2,4 GHz avec Bluetooth multipoint. Audio spatial THX. Batterie de 22 heures, charge rapide USB-C.</p>"
+    },
+    "MH40 Wireless Over-Ear": {
+        "name": "Circum-auriculaire sans fil MH40",
+        "description": "Écouteurs supra-auriculaires sans fil de style classique avec cuir cousu à la main et autonomie de 30 heures.",
+        "content": "<p>Haut-parleur en béryllium de 40 mm, charge rapide USB-C et cadre en aluminium. Un casque haut de gamme pour un usage quotidien, conçu pour durer.</p>"
+    },
+    "Mindfulness Journal": {
+        "name": "Journal de pleine conscience",
+        "description": "Le journal comprend un guide de 12 semaines avec des suggestions quotidiennes de gratitude, de réflexion et de définition d'intentions.",
+        "content": "<p>Certificat de certification FSC. Couverture rigide recouverte de lin. Comprend un tableau de suivi des habitudes, des exercices de respiration et un examen hebdomadaire.</p>"
+    },
+    "Mini Crossbody": {
+        "name": "Mini bandoulière",
+        "description": "Petit sac bandoulière en cuir avec bandoulière chaîne et boucle en métal doré.",
+        "content": "<p>Peut contenir un téléphone, des cartes et du rouge à lèvres. La sangle s'ajuste de 22 à 24 pouces. Doublure en tissu de coton Drill.</p>"
+    },
+    "Mini Sue Crossbody Bag": {
+        "name": "Mini sac à bandoulière Sue",
+        "description": "Sac bandoulière en cuir lisse avec bretelles réglables, boucle en métal doré et trois fentes pour cartes.",
+        "content": "<p>Cuir pleine fleur italien. Bord du sac peint à la main. Convient aux styles quotidiens et formels.</p>"
+    },
+    "Modular Storage Cube": {
+        "name": "Cube de rangement modulaire",
+        "description": "Cube de rangement empilable en bois de frêne massif avec porte rabattable en option.",
+        "content": "<p>Configurez-le comme une seule unité ou empilé sur des étagères : l'assemblage modulaire permet au système de s'étendre en fonction de votre espace.</p>"
+    },
+    "Monstera Deliciosa": {
+        "name": "Monstera délicieuse",
+        "description": "Le bétel d'Amérique du Sud, avec ses feuilles lobées emblématiques, constitue un point fort impressionnant pour n'importe quelle pièce.",
+        "content": "<p>Livré dans un pot de pépinière de 17 cm. Forte lumière indirecte. Arrosez abondamment lorsque le sol est sec, puis égouttez complètement.</p>"
+    },
+    "Mood Support Mushroom Blend": {
+        "name": "Mélange de champignons pour le soutien de l'humeur",
+        "description": "Un complexe de champignons fonctionnels – crinière de lion, reishi et cordyceps – soutient la cognition.",
+        "content": "<p>Double extrait de corps fruitiers biologiques. 1500 mg par portion. Mélanger avec du café, du thé ou des smoothies.</p>"
+    },
+    "MUSHIE Frigg Baby's First Pacifier Floral Heart | Kido Bebe": {
+        "name": "MUSHIE Frigg Première sucette cœur floral pour bébé | Kido Bébé",
+        "description": "Les sucettes solides en silicone de qualité médicale sont conçues pour soutenir une prise naturelle du sein.",
+        "content": "<p>Sans BPA, BPS, PVC et phtalates. Forme dentaire symétrique. Peut être stérilisé par ébullition et lavé au lave-vaisselle.</p>"
+    },
+    "MW75 Active Noise Cancelling": {
+        "name": "Suppression active du bruit MW75",
+        "description": "La suppression active du bruit s'adapte intelligemment avec quatre microphones et se met automatiquement en pause lors de la détection de la tête, idéal pour bouger et se concentrer.",
+        "content": "<p>Coussins d'oreille en peau de mouton, écran tactile en verre saphir et support adaptatif aptX haute résolution.</p>"
+    },
+    "NKD High Waisted Shorts": {
+        "name": "Short taille haute NKD",
+        "description": "Conçu pour la vitesse, le confort et les mouvements quotidiens."
+    },
+    "Organic Turmeric Powder": {
+        "name": "Poudre de curcuma biologique",
+        "description": "Le curcuma indien séché au soleil est broyé en une poudre fine et profondément pigmentée.",
+        "content": "<p>Riche en curcumine. Mélanger avec du poivre noir pour augmenter l'absorption. Pot en verre de 100 g avec cuillère doseuse.</p>"
+    },
+    "Origins": {
+        "name": "Origines",
+        "description": "Douche et lavage des mains Origins Ginger Burst avec des plantes énergisantes.",
+        "content": "<p>Formule sans sulfate au gingembre, écorces d'agrumes et aloe vera. Flacon pompe de 250 ml. Convient pour un usage quotidien.</p>"
+    },
+    "Oval shoulder bag": {
+        "name": "Sac bandoulière ovale",
+        "description": "Sac à bandoulière ovale compact avec de fines lanières en cuir — peut contenir un téléphone, un portefeuille et des objets personnels.",
+        "content": "<p>Cuir nappa lisse avec boucle en métal doré poli. Sangle réglable. La poche est doublée de micro-suède avec une fente pour carte.</p>"
+    },
+    "Oversized poplin button-up shirt": {
+        "name": "Chemise boutonnée oversize en popeline",
+        "description": "Chemise en popeline rose tendre avec une coupe oversize, des coutures épaules descendues et un ourlet arrondi."
+    },
+    "Paris": {
+        "name": "Paris",
+        "description": "Chaise ergonomique à dossier en maille avec dossier lombaire réglable et accoudoir 4D.",
+        "content": "<p>Mécanisme d'inclinaison synchrone, dossier en maille respirante et sept points de réglage. Peut contenir jusqu'à 300 livres et est livré entièrement assemblé.</p>"
+    },
+    "Pearl Drop Earrings": {
+        "name": "Boucles d'oreilles pendantes avec perles",
+        "description": "Boucles d'oreilles pendantes en perles d'eau douce installées à la main avec épingles plaquées or 14 carats et maillons flexibles.",
+        "content": "<p>Perle AA de 8 à 9 mm. Gouttelette de 1,5 pouces de long. Convient aux styles quotidiens et formels. Livré avec un sac en velours et un chiffon de nettoyage.</p>"
+    },
+    "Pearl Necklace": {
+        "name": "Collier de perles",
+        "description": "Collier de perles d'eau douce avec fermoir plaqué or 14 carats et longueur de 18 pouces.",
+        "content": "<p>Faites un nœud à la main entre chaque perle. Perles taille moyenne 7-8mm. Livré avec une pochette en velours et une carte d'instructions d'entretien.</p>"
+    },
+    "Performance Oil Filter": {
+        "name": "Filtre à huile performant",
+        "description": "Filtre à huile à noyau synthétique à haut débit, adapté aux intervalles de vidange d'huile prolongés.",
+        "content": "<p>Le clapet anti-retour et le joint en silicone assurent la protection lors des démarrages à froid. Compatible avec les huiles synthétiques et conventionnelles.</p>"
+    },
+    "Personalized Pillow": {
+        "name": "Oreiller personnalisé",
+        "description": "Coussins confortables imprimés à votre image ou design – doux des deux côtés.",
+        "content": "Coquille en polyester <p>16x16 avec intérieur rempli de plumes. Amovible et lavable en machine.</p>"
+    },
+    "Pet Portrait Print": {
+        "name": "Impression de portrait d’animal de compagnie",
+        "description": "Le portrait de votre animal est dessiné à la main, imprimé sur du papier mat de qualité archivistique.",
+        "content": "<p>Envoyez n'importe quelle photo et nos artistes la transformeront en un portrait stylisé. Disponible en tailles 8x10 et 16x20.</p>"
+    },
+    "Pet Shampoo": {
+        "name": "Shampoing pour animaux de compagnie",
+        "description": "Le gel douche à l'avoine et à l'aloe vera nettoie sans éliminer les huiles naturelles.",
+        "content": "<p>Équilibre le pH pour les chiens et les chats. Ne contient pas de savon. Tensioactif extrait de la noix de coco. Flacon de 500 ml. Non testé sur les animaux.</p>"
+    },
+    "Photo Book Mini": {
+        "name": "Livre photo mini",
+        "description": "Album photo compact à couverture rigide 5 x 7 — idéal pour les voyages, les mariages ou les fêtes de fin d'année.",
+        "content": "<p>20 à 100 pages en option. Papier de soie de haute qualité. Reliure plate pour de longues pages photo sans distorsion.</p>"
+    },
+    "Photo Candle": {
+        "name": "Bougie photo",
+        "description": "Bougies infusées à la cire de soja dans des pots en verre dépoli enveloppées de votre photo préférée.",
+        "content": "<p>Durée de combustion 40 heures. Il existe des options pour des parfums légers ou non parfumés. Le cadeau parfait pour un anniversaire ou un souvenir.</p>"
+    },
+    "Pickleball Racket - Kuikma Open Blue": {
+        "name": "Raquette de Pickleball - Kuikma Open Bleu",
+        "description": "Raquette de pickleball prête pour la compétition avec face en graphite et noyau en polymère nid d'abeille.",
+        "content": "<p>USAPA approuvé, poids de jeu de 8 oz, poignée rembourrée perforée pour les conditions de transpiration. Idéal pour un gameplay contrôlé et raffiné.</p>"
+    },
+    "Pillow talk plump effect lip": {
+        "name": "Lèvres à effet dodu Pillow Talk",
+        "description": "Le rouge à lèvres mat a une finition lisse avec un ton rose nude flatteur adapté à toutes les carnations.",
+        "content": "<p>Formule hydratante longue durée avec de la vitamine E et du beurre de karité. Le noyau du rouge à lèvres peut être remplacé. Non testé sur les animaux et végétalien.</p>"
+    },
+    "Poppy with Tablet": {
+        "name": "Coquelicot avec tablette",
+        "description": "Chaise de formation portative avec bras de bureau intégré et coussin de siège ergonomique en forme.",
+        "content": "<p>Bureau intégré pivotant, dossier profilé avec coussin et doubles roulettes. La conception empilable permet d'économiser de l'espace de stockage dans les salles de classe et les bureaux généraux.</p>"
+    },
+    "Pothos Marble Queen": {
+        "name": "Reine de marbre Pothos",
+        "description": "Bétel reine en marbre avec des feuilles panachées – des feuilles blanches et vertes crémeuses égayent n’importe quelle étagère d’exposition.",
+        "content": "<p>Livré dans un pot de pépinière de 12 cm. Une forte lumière indirecte garde les feuilles sombres. Arrosez lorsque le premier pouce du sol est sec.</p>"
+    },
+    "Power Steering Pump": {
+        "name": "Pompe de direction assistée",
+        "description": "Les pompes de direction assistée reconditionnées sont testées selon les normes OE.",
+        "content": "<p>Comprend un nouveau réservoir, une poulie et un jeu de joints. Garantie kilométrage illimité de 2 ans.</p>"
+    },
+    "Premium Cat Food": {
+        "name": "Nourriture pour chats de qualité supérieure",
+        "description": "Croquettes sans céréales avec du vrai saumon comme premier ingrédient et de la taurine ajoutée.",
+        "content": "<p>Formule pour chats adultes d'intérieur. Protéine brute minimale 38%. Sac de 2,5 kg avec fermeture éclair pratique. Sans colorants ni conservateurs artificiels.</p>"
+    },
+    "Pro Earbuds Gen 4": {
+        "name": "Écouteurs Pro Gen 4",
+        "description": "Suppression active adaptative du bruit, audio spatial et 30 heures de lecture totale avec étui de chargement inclus.",
+        "content": "Résistance à la transpiration standard <p>IPX4. Les deux microphones réduisent le bruit pour des appels plus clairs. Chargez via USB-C et sans fil.</p>"
+    },
+    "Projector Headlights": {
+        "name": "Phares de projecteur",
+        "description": "Paire de phares projecteurs LED plug-and-play avec clignotants à balayage séquentiel.",
+        "content": "Le cluster d'éclairage du projecteur <p>LED répond aux normes DOT avec un anneau de feux diurnes. Remplacement Direct, pas besoin de modifier le fil.</p>"
+    },
+    "Quinoa Tri-Color": {
+        "name": "Quinoa tricolore",
+        "description": "Le mélange de quinoa tricolore est lavé et prêt à cuire – une alternative feuilletée et riche en protéines.",
+        "content": "<p>Quinoa blanc, rouge et noir provenant de coopératives andines. Paquet de 500g. Cuire 15 minutes.</p>"
+    },
+    "RED TAPE Men Flat Sneakers": {
+        "name": "RED TAPE Baskets plates pour hommes",
+        "description": "Baskets lifestyle à semelle plate avec tige en cuir souple et silhouette basse.",
+        "content": "<p>Cuir fleur embossé, patch talon en daim et semelle plate en caoutchouc. Convient aux jeans, chinos et pantalons.</p>"
+    },
+    "Resistance Bands Set": {
+        "name": "Ensemble de bandes de résistance",
+        "description": "Ensemble de cinq bandes de résistance empilables avec poignées, sangles de cheville et ancrages de porte.",
+        "content": "<p>Combinez des bandes pour atteindre une résistance jusqu'à 150 lb. Livré avec un sac de transport et des instructions d'exercices imprimées.</p>"
+    },
+    "Ribbed halter cami top": {
+        "name": "Caraco dos nu côtelé",
+        "description": "Une camisole dos nu en coton côtelé avec des bretelles réglables et un ourlet court ajusté."
+    },
+    "Safety Helmet": {
+        "name": "Casque de sécurité",
+        "description": "Le casque est conforme à la norme ANSI Z89 avec système de suspension réglable avec bouton et mentonnière.",
+        "content": "La coque <p>HDPE est stable contre les rayons UV, répondant aux normes de résistance aux chocs de classe 1 et aux risques électriques. Livré avec un coussinet frontal absorbant la transpiration.</p>"
+    },
+    "Set Of 2 3kg Hand Weights": {
+        "name": "Lot de 2 poids à main de 3 kg",
+        "description": "Paire d'haltères de 3 kg recouverts de vinyle avec poids hexagonaux anti-roulement. Vendu par lot de deux pièces assorties.",
+        "content": "<p>Poignée confortable, idéale pour les exercices HIIT, de sculpture et de récupération. La tête d'haltère hexagonale maintient le poids stable sur toute surface plane.</p>"
+    },
+    "Shearling-Suede Tote Bag": {
+        "name": "Sac fourre-tout en peau de mouton retournée et en daim",
+        "description": "Sac fourre-tout en daim doux avec bordure en polaire, poignées supérieures et poche spacieuse.",
+        "content": "<p>Corps de sac en daim doux avec col en polaire chaude. Verrouillage par bouton magnétique. Convient à un ordinateur portable de 13 pouces et à des objets du quotidien.</p>"
+    },
+    "Shopping Bag": {
+        "name": "Sac à provisions",
+        "description": "Sac shopping en cuir façonné avec double poignée supérieure et sac non doublé.",
+        "content": "<p>Cuir italien pleine fleur. Peut contenir un ordinateur portable de 13 pouces, une bouteille d'eau et des objets du quotidien. Les boucles métalliques en laiton se colorent avec le temps.</p>"
+    },
+    "Shoulder Bag": {
+        "name": "Sac à bandoulière",
+        "description": "Sac bandoulière souple en cuir fleur avec fermeture magnétique.",
+        "content": "<p>Sangle réglable avec deux façons de le porter. Compartiment interne à fermeture éclair et deux compartiments supplémentaires. Fabriqué en Espagne.</p>"
+    },
+    "Shredded Coconut": {
+        "name": "Noix de coco râpée",
+        "description": "Noix de coco non sucrée finement râpée provenant de cocotiers issus de l'agriculture biologique.",
+        "content": "<p>Sans sulfites ni sucres ajoutés. Parfait pour les granola, les pâtisseries et les boules énergétiques. Sachet refermable de 250g.</p>"
+    },
+    "Silicone Fork and Spoon Set – Perfect for Self-Feeding Babies": {
+        "name": "Ensemble fourchette et cuillère en silicone – Parfait pour les bébés auto-alimentés",
+        "description": "Gigoteuse en coton biologique avec TOG 2,5 pour les nuits fraîches.",
+        "content": "<p>La couche extérieure est certifiée GOTS avec un intérieur antiallergénique. La fermeture éclair bidirectionnelle facilite le changement des couches. Tailles 0-6, 6-18 et 18-36 mois.</p>"
+    },
+    "Silk Scarf": {
+        "name": "Foulard en soie",
+        "description": "Foulard en soie roulé à la main avec motifs botaniques imprimés.",
+        "content": "<p>Sergé de soie 90x90cm. Imprimé à la machine avec des colorants à faible impact. Livré avec un sac en papier recyclé en cadeau.</p>"
+    },
+    "Sleep Restore Magnesium Drink": {
+        "name": "Boisson au magnésium pour restaurer le sommeil",
+        "description": "Glycinate de magnésium à la camomille et aux cerises acidulées : un rituel nocturne apaisant.",
+        "content": "<p>Mélanger dans de l'eau tiède 30 minutes avant de se coucher. 200 mg de magnésium facilement absorbable par portion. Pas de caféine, pas de dépendance.</p>"
+    },
+    "Small Nappa Leather Pouch With Button": {
+        "name": "Petite pochette en cuir nappa avec bouton",
+        "description": "Sac compact en cuir nappa avec fermeture à bouton magnétique et fines fentes pour cartes.",
+        "content": "<p>Cuir nappa souple. Bords cousus main. Peut contenir des cartes, de l'argent liquide et un téléphone.</p>"
+    },
+    "Smart Lamp WiFi": {
+        "name": "Lampe intelligente WiFi",
+        "description": "La lumière intelligente Wi-Fi ajuste la luminosité avec 16 millions de couleurs et règle une minuterie via l'application qui l'accompagne.",
+        "content": "<p>Fonctionne avec Alexa et Google Assistant. Contrôle vocal et application. Lumières LED à économie d'énergie.</p>"
+    },
+    "Smart Speaker Mini": {
+        "name": "Mini haut-parleur intelligent",
+        "description": "Haut-parleur intelligent compact avec son à 360 degrés et assistant virtuel intégré.",
+        "content": "<p>Audio multi-pièces via Wi-Fi et Bluetooth. Prend en charge Alexa, Google et AirPlay 2. Appairage tactile pour se connecter.</p>"
+    },
+    "Snake Plant": {
+        "name": "Plante serpent",
+        "description": "La plante architecturale du serpent survit bien malgré la négligence – parfaite pour les coins faiblement éclairés.",
+        "content": "<p>Livré dans un pot de pépinière de 14 cm. Tolère une faible luminosité. Arrosez avec parcimonie – toutes les 3-4 semaines suffisent.</p>"
+    },
+    "Sneakersy Niskie": {
+        "name": "Niskie baskets",
+        "description": "Baskets basses avec tige en cuir épuré, col rembourré et logo minimaliste.",
+        "content": "<p>Cuir pleine fleur, languette en mousse et semelle extérieure en caoutchouc vulcanisé. Des chaussures lifestyle pour tous les jours : une paire que vous pouvez habiller de manière habillée ou décontractée.</p>"
+    },
+    "Soft Cotton Dribble Bibs 3 Pack – Gentle Protection for Little Messes": {
+        "name": "Lot de 3 bavoirs en coton doux – Protection douce pour les petits dégâts",
+        "description": "Lot de trois bavoirs en coton bio avec boutons pression réglables sans nickel.",
+        "content": "<p>Noyau absorbant à trois couches avec doublure intérieure imperméable. Les motifs sont certifiés OEKO-TEX. Convient pour 3-24 mois.</p>"
+    },
+    "Solitaire Ring": {
+        "name": "Bague Solitaire",
+        "description": "Brillante bague en diamant rond unique à six griffes de 0,5 ct en or blanc 18 carats avec tige en forme de couteau.",
+        "content": "<p>Diamants certifiés par GIA F/VS2. Monté style cathédrale sur or blanc massif 18 carats. Disponible dans les tailles 4 à 9 avec service de redimensionnement gratuit.</p>"
+    },
+    "Spider Plant": {
+        "name": "Plante araignée",
+        "description": "L'orchidée est gaie avec des feuilles enroulées, poussant de jeunes arbres le long de la tige tombante.",
+        "content": "<p>Livré dans un pot de pépinière de 12 cm. Forte lumière indirecte. Hydrate uniformément ; résiste aux périodes de sécheresse occasionnelles.</p>"
+    },
+    "Spirulina Tablets": {
+        "name": "Comprimés de spiruline",
+        "description": "Les algues bleu-vert sont pressées en granulés sans liant – une excellente source de protéines végétales chaque jour.",
+        "content": "<p>Testé en laboratoire pour les métaux lourds. 180 comprimés par flacon. Prendre 4 à 6 comprimés avec de l'eau avant les repas.</p>"
+    },
+    "Square metallic frame sunglasses": {
+        "name": "Lunettes de soleil à monture métallique carrée",
+        "description": "Lunettes de soleil à monture carrée en métal avec branches en acétate polies à la main et verres CR-39.",
+        "content": "<p>Face légère en acier inoxydable. Les verres polarisés CR-39 bloquent 100 % des UVA/UVB. Plaquette nasale réglable. Livré avec étui rigide et sac en microfibre.</p>"
+    },
+    "Steel Toe Boots": {
+        "name": "Bottes à embout en acier",
+        "description": "Chaussures de sécurité imperméables en cuir avec bout composite et semelle antidérapante.",
+        "content": "<p>Conforme à la norme ASTM F2413. Semelle intérieure amovible confortable et cheville renforcée pour des quarts de travail de dix heures.</p>"
+    },
+    "Stockholm Pendant": {
+        "name": "Suspension Stockholm",
+        "description": "Lampe à suspension sculpturale en verre ambré soufflé à la bouche et boucle en métal noir mat.",
+        "content": "<p>Installation filaire directe, luminosité réglable et superbe apparence lorsqu'il est utilisé seul ou en groupes au-dessus de la table à manger.</p>"
+    },
+    "Studio Reference Pro": {
+        "name": "Studio de référence Pro",
+        "description": "Casque de studio filaire de style fermé, affiné pour un mixage et un enregistrement précis.",
+        "content": "<p>Fil et coussinets d'oreille remplaçables. Réponse en fréquence plate jusqu'à 8 Hz. Se plie de manière compacte pour être transporté.</p>"
+    },
+    "Suede Bowling Bag": {
+        "name": "Sac bowling en daim",
+        "description": "Silhouette de sac bowling doux en daim grainé avec fermeture éclair sur le dessus et poignées latérales.",
+        "content": "<p>Le sac est spacieux avec un compartiment zippé et deux compartiments cage. Peut contenir des tablettes, des planificateurs et des fournitures de nuit.</p>"
+    },
+    "Suede Mini Bag": {
+        "name": "Mini sac en daim",
+        "description": "Petit sac bandoulière en daim avec chaîne et rabat ton sur ton.",
+        "content": "<p>Peut contenir un téléphone, des cartes et du rouge à lèvres. La chaîne s'ajuste de 22 à 24 pouces. Doublure en tissu de coton Drill.</p>"
+    },
+    "Suede Tote Bag": {
+        "name": "Sac fourre-tout en daim",
+        "description": "Grand sac cabas en daim avec poignées supérieures, fermeture magnétique et poche non doublée.",
+        "content": "<p>Daim brossé marron expresso. Peut contenir un ordinateur portable de 15 pouces, un dossier et une bouteille d'eau. La base du pied en cuivre protège le fond du sac de l'abrasion.</p>"
+    },
+    "Supremya Baume": {
+        "name": "Suprémya Baume",
+        "description": "Un baume de nuit riche formulé pour nourrir et régénérer pendant votre sommeil.",
+        "content": "<p>Complexe de squalane, céramide et peptide. Pot en verre de 50 ml avec cuillère en bambou. Massez en mouvements circulaires avant de vous coucher.</p>"
+    },
+    "T9 Pro II Dual Monitor Arm": {
+        "name": "Bras pour double écran T9 Pro II",
+        "description": "Bras pour écran unique avec réglage complet du mouvement, gestion intégrée des cordons et pince de bureau.",
+        "content": "<p>Prend en charge les écrans de 17 à 32 pouces pesant jusqu'à 9 kg. Compatible VESA 75/100. Réglage de la hauteur sans outils.</p>"
+    },
+    "Tablet Pro 11": {
+        "name": "Tablette Pro 11",
+        "description": "Tablette Liquid Retina de 11 pouces avec puce de la série M — idéale pour dessiner, prendre des notes et regarder des films.",
+        "content": "<p>Compatible avec Apple Pencil et Magic Keyboard. Capacité 128 Go-2 To. Batterie qui dure toute la journée et Touch ID.</p>"
+    },
+    "Tape Measure 25ft": {
+        "name": "Ruban à mesurer 25 pieds",
+        "description": "Ruban à mesurer robuste de 25 pieds avec crochet magnétique et couvercle en caoutchouc.",
+        "content": "<p>Le crochet à triple rivetage peut résister à plusieurs chutes et impacts. Atteint jusqu'à 11 pieds, avec des graduations en mètres et en pouces.</p>"
+    },
+    "Teal Blue 5 Pack Baby Bodysuits – 100% Cotton for Everyday Comfort": {
+        "name": "Lot de 5 bodys bébé bleu sarcelle – 100 % coton pour un confort au quotidien",
+        "description": "Body en coton biologique certifié GOTS avec épaules enveloppes pour un port facile.",
+        "content": "<p>Tissu tricoté simple doux. Les boutons sont sans nickel. Lavable en machine. Disponible de la taille du nouveau-né au 18 mois.</p>"
+    },
+    "Tennis Ball With Elastic String": {
+        "name": "Balle de tennis avec corde élastique",
+        "description": "Les balles de tennis d'entraînement personnel sont attachées avec des bandes élastiques : pratiquez votre swing n'importe où.",
+        "content": "<p>Ballon recouvert de feutre avec bande élastique hautement extensible. Idéal pour pratiquer les coups droits, les revers et les services sans partenaire ni terrain.</p>"
+    },
+    "Tiffany Lock Bangle": {
+        "name": "Bracelet cadenas Tiffany",
+        "description": "Bracelet cadenas de style patrimoine en or jaune 18 carats avec ouverture à charnière.",
+        "content": "<p>Or 18 carats fini à la main. Mécanisme de verrouillage ouverture-fermeture avec charnières. Disponible en tailles 60 mm et 65 mm. Livré avec une pochette à bijoux gaufrée à la main.</p>"
+    },
+    "Tool Belt Heavy": {
+        "name": "Ceinture à outils lourde",
+        "description": "Ceinture de travail en cuir pleine fleur avec 16 compartiments et doubles coutures renforcées.",
+        "content": "<p>Les bretelles rembourrées réglables aident à répartir le poids uniformément sur les épaules. Construit pour durer des décennies sur le chantier.</p>"
+    },
+    "Train Free Sports Bra": {
+        "name": "Soutien-gorge de sport sans entraînement",
+        "description": "Conçu pour la vitesse, le confort et les mouvements quotidiens."
+    },
+    "Travel ANC Headphone": {
+        "name": "Casque ANC de voyage",
+        "description": "Les écouteurs pliables antibruit sont parfaitement adaptés aux longs vols et aux déplacements bruyants.",
+        "content": "<p>Batterie jusqu'à 50 heures, chargement rapide USB-C et livré avec un étui rigide à transporter.</p>"
+    },
+    "Turtleneck Knit": {
+        "name": "Tricot à col roulé",
+        "description": "Pull à col roulé en mérinos tissé lisse avec une coupe décontractée et un ourlet côtelé.",
+        "content": "<p>Laine mérinos super fine, lavable en machine en mode laine. Disponible en brun expresso, avoine et gris tempête.</p>"
+    },
+    "Ultimashow 2.0 Mer Lace-Up Sneakers": {
+        "name": "Baskets à lacets Ultimashow 2.0 Mer",
+        "description": "Chaussure de trail running robuste avec bande de roulement de 4 mm, plaque anti-coup de pied et embout renforcé.",
+        "content": "<p>Semelle extérieure Vibram Megagrip, semelle intermédiaire en EVA et plaque anti-coup de pied en TPU. Partez à la conquête des descentes boueuses, des montées rocheuses et des terrains techniques.</p>"
+    },
+    "Up Casual Shoes with Rubber Sole": {
+        "name": "Chaussures décontractées Up avec semelle en caoutchouc",
+        "description": "La chaussure de course comporte une plaque de carbone avec une semelle intercalaire en mousse PEBA et un design à bascule incurvé.",
+        "content": "<p>Plaque de carbone pleine longueur. La mousse PEBA restitue plus de 80 % d’énergie. Conçu pour les jours de course du semi-marathon au marathon.</p>"
+    },
+    "USB-C Cable Pro": {
+        "name": "Câble USB-C Pro",
+        "description": "Câble USB-C vers USB-C 100 W avec cache parachute, résiste à plus de 30 000 pliages.",
+        "content": "<p>Prend en charge la charge rapide PD et la transmission de données à 10 Gbit/s. Disponible en longueurs de 1 m et 2 m.</p>"
+    },
+    "Vanish Airbrush Pressed Powder": {
+        "name": "Poudre pressée à l'aérographe Vanish",
+        "description": "Poudre pressée ultra-légère qui floute les pores et maintient le maquillage en place avec un fini lisse semblable à celui d'un spray.",
+        "content": "<p>Ne contient pas de talc, finement moulu. Huit tons pour un fini naturel qui peut augmenter la couverture. Livré avec du coton kabuki végétalien.</p>"
+    },
+    "Velvet Sofa 3-Seater": {
+        "name": "Canapé en velours 3 places",
+        "description": "Canapé sur mesure trois places en velours vert émeraude profond avec pieds fuselés en laiton.",
+        "content": "<p>Cadre en bois dur séché au four, système de ressorts courbés et matelas recouvert de plumes. Comprend un service de livraison de gants blancs.</p>"
+    },
+    "Very Conference": {
+        "name": "Très conférence",
+        "description": "Chaise longue en cuir synthétique avec pieds en acier inoxydable et coussin d'assise façonné.",
+        "content": "<p>Le cadre en aluminium poli et le mécanisme d'inclinaison élastique offrent un mouvement d'assise naturel. La conception empilable permet d'économiser de l'espace de stockage.</p>"
+    },
+    "Vitality Supplements": {
+        "name": "Suppléments de vitalité",
+        "description": "Multivitamines quotidiennes à mâcher avec de la glucosamine, des oméga-3 et des probiotiques pour les chiens actifs.",
+        "content": "<p>Comprimés à croquer mous au goût de bœuf. 90 comprimés par boîte. Soutient les articulations, les cheveux et la digestion. Fabriqué dans un établissement inspecté par un vétérinaire.</p>"
+    },
+    "Wet/Dry Vacuum": {
+        "name": "Aspirateur sec/humide",
+        "description": "Aspirateur eau/sec de 12 gallons pour entrepreneur avec filtre HEPA et chariot à tuyau.",
+        "content": "<p>Moteur de pointe de 6,5 HP et réservoir en acier inoxydable. La prise s'active automatiquement lors de l'activation de l'outil et du tuyau de 25 pieds inclus.</p>"
+    },
+    "White Delicate Double Pom Baby Hat – Soft & Cozy Warmth for Little Heads": {
+        "name": "Bonnet bébé blanc délicat à double pompon – Chaleur douce et confortable pour les petites têtes",
+        "description": "L'anneau de gomme est fait de bois de chêne, fini avec de la cire d'abeille de qualité alimentaire, et s'adapte aux petites mains.",
+        "content": "<p>Chêne européen récolté de manière durable. Antibactérien naturel. Combiné avec un clip en silicone pour maintenir l'anneau près de votre bébé.</p>"
+    },
+    "Wireless Charging Pad": {
+        "name": "Tapis de chargement sans fil",
+        "description": "La charge sans fil rapide de 15 W répond à la norme Qi avec une surface en silicone antidérapante.",
+        "content": "<p>Compatible avec les téléphones iPhone, AirPods et Android. Port d'entrée USB-C. Corps mince en aluminium.</p>"
+    },
+    "Women's Thin and Light Sports Shorts Black": {
+        "name": "Short de sport fin et léger pour femme noir",
+        "description": "Short de course ultraléger avec doublure intégrée et poche zippée pour clés.",
+        "content": "<p>Tissu extensible dans 4 directions, doublure intérieure en mesh respirant et détails réfléchissants pour une visibilité dans des conditions de faible luminosité. Forme coupée pour une foulée naturelle et une vitesse rapide.</p>"
+    },
+    "Wool Coat": {
+        "name": "Manteau en laine",
+        "description": "Manteau en laine à double boutonnage avec revers crantés et poches à franges.",
+        "content": "<p>80% laine, 20% cachemire. Doublure en cupro. La coupe s'ajuste parfaitement aux épaules avec de la place pour porter une doublure intérieure.</p>"
+    },
+    "Wool Midi Coat": {
+        "name": "Manteau mi-long en laine",
+        "description": "Manteau midi en laine avec poches passepoilées et col à revers soigné : une icône moderne des vêtements d'extérieur.",
+        "content": "<p>Tissu melton en laine mélangée italienne avec doublure en satin doux. Une seule rangée de boutons avec boucle à deux boutons. Jusqu'aux genoux, couvrant les journées froides.</p>"
+    },
+    "Wunder Chaga Powder": {
+        "name": "Poudre de Chaga Wunder",
+        "description": "Champignon chaga sibérien récolté dans la nature, double extrait pour préserver le bêta-glucane et le triterpène.",
+        "content": "<p>Goût doux, légèrement amer. Mélanger avec du café, du bouillon ou des smoothies. Pot en verre 100g.</p>"
+    },
+    "ZZ Plant": {
+        "name": "Usine ZZ",
+        "description": "L'arbre à argent aux feuilles brillantes tolère facilement la sécheresse, les pièces sombres et les longs horaires de voyage.",
+        "content": "<p>Livré dans un pot de pépinière de 14 cm. Tolère une faible luminosité. Arrosez uniquement lorsque le sol est complètement sec.</p>"
+    }
+}

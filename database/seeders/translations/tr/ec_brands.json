@@ -1,0 +1,78 @@
+{
+    "Anthro": {
+        "name": "Antropo",
+        "description": "Küresel zanaat geleneklerinden ilham alan çok stilde giysiler ve ev eşyaları."
+    },
+    "Anvouge": {
+        "name": "Anvouge",
+        "description": "Sürdürülebilir elyaflardan kesilmiş modern moda temelleri."
+    },
+    "Bohome": {
+        "name": "Bohome",
+        "description": "Rahat ve modern ev için bohem esintili ev eşyaları ve tekstil ürünleri."
+    },
+    "Carolin": {
+        "name": "Carolin",
+        "description": "Yarı kaliteli takılar İtalya'daki küçük atölyelerde el yapımıdır."
+    },
+    "Cheryl": {
+        "name": "Cheryl",
+        "description": "Modern kadınlar için olağanüstü desenler ve şekiller."
+    },
+    "Crate": {
+        "name": "Sandık",
+        "description": "Yüzyılın ortasından ilham alan mobilyalar nesiller boyu dayanacak şekilde tasarlandı."
+    },
+    "Findr": {
+        "name": "Bulucu",
+        "description": "Günlük ortamlarda stüdyo kalitesinde netlik için tasarlanmış ses ekipmanı."
+    },
+    "Intdeco": {
+        "name": "Indeco",
+        "description": "İç mekandaki vurgular minimalizm ve rahatlığı birleştiriyor."
+    },
+    "Modave": {
+        "name": "modave",
+        "description": "Geri dönüştürülmüş esnek kumaştan yapılmış yüksek performanslı antrenman ekipmanı."
+    },
+    "Panadoxn": {
+        "name": "Panadoxn",
+        "description": "Klinik bitkisel uzmanlar tarafından araştırılan doğal kozmetikler."
+    },
+    "Shangxi": {
+        "name": "Şangxi",
+        "description": "Miras çay, seramik ve meditasyon aksesuarları."
+    },
+    "Sopify": {
+        "name": "sopify",
+        "description": "Kiracılar ve ziyaretçiler için tasarlanmış akıllı ev cihazları."
+    },
+    "Textitles": {
+        "name": "Metinler",
+        "description": "Gündelik serseri ve omuz çantası silüetleri için yumuşak süet ve dokuma kumaş."
+    },
+    "Vanfaba": {
+        "name": "Vanfaba",
+        "description": "Vurgulu takılar, kemerler ve küçük deri eşyalar görünümünüzü tamamlıyor."
+    },
+    "Living": {
+        "name": "Yaşamak",
+        "description": "Koruyucu giysiler ve kişisel koruyucu donanımlar en sıkı işyeri standartlarını karşılar."
+    },
+    "West Elm": {
+        "name": "Batı Karaağaç",
+        "description": "Modern inşaatçılar için dayanıklı atölye öğelerinden oluşan bir seçki."
+    },
+    "Stanza": {
+        "name": "Stanza",
+        "description": "İnşaatçılar ve yükleniciler için hassas ölçüm ekipmanları."
+    },
+    "Urban": {
+        "name": "Kentsel",
+        "description": "Endüstri güvenilirliği için seçilen kesme ve delme sarf malzemeleri."
+    },
+    "Vanfava": {
+        "name": "Vanfava",
+        "description": "Bitki bazlı süper gıdalar ve temiz beslenme esasları."
+    }
+}

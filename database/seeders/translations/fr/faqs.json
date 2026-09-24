@@ -1,0 +1,54 @@
+{
+    "How long does standard shipping take?": {
+        "question": "Combien de temps prend l'expédition standard ?",
+        "answer": "L'expédition standard arrive dans un délai de 3 à 5 jours ouvrables pour les commandes nationales et de 7 à 12 jours ouvrables pour les destinations internationales. Des options d’expédition accélérée sont disponibles à la caisse."
+    },
+    "Do you offer free shipping?": {
+        "question": "Offrez-vous la livraison gratuite ?",
+        "answer": "Oui, les commandes de plus de 99 $ sont expédiées gratuitement dans la zone continentale des États-Unis. Le seuil de livraison internationale gratuite varie selon la destination et est affiché au moment du paiement."
+    },
+    "How can I track my order?": {
+        "question": "Comment puis-je suivre ma commande ?",
+        "answer": "Vous recevrez un lien de suivi par e-mail dès que votre commande sera expédiée. Vous pouvez également suivre votre colis depuis la page de gestion de votre compte sous Mes commandes."
+    },
+    "Can I change the shipping address after I place my order?": {
+        "question": "Puis-je modifier l'adresse de livraison après avoir passé ma commande ?",
+        "answer": "L'adresse peut être modifiée si la commande n'a pas été traitée. Contactez-nous dans les deux heures suivant votre commande pour avoir les meilleures chances de réussite de la mise à jour."
+    },
+    "What is your return policy?": {
+        "question": "Quelle est votre politique de retour ?",
+        "answer": "Nous vous accordons 30 jours à compter de la date de livraison pour retourner tout produit non utilisé dans son état d'origine. Les articles et sous-vêtements à prix réduit sont définitifs – aucun retour."
+    },
+    "How do I start a return?": {
+        "question": "Comment démarrer un retour ?",
+        "answer": "Initiez un retour depuis la page de gestion de votre compte ou envoyez un e-mail à return@amerce.test avec votre numéro de commande. Nous enverrons une étiquette de retour prépayée pour les commandes nationales."
+    },
+    "When will I receive my refund?": {
+        "question": "Quand vais-je recevoir mon remboursement ?",
+        "answer": "Les remboursements sont traités dans les 3 à 5 jours ouvrables à compter de la réception de l'article retourné. Les fonds apparaissent généralement sur votre relevé après 5 à 7 jours supplémentaires selon la banque."
+    },
+    "How do I find the right size?": {
+        "question": "Comment trouver la bonne taille ?",
+        "answer": "Chaque page de produit comporte un tableau des tailles basé sur les mesures réelles du produit. Si vous êtes entre deux tailles, nous vous recommandons généralement de choisir la taille la plus grande pour les tricots et les manteaux."
+    },
+    "When will sold-out items be restocked?": {
+        "question": "Quand les articles épuisés seront-ils réapprovisionnés ?",
+        "answer": "La plupart des styles sont réapprovisionnés dans un délai de 2 à 4 semaines. Cliquez sur le bouton M'avertir de toute variation en rupture de stock pour être averti par e-mail du retour du produit."
+    },
+    "Are your products ethically sourced?": {
+        "question": "Vos produits sont-ils issus de sources éthiques ?",
+        "answer": "Avoir. Nous travaillons uniquement avec des partenaires de fabrication qui respectent notre code de conduite des fournisseurs, notamment des salaires équitables, des conditions sûres et des origines de matériaux vérifiées."
+    },
+    "Which payment methods do you accept?": {
+        "question": "Quels modes de paiement acceptez-vous ?",
+        "answer": "Nous acceptons Visa, Mastercard, American Express, Apple Pay, Google Pay, PayPal et Klarna pour les marchés pris en charge."
+    },
+    "Is it safe to enter my card details?": {
+        "question": "Est-il sécuritaire de saisir les détails de ma carte ?",
+        "answer": "Tous les paiements sont traités par un fournisseur certifié PCI-DSS niveau 1 avec cryptage TLS 1.3. Nous ne stockons jamais les numéros de carte complets sur nos serveurs."
+    },
+    "How do I reset my password?": {
+        "question": "Comment réinitialiser mon mot de passe ?",
+        "answer": "Utilisez le lien Mot de passe oublié sur la page de connexion. Un lien de réinitialisation sera envoyé à votre adresse e-mail enregistrée et est valable 30 minutes."
+    }
+}
