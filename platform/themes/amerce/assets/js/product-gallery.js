@@ -21,52 +21,109 @@
         thumbsSwiper = null;
     }
 
+    function ensureNavigationControls(mainElement) {
+        if (!mainElement) return null;
+
+        var $main = $(mainElement);
+        var $next = $main.children('.tf-product-media-next');
+        var $prev = $main.children('.tf-product-media-prev');
+
+        if (!$prev.length) {
+            $prev = $('<button type="button" class="tf-product-media-prev swiper-button-prev" aria-label="Previous product image"></button>');
+            $main.append($prev);
+        }
+
+        if (!$next.length) {
+            $next = $('<button type="button" class="tf-product-media-next swiper-button-next" aria-label="Next product image"></button>');
+            $main.append($next);
+        }
+
+        return {
+            next: $next[0],
+            prev: $prev[0],
+        };
+    }
+
     function initGallerySliders() {
-        var $wrap = $('.product-thumbs-slider');
-        if (! $wrap.length || typeof Swiper === 'undefined') {
+        if (typeof Swiper === 'undefined') {
             return;
         }
 
-        // Main swiper is required; bail if it's missing.
-        if (! $('.tf-product-media-main').length) {
+        var mainElement = document.querySelector('.tf-product-media-main');
+        if (!mainElement) {
             return;
         }
 
-        // Thumbs strip is optional — single-image products omit it
-        // (see product-feature-zoom style-2-banner). Only init when present,
-        // otherwise `new Swiper('.tf-product-media-thumbs')` resolves to null
-        // and crashes on `el.querySelectorAll`.
-        var $thumbs = $('.tf-product-media-thumbs');
-        if ($thumbs.length) {
+        var thumbElement = document.querySelector('.tf-product-media-thumbs');
+        var navigation = ensureNavigationControls(mainElement);
+
+        if (thumbElement) {
+            var $thumbs = $(thumbElement);
             var direction = $thumbs.data('direction') || 'horizontal';
-            var preview = $thumbs.data('preview') || 5;
-            var xlPreview = $thumbs.data('xl-preview') || preview;
-            var space = $thumbs.data('space') || 8;
+            var preview = Number($thumbs.data('preview')) || 5;
+            var xlPreview = Number($thumbs.data('xl-preview')) || preview;
+            var space = Number($thumbs.data('space')) || 8;
 
-            thumbsSwiper = new Swiper('.tf-product-media-thumbs', {
+            thumbsSwiper = new Swiper(thumbElement, {
                 spaceBetween: space,
                 slidesPerView: preview,
                 freeMode: true,
                 watchSlidesProgress: true,
                 observer: true,
                 observeParents: true,
+                allowTouchMove: true,
+                touchRatio: 1,
                 breakpoints: {
                     0:    { direction: 'horizontal', slidesPerView: 4 },
                     575:  { direction: 'horizontal', slidesPerView: 5 },
-                    1200: { direction: direction,    slidesPerView: xlPreview },
+                    1200: { direction: direction, slidesPerView: xlPreview },
                 },
             });
         }
 
-        mainSwiper = new Swiper('.tf-product-media-main', {
+        mainSwiper = new Swiper(mainElement, {
             spaceBetween: 5,
             observer: true,
             observeParents: true,
-            speed: 800,
-            navigation: { nextEl: '.thumbs-next', prevEl: '.thumbs-prev' },
+            observeSlideChildren: true,
+            speed: 500,
+            allowTouchMove: true,
+            simulateTouch: true,
+            touchRatio: 1,
+            threshold: 5,
+            grabCursor: true,
+            keyboard: {
+                enabled: true,
+                onlyInViewport: true,
+            },
+            navigation: navigation ? {
+                nextEl: navigation.next,
+                prevEl: navigation.prev,
+            } : undefined,
             thumbs: thumbsSwiper ? { swiper: thumbsSwiper } : undefined,
+            on: {
+                init: function (swiper) {
+                    swiper.update();
+                },
+            },
         });
+
+        if (navigation) {
+            var updateNavigationState = function () {
+                var total = mainSwiper ? mainSwiper.slides.length : 0;
+                var disabled = total <= 1;
+                navigation.prev.disabled = disabled;
+                navigation.next.disabled = disabled;
+                $(navigation.prev).toggleClass('swiper-button-disabled', disabled);
+                $(navigation.next).toggleClass('swiper-button-disabled', disabled);
+            };
+
+            mainSwiper.on('slideChange', updateNavigationState);
+            mainSwiper.on('update', updateNavigationState);
+            updateNavigationState();
+        }
     }
+
 
     // Drift side-pane zoom — only at >=1200px (matches reference behaviour).
     // Hovering a `.tf-image-zoom` projects a magnified view into `.tf-zoom-main`.
@@ -300,20 +357,24 @@
 
         var $main   = $('.tf-product-media-main .swiper-wrapper').first();
         var $thumbs = $('.tf-product-media-thumbs .swiper-wrapper').first();
-        if (! $main.length || ! $thumbs.length) return;
+
+        // The main gallery must always be rebuilt. A thumbnail rail is optional.
+        // Previously, the function returned when the thumb rail was missing, which
+        // left the selected variation image visible but killed gallery navigation.
+        if (! $main.length) return;
 
         var alt = data.name || $('.product-infor-name').text() || '';
 
-        // Preserve real video slides (e.g. MP4 player) so picking a color doesn't
-        // erase the variation's video. The legacy templates' `.tf-btn-video`
-        // overlay on the first thumb is per-image, not a separate slide — skipped.
         var videoMainHtml = $main.children('.swiper-slide').filter(function () {
             return isVideoMainSlide($(this));
         }).map(function () { return this.outerHTML; }).get().join('');
 
-        var videoThumbHtml = $thumbs.children('.swiper-slide').filter(function () {
-            return isVideoThumbSlide($(this));
-        }).map(function () { return this.outerHTML; }).get().join('');
+        var videoThumbHtml = '';
+        if ($thumbs.length) {
+            videoThumbHtml = $thumbs.children('.swiper-slide').filter(function () {
+                return isVideoThumbSlide($(this));
+            }).map(function () { return this.outerHTML; }).get().join('');
+        }
 
         var imageMainHtml = '';
         for (var i = 0; i < origin.length; i++) {
@@ -326,31 +387,65 @@
             imageThumbHtml += buildThumbSlide(thumbSource[j], alt);
         }
 
-        // Step 1: destroy. Step 2: rewrite markup. Step 3: re-init.
-        // Same flow shofy's slick pipeline uses (`unslick → html(...) → initProductGallery`).
+        // Destroy the old instances before touching their DOM. Otherwise Swiper
+        // retains stale slide references and touch events after a variant swap.
         destroyGallerySliders();
 
         $main.html(videoMainHtml + imageMainHtml);
-        $thumbs.html(videoThumbHtml + imageThumbHtml);
+
+        if ($thumbs.length) {
+            $thumbs.html(videoThumbHtml + imageThumbHtml);
+        }
 
         initGallerySliders();
 
-        // Force a layout recompute on the new instances. Swiper reads breakpoints
-        // (incl. the vertical-direction switch at 1200px+) at construction time;
-        // calling update() after the next paint guarantees the side-thumb column
-        // gets its dimensions even if the parent container was mid-layout.
         requestAnimationFrame(function () {
-            if (thumbsSwiper && typeof thumbsSwiper.update === 'function') thumbsSwiper.update();
-            if (mainSwiper && typeof mainSwiper.update === 'function') mainSwiper.update();
-        });
+            if (thumbsSwiper && typeof thumbsSwiper.update === 'function') {
+                thumbsSwiper.update();
+                thumbsSwiper.slideTo(0, 0, false);
+            }
 
-        if (typeof window.__amerceDriftApply === 'function') {
-            window.__amerceDriftApply();
-        } else {
-            initDriftZoom();
-        }
-        normalizeZoomDimensions();
-        initPhotoSwipeLightbox();
+            if (mainSwiper && typeof mainSwiper.update === 'function') {
+                mainSwiper.update();
+                mainSwiper.slideTo(0, 0, false);
+            }
+
+            if (typeof window.__amerceDriftApply === 'function') {
+                window.__amerceDriftApply();
+            } else {
+                initDriftZoom();
+            }
+
+            normalizeZoomDimensions();
+            initPhotoSwipeLightbox();
+        });
+    }
+
+
+    // The theme templates do not include navigation controls. Add the small
+    // amount of positioning needed for the controls created above. This is
+    // intentionally scoped to the product gallery so it cannot affect other Swipers.
+    function ensureGalleryNavigationStyles() {
+        if (document.getElementById('amerce-product-gallery-navigation-styles')) return;
+
+        var style = document.createElement('style');
+        style.id = 'amerce-product-gallery-navigation-styles';
+        style.textContent =
+            '.tf-product-media-main{position:relative;}' +
+            '.tf-product-media-main>.tf-product-media-prev,.tf-product-media-main>.tf-product-media-next{' +
+                'position:absolute;z-index:20;top:50%;transform:translateY(-50%);' +
+                'width:42px;height:42px;border:0;border-radius:50%;' +
+                'display:flex;align-items:center;justify-content:center;' +
+                'background:rgba(255,255,255,.92);box-shadow:0 2px 10px rgba(0,0,0,.12);' +
+                'cursor:pointer;}' +
+            '.tf-product-media-main>.tf-product-media-prev{left:12px;}' +
+            '.tf-product-media-main>.tf-product-media-next{right:12px;}' +
+            '.tf-product-media-main>.tf-product-media-prev.swiper-button-disabled,.tf-product-media-main>.tf-product-media-next.swiper-button-disabled{' +
+                'opacity:.35;cursor:default;}' +
+            '@media(max-width:767px){' +
+                '.tf-product-media-main>.tf-product-media-prev,.tf-product-media-main>.tf-product-media-next{width:36px;height:36px;}' +
+            '}';
+        document.head.appendChild(style);
     }
 
     // Additive hook honoured by ecommerce plugin's change-product-swatches.js
@@ -368,6 +463,7 @@
     };
 
     $(function () {
+        ensureGalleryNavigationStyles();
         initGallerySliders();
         initDriftZoom();
         initZoomActiveCue();
