@@ -468,6 +468,7 @@
 
         if (! response || response.error || ! response.data) return;
         rebuildGalleryFromVariation(response.data);
+        response.__amerceGalleryUpdated = true;
         updateAvailabilityBadge(response.data);
     };
 
